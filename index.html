@@ -724,8 +724,8 @@ renderEmptyState('No standings loaded.');
 // directly (file://) blocks fetch() entirely, so nothing loads that way.
 if (location.protocol !== 'file:'){
   Promise.all([
-    fetch('ir_leaderboard_placements.csv').then(r => r.ok ? r.text() : Promise.reject()),
-    fetch('ir_leaderboard_boards.csv').then(r => r.ok ? r.text() : null).catch(() => null),
+    fetch('ir_leaderboard_placements.csv?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.text() : Promise.reject()),
+    fetch('ir_leaderboard_boards.csv?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.text() : null).catch(() => null),
   ])
     .then(([placementsText, boardsText]) => {
       const placements = csvToPlacements(placementsText);
