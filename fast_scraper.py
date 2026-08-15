@@ -195,7 +195,7 @@ def scrape_holocache(placements, all_boards):
     print(f"  -> {len(top10)} rows")
     all_boards["Holocache"] = len(top10)
     for i, r in enumerate(top10, start=1):
-        placements.append((display_name(r), "Holocache", i, POINTS_FOR_RANK[i]))
+        placements.append((display_name(r), "Holocache", i, POINTS_FOR_RANK[i], r.get("timeTakenSeconds")))
 
 
 # Confirmed directly from the site's Vehicle filter checkbox id
@@ -257,7 +257,7 @@ def scrape_aero_trails(placements, all_boards):
         print(f"  -> {len(top10)} rows")
         all_boards[board_name] = len(top10)
         for i, r in enumerate(top10, start=1):
-            placements.append((display_name(r), board_name, i, POINTS_FOR_RANK[i]))
+            placements.append((display_name(r), board_name, i, POINTS_FOR_RANK[i], r.get("timeTakenSeconds")))
 
 
 def scrape_calido(placements, all_boards):
@@ -304,7 +304,7 @@ def scrape_calido(placements, all_boards):
             top10 = dedupe_best_per_player(vehicle_records, "totalRaceTimeMs", ascending=True)[:10]
             all_boards[board_name] = len(top10)
             for i, r in enumerate(top10, start=1):
-                placements.append((display_name(r), board_name, i, POINTS_FOR_RANK[i]))
+                placements.append((display_name(r), board_name, i, POINTS_FOR_RANK[i], r.get("totalRaceTimeMs")))
 
 
 def main():
@@ -316,7 +316,7 @@ def main():
     scrape_calido(placements, all_boards)
 
     totals = {}
-    for name, board, rank, points in placements:
+    for name, board, rank, points, raw_time in placements:
         totals[name] = totals.get(name, 0) + points
     ranked = sorted(totals.items(), key=lambda kv: kv[1], reverse=True)
 
@@ -329,9 +329,10 @@ def main():
 
     os.makedirs(os.path.dirname(OUTPUT_CSV_PATH), exist_ok=True)
     with open(OUTPUT_CSV_PATH, "w", newline="", encoding="utf-8") as f:
-        f.write("player,board,rank,points\n")
-        for name, board, rank, points in placements:
-            f.write(f'"{name}","{board}",{rank},{points}\n')
+        f.write("player,board,rank,points,raw_time\n")
+        for name, board, rank, points, raw_time in placements:
+            raw_time_str = "" if raw_time is None else raw_time
+            f.write(f'"{name}","{board}",{rank},{points},{raw_time_str}\n')
     print(f"\nFull placements written to {OUTPUT_CSV_PATH}")
     print(f"Total placements recorded: {len(placements)}")
 

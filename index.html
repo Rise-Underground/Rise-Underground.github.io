@@ -48,6 +48,69 @@
 
   .wrap{ position:relative; z-index:1; max-width: 880px; margin:0 auto; padding: 0 24px 96px; }
 
+  /* ---------- opportunities box ---------- */
+  .opportunities-box{
+    position:fixed;
+    top: 20px;
+    left: 20px;
+    width: 260px;
+    max-width: 42vw;
+    background: linear-gradient(180deg, var(--asphalt-2), var(--panel));
+    border: 1px solid var(--hairline);
+    border-radius: 6px;
+    padding: 16px 16px 12px;
+    z-index: 30;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+  }
+  .opp-title{
+    font-family:'Rajdhani', sans-serif;
+    font-weight:700;
+    font-size:15px;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color: var(--gold);
+    margin-bottom:2px;
+  }
+  .opp-subhead{
+    font-family:'JetBrains Mono', monospace;
+    font-size:10.5px;
+    color: var(--steel);
+    letter-spacing:0.04em;
+    margin-bottom:10px;
+  }
+  .opp-row{
+    display:grid;
+    grid-template-columns: 18px 1fr;
+    grid-template-rows: auto auto;
+    column-gap:8px;
+    padding: 7px 0;
+    border-top: 1px solid var(--hairline);
+  }
+  .opp-row:first-child{ border-top:none; }
+  .opp-rank{
+    grid-row: 1 / 3;
+    font-family:'JetBrains Mono', monospace;
+    font-weight:700;
+    font-size:13px;
+    color: var(--crimson);
+  }
+  .opp-board{
+    font-family:'Rajdhani', sans-serif;
+    font-size:13px;
+    font-weight:600;
+    line-height:1.25;
+    color: var(--paper);
+  }
+  .opp-detail{
+    font-family:'JetBrains Mono', monospace;
+    font-size:10.5px;
+    color: var(--steel);
+  }
+
+  @media (max-width: 700px){
+    .opportunities-box{ display:none !important; }
+  }
+
   /* ---------- header ---------- */
   header{
     display:flex;
@@ -136,25 +199,33 @@
     border-top: 1px dashed var(--hairline);
   }
   .countdown-label{
-    font-family:'JetBrains Mono', monospace;
-    font-size:12px;
-    letter-spacing:0.12em;
-    color: var(--steel);
-    margin-bottom: 8px;
+    font-family:'Rajdhani', sans-serif;
+    font-weight:700;
+    font-size: clamp(15px, 2.2vw, 20px);
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    color: var(--crimson);
+    margin-bottom: 10px;
+    animation: pulse-glow 1.8s ease-in-out infinite;
+  }
+  @keyframes pulse-glow{
+    0%, 100% { text-shadow: 0 0 8px rgba(224,32,43,0.3); }
+    50% { text-shadow: 0 0 20px rgba(224,32,43,0.75); }
   }
   .countdown-clock{
     font-family:'JetBrains Mono', monospace;
     font-weight:700;
-    font-size: clamp(28px, 5vw, 42px);
+    font-size: clamp(40px, 8vw, 68px);
     color: var(--gold);
     letter-spacing:0.02em;
+    text-shadow: 0 0 24px rgba(212,165,55,0.35);
   }
   .countdown-clock .unit-label{
-    font-size: 13px;
-    font-weight:400;
+    font-size: 16px;
+    font-weight:500;
     color: var(--steel);
     letter-spacing:0.04em;
-    margin-right: 18px;
+    margin-right: 22px;
   }
   .countdown-clock .unit-label:last-child{ margin-right:0; }
 
@@ -381,6 +452,12 @@
 <body>
 <div class="wrap">
 
+  <div class="opportunities-box" id="opportunitiesBox" style="display:none;">
+    <div class="opp-title">Best Places to Score</div>
+    <div class="opp-subhead" id="opportunitiesSubhead"></div>
+    <div id="opportunitiesList"></div>
+  </div>
+
   <header>
     <div class="brand-block">
       <img src="RISE_UG_LOGO_Transparent.png" alt="Rise Underground" class="brand-logo"
@@ -400,7 +477,7 @@
       track/vehicle combo, every Aero Trails course, and Holocache.
     </p>
     <div class="countdown-strip" id="countdownStrip">
-      <div class="countdown-label">COMPETITION STARTS IN</div>
+      <div class="countdown-label" id="countdownLabel">COMPETITION STARTS IN</div>
       <div class="countdown-clock" id="countdownClock">—</div>
     </div>
   </section>
@@ -499,20 +576,31 @@ function computeCompetitionWindow(now){
 
 function tickCountdown(){
   const strip = document.getElementById('countdownStrip');
+  const labelEl = document.getElementById('countdownLabel');
   const clockEl = document.getElementById('countdownClock');
   const now = new Date();
   const { start, end } = computeCompetitionWindow(now);
   const oneWeekBefore = new Date(start.getTime() - 7 * 24 * 60 * 60 * 1000);
 
-  const inCountdownWindow = now >= oneWeekBefore && now < start;
+  let target = null;
+  let label = '';
 
-  if (!inCountdownWindow){
+  if (now >= oneWeekBefore && now < start){
+    target = start;
+    label = 'COMPETITION STARTS IN';
+  } else if (now >= start && now <= end){
+    target = end;
+    label = 'COMPETITION ENDS IN';
+  }
+
+  if (!target){
     strip.style.display = 'none';
     return;
   }
   strip.style.display = '';
+  labelEl.textContent = label;
 
-  const diffMs = start - now;
+  const diffMs = target - now;
   const totalSeconds = Math.max(0, Math.floor(diffMs / 1000));
   const days = Math.floor(totalSeconds / 86400);
   const hours = Math.floor((totalSeconds % 86400) / 3600);
@@ -630,23 +718,128 @@ const footerNote = document.getElementById('footerNote');
 renderEmptyState('No standings loaded.');
 
 // This page only auto-loads — there's no manual file picker. It fetches
-// ir_leaderboard_placements.csv from the same folder automatically,
-// which only works when served over http(s) (e.g. `python -m http.server`
-// from this folder). Opening the file directly (file://) blocks fetch()
-// entirely, so nothing will load that way.
+// ir_leaderboard_placements.csv and ir_leaderboard_boards.csv from the
+// same folder automatically, which only works when served over http(s)
+// (e.g. `python -m http.server` from this folder). Opening the file
+// directly (file://) blocks fetch() entirely, so nothing loads that way.
 if (location.protocol !== 'file:'){
-  fetch('ir_leaderboard_placements.csv')
-    .then(r => r.ok ? r.text() : Promise.reject())
-    .then(text => {
-      const placements = csvToPlacements(text);
+  Promise.all([
+    fetch('ir_leaderboard_placements.csv').then(r => r.ok ? r.text() : Promise.reject()),
+    fetch('ir_leaderboard_boards.csv').then(r => r.ok ? r.text() : null).catch(() => null),
+  ])
+    .then(([placementsText, boardsText]) => {
+      const placements = csvToPlacements(placementsText);
       renderStandings(buildStandings(placements));
       footerNote.textContent = 'Live data — ir_leaderboard_placements.csv';
+
+      const boards = boardsText ? csvToBoards(boardsText) : null;
+      renderOpportunities(placements, boards);
     })
     .catch(() => {
       renderEmptyState('ir_leaderboard_placements.csv not found in this folder yet.');
     });
 } else {
   renderEmptyState('Open this page via a local server (not by double-clicking the file) to auto-load standings.');
+}
+
+// ------------------------------------------------------------------
+// "Best places to score" opportunities box.
+//
+// Priority cascade (evaluated globally across ALL boards):
+//   1. Any board with 0 placements -> those are the best opportunities
+//      (open boards, nobody's claimed them yet).
+//   2. Else (every board has at least 1 placement) -> the boards with
+//      the FEWEST placements (easiest to crack the top 10).
+//   3. Else (every board already has a full 10) -> the boards with the
+//      LARGEST % time gap between 1st and 10th place (a weak 10th
+//      place time means it's easy to leapfrog in).
+// ------------------------------------------------------------------
+function computeOpportunities(placements, boards){
+  // Board list: prefer the full catalog from boards.csv (includes
+  // 0-placement boards); fall back to deriving from placements alone
+  // if boards.csv didn't load.
+  let boardCounts;
+  if (boards){
+    boardCounts = boards.map(b => ({ board: b.board, count: b.count }));
+  } else {
+    const counts = {};
+    placements.forEach(p => { counts[p.board] = (counts[p.board] || 0) + 0; });
+    // still need counts — derive from distinct ranks per board
+    const rankSets = {};
+    placements.forEach(p => {
+      if (!rankSets[p.board]) rankSets[p.board] = new Set();
+      rankSets[p.board].add(p.rank);
+    });
+    boardCounts = Object.keys(rankSets).map(board => ({ board, count: rankSets[board].size }));
+  }
+
+  if (boardCounts.length === 0) return { tier: null, items: [] };
+
+  const zeroBoards = boardCounts.filter(b => b.count === 0);
+  if (zeroBoards.length > 0){
+    return {
+      tier: 'open',
+      items: zeroBoards.slice(0, 5).map(b => ({ board: b.board, detail: 'Open — be first!' })),
+    };
+  }
+
+  const allFull = boardCounts.every(b => b.count >= 10);
+  if (!allFull){
+    const sorted = [...boardCounts].sort((a, b) => a.count - b.count);
+    return {
+      tier: 'fewest',
+      items: sorted.slice(0, 5).map(b => ({ board: b.board, detail: `${b.count} racer${b.count === 1 ? '' : 's'}` })),
+    };
+  }
+
+  // All boards full — rank by % gap between 1st and 10th place time.
+  const byBoard = {};
+  placements.forEach(p => {
+    if (!byBoard[p.board]) byBoard[p.board] = {};
+    if (p.rank === 1 || p.rank === 10) byBoard[p.board][p.rank] = p.rawTime;
+  });
+
+  const gaps = [];
+  Object.keys(byBoard).forEach(board => {
+    const t1 = byBoard[board][1];
+    const t10 = byBoard[board][10];
+    if (t1 != null && t10 != null && t1 > 0){
+      const gapPct = ((t10 - t1) / t1) * 100;
+      gaps.push({ board, gapPct });
+    }
+  });
+  gaps.sort((a, b) => b.gapPct - a.gapPct);
+  return {
+    tier: 'gap',
+    items: gaps.slice(0, 5).map(g => ({ board: g.board, detail: `${g.gapPct.toFixed(1)}% gap` })),
+  };
+}
+
+function renderOpportunities(placements, boards){
+  const box = document.getElementById('opportunitiesBox');
+  const list = document.getElementById('opportunitiesList');
+  const { tier, items } = computeOpportunities(placements, boards);
+
+  if (!items.length){
+    box.style.display = 'none';
+    return;
+  }
+  box.style.display = '';
+
+  const tierLabels = {
+    open: 'Wide open boards',
+    fewest: 'Fewest racers',
+    gap: 'Easiest to crack top 10',
+  };
+  document.getElementById('opportunitiesSubhead').textContent = tierLabels[tier] || '';
+
+  list.innerHTML = items.map((item, i) => `
+    <div class="opp-row">
+      <div class="opp-rank">${i + 1}</div>
+      <div class="opp-board">${item.board}</div>
+      <div class="opp-detail">${item.detail}</div>
+    </div>
+  `).join('');
 }
 
 // ------------------------------------------------------------------
@@ -686,12 +879,26 @@ function csvToPlacements(text){
   const iBoard = idx('board');
   const iRank = idx('rank');
   const iPoints = idx('points');
+  const iRawTime = idx('raw_time');
 
   return rows.slice(1).map(r => ({
     player: r[iPlayer],
     board: r[iBoard],
     rank: parseInt(r[iRank], 10),
     points: parseInt(r[iPoints], 10) || 0,
+    rawTime: iRawTime >= 0 && r[iRawTime] !== '' ? parseFloat(r[iRawTime]) : null,
+  }));
+}
+
+function csvToBoards(text){
+  const rows = parseCSV(text);
+  const header = rows[0].map(h => h.trim());
+  const idx = (name) => header.findIndex(h => h.toLowerCase() === name.toLowerCase());
+  const iBoard = idx('board');
+  const iCount = idx('placements_count');
+  return rows.slice(1).map(r => ({
+    board: r[iBoard],
+    count: parseInt(r[iCount], 10) || 0,
   }));
 }
 </script>
