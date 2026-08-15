@@ -399,8 +399,8 @@
       Points stack across every tracked leaderboard — every Calido Valley Raceway
       track/vehicle combo, every Aero Trails course, and Holocache.
     </p>
-    <div class="countdown-strip">
-      <div class="countdown-label">TEST COMPETITION ENDS IN</div>
+    <div class="countdown-strip" id="countdownStrip">
+      <div class="countdown-label">COMPETITION STARTS IN</div>
       <div class="countdown-clock" id="countdownClock">—</div>
     </div>
   </section>
@@ -455,31 +455,65 @@ function buildStandings(placements){
 })();
 
 // ------------------------------------------------------------------
-// Live countdown to the next Saturday 23:59:59 UTC (test competition
-// end). Ticks every second; once it passes, shows an ended state.
+// Competition window + countdown clock.
+//
+// TEST_MODE hardcodes the window to Sun Aug 16 - Sat Aug 22 for this
+// test run. Set TEST_MODE to false once that goes well, to switch to
+// the real "3rd Sunday of month" rule (already written below,
+// currently unused while TEST_MODE is on).
+//
+// Clock visibility:
+//   - more than 7 days before start: hidden
+//   - 7 days before start, up to start: VISIBLE, counting down to start
+//   - during the competition (start -> end): hidden
+//   - after the competition ends: hidden, until the next 7-day-before
+//     window opens
 // ------------------------------------------------------------------
-function nextSaturdayEndUTC(now){
-  const day = now.getUTCDay(); // 0=Sun ... 6=Sat
-  const daysUntilSat = (6 - day + 7) % 7;
-  let target = new Date(Date.UTC(
-    now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + daysUntilSat, 23, 59, 59, 999
-  ));
-  if (target <= now) target = new Date(target.getTime() + 7 * 24 * 60 * 60 * 1000);
-  return target;
+const TEST_MODE = true;
+const TEST_WINDOW_START = new Date(Date.UTC(2026, 7, 16, 0, 0, 0, 0));   // Aug is month index 7
+const TEST_WINDOW_END = new Date(Date.UTC(2026, 7, 22, 23, 59, 59, 999));
+
+function getThirdSundayWindow(year, monthIndex){
+  const firstOfMonth = new Date(Date.UTC(year, monthIndex, 1));
+  const daysToFirstSunday = (7 - firstOfMonth.getUTCDay()) % 7;
+  const firstSunday = new Date(Date.UTC(year, monthIndex, 1 + daysToFirstSunday));
+  const start = new Date(firstSunday);
+  start.setUTCDate(firstSunday.getUTCDate() + 14);
+  start.setUTCHours(0, 0, 0, 0);
+  const end = new Date(start);
+  end.setUTCDate(start.getUTCDate() + 6);
+  end.setUTCHours(23, 59, 59, 999);
+  return { start, end };
+}
+
+function computeCompetitionWindow(now){
+  if (TEST_MODE) return { start: TEST_WINDOW_START, end: TEST_WINDOW_END };
+  let { start, end } = getThirdSundayWindow(now.getUTCFullYear(), now.getUTCMonth());
+  if (now > end){
+    let nextMonth = now.getUTCMonth() + 1, nextYear = now.getUTCFullYear();
+    if (nextMonth > 11){ nextMonth = 0; nextYear += 1; }
+    ({ start, end } = getThirdSundayWindow(nextYear, nextMonth));
+  }
+  return { start, end };
 }
 
 function tickCountdown(){
+  const strip = document.getElementById('countdownStrip');
   const clockEl = document.getElementById('countdownClock');
   const now = new Date();
-  const target = nextSaturdayEndUTC(now);
-  const diffMs = target - now;
+  const { start, end } = computeCompetitionWindow(now);
+  const oneWeekBefore = new Date(start.getTime() - 7 * 24 * 60 * 60 * 1000);
 
-  if (diffMs <= 0){
-    clockEl.innerHTML = 'Competition ended';
+  const inCountdownWindow = now >= oneWeekBefore && now < start;
+
+  if (!inCountdownWindow){
+    strip.style.display = 'none';
     return;
   }
+  strip.style.display = '';
 
-  const totalSeconds = Math.floor(diffMs / 1000);
+  const diffMs = start - now;
+  const totalSeconds = Math.max(0, Math.floor(diffMs / 1000));
   const days = Math.floor(totalSeconds / 86400);
   const hours = Math.floor((totalSeconds % 86400) / 3600);
   const minutes = Math.floor((totalSeconds % 3600) / 60);
