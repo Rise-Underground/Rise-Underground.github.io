@@ -130,16 +130,33 @@
   }
   .dek strong{ color: var(--paper); font-weight:600; }
 
-  .scoring-strip{
-    display:flex;
-    gap: 22px;
+  .countdown-strip{
     margin-top: 30px;
     padding-top: 22px;
     border-top: 1px dashed var(--hairline);
-    flex-wrap: wrap;
   }
-  .scoring-strip div{ font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--steel); }
-  .scoring-strip b{ color: var(--paper); display:block; font-size:16px; font-weight:700; margin-bottom:2px; }
+  .countdown-label{
+    font-family:'JetBrains Mono', monospace;
+    font-size:12px;
+    letter-spacing:0.12em;
+    color: var(--steel);
+    margin-bottom: 8px;
+  }
+  .countdown-clock{
+    font-family:'JetBrains Mono', monospace;
+    font-weight:700;
+    font-size: clamp(28px, 5vw, 42px);
+    color: var(--gold);
+    letter-spacing:0.02em;
+  }
+  .countdown-clock .unit-label{
+    font-size: 13px;
+    font-weight:400;
+    color: var(--steel);
+    letter-spacing:0.04em;
+    margin-right: 18px;
+  }
+  .countdown-clock .unit-label:last-child{ margin-right:0; }
 
   /* ---------- standings ---------- */
   .board-head{
@@ -382,10 +399,9 @@
       Points stack across every tracked leaderboard — every Calido Valley Raceway
       track/vehicle combo, every Aero Trails course, and Holocache.
     </p>
-    <div class="scoring-strip">
-      <div><b>10 → 1</b>points per board, 1st to 10th</div>
-      <div><b>All boards</b>tracked</div>
-      <div><b id="windowStat">—</b>competition window</div>
+    <div class="countdown-strip">
+      <div class="countdown-label">TEST COMPETITION ENDS IN</div>
+      <div class="countdown-clock" id="countdownClock">—</div>
     </div>
   </section>
 
@@ -430,31 +446,55 @@ function buildStandings(placements){
 }
 
 // ------------------------------------------------------------------
-// Header labels: current month + this month's real competition window
-// (3rd Sunday 00:00 UTC -> following Saturday 23:59:59 UTC — NOT a
-// rolling "this week")
+// Header label: current month
 // ------------------------------------------------------------------
 (function setLabels(){
   const now = new Date();
   const monthFmt = new Intl.DateTimeFormat('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' });
   document.getElementById('seasonTag').textContent = monthFmt.format(now).toUpperCase();
-
-  // Find the 1st Sunday of this month (UTC), then jump 2 more weeks for the 3rd.
-  const firstOfMonth = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), 1));
-  const daysToFirstSunday = (7 - firstOfMonth.getUTCDay()) % 7;
-  const firstSunday = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), 1 + daysToFirstSunday));
-  const thirdSunday = new Date(firstSunday);
-  thirdSunday.setUTCDate(firstSunday.getUTCDate() + 14);
-  thirdSunday.setUTCHours(0, 0, 0, 0);
-
-  const followingSaturday = new Date(thirdSunday);
-  followingSaturday.setUTCDate(thirdSunday.getUTCDate() + 6);
-  followingSaturday.setUTCHours(23, 59, 59, 999);
-
-  const dFmt = new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
-  document.getElementById('windowStat').textContent =
-    `${dFmt.format(thirdSunday)}\u2013${dFmt.format(followingSaturday)}`;
 })();
+
+// ------------------------------------------------------------------
+// Live countdown to the next Saturday 23:59:59 UTC (test competition
+// end). Ticks every second; once it passes, shows an ended state.
+// ------------------------------------------------------------------
+function nextSaturdayEndUTC(now){
+  const day = now.getUTCDay(); // 0=Sun ... 6=Sat
+  const daysUntilSat = (6 - day + 7) % 7;
+  let target = new Date(Date.UTC(
+    now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + daysUntilSat, 23, 59, 59, 999
+  ));
+  if (target <= now) target = new Date(target.getTime() + 7 * 24 * 60 * 60 * 1000);
+  return target;
+}
+
+function tickCountdown(){
+  const clockEl = document.getElementById('countdownClock');
+  const now = new Date();
+  const target = nextSaturdayEndUTC(now);
+  const diffMs = target - now;
+
+  if (diffMs <= 0){
+    clockEl.innerHTML = 'Competition ended';
+    return;
+  }
+
+  const totalSeconds = Math.floor(diffMs / 1000);
+  const days = Math.floor(totalSeconds / 86400);
+  const hours = Math.floor((totalSeconds % 86400) / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
+  const pad = (n) => String(n).padStart(2, '0');
+
+  clockEl.innerHTML =
+    `${days}<span class="unit-label">D</span>` +
+    `${pad(hours)}<span class="unit-label">H</span>` +
+    `${pad(minutes)}<span class="unit-label">M</span>` +
+    `${pad(seconds)}<span class="unit-label">S</span>`;
+}
+
+tickCountdown();
+setInterval(tickCountdown, 1000);
 
 // ------------------------------------------------------------------
 // Build a small SVG rank gauge. rank 1 = near-full arc, rank 10 = sliver.
