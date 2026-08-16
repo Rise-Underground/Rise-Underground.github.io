@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RISE Underground</title>
+<style>
+  @font-face {
+    font-family: 'Bebas';
+    src: local('Bebas Neue');
+  }
+
+  :root {
+    --black: #0a0908;
+    --black-deep: #050403;
+    --gold: #d9a441;
+    --gold-bright: #f2c057;
+    --red: #c81e1e;
+    --red-dim: #7a1414;
+    --off-white: #ede6d6;
+    --grey: #6b6459;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body {
+    height: 100%;
+    background: var(--black);
+    color: var(--off-white);
+    font-family: 'Oswald', 'Arial Narrow', sans-serif;
+    overflow-x: hidden;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: #000000;
+    position: relative;
+  }
+
+  /* faint scanline / vault texture */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image: repeating-linear-gradient(
+      0deg,
+      rgba(255,255,255,0.015),
+      rgba(255,255,255,0.015) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+    z-index: 1;
+  }
+
+  .stage {
+    width: 100%;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6vh 20px 4vh;
+    z-index: 2;
+  }
+
+  .logo-wrap {
+    position: relative;
+    width: min(88vw, 640px);
+    aspect-ratio: 854 / 480;
+  }
+
+  video#logo {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    mix-blend-mode: screen;
+  }
+
+  @keyframes glow-in {
+    to { opacity: 1; }
+  }
+
+  .tagline {
+    margin-top: 18px;
+    letter-spacing: 0.42em;
+    font-size: 11px;
+    color: var(--grey);
+    text-transform: uppercase;
+    opacity: 0;
+    transform: translateY(6px);
+    animation: rise-in 0.8s ease-out 2.6s forwards;
+  }
+
+  /* --- Menu reveal --- */
+  .menu {
+    margin-top: 48px;
+    width: 100%;
+    max-width: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    opacity: 0;
+    transform: translateY(14px);
+    animation: rise-in 0.9s cubic-bezier(.2,.8,.2,1) 3s forwards;
+  }
+
+  @keyframes rise-in {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .menu-divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--gold);
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .menu-divider::before,
+  .menu-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold-bright), transparent);
+    opacity: 0.5;
+  }
+
+  .menu-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 22px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(0,0,0,0.2));
+    border: 1px solid rgba(217,164,65,0.35);
+    color: var(--off-white);
+    text-decoration: none;
+    font-family: 'Oswald', 'Arial Narrow', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: border-color 0.25s ease, background 0.25s ease, padding-left 0.25s ease;
+  }
+
+  .menu-item:hover,
+  .menu-item:focus-visible {
+    border-color: var(--gold-bright);
+    background: linear-gradient(180deg, rgba(217,164,65,0.14), rgba(0,0,0,0.25));
+    padding-left: 28px;
+    outline: none;
+  }
+
+  .menu-item:hover .menu-arrow,
+  .menu-item:focus-visible .menu-arrow {
+    transform: translateX(4px);
+    color: var(--gold-bright);
+  }
+
+  .menu-item-label {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  .menu-index {
+    font-family: 'Oswald', monospace;
+    font-size: 12px;
+    color: var(--red);
+    letter-spacing: 0.1em;
+  }
+
+  .menu-arrow {
+    color: var(--grey);
+    font-size: 18px;
+    transition: transform 0.25s ease, color 0.25s ease;
+  }
+
+  footer {
+    margin-top: auto;
+    padding: 28px 20px 20px;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: var(--grey);
+    text-transform: uppercase;
+    z-index: 2;
+    opacity: 0;
+    animation: rise-in 0.8s ease-out 3.3s forwards;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .logo-wrap::after,
+    .tagline,
+    .menu,
+    footer {
+      animation: none !important;
+      opacity: 1 !important;
+      transform: none !important;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <div class="stage">
+    <div class="logo-wrap">
+      <video id="logo" autoplay muted playsinline>
+        <source src="assets/riseug_logo.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <p class="tagline">RISE Underground</p>
+
+    <nav class="menu" aria-label="Main menu">
+      <div class="menu-divider">Access</div>
+      <a class="menu-item" href="leaderboard.html">
+        <span class="menu-item-label">
+          <span class="menu-index">01</span>
+          Leader of the Leader Boards
+        </span>
+        <span class="menu-arrow">&rarr;</span>
+      </a>
+    </nav>
+  </div>
+
+  <footer>Infinity Rising &middot; COPI / RISE</footer>
+
+  <script>
+    // Freeze on the last frame once the intro animation finishes,
+    // rather than looping the video indefinitely.
+    const logo = document.getElementById('logo');
+    logo.addEventListener('ended', () => {
+      logo.currentTime = logo.duration;
+      logo.pause();
+    });
+  </script>
+
+</body>
+</html>
