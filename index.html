@@ -220,6 +220,41 @@
     z-index: 2;
     opacity: 0;
     animation: rise-in 0.8s ease-out 3.3s forwards;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 16px;
+  }
+
+  .social-link {
+    color: var(--grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(217,164,65,0.25);
+    border-radius: 50%;
+    transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+  }
+
+  .social-link:hover,
+  .social-link:focus-visible {
+    color: var(--gold-bright);
+    border-color: var(--gold-bright);
+    background: rgba(217,164,65,0.08);
+    outline: none;
+  }
+
+  .social-link svg {
+    width: 14px;
+    height: 14px;
+    fill: currentColor;
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -264,7 +299,13 @@
     </nav>
   </div>
 
-  <footer>Infinity Rising &middot; COPI / RISE</footer>
+  <footer>
+    <a class="social-link" href="https://x.com/RiseUGX" target="_blank" rel="noopener noreferrer" aria-label="RISE Underground on X">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+      </svg>
+    </a>
+  </footer>
 
   <script>
     // Freeze on the last frame once the intro animation finishes,

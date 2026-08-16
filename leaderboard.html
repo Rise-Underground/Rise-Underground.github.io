@@ -454,11 +454,38 @@
     border-top: 1px solid var(--hairline);
     display:flex;
     justify-content:space-between;
+    align-items:center;
     flex-wrap:wrap;
     gap:10px;
     font-family:'JetBrains Mono', monospace;
     font-size:11px;
     color: #565c66;
+  }
+
+  .social-link{
+    color: #565c66;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:26px;
+    height:26px;
+    border:1px solid var(--hairline);
+    border-radius:50%;
+    transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+  }
+
+  .social-link:hover,
+  .social-link:focus-visible{
+    color: var(--gold);
+    border-color: var(--gold);
+    background: rgba(212,165,55,0.08);
+    outline:none;
+  }
+
+  .social-link svg{
+    width:12px;
+    height:12px;
+    fill: currentColor;
   }
 
   @media (max-width: 560px){
@@ -520,6 +547,11 @@
 
   <footer>
     <span id="footerNote">No data loaded</span>
+    <a class="social-link" href="https://x.com/RiseUGX" target="_blank" rel="noopener noreferrer" aria-label="RISE Underground on X">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+      </svg>
+    </a>
     <span>RISE UNDERGROUND · RISEUGX</span>
   </footer>
 
