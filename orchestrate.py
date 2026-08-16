@@ -50,6 +50,16 @@ def run(cmd):
     return ok
 
 
+def reset_leaderboard_csvs():
+    """Wipes ir_leaderboard_placements.csv back to just its header the
+    moment a new competition window is detected — so the site shows a
+    cleared board immediately at start, instead of showing the previous
+    period's scores until the first 4-hour scrape overwrites them."""
+    print("New competition period — clearing leaderboard placements immediately...")
+    with open("ir_leaderboard_placements.csv", "w", newline="", encoding="utf-8") as f:
+        f.write("player,board,rank,points,raw_time\n")
+
+
 def main():
     now = datetime.now(timezone.utc)
     start, end = compute_competition_window(now)
@@ -70,6 +80,7 @@ def main():
     # --- Catalog discovery: once, right at/after competition start ---
     if state.get("catalog_done_for_start") != start_key:
         print("New competition window detected — running catalog discovery...")
+        reset_leaderboard_csvs()
         if run("python discover_catalog.py"):
             state["catalog_done_for_start"] = start_key
             state["last_scrape_slot_for_start"] = start_key
