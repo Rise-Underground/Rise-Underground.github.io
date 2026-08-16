@@ -75,8 +75,12 @@ from competition_window import compute_competition_window
 
 API_BASE = "https://gameapi.cornucopiasweb.io/players"
 
-# Where the results CSV gets written.
-OUTPUT_CSV_PATH = r"C:\Users\19782\Desktop\IR Leader board\repo\ir_leaderboard_placements.csv"
+# Where the results CSV gets written. Relative path — resolves to the
+# repo root both locally (if run from the repo folder) and on GitHub
+# Actions (whose working directory is the checked-out repo root). The
+# previous hardcoded Windows path (C:\Users\...) silently crashed this
+# script on the Linux runner before it ever wrote real data.
+OUTPUT_CSV_PATH = "ir_leaderboard_placements.csv"
 
 CALIDO_TRACKS = {
     "Calido Yellow": "calido_yellow",
@@ -327,7 +331,9 @@ def main():
     open_boards = [b for b, count in all_boards.items() if count == 0]
     print(f"\n{len(all_boards)} total boards tracked, {len(open_boards)} currently open (0 placements)")
 
-    os.makedirs(os.path.dirname(OUTPUT_CSV_PATH), exist_ok=True)
+    output_dir = os.path.dirname(OUTPUT_CSV_PATH)
+    if output_dir:
+        os.makedirs(output_dir, exist_ok=True)
     with open(OUTPUT_CSV_PATH, "w", newline="", encoding="utf-8") as f:
         f.write("player,board,rank,points,raw_time\n")
         for name, board, rank, points, raw_time in placements:
