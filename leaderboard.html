@@ -152,6 +152,33 @@
     border-radius: var(--radius);
     letter-spacing:0.04em;
   }
+  .header-right{
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+  .home-link{
+    font-family:'Rajdhani', sans-serif;
+    font-weight:600;
+    font-size:13px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color: var(--paper);
+    text-decoration:none;
+    border:1px solid var(--hairline);
+    padding:6px 12px;
+    border-radius: var(--radius);
+    transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+  }
+  .home-link:hover,
+  .home-link:focus-visible{
+    color: var(--gold);
+    border-color: var(--gold);
+    background: rgba(212,165,55,0.08);
+  }
 
   /* ---------- hero ---------- */
   .hero{ padding: 56px 0 40px; position:relative; overflow:hidden; }
@@ -465,7 +492,10 @@
       <div class="brand-fallback" id="brandFallback" style="display:none;">Rise Underground</div>
       <div class="tagline">Operating in the shadows</div>
     </div>
-    <div class="season-tag" id="seasonTag">MONTH · —</div>
+    <div class="header-right">
+      <a class="home-link" href="index.html">&larr; Main Menu</a>
+      <div class="season-tag" id="seasonTag">MONTH · —</div>
+    </div>
   </header>
 
   <section class="hero">
