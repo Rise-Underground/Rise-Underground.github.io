@@ -517,14 +517,6 @@
     text-align:center;
     line-height:1.25;
   }
-  .gauge .board-time{
-    font-family:'JetBrains Mono', monospace;
-    font-size:9.5px;
-    letter-spacing:0.02em;
-    color: var(--steel);
-    opacity:0.65;
-    text-align:center;
-  }
 
   footer{
     margin-top: 40px;
@@ -658,7 +650,7 @@ function buildStandings(placements){
     if (!byPlayer.has(p.player)) byPlayer.set(p.player, { name: p.player, points: 0, placements: [] });
     const entry = byPlayer.get(p.player);
     entry.points += p.points;
-    entry.placements.push({ board: p.board, rank: p.rank, timestamp: p.timestamp });
+    entry.placements.push({ board: p.board, rank: p.rank });
   }
   const standings = Array.from(byPlayer.values());
   standings.forEach(s => s.placements.sort((a, b) => a.rank - b.rank));
@@ -781,20 +773,6 @@ function gaugeSVG(rank){
     </svg>`;
 }
 
-// ------------------------------------------------------------------
-// Compact date/time for when a top-10 placement happened.
-// Falls back to '' when no timestamp is present (e.g. older rows).
-// ------------------------------------------------------------------
-const placementTimeFmt = new Intl.DateTimeFormat('en-US', {
-  month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit',
-});
-function formatPlacementTime(iso){
-  if (!iso) return '';
-  const d = new Date(iso);
-  if (isNaN(d.getTime())) return '';
-  return placementTimeFmt.format(d);
-}
-
 const list = document.getElementById('standings');
 const drawer = document.getElementById('boardDrawer');
 const drawerBackdrop = document.getElementById('drawerBackdrop');
@@ -816,10 +794,9 @@ function openDrawer(racer, rank, rowEl){
   drawerPoints.textContent = `${racer.points} PTS TOTAL`;
   const n = racer.placements.length;
   drawerSubhead.textContent = `${n} board${n === 1 ? '' : 's'}`;
-  drawerGauges.innerHTML = racer.placements.map(p => {
-    const when = formatPlacementTime(p.timestamp);
-    return `<div class="gauge">${gaugeSVG(p.rank)}<div class="board-name">${p.board}</div>${when ? `<div class="board-time">${when}</div>` : ''}</div>`;
-  }).join('');
+  drawerGauges.innerHTML = racer.placements.map(p =>
+    `<div class="gauge">${gaugeSVG(p.rank)}<div class="board-name">${p.board}</div></div>`
+  ).join('');
 
   drawer.classList.add('open');
   drawer.setAttribute('aria-hidden', 'false');
@@ -1053,10 +1030,8 @@ function renderOpportunities(placements, boards){
 
 // ------------------------------------------------------------------
 // CSV parsing for the long-format placements file:
-// player,board,rank,points,raw_time,timestamp (one row per placement;
-// a player can have several rows). raw_time and timestamp are both
-// optional — timestamp should be an ISO 8601 string (e.g.
-// 2026-08-16T14:32:00Z) marking when that top-10 finish happened.
+// player,board,rank,points (one row per placement; a player can have
+// several rows)
 // ------------------------------------------------------------------
 function parseCSV(text){
   const rows = [];
@@ -1091,7 +1066,6 @@ function csvToPlacements(text){
   const iRank = idx('rank');
   const iPoints = idx('points');
   const iRawTime = idx('raw_time');
-  const iTimestamp = idx('timestamp');
 
   return rows.slice(1).map(r => ({
     player: r[iPlayer],
@@ -1099,7 +1073,6 @@ function csvToPlacements(text){
     rank: parseInt(r[iRank], 10),
     points: parseInt(r[iPoints], 10) || 0,
     rawTime: iRawTime >= 0 && r[iRawTime] !== '' ? parseFloat(r[iRawTime]) : null,
-    timestamp: iTimestamp >= 0 && r[iTimestamp] !== '' ? r[iTimestamp] : null,
   }));
 }
 
