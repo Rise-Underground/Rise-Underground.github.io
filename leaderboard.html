@@ -277,6 +277,76 @@
     margin:0;
   }
 
+  .search-wrap{ position:relative; width: 220px; max-width: 46vw; }
+  .search-wrap input{
+    width:100%;
+    background: var(--panel);
+    border: 1px solid var(--hairline);
+    border-radius: var(--radius);
+    color: var(--paper);
+    font-family:'JetBrains Mono', monospace;
+    font-size:12.5px;
+    padding: 8px 10px;
+    outline:none;
+    transition: border-color 0.15s ease;
+  }
+  .search-wrap input::placeholder{ color: var(--steel); }
+  .search-wrap input:focus{ border-color: var(--gold); }
+
+  .search-results{
+    position:absolute;
+    top: calc(100% + 6px);
+    right:0;
+    width: 260px;
+    max-width: 70vw;
+    max-height: 260px;
+    overflow-y:auto;
+    background: linear-gradient(180deg, var(--asphalt-2), var(--panel));
+    border: 1px solid var(--hairline);
+    border-radius: var(--radius);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.45);
+    display:none;
+    z-index:35;
+  }
+  .search-results.open{ display:block; }
+
+  .search-row{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding: 9px 12px;
+    border-top: 1px solid var(--hairline);
+  }
+  .search-row:first-child{ border-top:none; }
+  .search-rank{
+    font-family:'JetBrains Mono', monospace;
+    font-size:11px;
+    color: var(--steel);
+    min-width: 26px;
+  }
+  .search-name{
+    font-family:'Rajdhani', sans-serif;
+    font-weight:600;
+    font-size:14px;
+    flex:1;
+  }
+  .search-pts{
+    font-family:'JetBrains Mono', monospace;
+    font-size:11px;
+    color: var(--gold);
+  }
+  .search-empty{
+    padding: 12px;
+    font-family:'JetBrains Mono', monospace;
+    font-size:11.5px;
+    color: var(--steel);
+  }
+
+  @media (max-width: 560px){
+    .board-head{ flex-wrap:wrap; }
+    .search-wrap{ width:100%; max-width:100%; }
+  }
+
   .standings{
     border: 1px solid var(--hairline);
     border-radius: var(--radius);
@@ -447,6 +517,14 @@
     text-align:center;
     line-height:1.25;
   }
+  .gauge .board-time{
+    font-family:'JetBrains Mono', monospace;
+    font-size:9.5px;
+    letter-spacing:0.02em;
+    color: var(--steel);
+    opacity:0.65;
+    text-align:center;
+  }
 
   footer{
     margin-top: 40px;
@@ -541,6 +619,10 @@
 
   <div class="board-head">
     <h2>Top 10</h2>
+    <div class="search-wrap">
+      <input type="text" id="playerSearch" placeholder="Find a racer…" autocomplete="off" aria-label="Search racers by name">
+      <div class="search-results" id="searchResults"></div>
+    </div>
   </div>
 
   <div class="standings" id="standings" role="list"></div>
@@ -576,12 +658,12 @@ function buildStandings(placements){
     if (!byPlayer.has(p.player)) byPlayer.set(p.player, { name: p.player, points: 0, placements: [] });
     const entry = byPlayer.get(p.player);
     entry.points += p.points;
-    entry.placements.push({ board: p.board, rank: p.rank });
+    entry.placements.push({ board: p.board, rank: p.rank, timestamp: p.timestamp });
   }
   const standings = Array.from(byPlayer.values());
   standings.forEach(s => s.placements.sort((a, b) => a.rank - b.rank));
   standings.sort((a, b) => b.points - a.points);
-  return standings.slice(0, 10);
+  return standings; // full field, not just top 10 — callers slice as needed
 }
 
 // ------------------------------------------------------------------
@@ -699,6 +781,20 @@ function gaugeSVG(rank){
     </svg>`;
 }
 
+// ------------------------------------------------------------------
+// Compact date/time for when a top-10 placement happened.
+// Falls back to '' when no timestamp is present (e.g. older rows).
+// ------------------------------------------------------------------
+const placementTimeFmt = new Intl.DateTimeFormat('en-US', {
+  month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit',
+});
+function formatPlacementTime(iso){
+  if (!iso) return '';
+  const d = new Date(iso);
+  if (isNaN(d.getTime())) return '';
+  return placementTimeFmt.format(d);
+}
+
 const list = document.getElementById('standings');
 const drawer = document.getElementById('boardDrawer');
 const drawerBackdrop = document.getElementById('drawerBackdrop');
@@ -720,9 +816,10 @@ function openDrawer(racer, rank, rowEl){
   drawerPoints.textContent = `${racer.points} PTS TOTAL`;
   const n = racer.placements.length;
   drawerSubhead.textContent = `${n} board${n === 1 ? '' : 's'}`;
-  drawerGauges.innerHTML = racer.placements.map(p =>
-    `<div class="gauge">${gaugeSVG(p.rank)}<div class="board-name">${p.board}</div></div>`
-  ).join('');
+  drawerGauges.innerHTML = racer.placements.map(p => {
+    const when = formatPlacementTime(p.timestamp);
+    return `<div class="gauge">${gaugeSVG(p.rank)}<div class="board-name">${p.board}</div>${when ? `<div class="board-time">${when}</div>` : ''}</div>`;
+  }).join('');
 
   drawer.classList.add('open');
   drawer.setAttribute('aria-hidden', 'false');
@@ -776,6 +873,55 @@ function renderEmptyState(message){
 }
 
 const footerNote = document.getElementById('footerNote');
+let fullStandings = []; // every player, sorted by points — not just the visible top 10
+
+// ------------------------------------------------------------------
+// Racer search — looks up anyone by name, including players who
+// haven't cracked the top 10, and shows their rank + point total.
+// ------------------------------------------------------------------
+function escapeHtml(str){
+  return String(str).replace(/[&<>"']/g, c => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
+  }[c]));
+}
+
+const searchInput = document.getElementById('playerSearch');
+const searchResults = document.getElementById('searchResults');
+
+function renderSearchResults(query){
+  const q = query.trim().toLowerCase();
+  if (!q){
+    searchResults.classList.remove('open');
+    searchResults.innerHTML = '';
+    return;
+  }
+
+  const matches = fullStandings
+    .map((s, i) => ({ ...s, rank: i + 1 }))
+    .filter(s => s.name.toLowerCase().includes(q))
+    .slice(0, 8);
+
+  if (!matches.length){
+    searchResults.innerHTML = `<div class="search-empty">No racer matches "${escapeHtml(query)}"</div>`;
+    searchResults.classList.add('open');
+    return;
+  }
+
+  searchResults.innerHTML = matches.map(m => `
+    <div class="search-row">
+      <span class="search-rank">#${m.rank}</span>
+      <span class="search-name">${escapeHtml(m.name)}</span>
+      <span class="search-pts">${m.points} PTS</span>
+    </div>
+  `).join('');
+  searchResults.classList.add('open');
+}
+
+searchInput.addEventListener('input', (e) => renderSearchResults(e.target.value));
+searchInput.addEventListener('focus', (e) => { if (e.target.value) renderSearchResults(e.target.value); });
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.search-wrap')) searchResults.classList.remove('open');
+});
 
 renderEmptyState('No standings loaded.');
 
@@ -791,7 +937,8 @@ if (location.protocol !== 'file:'){
   ])
     .then(([placementsText, boardsText]) => {
       const placements = csvToPlacements(placementsText);
-      renderStandings(buildStandings(placements));
+      fullStandings = buildStandings(placements);
+      renderStandings(fullStandings.slice(0, 10));
       footerNote.textContent = 'Live data — ir_leaderboard_placements.csv';
 
       const boards = boardsText ? csvToBoards(boardsText) : null;
@@ -906,8 +1053,10 @@ function renderOpportunities(placements, boards){
 
 // ------------------------------------------------------------------
 // CSV parsing for the long-format placements file:
-// player,board,rank,points (one row per placement; a player can have
-// several rows)
+// player,board,rank,points,raw_time,timestamp (one row per placement;
+// a player can have several rows). raw_time and timestamp are both
+// optional — timestamp should be an ISO 8601 string (e.g.
+// 2026-08-16T14:32:00Z) marking when that top-10 finish happened.
 // ------------------------------------------------------------------
 function parseCSV(text){
   const rows = [];
@@ -942,6 +1091,7 @@ function csvToPlacements(text){
   const iRank = idx('rank');
   const iPoints = idx('points');
   const iRawTime = idx('raw_time');
+  const iTimestamp = idx('timestamp');
 
   return rows.slice(1).map(r => ({
     player: r[iPlayer],
@@ -949,6 +1099,7 @@ function csvToPlacements(text){
     rank: parseInt(r[iRank], 10),
     points: parseInt(r[iPoints], 10) || 0,
     rawTime: iRawTime >= 0 && r[iRawTime] !== '' ? parseFloat(r[iRawTime]) : null,
+    timestamp: iTimestamp >= 0 && r[iTimestamp] !== '' ? r[iTimestamp] : null,
   }));
 }
 
