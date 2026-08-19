@@ -500,6 +500,18 @@
     flex-direction:column;
     align-items:center;
     gap:8px;
+    text-decoration:none;
+    color:inherit;
+    cursor:pointer;
+    border-radius: var(--radius);
+    transition: transform 0.15s ease, opacity 0.15s ease;
+  }
+  .gauge:hover, .gauge:focus-visible{
+    transform: translateY(-2px);
+    outline:none;
+  }
+  .gauge:hover .board-name, .gauge:focus-visible .board-name{
+    color: var(--gold);
   }
   .gauge svg{ display:block; width:88px; height:88px; }
   .gauge .rank-num{
@@ -516,6 +528,7 @@
     color: var(--steel);
     text-align:center;
     line-height:1.25;
+    transition: color 0.15s ease;
   }
 
   footer{
@@ -773,6 +786,29 @@ function gaugeSVG(rank){
     </svg>`;
 }
 
+// ------------------------------------------------------------------
+// Deep link out to the matching leaderboard tab on infinityrising.com,
+// scoped to the Weekly timeframe. Confirmed real URL pattern (tested
+// on Aero Trails: infinityrising.com/leaderboards/aero-trails?timeframe=Weekly).
+// Address bar doesn't change per Course/Track/Vehicle filter — those
+// are client-side only — so this links to the right CATEGORY page at
+// the Weekly view, not the exact filtered board. Good enough to get
+// someone to the right tab already set to Weekly; they still pick the
+// specific course/track/vehicle filter themselves.
+// ------------------------------------------------------------------
+function boardUrl(boardName){
+  if (boardName.startsWith('Aero Trails')){
+    return 'https://infinityrising.com/leaderboards/aero-trails?timeframe=Weekly';
+  }
+  if (boardName.startsWith('Calido')){
+    return 'https://infinityrising.com/leaderboards/calido-valley-raceway?timeframe=Weekly';
+  }
+  if (boardName === 'Holocache'){
+    return 'https://infinityrising.com/leaderboards/holocache?timeframe=Weekly';
+  }
+  return null; // unrecognized board name — no link rather than a guess
+}
+
 const list = document.getElementById('standings');
 const drawer = document.getElementById('boardDrawer');
 const drawerBackdrop = document.getElementById('drawerBackdrop');
@@ -794,9 +830,12 @@ function openDrawer(racer, rank, rowEl){
   drawerPoints.textContent = `${racer.points} PTS TOTAL`;
   const n = racer.placements.length;
   drawerSubhead.textContent = `${n} board${n === 1 ? '' : 's'}`;
-  drawerGauges.innerHTML = racer.placements.map(p =>
-    `<div class="gauge">${gaugeSVG(p.rank)}<div class="board-name">${p.board}</div></div>`
-  ).join('');
+  drawerGauges.innerHTML = racer.placements.map(p => {
+    const href = boardUrl(p.board);
+    const tag = href ? 'a' : 'div';
+    const linkAttrs = href ? `href="${href}" target="_blank" rel="noopener noreferrer" aria-label="Open ${p.board} leaderboard"` : '';
+    return `<${tag} class="gauge" ${linkAttrs}>${gaugeSVG(p.rank)}<div class="board-name">${p.board}</div></${tag}>`;
+  }).join('');
 
   drawer.classList.add('open');
   drawer.setAttribute('aria-hidden', 'false');
