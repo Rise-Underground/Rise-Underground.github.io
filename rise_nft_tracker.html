@@ -292,9 +292,25 @@ function renderTopMintsHeader(items){
     </div>`;
 }
 
-function ipfsToHttp(url){
-  if (url && url.startsWith('ipfs://')) return 'https://ipfs.io/ipfs/' + url.slice('ipfs://'.length);
-  return url;
+// ipfs.io alone is best-effort with no SLA and known to rate-limit or block
+// hotlinked <img> requests -- try a few public gateways in order and fall
+// back automatically if one fails, instead of giving up after one try.
+const IPFS_GATEWAYS = [
+  'https://ipfs.io/ipfs/',
+  'https://dweb.link/ipfs/',
+  'https://nftstorage.link/ipfs/',
+  'https://cloudflare-ipfs.com/ipfs/',
+];
+
+function ipfsCid(url){
+  if (url && url.startsWith('ipfs://')) return url.slice('ipfs://'.length);
+  return null;
+}
+
+function ipfsToHttp(url, gatewayIndex){
+  const cid = ipfsCid(url);
+  if (!cid) return url; // not an ipfs:// URL -- use as-is
+  return IPFS_GATEWAYS[gatewayIndex] + cid;
 }
 
 function renderNftCard(item){
@@ -314,9 +330,19 @@ function renderNftCard(item){
   const imgEl = document.getElementById(`img-${key}`);
   const imgEmptyEl = document.getElementById(`imgEmpty-${key}`);
   if (item.image){
-    imgEl.onerror = () => { imgEl.style.display = 'none'; imgEmptyEl.style.display = 'flex'; };
+    const cid = ipfsCid(item.image);
+    let gatewayIndex = 0;
     imgEl.onload = () => { imgEl.style.display = ''; imgEmptyEl.style.display = 'none'; };
-    imgEl.src = ipfsToHttp(item.image);
+    imgEl.onerror = () => {
+      if (cid && gatewayIndex < IPFS_GATEWAYS.length - 1){
+        gatewayIndex++;
+        imgEl.src = ipfsToHttp(item.image, gatewayIndex);
+      } else {
+        imgEl.style.display = 'none';
+        imgEmptyEl.style.display = 'flex';
+      }
+    };
+    imgEl.src = ipfsToHttp(item.image, gatewayIndex);
   } else {
     imgEl.style.display = 'none';
     imgEmptyEl.style.display = 'flex';
