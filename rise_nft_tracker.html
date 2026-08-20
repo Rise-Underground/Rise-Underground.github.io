@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RISE // NFT Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<style>
+  :root{
+    --bg:#0A0C0D;
+    --panel:#12161A;
+    --panel-2:#181D22;
+    --line:#232A30;
+    --text:#E7E5E0;
+    --dim:#7B858D;
+    --dimmer:#4B535A;
+    --buy:#35D07F;
+    --sell:#FF5F5A;
+    --amber:#FFB454;
+    --font-mono:'IBM Plex Mono', ui-monospace, monospace;
+    --font-body:'Inter', system-ui, sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:var(--font-body);}
+  ::selection{background:var(--amber);color:#0A0C0D;}
+
+  /* ---------- header ---------- */
+  header{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:22px 32px;border-bottom:1px solid var(--line);
+    position:sticky;top:0;background:rgba(10,12,13,0.92);backdrop-filter:blur(8px);
+    z-index:20;
+  }
+  .brand{display:flex;align-items:baseline;gap:12px;}
+  .brand .mark{
+    font-family:var(--font-mono);font-weight:700;font-size:20px;letter-spacing:0.5px;
+    color:var(--text);
+  }
+  .brand .mark span{color:var(--amber);}
+  .brand .sub{font-family:var(--font-mono);font-size:11px;color:var(--dim);letter-spacing:1.5px;text-transform:uppercase;}
+  .nft-page-title{
+    font-family:var(--font-mono);font-weight:700;font-size:22px;letter-spacing:0.5px;
+    color:var(--text);text-align:center;margin:4px 0 28px;
+  }
+
+  .panel-head{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;border-bottom:1px solid var(--line);}
+  .panel-head h2{font-family:var(--font-mono);font-size:13px;font-weight:600;letter-spacing:0.5px;margin:0;text-transform:uppercase;color:var(--text);}
+
+  .empty-state{
+    padding:60px 20px;text-align:center;font-family:var(--font-mono);color:var(--dim);
+  }
+  .empty-state .big{font-size:15px;color:var(--text);margin-bottom:8px;}
+  .empty-state .small{font-size:12px;line-height:1.6;color:var(--dimmer);}
+  .empty-state code{background:var(--panel-2);padding:2px 6px;border-radius:4px;color:var(--amber);}
+
+  footer{padding:24px 32px 40px;text-align:center;font-family:var(--font-mono);font-size:11px;color:var(--dimmer);}
+
+  /* ---------- NFT tracker page ---------- */
+  .nft-page{padding:28px 32px 60px;max-width:1400px;margin:0 auto;}
+  .nft-top-row{display:grid;grid-template-columns:340px 340px 340px 340px;gap:24px;margin-bottom:28px;justify-content:center;}
+  @media (max-width:1500px){.nft-top-row{grid-template-columns:1fr;justify-content:stretch;}}
+  .nft-progress-note{
+    font-family:var(--font-mono);font-size:11.5px;color:var(--dimmer);text-align:center;margin:-16px 0 28px;
+  }
+  .nft-card-block{margin-bottom:44px;}
+  .nft-card-title-row{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:4px;}
+  .nft-card-title{
+    font-family:var(--font-mono);font-weight:700;font-size:16px;letter-spacing:0.4px;
+    color:var(--text);text-align:center;
+  }
+  .mint-now-btn{
+    font-family:var(--font-mono);font-weight:700;font-size:11.5px;letter-spacing:0.4px;
+    color:#08130c;background:#3ECF6E;padding:4px 12px;border-radius:6px;text-decoration:none;
+    white-space:nowrap;box-shadow:0 0 10px rgba(62,207,110,0.35);
+  }
+  .mint-now-btn:hover{background:#57DB80;}
+  .nft-card-mint-time{
+    font-family:var(--font-mono);font-size:10.5px;color:var(--dimmer);text-align:center;margin-bottom:16px;
+  }
+  .meter-panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;height:100%;}
+  .meter-panel .panel-head h2{font-family:var(--font-mono);font-size:13px;font-weight:600;letter-spacing:0.5px;margin:0;text-transform:uppercase;color:var(--text);}
+  .meter-panel-head{justify-content:center;}
+  .meter-body{padding:14px 18px 18px;display:flex;flex-direction:column;align-items:center;flex:1;justify-content:center;}
+  .image-panel .meter-body{padding:18px;height:100%;justify-content:center;}
+  .meter-rarity-img-large{width:100%;max-width:280px;aspect-ratio:1/1;object-fit:cover;border-radius:8px;border:1px solid var(--line);background:var(--panel-2);}
+  .odds-breakdown-body{align-items:stretch;padding:0;}
+  .odds-breakdown-body .nft-stat-col{padding:16px 20px;}
+  .odds-breakdown-body .nft-stat-col + .nft-stat-col{border-top:1px solid var(--line);}
+  .top-mints-panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:28px;}
+  .top-mints-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);}
+  @media (max-width:900px){.top-mints-row{grid-template-columns:1fr;}}
+  .top-mint-item{background:var(--panel);padding:16px 20px;display:flex;flex-direction:column;gap:4px;}
+  .top-mint-rank{font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--dim);}
+  .top-mint-name{font-family:var(--font-mono);font-size:13px;color:var(--text);font-weight:600;}
+  .top-mint-chain{font-family:var(--font-mono);font-size:11px;color:var(--dimmer);}
+  .top-mint-pct{font-family:var(--font-mono);font-size:20px;font-weight:700;color:#F4C430;text-shadow:0 0 8px rgba(244,196,48,0.5);}
+  .meter-rarity-img-empty{
+    width:100%;max-width:280px;aspect-ratio:1/1;border-radius:8px;border:1px dashed var(--line);
+    display:flex;align-items:center;justify-content:center;text-align:center;padding:16px;
+    font-family:var(--font-mono);font-size:11px;color:var(--dimmer);
+  }
+  .meter-nft-name{font-family:var(--font-mono);font-size:13px;font-weight:600;color:var(--text);text-align:center;margin-bottom:10px;letter-spacing:0.3px;}
+  .meter-chain-label{font-family:var(--font-mono);font-size:12px;font-weight:600;letter-spacing:1px;}
+  .meter-chain-label.left{color:var(--sell);}
+  .meter-chain-label.right{color:#7B9EFF;}
+  .meter-verdict{font-family:var(--font-mono);font-size:13px;color:var(--text);margin-top:6px;text-align:center;}
+  .meter-verdict .chainname{font-weight:700;}
+  .meter-verdict .chainname.ada{color:var(--sell);}
+  .meter-verdict .chainname.base{color:#7B9EFF;}
+  .meter-sub{font-family:var(--font-mono);font-size:17px;color:var(--text);margin-top:16px;text-align:center;}
+  .nft-stat-grid{display:grid;grid-template-columns:1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;}
+  .nft-stat-col{background:var(--panel);padding:18px 20px;}
+  .nft-stat-col h3{font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;margin:0 0 12px;color:var(--dim);}
+  .nft-stat-row{display:flex;justify-content:space-between;font-family:var(--font-mono);font-size:12px;padding:4px 0;border-bottom:1px solid var(--line);}
+  .nft-stat-row:last-child{border-bottom:none;}
+  .nft-stat-row .tier{color:var(--dim);}
+  .nft-stat-row .val{color:var(--text);}
+  .nft-stat-row .exp{color:var(--dimmer);font-size:10.5px;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <span class="mark">RISE<span>//</span>NFT</span>
+    <span class="sub">Mint Favorability Tracker</span>
+  </div>
+</header>
+
+<div class="nft-page" id="nftPage">
+  <div class="nft-page-title">Mint Favorability Meter</div>
+  <div class="nft-progress-note" id="nftProgressNote"></div>
+  <div class="top-mints-panel" id="nftTopMintsHeader"></div>
+  <div id="nftCardsContainer"></div>
+  <div class="empty-state" id="nftEmptyState">
+    <div class="big">No collection data yet</div>
+    <div class="small">Run <code>python export_nft_json.py</code> to generate <code>NFT_Data/nft_data.json</code> from <code>NFT_Ledger.db</code> &mdash; cards populate automatically once it's present, sorted by most recent mint.</div>
+  </div>
+</div>
+
+<footer>RISE // 0xf25620f89d0e23a8ba7b11ab3235b66268794196 &nbsp;·&nbsp; Base &amp; Cardano &nbsp;·&nbsp; local data, not financial advice</footer>
+
+<script>
+const FILES = {
+  nftData: 'NFT_Data/nft_data.json',
+  mintStatus: 'NFT_Data/nft_mint_status.csv',
+};
+
+// Same underscore-slug convention export_nft_json.py uses as the JSON's
+// holdings key: lowercase, any run of non-alphanumeric characters -> "_",
+// edges stripped.
+function slugify(name){
+  return String(name).toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
+}
+
+// Populated at runtime from nft_data.json's "catalog" array (variant/multi-
+// rarity rows only -- static single-rarity items aren't meaningful for the
+// mint-favorability meter), then filtered down to only currently-open mints
+// using nft_mint_status.csv. See loadCatalogAndAssets() / loadOpenMintKeys().
+let NFT_ASSETS = [];
+// Populated at runtime from nft_data.json's "holdings" object, keyed by the
+// same slug as NFT_ASSETS[].key. See loadCatalogAndAssets().
+let NFT_HOLDINGS = {};
+
+// FALLBACK odds only -- used if an item's real odds can't be found in
+// nft_data.json's catalog for some reason. Real per-item odds are loaded
+// into ITEM_ODDS from the catalog's own "rarities" column (e.g. Atmos
+// Juggernaut 2024's real odds are 43.16%/27.37%/18.95%/9.47%/1.05%,
+// NOT this generic 45/27/18/9/1 split -- using one hardcoded number
+// for every item was inaccurate for anything whose real odds differ).
+const RARITY_ODDS_FALLBACK = { Common:0.45, Uncommon:0.27, Rare:0.18, Legendary:0.09, Mythic:0.01 };
+let ITEM_ODDS = {}; // populated from nft_data.json's catalog, keyed by item name
+
+// "Pull satisfaction" weighting, not scarcity value: Rare is the
+// break-even point (neither a win nor a disappointment). Common/Uncommon
+// sit below zero (a letdown), Legendary/Mythic sit above zero (a win) --
+// and the jump from Rare to Mythic is bigger than the jump from Common
+// to Rare, since landing a Mythic feels like a much bigger win than
+// landing a Legendary, not just "one more step up."
+const RARITY_WEIGHT = { Common:0.33, Uncommon:0.75, Rare:1.5, Legendary:3, Mythic:10 };
+
+function expectedAvgFor(odds){
+  return Object.keys(RARITY_WEIGHT).reduce((sum,k)=> sum + (odds[k] || 0)*RARITY_WEIGHT[k], 0);
+}
+
+function oddsForItem(itemName){
+  return ITEM_ODDS[itemName] || RARITY_ODDS_FALLBACK;
+}
+
+function parseRaritiesString(str){
+  // Catalog format: "Legendary=0.09; Uncommon=0.27; Rare=0.18; Mythic=0.01; Common=0.45"
+  // BUT some items store these as whole percentages instead of fractions
+  // (e.g. "Common=45; Uncommon=27; Rare=18; Legendary=9; Mythic=1" for
+  // Jett Industries Aeron AI Drone Companion) -- confirmed by a live
+  // bug: treating Legendary=9 as a literal 9.0 instead of 0.09 produced
+  // a "1000.0%" deck-odds display and exp values like 90 for 2 tokens.
+  // Normalize by sum: if values sum to ~100, they're percentages and
+  // need dividing by 100; if they sum to ~1, they're already fractions.
+  const odds = {};
+  if (!str) return odds;
+  String(str).split(';').forEach(part => {
+    const [tier, val] = part.split('=').map(s => s && s.trim());
+    if (tier && val !== undefined && !isNaN(parseFloat(val))){
+      odds[tier] = parseFloat(val);
+    }
+  });
+  const sum = Object.values(odds).reduce((a,b)=>a+b, 0);
+  if (sum > 1.5){ // clearly percentages (0-1 fractions can't sum above ~1)
+    Object.keys(odds).forEach(k => odds[k] = odds[k] / 100);
+  }
+  return odds;
+}
+
+async function loadNftJson(){
+  try {
+    const res = await fetch(FILES.nftData);
+    if (!res.ok) return null;
+    return await res.json();
+  } catch (e) {
+    return null;
+  }
+}
+
+async function loadCatalogAndAssets(){
+  const data = await loadNftJson();
+  if (!data || !Array.isArray(data.catalog)) return;
+  const oddsMap = {};
+  const assets = [];
+  data.catalog.forEach(r => {
+    if (!r.name) return;
+    const name = String(r.name).trim();
+    if (r.rarities){
+      oddsMap[name] = parseRaritiesString(r.rarities);
+    }
+    // Only variant (multi-rarity) rows are meaningful for the mint-
+    // favorability meter -- static single-rarity items are excluded,
+    // same as the previous hardcoded list did.
+    if (String(r.group).trim().toLowerCase() === 'variant'){
+      assets.push({ key: slugify(name), name });
+    }
+  });
+  ITEM_ODDS = oddsMap;
+  NFT_ASSETS = assets;
+  NFT_HOLDINGS = (data.holdings && typeof data.holdings === 'object') ? data.holdings : {};
+}
+
+// Appended to each item's own store URL for the "Mint Now" button so
+// affiliate credit is tracked -- confirmed to work on a per-item store
+
+async function loadOpenMintKeys(){
+  const rows = await loadCSV(FILES.mintStatus);
+  const openKeys = new Set();
+  if (!rows) return openKeys; // file missing -- caller falls back to showing everything
+  rows.forEach(r => {
+    const isOpen = r.open === true || String(r.open).trim().toLowerCase() === 'true';
+    if (r.key && r.url) ITEM_URLS[String(r.key).trim()] = String(r.url).trim();
+    if (isOpen && r.key) openKeys.add(String(r.key).trim());
+  });
+  return openKeys;
+}
+
+
+function loadCSV(path){
+  return new Promise((resolve) => {
+    Papa.parse(path, {
+      download: true, header: true, dynamicTyping: true, skipEmptyLines: true,
+      complete: (res) => resolve(res.data || []),
+      error: () => resolve(null),
+    });
+  });
+}
+
+async function init(){
+  await loadCatalogAndAssets();
+  const openKeys = await loadOpenMintKeys();
+  if (openKeys.size > 0){
+    NFT_ASSETS = NFT_ASSETS.filter(a => openKeys.has(a.key));
+  } // else: nft_mint_status.csv missing/empty -- show everything rather than an empty page
+  loadNftData();
+}
+
+
+function loadNftData(){
+  const results = NFT_ASSETS.map(asset => {
+    const entry = NFT_HOLDINGS[asset.key];
+    const cRows = (entry && Array.isArray(entry.cardano)) ? entry.cardano : [];
+    const bRows = (entry && Array.isArray(entry.base)) ? entry.base : [];
+    if (cRows.length === 0 && bRows.length === 0) return null; // neither chain has data yet -- skip silently
+    const combined = [...bRows, ...cRows];
+    return { asset, combined, baseRows: bRows, cardanoRows: cRows };
+  });
+  const loaded = results.filter(Boolean);
+
+  const note = document.getElementById('nftProgressNote');
+  note.textContent = `${loaded.length} of ${NFT_ASSETS.length} collections loaded`;
+
+  if (loaded.length === 0){
+    document.getElementById('nftEmptyState').style.display = '';
+    document.getElementById('nftCardsContainer').innerHTML = '';
+    return;
+  }
+  document.getElementById('nftEmptyState').style.display = 'none';
+
+  const cards = loaded.map(({ asset, combined, baseRows, cardanoRows }) => {
+    let latestMintTime = '';
+    let latestMintTimestamp = -Infinity;
+    for (const r of combined) {
+      if (!r.mint_time) continue;
+      const t = String(r.mint_time).trim();
+      if (!t) continue;
+      const ts = new Date(t).getTime();
+      if (isNaN(ts)) continue; // unparseable -- don't let it win against a real date
+      if (ts > latestMintTimestamp) {
+        latestMintTimestamp = ts;
+        latestMintTime = t;
+      }
+    }
+    return { asset, combined, baseRows, cardanoRows, latestMintTime, latestMintTimestamp };
+  });
+
+  // Most recent mint first, by actual parsed date -- not raw string
+  // comparison. Base's mint_time (ISO 8601, e.g. "2026-06-16T22:14:07Z")
+  // and Cardano's mint_time can differ in exact format, so comparing them
+  // as plain text can rank a genuinely older item above a newer one.
+  // Assets with no resolvable mint_time sort last (latestMintTimestamp
+  // stays -Infinity).
+  cards.sort((a, b) => b.latestMintTimestamp - a.latestMintTimestamp);
+
+  renderTopMintsHeader(cards);
+
+  const container = document.getElementById('nftCardsContainer');
+  container.innerHTML = cards.map(c => cardHtml(c.asset.key)).join('');
+
+  cards.forEach(c => renderNftCard(c));
+}
+
+function cardHtml(key){
+  return `
+  <div class="nft-card-block">
+    <div class="nft-card-title-row">
+      <span class="nft-card-title" id="title-${key}">Loading&hellip;</span>
+      <a class="mint-now-btn" id="mintnow-${key}" href="#" target="_blank" rel="noopener" style="display:none;">Mint Now</a>
+    </div>
+    <div class="nft-card-mint-time" id="minttime-${key}"></div>
+    <div class="nft-top-row">
+      <div class="meter-panel image-panel">
+        <div class="panel-head meter-panel-head"></div>
+        <div class="meter-body">
+          <img id="img-${key}" class="meter-rarity-img-large" style="display:none;" alt="Highest-rarity mint so far">
+          <div id="imgEmpty-${key}" class="meter-rarity-img-empty">No image captured yet</div>
+        </div>
+      </div>
+      <div class="meter-panel">
+        <div class="panel-head meter-panel-head"><h2>Optimal Chain for Minting</h2></div>
+        <div class="meter-body">
+          <svg viewBox="0 0 300 190" width="100%" style="max-width:330px;">
+            <text x="20" y="24" class="meter-chain-label left" fill="#FF5F5A">ADA</text>
+            <text x="280" y="24" class="meter-chain-label right" fill="#7B9EFF" text-anchor="end">BASE</text>
+            <path d="M 30 150 A 120 120 0 0 1 270 150" fill="none" stroke="#232A30" stroke-width="14" stroke-linecap="round"/>
+            <path id="arc-${key}" d="M 30 150 A 120 120 0 0 1 270 150" fill="none" stroke="#4B535A" stroke-width="14" stroke-linecap="round" stroke-dasharray="377" stroke-dashoffset="377"/>
+            <line id="needle-${key}" x1="150" y1="150" x2="150" y2="45" stroke="#E7E5E0" stroke-width="3" stroke-linecap="round" transform="rotate(0 150 150)"/>
+            <circle cx="150" cy="150" r="7" fill="#E7E5E0"/>
+          </svg>
+          <div class="meter-verdict" id="verdict-${key}">Loading&hellip;</div>
+        </div>
+      </div>
+      <div class="nft-stat-grid" id="statgrid-${key}"></div>
+      <div class="meter-panel">
+        <div class="panel-head meter-panel-head"><h2>Odds Breakdown</h2></div>
+        <div class="meter-body odds-breakdown-body" id="oddsbreak-${key}"></div>
+      </div>
+    </div>
+  </div>`;
+}
+
+function formatMintTime(iso){
+  if (!iso) return 'Most recent mint: unknown';
+  const d = new Date(iso);
+  if (isNaN(d.getTime())) return 'Most recent mint: unknown';
+  return `Most recent mint: ${d.toLocaleDateString(undefined, { year:'numeric', month:'short', day:'numeric' })}`;
+}
+
+function bestMythicForCard(card){
+  const odds = oddsForItem(card.asset.name);
+  let best = null;
+  if (card.cardanoRows.length){
+    const d = currentDeckTierOdds(card.cardanoRows, odds, card.asset.name, 'cardano');
+    if (!best || d.Mythic > best.pct) best = { chain: 'Cardano', pct: d.Mythic };
+  }
+  if (card.baseRows.length){
+    const d = currentDeckTierOdds(card.baseRows, odds, card.asset.name, 'base');
+    if (!best || d.Mythic > best.pct) best = { chain: 'Base', pct: d.Mythic };
+  }
+  return best; // null if neither chain has data yet
+}
+
+function renderTopMintsHeader(cards){
+  const el = document.getElementById('nftTopMintsHeader');
+  const ranked = cards
+    .map(c => ({ name: c.asset.name, best: bestMythicForCard(c) }))
+    .filter(r => r.best && r.best.pct > 0)
+    .sort((a, b) => b.best.pct - a.best.pct)
+    .slice(0, 3);
+
+  if (ranked.length === 0){
+    el.style.display = 'none';
+    el.innerHTML = '';
+    return;
+  }
+  el.style.display = '';
+  el.innerHTML = `
+    <div class="panel-head"><h2>Best Mythic Odds Right Now</h2></div>
+    <div class="top-mints-row">
+      ${ranked.map((r, i) => `
+        <div class="top-mint-item">
+          <span class="top-mint-rank">#${i + 1}</span>
+          <span class="top-mint-name">${r.name}</span>
+          <span class="top-mint-chain">${r.best.chain}</span>
+          <span class="top-mint-pct">${r.best.pct.toFixed(1)}%</span>
+        </div>`).join('')}
+    </div>`;
+}
+
+function renderNftCard({ asset, combined, baseRows, cardanoRows, latestMintTime }){
+  const key = asset.key;
+  const name = deriveCollectionName(combined.map(r => r.asset_name)) || asset.name;
+  document.getElementById(`title-${key}`).textContent = name;
+  document.getElementById(`minttime-${key}`).textContent = formatMintTime(latestMintTime);
+
+  const mintNowEl = document.getElementById(`mintnow-${key}`);
+  const storeUrl = ITEM_URLS[key];
+  if (storeUrl){
+    mintNowEl.href = affiliateUrl(storeUrl);
+    mintNowEl.style.display = '';
+  } else {
+    mintNowEl.style.display = 'none';
+  }
+
+  const imgEl = document.getElementById(`img-${key}`);
+  const imgEmptyEl = document.getElementById(`imgEmpty-${key}`);
+  const rarityImage = pickHighestRarityImage(combined);
+  if (rarityImage){
+    imgEl.onerror = () => { imgEl.style.display = 'none'; imgEmptyEl.style.display = 'flex'; };
+    imgEl.onload = () => { imgEl.style.display = ''; imgEmptyEl.style.display = 'none'; };
+    imgEl.src = ipfsToHttp(rarityImage);
+  } else {
+    imgEl.style.display = 'none';
+    imgEmptyEl.style.display = 'flex';
+  }
+
+  renderNftMeter(key, baseRows, cardanoRows, oddsForItem(asset.name), asset.name);
+}
+
+
+function pickHighestRarityImage(rows){
+  let best = null;
+  rows.forEach(r => {
+    const weight = RARITY_WEIGHT[r.rarity];
+    if (r.image && weight && (!best || weight > best.weight)){
+      best = { weight, image: r.image };
+    }
+  });
+  return best ? best.image : null;
+}
+
+function ipfsToHttp(url){
+  if (url && url.startsWith('ipfs://')) return 'https://ipfs.io/ipfs/' + url.slice('ipfs://'.length);
+  return url;
+}
+
+function deriveCollectionName(rawNames){
+  // The backend scripts already compute the correct canonical name once
+  // (derive_collection_name in Python, applied to the true raw per-token
+  // metadata before writing the CSV) -- re-applying a similar strip-regex
+  // here on top of an ALREADY-cleaned name is what caused "Borne + Lee
+  // HG7" to get mangled into "Borne + Lee" (the trailing "7" in "HG7"
+  // got mistaken for a serial number, exposing "HG" to also get stripped
+  // as a fake rarity-abbreviation). Many real item names legitimately end
+  // in digits (Valkyrie F9-R 2024, GTI Canyon 2026, Comet M42 Shoes), so
+  // no regex here can safely tell those apart from a real trailing serial
+  // -- just trust the CSV's asset_name verbatim and majority-vote it.
+  const cleaned = rawNames.map(n => String(n).trim()).filter(Boolean);
+  if (!cleaned.length) return null;
+  const counts = {};
+  cleaned.forEach(c => counts[c] = (counts[c] || 0) + 1);
+  return Object.keys(counts).sort((a, b) => counts[b] - counts[a])[0];
+}
+
+// Base wallets known to be internal/team-held rather than a real public
+// buyer. Confirmed: 0x76ebae1e...ff8 has received token_id 0 from the
+// official mint wallet in every one of the 18 items checked so far --
+// same address every time, right after batch-mint, before any public
+// sale -- an internal QA/reserve pattern, not organic customer purchases.
+// A token sitting in ANY of these counts as still-reserved for stats
+// purposes, regardless of what the in_mint_wallet flag says.
+const RESERVE_WALLETS_BASE = new Set([
+  '0x9a037337a7109ee675bffd3d9470aed0106b6756', // IR NFT distribution wallet
+  '0x9d3727c1cb2d4e1f874d5be616924dfb47e6f58a', // IR team wallet
+  '0x76ebae1ef5b2176859a3342f3712ccd165ee5ff8', // confirmed token-0 recipient across 9 collections
+]);
+
+function isInReserveWallet(row){
+  const owner = row.current_owner ? String(row.current_owner).trim().toLowerCase() : '';
+  return RESERVE_WALLETS_BASE.has(owner);
+}
+
+function isDistributed(row){
+  // A row with no usable metadata (fetch failed, or CIP-25/tokenURI
+  // resolved but had no rarity attribute) never actually reached a real
+  // buyer with a real card to hold -- exclude it from stats regardless of
+  // which token_id it is. This replaces relying on the backfill script to
+  // guess which token_id is a throwaway test mint (SKIP_TOKEN_IDS): we
+  // don't always know that's what's happening, so let the data -- did
+  // metadata resolve at all -- decide instead of a position assumption.
+  if (row.problem && String(row.problem).trim()) return false;
+  if (!row.rarity || !String(row.rarity).trim()) return false;
+
+  if (row.chain === 'cardano') return true; // minting on Cardano IS the sale -- no separate holding-wallet step like Base
+
+  if (isInReserveWallet(row)) return false; // still internal even if in_mint_wallet flag says otherwise
+
+  const v = row.in_mint_wallet;
+  if (typeof v === 'boolean') return v === false;
+  return String(v).trim().toLowerCase() === 'false';
+}
+
+function isUnsoldInMintWallet(row){
+  // The Base-side mirror of isDistributed: same metadata-validity bar
+  // (real rarity, no fetch/attribute problem), but TRUE when the token is
+  // still sitting in the team/holding wallet OR another known reserve
+  // wallet, rather than actually sold to a real public buyer.
+  if (row.problem && String(row.problem).trim()) return false;
+  if (!row.rarity || !String(row.rarity).trim()) return false;
+
+  if (isInReserveWallet(row)) return true;
+
+  const v = row.in_mint_wallet;
+  if (typeof v === 'boolean') return v === true;
+  return String(v).trim().toLowerCase() === 'true';
+}
+
+function rarityStats(rows, odds){
+  const distributed = rows.filter(isDistributed);
+  const counts = { Common:0, Uncommon:0, Rare:0, Legendary:0, Mythic:0 };
+  distributed.forEach(r => { if (counts[r.rarity] !== undefined) counts[r.rarity]++; });
+  const total = Object.values(counts).reduce((a,b)=>a+b,0);
+  const weightedSum = Object.keys(counts).reduce((s,k)=> s + counts[k]*RARITY_WEIGHT[k], 0);
+  const actualAvg = total > 0 ? weightedSum/total : 0;
+  const expectedAvg = expectedAvgFor(odds);
+  const favorability = expectedAvg - actualAvg; // positive = remaining pool skews rarer, good to mint
+  return { counts, total, actualAvg, favorability };
+}
+
+// Cardano mints in fresh, independent decks of 100 -- no shared total
+// supply, no replacement within a deck. So "odds of Legendary or better"
+// is NOT stated-odds / remaining-supply -- it's "how many Legendary +
+// Mythic slots are left in the CURRENT 100-card deck, divided by how
+// many cards are left in that deck." A deck resets to full odds the
+// moment the previous 100 finishes. Uses THIS ITEM's real odds (not a
+// generic global constant) to size the Legendary/Mythic slot counts.
+// Base does NOT use this deck model (see currentDeckTierOdds) -- Base
+// batches mint at irregular sizes/intervals, so odds there are read
+// straight off the current unsold-in-mint-wallet composition instead.
+const BATCH_SIZE = 100;
+
+const ALL_RARITY_TIERS = ['Common', 'Uncommon', 'Rare', 'Legendary', 'Mythic'];
+const DECK_ODDS_TIERS = ['Rare', 'Legendary', 'Mythic'];
+
+// These Cardano mints weren't run in clean 100-card batches (confirmed:
+// off-target Mythic counts that never reset back to the stated rate) --
+// so for these items on Cardano ONLY, treat the ENTIRE mint run as one
+// continuous, non-resetting pool instead of resetting quotas every 100.
+// Base is unaffected by this and keeps the normal 100-card deck logic.
+// Quota is sized off the item's TRUE final total supply (not "minted so
+// far") -- confirmed 5000 for each of these, since minting isn't finished
+// and using mints-so-far as the denominator would make the pool falsely
+// "run out" of Mythic/Legendary slots long before the real run is done.
+const CONTINUOUS_DECK_ITEMS_CARDANO = {
+  'Hyperwear Flux Runner Outfit': 5000,
+  'Hyperwear Flux Runner Head Band': 5000,
+};
+
+function currentDeckTierOdds(rows, odds, itemName, chain){
+  // BASE: batches mint at irregular, manually-triggered intervals -- no
+  // consistent restock threshold (confirmed across 17+ items, ranging
+  // 1%-100% of the prior batch sold before restocking). And once a newer
+  // batch exists, sales draw overwhelmingly -- but not always exclusively
+  // (confirmed a straggler sale from an older batch after a newer one was
+  // already active) -- from the newest batch, leaving older leftovers
+  // stranded in the mint/team/reserve wallet rather than cleanly sold
+  // out. Since old and new leftovers sit in the exact same wallet with no
+  // on-chain distinction forcing old-sells-first, slicing "distributed so
+  // far" into synthetic 100-card decks compares the wrong thing entirely.
+  // Instead: whatever is CURRENTLY sitting unsold in the mint/team/
+  // reserve wallet -- regardless of which mint batch it came from -- is
+  // treated as one combined, currently-distributable pool, and the odds
+  // shown are just that pool's real rarity composition right now.
+  if (chain === 'base'){
+    const unsold = rows.filter(isUnsoldInMintWallet);
+    const counts = {};
+    ALL_RARITY_TIERS.forEach(t => counts[t] = unsold.filter(r => r.rarity === t).length);
+    const total = ALL_RARITY_TIERS.reduce((s, t) => s + counts[t], 0);
+
+    const pct = {};
+    if (total > 0){
+      DECK_ODDS_TIERS.forEach(t => pct[t] = (counts[t] / total) * 100);
+    } else {
+      // nothing currently unsold (fully sold out, or no data yet) --
+      // fall back to stated catalog odds
+      DECK_ODDS_TIERS.forEach(t => pct[t] = (odds[t] || 0) * 100);
+    }
+    return pct;
+  }
+
+  const distributed = rows.filter(isDistributed);
+
+  // CARDANO below: minting IS the sale (no separate holding-wallet step),
+  // so real fresh 100-card decks are a valid model here.
+  const timed = distributed.filter(r => r.mint_time && !isNaN(new Date(r.mint_time).getTime()));
+  timed.sort((a, b) => new Date(a.mint_time) - new Date(b.mint_time));
+
+  const useContinuousPool = chain === 'cardano' && CONTINUOUS_DECK_ITEMS_CARDANO.hasOwnProperty(itemName);
+
+  if (useContinuousPool){
+    const poolSize = CONTINUOUS_DECK_ITEMS_CARDANO[itemName];
+    const poolQuota = {};
+    ALL_RARITY_TIERS.forEach(t => poolQuota[t] = (odds[t] || 0) * poolSize);
+
+    const rawRemaining = {};
+    ALL_RARITY_TIERS.forEach(t => {
+      const pulled = timed.filter(r => r.rarity === t).length;
+      rawRemaining[t] = Math.max(0, poolQuota[t] - pulled);
+    });
+    const rawTotal = ALL_RARITY_TIERS.reduce((s, t) => s + rawRemaining[t], 0);
+
+    const pct = {};
+    if (rawTotal > 0){
+      DECK_ODDS_TIERS.forEach(t => pct[t] = (rawRemaining[t] / rawTotal) * 100);
+    } else {
+      DECK_ODDS_TIERS.forEach(t => pct[t] = (odds[t] || 0) * 100);
+    }
+    return pct;
+  }
+
+  const perDeckQuota = {};
+  ALL_RARITY_TIERS.forEach(t => perDeckQuota[t] = (odds[t] || 0) * BATCH_SIZE);
+
+  const positionInDeck = timed.length % BATCH_SIZE;
+  if (positionInDeck === 0){
+    // fresh deck (or nothing minted yet) -- baseline stated odds
+    const pct = {};
+    DECK_ODDS_TIERS.forEach(t => pct[t] = (perDeckQuota[t] / BATCH_SIZE) * 100);
+    return pct;
+  }
+
+  const currentDeck = timed.slice(timed.length - positionInDeck);
+
+  // Raw "quota minus pulled" per tier can go negative (a tier got
+  // over-pulled vs. its theoretical share -- normal variance, real draws
+  // don't hit the exact quota) or, summed across tiers, not actually equal
+  // the physical cards left in the deck. Dividing an un-normalized raw
+  // count by remainingCards is what produced 300%+ "Rare or higher" on a
+  // near-full deck. Instead: compute each tier's raw remaining share,
+  // then normalize across all 5 tiers so the percentages always sum to
+  // 100% and no single tier can exceed 100%.
+  const rawRemaining = {};
+  ALL_RARITY_TIERS.forEach(t => {
+    const pulled = currentDeck.filter(r => r.rarity === t).length;
+    rawRemaining[t] = Math.max(0, perDeckQuota[t] - pulled);
+  });
+  const rawTotal = ALL_RARITY_TIERS.reduce((s, t) => s + rawRemaining[t], 0);
+
+  const pct = {};
+  if (rawTotal > 0){
+    DECK_ODDS_TIERS.forEach(t => pct[t] = (rawRemaining[t] / rawTotal) * 100);
+  } else {
+    // every tier's quota already used up (heavy variance this deck) --
+    // fall back to stated odds rather than claiming a flat 0% everywhere
+    DECK_ODDS_TIERS.forEach(t => pct[t] = (odds[t] || 0) * 100);
+  }
+  return pct;
+}
+
+function renderNftMeter(key, baseRows, cardanoRows, odds, itemName){
+  const base = rarityStats(baseRows, odds);
+  const cardano = rarityStats(cardanoRows, odds);
+
+  // Needle: negative score leans ADA (left), positive leans BASE (right).
+  const rawScore = base.favorability - cardano.favorability;
+  const score = Math.max(-1, Math.min(1, rawScore)); // clamp to +/-1 for the sweep
+  const angle = score * 65; // degrees, -65..65 off vertical
+  document.getElementById(`needle-${key}`).setAttribute('transform', `rotate(${angle} 150 150)`);
+
+  const pct = Math.round(((score + 1) / 2) * 377);
+  document.getElementById(`arc-${key}`).setAttribute('stroke-dashoffset', String(377 - pct));
+
+  const verdictEl = document.getElementById(`verdict-${key}`);
+  if (Math.abs(rawScore) < 0.05){
+    verdictEl.innerHTML = `Roughly even right now`;
+  } else if (score > 0){
+    verdictEl.innerHTML = `<span class="chainname base">Base</span> currently favors minting`;
+  } else {
+    verdictEl.innerHTML = `<span class="chainname ada">Cardano</span> currently favors minting`;
+  }
+
+  const goldVal = pct => `<span style="font-weight:700;color:#F4C430;text-shadow:0 0 8px rgba(244,196,48,0.5);">${pct.toFixed(1)}%</span>`;
+  const oddsRow = (label, color, pct) => `
+    <div class="nft-stat-row">
+      <span class="tier"${color ? ` style="color:${color}"` : ''}>${label}</span>
+      <span class="val">${goldVal(pct)}</span>
+    </div>`;
+  const oddsCol = (heading, deckOdds) => `
+    <div class="nft-stat-col">
+      <h3>${heading}</h3>
+      ${oddsRow('Mythic', '#EB724D', deckOdds.Mythic)}
+      ${oddsRow('Legendary', '#9633B3', deckOdds.Legendary)}
+      ${oddsRow('Legendary or higher', '#9633B3', deckOdds.Legendary + deckOdds.Mythic)}
+      ${oddsRow('Rare or higher', '#4EDFE7', deckOdds.Rare + deckOdds.Legendary + deckOdds.Mythic)}
+    </div>`;
+  const cardanoDeckOdds = currentDeckTierOdds(cardanoRows, odds, itemName, 'cardano');
+  const baseDeckOdds = currentDeckTierOdds(baseRows, odds, itemName, 'base');
+  document.getElementById(`oddsbreak-${key}`).innerHTML =
+    oddsCol('Base', baseDeckOdds) + oddsCol('Cardano', cardanoDeckOdds);
+
+  const TIER_COLOR = {
+    Common: null,
+    Uncommon: '#7ADE83',
+    Rare: '#4EDFE7',
+    Legendary: '#9633B3',
+    Mythic: '#EB724D',
+  };
+
+  const col = (heading, stats) => `
+    <div class="nft-stat-col">
+      <h3>${heading}</h3>
+      ${Object.keys(RARITY_WEIGHT).map(tier => `
+        <div class="nft-stat-row">
+          <span class="tier"${TIER_COLOR[tier] ? ` style="color:${TIER_COLOR[tier]}"` : ''}>${tier}</span>
+          <span class="val">${stats.counts[tier]} <span class="exp">(exp ${Math.round((odds[tier] || 0)*stats.total)})</span></span>
+        </div>`).join('')}
+    </div>`;
+  document.getElementById(`statgrid-${key}`).innerHTML =
+    col('Base &mdash; Minted NFT Distribution', base) + col('Cardano &mdash; Minted NFT Distribution', cardano);
+}
+
+init();
+</script>
+</body>
+</html>
