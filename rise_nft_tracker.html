@@ -79,17 +79,13 @@
   .nft-card-mint-time{
     font-family:var(--font-mono);font-size:10.5px;color:var(--dimmer);text-align:center;margin-bottom:16px;
   }
-  .bundle-title{
-    font-family:var(--font-mono);font-weight:700;font-size:16px;letter-spacing:0.4px;
-    color:var(--text);text-align:center;margin-bottom:14px;
+  .bundle-group-box{
+    border:1px solid var(--line);border-radius:12px;padding:24px 24px 0;margin-bottom:44px;
   }
-  .bundle-tab-row{display:flex;gap:1px;background:var(--line);border-radius:8px;overflow:hidden;max-width:700px;margin:0 auto 20px;}
-  .bundle-tab{
-    flex:1;text-align:center;padding:10px 6px;cursor:pointer;font-family:var(--font-mono);
-    font-size:11px;background:var(--panel-2);color:var(--dim);white-space:nowrap;
+  .bundle-group-box .nft-card-block{
+    margin-bottom:0;padding-bottom:24px;border-bottom:1px solid var(--line);
   }
-  .bundle-tab.active{background:var(--panel);color:var(--amber);font-weight:700;}
-  .bundle-tab-panel .nft-card-block{margin-bottom:0;}
+  .bundle-group-box .nft-card-block:last-child{border-bottom:none;}
   .meter-panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;height:100%;}
   .meter-panel .panel-head h2{font-family:var(--font-mono);font-size:13px;font-weight:600;letter-spacing:0.5px;margin:0;text-transform:uppercase;color:var(--text);}
   .meter-panel-head{justify-content:center;}
@@ -245,39 +241,11 @@ function renderNftPage(){
 }
 
 function bundleCardHtml(bundleName, members){
-  const bundleId = slugifyForTabs(bundleName);
   return `
-  <div class="nft-card-block">
-    <div class="bundle-title">${bundleName}</div>
-    <div class="bundle-tab-row" id="bundletabs-${bundleId}">
-      ${members.map((m, i) => `
-        <div class="bundle-tab${i === 0 ? ' active' : ''}" data-bundle="${bundleId}" data-index="${i}">${m.name}</div>
-      `).join('')}
-    </div>
-    ${members.map((m, i) => `
-      <div class="bundle-tab-panel" data-bundle="${bundleId}" data-index="${i}" style="${i === 0 ? '' : 'display:none;'}">
-        ${cardHtml(m.key)}
-      </div>
-    `).join('')}
+  <div class="bundle-group-box">
+    ${members.map(m => cardHtml(m.key)).join('')}
   </div>`;
 }
-
-function slugifyForTabs(name){
-  return String(name).toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
-}
-
-document.addEventListener('click', (e) => {
-  const tab = e.target.closest('.bundle-tab');
-  if (!tab) return;
-  const bundleId = tab.dataset.bundle;
-  const index = tab.dataset.index;
-  document.querySelectorAll(`.bundle-tab[data-bundle="${bundleId}"]`).forEach(t => {
-    t.classList.toggle('active', t.dataset.index === index);
-  });
-  document.querySelectorAll(`.bundle-tab-panel[data-bundle="${bundleId}"]`).forEach(p => {
-    p.style.display = (p.dataset.index === index) ? '' : 'none';
-  });
-});
 
 function cardHtml(key){
   return `
