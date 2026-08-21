@@ -1,0 +1,4919 @@
+{
+  "video_id": "-ZqkuFyzozs",
+  "title": "Cornucopias CopiCafe - Episode 4",
+  "upload_date": "20220416",
+  "duration_seconds": 2569,
+  "description": "In this latest episode of COPICafe, Cornucopias CEOs Rob Greig and Josh Jones discuss the latest events from within the Cornucopias metaverse game. Listen to the corn-brains behind it all as they discuss Cornucopias' latest developments. This conversation includes the recent bubblejett Custom OG mint, details on our move to Unreal Engine 5, mobile game updates, special guest, and of course... a little leak!\n\nCrack open your favorite beverage and enjoy this information-packed chat in the casual, comfy, corntastic episode of COPICafe!\n\n0:00 - Intro\n0:20 - Beverage Choices\n0:55 - General Updates\n1:44 - Leak #1\n2:33 - Unreal Engine 5\n7:00 - Ongoing OG Mint\n8:30 - New Wallet Integration\n9:50 - Mobile Game Updates\n10:25 - Rob's Cell Phone Collection\n14:12 - Security + Play 2 Earn\n16:07 - Upcoming NFT Sale\n18:00 - New NFT Sale Tech\n19:26 - Land Sale Update\n22:40 - Chad? Josh? Wait, what?\n23:45 - Best Land Sale... Ever?!?\n25:10 -  Introducing Indiana Jones\n26:15 - Matt's role\n28:10 - COPI Discord\n30:10 - How to become and OG\n33:30 - Surprise Gift\n34:40 - Matt's NFT Journey\n35:45 - Cornucopias NFT Strategy\n38:18 - Final Leak\n40:45 - Another Interesting Gift?\n\nBe sure to like and subscribe to our channel for more developments from the Cornucopias metaverse project! Also, check out our social channels below:\n\nhttps://linktr.ee/cornucopias.game\n\n$COPI Token is available to purchase on https://app.minswap.org/swap.\n\n#COPINFTSALE #BubblejettNFTs #Metaverse #MetaverseProject #Cardano #CryptoCurrency #Blockchain #NFT #MetaverseGame #CornucopiasGame #CardanoGaming #ADA",
+  "view_count": 9323,
+  "url": "https://www.youtube.com/watch?v=-ZqkuFyzozs",
+  "slug": "cornucopias-copicafe-episode-4",
+  "transcript": [
+    {
+      "start": 0.24,
+      "duration": 6.63,
+      "text": "[Music]"
+    },
+    {
+      "start": 8.16,
+      "duration": 5.08,
+      "text": "welcome everybody to copi Cafe this is"
+    },
+    {
+      "start": 11.16,
+      "duration": 4.24,
+      "text": "our fourth episode and we're glad to be"
+    },
+    {
+      "start": 13.24,
+      "duration": 5.88,
+      "text": "here it's a Friday I'm here with Rob"
+    },
+    {
+      "start": 15.4,
+      "duration": 6.16,
+      "text": "this is Josh uh I'm Josh and uh what are"
+    },
+    {
+      "start": 19.12,
+      "duration": 5.4,
+      "text": "you drinking today Rob it's good Friday"
+    },
+    {
+      "start": 21.56,
+      "duration": 6.76,
+      "text": "so yeah it's a very good Friday I and"
+    },
+    {
+      "start": 24.52,
+      "duration": 6.2,
+      "text": "I'm drinking Stella Arta today Stella I"
+    },
+    {
+      "start": 28.32,
+      "duration": 4.76,
+      "text": "will be opening this"
+    },
+    {
+      "start": 30.72,
+      "duration": 5.16,
+      "text": "with"
+    },
+    {
+      "start": 33.08,
+      "duration": 5.96,
+      "text": "galatis okay all right you got a special"
+    },
+    {
+      "start": 35.88,
+      "duration": 5.32,
+      "text": "opener I've got a I've got a waterl I'm"
+    },
+    {
+      "start": 39.04,
+      "duration": 4.76,
+      "text": "I'm a little boring today it's uh what"
+    },
+    {
+      "start": 41.2,
+      "duration": 4.76,
+      "text": "is it 11:00 a.m my time something like"
+    },
+    {
+      "start": 43.8,
+      "duration": 6.32,
+      "text": "that it's a peach flavored waterl it's"
+    },
+    {
+      "start": 45.96,
+      "duration": 7.56,
+      "text": "pretty good sparkling water flavor"
+    },
+    {
+      "start": 50.12,
+      "duration": 4.88,
+      "text": "water Cheers Cheers look at the that"
+    },
+    {
+      "start": 53.52,
+      "duration": 4.52,
+      "text": "it's good working with you we're having"
+    },
+    {
+      "start": 55.0,
+      "duration": 5.6,
+      "text": "a good time we're working our butts off"
+    },
+    {
+      "start": 58.04,
+      "duration": 6.24,
+      "text": "we've got a lot of irons in the fire"
+    },
+    {
+      "start": 60.6,
+      "duration": 7.44,
+      "text": "we're talking through you know quite a"
+    },
+    {
+      "start": 64.28,
+      "duration": 5.92,
+      "text": "few different issues uh still as a as a"
+    },
+    {
+      "start": 68.04,
+      "duration": 5.76,
+      "text": "company we've grown so fast in so many"
+    },
+    {
+      "start": 70.2,
+      "duration": 5.8,
+      "text": "successes along the way that we are now"
+    },
+    {
+      "start": 73.8,
+      "duration": 4.4,
+      "text": "kind of really trying to solidify get"
+    },
+    {
+      "start": 76.0,
+      "duration": 4.08,
+      "text": "organized we positioned our marketing to"
+    },
+    {
+      "start": 78.2,
+      "duration": 4.92,
+      "text": "go to scale so that pipeline's working"
+    },
+    {
+      "start": 80.08,
+      "duration": 5.84,
+      "text": "really well we positioned our nft sales"
+    },
+    {
+      "start": 83.12,
+      "duration": 4.72,
+      "text": "to go to scale so we can now run nft"
+    },
+    {
+      "start": 85.92,
+      "duration": 3.48,
+      "text": "sales with our own technology which is"
+    },
+    {
+      "start": 87.84,
+      "duration": 4.24,
+      "text": "very exciting so a lot of really good"
+    },
+    {
+      "start": 89.4,
+      "duration": 5.44,
+      "text": "things and we built an amazing amazing"
+    },
+    {
+      "start": 92.08,
+      "duration": 4.76,
+      "text": "Community uh and we've cultivated this"
+    },
+    {
+      "start": 94.84,
+      "duration": 4.88,
+      "text": "inspired creative Community which is a"
+    },
+    {
+      "start": 96.84,
+      "duration": 4.88,
+      "text": "lot of fun for all of us uh to to be"
+    },
+    {
+      "start": 99.72,
+      "duration": 5.2,
+      "text": "with you guys and be building this"
+    },
+    {
+      "start": 101.72,
+      "duration": 5.16,
+      "text": "together uh which is great oh another"
+    },
+    {
+      "start": 104.92,
+      "duration": 4.2,
+      "text": "little little leak little mini leak"
+    },
+    {
+      "start": 106.88,
+      "duration": 5.2,
+      "text": "we've got the tokenomics paper that will"
+    },
+    {
+      "start": 109.12,
+      "duration": 4.96,
+      "text": "be uh opening up to the public soon to"
+    },
+    {
+      "start": 112.08,
+      "duration": 5.08,
+      "text": "to review and some of the cool things"
+    },
+    {
+      "start": 114.08,
+      "duration": 5.16,
+      "text": "that are happening with that that uh we"
+    },
+    {
+      "start": 117.16,
+      "duration": 3.96,
+      "text": "haven't uh we haven't really solidified"
+    },
+    {
+      "start": 119.24,
+      "duration": 3.92,
+      "text": "the exact details but we're working with"
+    },
+    {
+      "start": 121.12,
+      "duration": 4.32,
+      "text": "our attorney on it and what what's going"
+    },
+    {
+      "start": 123.16,
+      "duration": 5.56,
+      "text": "to happen there is we're going to be"
+    },
+    {
+      "start": 125.44,
+      "duration": 6.4,
+      "text": "releasing some areas to involve you guys"
+    },
+    {
+      "start": 128.72,
+      "duration": 5.68,
+      "text": "our token holders uh in voting on what"
+    },
+    {
+      "start": 131.84,
+      "duration": 5.04,
+      "text": "happens with uh some of these different"
+    },
+    {
+      "start": 134.4,
+      "duration": 4.96,
+      "text": "uh fee structures and and benefits that"
+    },
+    {
+      "start": 136.88,
+      "duration": 4.0,
+      "text": "you guys get to have as a community so"
+    },
+    {
+      "start": 139.36,
+      "duration": 3.6,
+      "text": "that's that's very exciting we'll be"
+    },
+    {
+      "start": 140.88,
+      "duration": 4.32,
+      "text": "releasing and empowering you guys to"
+    },
+    {
+      "start": 142.96,
+      "duration": 4.68,
+      "text": "vote on some certain directions in the"
+    },
+    {
+      "start": 145.2,
+      "duration": 5.4,
+      "text": "platform we'll give more details when we"
+    },
+    {
+      "start": 147.64,
+      "duration": 6.6,
+      "text": "have them uh but uh yeah that's that's"
+    },
+    {
+      "start": 150.6,
+      "duration": 6.84,
+      "text": "pretty sweet so um cool stuff happening"
+    },
+    {
+      "start": 154.24,
+      "duration": 9.08,
+      "text": "Unreal Engine five they released that"
+    },
+    {
+      "start": 157.44,
+      "duration": 8.24,
+      "text": "last week we saw a remarkable video that"
+    },
+    {
+      "start": 163.32,
+      "duration": 6.36,
+      "text": "uh we can't wait to release uh to you"
+    },
+    {
+      "start": 165.68,
+      "duration": 6.48,
+      "text": "guys very very soon uh blew me away what"
+    },
+    {
+      "start": 169.68,
+      "duration": 5.68,
+      "text": "were your thoughts on it Rob yeah the"
+    },
+    {
+      "start": 172.16,
+      "duration": 6.0,
+      "text": "new nanite technology and the new lumens"
+    },
+    {
+      "start": 175.36,
+      "duration": 5.0,
+      "text": "is yeah is absolutely amazing what we"
+    },
+    {
+      "start": 178.16,
+      "duration": 3.92,
+      "text": "can now do with with Unreal Engine five"
+    },
+    {
+      "start": 180.36,
+      "duration": 5.48,
+      "text": "our our projects that we've been"
+    },
+    {
+      "start": 182.08,
+      "duration": 5.84,
+      "text": "building imported immediately nothing to"
+    },
+    {
+      "start": 185.84,
+      "duration": 4.68,
+      "text": "change and we've always been building"
+    },
+    {
+      "start": 187.92,
+      "duration": 5.24,
+      "text": "our artwork ready for for"
+    },
+    {
+      "start": 190.52,
+      "duration": 4.92,
+      "text": "ue5 um some of some of the tools are"
+    },
+    {
+      "start": 193.16,
+      "duration": 5.84,
+      "text": "different that um so so we're still on"
+    },
+    {
+      "start": 195.44,
+      "duration": 5.84,
+      "text": "on a a bit of a learning curve but when"
+    },
+    {
+      "start": 199.0,
+      "duration": 6.96,
+      "text": "yeah when we were sent that video it was"
+    },
+    {
+      "start": 201.28,
+      "duration": 6.52,
+      "text": "like wow yeah yeah mindblowing so just"
+    },
+    {
+      "start": 205.96,
+      "duration": 5.76,
+      "text": "to give you guys some perspective Unreal"
+    },
+    {
+      "start": 207.8,
+      "duration": 6.52,
+      "text": "Engine has never released a new version"
+    },
+    {
+      "start": 211.72,
+      "duration": 4.84,
+      "text": "that is this significantly different"
+    },
+    {
+      "start": 214.32,
+      "duration": 5.72,
+      "text": "than the previous version there are"
+    },
+    {
+      "start": 216.56,
+      "duration": 5.04,
+      "text": "major major upgrades in fact a lot of"
+    },
+    {
+      "start": 220.04,
+      "duration": 3.64,
+      "text": "the people that were already building"
+    },
+    {
+      "start": 221.6,
+      "duration": 5.2,
+      "text": "games on Unreal Engine 4 and that were"
+    },
+    {
+      "start": 223.68,
+      "duration": 5.72,
+      "text": "well into that will have to make"
+    },
+    {
+      "start": 226.8,
+      "duration": 4.12,
+      "text": "enormous changes to be able to continue"
+    },
+    {
+      "start": 229.4,
+      "duration": 3.12,
+      "text": "upgrading and improving their game and"
+    },
+    {
+      "start": 230.92,
+      "duration": 5.52,
+      "text": "so a lot of people are going to stay on"
+    },
+    {
+      "start": 232.52,
+      "duration": 7.36,
+      "text": "four most likely yeah and luckily timing"
+    },
+    {
+      "start": 236.44,
+      "duration": 6.56,
+      "text": "wise for us uh well first of all this"
+    },
+    {
+      "start": 239.88,
+      "duration": 7.68,
+      "text": "allows for images that can be 50 times"
+    },
+    {
+      "start": 243.0,
+      "duration": 7.16,
+      "text": "more uh detail included that there's so"
+    },
+    {
+      "start": 247.56,
+      "duration": 4.36,
+      "text": "much more power in the imagery that we"
+    },
+    {
+      "start": 250.16,
+      "duration": 3.84,
+      "text": "have with Unreal Engine 5 it's just a"
+    },
+    {
+      "start": 251.92,
+      "duration": 3.32,
+      "text": "bare minimum of the new features that we"
+    },
+    {
+      "start": 254.0,
+      "duration": 3.4,
+      "text": "have available there's sound"
+    },
+    {
+      "start": 255.24,
+      "duration": 5.56,
+      "text": "functionality all sorts of stuff that's"
+    },
+    {
+      "start": 257.4,
+      "duration": 6.56,
+      "text": "coming with this but thankfully timing"
+    },
+    {
+      "start": 260.8,
+      "duration": 4.72,
+      "text": "wise our team has been very excited"
+    },
+    {
+      "start": 263.96,
+      "duration": 3.2,
+      "text": "about Unreal Engine 5 they've been"
+    },
+    {
+      "start": 265.52,
+      "duration": 4.76,
+      "text": "working with it they've been testing"
+    },
+    {
+      "start": 267.16,
+      "duration": 5.64,
+      "text": "with it uh they've been practicing it it"
+    },
+    {
+      "start": 270.28,
+      "duration": 4.8,
+      "text": "uh in the in the Beta release and now"
+    },
+    {
+      "start": 272.8,
+      "duration": 5.04,
+      "text": "that it's out they've been anticipating"
+    },
+    {
+      "start": 275.08,
+      "duration": 5.04,
+      "text": "this and we get to be one of the first"
+    },
+    {
+      "start": 277.84,
+      "duration": 4.44,
+      "text": "projects building on Unreal Engine 5 I"
+    },
+    {
+      "start": 280.12,
+      "duration": 4.32,
+      "text": "don't know of anyone else on cardano"
+    },
+    {
+      "start": 282.28,
+      "duration": 5.72,
+      "text": "that's building on Unreal Engine 5 right"
+    },
+    {
+      "start": 284.44,
+      "duration": 6.16,
+      "text": "now they might be uh and and very few"
+    },
+    {
+      "start": 288.0,
+      "duration": 5.16,
+      "text": "industrywide in traditional gaming is"
+    },
+    {
+      "start": 290.6,
+      "duration": 4.28,
+      "text": "building on Unreal Engine 5 unless the"
+    },
+    {
+      "start": 293.16,
+      "duration": 3.64,
+      "text": "timing worked out for them like it did"
+    },
+    {
+      "start": 294.88,
+      "duration": 4.32,
+      "text": "for us so I think we have a tremendous"
+    },
+    {
+      "start": 296.8,
+      "duration": 4.4,
+      "text": "Advantage there well I think also you"
+    },
+    {
+      "start": 299.2,
+      "duration": 4.64,
+      "text": "know it's it's so easy to say oh we're"
+    },
+    {
+      "start": 301.2,
+      "duration": 4.76,
+      "text": "on ue5 we're but unless you've been"
+    },
+    {
+      "start": 303.84,
+      "duration": 3.68,
+      "text": "planning for it for the last six months"
+    },
+    {
+      "start": 305.96,
+      "duration": 3.44,
+      "text": "there is a lot of companies like you say"
+    },
+    {
+      "start": 307.52,
+      "duration": 5.24,
+      "text": "that are going to have a shop the the"
+    },
+    {
+      "start": 309.4,
+      "duration": 5.52,
+      "text": "difference between the polygons and now"
+    },
+    {
+      "start": 312.76,
+      "duration": 3.64,
+      "text": "how polygons are handled with triangles"
+    },
+    {
+      "start": 314.92,
+      "duration": 4.76,
+      "text": "and then you zoom in and then more"
+    },
+    {
+      "start": 316.4,
+      "duration": 5.08,
+      "text": "polygons come forward is is amazing but"
+    },
+    {
+      "start": 319.68,
+      "duration": 4.0,
+      "text": "you do have to set your projects up"
+    },
+    {
+      "start": 321.48,
+      "duration": 4.84,
+      "text": "differently and your workflow is com"
+    },
+    {
+      "start": 323.68,
+      "duration": 4.24,
+      "text": "entirely different that's why so so all"
+    },
+    {
+      "start": 326.32,
+      "duration": 3.76,
+      "text": "of these workflows that these guys have"
+    },
+    {
+      "start": 327.92,
+      "duration": 3.96,
+      "text": "been building in Unreal Engine for over"
+    },
+    {
+      "start": 330.08,
+      "duration": 4.28,
+      "text": "the past you know eight years or however"
+    },
+    {
+      "start": 331.88,
+      "duration": 4.6,
+      "text": "long it's been uh those workflows are"
+    },
+    {
+      "start": 334.36,
+      "duration": 5.48,
+      "text": "not going to work for Unreal Engine 5"
+    },
+    {
+      "start": 336.48,
+      "duration": 6.2,
+      "text": "it's it's not a so it it really revolves"
+    },
+    {
+      "start": 339.84,
+      "duration": 5.48,
+      "text": "involves changing processes stuff like"
+    },
+    {
+      "start": 342.68,
+      "duration": 6.04,
+      "text": "that so we're well positioned to be"
+    },
+    {
+      "start": 345.32,
+      "duration": 5.52,
+      "text": "leaders in this new technology that is"
+    },
+    {
+      "start": 348.72,
+      "duration": 4.96,
+      "text": "incredible I can't wait to reveal this"
+    },
+    {
+      "start": 350.84,
+      "duration": 5.44,
+      "text": "to you guys the the land sale and the"
+    },
+    {
+      "start": 353.68,
+      "duration": 5.4,
+      "text": "Cinematic video that will show you of"
+    },
+    {
+      "start": 356.28,
+      "duration": 6.0,
+      "text": "what you get to to build and do with"
+    },
+    {
+      "start": 359.08,
+      "duration": 6.2,
+      "text": "your land and and see it's just it's"
+    },
+    {
+      "start": 362.28,
+      "duration": 5.16,
+      "text": "beautiful and our our artwork has taken"
+    },
+    {
+      "start": 365.28,
+      "duration": 4.6,
+      "text": "Leaps and Bounds over what it was before"
+    },
+    {
+      "start": 367.44,
+      "duration": 6.24,
+      "text": "and before it was amazing so now we're"
+    },
+    {
+      "start": 369.88,
+      "duration": 7.48,
+      "text": "looking at just being pioneers and early"
+    },
+    {
+      "start": 373.68,
+      "duration": 7.36,
+      "text": "developers in Unreal Engine five and uh"
+    },
+    {
+      "start": 377.36,
+      "duration": 7.12,
+      "text": "yeah I I'm incredibly excited it even"
+    },
+    {
+      "start": 381.04,
+      "duration": 5.48,
+      "text": "means that you know we've we we've often"
+    },
+    {
+      "start": 384.48,
+      "duration": 4.12,
+      "text": "shared that we're on version one version"
+    },
+    {
+      "start": 386.52,
+      "duration": 5.32,
+      "text": "two now version three of the Character"
+    },
+    {
+      "start": 388.6,
+      "duration": 5.92,
+      "text": "Creator it's because we've seen u5"
+    },
+    {
+      "start": 391.84,
+      "duration": 5.8,
+      "text": "release new versions and and now our"
+    },
+    {
+      "start": 394.52,
+      "duration": 5.28,
+      "text": "characters can be so detailed what they"
+    },
+    {
+      "start": 397.64,
+      "duration": 4.28,
+      "text": "were detailed before now they're going"
+    },
+    {
+      "start": 399.8,
+      "duration": 5.6,
+      "text": "to be even more detailed and we'll be"
+    },
+    {
+      "start": 401.92,
+      "duration": 6.88,
+      "text": "able to get more um textures and and"
+    },
+    {
+      "start": 405.4,
+      "duration": 4.8,
+      "text": "liting on the screen at once it's yeah"
+    },
+    {
+      "start": 408.8,
+      "duration": 5.32,
+      "text": "when there might even be there might"
+    },
+    {
+      "start": 410.2,
+      "duration": 5.92,
+      "text": "even be a little mini taste leak for you"
+    },
+    {
+      "start": 414.12,
+      "duration": 3.88,
+      "text": "guys that hang in there with us to the"
+    },
+    {
+      "start": 416.12,
+      "duration": 6.2,
+      "text": "end of this video there might be I don't"
+    },
+    {
+      "start": 418.0,
+      "duration": 7.44,
+      "text": "know Poss we'll think about it um OG"
+    },
+    {
+      "start": 422.32,
+      "duration": 4.88,
+      "text": "mint still ongoing uh incredibly"
+    },
+    {
+      "start": 425.44,
+      "duration": 5.72,
+      "text": "successful we're at"
+    },
+    {
+      "start": 427.2,
+      "duration": 6.68,
+      "text": "693 of our ogs have minted their nfts"
+    },
+    {
+      "start": 431.16,
+      "duration": 4.68,
+      "text": "this is testing our technology we've"
+    },
+    {
+      "start": 433.88,
+      "duration": 5.04,
+      "text": "built it over the last five months"
+    },
+    {
+      "start": 435.84,
+      "duration": 4.56,
+      "text": "somewhere around there and uh I'm really"
+    },
+    {
+      "start": 438.92,
+      "duration": 3.72,
+      "text": "proud of it you guys have done a great"
+    },
+    {
+      "start": 440.4,
+      "duration": 4.96,
+      "text": "job we we built something pretty killer"
+    },
+    {
+      "start": 442.64,
+      "duration": 5.0,
+      "text": "here um we're we're revising a lot of"
+    },
+    {
+      "start": 445.36,
+      "duration": 5.04,
+      "text": "the designs in process of that Jeff is"
+    },
+    {
+      "start": 447.64,
+      "duration": 5.64,
+      "text": "working on some some new UI designs for"
+    },
+    {
+      "start": 450.4,
+      "duration": 5.4,
+      "text": "that so A few improvements a few tweaks"
+    },
+    {
+      "start": 453.28,
+      "duration": 3.8,
+      "text": "but uh very exciting what uh what are"
+    },
+    {
+      "start": 455.8,
+      "duration": 4.32,
+      "text": "your thoughts about how this is wrapping"
+    },
+    {
+      "start": 457.08,
+      "duration": 5.0,
+      "text": "up we've got yeah I mean we we opened up"
+    },
+    {
+      "start": 460.12,
+      "duration": 4.92,
+      "text": "we opened up in batches so we opened up"
+    },
+    {
+      "start": 462.08,
+      "duration": 7.04,
+      "text": "with we we have about"
+    },
+    {
+      "start": 465.04,
+      "duration": 6.96,
+      "text": "1.4 th000 yeah 1,400 ogs but we so we"
+    },
+    {
+      "start": 469.12,
+      "duration": 6.24,
+      "text": "started off with a batch of 700 so so so"
+    },
+    {
+      "start": 472.0,
+      "duration": 5.2,
+      "text": "we have like you say 693 seven of that"
+    },
+    {
+      "start": 475.36,
+      "duration": 2.92,
+      "text": "and then if we if we need to we'll open"
+    },
+    {
+      "start": 477.2,
+      "duration": 3.64,
+      "text": "that up I don't know where the other"
+    },
+    {
+      "start": 478.28,
+      "duration": 4.72,
+      "text": "half have gone but you know you you've"
+    },
+    {
+      "start": 480.84,
+      "duration": 4.04,
+      "text": "only got till the 25th of April so I"
+    },
+    {
+      "start": 483.0,
+      "duration": 4.76,
+      "text": "mean so you've got another 10 days but"
+    },
+    {
+      "start": 484.88,
+      "duration": 7.16,
+      "text": "after that you will not be able to Mint"
+    },
+    {
+      "start": 487.76,
+      "duration": 7.84,
+      "text": "this OG car again so I mean you you need"
+    },
+    {
+      "start": 492.04,
+      "duration": 7.32,
+      "text": "to get in quick um but yeah we're we're"
+    },
+    {
+      "start": 495.6,
+      "duration": 7.16,
+      "text": "like you say we're improving on that we"
+    },
+    {
+      "start": 499.36,
+      "duration": 5.68,
+      "text": "we the initial burst which was expecting"
+    },
+    {
+      "start": 502.76,
+      "duration": 4.4,
+      "text": "you know within I think within we said"
+    },
+    {
+      "start": 505.04,
+      "duration": 4.92,
+      "text": "last time within 30 seconds we we had so"
+    },
+    {
+      "start": 507.16,
+      "duration": 5.04,
+      "text": "many that had gone through um but we're"
+    },
+    {
+      "start": 509.96,
+      "duration": 6.68,
+      "text": "improving on that already we've already"
+    },
+    {
+      "start": 512.2,
+      "duration": 7.96,
+      "text": "seen a working version of of the with"
+    },
+    {
+      "start": 516.64,
+      "duration": 6.12,
+      "text": "new wallets in in there so we've got"
+    },
+    {
+      "start": 520.16,
+      "duration": 4.8,
+      "text": "Eternal which which was CC Vault that's"
+    },
+    {
+      "start": 522.76,
+      "duration": 4.12,
+      "text": "now in there we've seen jir wallet"
+    },
+    {
+      "start": 524.96,
+      "duration": 4.36,
+      "text": "that'll be in there so these will all be"
+    },
+    {
+      "start": 526.88,
+      "duration": 6.0,
+      "text": "be ready for our our next mint and ready"
+    },
+    {
+      "start": 529.32,
+      "duration": 4.92,
+      "text": "for the land mint um so yeah and there's"
+    },
+    {
+      "start": 532.88,
+      "duration": 3.0,
+      "text": "some other wallets that we're looking"
+    },
+    {
+      "start": 534.24,
+      "duration": 3.44,
+      "text": "into but those are going to be the three"
+    },
+    {
+      "start": 535.88,
+      "duration": 3.96,
+      "text": "main ones I think that that we've seen"
+    },
+    {
+      "start": 537.68,
+      "duration": 6.12,
+      "text": "working and yeah it's very very very"
+    },
+    {
+      "start": 539.84,
+      "duration": 6.88,
+      "text": "slick yeah I agree completely agree"
+    },
+    {
+      "start": 543.8,
+      "duration": 5.32,
+      "text": "excited to get jro up there uh they're"
+    },
+    {
+      "start": 546.72,
+      "duration": 4.56,
+      "text": "one of our long one of our first"
+    },
+    {
+      "start": 549.12,
+      "duration": 4.6,
+      "text": "partners and uh we've worked with their"
+    },
+    {
+      "start": 551.28,
+      "duration": 4.72,
+      "text": "Dev team back and forth a little bit"
+    },
+    {
+      "start": 553.72,
+      "duration": 4.92,
+      "text": "they're just great to work with good"
+    },
+    {
+      "start": 556.0,
+      "duration": 4.08,
+      "text": "good company good people uh so it's it's"
+    },
+    {
+      "start": 558.64,
+      "duration": 3.56,
+      "text": "going to be good to have that wallet up"
+    },
+    {
+      "start": 560.08,
+      "duration": 4.84,
+      "text": "there on the site for us Ian we're also"
+    },
+    {
+      "start": 562.2,
+      "duration": 5.76,
+      "text": "working with jro on another project it's"
+    },
+    {
+      "start": 564.92,
+      "duration": 4.92,
+      "text": "still wallet based but um yeah that's on"
+    },
+    {
+      "start": 567.96,
+      "duration": 3.76,
+      "text": "the wraps at the moment but that's that"
+    },
+    {
+      "start": 569.84,
+      "duration": 3.88,
+      "text": "is oh we're not allowed to talk about"
+    },
+    {
+      "start": 571.72,
+      "duration": 4.0,
+      "text": "that are we no no it's a definitely"
+    },
+    {
+      "start": 573.72,
+      "duration": 3.08,
+      "text": "another game changer but we want we"
+    },
+    {
+      "start": 575.72,
+      "duration": 3.36,
+      "text": "don't want to give anybody else the"
+    },
+    {
+      "start": 576.8,
+      "duration": 4.04,
+      "text": "heads up we're always teasing with this"
+    },
+    {
+      "start": 579.08,
+      "duration": 4.08,
+      "text": "information we can't release I know it's"
+    },
+    {
+      "start": 580.84,
+      "duration": 5.0,
+      "text": "it's uh we wish we could tell you"
+    },
+    {
+      "start": 583.16,
+      "duration": 4.24,
+      "text": "everything we we huh no no we quiet all"
+    },
+    {
+      "start": 585.84,
+      "duration": 3.36,
+      "text": "tell them I don't I I don't know let's"
+    },
+    {
+      "start": 587.4,
+      "duration": 4.04,
+      "text": "wait on that one it's it's good stuff"
+    },
+    {
+      "start": 589.2,
+      "duration": 5.4,
+      "text": "it's um but yeah"
+    },
+    {
+      "start": 591.44,
+      "duration": 6.76,
+      "text": "so the mobile game tell us what's up"
+    },
+    {
+      "start": 594.6,
+      "duration": 7.2,
+      "text": "with that mobile game is is progressing"
+    },
+    {
+      "start": 598.2,
+      "duration": 6.36,
+      "text": "so well so we've now got our Apple"
+    },
+    {
+      "start": 601.8,
+      "duration": 4.52,
+      "text": "license that's come through so we've"
+    },
+    {
+      "start": 604.56,
+      "duration": 4.04,
+      "text": "been we've been building the game for"
+    },
+    {
+      "start": 606.32,
+      "duration": 6.24,
+      "text": "Android and Apple but now that we've got"
+    },
+    {
+      "start": 608.6,
+      "duration": 6.04,
+      "text": "that publish uh license I've now seen"
+    },
+    {
+      "start": 612.56,
+      "duration": 8.76,
+      "text": "the game working"
+    },
+    {
+      "start": 614.64,
+      "duration": 10.56,
+      "text": "on on the Apple Phone 7 8 11 and 13 and"
+    },
+    {
+      "start": 621.32,
+      "duration": 6.56,
+      "text": "a couple of iPads um the tablets how"
+    },
+    {
+      "start": 625.2,
+      "duration": 5.96,
+      "text": "many phones do you have Rob how many"
+    },
+    {
+      "start": 627.88,
+      "duration": 5.52,
+      "text": "phones yeah you want to see some phones"
+    },
+    {
+      "start": 631.16,
+      "duration": 5.32,
+      "text": "I'll give you some the the only phone"
+    },
+    {
+      "start": 633.4,
+      "duration": 3.08,
+      "text": "that I can't get it working"
+    },
+    {
+      "start": 637.72,
+      "duration": 6.44,
+      "text": "on is these ones do you remember them is"
+    },
+    {
+      "start": 641.0,
+      "duration": 5.72,
+      "text": "that a black is that a Nokia Nokia oh"
+    },
+    {
+      "start": 644.16,
+      "duration": 4.52,
+      "text": "wow yeah well that one's called Alcatel"
+    },
+    {
+      "start": 646.72,
+      "duration": 3.08,
+      "text": "and that one's a Nokia yeah they're not"
+    },
+    {
+      "start": 648.68,
+      "duration": 3.32,
+      "text": "unfortunately they're not going to be"
+    },
+    {
+      "start": 649.8,
+      "duration": 4.12,
+      "text": "compatible on those two phones but you"
+    },
+    {
+      "start": 652.0,
+      "duration": 3.44,
+      "text": "know I've got a nice little history of"
+    },
+    {
+      "start": 653.92,
+      "duration": 5.84,
+      "text": "phones there yeah I feel like I was"
+    },
+    {
+      "start": 655.44,
+      "duration": 7.36,
+      "text": "still learning like algebra when those"
+    },
+    {
+      "start": 659.76,
+      "duration": 5.36,
+      "text": "phones were released or something if if"
+    },
+    {
+      "start": 662.8,
+      "duration": 4.8,
+      "text": "we ever have a play to earn version of"
+    },
+    {
+      "start": 665.12,
+      "duration": 5.4,
+      "text": "snake you never know they might work on"
+    },
+    {
+      "start": 667.6,
+      "duration": 6.24,
+      "text": "that but yeah on the MacBook on the"
+    },
+    {
+      "start": 670.52,
+      "duration": 6.88,
+      "text": "MacBook and the MacBook Pro um and on"
+    },
+    {
+      "start": 673.84,
+      "duration": 5.72,
+      "text": "the on the Galaxy tablet as as well the"
+    },
+    {
+      "start": 677.4,
+      "duration": 4.44,
+      "text": "game look the game looks it looks"
+    },
+    {
+      "start": 679.56,
+      "duration": 4.32,
+      "text": "amazing on a phone you go on a bigger"
+    },
+    {
+      "start": 681.84,
+      "duration": 5.56,
+      "text": "screen you see how sharp the graphics"
+    },
+    {
+      "start": 683.88,
+      "duration": 7.48,
+      "text": "are and how well it plays and just as a"
+    },
+    {
+      "start": 687.4,
+      "duration": 6.96,
+      "text": "caveat we are not the graphics are not"
+    },
+    {
+      "start": 691.36,
+      "duration": 4.36,
+      "text": "designed to it it looks significantly"
+    },
+    {
+      "start": 694.36,
+      "duration": 4.04,
+      "text": "different than the normal branding"
+    },
+    {
+      "start": 695.72,
+      "duration": 4.88,
+      "text": "videos that you see from us with Unreal"
+    },
+    {
+      "start": 698.4,
+      "duration": 4.92,
+      "text": "Engine 5 this is done in unity it's"
+    },
+    {
+      "start": 700.6,
+      "duration": 4.24,
+      "text": "designed for a mobile game slightly"
+    },
+    {
+      "start": 703.32,
+      "duration": 4.24,
+      "text": "different looking feel we're trying to"
+    },
+    {
+      "start": 704.84,
+      "duration": 5.16,
+      "text": "keep it as as much as possible feeling"
+    },
+    {
+      "start": 707.56,
+      "duration": 5.2,
+      "text": "like our brand but it is quite a bit"
+    },
+    {
+      "start": 710.0,
+      "duration": 6.16,
+      "text": "different and this is a miname it's not"
+    },
+    {
+      "start": 712.76,
+      "duration": 5.0,
+      "text": "the game it's not definely definitely"
+    },
+    {
+      "start": 716.16,
+      "duration": 3.92,
+      "text": "complimentary the characters look"
+    },
+    {
+      "start": 717.76,
+      "duration": 4.64,
+      "text": "slightly different so we do have a"
+    },
+    {
+      "start": 720.08,
+      "duration": 4.56,
+      "text": "familiar character in there so so we"
+    },
+    {
+      "start": 722.4,
+      "duration": 3.52,
+      "text": "have Abigail she's one of the characters"
+    },
+    {
+      "start": 724.64,
+      "duration": 3.4,
+      "text": "that are coming through we have other"
+    },
+    {
+      "start": 725.92,
+      "duration": 3.28,
+      "text": "characters as well and the styling of"
+    },
+    {
+      "start": 728.04,
+      "duration": 3.64,
+      "text": "that is going to"
+    },
+    {
+      "start": 729.2,
+      "duration": 4.0,
+      "text": "be may maybe maybe I can give you some"
+    },
+    {
+      "start": 731.68,
+      "duration": 3.2,
+      "text": "hints of what Abigail is going to kind"
+    },
+    {
+      "start": 733.2,
+      "duration": 4.16,
+      "text": "of look like but she's she's more of a"
+    },
+    {
+      "start": 734.88,
+      "duration": 4.28,
+      "text": "2d 2 and a half D character so although"
+    },
+    {
+      "start": 737.36,
+      "duration": 4.04,
+      "text": "it looks amazing you don't need to have"
+    },
+    {
+      "start": 739.16,
+      "duration": 5.08,
+      "text": "these massive brand new devices to use"
+    },
+    {
+      "start": 741.4,
+      "duration": 4.28,
+      "text": "them on it's just if you do the the"
+    },
+    {
+      "start": 744.24,
+      "duration": 2.96,
+      "text": "graphics just look good just because"
+    },
+    {
+      "start": 745.68,
+      "duration": 4.2,
+      "text": "everything kind of looks good on on a"
+    },
+    {
+      "start": 747.2,
+      "duration": 4.52,
+      "text": "new shiny machine yeah but the but the"
+    },
+    {
+      "start": 749.88,
+      "duration": 4.08,
+      "text": "they're they're very much cartoony"
+    },
+    {
+      "start": 751.72,
+      "duration": 4.8,
+      "text": "characters um and they kind of have"
+    },
+    {
+      "start": 753.96,
+      "duration": 5.04,
+      "text": "bigger heads so it's in the style of"
+    },
+    {
+      "start": 756.52,
+      "duration": 5.08,
+      "text": "that but we've we've started to get"
+    },
+    {
+      "start": 759.0,
+      "duration": 5.28,
+      "text": "through some early designs for for the"
+    },
+    {
+      "start": 761.6,
+      "duration": 5.88,
+      "text": "user interface and that user interface"
+    },
+    {
+      "start": 764.28,
+      "duration": 4.76,
+      "text": "will be be very very very similar to the"
+    },
+    {
+      "start": 767.48,
+      "duration": 5.24,
+      "text": "user interface that we're using on the"
+    },
+    {
+      "start": 769.04,
+      "duration": 6.24,
+      "text": "PC game so so that'll flow through and"
+    },
+    {
+      "start": 772.72,
+      "duration": 5.16,
+      "text": "again it's it's incorporating our our"
+    },
+    {
+      "start": 775.28,
+      "duration": 4.64,
+      "text": "nft holders the bubble jet if you hold a"
+    },
+    {
+      "start": 777.88,
+      "duration": 4.36,
+      "text": "bubble jet or a GT"
+    },
+    {
+      "start": 779.92,
+      "duration": 4.64,
+      "text": "you're going to have some added benefits"
+    },
+    {
+      "start": 782.24,
+      "duration": 5.12,
+      "text": "added utility for for owning those and"
+    },
+    {
+      "start": 784.56,
+      "duration": 6.08,
+      "text": "using them in the game which is pretty"
+    },
+    {
+      "start": 787.36,
+      "duration": 5.32,
+      "text": "exciting uh and and we've made a"
+    },
+    {
+      "start": 790.64,
+      "duration": 4.28,
+      "text": "remarkable progress this is we're taking"
+    },
+    {
+      "start": 792.68,
+      "duration": 4.0,
+      "text": "a a it'll be familiar to some of you"
+    },
+    {
+      "start": 794.92,
+      "duration": 3.84,
+      "text": "that the game there's a little bit of"
+    },
+    {
+      "start": 796.68,
+      "duration": 4.8,
+      "text": "familiarity but uh we're building it"
+    },
+    {
+      "start": 798.76,
+      "duration": 5.2,
+      "text": "entirely from scratch and it is uh it's"
+    },
+    {
+      "start": 801.48,
+      "duration": 4.4,
+      "text": "a pretty pretty solid game pretty"
+    },
+    {
+      "start": 803.96,
+      "duration": 3.96,
+      "text": "excited about this for sure yeah and and"
+    },
+    {
+      "start": 805.88,
+      "duration": 3.72,
+      "text": "you don't need the nfts to play the game"
+    },
+    {
+      "start": 807.92,
+      "duration": 4.0,
+      "text": "but if you do there's a multi player at"
+    },
+    {
+      "start": 809.6,
+      "duration": 5.2,
+      "text": "the a multiplier at the end of each"
+    },
+    {
+      "start": 811.92,
+      "duration": 5.36,
+      "text": "level right and that's and you actually"
+    },
+    {
+      "start": 814.8,
+      "duration": 5.24,
+      "text": "get an additional multiplier depending"
+    },
+    {
+      "start": 817.28,
+      "duration": 4.92,
+      "text": "on which of the five bubble Jets and"
+    },
+    {
+      "start": 820.04,
+      "duration": 4.48,
+      "text": "which of the five javelins you you've"
+    },
+    {
+      "start": 822.2,
+      "duration": 4.2,
+      "text": "got so if you've got all 10 you're going"
+    },
+    {
+      "start": 824.52,
+      "duration": 3.96,
+      "text": "to get a really big bonus if you've got"
+    },
+    {
+      "start": 826.4,
+      "duration": 4.72,
+      "text": "maybe maybe two or or maybe you've got"
+    },
+    {
+      "start": 828.48,
+      "duration": 5.12,
+      "text": "even one you'll get a slightly increased"
+    },
+    {
+      "start": 831.12,
+      "duration": 5.12,
+      "text": "one I mean it's not it's not massively"
+    },
+    {
+      "start": 833.6,
+      "duration": 5.0,
+      "text": "you know don't go out and buy 10 of them"
+    },
+    {
+      "start": 836.24,
+      "duration": 4.04,
+      "text": "because it won't be that much of a"
+    },
+    {
+      "start": 838.6,
+      "duration": 3.44,
+      "text": "massive benefit but there there is"
+    },
+    {
+      "start": 840.28,
+      "duration": 4.44,
+      "text": "definitely is a benefit on on the more"
+    },
+    {
+      "start": 842.04,
+      "duration": 5.24,
+      "text": "that you've got be it's fun and it's and"
+    },
+    {
+      "start": 844.72,
+      "duration": 4.84,
+      "text": "it's a great way for us to test out and"
+    },
+    {
+      "start": 847.28,
+      "duration": 3.88,
+      "text": "really the one of the main points of"
+    },
+    {
+      "start": 849.56,
+      "duration": 3.68,
+      "text": "this is to make the game fun but"
+    },
+    {
+      "start": 851.16,
+      "duration": 5.4,
+      "text": "obviously another thing that we get to"
+    },
+    {
+      "start": 853.24,
+      "duration": 4.88,
+      "text": "do is as we proceed into stage two of"
+    },
+    {
+      "start": 856.56,
+      "duration": 2.96,
+      "text": "this which is we've got to secure"
+    },
+    {
+      "start": 858.12,
+      "duration": 3.8,
+      "text": "everything we've got to figure out the"
+    },
+    {
+      "start": 859.52,
+      "duration": 5.12,
+      "text": "play to earn uh so that we can utilize"
+    },
+    {
+      "start": 861.92,
+      "duration": 3.92,
+      "text": "that partnership we have with Tingo uh"
+    },
+    {
+      "start": 864.64,
+      "duration": 4.0,
+      "text": "that's got you know 10 million"
+    },
+    {
+      "start": 865.84,
+      "duration": 5.04,
+      "text": "subscribers in Africa and Nigeria and we"
+    },
+    {
+      "start": 868.64,
+      "duration": 4.2,
+      "text": "can start taking steps towards bringing"
+    },
+    {
+      "start": 870.88,
+      "duration": 5.24,
+      "text": "in some of these other communities where"
+    },
+    {
+      "start": 872.84,
+      "duration": 5.08,
+      "text": "maybe $5 in earnings a day uh makes an"
+    },
+    {
+      "start": 876.12,
+      "duration": 4.64,
+      "text": "enormous difference for somebody maybe"
+    },
+    {
+      "start": 877.92,
+      "duration": 4.4,
+      "text": "it's 15 whatever it is this makes a"
+    },
+    {
+      "start": 880.76,
+      "duration": 3.96,
+      "text": "difference in in these people's lives"
+    },
+    {
+      "start": 882.32,
+      "duration": 5.88,
+      "text": "and so it allows us to to start really"
+    },
+    {
+      "start": 884.72,
+      "duration": 5.48,
+      "text": "moving into that play to earn uh field"
+    },
+    {
+      "start": 888.2,
+      "duration": 4.56,
+      "text": "so I I think it's a really good point"
+    },
+    {
+      "start": 890.2,
+      "duration": 5.08,
+      "text": "the security side we're taking this so"
+    },
+    {
+      "start": 892.76,
+      "duration": 5.12,
+      "text": "serious because although on on the"
+    },
+    {
+      "start": 895.28,
+      "duration": 5.6,
+      "text": "surface it looks like we're building a"
+    },
+    {
+      "start": 897.88,
+      "duration": 5.36,
+      "text": "number of games we're actually building"
+    },
+    {
+      "start": 900.88,
+      "duration": 4.44,
+      "text": "Financial products here because the Defi"
+    },
+    {
+      "start": 903.24,
+      "duration": 4.64,
+      "text": "and every you know that that there is"
+    },
+    {
+      "start": 905.32,
+      "duration": 4.0,
+      "text": "there is money value that people are"
+    },
+    {
+      "start": 907.88,
+      "duration": 4.32,
+      "text": "coming in not it's not costing them"
+    },
+    {
+      "start": 909.32,
+      "duration": 5.0,
+      "text": "anything to play but but there is there"
+    },
+    {
+      "start": 912.2,
+      "duration": 4.48,
+      "text": "is you know with the token in there the"
+    },
+    {
+      "start": 914.32,
+      "duration": 4.2,
+      "text": "ability for people to to have real life"
+    },
+    {
+      "start": 916.68,
+      "duration": 3.24,
+      "text": "money so so we know there's going to be"
+    },
+    {
+      "start": 918.52,
+      "duration": 2.48,
+      "text": "scammers and all kind of hackers that"
+    },
+    {
+      "start": 919.92,
+      "duration": 3.48,
+      "text": "are going to be trying to get in in"
+    },
+    {
+      "start": 921.0,
+      "duration": 5.44,
+      "text": "there and raid the cof sport so yeah"
+    },
+    {
+      "start": 923.4,
+      "duration": 5.72,
+      "text": "security is is so important for this"
+    },
+    {
+      "start": 926.44,
+      "duration": 5.64,
+      "text": "game yeah you take uh you take two"
+    },
+    {
+      "start": 929.12,
+      "duration": 6.52,
+      "text": "communities uh The Gaming Community and"
+    },
+    {
+      "start": 932.08,
+      "duration": 5.92,
+      "text": "the crypto Community both are very well"
+    },
+    {
+      "start": 935.64,
+      "duration": 4.64,
+      "text": "known with uh people that want to game"
+    },
+    {
+      "start": 938.0,
+      "duration": 5.8,
+      "text": "or hack the system and so we've"
+    },
+    {
+      "start": 940.28,
+      "duration": 5.84,
+      "text": "obviously got to keep security Paramount"
+    },
+    {
+      "start": 943.8,
+      "duration": 4.16,
+      "text": "and and uh that's definitely something"
+    },
+    {
+      "start": 946.12,
+      "duration": 3.36,
+      "text": "that's going to take some time and we"
+    },
+    {
+      "start": 947.96,
+      "duration": 4.08,
+      "text": "want to make sure that's right so the"
+    },
+    {
+      "start": 949.48,
+      "duration": 4.68,
+      "text": "game won't launch Play to earn but we"
+    },
+    {
+      "start": 952.04,
+      "duration": 4.64,
+      "text": "will move to that after we've launched"
+    },
+    {
+      "start": 954.16,
+      "duration": 5.2,
+      "text": "and tested and refined and made sure"
+    },
+    {
+      "start": 956.68,
+      "duration": 5.64,
+      "text": "that it's absolutely laser tight uh in"
+    },
+    {
+      "start": 959.36,
+      "duration": 6.0,
+      "text": "terms of security um so we should move"
+    },
+    {
+      "start": 962.32,
+      "duration": 4.48,
+      "text": "into the land sale and the the next nft"
+    },
+    {
+      "start": 965.36,
+      "duration": 5.08,
+      "text": "sale"
+    },
+    {
+      "start": 966.8,
+      "duration": 6.48,
+      "text": "so to further stress test our our"
+    },
+    {
+      "start": 970.44,
+      "duration": 5.32,
+      "text": "existing Tech we've got the OG you know"
+    },
+    {
+      "start": 973.28,
+      "duration": 5.92,
+      "text": "mint that's going on right now but in"
+    },
+    {
+      "start": 975.76,
+      "duration": 5.64,
+      "text": "about two weeks where uh when I get back"
+    },
+    {
+      "start": 979.2,
+      "duration": 5.2,
+      "text": "from uh Dominican Republic and getting"
+    },
+    {
+      "start": 981.4,
+      "duration": 5.44,
+      "text": "married um that's we're all be next week"
+    },
+    {
+      "start": 984.4,
+      "duration": 3.96,
+      "text": "yeah uh thank you very much uh but in"
+    },
+    {
+      "start": 986.84,
+      "duration": 4.8,
+      "text": "about two weeks when we're back we're"
+    },
+    {
+      "start": 988.36,
+      "duration": 5.84,
+      "text": "going to run another nft sale and it's"
+    },
+    {
+      "start": 991.64,
+      "duration": 4.56,
+      "text": "going to be something uh just a a little"
+    },
+    {
+      "start": 994.2,
+      "duration": 4.76,
+      "text": "item that's got some Rarities it's going"
+    },
+    {
+      "start": 996.2,
+      "duration": 4.68,
+      "text": "to have some utility uh might have might"
+    },
+    {
+      "start": 998.96,
+      "duration": 4.0,
+      "text": "even have some bling but it's just going"
+    },
+    {
+      "start": 1000.88,
+      "duration": 4.04,
+      "text": "to be another thing that we can we can"
+    },
+    {
+      "start": 1002.96,
+      "duration": 3.56,
+      "text": "offer and throw it out there to you guys"
+    },
+    {
+      "start": 1004.92,
+      "duration": 3.44,
+      "text": "we really want everybody to participate"
+    },
+    {
+      "start": 1006.52,
+      "duration": 4.88,
+      "text": "in that we're going to add utility to it"
+    },
+    {
+      "start": 1008.36,
+      "duration": 4.92,
+      "text": "over time within the game and it's"
+    },
+    {
+      "start": 1011.4,
+      "duration": 4.96,
+      "text": "another way for us to make sure okay"
+    },
+    {
+      "start": 1013.28,
+      "duration": 5.24,
+      "text": "we've really got our Tech nailed down uh"
+    },
+    {
+      "start": 1016.36,
+      "duration": 4.28,
+      "text": "before we move into the landale which is"
+    },
+    {
+      "start": 1018.52,
+      "duration": 4.64,
+      "text": "our highest priority right now really"
+    },
+    {
+      "start": 1020.64,
+      "duration": 4.76,
+      "text": "that's uh so much of all of our energy"
+    },
+    {
+      "start": 1023.16,
+      "duration": 4.52,
+      "text": "within the company is working towards"
+    },
+    {
+      "start": 1025.4,
+      "duration": 4.24,
+      "text": "this land sale yeah I mean we we have"
+    },
+    {
+      "start": 1027.68,
+      "duration": 4.28,
+      "text": "done like you say we've done a mini"
+    },
+    {
+      "start": 1029.64,
+      "duration": 4.32,
+      "text": "stress test with the OG but it wasn't it"
+    },
+    {
+      "start": 1031.96,
+      "duration": 5.52,
+      "text": "wasn't the biggest test it was enough to"
+    },
+    {
+      "start": 1033.96,
+      "duration": 5.96,
+      "text": "to know that that that that we we we're"
+    },
+    {
+      "start": 1037.48,
+      "duration": 6.52,
+      "text": "we're at a good level but we need that"
+    },
+    {
+      "start": 1039.92,
+      "duration": 6.84,
+      "text": "open public test on on on this this kind"
+    },
+    {
+      "start": 1044.0,
+      "duration": 5.08,
+      "text": "of additional mint just to make sure"
+    },
+    {
+      "start": 1046.76,
+      "duration": 4.52,
+      "text": "that when the land cell comes through"
+    },
+    {
+      "start": 1049.08,
+      "duration": 4.52,
+      "text": "there is no issues with it I I think"
+    },
+    {
+      "start": 1051.28,
+      "duration": 5.2,
+      "text": "people I hope people will appreciate"
+    },
+    {
+      "start": 1053.6,
+      "duration": 4.68,
+      "text": "that this test has to be done because"
+    },
+    {
+      "start": 1056.48,
+      "duration": 4.32,
+      "text": "when we come to that land sale you know"
+    },
+    {
+      "start": 1058.28,
+      "duration": 5.12,
+      "text": "is so crucial that it goes smooth for"
+    },
+    {
+      "start": 1060.8,
+      "duration": 6.28,
+      "text": "everyone you know and I just beg"
+    },
+    {
+      "start": 1063.4,
+      "duration": 5.52,
+      "text": "everyone that I would say like 70% of"
+    },
+    {
+      "start": 1067.08,
+      "duration": 4.6,
+      "text": "the errors we had a small number of"
+    },
+    {
+      "start": 1068.92,
+      "duration": 5.56,
+      "text": "issues on on the OG very"
+    },
+    {
+      "start": 1071.68,
+      "duration": 4.88,
+      "text": "small but most of them were related to"
+    },
+    {
+      "start": 1074.48,
+      "duration": 4.0,
+      "text": "some sort of user error that you know"
+    },
+    {
+      "start": 1076.56,
+      "duration": 4.28,
+      "text": "that they they hadn't followed quite"
+    },
+    {
+      "start": 1078.48,
+      "duration": 4.72,
+      "text": "this instructions to the te we're going"
+    },
+    {
+      "start": 1080.84,
+      "duration": 3.92,
+      "text": "to try to give you guys exactly what you"
+    },
+    {
+      "start": 1083.2,
+      "duration": 3.68,
+      "text": "have to do to make sure your wallets are"
+    },
+    {
+      "start": 1084.76,
+      "duration": 3.88,
+      "text": "set up properly you're using the right"
+    },
+    {
+      "start": 1086.88,
+      "duration": 4.28,
+      "text": "wallets all of that just follow"
+    },
+    {
+      "start": 1088.64,
+      "duration": 5.44,
+      "text": "instructions eliminate that possibility"
+    },
+    {
+      "start": 1091.16,
+      "duration": 5.92,
+      "text": "for for uh user error and then hopefully"
+    },
+    {
+      "start": 1094.08,
+      "duration": 6.12,
+      "text": "everything goes smoothly uh yeah I think"
+    },
+    {
+      "start": 1097.08,
+      "duration": 5.56,
+      "text": "this one this one you'll be able"
+    },
+    {
+      "start": 1100.2,
+      "duration": 4.36,
+      "text": "to we'll release more details in the"
+    },
+    {
+      "start": 1102.64,
+      "duration": 4.64,
+      "text": "future and and you'll you'll see it on"
+    },
+    {
+      "start": 1104.56,
+      "duration": 4.96,
+      "text": "this new mint but you'll be able to to"
+    },
+    {
+      "start": 1107.28,
+      "duration": 5.08,
+      "text": "kind of get into the into the sale into"
+    },
+    {
+      "start": 1109.52,
+      "duration": 5.6,
+      "text": "the queue and then you can leave that's"
+    },
+    {
+      "start": 1112.36,
+      "duration": 5.28,
+      "text": "it it's it's guaranteed yeah and you"
+    },
+    {
+      "start": 1115.12,
+      "duration": 6.04,
+      "text": "will then get a followup respondents"
+    },
+    {
+      "start": 1117.64,
+      "duration": 6.12,
+      "text": "from was at probably via email maybe by"
+    },
+    {
+      "start": 1121.16,
+      "duration": 4.8,
+      "text": "via a Discord link but you will get"
+    },
+    {
+      "start": 1123.76,
+      "duration": 4.52,
+      "text": "notification that you can you can come"
+    },
+    {
+      "start": 1125.96,
+      "duration": 4.0,
+      "text": "back and and and your nft but we're"
+    },
+    {
+      "start": 1128.28,
+      "duration": 3.44,
+      "text": "waiting there for you so there's no more"
+    },
+    {
+      "start": 1129.96,
+      "duration": 4.04,
+      "text": "hanging around for three or three or"
+    },
+    {
+      "start": 1131.72,
+      "duration": 3.64,
+      "text": "four hours um you know wondering whether"
+    },
+    {
+      "start": 1134.0,
+      "duration": 3.16,
+      "text": "things have gone through or anything"
+    },
+    {
+      "start": 1135.36,
+      "duration": 4.2,
+      "text": "like that so we really still be"
+    },
+    {
+      "start": 1137.16,
+      "duration": 4.2,
+      "text": "wondering but uh well yeah"
+    },
+    {
+      "start": 1139.56,
+      "duration": 4.12,
+      "text": "but you'll get you'll get confirmation"
+    },
+    {
+      "start": 1141.36,
+      "duration": 4.04,
+      "text": "immediately so as soon as soon as you"
+    },
+    {
+      "start": 1143.68,
+      "duration": 3.96,
+      "text": "you've you've been accepted by the"
+    },
+    {
+      "start": 1145.4,
+      "duration": 4.16,
+      "text": "system you'll get confirmation hopefully"
+    },
+    {
+      "start": 1147.64,
+      "duration": 3.6,
+      "text": "that confirmation will means all right"
+    },
+    {
+      "start": 1149.56,
+      "duration": 5.8,
+      "text": "now I just need to wait for further"
+    },
+    {
+      "start": 1151.24,
+      "duration": 6.28,
+      "text": "confirmation right and um yeah and it's"
+    },
+    {
+      "start": 1155.36,
+      "duration": 3.24,
+      "text": "it's still a minimal footprint on the"
+    },
+    {
+      "start": 1157.52,
+      "duration": 6.24,
+      "text": "cardano"
+    },
+    {
+      "start": 1158.6,
+      "duration": 8.28,
+      "text": "network y agreed okay so that transition"
+    },
+    {
+      "start": 1163.76,
+      "duration": 5.44,
+      "text": "into the land sale which I believe our"
+    },
+    {
+      "start": 1166.88,
+      "duration": 3.96,
+      "text": "community had a few questions for us so"
+    },
+    {
+      "start": 1169.2,
+      "duration": 3.48,
+      "text": "I'll go a and pop up that screen if if"
+    },
+    {
+      "start": 1170.84,
+      "duration": 3.4,
+      "text": "that's what you'd like me to do at this"
+    },
+    {
+      "start": 1172.68,
+      "duration": 5.76,
+      "text": "point"
+    },
+    {
+      "start": 1174.24,
+      "duration": 7.08,
+      "text": "um well there we go what was that what"
+    },
+    {
+      "start": 1178.44,
+      "duration": 5.96,
+      "text": "was that when land you you you caught"
+    },
+    {
+      "start": 1181.32,
+      "duration": 5.6,
+      "text": "you''ve caught me unawares oh the"
+    },
+    {
+      "start": 1184.4,
+      "duration": 5.04,
+      "text": "Twitter yeah I post I posted some"
+    },
+    {
+      "start": 1186.92,
+      "duration": 4.2,
+      "text": "questions uh you know I said we we were"
+    },
+    {
+      "start": 1189.44,
+      "duration": 3.24,
+      "text": "we were doing this do do you have any"
+    },
+    {
+      "start": 1191.12,
+      "duration": 3.8,
+      "text": "questions for us I mean I can run"
+    },
+    {
+      "start": 1192.68,
+      "duration": 4.52,
+      "text": "through some questions yeah yeah just"
+    },
+    {
+      "start": 1194.92,
+      "duration": 6.44,
+      "text": "let's answer three three questions just"
+    },
+    {
+      "start": 1197.2,
+      "duration": 6.48,
+      "text": "a couple question yeah um Jax I I know"
+    },
+    {
+      "start": 1201.36,
+      "duration": 4.72,
+      "text": "she's in Australia she was asking how"
+    },
+    {
+      "start": 1203.68,
+      "duration": 4.72,
+      "text": "big will the plots of land"
+    },
+    {
+      "start": 1206.08,
+      "duration": 5.08,
+      "text": "be uh well that's a great question we're"
+    },
+    {
+      "start": 1208.4,
+      "duration": 6.92,
+      "text": "going to have five different sizes that"
+    },
+    {
+      "start": 1211.16,
+      "duration": 5.48,
+      "text": "we know of and uh I can't we can't give"
+    },
+    {
+      "start": 1215.32,
+      "duration": 4.36,
+      "text": "you the exact details because we're"
+    },
+    {
+      "start": 1216.64,
+      "duration": 5.12,
+      "text": "still arranging and solidifying all of"
+    },
+    {
+      "start": 1219.68,
+      "duration": 4.0,
+      "text": "that but we've got it pretty close we"
+    },
+    {
+      "start": 1221.76,
+      "duration": 3.24,
+      "text": "know that we're going to have five sizes"
+    },
+    {
+      "start": 1223.68,
+      "duration": 3.76,
+      "text": "and we know that we've changed"
+    },
+    {
+      "start": 1225.0,
+      "duration": 4.56,
+      "text": "significantly from you know over time"
+    },
+    {
+      "start": 1227.44,
+      "duration": 4.48,
+      "text": "when we've been working working on this"
+    },
+    {
+      "start": 1229.56,
+      "duration": 4.48,
+      "text": "and I think the the most significant"
+    },
+    {
+      "start": 1231.92,
+      "duration": 4.24,
+      "text": "thing is that we've added utility to the"
+    },
+    {
+      "start": 1234.04,
+      "duration": 4.64,
+      "text": "land where you can have a variety of"
+    },
+    {
+      "start": 1236.16,
+      "duration": 4.24,
+      "text": "different shops on your land and and"
+    },
+    {
+      "start": 1238.68,
+      "duration": 3.56,
+      "text": "that really increases what you can do"
+    },
+    {
+      "start": 1240.4,
+      "duration": 4.12,
+      "text": "with it and how you process resources or"
+    },
+    {
+      "start": 1242.24,
+      "duration": 5.08,
+      "text": "how you earn within the game by playing"
+    },
+    {
+      "start": 1244.52,
+      "duration": 5.6,
+      "text": "the game so lots of cool stuff there"
+    },
+    {
+      "start": 1247.32,
+      "duration": 4.64,
+      "text": "yeah I mean I another question this is"
+    },
+    {
+      "start": 1250.12,
+      "duration": 2.72,
+      "text": "this is from jordane I mean I can answer"
+    },
+    {
+      "start": 1251.96,
+      "duration": 3.72,
+      "text": "this"
+    },
+    {
+      "start": 1252.84,
+      "duration": 4.44,
+      "text": "one the asked will there be any skill"
+    },
+    {
+      "start": 1255.68,
+      "duration": 3.68,
+      "text": "trees in the game which you know is a"
+    },
+    {
+      "start": 1257.28,
+      "duration": 4.2,
+      "text": "really good question and and it was it"
+    },
+    {
+      "start": 1259.36,
+      "duration": 4.48,
+      "text": "was how we started when we were doing"
+    },
+    {
+      "start": 1261.48,
+      "duration": 4.24,
+      "text": "our planning we had skill trees in there"
+    },
+    {
+      "start": 1263.84,
+      "duration": 4.8,
+      "text": "but we've evolved the thinking now we've"
+    },
+    {
+      "start": 1265.72,
+      "duration": 5.48,
+      "text": "gone more metsy so you will still have"
+    },
+    {
+      "start": 1268.64,
+      "duration": 4.8,
+      "text": "grinding and daily play Within the game"
+    },
+    {
+      "start": 1271.2,
+      "duration": 4.68,
+      "text": "but the skill will be handled"
+    },
+    {
+      "start": 1273.44,
+      "duration": 4.8,
+      "text": "differently more meters so so that'll be"
+    },
+    {
+      "start": 1275.88,
+      "duration": 4.72,
+      "text": "interesting to for us to to share how"
+    },
+    {
+      "start": 1278.24,
+      "duration": 3.52,
+      "text": "that works in the future what you mean"
+    },
+    {
+      "start": 1280.6,
+      "duration": 3.48,
+      "text": "by"
+    },
+    {
+      "start": 1281.76,
+      "duration": 6.56,
+      "text": "metaverse I I believe what you're saying"
+    },
+    {
+      "start": 1284.08,
+      "duration": 6.88,
+      "text": "is metaverse mechanics yeah meaning you"
+    },
+    {
+      "start": 1288.32,
+      "duration": 4.76,
+      "text": "know if somebody's going to chop down a"
+    },
+    {
+      "start": 1290.96,
+      "duration": 5.4,
+      "text": "tree we're going to try to make that"
+    },
+    {
+      "start": 1293.08,
+      "duration": 5.08,
+      "text": "chopping process as realistic as"
+    },
+    {
+      "start": 1296.36,
+      "duration": 4.6,
+      "text": "possible whereas it's it's not like"
+    },
+    {
+      "start": 1298.16,
+      "duration": 4.76,
+      "text": "you're just going to go approach the"
+    },
+    {
+      "start": 1300.96,
+      "duration": 4.08,
+      "text": "tree an option comes up and you push a"
+    },
+    {
+      "start": 1302.92,
+      "duration": 3.28,
+      "text": "button and it chops it down it's it's"
+    },
+    {
+      "start": 1305.04,
+      "duration": 3.44,
+      "text": "not going to be like that it's going to"
+    },
+    {
+      "start": 1306.2,
+      "duration": 4.96,
+      "text": "be more like you walk up to the tree you"
+    },
+    {
+      "start": 1308.48,
+      "duration": 5.28,
+      "text": "pull the axe out or you know what I'm"
+    },
+    {
+      "start": 1311.16,
+      "duration": 4.56,
+      "text": "this is off the cuff right so I'm"
+    },
+    {
+      "start": 1313.76,
+      "duration": 3.36,
+      "text": "thinking through but the the reality is"
+    },
+    {
+      "start": 1315.72,
+      "duration": 3.56,
+      "text": "what he's the essence of what Rob's"
+    },
+    {
+      "start": 1317.12,
+      "duration": 3.8,
+      "text": "trying to say is that we want to make it"
+    },
+    {
+      "start": 1319.28,
+      "duration": 3.52,
+      "text": "realistic so there's going to be a swing"
+    },
+    {
+      "start": 1320.92,
+      "duration": 3.96,
+      "text": "motion involved maybe where the the"
+    },
+    {
+      "start": 1322.8,
+      "duration": 4.16,
+      "text": "parameter goes up and you hit the button"
+    },
+    {
+      "start": 1324.88,
+      "duration": 3.64,
+      "text": "a second time when it's at Peak"
+    },
+    {
+      "start": 1326.96,
+      "duration": 3.84,
+      "text": "intensity that means you're going to get"
+    },
+    {
+      "start": 1328.52,
+      "duration": 3.96,
+      "text": "a great chop you know that sort of thing"
+    },
+    {
+      "start": 1330.8,
+      "duration": 4.04,
+      "text": "is what we're we're really trying to"
+    },
+    {
+      "start": 1332.48,
+      "duration": 4.08,
+      "text": "make it as as realistic and and detailed"
+    },
+    {
+      "start": 1334.84,
+      "duration": 3.96,
+      "text": "as possible and that's what he means by"
+    },
+    {
+      "start": 1336.56,
+      "duration": 5.16,
+      "text": "the metaverse mechanics and that entire"
+    },
+    {
+      "start": 1338.8,
+      "duration": 4.88,
+      "text": "tool itself you know you you you won't"
+    },
+    {
+      "start": 1341.72,
+      "duration": 3.6,
+      "text": "just appear you have to go away get the"
+    },
+    {
+      "start": 1343.68,
+      "duration": 3.96,
+      "text": "different parts and then go to different"
+    },
+    {
+      "start": 1345.32,
+      "duration": 3.76,
+      "text": "parts of the zones and and then craft it"
+    },
+    {
+      "start": 1347.64,
+      "duration": 5.24,
+      "text": "together and done depending on the"
+    },
+    {
+      "start": 1349.08,
+      "duration": 5.76,
+      "text": "material used so so it feels familiar it"
+    },
+    {
+      "start": 1352.88,
+      "duration": 4.0,
+      "text": "feels like what the question was asked"
+    },
+    {
+      "start": 1354.84,
+      "duration": 4.48,
+      "text": "but it but it's it's slight slightly"
+    },
+    {
+      "start": 1356.88,
+      "duration": 5.28,
+      "text": "different y um so there's a good one"
+    },
+    {
+      "start": 1359.32,
+      "duration": 5.68,
+      "text": "here I mean we we we did the video with"
+    },
+    {
+      "start": 1362.16,
+      "duration": 5.68,
+      "text": "um do you remember Chad with with his me"
+    },
+    {
+      "start": 1365.0,
+      "duration": 6.96,
+      "text": "glasses he better not be based on me"
+    },
+    {
+      "start": 1367.84,
+      "duration": 6.48,
+      "text": "that's horrible yeah Jus wants to know"
+    },
+    {
+      "start": 1371.96,
+      "duration": 6.96,
+      "text": "no sir who asked that question cranky"
+    },
+    {
+      "start": 1374.32,
+      "duration": 4.6,
+      "text": "Jesus I'm I'm reaching out to you"
+    },
+    {
+      "start": 1379.04,
+      "duration": 6.08,
+      "text": "um let not be based on me that's it I'm"
+    },
+    {
+      "start": 1382.48,
+      "duration": 4.72,
+      "text": "changing my hair I'm getting a"
+    },
+    {
+      "start": 1385.12,
+      "duration": 4.72,
+      "text": "mohawk oh You' had you've had your"
+    },
+    {
+      "start": 1387.2,
+      "duration": 4.64,
+      "text": "wedding wedding she might not be happy"
+    },
+    {
+      "start": 1389.84,
+      "duration": 4.24,
+      "text": "with that I'll do it after the wedding"
+    },
+    {
+      "start": 1391.84,
+      "duration": 3.92,
+      "text": "so any progress on the ingame economics"
+    },
+    {
+      "start": 1394.08,
+      "duration": 4.48,
+      "text": "I mean you talked about at the start"
+    },
+    {
+      "start": 1395.76,
+      "duration": 5.04,
+      "text": "actually how many plots of land so I"
+    },
+    {
+      "start": 1398.56,
+      "duration": 3.92,
+      "text": "think it's we're not going to reveal at"
+    },
+    {
+      "start": 1400.8,
+      "duration": 4.28,
+      "text": "the moment how many plots of land there"
+    },
+    {
+      "start": 1402.48,
+      "duration": 4.28,
+      "text": "are however we have a different approach"
+    },
+    {
+      "start": 1405.08,
+      "duration": 4.64,
+      "text": "to telling people what land's going to"
+    },
+    {
+      "start": 1406.76,
+      "duration": 5.68,
+      "text": "be available that you're working on yeah"
+    },
+    {
+      "start": 1409.72,
+      "duration": 5.48,
+      "text": "absolutely so much more to come guys the"
+    },
+    {
+      "start": 1412.44,
+      "duration": 5.4,
+      "text": "the the essence of I guess what we would"
+    },
+    {
+      "start": 1415.2,
+      "duration": 5.0,
+      "text": "we'd say right now uh before we get Matt"
+    },
+    {
+      "start": 1417.84,
+      "duration": 5.88,
+      "text": "up here is"
+    },
+    {
+      "start": 1420.2,
+      "duration": 7.52,
+      "text": "that the land"
+    },
+    {
+      "start": 1423.72,
+      "duration": 6.0,
+      "text": "sale is going to I mean we're looking to"
+    },
+    {
+      "start": 1427.72,
+      "duration": 4.2,
+      "text": "do the best land sale ever is is what"
+    },
+    {
+      "start": 1429.72,
+      "duration": 4.28,
+      "text": "we're going for we're going for really"
+    },
+    {
+      "start": 1431.92,
+      "duration": 4.4,
+      "text": "high quality Graphics we're going for"
+    },
+    {
+      "start": 1434.0,
+      "duration": 4.16,
+      "text": "beautiful land we're going for when you"
+    },
+    {
+      "start": 1436.32,
+      "duration": 4.28,
+      "text": "see this video you're going to want to"
+    },
+    {
+      "start": 1438.16,
+      "duration": 3.84,
+      "text": "be in there and that's exactly what Jeff"
+    },
+    {
+      "start": 1440.6,
+      "duration": 3.44,
+      "text": "said about it when he watched it and"
+    },
+    {
+      "start": 1442.0,
+      "duration": 4.92,
+      "text": "it's exactly what I felt when I watched"
+    },
+    {
+      "start": 1444.04,
+      "duration": 5.88,
+      "text": "this video that that uh I can't wait to"
+    },
+    {
+      "start": 1446.92,
+      "duration": 4.96,
+      "text": "show when I watched that I was like man"
+    },
+    {
+      "start": 1449.92,
+      "duration": 4.68,
+      "text": "I want to be in there with my avatar"
+    },
+    {
+      "start": 1451.88,
+      "duration": 5.36,
+      "text": "exploring this land right now and even"
+    },
+    {
+      "start": 1454.6,
+      "duration": 4.2,
+      "text": "uh David said that he was going around"
+    },
+    {
+      "start": 1457.24,
+      "duration": 3.0,
+      "text": "exploring it he said yeah it's it's"
+    },
+    {
+      "start": 1458.8,
+      "duration": 3.76,
+      "text": "still a little buggy we've got to work"
+    },
+    {
+      "start": 1460.24,
+      "duration": 4.24,
+      "text": "out some Kinks but it's built it's"
+    },
+    {
+      "start": 1462.56,
+      "duration": 3.8,
+      "text": "developed that land is developed and he"
+    },
+    {
+      "start": 1464.48,
+      "duration": 3.6,
+      "text": "can walk around inside of it I can't"
+    },
+    {
+      "start": 1466.36,
+      "duration": 3.04,
+      "text": "wait to do it so that's what we're going"
+    },
+    {
+      "start": 1468.08,
+      "duration": 3.6,
+      "text": "for with the land sale we're going to"
+    },
+    {
+      "start": 1469.4,
+      "duration": 4.52,
+      "text": "give it a lot of utility and we're going"
+    },
+    {
+      "start": 1471.68,
+      "duration": 4.2,
+      "text": "to have a land sale that blows anything"
+    },
+    {
+      "start": 1473.92,
+      "duration": 3.48,
+      "text": "else you've seen out there out of the"
+    },
+    {
+      "start": 1475.88,
+      "duration": 3.92,
+      "text": "water I mean it's that's that's what"
+    },
+    {
+      "start": 1477.4,
+      "duration": 4.52,
+      "text": "we're going for yeah it's like Christmas"
+    },
+    {
+      "start": 1479.8,
+      "duration": 3.64,
+      "text": "for him I mean if you imagine as a"
+    },
+    {
+      "start": 1481.92,
+      "duration": 3.64,
+      "text": "developer then you suddenly get this new"
+    },
+    {
+      "start": 1483.44,
+      "duration": 4.64,
+      "text": "tool probably let's compare it with"
+    },
+    {
+      "start": 1485.56,
+      "duration": 4.24,
+      "text": "somebody who test drives Ferrari true"
+    },
+    {
+      "start": 1488.08,
+      "duration": 3.96,
+      "text": "and then they give you a new a brand new"
+    },
+    {
+      "start": 1489.8,
+      "duration": 5.4,
+      "text": "engine you're like"
+    },
+    {
+      "start": 1492.04,
+      "duration": 5.52,
+      "text": "whoa yeah totally new engine yeah"
+    },
+    {
+      "start": 1495.2,
+      "duration": 4.4,
+      "text": "completely agree all right let's uh"
+    },
+    {
+      "start": 1497.56,
+      "duration": 4.68,
+      "text": "let's go ahead and"
+    },
+    {
+      "start": 1499.6,
+      "duration": 6.88,
+      "text": "get our special guest up we've got a"
+    },
+    {
+      "start": 1502.24,
+      "duration": 7.44,
+      "text": "special guest reminds me a lot of uh"
+    },
+    {
+      "start": 1506.48,
+      "duration": 3.2,
+      "text": "Indiana Jones"
+    },
+    {
+      "start": 1509.76,
+      "duration": 7.88,
+      "text": "really hey there he is what's up guys"
+    },
+    {
+      "start": 1513.8,
+      "duration": 5.24,
+      "text": "Matt Jones Indies has arrived all right"
+    },
+    {
+      "start": 1517.64,
+      "duration": 4.32,
+      "text": "Indiana"
+    },
+    {
+      "start": 1519.04,
+      "duration": 4.68,
+      "text": "Jones uh welcome to copi Cafe it's good"
+    },
+    {
+      "start": 1521.96,
+      "duration": 5.2,
+      "text": "to have you on my little brother"
+    },
+    {
+      "start": 1523.72,
+      "duration": 7.36,
+      "text": "everyone a familiar name yeah Matt Jones"
+    },
+    {
+      "start": 1527.16,
+      "duration": 6.36,
+      "text": "Indiana Jones Josh Jones yeah yeah hey"
+    },
+    {
+      "start": 1531.08,
+      "duration": 6.72,
+      "text": "what are you drinking Matt look like"
+    },
+    {
+      "start": 1533.52,
+      "duration": 6.96,
+      "text": "green um I've got a nice green"
+    },
+    {
+      "start": 1537.8,
+      "duration": 4.2,
+      "text": "veggie fruit juice well let's go ahead"
+    },
+    {
+      "start": 1540.48,
+      "duration": 3.56,
+      "text": "and see let's get a closeup of that real"
+    },
+    {
+      "start": 1542.0,
+      "duration": 4.0,
+      "text": "quick it looks really disgusting but"
+    },
+    {
+      "start": 1544.04,
+      "duration": 3.16,
+      "text": "it's actually oh well now pull it back"
+    },
+    {
+      "start": 1546.0,
+      "duration": 2.88,
+      "text": "towards your face because you got the"
+    },
+    {
+      "start": 1547.2,
+      "duration": 4.32,
+      "text": "background thing on it's clear it's"
+    },
+    {
+      "start": 1548.88,
+      "duration": 5.08,
+      "text": "clear glass can't see it it looks like"
+    },
+    {
+      "start": 1551.52,
+      "duration": 5.0,
+      "text": "you're okay yeah that's not going"
+    },
+    {
+      "start": 1553.96,
+      "duration": 4.84,
+      "text": "anywhere with your Indiana Jones"
+    },
+    {
+      "start": 1556.52,
+      "duration": 4.84,
+      "text": "background where's the arc is Arc in"
+    },
+    {
+      "start": 1558.8,
+      "duration": 5.36,
+      "text": "there behind you I think so yeah"
+    },
+    {
+      "start": 1561.36,
+      "duration": 5.76,
+      "text": "somewhere in that box right there okay"
+    },
+    {
+      "start": 1564.16,
+      "duration": 4.88,
+      "text": "yep well good to have you on so tell us"
+    },
+    {
+      "start": 1567.12,
+      "duration": 6.4,
+      "text": "a little bit about your role with uh"
+    },
+    {
+      "start": 1569.04,
+      "duration": 8.4,
+      "text": "cornic copius oh man uh kind of a mixed"
+    },
+    {
+      "start": 1573.52,
+      "duration": 7.16,
+      "text": "bag um started off"
+    },
+    {
+      "start": 1577.44,
+      "duration": 5.32,
+      "text": "as uh you know just some simple graphic"
+    },
+    {
+      "start": 1580.68,
+      "duration": 3.72,
+      "text": "design I basically begged you to give me"
+    },
+    {
+      "start": 1582.76,
+      "duration": 3.64,
+      "text": "a job when I heard what you were doing I"
+    },
+    {
+      "start": 1584.4,
+      "duration": 4.6,
+      "text": "was like please please give me a job"
+    },
+    {
+      "start": 1586.4,
+      "duration": 6.52,
+      "text": "find me some work um"
+    },
+    {
+      "start": 1589.0,
+      "duration": 7.72,
+      "text": "and then it slowly moved into"
+    },
+    {
+      "start": 1592.92,
+      "duration": 7.44,
+      "text": "Discord um as the community manager"
+    },
+    {
+      "start": 1596.72,
+      "duration": 7.12,
+      "text": "and um and then I'm I'm dipping into"
+    },
+    {
+      "start": 1600.36,
+      "duration": 7.84,
+      "text": "marketing a little bit um and then nft"
+    },
+    {
+      "start": 1603.84,
+      "duration": 6.92,
+      "text": "sales manager as well okay so what tell"
+    },
+    {
+      "start": 1608.2,
+      "duration": 4.2,
+      "text": "us a little bit about the uh the mission"
+    },
+    {
+      "start": 1610.76,
+      "duration": 6.4,
+      "text": "and what you're going for with that"
+    },
+    {
+      "start": 1612.4,
+      "duration": 8.88,
+      "text": "Discord Community what's yeah so uh with"
+    },
+    {
+      "start": 1617.16,
+      "duration": 7.84,
+      "text": "my nft EXP experience um you know I I"
+    },
+    {
+      "start": 1621.28,
+      "duration": 6.48,
+      "text": "was fortunate enough to to join a pretty"
+    },
+    {
+      "start": 1625.0,
+      "duration": 6.32,
+      "text": "exclusive Alpa group for nfts which has"
+    },
+    {
+      "start": 1627.76,
+      "duration": 6.24,
+      "text": "allowed me over time to to really really"
+    },
+    {
+      "start": 1631.32,
+      "duration": 7.28,
+      "text": "dive in and immerse myself into a ton of"
+    },
+    {
+      "start": 1634.0,
+      "duration": 7.88,
+      "text": "different projects um and basically over"
+    },
+    {
+      "start": 1638.6,
+      "duration": 6.6,
+      "text": "the last year I've been able to pick up"
+    },
+    {
+      "start": 1641.88,
+      "duration": 5.6,
+      "text": "a lot of things that I I like and"
+    },
+    {
+      "start": 1645.2,
+      "duration": 5.8,
+      "text": "dislike and what other people like and"
+    },
+    {
+      "start": 1647.48,
+      "duration": 7.12,
+      "text": "dislike in these communities"
+    },
+    {
+      "start": 1651.0,
+      "duration": 6.92,
+      "text": "and uh my goal is to always bring that"
+    },
+    {
+      "start": 1654.6,
+      "duration": 7.44,
+      "text": "into our community is to have a very"
+    },
+    {
+      "start": 1657.92,
+      "duration": 6.32,
+      "text": "organic supportive um inspiring"
+    },
+    {
+      "start": 1662.04,
+      "duration": 5.08,
+      "text": "creative uh mentality within the"
+    },
+    {
+      "start": 1664.24,
+      "duration": 5.92,
+      "text": "community and um I think we've done a"
+    },
+    {
+      "start": 1667.12,
+      "duration": 6.64,
+      "text": "really good job of of getting to that"
+    },
+    {
+      "start": 1670.16,
+      "duration": 4.96,
+      "text": "point um you know you and I discussed"
+    },
+    {
+      "start": 1673.76,
+      "duration": 3.24,
+      "text": "from the beginning we don't want to have"
+    },
+    {
+      "start": 1675.12,
+      "duration": 3.28,
+      "text": "invite contests we don't want to have"
+    },
+    {
+      "start": 1677.0,
+      "duration": 4.08,
+      "text": "grind contests where people people are"
+    },
+    {
+      "start": 1678.4,
+      "duration": 5.0,
+      "text": "just spamming chat with with nonsense to"
+    },
+    {
+      "start": 1681.08,
+      "duration": 4.96,
+      "text": "reach a particular level we just want"
+    },
+    {
+      "start": 1683.4,
+      "duration": 5.64,
+      "text": "people to come in and have genuine"
+    },
+    {
+      "start": 1686.04,
+      "duration": 6.32,
+      "text": "conversation and be friendly be"
+    },
+    {
+      "start": 1689.04,
+      "duration": 6.88,
+      "text": "supportive um and we've we've done that"
+    },
+    {
+      "start": 1692.36,
+      "duration": 6.0,
+      "text": "I think um yeah absolutely our organic"
+    },
+    {
+      "start": 1695.92,
+      "duration": 4.4,
+      "text": "has been incredible I think I think"
+    },
+    {
+      "start": 1698.36,
+      "duration": 5.32,
+      "text": "we've done an amazing job with with"
+    },
+    {
+      "start": 1700.32,
+      "duration": 6.16,
+      "text": "Discord I see that every day sometimes"
+    },
+    {
+      "start": 1703.68,
+      "duration": 4.68,
+      "text": "there's a bit of tough love um but I"
+    },
+    {
+      "start": 1706.48,
+      "duration": 3.76,
+      "text": "mean yeah the the community of got got"
+    },
+    {
+      "start": 1708.36,
+      "duration": 4.76,
+      "text": "right behind and and they're the same"
+    },
+    {
+      "start": 1710.24,
+      "duration": 4.36,
+      "text": "Spirit our community is great I think I"
+    },
+    {
+      "start": 1713.12,
+      "duration": 3.52,
+      "text": "think it's probably worth mentioning"
+    },
+    {
+      "start": 1714.6,
+      "duration": 3.8,
+      "text": "that you you talk about you the other"
+    },
+    {
+      "start": 1716.64,
+      "duration": 3.68,
+      "text": "communities that you're in and the other"
+    },
+    {
+      "start": 1718.4,
+      "duration": 4.28,
+      "text": "discords that you're in they're not on"
+    },
+    {
+      "start": 1720.32,
+      "duration": 5.92,
+      "text": "cardano are they so your experience is"
+    },
+    {
+      "start": 1722.68,
+      "duration": 7.4,
+      "text": "is on other chains how does that compare"
+    },
+    {
+      "start": 1726.24,
+      "duration": 6.44,
+      "text": "with cardano yeah um great question the"
+    },
+    {
+      "start": 1730.08,
+      "duration": 6.72,
+      "text": "alpha group I'm in primarily targets"
+    },
+    {
+      "start": 1732.68,
+      "duration": 7.16,
+      "text": "ethereum projects um so I am seeing a"
+    },
+    {
+      "start": 1736.8,
+      "duration": 5.36,
+      "text": "ton of ethereum based projects salana as"
+    },
+    {
+      "start": 1739.84,
+      "duration": 5.04,
+      "text": "well um"
+    },
+    {
+      "start": 1742.16,
+      "duration": 5.6,
+      "text": "and it's a it's a totally mixed bag like"
+    },
+    {
+      "start": 1744.88,
+      "duration": 4.96,
+      "text": "some some have massive invite contests"
+    },
+    {
+      "start": 1747.76,
+      "duration": 4.44,
+      "text": "and grind contests and their discords"
+    },
+    {
+      "start": 1749.84,
+      "duration": 4.64,
+      "text": "will fill up to like a 100,000 people in"
+    },
+    {
+      "start": 1752.2,
+      "duration": 5.4,
+      "text": "a matter of days and it's just it's"
+    },
+    {
+      "start": 1754.48,
+      "duration": 5.0,
+      "text": "botted and burner accounts and the the"
+    },
+    {
+      "start": 1757.6,
+      "duration": 3.84,
+      "text": "chat's moving so fast you can't even"
+    },
+    {
+      "start": 1759.48,
+      "duration": 6.4,
+      "text": "have a conversation it's just completely"
+    },
+    {
+      "start": 1761.44,
+      "duration": 6.88,
+      "text": "pointless um and you know of course they"
+    },
+    {
+      "start": 1765.88,
+      "duration": 5.72,
+      "text": "meant their they meant their nft it's"
+    },
+    {
+      "start": 1768.32,
+      "duration": 6.4,
+      "text": "full of flipping uh undercutting etc etc"
+    },
+    {
+      "start": 1771.6,
+      "duration": 5.2,
+      "text": "and the goal the goal with creating a"
+    },
+    {
+      "start": 1774.72,
+      "duration": 5.28,
+      "text": "strong supportive Community is that you"
+    },
+    {
+      "start": 1776.8,
+      "duration": 5.52,
+      "text": "know we have people that truly believe"
+    },
+    {
+      "start": 1780.0,
+      "duration": 3.92,
+      "text": "in the project they hold their nfts of"
+    },
+    {
+      "start": 1782.32,
+      "duration": 3.84,
+      "text": "course we have some flippers it's part"
+    },
+    {
+      "start": 1783.92,
+      "duration": 5.44,
+      "text": "of the it's part of the economy of an"
+    },
+    {
+      "start": 1786.16,
+      "duration": 6.32,
+      "text": "nft sale secondary Market um but if you"
+    },
+    {
+      "start": 1789.36,
+      "duration": 5.84,
+      "text": "go to jpeg store we I couldn't tell you"
+    },
+    {
+      "start": 1792.48,
+      "duration": 4.88,
+      "text": "what the percentage of of listings we"
+    },
+    {
+      "start": 1795.2,
+      "duration": 4.28,
+      "text": "have but I know it's low which shows"
+    },
+    {
+      "start": 1797.36,
+      "duration": 5.64,
+      "text": "that we have a strong support for our"
+    },
+    {
+      "start": 1799.48,
+      "duration": 6.72,
+      "text": "community I know I know on the OG me on"
+    },
+    {
+      "start": 1803.0,
+      "duration": 5.84,
+      "text": "the OG are you know the the people that"
+    },
+    {
+      "start": 1806.2,
+      "duration": 5.04,
+      "text": "were in really early but I think a lot"
+    },
+    {
+      "start": 1808.84,
+      "duration": 5.04,
+      "text": "of the were were people that we've"
+    },
+    {
+      "start": 1811.24,
+      "duration": 5.92,
+      "text": "upgraded so can can you share with"
+    },
+    {
+      "start": 1813.88,
+      "duration": 6.88,
+      "text": "people how how they get upgraded and how"
+    },
+    {
+      "start": 1817.16,
+      "duration": 6.96,
+      "text": "how they can still become ogs yeah so"
+    },
+    {
+      "start": 1820.76,
+      "duration": 4.2,
+      "text": "over time um you know the mods the mods"
+    },
+    {
+      "start": 1824.12,
+      "duration": 3.2,
+      "text": "are"
+    },
+    {
+      "start": 1824.96,
+      "duration": 4.6,
+      "text": "particularly uh doing a lot more"
+    },
+    {
+      "start": 1827.32,
+      "duration": 4.0,
+      "text": "watching than I because you know day in"
+    },
+    {
+      "start": 1829.56,
+      "duration": 4.04,
+      "text": "day out we're we're in meetings we're"
+    },
+    {
+      "start": 1831.32,
+      "duration": 4.92,
+      "text": "doing other things um so I don't get to"
+    },
+    {
+      "start": 1833.6,
+      "duration": 6.64,
+      "text": "see as much of the conversation as as I"
+    },
+    {
+      "start": 1836.24,
+      "duration": 6.72,
+      "text": "would like but um typically ogs and mods"
+    },
+    {
+      "start": 1840.24,
+      "duration": 6.0,
+      "text": "will come to me and they'll they'll"
+    },
+    {
+      "start": 1842.96,
+      "duration": 6.68,
+      "text": "suggest uh candidates and I'll I'll take"
+    },
+    {
+      "start": 1846.24,
+      "duration": 6.28,
+      "text": "a look at it and you know"
+    },
+    {
+      "start": 1849.64,
+      "duration": 6.32,
+      "text": "obviously you know supportive genuine"
+    },
+    {
+      "start": 1852.52,
+      "duration": 5.72,
+      "text": "conversation is is a big plus obviously"
+    },
+    {
+      "start": 1855.96,
+      "duration": 4.56,
+      "text": "if you if you come in and start asking"
+    },
+    {
+      "start": 1858.24,
+      "duration": 4.84,
+      "text": "for OG it's like okay well I don't think"
+    },
+    {
+      "start": 1860.52,
+      "duration": 5.44,
+      "text": "you understand the point of it"
+    },
+    {
+      "start": 1863.08,
+      "duration": 5.84,
+      "text": "um but yeah it's it's kind of a a"
+    },
+    {
+      "start": 1865.96,
+      "duration": 5.76,
+      "text": "vote-based system suggested system and a"
+    },
+    {
+      "start": 1868.92,
+      "duration": 5.04,
+      "text": "lot of times I will pick up on on the"
+    },
+    {
+      "start": 1871.72,
+      "duration": 4.44,
+      "text": "same name doing really really cool"
+    },
+    {
+      "start": 1873.96,
+      "duration": 3.96,
+      "text": "things in the community and uh in the"
+    },
+    {
+      "start": 1876.16,
+      "duration": 3.64,
+      "text": "back of my mind I know that they will be"
+    },
+    {
+      "start": 1877.92,
+      "duration": 4.28,
+      "text": "upgraded at some point when I when I get"
+    },
+    {
+      "start": 1879.8,
+      "duration": 6.68,
+      "text": "around to it uh or when they get"
+    },
+    {
+      "start": 1882.2,
+      "duration": 6.52,
+      "text": "suggested by a mod um so after this mint"
+    },
+    {
+      "start": 1886.48,
+      "duration": 6.92,
+      "text": "is over we will start start upgrading"
+    },
+    {
+      "start": 1888.72,
+      "duration": 8.28,
+      "text": "again as we see see those people fit"
+    },
+    {
+      "start": 1893.4,
+      "duration": 6.44,
+      "text": "um but yeah yeah it's it's a continual"
+    },
+    {
+      "start": 1897.0,
+      "duration": 5.32,
+      "text": "growing Army of support for us so yeah"
+    },
+    {
+      "start": 1899.84,
+      "duration": 5.96,
+      "text": "and it's it's one of those things"
+    },
+    {
+      "start": 1902.32,
+      "duration": 7.28,
+      "text": "where we need that that community of ogs"
+    },
+    {
+      "start": 1905.8,
+      "duration": 7.56,
+      "text": "to grow with the general growth of the"
+    },
+    {
+      "start": 1909.6,
+      "duration": 6.52,
+      "text": "Discord so that over time we are able to"
+    },
+    {
+      "start": 1913.36,
+      "duration": 5.2,
+      "text": "keep this community healthy meaning"
+    },
+    {
+      "start": 1916.12,
+      "duration": 4.52,
+      "text": "there's informed people in there ready"
+    },
+    {
+      "start": 1918.56,
+      "duration": 4.32,
+      "text": "to answer questions there's there's a"
+    },
+    {
+      "start": 1920.64,
+      "duration": 4.52,
+      "text": "positive creative inspired culture"
+    },
+    {
+      "start": 1922.88,
+      "duration": 5.24,
+      "text": "inside of the Discord if we wanted to"
+    },
+    {
+      "start": 1925.16,
+      "duration": 6.28,
+      "text": "blow it out of the park and do a a"
+    },
+    {
+      "start": 1928.12,
+      "duration": 6.28,
+      "text": "million token air or a 20 million token"
+    },
+    {
+      "start": 1931.44,
+      "duration": 4.84,
+      "text": "airdrop and through coin market cap or"
+    },
+    {
+      "start": 1934.4,
+      "duration": 4.44,
+      "text": "something like that we could get a flood"
+    },
+    {
+      "start": 1936.28,
+      "duration": 5.72,
+      "text": "of people but like then what then what"
+    },
+    {
+      "start": 1938.84,
+      "duration": 5.56,
+      "text": "happens you get a flood of and things"
+    },
+    {
+      "start": 1942.0,
+      "duration": 5.08,
+      "text": "get yeah so right now and and I had"
+    },
+    {
+      "start": 1944.4,
+      "duration": 5.64,
+      "text": "feedback just the other day from a very"
+    },
+    {
+      "start": 1947.08,
+      "duration": 5.68,
+      "text": "cool uh Rob got pinged on Discord from"
+    },
+    {
+      "start": 1950.04,
+      "duration": 6.24,
+      "text": "some of the users that hey there's uh"
+    },
+    {
+      "start": 1952.76,
+      "duration": 5.64,
+      "text": "Dan from crypto Capital Venture is uh is"
+    },
+    {
+      "start": 1956.28,
+      "duration": 4.24,
+      "text": "is talking about cornucopias right now"
+    },
+    {
+      "start": 1958.4,
+      "duration": 4.48,
+      "text": "or or something he tweeted about it and"
+    },
+    {
+      "start": 1960.52,
+      "duration": 4.84,
+      "text": "so Rob reached out to him we set up a"
+    },
+    {
+      "start": 1962.88,
+      "duration": 4.84,
+      "text": "call we talked to him and we asked him"
+    },
+    {
+      "start": 1965.36,
+      "duration": 3.92,
+      "text": "hey what's it like uh because he told us"
+    },
+    {
+      "start": 1967.72,
+      "duration": 4.4,
+      "text": "hey I've been I've been in your uh"
+    },
+    {
+      "start": 1969.28,
+      "duration": 5.48,
+      "text": "Discord so we asked him what's it like"
+    },
+    {
+      "start": 1972.12,
+      "duration": 4.36,
+      "text": "and he said man I love it I love it in"
+    },
+    {
+      "start": 1974.76,
+      "duration": 4.2,
+      "text": "there it's a great culture you guys have"
+    },
+    {
+      "start": 1976.48,
+      "duration": 4.16,
+      "text": "really done a wonderful job and we had a"
+    },
+    {
+      "start": 1978.96,
+      "duration": 4.16,
+      "text": "great conversation with him I love what"
+    },
+    {
+      "start": 1980.64,
+      "duration": 4.48,
+      "text": "he's doing at crypto Capital Venture and"
+    },
+    {
+      "start": 1983.12,
+      "duration": 3.64,
+      "text": "uh he actually tweeted about us again"
+    },
+    {
+      "start": 1985.12,
+      "duration": 3.28,
+      "text": "last night so we really thank you Dan"
+    },
+    {
+      "start": 1986.76,
+      "duration": 4.24,
+      "text": "for your your support in what we're"
+    },
+    {
+      "start": 1988.4,
+      "duration": 4.68,
+      "text": "doing and we got some he's a cool guy so"
+    },
+    {
+      "start": 1991.0,
+      "duration": 4.12,
+      "text": "we've got some really good ideas uh that"
+    },
+    {
+      "start": 1993.08,
+      "duration": 4.36,
+      "text": "we're going to work through with him"
+    },
+    {
+      "start": 1995.12,
+      "duration": 4.52,
+      "text": "over time and and this might unfold into"
+    },
+    {
+      "start": 1997.44,
+      "duration": 4.56,
+      "text": "something more uh I I think it's very"
+    },
+    {
+      "start": 1999.64,
+      "duration": 4.84,
+      "text": "possible so we're we're excited about"
+    },
+    {
+      "start": 2002.0,
+      "duration": 5.88,
+      "text": "the potential there but um yeah you've"
+    },
+    {
+      "start": 2004.48,
+      "duration": 4.76,
+      "text": "done a great job in Discord um"
+    },
+    {
+      "start": 2007.88,
+      "duration": 7.12,
+      "text": "yeah I've got a gift for you actually"
+    },
+    {
+      "start": 2009.24,
+      "duration": 5.76,
+      "text": "Matt oh Bo oh surprise gift I"
+    },
+    {
+      "start": 2015.48,
+      "duration": 7.4,
+      "text": "have the Holy Grail oh look at"
+    },
+    {
+      "start": 2020.44,
+      "duration": 6.36,
+      "text": "that is this the Holy"
+    },
+    {
+      "start": 2022.88,
+      "duration": 6.44,
+      "text": "Grail that's a really good one yeah"
+    },
+    {
+      "start": 2026.8,
+      "duration": 3.24,
+      "text": "wellink drink from it at your own Peril"
+    },
+    {
+      "start": 2029.32,
+      "duration": 5.08,
+      "text": "that's"
+    },
+    {
+      "start": 2030.04,
+      "duration": 6.92,
+      "text": "what if it uh if it really was it would"
+    },
+    {
+      "start": 2034.4,
+      "duration": 4.28,
+      "text": "be a wooden cup I believe oh wasn't it"
+    },
+    {
+      "start": 2036.96,
+      "duration": 4.96,
+      "text": "wooden the carpet yeah I believe it was"
+    },
+    {
+      "start": 2038.68,
+      "duration": 5.0,
+      "text": "a carpenter's cup yeah maybe that was"
+    },
+    {
+      "start": 2041.92,
+      "duration": 4.2,
+      "text": "the the poor choice one where you"
+    },
+    {
+      "start": 2043.68,
+      "duration": 2.44,
+      "text": "dissolve"
+    },
+    {
+      "start": 2046.56,
+      "duration": 6.24,
+      "text": "into that's a good looking chalice a"
+    },
+    {
+      "start": 2048.76,
+      "duration": 6.92,
+      "text": "good looking C test Josh yeah so I did I"
+    },
+    {
+      "start": 2052.8,
+      "duration": 4.8,
+      "text": "passed the test um the leap of faith"
+    },
+    {
+      "start": 2055.68,
+      "duration": 4.4,
+      "text": "what was that is that Temple of Doom or"
+    },
+    {
+      "start": 2057.6,
+      "duration": 3.8,
+      "text": "no that was the the leap of faith leap"
+    },
+    {
+      "start": 2060.08,
+      "duration": 3.32,
+      "text": "of faith where he had to walk off the"
+    },
+    {
+      "start": 2061.4,
+      "duration": 4.2,
+      "text": "cliff and no that's giving your job up"
+    },
+    {
+      "start": 2063.4,
+      "duration": 6.32,
+      "text": "and jumping full in on cornic opius"
+    },
+    {
+      "start": 2065.6,
+      "duration": 6.84,
+      "text": "that's yeah that is hey nice well done"
+    },
+    {
+      "start": 2069.72,
+      "duration": 8.48,
+      "text": "yeah we did it we did it thank God that"
+    },
+    {
+      "start": 2072.44,
+      "duration": 7.4,
+      "text": "worked out so Matt nfts um you you have"
+    },
+    {
+      "start": 2078.2,
+      "duration": 2.96,
+      "text": "a lot of experience with that and and"
+    },
+    {
+      "start": 2079.84,
+      "duration": 5.96,
+      "text": "tell us a little bit about what your"
+    },
+    {
+      "start": 2081.16,
+      "duration": 7.24,
+      "text": "role is there with cornucopious uh yeah"
+    },
+    {
+      "start": 2085.8,
+      "duration": 6.36,
+      "text": "so a little over a year ago I still"
+    },
+    {
+      "start": 2088.4,
+      "duration": 8.84,
+      "text": "thought you know nfts were a stupid JPEG"
+    },
+    {
+      "start": 2092.16,
+      "duration": 6.08,
+      "text": "but I I then uh you know broke through"
+    },
+    {
+      "start": 2097.24,
+      "duration": 5.52,
+      "text": "that bar"
+    },
+    {
+      "start": 2098.24,
+      "duration": 6.4,
+      "text": "and uh started minting them and had fun"
+    },
+    {
+      "start": 2102.76,
+      "duration": 4.0,
+      "text": "uh I lost some money of course didn't"
+    },
+    {
+      "start": 2104.64,
+      "duration": 4.12,
+      "text": "know what I was doing uh and then like I"
+    },
+    {
+      "start": 2106.76,
+      "duration": 4.92,
+      "text": "mentioned earlier I I landed in that"
+    },
+    {
+      "start": 2108.76,
+      "duration": 5.68,
+      "text": "Alpha group and it allowed me to see so"
+    },
+    {
+      "start": 2111.68,
+      "duration": 6.24,
+      "text": "much and I immersed myself in the space"
+    },
+    {
+      "start": 2114.44,
+      "duration": 6.8,
+      "text": "uh and started realizing how much future"
+    },
+    {
+      "start": 2117.92,
+      "duration": 6.84,
+      "text": "utility there will be um as this"
+    },
+    {
+      "start": 2121.24,
+      "duration": 7.28,
+      "text": "metaverse um you know technology grows"
+    },
+    {
+      "start": 2124.76,
+      "duration": 5.8,
+      "text": "so um yeah day in Day Out I was in in"
+    },
+    {
+      "start": 2128.52,
+      "duration": 5.0,
+      "text": "and out of projects and I I've been"
+    },
+    {
+      "start": 2130.56,
+      "duration": 5.72,
+      "text": "minting at least a project a week um"
+    },
+    {
+      "start": 2133.52,
+      "duration": 7.76,
+      "text": "yeah so I get to see all these different"
+    },
+    {
+      "start": 2136.28,
+      "duration": 9.52,
+      "text": "variables um so it it naturally just"
+    },
+    {
+      "start": 2141.28,
+      "duration": 7.24,
+      "text": "worked out to where um when we started"
+    },
+    {
+      "start": 2145.8,
+      "duration": 6.52,
+      "text": "uh building strategy for our own nfts I"
+    },
+    {
+      "start": 2148.52,
+      "duration": 5.8,
+      "text": "had a lot of input on on you know you"
+    },
+    {
+      "start": 2152.32,
+      "duration": 3.88,
+      "text": "know what the supply should be you know"
+    },
+    {
+      "start": 2154.32,
+      "duration": 4.92,
+      "text": "all the variables that will create a"
+    },
+    {
+      "start": 2156.2,
+      "duration": 6.44,
+      "text": "healthy nft sale and secondary market"
+    },
+    {
+      "start": 2159.24,
+      "duration": 4.84,
+      "text": "and make make our holders happy and also"
+    },
+    {
+      "start": 2162.64,
+      "duration": 3.52,
+      "text": "you know be somewhat appealing to"
+    },
+    {
+      "start": 2164.08,
+      "duration": 3.88,
+      "text": "Flippers and short-term investors"
+    },
+    {
+      "start": 2166.16,
+      "duration": 5.92,
+      "text": "because that's you know it all balances"
+    },
+    {
+      "start": 2167.96,
+      "duration": 7.56,
+      "text": "out and if you have if you have one flaw"
+    },
+    {
+      "start": 2172.08,
+      "duration": 6.52,
+      "text": "in that in that uh I guess group of"
+    },
+    {
+      "start": 2175.52,
+      "duration": 6.32,
+      "text": "variables then then there will be a"
+    },
+    {
+      "start": 2178.6,
+      "duration": 6.36,
+      "text": "noticeable flaw in in the sale or in the"
+    },
+    {
+      "start": 2181.84,
+      "duration": 5.12,
+      "text": "secondary market and um my my goal for"
+    },
+    {
+      "start": 2184.96,
+      "duration": 5.64,
+      "text": "all of these sales has been to you know"
+    },
+    {
+      "start": 2186.96,
+      "duration": 6.0,
+      "text": "suggest what I think is a good balance"
+    },
+    {
+      "start": 2190.6,
+      "duration": 4.52,
+      "text": "and present it to you guys and then we"
+    },
+    {
+      "start": 2192.96,
+      "duration": 5.84,
+      "text": "we talk over as a team and we bring it"
+    },
+    {
+      "start": 2195.12,
+      "duration": 5.48,
+      "text": "to Market um and I I think it's gone"
+    },
+    {
+      "start": 2198.8,
+      "duration": 3.48,
+      "text": "really well uh up to this point"
+    },
+    {
+      "start": 2200.6,
+      "duration": 3.68,
+      "text": "obviously with the with the mint and the"
+    },
+    {
+      "start": 2202.28,
+      "duration": 4.24,
+      "text": "javelin we gave them away for free but"
+    },
+    {
+      "start": 2204.28,
+      "duration": 5.44,
+      "text": "the you know the maximin of one the"
+    },
+    {
+      "start": 2206.52,
+      "duration": 5.52,
+      "text": "supply was great um the demand was there"
+    },
+    {
+      "start": 2209.72,
+      "duration": 6.28,
+      "text": "and with all of our nfts up to this"
+    },
+    {
+      "start": 2212.04,
+      "duration": 7.44,
+      "text": "point we've seen a really really good uh"
+    },
+    {
+      "start": 2216.0,
+      "duration": 7.08,
+      "text": "secondary volume and um holders are"
+    },
+    {
+      "start": 2219.48,
+      "duration": 5.64,
+      "text": "great so yeah I'm going continue to do"
+    },
+    {
+      "start": 2223.08,
+      "duration": 5.4,
+      "text": "that going forward and we're continuing"
+    },
+    {
+      "start": 2225.12,
+      "duration": 5.04,
+      "text": "to add utility utility utility yeah"
+    },
+    {
+      "start": 2228.48,
+      "duration": 4.48,
+      "text": "exactly yeah and that's another part of"
+    },
+    {
+      "start": 2230.16,
+      "duration": 7.36,
+      "text": "my job is trying to come up with with"
+    },
+    {
+      "start": 2232.96,
+      "duration": 6.56,
+      "text": "various ways of of utility and talking"
+    },
+    {
+      "start": 2237.52,
+      "duration": 4.32,
+      "text": "with you guys and the game devs like how"
+    },
+    {
+      "start": 2239.52,
+      "duration": 7.12,
+      "text": "can we how can we add all of these"
+    },
+    {
+      "start": 2241.84,
+      "duration": 6.48,
+      "text": "things to make the holders happy um what"
+    },
+    {
+      "start": 2246.64,
+      "duration": 2.88,
+      "text": "were we about to say Rob yeah I was"
+    },
+    {
+      "start": 2248.32,
+      "duration": 3.28,
+      "text": "going to say that I think you got the"
+    },
+    {
+      "start": 2249.52,
+      "duration": 4.72,
+      "text": "balance right if if we look at the the"
+    },
+    {
+      "start": 2251.6,
+      "duration": 5.48,
+      "text": "original Bubble Jets the javelins and"
+    },
+    {
+      "start": 2254.24,
+      "duration": 4.24,
+      "text": "the OG you can see there was value there"
+    },
+    {
+      "start": 2257.08,
+      "duration": 3.0,
+      "text": "for the people that wanted to come in"
+    },
+    {
+      "start": 2258.48,
+      "duration": 4.8,
+      "text": "and flip them there's value there for"
+    },
+    {
+      "start": 2260.08,
+      "duration": 4.88,
+      "text": "the holders um everything is above mint"
+    },
+    {
+      "start": 2263.28,
+      "duration": 3.52,
+      "text": "price very enough some of the mint"
+    },
+    {
+      "start": 2264.96,
+      "duration": 3.4,
+      "text": "prices were free but they're still above"
+    },
+    {
+      "start": 2266.8,
+      "duration": 3.36,
+      "text": "the the original price that we were"
+    },
+    {
+      "start": 2268.36,
+      "duration": 4.56,
+      "text": "going to sell them for now yeah I mean I"
+    },
+    {
+      "start": 2270.16,
+      "duration": 5.0,
+      "text": "think you've done a great job yeah yeah"
+    },
+    {
+      "start": 2272.92,
+      "duration": 6.52,
+      "text": "doing very well well thank you so much"
+    },
+    {
+      "start": 2275.16,
+      "duration": 4.28,
+      "text": "any final thoughts for us indie"
+    },
+    {
+      "start": 2279.64,
+      "duration": 6.32,
+      "text": "Oh no just uh to my community uh love"
+    },
+    {
+      "start": 2283.32,
+      "duration": 5.0,
+      "text": "you guys and love coming in chatting"
+    },
+    {
+      "start": 2285.96,
+      "duration": 7.96,
+      "text": "with you every day just stay positive"
+    },
+    {
+      "start": 2288.32,
+      "duration": 7.96,
+      "text": "stay supportive and um yeah working hard"
+    },
+    {
+      "start": 2293.92,
+      "duration": 3.56,
+      "text": "thanks thanks for joining Matt you bye"
+    },
+    {
+      "start": 2296.28,
+      "duration": 4.32,
+      "text": "bye"
+    },
+    {
+      "start": 2297.48,
+      "duration": 6.4,
+      "text": "cheers all right one final uh leak"
+    },
+    {
+      "start": 2300.6,
+      "duration": 8.04,
+      "text": "coming up here to close out the"
+    },
+    {
+      "start": 2303.88,
+      "duration": 9.72,
+      "text": "show Rob what do you have is it ready"
+    },
+    {
+      "start": 2308.64,
+      "duration": 7.6,
+      "text": "um yes it is ready so this this was part"
+    },
+    {
+      "start": 2313.6,
+      "duration": 5.2,
+      "text": "of the video that we were shared um but"
+    },
+    {
+      "start": 2316.24,
+      "duration": 5.84,
+      "text": "it it's only about 7 seconds so I might"
+    },
+    {
+      "start": 2318.8,
+      "duration": 5.48,
+      "text": "play it twice a little mini mini leak"
+    },
+    {
+      "start": 2322.08,
+      "duration": 4.16,
+      "text": "yeah right at the end I can't share the"
+    },
+    {
+      "start": 2324.28,
+      "duration": 6.72,
+      "text": "land with you but what what I will share"
+    },
+    {
+      "start": 2326.24,
+      "duration": 7.48,
+      "text": "with you is is is a cave so what play it"
+    },
+    {
+      "start": 2331.0,
+      "duration": 4.76,
+      "text": "back slowly look for it frame by frame"
+    },
+    {
+      "start": 2333.72,
+      "duration": 4.72,
+      "text": "look at the lumens look at the poly"
+    },
+    {
+      "start": 2335.76,
+      "duration": 5.96,
+      "text": "count analyze every second of it"
+    },
+    {
+      "start": 2338.44,
+      "duration": 5.88,
+      "text": "whatever you need to do ue5 is amazing"
+    },
+    {
+      "start": 2341.72,
+      "duration": 5.92,
+      "text": "yes yes it is and I think it's just"
+    },
+    {
+      "start": 2344.32,
+      "duration": 6.0,
+      "text": "fantastic that we're sharing a cave it"
+    },
+    {
+      "start": 2347.64,
+      "duration": 6.44,
+      "text": "makes me think of Plato's Cave and if"
+    },
+    {
+      "start": 2350.32,
+      "duration": 6.92,
+      "text": "you really know that story uh that I"
+    },
+    {
+      "start": 2354.08,
+      "duration": 6.64,
+      "text": "think it was Aristotle or Socrates lot"
+    },
+    {
+      "start": 2357.24,
+      "duration": 7.12,
+      "text": "of wisdom in that story of people being"
+    },
+    {
+      "start": 2360.72,
+      "duration": 6.2,
+      "text": "revealed uh in a new light uh where it's"
+    },
+    {
+      "start": 2364.36,
+      "duration": 5.28,
+      "text": "it's a nice metaphor for uh crypto"
+    },
+    {
+      "start": 2366.92,
+      "duration": 5.48,
+      "text": "really uh waking up and seeing things in"
+    },
+    {
+      "start": 2369.64,
+      "duration": 5.84,
+      "text": "a different way so uh yeah excited to"
+    },
+    {
+      "start": 2372.4,
+      "duration": 5.48,
+      "text": "share this where might be a Holy Grail"
+    },
+    {
+      "start": 2375.48,
+      "duration": 5.16,
+      "text": "in there it ties in with is this the"
+    },
+    {
+      "start": 2377.88,
+      "duration": 4.64,
+      "text": "right screen or is it yeah right one"
+    },
+    {
+      "start": 2380.64,
+      "duration": 4.04,
+      "text": "okay let's let's go for very quick do"
+    },
+    {
+      "start": 2382.52,
+      "duration": 2.16,
+      "text": "not"
+    },
+    {
+      "start": 2388.16,
+      "duration": 6.48,
+      "text": "blink there we go I mean you play that"
+    },
+    {
+      "start": 2390.56,
+      "duration": 5.2,
+      "text": "back in slow motion yeah a little uh"
+    },
+    {
+      "start": 2394.64,
+      "duration": 3.2,
+      "text": "I'll play it"
+    },
+    {
+      "start": 2395.76,
+      "duration": 4.68,
+      "text": "again okay"
+    },
+    {
+      "start": 2397.84,
+      "duration": 4.76,
+      "text": "but that's that's all you're get yeah"
+    },
+    {
+      "start": 2400.44,
+      "duration": 5.8,
+      "text": "yeah it's it's great uh"
+    },
+    {
+      "start": 2402.6,
+      "duration": 6.08,
+      "text": "really high quality imagery there"
+    },
+    {
+      "start": 2406.24,
+      "duration": 6.4,
+      "text": "unfortunately for you guys it's just a"
+    },
+    {
+      "start": 2408.68,
+      "duration": 7.56,
+      "text": "small tease a small taste of something"
+    },
+    {
+      "start": 2412.64,
+      "duration": 5.92,
+      "text": "that is quite a bit uh more remarkable"
+    },
+    {
+      "start": 2416.24,
+      "duration": 5.24,
+      "text": "than anything you've seen from us so far"
+    },
+    {
+      "start": 2418.56,
+      "duration": 5.8,
+      "text": "and uh we can't wait to reveal that but"
+    },
+    {
+      "start": 2421.48,
+      "duration": 5.4,
+      "text": "it's going to have to be a few weeks so"
+    },
+    {
+      "start": 2424.36,
+      "duration": 4.2,
+      "text": "I I don't think we're going to have a"
+    },
+    {
+      "start": 2426.88,
+      "duration": 2.88,
+      "text": "cop Cafe next week soon as you're"
+    },
+    {
+      "start": 2428.56,
+      "duration": 4.72,
+      "text": "getting"
+    },
+    {
+      "start": 2429.76,
+      "duration": 6.68,
+      "text": "married uh well you're welcome to do one"
+    },
+    {
+      "start": 2433.28,
+      "duration": 5.84,
+      "text": "without me that might be weird if you're"
+    },
+    {
+      "start": 2436.44,
+      "duration": 6.08,
+      "text": "be very be very weird I I kind of feel"
+    },
+    {
+      "start": 2439.12,
+      "duration": 3.4,
+      "text": "you would leave me hanging on every"
+    },
+    {
+      "start": 2443.32,
+      "duration": 4.8,
+      "text": "question yeah I do have gift for you"
+    },
+    {
+      "start": 2446.24,
+      "duration": 3.76,
+      "text": "though Josh but you you you do need to"
+    },
+    {
+      "start": 2448.12,
+      "duration": 3.16,
+      "text": "claim it in the next few days I mean I"
+    },
+    {
+      "start": 2450.0,
+      "duration": 3.6,
+      "text": "might be quite expensive I have to get"
+    },
+    {
+      "start": 2451.28,
+      "duration": 6.32,
+      "text": "to London to to"
+    },
+    {
+      "start": 2453.6,
+      "duration": 7.92,
+      "text": "well and and here you go look well like"
+    },
+    {
+      "start": 2457.6,
+      "duration": 7.4,
+      "text": "it all right Harry Easter weekend and"
+    },
+    {
+      "start": 2461.52,
+      "duration": 5.2,
+      "text": "here is your golden egg okay how do I"
+    },
+    {
+      "start": 2465.0,
+      "duration": 4.84,
+      "text": "get there to get it little Harry Potter"
+    },
+    {
+      "start": 2466.72,
+      "duration": 6.96,
+      "text": "golden egg what I will do is I will hold"
+    },
+    {
+      "start": 2469.84,
+      "duration": 6.4,
+      "text": "it for you in my stomach and um I will"
+    },
+    {
+      "start": 2473.68,
+      "duration": 6.0,
+      "text": "give you an update how well it is these"
+    },
+    {
+      "start": 2476.24,
+      "duration": 3.44,
+      "text": "gifts from Rob are quite"
+    },
+    {
+      "start": 2479.8,
+      "duration": 6.12,
+      "text": "interesting I I brought you remember I"
+    },
+    {
+      "start": 2482.96,
+      "duration": 6.2,
+      "text": "shared the mug with you I I looked after"
+    },
+    {
+      "start": 2485.92,
+      "duration": 5.68,
+      "text": "that mug for about two months and and"
+    },
+    {
+      "start": 2489.16,
+      "duration": 4.96,
+      "text": "then I got three trains I ended up to"
+    },
+    {
+      "start": 2491.6,
+      "duration": 4.12,
+      "text": "London and then we all got in the hotel"
+    },
+    {
+      "start": 2494.12,
+      "duration": 3.16,
+      "text": "and as soon as I got to the hotel I"
+    },
+    {
+      "start": 2495.72,
+      "duration": 4.52,
+      "text": "opened the bag and it smashed on the"
+    },
+    {
+      "start": 2497.28,
+      "duration": 5.4,
+      "text": "floor yeah yeah and I was anticipating"
+    },
+    {
+      "start": 2500.24,
+      "duration": 5.72,
+      "text": "getting that cornucopious mug and taking"
+    },
+    {
+      "start": 2502.68,
+      "duration": 6.32,
+      "text": "it home which by the way the merch store"
+    },
+    {
+      "start": 2505.96,
+      "duration": 4.72,
+      "text": "is that up it's not it's not up at the"
+    },
+    {
+      "start": 2509.0,
+      "duration": 4.6,
+      "text": "moment but okay but it's got to be real"
+    },
+    {
+      "start": 2510.68,
+      "duration": 5.4,
+      "text": "soon so yeah I'll just get one on our"
+    },
+    {
+      "start": 2513.6,
+      "duration": 5.4,
+      "text": "merch store we go yeah I'll get one on"
+    },
+    {
+      "start": 2516.08,
+      "duration": 5.72,
+      "text": "our merch store um but yeah each time"
+    },
+    {
+      "start": 2519.0,
+      "duration": 5.44,
+      "text": "Rob's announced a gift to me somehow"
+    },
+    {
+      "start": 2521.8,
+      "duration": 5.96,
+      "text": "there really isn't a gift well we've"
+    },
+    {
+      "start": 2524.44,
+      "duration": 4.76,
+      "text": "made three videos by fre videos that the"
+    },
+    {
+      "start": 2527.76,
+      "duration": 4.76,
+      "text": "community haven't seen because you keep"
+    },
+    {
+      "start": 2529.2,
+      "duration": 6.52,
+      "text": "deleting them you know so"
+    },
+    {
+      "start": 2532.52,
+      "duration": 5.56,
+      "text": "balance touche all right hey everybody"
+    },
+    {
+      "start": 2535.72,
+      "duration": 6.08,
+      "text": "thanks for listening we'll see you not"
+    },
+    {
+      "start": 2538.08,
+      "duration": 6.88,
+      "text": "next week but in two weeks all right see"
+    },
+    {
+      "start": 2541.8,
+      "duration": 3.16,
+      "text": "you later"
+    },
+    {
+      "start": 2549.8,
+      "duration": 15.25,
+      "text": "[Music]"
+    }
+  ],
+  "transcript_text": "[Music] welcome everybody to copi Cafe this is our fourth episode and we're glad to be here it's a Friday I'm here with Rob this is Josh uh I'm Josh and uh what are you drinking today Rob it's good Friday so yeah it's a very good Friday I and I'm drinking Stella Arta today Stella I will be opening this with galatis okay all right you got a special opener I've got a I've got a waterl I'm I'm a little boring today it's uh what is it 11:00 a.m my time something like that it's a peach flavored waterl it's pretty good sparkling water flavor water Cheers Cheers look at the that it's good working with you we're having a good time we're working our butts off we've got a lot of irons in the fire we're talking through you know quite a few different issues uh still as a as a company we've grown so fast in so many successes along the way that we are now kind of really trying to solidify get organized we positioned our marketing to go to scale so that pipeline's working really well we positioned our nft sales to go to scale so we can now run nft sales with our own technology which is very exciting so a lot of really good things and we built an amazing amazing Community uh and we've cultivated this inspired creative Community which is a lot of fun for all of us uh to to be with you guys and be building this together uh which is great oh another little little leak little mini leak we've got the tokenomics paper that will be uh opening up to the public soon to to review and some of the cool things that are happening with that that uh we haven't uh we haven't really solidified the exact details but we're working with our attorney on it and what what's going to happen there is we're going to be releasing some areas to involve you guys our token holders uh in voting on what happens with uh some of these different uh fee structures and and benefits that you guys get to have as a community so that's that's very exciting we'll be releasing and empowering you guys to vote on some certain directions in the platform we'll give more details when we have them uh but uh yeah that's that's pretty sweet so um cool stuff happening Unreal Engine five they released that last week we saw a remarkable video that uh we can't wait to release uh to you guys very very soon uh blew me away what were your thoughts on it Rob yeah the new nanite technology and the new lumens is yeah is absolutely amazing what we can now do with with Unreal Engine five our our projects that we've been building imported immediately nothing to change and we've always been building our artwork ready for for ue5 um some of some of the tools are different that um so so we're still on on a a bit of a learning curve but when yeah when we were sent that video it was like wow yeah yeah mindblowing so just to give you guys some perspective Unreal Engine has never released a new version that is this significantly different than the previous version there are major major upgrades in fact a lot of the people that were already building games on Unreal Engine 4 and that were well into that will have to make enormous changes to be able to continue upgrading and improving their game and so a lot of people are going to stay on four most likely yeah and luckily timing wise for us uh well first of all this allows for images that can be 50 times more uh detail included that there's so much more power in the imagery that we have with Unreal Engine 5 it's just a bare minimum of the new features that we have available there's sound functionality all sorts of stuff that's coming with this but thankfully timing wise our team has been very excited about Unreal Engine 5 they've been working with it they've been testing with it uh they've been practicing it it uh in the in the Beta release and now that it's out they've been anticipating this and we get to be one of the first projects building on Unreal Engine 5 I don't know of anyone else on cardano that's building on Unreal Engine 5 right now they might be uh and and very few industrywide in traditional gaming is building on Unreal Engine 5 unless the timing worked out for them like it did for us so I think we have a tremendous Advantage there well I think also you know it's it's so easy to say oh we're on ue5 we're but unless you've been planning for it for the last six months there is a lot of companies like you say that are going to have a shop the the difference between the polygons and now how polygons are handled with triangles and then you zoom in and then more polygons come forward is is amazing but you do have to set your projects up differently and your workflow is com entirely different that's why so so all of these workflows that these guys have been building in Unreal Engine for over the past you know eight years or however long it's been uh those workflows are not going to work for Unreal Engine 5 it's it's not a so it it really revolves involves changing processes stuff like that so we're well positioned to be leaders in this new technology that is incredible I can't wait to reveal this to you guys the the land sale and the Cinematic video that will show you of what you get to to build and do with your land and and see it's just it's beautiful and our our artwork has taken Leaps and Bounds over what it was before and before it was amazing so now we're looking at just being pioneers and early developers in Unreal Engine five and uh yeah I I'm incredibly excited it even means that you know we've we we've often shared that we're on version one version two now version three of the Character Creator it's because we've seen u5 release new versions and and now our characters can be so detailed what they were detailed before now they're going to be even more detailed and we'll be able to get more um textures and and liting on the screen at once it's yeah when there might even be there might even be a little mini taste leak for you guys that hang in there with us to the end of this video there might be I don't know Poss we'll think about it um OG mint still ongoing uh incredibly successful we're at 693 of our ogs have minted their nfts this is testing our technology we've built it over the last five months somewhere around there and uh I'm really proud of it you guys have done a great job we we built something pretty killer here um we're we're revising a lot of the designs in process of that Jeff is working on some some new UI designs for that so A few improvements a few tweaks but uh very exciting what uh what are your thoughts about how this is wrapping up we've got yeah I mean we we opened up we opened up in batches so we opened up with we we have about 1.4 th000 yeah 1,400 ogs but we so we started off with a batch of 700 so so so we have like you say 693 seven of that and then if we if we need to we'll open that up I don't know where the other half have gone but you know you you've only got till the 25th of April so I mean so you've got another 10 days but after that you will not be able to Mint this OG car again so I mean you you need to get in quick um but yeah we're we're like you say we're improving on that we we the initial burst which was expecting you know within I think within we said last time within 30 seconds we we had so many that had gone through um but we're improving on that already we've already seen a working version of of the with new wallets in in there so we've got Eternal which which was CC Vault that's now in there we've seen jir wallet that'll be in there so these will all be be ready for our our next mint and ready for the land mint um so yeah and there's some other wallets that we're looking into but those are going to be the three main ones I think that that we've seen working and yeah it's very very very slick yeah I agree completely agree excited to get jro up there uh they're one of our long one of our first partners and uh we've worked with their Dev team back and forth a little bit they're just great to work with good good company good people uh so it's it's going to be good to have that wallet up there on the site for us Ian we're also working with jro on another project it's still wallet based but um yeah that's on the wraps at the moment but that's that is oh we're not allowed to talk about that are we no no it's a definitely another game changer but we want we don't want to give anybody else the heads up we're always teasing with this information we can't release I know it's it's uh we wish we could tell you everything we we huh no no we quiet all tell them I don't I I don't know let's wait on that one it's it's good stuff it's um but yeah so the mobile game tell us what's up with that mobile game is is progressing so well so we've now got our Apple license that's come through so we've been we've been building the game for Android and Apple but now that we've got that publish uh license I've now seen the game working on on the Apple Phone 7 8 11 and 13 and a couple of iPads um the tablets how many phones do you have Rob how many phones yeah you want to see some phones I'll give you some the the only phone that I can't get it working on is these ones do you remember them is that a black is that a Nokia Nokia oh wow yeah well that one's called Alcatel and that one's a Nokia yeah they're not unfortunately they're not going to be compatible on those two phones but you know I've got a nice little history of phones there yeah I feel like I was still learning like algebra when those phones were released or something if if we ever have a play to earn version of snake you never know they might work on that but yeah on the MacBook on the MacBook and the MacBook Pro um and on the on the Galaxy tablet as as well the game look the game looks it looks amazing on a phone you go on a bigger screen you see how sharp the graphics are and how well it plays and just as a caveat we are not the graphics are not designed to it it looks significantly different than the normal branding videos that you see from us with Unreal Engine 5 this is done in unity it's designed for a mobile game slightly different looking feel we're trying to keep it as as much as possible feeling like our brand but it is quite a bit different and this is a miname it's not the game it's not definely definitely complimentary the characters look slightly different so we do have a familiar character in there so so we have Abigail she's one of the characters that are coming through we have other characters as well and the styling of that is going to be may maybe maybe I can give you some hints of what Abigail is going to kind of look like but she's she's more of a 2d 2 and a half D character so although it looks amazing you don't need to have these massive brand new devices to use them on it's just if you do the the graphics just look good just because everything kind of looks good on on a new shiny machine yeah but the but the they're they're very much cartoony characters um and they kind of have bigger heads so it's in the style of that but we've we've started to get through some early designs for for the user interface and that user interface will be be very very very similar to the user interface that we're using on the PC game so so that'll flow through and again it's it's incorporating our our nft holders the bubble jet if you hold a bubble jet or a GT you're going to have some added benefits added utility for for owning those and using them in the game which is pretty exciting uh and and we've made a remarkable progress this is we're taking a a it'll be familiar to some of you that the game there's a little bit of familiarity but uh we're building it entirely from scratch and it is uh it's a pretty pretty solid game pretty excited about this for sure yeah and and you don't need the nfts to play the game but if you do there's a multi player at the a multiplier at the end of each level right and that's and you actually get an additional multiplier depending on which of the five bubble Jets and which of the five javelins you you've got so if you've got all 10 you're going to get a really big bonus if you've got maybe maybe two or or maybe you've got even one you'll get a slightly increased one I mean it's not it's not massively you know don't go out and buy 10 of them because it won't be that much of a massive benefit but there there is definitely is a benefit on on the more that you've got be it's fun and it's and it's a great way for us to test out and really the one of the main points of this is to make the game fun but obviously another thing that we get to do is as we proceed into stage two of this which is we've got to secure everything we've got to figure out the play to earn uh so that we can utilize that partnership we have with Tingo uh that's got you know 10 million subscribers in Africa and Nigeria and we can start taking steps towards bringing in some of these other communities where maybe $5 in earnings a day uh makes an enormous difference for somebody maybe it's 15 whatever it is this makes a difference in in these people's lives and so it allows us to to start really moving into that play to earn uh field so I I think it's a really good point the security side we're taking this so serious because although on on the surface it looks like we're building a number of games we're actually building Financial products here because the Defi and every you know that that there is there is money value that people are coming in not it's not costing them anything to play but but there is there is you know with the token in there the ability for people to to have real life money so so we know there's going to be scammers and all kind of hackers that are going to be trying to get in in there and raid the cof sport so yeah security is is so important for this game yeah you take uh you take two communities uh The Gaming Community and the crypto Community both are very well known with uh people that want to game or hack the system and so we've obviously got to keep security Paramount and and uh that's definitely something that's going to take some time and we want to make sure that's right so the game won't launch Play to earn but we will move to that after we've launched and tested and refined and made sure that it's absolutely laser tight uh in terms of security um so we should move into the land sale and the the next nft sale so to further stress test our our existing Tech we've got the OG you know mint that's going on right now but in about two weeks where uh when I get back from uh Dominican Republic and getting married um that's we're all be next week yeah uh thank you very much uh but in about two weeks when we're back we're going to run another nft sale and it's going to be something uh just a a little item that's got some Rarities it's going to have some utility uh might have might even have some bling but it's just going to be another thing that we can we can offer and throw it out there to you guys we really want everybody to participate in that we're going to add utility to it over time within the game and it's another way for us to make sure okay we've really got our Tech nailed down uh before we move into the landale which is our highest priority right now really that's uh so much of all of our energy within the company is working towards this land sale yeah I mean we we have done like you say we've done a mini stress test with the OG but it wasn't it wasn't the biggest test it was enough to to know that that that that we we we're we're at a good level but we need that open public test on on on this this kind of additional mint just to make sure that when the land cell comes through there is no issues with it I I think people I hope people will appreciate that this test has to be done because when we come to that land sale you know is so crucial that it goes smooth for everyone you know and I just beg everyone that I would say like 70% of the errors we had a small number of issues on on the OG very small but most of them were related to some sort of user error that you know that they they hadn't followed quite this instructions to the te we're going to try to give you guys exactly what you have to do to make sure your wallets are set up properly you're using the right wallets all of that just follow instructions eliminate that possibility for for uh user error and then hopefully everything goes smoothly uh yeah I think this one this one you'll be able to we'll release more details in the future and and you'll you'll see it on this new mint but you'll be able to to kind of get into the into the sale into the queue and then you can leave that's it it's it's guaranteed yeah and you will then get a followup respondents from was at probably via email maybe by via a Discord link but you will get notification that you can you can come back and and and your nft but we're waiting there for you so there's no more hanging around for three or three or four hours um you know wondering whether things have gone through or anything like that so we really still be wondering but uh well yeah but you'll get you'll get confirmation immediately so as soon as soon as you you've you've been accepted by the system you'll get confirmation hopefully that confirmation will means all right now I just need to wait for further confirmation right and um yeah and it's it's still a minimal footprint on the cardano network y agreed okay so that transition into the land sale which I believe our community had a few questions for us so I'll go a and pop up that screen if if that's what you'd like me to do at this point um well there we go what was that what was that when land you you you caught you''ve caught me unawares oh the Twitter yeah I post I posted some questions uh you know I said we we were we were doing this do do you have any questions for us I mean I can run through some questions yeah yeah just let's answer three three questions just a couple question yeah um Jax I I know she's in Australia she was asking how big will the plots of land be uh well that's a great question we're going to have five different sizes that we know of and uh I can't we can't give you the exact details because we're still arranging and solidifying all of that but we've got it pretty close we know that we're going to have five sizes and we know that we've changed significantly from you know over time when we've been working working on this and I think the the most significant thing is that we've added utility to the land where you can have a variety of different shops on your land and and that really increases what you can do with it and how you process resources or how you earn within the game by playing the game so lots of cool stuff there yeah I mean I another question this is this is from jordane I mean I can answer this one the asked will there be any skill trees in the game which you know is a really good question and and it was it was how we started when we were doing our planning we had skill trees in there but we've evolved the thinking now we've gone more metsy so you will still have grinding and daily play Within the game but the skill will be handled differently more meters so so that'll be interesting to for us to to share how that works in the future what you mean by metaverse I I believe what you're saying is metaverse mechanics yeah meaning you know if somebody's going to chop down a tree we're going to try to make that chopping process as realistic as possible whereas it's it's not like you're just going to go approach the tree an option comes up and you push a button and it chops it down it's it's not going to be like that it's going to be more like you walk up to the tree you pull the axe out or you know what I'm this is off the cuff right so I'm thinking through but the the reality is what he's the essence of what Rob's trying to say is that we want to make it realistic so there's going to be a swing motion involved maybe where the the parameter goes up and you hit the button a second time when it's at Peak intensity that means you're going to get a great chop you know that sort of thing is what we're we're really trying to make it as as realistic and and detailed as possible and that's what he means by the metaverse mechanics and that entire tool itself you know you you you won't just appear you have to go away get the different parts and then go to different parts of the zones and and then craft it together and done depending on the material used so so it feels familiar it feels like what the question was asked but it but it's it's slight slightly different y um so there's a good one here I mean we we we did the video with um do you remember Chad with with his me glasses he better not be based on me that's horrible yeah Jus wants to know no sir who asked that question cranky Jesus I'm I'm reaching out to you um let not be based on me that's it I'm changing my hair I'm getting a mohawk oh You' had you've had your wedding wedding she might not be happy with that I'll do it after the wedding so any progress on the ingame economics I mean you talked about at the start actually how many plots of land so I think it's we're not going to reveal at the moment how many plots of land there are however we have a different approach to telling people what land's going to be available that you're working on yeah absolutely so much more to come guys the the the essence of I guess what we would we'd say right now uh before we get Matt up here is that the land sale is going to I mean we're looking to do the best land sale ever is is what we're going for we're going for really high quality Graphics we're going for beautiful land we're going for when you see this video you're going to want to be in there and that's exactly what Jeff said about it when he watched it and it's exactly what I felt when I watched this video that that uh I can't wait to show when I watched that I was like man I want to be in there with my avatar exploring this land right now and even uh David said that he was going around exploring it he said yeah it's it's still a little buggy we've got to work out some Kinks but it's built it's developed that land is developed and he can walk around inside of it I can't wait to do it so that's what we're going for with the land sale we're going to give it a lot of utility and we're going to have a land sale that blows anything else you've seen out there out of the water I mean it's that's that's what we're going for yeah it's like Christmas for him I mean if you imagine as a developer then you suddenly get this new tool probably let's compare it with somebody who test drives Ferrari true and then they give you a new a brand new engine you're like whoa yeah totally new engine yeah completely agree all right let's uh let's go ahead and get our special guest up we've got a special guest reminds me a lot of uh Indiana Jones really hey there he is what's up guys Matt Jones Indies has arrived all right Indiana Jones uh welcome to copi Cafe it's good to have you on my little brother everyone a familiar name yeah Matt Jones Indiana Jones Josh Jones yeah yeah hey what are you drinking Matt look like green um I've got a nice green veggie fruit juice well let's go ahead and see let's get a closeup of that real quick it looks really disgusting but it's actually oh well now pull it back towards your face because you got the background thing on it's clear it's clear glass can't see it it looks like you're okay yeah that's not going anywhere with your Indiana Jones background where's the arc is Arc in there behind you I think so yeah somewhere in that box right there okay yep well good to have you on so tell us a little bit about your role with uh cornic copius oh man uh kind of a mixed bag um started off as uh you know just some simple graphic design I basically begged you to give me a job when I heard what you were doing I was like please please give me a job find me some work um and then it slowly moved into Discord um as the community manager and um and then I'm I'm dipping into marketing a little bit um and then nft sales manager as well okay so what tell us a little bit about the uh the mission and what you're going for with that Discord Community what's yeah so uh with my nft EXP experience um you know I I was fortunate enough to to join a pretty exclusive Alpa group for nfts which has allowed me over time to to really really dive in and immerse myself into a ton of different projects um and basically over the last year I've been able to pick up a lot of things that I I like and dislike and what other people like and dislike in these communities and uh my goal is to always bring that into our community is to have a very organic supportive um inspiring creative uh mentality within the community and um I think we've done a really good job of of getting to that point um you know you and I discussed from the beginning we don't want to have invite contests we don't want to have grind contests where people people are just spamming chat with with nonsense to reach a particular level we just want people to come in and have genuine conversation and be friendly be supportive um and we've we've done that I think um yeah absolutely our organic has been incredible I think I think we've done an amazing job with with Discord I see that every day sometimes there's a bit of tough love um but I mean yeah the the community of got got right behind and and they're the same Spirit our community is great I think I think it's probably worth mentioning that you you talk about you the other communities that you're in and the other discords that you're in they're not on cardano are they so your experience is is on other chains how does that compare with cardano yeah um great question the alpha group I'm in primarily targets ethereum projects um so I am seeing a ton of ethereum based projects salana as well um and it's a it's a totally mixed bag like some some have massive invite contests and grind contests and their discords will fill up to like a 100,000 people in a matter of days and it's just it's botted and burner accounts and the the chat's moving so fast you can't even have a conversation it's just completely pointless um and you know of course they meant their they meant their nft it's full of flipping uh undercutting etc etc and the goal the goal with creating a strong supportive Community is that you know we have people that truly believe in the project they hold their nfts of course we have some flippers it's part of the it's part of the economy of an nft sale secondary Market um but if you go to jpeg store we I couldn't tell you what the percentage of of listings we have but I know it's low which shows that we have a strong support for our community I know I know on the OG me on the OG are you know the the people that were in really early but I think a lot of the were were people that we've upgraded so can can you share with people how how they get upgraded and how how they can still become ogs yeah so over time um you know the mods the mods are particularly uh doing a lot more watching than I because you know day in day out we're we're in meetings we're doing other things um so I don't get to see as much of the conversation as as I would like but um typically ogs and mods will come to me and they'll they'll suggest uh candidates and I'll I'll take a look at it and you know obviously you know supportive genuine conversation is is a big plus obviously if you if you come in and start asking for OG it's like okay well I don't think you understand the point of it um but yeah it's it's kind of a a vote-based system suggested system and a lot of times I will pick up on on the same name doing really really cool things in the community and uh in the back of my mind I know that they will be upgraded at some point when I when I get around to it uh or when they get suggested by a mod um so after this mint is over we will start start upgrading again as we see see those people fit um but yeah yeah it's it's a continual growing Army of support for us so yeah and it's it's one of those things where we need that that community of ogs to grow with the general growth of the Discord so that over time we are able to keep this community healthy meaning there's informed people in there ready to answer questions there's there's a positive creative inspired culture inside of the Discord if we wanted to blow it out of the park and do a a million token air or a 20 million token airdrop and through coin market cap or something like that we could get a flood of people but like then what then what happens you get a flood of and things get yeah so right now and and I had feedback just the other day from a very cool uh Rob got pinged on Discord from some of the users that hey there's uh Dan from crypto Capital Venture is uh is is talking about cornucopias right now or or something he tweeted about it and so Rob reached out to him we set up a call we talked to him and we asked him hey what's it like uh because he told us hey I've been I've been in your uh Discord so we asked him what's it like and he said man I love it I love it in there it's a great culture you guys have really done a wonderful job and we had a great conversation with him I love what he's doing at crypto Capital Venture and uh he actually tweeted about us again last night so we really thank you Dan for your your support in what we're doing and we got some he's a cool guy so we've got some really good ideas uh that we're going to work through with him over time and and this might unfold into something more uh I I think it's very possible so we're we're excited about the potential there but um yeah you've done a great job in Discord um yeah I've got a gift for you actually Matt oh Bo oh surprise gift I have the Holy Grail oh look at that is this the Holy Grail that's a really good one yeah wellink drink from it at your own Peril that's what if it uh if it really was it would be a wooden cup I believe oh wasn't it wooden the carpet yeah I believe it was a carpenter's cup yeah maybe that was the the poor choice one where you dissolve into that's a good looking chalice a good looking C test Josh yeah so I did I passed the test um the leap of faith what was that is that Temple of Doom or no that was the the leap of faith leap of faith where he had to walk off the cliff and no that's giving your job up and jumping full in on cornic opius that's yeah that is hey nice well done yeah we did it we did it thank God that worked out so Matt nfts um you you have a lot of experience with that and and tell us a little bit about what your role is there with cornucopious uh yeah so a little over a year ago I still thought you know nfts were a stupid JPEG but I I then uh you know broke through that bar and uh started minting them and had fun uh I lost some money of course didn't know what I was doing uh and then like I mentioned earlier I I landed in that Alpha group and it allowed me to see so much and I immersed myself in the space uh and started realizing how much future utility there will be um as this metaverse um you know technology grows so um yeah day in Day Out I was in in and out of projects and I I've been minting at least a project a week um yeah so I get to see all these different variables um so it it naturally just worked out to where um when we started uh building strategy for our own nfts I had a lot of input on on you know you know what the supply should be you know all the variables that will create a healthy nft sale and secondary market and make make our holders happy and also you know be somewhat appealing to Flippers and short-term investors because that's you know it all balances out and if you have if you have one flaw in that in that uh I guess group of variables then then there will be a noticeable flaw in in the sale or in the secondary market and um my my goal for all of these sales has been to you know suggest what I think is a good balance and present it to you guys and then we we talk over as a team and we bring it to Market um and I I think it's gone really well uh up to this point obviously with the with the mint and the javelin we gave them away for free but the you know the maximin of one the supply was great um the demand was there and with all of our nfts up to this point we've seen a really really good uh secondary volume and um holders are great so yeah I'm going continue to do that going forward and we're continuing to add utility utility utility yeah exactly yeah and that's another part of my job is trying to come up with with various ways of of utility and talking with you guys and the game devs like how can we how can we add all of these things to make the holders happy um what were we about to say Rob yeah I was going to say that I think you got the balance right if if we look at the the original Bubble Jets the javelins and the OG you can see there was value there for the people that wanted to come in and flip them there's value there for the holders um everything is above mint price very enough some of the mint prices were free but they're still above the the original price that we were going to sell them for now yeah I mean I think you've done a great job yeah yeah doing very well well thank you so much any final thoughts for us indie Oh no just uh to my community uh love you guys and love coming in chatting with you every day just stay positive stay supportive and um yeah working hard thanks thanks for joining Matt you bye bye cheers all right one final uh leak coming up here to close out the show Rob what do you have is it ready um yes it is ready so this this was part of the video that we were shared um but it it's only about 7 seconds so I might play it twice a little mini mini leak yeah right at the end I can't share the land with you but what what I will share with you is is is a cave so what play it back slowly look for it frame by frame look at the lumens look at the poly count analyze every second of it whatever you need to do ue5 is amazing yes yes it is and I think it's just fantastic that we're sharing a cave it makes me think of Plato's Cave and if you really know that story uh that I think it was Aristotle or Socrates lot of wisdom in that story of people being revealed uh in a new light uh where it's it's a nice metaphor for uh crypto really uh waking up and seeing things in a different way so uh yeah excited to share this where might be a Holy Grail in there it ties in with is this the right screen or is it yeah right one okay let's let's go for very quick do not blink there we go I mean you play that back in slow motion yeah a little uh I'll play it again okay but that's that's all you're get yeah yeah it's it's great uh really high quality imagery there unfortunately for you guys it's just a small tease a small taste of something that is quite a bit uh more remarkable than anything you've seen from us so far and uh we can't wait to reveal that but it's going to have to be a few weeks so I I don't think we're going to have a cop Cafe next week soon as you're getting married uh well you're welcome to do one without me that might be weird if you're be very be very weird I I kind of feel you would leave me hanging on every question yeah I do have gift for you though Josh but you you you do need to claim it in the next few days I mean I might be quite expensive I have to get to London to to well and and here you go look well like it all right Harry Easter weekend and here is your golden egg okay how do I get there to get it little Harry Potter golden egg what I will do is I will hold it for you in my stomach and um I will give you an update how well it is these gifts from Rob are quite interesting I I brought you remember I shared the mug with you I I looked after that mug for about two months and and then I got three trains I ended up to London and then we all got in the hotel and as soon as I got to the hotel I opened the bag and it smashed on the floor yeah yeah and I was anticipating getting that cornucopious mug and taking it home which by the way the merch store is that up it's not it's not up at the moment but okay but it's got to be real soon so yeah I'll just get one on our merch store we go yeah I'll get one on our merch store um but yeah each time Rob's announced a gift to me somehow there really isn't a gift well we've made three videos by fre videos that the community haven't seen because you keep deleting them you know so balance touche all right hey everybody thanks for listening we'll see you not next week but in two weeks all right see you later [Music]",
+  "has_transcript": true
+}

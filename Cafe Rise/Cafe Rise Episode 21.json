@@ -1,0 +1,3741 @@
+{
+  "video_id": "Gtw3qAgaXYI",
+  "title": "MORE Custom Dome GAMEPLAY! | Cornucopias",
+  "upload_date": "20220827",
+  "duration_seconds": 1940,
+  "description": "A closer look at our Epic Custom Dome while Jim and David showcase the PVP kit with pre-alpha gameplay and answer community questions.\n\nIn this episode of COPI Cafe Josh and Rob announce some new hires, discuss our COPI stake pool, land staking and details on custom dome staking. Our game devs David and Jim join to showcase the PVP pre-alpha gameplay. \n\nBe sure to check out the newly released \"Custom Dome\" document to learn all about our upcoming NFT mint! Link: https://links.cornucopias.io/custom-domes-deck-01\n\n00:00 - Intro\n00:27 - Beverage Choices\n02:02 - New Hires\n04:22 - Roadmap/Strategies Adjustments\n07:10 - COPI Staking Pool / Rewards\n11:00 - Land Staking\n12:00 - Custom Dome Staking\n12:40 - Custom Dome Sale\n21:09 - David and Jim answer questions from the community\n26:09 - Custom Dome PVP Gameplay\n\n\n#Metaverse #Cardano #CryptoCurrency #Blockchain #NFT #MetaverseGame #IOHK \n\nhttps://linktr.ee/cornucopias.game",
+  "view_count": 5268,
+  "url": "https://www.youtube.com/watch?v=Gtw3qAgaXYI",
+  "slug": "more-custom-dome-gameplay-cornucopias",
+  "transcript": [
+    {
+      "start": 0.18,
+      "duration": 7.86,
+      "text": "[Music]"
+    },
+    {
+      "start": 5.76,
+      "duration": 5.0,
+      "text": "hey everybody Welcome to copi Cafe"
+    },
+    {
+      "start": 8.04,
+      "duration": 5.56,
+      "text": "you've got Rob Greg and Josh Jones here"
+    },
+    {
+      "start": 10.76,
+      "duration": 6.52,
+      "text": "we're glad you came to watch and this is"
+    },
+    {
+      "start": 13.6,
+      "duration": 5.04,
+      "text": "episode 21 so a lot of fun stuff for you"
+    },
+    {
+      "start": 17.28,
+      "duration": 2.8,
+      "text": "we heard your feedback on Twitter we're"
+    },
+    {
+      "start": 18.64,
+      "duration": 3.48,
+      "text": "going to try to keep this one a little"
+    },
+    {
+      "start": 20.08,
+      "duration": 4.12,
+      "text": "more brief and talk a little bit about"
+    },
+    {
+      "start": 22.12,
+      "duration": 4.44,
+      "text": "the custom Dome sale things that are"
+    },
+    {
+      "start": 24.2,
+      "duration": 5.88,
+      "text": "going on with us uh"
+    },
+    {
+      "start": 26.56,
+      "duration": 6.2,
+      "text": "Rob what are you drinking"
+    },
+    {
+      "start": 30.08,
+      "duration": 7.28,
+      "text": "well today I have it's a good one this"
+    },
+    {
+      "start": 32.76,
+      "duration": 9.0,
+      "text": "one an innocent inner winner innocent"
+    },
+    {
+      "start": 37.36,
+      "duration": 6.28,
+      "text": "inner winner sounds like a Gary ve nft I"
+    },
+    {
+      "start": 41.76,
+      "duration": 5.24,
+      "text": "have no idea it says it's high in fiber"
+    },
+    {
+      "start": 43.64,
+      "duration": 6.76,
+      "text": "it's pink dragon fruit light chi I don't"
+    },
+    {
+      "start": 47.0,
+      "duration": 5.92,
+      "text": "know what light Chi apple is bobab"
+    },
+    {
+      "start": 50.4,
+      "duration": 7.32,
+      "text": "vitamins all all these buzzword"
+    },
+    {
+      "start": 52.92,
+      "duration": 7.68,
+      "text": "scientific buzzwords that probably mean"
+    },
+    {
+      "start": 57.72,
+      "duration": 5.6,
+      "text": "nothing okay they'll taste all right so"
+    },
+    {
+      "start": 60.6,
+      "duration": 5.64,
+      "text": "what's the flavor of this innocent inner"
+    },
+    {
+      "start": 63.32,
+      "duration": 5.2,
+      "text": "winner I'm already confused you're"
+    },
+    {
+      "start": 66.24,
+      "duration": 3.16,
+      "text": "already you're already conf yeah I don't"
+    },
+    {
+      "start": 68.52,
+      "duration": 3.52,
+      "text": "I don't know what to do what do you"
+    },
+    {
+      "start": 69.4,
+      "duration": 4.84,
+      "text": "think I'm drinking man"
+    },
+    {
+      "start": 72.04,
+      "duration": 5.2,
+      "text": "well I'm just going to put it out there"
+    },
+    {
+      "start": 74.24,
+      "duration": 6.24,
+      "text": "and say it's probably a water"
+    },
+    {
+      "start": 77.24,
+      "duration": 4.96,
+      "text": "orange orange can I don't know no I"
+    },
+    {
+      "start": 80.48,
+      "duration": 4.68,
+      "text": "tried to set you"
+    },
+    {
+      "start": 82.2,
+      "duration": 5.76,
+      "text": "up I'm drinking I'm drinking a jungle"
+    },
+    {
+      "start": 85.16,
+      "duration": 6.08,
+      "text": "Lily I took a sip of a water l a minute"
+    },
+    {
+      "start": 87.96,
+      "duration": 5.76,
+      "text": "ago just to mess with you you did you"
+    },
+    {
+      "start": 91.24,
+      "duration": 4.88,
+      "text": "did set me up"
+    },
+    {
+      "start": 93.72,
+      "duration": 4.8,
+      "text": "yeah but you finished that drink now"
+    },
+    {
+      "start": 96.12,
+      "duration": 5.8,
+      "text": "what are you gonna go for next back to"
+    },
+    {
+      "start": 98.52,
+      "duration": 6.56,
+      "text": "the waterl that I set you up with"
+    },
+    {
+      "start": 101.92,
+      "duration": 5.76,
+      "text": "yeah nice nice job there trying to steer"
+    },
+    {
+      "start": 105.08,
+      "duration": 5.16,
+      "text": "a win out of that one so this has"
+    },
+    {
+      "start": 107.68,
+      "duration": 5.28,
+      "text": "pineapple cucumber celery coconut water"
+    },
+    {
+      "start": 110.24,
+      "duration": 4.68,
+      "text": "kale spinach parsley Ginger lime blue"
+    },
+    {
+      "start": 112.96,
+      "duration": 4.96,
+      "text": "algae"
+    },
+    {
+      "start": 114.92,
+      "duration": 7.32,
+      "text": "spirulina and it's cold"
+    },
+    {
+      "start": 117.92,
+      "duration": 7.32,
+      "text": "pressed spirulina spirina"
+    },
+    {
+      "start": 122.24,
+      "duration": 6.04,
+      "text": "yeah all right so let's get right into"
+    },
+    {
+      "start": 125.24,
+      "duration": 5.88,
+      "text": "it couple new hires going in the"
+    },
+    {
+      "start": 128.28,
+      "duration": 5.4,
+      "text": "pipeline hasn't happened yet but very"
+    },
+    {
+      "start": 131.12,
+      "duration": 4.84,
+      "text": "exciting because we've been looking for"
+    },
+    {
+      "start": 133.68,
+      "duration": 6.16,
+      "text": "a uh multiplayer network"
+    },
+    {
+      "start": 135.96,
+      "duration": 5.52,
+      "text": "engineer uh that can really help take uh"
+    },
+    {
+      "start": 139.84,
+      "duration": 4.96,
+      "text": "getting multiple players in the game to"
+    },
+    {
+      "start": 141.48,
+      "duration": 5.12,
+      "text": "the next level make sure that we're cure"
+    },
+    {
+      "start": 144.8,
+      "duration": 4.68,
+      "text": "this is all part of prepping us for that"
+    },
+    {
+      "start": 146.6,
+      "duration": 4.32,
+      "text": "Alpha phase in uh 2023 I'm pretty"
+    },
+    {
+      "start": 149.48,
+      "duration": 4.08,
+      "text": "excited I mean we have we have"
+    },
+    {
+      "start": 150.92,
+      "duration": 5.8,
+      "text": "multiplayers now but beefing up that"
+    },
+    {
+      "start": 153.56,
+      "duration": 5.36,
+      "text": "position and and having a a a specialist"
+    },
+    {
+      "start": 156.72,
+      "duration": 4.2,
+      "text": "that that can then work on it as his"
+    },
+    {
+      "start": 158.92,
+      "duration": 4.36,
+      "text": "solo job rather than part of the other"
+    },
+    {
+      "start": 160.92,
+      "duration": 6.44,
+      "text": "things y yeah will will help us to move"
+    },
+    {
+      "start": 163.28,
+      "duration": 6.8,
+      "text": "forward a lot yes and then also a senior"
+    },
+    {
+      "start": 167.36,
+      "duration": 6.12,
+      "text": "level technical artist that will help"
+    },
+    {
+      "start": 170.08,
+      "duration": 6.88,
+      "text": "David a lot with the uh uh well just"
+    },
+    {
+      "start": 173.48,
+      "duration": 5.48,
+      "text": "apparently he's got a a wide area of"
+    },
+    {
+      "start": 176.96,
+      "duration": 3.28,
+      "text": "talents and skills so David's pretty"
+    },
+    {
+      "start": 178.96,
+      "duration": 3.44,
+      "text": "excited about him that's that's good"
+    },
+    {
+      "start": 180.24,
+      "duration": 5.36,
+      "text": "it's good news yeah I think you know we"
+    },
+    {
+      "start": 182.4,
+      "duration": 5.52,
+      "text": "have experts in in each position but"
+    },
+    {
+      "start": 185.6,
+      "duration": 4.56,
+      "text": "like guardi likes to do it's always good"
+    },
+    {
+      "start": 187.92,
+      "duration": 3.56,
+      "text": "to have two or three experts in each"
+    },
+    {
+      "start": 190.16,
+      "duration": 4.44,
+      "text": "position"
+    },
+    {
+      "start": 191.48,
+      "duration": 5.08,
+      "text": "so lessens the load on on that person"
+    },
+    {
+      "start": 194.6,
+      "duration": 3.8,
+      "text": "there takes a little bit of pressure of"
+    },
+    {
+      "start": 196.56,
+      "duration": 3.64,
+      "text": "but also that they can have"
+    },
+    {
+      "start": 198.4,
+      "duration": 3.6,
+      "text": "conversations back and two with each"
+    },
+    {
+      "start": 200.2,
+      "duration": 3.72,
+      "text": "other where they they're kind of at the"
+    },
+    {
+      "start": 202.0,
+      "duration": 3.44,
+      "text": "same level because because sometimes"
+    },
+    {
+      "start": 203.92,
+      "duration": 3.68,
+      "text": "when you're a senior and you talk to"
+    },
+    {
+      "start": 205.44,
+      "duration": 5.6,
+      "text": "talk to a junior that you might have"
+    },
+    {
+      "start": 207.6,
+      "duration": 5.16,
+      "text": "different ideas whereas whereas you have"
+    },
+    {
+      "start": 211.04,
+      "duration": 4.48,
+      "text": "you have that different level and the"
+    },
+    {
+      "start": 212.76,
+      "duration": 4.6,
+      "text": "junior as well then know two or three"
+    },
+    {
+      "start": 215.52,
+      "duration": 4.48,
+      "text": "different voices in the same area I I"
+    },
+    {
+      "start": 217.36,
+      "duration": 5.76,
+      "text": "always think good and I think to grow"
+    },
+    {
+      "start": 220.0,
+      "duration": 6.52,
+      "text": "the team you know having the seniors and"
+    },
+    {
+      "start": 223.12,
+      "duration": 4.76,
+      "text": "the Juniors and and and you know the I"
+    },
+    {
+      "start": 226.52,
+      "duration": 3.28,
+      "text": "don't want to say apprentices I'm"
+    },
+    {
+      "start": 227.88,
+      "duration": 3.48,
+      "text": "looking for a word underneath Junior but"
+    },
+    {
+      "start": 229.8,
+      "duration": 4.0,
+      "text": "having them all go through the ranks"
+    },
+    {
+      "start": 231.36,
+      "duration": 4.48,
+      "text": "together and learning off then some can"
+    },
+    {
+      "start": 233.8,
+      "duration": 3.68,
+      "text": "eventually go up the ladder and then"
+    },
+    {
+      "start": 235.84,
+      "duration": 6.16,
+      "text": "everyone moves up and it's just it just"
+    },
+    {
+      "start": 237.48,
+      "duration": 7.96,
+      "text": "makes for a really nice nice team yeah I"
+    },
+    {
+      "start": 242.0,
+      "duration": 5.88,
+      "text": "do agree it uh Elevate it'll help to"
+    },
+    {
+      "start": 245.44,
+      "duration": 3.8,
+      "text": "elevate the work uh everything that"
+    },
+    {
+      "start": 247.88,
+      "duration": 4.72,
+      "text": "we're doing speed up some of the"
+    },
+    {
+      "start": 249.24,
+      "duration": 5.52,
+      "text": "processes as well which is great because"
+    },
+    {
+      "start": 252.6,
+      "duration": 6.12,
+      "text": "you know we have a lot of deliverables"
+    },
+    {
+      "start": 254.76,
+      "duration": 6.32,
+      "text": "and yeah just a you know reminder on"
+    },
+    {
+      "start": 258.72,
+      "duration": 6.4,
+      "text": "some of the stuff that came up in the"
+    },
+    {
+      "start": 261.08,
+      "duration": 6.48,
+      "text": "last week we have uh pushed off uh"
+    },
+    {
+      "start": 265.12,
+      "duration": 5.72,
+      "text": "removed some sales from some nft sales"
+    },
+    {
+      "start": 267.56,
+      "duration": 4.96,
+      "text": "from this year uh quite a few actually"
+    },
+    {
+      "start": 270.84,
+      "duration": 3.28,
+      "text": "uh and and that's just due to the"
+    },
+    {
+      "start": 272.52,
+      "duration": 3.44,
+      "text": "response some of the response from the"
+    },
+    {
+      "start": 274.12,
+      "duration": 4.12,
+      "text": "community we're trying to listen to our"
+    },
+    {
+      "start": 275.96,
+      "duration": 4.04,
+      "text": "community uh and we're also bringing in"
+    },
+    {
+      "start": 278.24,
+      "duration": 4.08,
+      "text": "projects to collab with so we're going"
+    },
+    {
+      "start": 280.0,
+      "duration": 4.84,
+      "text": "to be doing the cornucopious club uh"
+    },
+    {
+      "start": 282.32,
+      "duration": 4.32,
+      "text": "collector's club uh which is great and"
+    },
+    {
+      "start": 284.84,
+      "duration": 3.28,
+      "text": "we're we're still just getting started"
+    },
+    {
+      "start": 286.64,
+      "duration": 4.16,
+      "text": "with that there's a long way to go but"
+    },
+    {
+      "start": 288.12,
+      "duration": 4.64,
+      "text": "we want to accept copy token for those"
+    },
+    {
+      "start": 290.8,
+      "duration": 5.48,
+      "text": "sales which is pretty cool give some"
+    },
+    {
+      "start": 292.76,
+      "duration": 6.44,
+      "text": "added utility exciting stuff there um"
+    },
+    {
+      "start": 296.28,
+      "duration": 5.52,
+      "text": "and then remember that road map you know"
+    },
+    {
+      "start": 299.2,
+      "duration": 4.92,
+      "text": "was was built a year ago and we've done"
+    },
+    {
+      "start": 301.8,
+      "duration": 4.28,
+      "text": "a few tweaks to it and and is full of"
+    },
+    {
+      "start": 304.12,
+      "duration": 3.52,
+      "text": "disclaimer saying look things things are"
+    },
+    {
+      "start": 306.08,
+      "duration": 3.32,
+      "text": "going to slip on this can you can you"
+    },
+    {
+      "start": 307.64,
+      "duration": 3.88,
+      "text": "imagine planning anything a year in"
+    },
+    {
+      "start": 309.4,
+      "duration": 4.96,
+      "text": "advance and and then building a bull"
+    },
+    {
+      "start": 311.52,
+      "duration": 4.36,
+      "text": "market and a bare Market cycle on top"
+    },
+    {
+      "start": 314.36,
+      "duration": 3.44,
+      "text": "yeah that's a great Point that's a"
+    },
+    {
+      "start": 315.88,
+      "duration": 4.88,
+      "text": "really good point and also in addition"
+    },
+    {
+      "start": 317.8,
+      "duration": 5.04,
+      "text": "to that just startup business I've never"
+    },
+    {
+      "start": 320.76,
+      "duration": 2.96,
+      "text": "built a business ever where I didn't"
+    },
+    {
+      "start": 322.84,
+      "duration": 4.16,
+      "text": "have to"
+    },
+    {
+      "start": 323.72,
+      "duration": 6.08,
+      "text": "spend uh and change strategy multiple"
+    },
+    {
+      "start": 327.0,
+      "duration": 4.36,
+      "text": "times especially in the startup phase"
+    },
+    {
+      "start": 329.8,
+      "duration": 3.44,
+      "text": "because you go in One Direction you"
+    },
+    {
+      "start": 331.36,
+      "duration": 4.24,
+      "text": "learn something you go in a you know for"
+    },
+    {
+      "start": 333.24,
+      "duration": 4.84,
+      "text": "example just quick example we were"
+    },
+    {
+      "start": 335.6,
+      "duration": 6.08,
+      "text": "originally uh building out our own Tech"
+    },
+    {
+      "start": 338.08,
+      "duration": 6.04,
+      "text": "the land Marketplace that spun into the"
+    },
+    {
+      "start": 341.68,
+      "duration": 4.48,
+      "text": "nft market a new Direction with the nft"
+    },
+    {
+      "start": 344.12,
+      "duration": 3.84,
+      "text": "marketplace we still get to go back to"
+    },
+    {
+      "start": 346.16,
+      "duration": 4.64,
+      "text": "that which is great because we have that"
+    },
+    {
+      "start": 347.96,
+      "duration": 4.52,
+      "text": "for the land uh and and when we uh"
+    },
+    {
+      "start": 350.8,
+      "duration": 4.88,
+      "text": "release the land deeds and do that"
+    },
+    {
+      "start": 352.48,
+      "duration": 4.8,
+      "text": "exchange but that was one Spin and then"
+    },
+    {
+      "start": 355.68,
+      "duration": 4.56,
+      "text": "we got going in that new direction we"
+    },
+    {
+      "start": 357.28,
+      "duration": 4.4,
+      "text": "wanted to uh work with derp uh T try to"
+    },
+    {
+      "start": 360.24,
+      "duration": 4.8,
+      "text": "utilize their Tech and what they were"
+    },
+    {
+      "start": 361.68,
+      "duration": 5.48,
+      "text": "doing great great project great guys but"
+    },
+    {
+      "start": 365.04,
+      "duration": 4.76,
+      "text": "the reality was we were while we were"
+    },
+    {
+      "start": 367.16,
+      "duration": 5.36,
+      "text": "doing that we're also still building our"
+    },
+    {
+      "start": 369.8,
+      "duration": 4.84,
+      "text": "own as well and so we've had to you know"
+    },
+    {
+      "start": 372.52,
+      "duration": 3.36,
+      "text": "you you navigate through the market and"
+    },
+    {
+      "start": 374.64,
+      "duration": 4.76,
+      "text": "go in a different"
+    },
+    {
+      "start": 375.88,
+      "duration": 5.76,
+      "text": "direction I we we create all our own"
+    },
+    {
+      "start": 379.4,
+      "duration": 4.2,
+      "text": "assets as well you know we and we're"
+    },
+    {
+      "start": 381.64,
+      "duration": 4.0,
+      "text": "taking on people and then we're training"
+    },
+    {
+      "start": 383.6,
+      "duration": 4.48,
+      "text": "people and then we're trying to to find"
+    },
+    {
+      "start": 385.64,
+      "duration": 4.56,
+      "text": "our way through through the the various"
+    },
+    {
+      "start": 388.08,
+      "duration": 5.64,
+      "text": "crypto yeah uh"
+    },
+    {
+      "start": 390.2,
+      "duration": 5.92,
+      "text": "you know uh what's the word rabbit holes"
+    },
+    {
+      "start": 393.72,
+      "duration": 5.64,
+      "text": "um and then we are in startup mode so we"
+    },
+    {
+      "start": 396.12,
+      "duration": 7.12,
+      "text": "have all those challenges uh you know we"
+    },
+    {
+      "start": 399.36,
+      "duration": 5.92,
+      "text": "choose to build our own assets um think"
+    },
+    {
+      "start": 403.24,
+      "duration": 4.56,
+      "text": "we choose to build our own Assets in"
+    },
+    {
+      "start": 405.28,
+      "duration": 5.8,
+      "text": "this metaverse and and do the other"
+    },
+    {
+      "start": 407.8,
+      "duration": 6.4,
+      "text": "thing not because they're easy because"
+    },
+    {
+      "start": 411.08,
+      "duration": 7.68,
+      "text": "they're hard yeah well and that's that's"
+    },
+    {
+      "start": 414.2,
+      "duration": 6.44,
+      "text": "true and you don't see successful AAA"
+    },
+    {
+      "start": 418.76,
+      "duration": 4.28,
+      "text": "games that are using off the shelf"
+    },
+    {
+      "start": 420.64,
+      "duration": 4.52,
+      "text": "assets buying it from someone else you"
+    },
+    {
+      "start": 423.04,
+      "duration": 4.32,
+      "text": "you've got to create your own look and"
+    },
+    {
+      "start": 425.16,
+      "duration": 3.88,
+      "text": "feel and I I'm really proud of our team"
+    },
+    {
+      "start": 427.36,
+      "duration": 5.0,
+      "text": "with what we've done I think it's"
+    },
+    {
+      "start": 429.04,
+      "duration": 6.24,
+      "text": "remarkable so uh staking uh we've got"
+    },
+    {
+      "start": 432.36,
+      "duration": 7.36,
+      "text": "the uh stake pool going and uh just for"
+    },
+    {
+      "start": 435.28,
+      "duration": 6.12,
+      "text": "anybody who uh may not be aware the uh"
+    },
+    {
+      "start": 439.72,
+      "duration": 3.56,
+      "text": "pool is called copi pool that's the"
+    },
+    {
+      "start": 441.4,
+      "duration": 4.2,
+      "text": "ticker name you can get the ID for the"
+    },
+    {
+      "start": 443.28,
+      "duration": 5.68,
+      "text": "pool and more information uh in our"
+    },
+    {
+      "start": 445.6,
+      "duration": 5.88,
+      "text": "Discord very easily um but that is"
+    },
+    {
+      "start": 448.96,
+      "duration": 4.8,
+      "text": "already up up at uh okay Rob's going to"
+    },
+    {
+      "start": 451.48,
+      "duration": 7.56,
+      "text": "share something"
+    },
+    {
+      "start": 453.76,
+      "duration": 8.6,
+      "text": "here that is at 42 million so took off"
+    },
+    {
+      "start": 459.04,
+      "duration": 5.88,
+      "text": "surprisingly fast and uh we kind of"
+    },
+    {
+      "start": 462.36,
+      "duration": 7.2,
+      "text": "weren't expecting that at all we had"
+    },
+    {
+      "start": 464.92,
+      "duration": 7.28,
+      "text": "scheduled basically 3.5 million copi a"
+    },
+    {
+      "start": 469.56,
+      "duration": 6.12,
+      "text": "little bit more 3.5 to four million copi"
+    },
+    {
+      "start": 472.2,
+      "duration": 6.56,
+      "text": "we had scheduled to be given away as a"
+    },
+    {
+      "start": 475.68,
+      "duration": 5.4,
+      "text": "fee for this uh for everyone staking to"
+    },
+    {
+      "start": 478.76,
+      "duration": 4.88,
+      "text": "this uh pool as part of the rewards of"
+    },
+    {
+      "start": 481.08,
+      "duration": 5.84,
+      "text": "staking with us the plan was to spread"
+    },
+    {
+      "start": 483.64,
+      "duration": 4.72,
+      "text": "that out over 3 to four months uh so"
+    },
+    {
+      "start": 486.92,
+      "duration": 3.72,
+      "text": "that we could give as many people a"
+    },
+    {
+      "start": 488.36,
+      "duration": 5.0,
+      "text": "chance as possible to participate in"
+    },
+    {
+      "start": 490.64,
+      "duration": 4.64,
+      "text": "that well it took off so quick that we"
+    },
+    {
+      "start": 493.36,
+      "duration": 5.32,
+      "text": "had to make a quick adjustment before"
+    },
+    {
+      "start": 495.28,
+      "duration": 5.48,
+      "text": "the pool actually started so it had not"
+    },
+    {
+      "start": 498.68,
+      "duration": 4.48,
+      "text": "begun yet the Epic and the rewards had"
+    },
+    {
+      "start": 500.76,
+      "duration": 5.84,
+      "text": "not yet begun so everybody still had a"
+    },
+    {
+      "start": 503.16,
+      "duration": 7.72,
+      "text": "chance to get in at the 358 epic which"
+    },
+    {
+      "start": 506.6,
+      "duration": 7.0,
+      "text": "is where we paid a Founders rate of0"
+    },
+    {
+      "start": 510.88,
+      "duration": 5.24,
+      "text": "0125 copi per"
+    },
+    {
+      "start": 513.6,
+      "duration": 4.4,
+      "text": "Ada that was the one Epic that we did"
+    },
+    {
+      "start": 516.12,
+      "duration": 5.88,
+      "text": "that for we then had to make the change"
+    },
+    {
+      "start": 518.0,
+      "duration": 7.28,
+      "text": "and do a declining curve uh basically"
+    },
+    {
+      "start": 522.0,
+      "duration": 5.76,
+      "text": "reducing the max payable per epic uh so"
+    },
+    {
+      "start": 525.28,
+      "duration": 5.56,
+      "text": "the the most rewards are available to"
+    },
+    {
+      "start": 527.76,
+      "duration": 6.0,
+      "text": "those who participate in the earliest"
+    },
+    {
+      "start": 530.84,
+      "duration": 7.6,
+      "text": "and then that goes along uh down until"
+    },
+    {
+      "start": 533.76,
+      "duration": 10.68,
+      "text": "we get down to 50K Ada St it's"
+    },
+    {
+      "start": 538.44,
+      "duration": 8.96,
+      "text": "it's Cal non-custodial the the nft land"
+    },
+    {
+      "start": 544.44,
+      "duration": 5.24,
+      "text": "assets that the nfts they they stay in"
+    },
+    {
+      "start": 547.4,
+      "duration": 4.8,
+      "text": "your wallet nothing has to be moved and"
+    },
+    {
+      "start": 549.68,
+      "duration": 5.32,
+      "text": "and at the same time you'll be receiving"
+    },
+    {
+      "start": 552.2,
+      "duration": 5.48,
+      "text": "um Ada Stak into our pool and you'll"
+    },
+    {
+      "start": 555.0,
+      "duration": 5.48,
+      "text": "also be receiving via drip drops copy"
+    },
+    {
+      "start": 557.68,
+      "duration": 4.48,
+      "text": "token so it's it's a win win yes"
+    },
+    {
+      "start": 560.48,
+      "duration": 4.32,
+      "text": "noncustodial and and that's the way"
+    },
+    {
+      "start": 562.16,
+      "duration": 5.6,
+      "text": "staking is with uh cardano so when you"
+    },
+    {
+      "start": 564.8,
+      "duration": 4.8,
+      "text": "delegate your Ada all you're doing is"
+    },
+    {
+      "start": 567.76,
+      "duration": 5.8,
+      "text": "choosing a pool you're assigning your"
+    },
+    {
+      "start": 569.6,
+      "duration": 6.24,
+      "text": "staking keys to a pool nothing the Ada"
+    },
+    {
+      "start": 573.56,
+      "duration": 4.68,
+      "text": "never leaves your wallet there's no risk"
+    },
+    {
+      "start": 575.84,
+      "duration": 4.56,
+      "text": "nothing like that at all it's simply"
+    },
+    {
+      "start": 578.24,
+      "duration": 5.36,
+      "text": "assigning your keys to a pool so if you"
+    },
+    {
+      "start": 580.4,
+      "duration": 6.72,
+      "text": "assign your keys to copi pool then you"
+    },
+    {
+      "start": 583.6,
+      "duration": 6.32,
+      "text": "are eligible to earn rewards uh from"
+    },
+    {
+      "start": 587.12,
+      "duration": 4.96,
+      "text": "staking uh the copi now the thing is you"
+    },
+    {
+      "start": 589.92,
+      "duration": 4.6,
+      "text": "have to go to Drip Drop to collect those"
+    },
+    {
+      "start": 592.08,
+      "duration": 5.36,
+      "text": "rewards they're going to stack up for a"
+    },
+    {
+      "start": 594.52,
+      "duration": 4.44,
+      "text": "period of SE seven epics but after that"
+    },
+    {
+      "start": 597.44,
+      "duration": 3.88,
+      "text": "they'll drop off and you won't get the"
+    },
+    {
+      "start": 598.96,
+      "duration": 3.96,
+      "text": "ones prior to that so you have to go"
+    },
+    {
+      "start": 601.32,
+      "duration": 3.16,
+      "text": "with some degree of regularity we"
+    },
+    {
+      "start": 602.92,
+      "duration": 3.8,
+      "text": "recommend once a month or once every"
+    },
+    {
+      "start": 604.48,
+      "duration": 5.0,
+      "text": "three weeks to go and make sure you"
+    },
+    {
+      "start": 606.72,
+      "duration": 4.8,
+      "text": "collect those rewards from drip drops uh"
+    },
+    {
+      "start": 609.48,
+      "duration": 3.8,
+      "text": "but it's a great platform if you have"
+    },
+    {
+      "start": 611.52,
+      "duration": 4.4,
+      "text": "any questions just go to our Discord and"
+    },
+    {
+      "start": 613.28,
+      "duration": 5.6,
+      "text": "and ask but yeah these are this was our"
+    },
+    {
+      "start": 615.92,
+      "duration": 5.56,
+      "text": "way of just giving uh you guys some"
+    },
+    {
+      "start": 618.88,
+      "duration": 4.56,
+      "text": "rewards for participating in our pool"
+    },
+    {
+      "start": 621.48,
+      "duration": 4.56,
+      "text": "which is by the way another really"
+    },
+    {
+      "start": 623.44,
+      "duration": 4.92,
+      "text": "important point you still receive your"
+    },
+    {
+      "start": 626.04,
+      "duration": 4.6,
+      "text": "Ada rewards this is not uh as you could"
+    },
+    {
+      "start": 628.36,
+      "duration": 6.16,
+      "text": "see the margin there is 5% this is not"
+    },
+    {
+      "start": 630.64,
+      "duration": 6.0,
+      "text": "like an ispo where the fees are 100% And"
+    },
+    {
+      "start": 634.52,
+      "duration": 4.68,
+      "text": "they're basically selling their token"
+    },
+    {
+      "start": 636.64,
+      "duration": 4.92,
+      "text": "for your Ada rewards that's kind of how"
+    },
+    {
+      "start": 639.2,
+      "duration": 4.16,
+      "text": "ispos work this isn't that we're trying"
+    },
+    {
+      "start": 641.56,
+      "duration": 5.36,
+      "text": "to contribute to the decentralization of"
+    },
+    {
+      "start": 643.36,
+      "duration": 5.56,
+      "text": "cardano security of the the network and"
+    },
+    {
+      "start": 646.92,
+      "duration": 4.2,
+      "text": "uh participate with you guys bring you"
+    },
+    {
+      "start": 648.92,
+      "duration": 3.96,
+      "text": "into that and eventually it could be"
+    },
+    {
+      "start": 651.12,
+      "duration": 3.76,
+      "text": "another stream of Revenue but for quite"
+    },
+    {
+      "start": 652.88,
+      "duration": 5.44,
+      "text": "a while it's costing us a good amount of"
+    },
+    {
+      "start": 654.88,
+      "duration": 5.2,
+      "text": "copi so uh that's just our gift to you"
+    },
+    {
+      "start": 658.32,
+      "duration": 5.2,
+      "text": "thanks for participating"
+    },
+    {
+      "start": 660.08,
+      "duration": 6.32,
+      "text": "we also have land staking so the land"
+    },
+    {
+      "start": 663.52,
+      "duration": 6.44,
+      "text": "staking Works uh in the same almost in"
+    },
+    {
+      "start": 666.4,
+      "duration": 6.64,
+      "text": "the same way if your wallet that you've"
+    },
+    {
+      "start": 669.96,
+      "duration": 7.04,
+      "text": "staked your Ada with uh that you've"
+    },
+    {
+      "start": 673.04,
+      "duration": 6.28,
+      "text": "delegated to copi pool also holds the"
+    },
+    {
+      "start": 677.0,
+      "duration": 4.76,
+      "text": "land nfts and I'm talking about the"
+    },
+    {
+      "start": 679.32,
+      "duration": 5.4,
+      "text": "theme Zone lands not the custom domes if"
+    },
+    {
+      "start": 681.76,
+      "duration": 5.08,
+      "text": "your wallet holds the theme Zone lands"
+    },
+    {
+      "start": 684.72,
+      "duration": 4.0,
+      "text": "then you're earning rewards on that as"
+    },
+    {
+      "start": 686.84,
+      "duration": 3.72,
+      "text": "well and so you can learn more about"
+    },
+    {
+      "start": 688.72,
+      "duration": 5.04,
+      "text": "that in in Discord I think it's pretty"
+    },
+    {
+      "start": 690.56,
+      "duration": 6.08,
+      "text": "awesome we're giv and and if you have"
+    },
+    {
+      "start": 693.76,
+      "duration": 5.08,
+      "text": "and if you have more than one land plot"
+    },
+    {
+      "start": 696.64,
+      "duration": 5.28,
+      "text": "then you you receive multiple award"
+    },
+    {
+      "start": 698.84,
+      "duration": 4.88,
+      "text": "rewards and also the number of rewards"
+    },
+    {
+      "start": 701.92,
+      "duration": 4.96,
+      "text": "that you get are determined by the"
+    },
+    {
+      "start": 703.72,
+      "duration": 5.76,
+      "text": "Rarity of your land plot so so I mean"
+    },
+    {
+      "start": 706.88,
+      "duration": 5.16,
+      "text": "yeah it's amazing there's all you have"
+    },
+    {
+      "start": 709.48,
+      "duration": 5.44,
+      "text": "to do is pay that transaction fee when"
+    },
+    {
+      "start": 712.04,
+      "duration": 6.88,
+      "text": "you withdraw them from Drip Drop so I"
+    },
+    {
+      "start": 714.92,
+      "duration": 6.64,
+      "text": "mean yeah why not yeah exactly and then"
+    },
+    {
+      "start": 718.92,
+      "duration": 4.88,
+      "text": "coming up soon uh we'll have the custom"
+    },
+    {
+      "start": 721.56,
+      "duration": 4.48,
+      "text": "do so at the end of this program of"
+    },
+    {
+      "start": 723.8,
+      "duration": 5.36,
+      "text": "staking about three months from now"
+    },
+    {
+      "start": 726.04,
+      "duration": 4.96,
+      "text": "we'll add the custom Dome staking and"
+    },
+    {
+      "start": 729.16,
+      "duration": 4.68,
+      "text": "also right about that time or maybe"
+    },
+    {
+      "start": 731.0,
+      "duration": 5.24,
+      "text": "slightly before we'll have begun the uh"
+    },
+    {
+      "start": 733.84,
+      "duration": 6.48,
+      "text": "collector's club and we'll be"
+    },
+    {
+      "start": 736.24,
+      "duration": 6.48,
+      "text": "running nft sales with partners for copy"
+    },
+    {
+      "start": 740.32,
+      "duration": 3.96,
+      "text": "token uh and that's going to be pretty"
+    },
+    {
+      "start": 742.72,
+      "duration": 4.24,
+      "text": "cool too but the size of those sales"
+    },
+    {
+      "start": 744.28,
+      "duration": 4.08,
+      "text": "going to be great a lot smaller and"
+    },
+    {
+      "start": 746.96,
+      "duration": 3.76,
+      "text": "those are with Partners we're"
+    },
+    {
+      "start": 748.36,
+      "duration": 4.2,
+      "text": "participating other cnft projects"
+    },
+    {
+      "start": 750.72,
+      "duration": 4.56,
+      "text": "because we want to come alongside you"
+    },
+    {
+      "start": 752.56,
+      "duration": 6.56,
+      "text": "guys and have you participate with us if"
+    },
+    {
+      "start": 755.28,
+      "duration": 6.68,
+      "text": "you're interested so uh what else we got"
+    },
+    {
+      "start": 759.12,
+      "duration": 6.56,
+      "text": "this we got the domes Dome sale coming"
+    },
+    {
+      "start": 761.96,
+      "duration": 6.6,
+      "text": "up some domes tomorrow Friday Saturday"
+    },
+    {
+      "start": 765.68,
+      "duration": 6.04,
+      "text": "and Sunday yeah well this video will"
+    },
+    {
+      "start": 768.56,
+      "duration": 7.08,
+      "text": "probably come out tomorrow might come"
+    },
+    {
+      "start": 771.72,
+      "duration": 7.52,
+      "text": "out today so yeah okay Friday the 26th"
+    },
+    {
+      "start": 775.64,
+      "duration": 6.36,
+      "text": "Saturday the 27th Sunday the 28th if we"
+    },
+    {
+      "start": 779.24,
+      "duration": 4.92,
+      "text": "get it out today great I hope we can um"
+    },
+    {
+      "start": 782.0,
+      "duration": 5.2,
+      "text": "but yeah the the sale is a lot of people"
+    },
+    {
+      "start": 784.16,
+      "duration": 5.24,
+      "text": "really excited um I think there's some"
+    },
+    {
+      "start": 787.2,
+      "duration": 3.8,
+      "text": "misunderstanding about the amount of of"
+    },
+    {
+      "start": 789.4,
+      "duration": 4.36,
+      "text": "ADA that's being raised there was a"
+    },
+    {
+      "start": 791.0,
+      "duration": 4.68,
+      "text": "earlier private sale that's not uh that"
+    },
+    {
+      "start": 793.76,
+      "duration": 4.8,
+      "text": "we collected for quite quite a while"
+    },
+    {
+      "start": 795.68,
+      "duration": 5.48,
+      "text": "back that uh was something that helped"
+    },
+    {
+      "start": 798.56,
+      "duration": 4.96,
+      "text": "us to get started with this project and"
+    },
+    {
+      "start": 801.16,
+      "duration": 4.36,
+      "text": "so that was a very big contribution to"
+    },
+    {
+      "start": 803.52,
+      "duration": 6.32,
+      "text": "us being able to build the team and make"
+    },
+    {
+      "start": 805.52,
+      "duration": 7.64,
+      "text": "this game in the first place now we have"
+    },
+    {
+      "start": 809.84,
+      "duration": 7.36,
+      "text": "uh I think 4 point what's the amount of"
+    },
+    {
+      "start": 813.16,
+      "duration": 7.32,
+      "text": "ADA being raised in this sale oh 4.23"
+    },
+    {
+      "start": 817.2,
+      "duration": 6.16,
+      "text": "4.23 23 million million Ada so that's"
+    },
+    {
+      "start": 820.48,
+      "duration": 4.96,
+      "text": "the final number of what we're uh"
+    },
+    {
+      "start": 823.36,
+      "duration": 3.72,
+      "text": "raising in this sale and it's not a"
+    },
+    {
+      "start": 825.44,
+      "duration": 5.6,
+      "text": "raise it's Revenue so we're we're"
+    },
+    {
+      "start": 827.08,
+      "duration": 5.56,
+      "text": "selling the nfts um so yeah I think it's"
+    },
+    {
+      "start": 831.04,
+      "duration": 3.16,
+      "text": "an exciting sale we did have some"
+    },
+    {
+      "start": 832.64,
+      "duration": 4.72,
+      "text": "questions from the community on the"
+    },
+    {
+      "start": 834.2,
+      "duration": 5.68,
+      "text": "difference in custom domes and themed"
+    },
+    {
+      "start": 837.36,
+      "duration": 5.36,
+      "text": "zones what what how would you say that"
+    },
+    {
+      "start": 839.88,
+      "duration": 4.88,
+      "text": "Rob how would you explain well I could"
+    },
+    {
+      "start": 842.72,
+      "duration": 4.04,
+      "text": "probably take half an hour explaining it"
+    },
+    {
+      "start": 844.76,
+      "duration": 5.08,
+      "text": "what what I will say you know we have"
+    },
+    {
+      "start": 846.76,
+      "duration": 5.64,
+      "text": "two full decks in our Discord one for"
+    },
+    {
+      "start": 849.84,
+      "duration": 5.4,
+      "text": "the theme zones and one for the custom"
+    },
+    {
+      "start": 852.4,
+      "duration": 5.08,
+      "text": "domes the these are over 20 to get"
+    },
+    {
+      "start": 855.24,
+      "duration": 4.68,
+      "text": "reaching up to 30 different pages so"
+    },
+    {
+      "start": 857.48,
+      "duration": 5.92,
+      "text": "that is the most detailed information"
+    },
+    {
+      "start": 859.92,
+      "duration": 6.28,
+      "text": "that you can get for both of them um as"
+    },
+    {
+      "start": 863.4,
+      "duration": 6.64,
+      "text": "a quick overview the the themed land"
+    },
+    {
+      "start": 866.2,
+      "duration": 5.88,
+      "text": "which we've already sold is part of the"
+    },
+    {
+      "start": 870.04,
+      "duration": 4.0,
+      "text": "the the game the metaverse game where"
+    },
+    {
+      "start": 872.08,
+      "duration": 3.84,
+      "text": "players own the land and you're farming"
+    },
+    {
+      "start": 874.04,
+      "duration": 3.16,
+      "text": "the land and districts are trading"
+    },
+    {
+      "start": 875.92,
+      "duration": 4.28,
+      "text": "between each other and it's all"
+    },
+    {
+      "start": 877.2,
+      "duration": 4.92,
+      "text": "economics and and it's multiplayer games"
+    },
+    {
+      "start": 880.2,
+      "duration": 3.76,
+      "text": "and and people are in the same districts"
+    },
+    {
+      "start": 882.12,
+      "duration": 3.8,
+      "text": "and and it's the main Corner copious"
+    },
+    {
+      "start": 883.96,
+      "duration": 6.88,
+      "text": "game that's how I would explain that"
+    },
+    {
+      "start": 885.92,
+      "duration": 7.84,
+      "text": "land this up upcoming sale is the custom"
+    },
+    {
+      "start": 890.84,
+      "duration": 5.24,
+      "text": "Dome so the custom domes are aimed at a"
+    },
+    {
+      "start": 893.76,
+      "duration": 5.92,
+      "text": "different really Market a different type"
+    },
+    {
+      "start": 896.08,
+      "duration": 6.64,
+      "text": "of player these are for the the person"
+    },
+    {
+      "start": 899.68,
+      "duration": 5.28,
+      "text": "that wants to create their own Dome"
+    },
+    {
+      "start": 902.72,
+      "duration": 4.96,
+      "text": "again it's still multiplayer and we will"
+    },
+    {
+      "start": 904.96,
+      "duration": 4.92,
+      "text": "provide different templates so you can"
+    },
+    {
+      "start": 907.68,
+      "duration": 3.64,
+      "text": "you can have a concert in there you can"
+    },
+    {
+      "start": 909.88,
+      "duration": 3.84,
+      "text": "have an art gallery you can have them"
+    },
+    {
+      "start": 911.32,
+      "duration": 4.72,
+      "text": "both together you provide tools where"
+    },
+    {
+      "start": 913.72,
+      "duration": 5.64,
+      "text": "you can drag and drop can have games"
+    },
+    {
+      "start": 916.04,
+      "duration": 6.56,
+      "text": "together and you can control entry to"
+    },
+    {
+      "start": 919.36,
+      "duration": 6.64,
+      "text": "those games if you want to Via nft"
+    },
+    {
+      "start": 922.6,
+      "duration": 6.56,
+      "text": "access or or it's just for yeah it's for"
+    },
+    {
+      "start": 926.0,
+      "duration": 6.32,
+      "text": "the entrepreneurs and then later on when"
+    },
+    {
+      "start": 929.16,
+      "duration": 6.48,
+      "text": "we have the city and we release that"
+    },
+    {
+      "start": 932.32,
+      "duration": 6.4,
+      "text": "these custom dones can be linked or"
+    },
+    {
+      "start": 935.64,
+      "duration": 6.0,
+      "text": "portal to from a city shop so if you've"
+    },
+    {
+      "start": 938.72,
+      "duration": 4.88,
+      "text": "got somebody like we always say Tesla"
+    },
+    {
+      "start": 941.64,
+      "duration": 4.36,
+      "text": "got no we've got no affiliation with"
+    },
+    {
+      "start": 943.6,
+      "duration": 5.92,
+      "text": "Tesla whatsoever but let's say Tesla"
+    },
+    {
+      "start": 946.0,
+      "duration": 6.56,
+      "text": "have have a a showroom in the city go"
+    },
+    {
+      "start": 949.52,
+      "duration": 5.52,
+      "text": "into that showroom then be transported"
+    },
+    {
+      "start": 952.56,
+      "duration": 4.2,
+      "text": "to these larger custom domes where"
+    },
+    {
+      "start": 955.04,
+      "duration": 3.2,
+      "text": "you'll have the showroom and then"
+    },
+    {
+      "start": 956.76,
+      "duration": 3.44,
+      "text": "probably you'll be able to go outside"
+    },
+    {
+      "start": 958.24,
+      "duration": 3.68,
+      "text": "and do a test driver of of of that"
+    },
+    {
+      "start": 960.2,
+      "duration": 4.0,
+      "text": "particular car so that that's one"
+    },
+    {
+      "start": 961.92,
+      "duration": 5.6,
+      "text": "example how you compare these custom"
+    },
+    {
+      "start": 964.2,
+      "duration": 6.16,
+      "text": "domes um to to the"
+    },
+    {
+      "start": 967.52,
+      "duration": 7.28,
+      "text": "Commerce within a real life Commerce"
+    },
+    {
+      "start": 970.36,
+      "duration": 6.64,
+      "text": "World in within our metaverse game yeah"
+    },
+    {
+      "start": 974.8,
+      "duration": 4.52,
+      "text": "yeah absolutely completely agree and one"
+    },
+    {
+      "start": 977.0,
+      "duration": 3.92,
+      "text": "of the things that we've talked about so"
+    },
+    {
+      "start": 979.32,
+      "duration": 3.24,
+      "text": "in doing something like this with a"
+    },
+    {
+      "start": 980.92,
+      "duration": 3.6,
+      "text": "product we always have to do a lot of"
+    },
+    {
+      "start": 982.56,
+      "duration": 3.52,
+      "text": "vision casting there's a lot that goes"
+    },
+    {
+      "start": 984.52,
+      "duration": 3.32,
+      "text": "into it we have to think through what is"
+    },
+    {
+      "start": 986.08,
+      "duration": 3.4,
+      "text": "it that we want to accomplish what are"
+    },
+    {
+      "start": 987.84,
+      "duration": 3.92,
+      "text": "we offering here"
+    },
+    {
+      "start": 989.48,
+      "duration": 4.48,
+      "text": "um what's the end goal where does it end"
+    },
+    {
+      "start": 991.76,
+      "duration": 3.84,
+      "text": "up we have to go back to our Dev team"
+    },
+    {
+      "start": 993.96,
+      "duration": 3.36,
+      "text": "and say hey guys is this going to work"
+    },
+    {
+      "start": 995.6,
+      "duration": 4.24,
+      "text": "is this going to be performance will it"
+    },
+    {
+      "start": 997.32,
+      "duration": 5.56,
+      "text": "work within our system does this size"
+    },
+    {
+      "start": 999.84,
+      "duration": 4.88,
+      "text": "work does this size work and and all"
+    },
+    {
+      "start": 1002.88,
+      "duration": 4.16,
+      "text": "sorts of things like that but"
+    },
+    {
+      "start": 1004.72,
+      "duration": 4.36,
+      "text": "additionally in the vision casting"
+    },
+    {
+      "start": 1007.04,
+      "duration": 4.76,
+      "text": "process one of the things that I get so"
+    },
+    {
+      "start": 1009.08,
+      "duration": 5.0,
+      "text": "excited about is what can we do like so"
+    },
+    {
+      "start": 1011.8,
+      "duration": 4.12,
+      "text": "these domes they're for the Creator for"
+    },
+    {
+      "start": 1014.08,
+      "duration": 3.76,
+      "text": "the entrepreneur for you guys to get in"
+    },
+    {
+      "start": 1015.92,
+      "duration": 4.0,
+      "text": "there and we want to see what you create"
+    },
+    {
+      "start": 1017.84,
+      "duration": 4.16,
+      "text": "and build as a community"
+    },
+    {
+      "start": 1019.92,
+      "duration": 4.52,
+      "text": "uh so it's really exciting and you get"
+    },
+    {
+      "start": 1022.0,
+      "duration": 4.52,
+      "text": "to turn that if you want into a business"
+    },
+    {
+      "start": 1024.44,
+      "duration": 4.36,
+      "text": "I've I've said the analogy multiple"
+    },
+    {
+      "start": 1026.52,
+      "duration": 5.2,
+      "text": "times but the the influencer could come"
+    },
+    {
+      "start": 1028.8,
+      "duration": 4.64,
+      "text": "in potentially and run a PVP match uh"
+    },
+    {
+      "start": 1031.72,
+      "duration": 3.76,
+      "text": "there's a variety of things the nft"
+    },
+    {
+      "start": 1033.44,
+      "duration": 4.04,
+      "text": "artist can create a gallery and have"
+    },
+    {
+      "start": 1035.48,
+      "duration": 4.76,
+      "text": "people in to see their work and make it"
+    },
+    {
+      "start": 1037.48,
+      "duration": 5.72,
+      "text": "the stunning display um there's there's"
+    },
+    {
+      "start": 1040.24,
+      "duration": 4.76,
+      "text": "so many fun obviously the PVP games we"
+    },
+    {
+      "start": 1043.2,
+      "duration": 4.4,
+      "text": "just want to create a way for you guys"
+    },
+    {
+      "start": 1045.0,
+      "duration": 4.28,
+      "text": "to build and do what you want now this"
+    },
+    {
+      "start": 1047.6,
+      "duration": 2.88,
+      "text": "is the vision casting part that I was"
+    },
+    {
+      "start": 1049.28,
+      "duration": 4.12,
+      "text": "going to talk"
+    },
+    {
+      "start": 1050.48,
+      "duration": 5.32,
+      "text": "about we were discussing it a few weeks"
+    },
+    {
+      "start": 1053.4,
+      "duration": 5.0,
+      "text": "ago in one of the team meetings and what"
+    },
+    {
+      "start": 1055.8,
+      "duration": 5.84,
+      "text": "came up was man it would be really cool"
+    },
+    {
+      "start": 1058.4,
+      "duration": 7.28,
+      "text": "if we could export the data associated"
+    },
+    {
+      "start": 1061.64,
+      "duration": 7.72,
+      "text": "with that dome for example um I've had"
+    },
+    {
+      "start": 1065.68,
+      "duration": 6.24,
+      "text": "200,000 visitors to the Dome I've run 33"
+    },
+    {
+      "start": 1069.36,
+      "duration": 5.28,
+      "text": "PVP competitions here are some of the"
+    },
+    {
+      "start": 1071.92,
+      "duration": 4.44,
+      "text": "most exciting camera shots from within"
+    },
+    {
+      "start": 1074.64,
+      "duration": 4.8,
+      "text": "uh placing the cameras recording"
+    },
+    {
+      "start": 1076.36,
+      "duration": 4.84,
+      "text": "snapshots dumping all of this data x"
+    },
+    {
+      "start": 1079.44,
+      "duration": 4.04,
+      "text": "amount of Revenue was generated from"
+    },
+    {
+      "start": 1081.2,
+      "duration": 4.72,
+      "text": "this Dome you know if if we have that"
+    },
+    {
+      "start": 1083.48,
+      "duration": 5.04,
+      "text": "transactional ability in the future and"
+    },
+    {
+      "start": 1085.92,
+      "duration": 4.8,
+      "text": "all of that data can be dumped uh to"
+    },
+    {
+      "start": 1088.52,
+      "duration": 5.16,
+      "text": "either update the metadata if it was not"
+    },
+    {
+      "start": 1090.72,
+      "duration": 4.68,
+      "text": "a locked policy or be a subset of the"
+    },
+    {
+      "start": 1093.68,
+      "duration": 3.6,
+      "text": "metadata there's some technical things"
+    },
+    {
+      "start": 1095.4,
+      "duration": 4.12,
+      "text": "we're talking through with it but either"
+    },
+    {
+      "start": 1097.28,
+      "duration": 6.32,
+      "text": "way the data is there we associate it"
+    },
+    {
+      "start": 1099.52,
+      "duration": 5.92,
+      "text": "with that nft ID and that nft holder and"
+    },
+    {
+      "start": 1103.6,
+      "duration": 4.56,
+      "text": "now it's displayed in a Marketplace so"
+    },
+    {
+      "start": 1105.44,
+      "duration": 5.72,
+      "text": "you can resell your nft but it actually"
+    },
+    {
+      "start": 1108.16,
+      "duration": 5.2,
+      "text": "represents a lot more so very EXC yeah I"
+    },
+    {
+      "start": 1111.16,
+      "duration": 3.88,
+      "text": "mean all that's definitely possible and"
+    },
+    {
+      "start": 1113.36,
+      "duration": 4.84,
+      "text": "and that's something that you know we'll"
+    },
+    {
+      "start": 1115.04,
+      "duration": 4.48,
+      "text": "discuss and will iterate upon um maybe"
+    },
+    {
+      "start": 1118.2,
+      "duration": 3.64,
+      "text": "some people might want to keep some of"
+    },
+    {
+      "start": 1119.52,
+      "duration": 4.44,
+      "text": "that information private so so there'll"
+    },
+    {
+      "start": 1121.84,
+      "duration": 4.96,
+      "text": "definitely be different options"
+    },
+    {
+      "start": 1123.96,
+      "duration": 4.56,
+      "text": "available yeah absolutely you might want"
+    },
+    {
+      "start": 1126.8,
+      "duration": 3.88,
+      "text": "to have an invite only"
+    },
+    {
+      "start": 1128.52,
+      "duration": 4.52,
+      "text": "though you know and it's just you and"
+    },
+    {
+      "start": 1130.68,
+      "duration": 4.92,
+      "text": "your friends or or whoever it is that"
+    },
+    {
+      "start": 1133.04,
+      "duration": 4.84,
+      "text": "have access to that so there's a there's"
+    },
+    {
+      "start": 1135.6,
+      "duration": 3.76,
+      "text": "a variety of different use cases"
+    },
+    {
+      "start": 1137.88,
+      "duration": 3.76,
+      "text": "depending upon what the person wants to"
+    },
+    {
+      "start": 1139.36,
+      "duration": 3.84,
+      "text": "do but this is kind of the essence of"
+    },
+    {
+      "start": 1141.64,
+      "duration": 3.04,
+      "text": "what the custom domes are I think you"
+    },
+    {
+      "start": 1143.2,
+      "duration": 3.24,
+      "text": "explained it very well and then the"
+    },
+    {
+      "start": 1144.68,
+      "duration": 3.52,
+      "text": "theme lands what how would you"
+    },
+    {
+      "start": 1146.44,
+      "duration": 3.32,
+      "text": "differentiate like how would you"
+    },
+    {
+      "start": 1148.2,
+      "duration": 4.04,
+      "text": "describe the theme lands which was the"
+    },
+    {
+      "start": 1149.76,
+      "duration": 4.32,
+      "text": "previous sale well the the the theme"
+    },
+    {
+      "start": 1152.24,
+      "duration": 4.08,
+      "text": "lands are an opportunity as well because"
+    },
+    {
+      "start": 1154.08,
+      "duration": 3.96,
+      "text": "again the players will own those land"
+    },
+    {
+      "start": 1156.32,
+      "duration": 3.04,
+      "text": "and other players will be coming onto"
+    },
+    {
+      "start": 1158.04,
+      "duration": 4.24,
+      "text": "their land and they'll be doing all"
+    },
+    {
+      "start": 1159.36,
+      "duration": 6.68,
+      "text": "kinds of farming and and trading and and"
+    },
+    {
+      "start": 1162.28,
+      "duration": 5.96,
+      "text": "um moving that the the the goods that"
+    },
+    {
+      "start": 1166.04,
+      "duration": 5.2,
+      "text": "are that are produced to to other lands"
+    },
+    {
+      "start": 1168.24,
+      "duration": 5.36,
+      "text": "to build the whole economy they'll also"
+    },
+    {
+      "start": 1171.24,
+      "duration": 4.04,
+      "text": "be part of of a district and and those"
+    },
+    {
+      "start": 1173.6,
+      "duration": 3.2,
+      "text": "districts will be competing against"
+    },
+    {
+      "start": 1175.28,
+      "duration": 3.2,
+      "text": "other districts and and the best"
+    },
+    {
+      "start": 1176.8,
+      "duration": 4.28,
+      "text": "districts will be getting rewards back"
+    },
+    {
+      "start": 1178.48,
+      "duration": 5.24,
+      "text": "and and so that's a whole different kind"
+    },
+    {
+      "start": 1181.08,
+      "duration": 6.8,
+      "text": "of economy and a really really powerful"
+    },
+    {
+      "start": 1183.72,
+      "duration": 7.76,
+      "text": "one um so but that's a that's part of"
+    },
+    {
+      "start": 1187.88,
+      "duration": 6.64,
+      "text": "that's that's gamifying the know that's"
+    },
+    {
+      "start": 1191.48,
+      "duration": 4.84,
+      "text": "metav versing the game because because"
+    },
+    {
+      "start": 1194.52,
+      "duration": 4.32,
+      "text": "it's a game with it with the in-game"
+    },
+    {
+      "start": 1196.32,
+      "duration": 5.08,
+      "text": "currency so so whereas the customer"
+    },
+    {
+      "start": 1198.84,
+      "duration": 4.8,
+      "text": "domes is I suppose you"
+    },
+    {
+      "start": 1201.4,
+      "duration": 3.84,
+      "text": "would the the custom domes because you"
+    },
+    {
+      "start": 1203.64,
+      "duration": 4.52,
+      "text": "can build yourself and build the economy"
+    },
+    {
+      "start": 1205.24,
+      "duration": 4.88,
+      "text": "on that that's probably how people are"
+    },
+    {
+      "start": 1208.16,
+      "duration": 4.76,
+      "text": "are thinking that the metaverse is is"
+    },
+    {
+      "start": 1210.12,
+      "duration": 4.72,
+      "text": "going to is going to build out but we're"
+    },
+    {
+      "start": 1212.92,
+      "duration": 3.52,
+      "text": "going in two different two different"
+    },
+    {
+      "start": 1214.84,
+      "duration": 3.6,
+      "text": "directions that are actually completely"
+    },
+    {
+      "start": 1216.44,
+      "duration": 4.32,
+      "text": "fused together and share in the same"
+    },
+    {
+      "start": 1218.44,
+      "duration": 3.96,
+      "text": "tool because who knows which which way"
+    },
+    {
+      "start": 1220.76,
+      "duration": 5.52,
+      "text": "it's going to go in the future so so you"
+    },
+    {
+      "start": 1222.4,
+      "duration": 6.4,
+      "text": "know we're giving both options yeah"
+    },
+    {
+      "start": 1226.28,
+      "duration": 5.24,
+      "text": "agreed I think it gives for a lot of f"
+    },
+    {
+      "start": 1228.8,
+      "duration": 5.52,
+      "text": "ability and it it uh creates a diverse"
+    },
+    {
+      "start": 1231.52,
+      "duration": 5.36,
+      "text": "environment within the the ecosystem and"
+    },
+    {
+      "start": 1234.32,
+      "duration": 4.4,
+      "text": "the longterm plan that we have it really"
+    },
+    {
+      "start": 1236.88,
+      "duration": 4.72,
+      "text": "fits well with the story the overall"
+    },
+    {
+      "start": 1238.72,
+      "duration": 4.88,
+      "text": "story which the lore will be coming out"
+    },
+    {
+      "start": 1241.6,
+      "duration": 4.52,
+      "text": "um at some point we're we're working on"
+    },
+    {
+      "start": 1243.6,
+      "duration": 4.64,
+      "text": "it so a lot of good narrations with that"
+    },
+    {
+      "start": 1246.12,
+      "duration": 5.08,
+      "text": "which is pretty cool uh but we'll we'll"
+    },
+    {
+      "start": 1248.24,
+      "duration": 4.6,
+      "text": "announce more on that later uh you know"
+    },
+    {
+      "start": 1251.2,
+      "duration": 3.56,
+      "text": "I think we're trying to wrap it up"
+    },
+    {
+      "start": 1252.84,
+      "duration": 4.36,
+      "text": "quickly so why don't we go ahead and get"
+    },
+    {
+      "start": 1254.76,
+      "duration": 4.28,
+      "text": "our special guests up here we're really"
+    },
+    {
+      "start": 1257.2,
+      "duration": 4.16,
+      "text": "thankful that uh I'm I'm sure you guys"
+    },
+    {
+      "start": 1259.04,
+      "duration": 3.8,
+      "text": "are excited to see we're as previously"
+    },
+    {
+      "start": 1261.36,
+      "duration": 4.64,
+      "text": "mentioned we've got Jim and David with"
+    },
+    {
+      "start": 1262.84,
+      "duration": 5.4,
+      "text": "us here again so let me go ahead and"
+    },
+    {
+      "start": 1266.0,
+      "duration": 6.76,
+      "text": "welcome up Jim and"
+    },
+    {
+      "start": 1268.24,
+      "duration": 7.24,
+      "text": "David all right welcome up David and Jim"
+    },
+    {
+      "start": 1272.76,
+      "duration": 5.04,
+      "text": "copi Cafe this is your second copy Cafe"
+    },
+    {
+      "start": 1275.48,
+      "duration": 4.64,
+      "text": "I guess how you guys doing what are you"
+    },
+    {
+      "start": 1277.8,
+      "duration": 4.84,
+      "text": "drinking more"
+    },
+    {
+      "start": 1280.12,
+      "duration": 6.92,
+      "text": "importantly what are you drinking"
+    },
+    {
+      "start": 1282.64,
+      "duration": 6.88,
+      "text": "Jim I'm drinking The Souls of the"
+    },
+    {
+      "start": 1287.04,
+      "duration": 6.04,
+      "text": "for look at me I'm drinking an"
+    },
+    {
+      "start": 1289.52,
+      "duration": 7.28,
+      "text": "invisibility potion"
+    },
+    {
+      "start": 1293.08,
+      "duration": 6.68,
+      "text": "oh how do you do that well cheers guys"
+    },
+    {
+      "start": 1296.8,
+      "duration": 5.08,
+      "text": "secret Cheers Cheers glad to have you on"
+    },
+    {
+      "start": 1299.76,
+      "duration": 3.56,
+      "text": "the show again we had a few questions"
+    },
+    {
+      "start": 1301.88,
+      "duration": 5.0,
+      "text": "from the community and then we'll get"
+    },
+    {
+      "start": 1303.32,
+      "duration": 5.44,
+      "text": "right into it with some fun game"
+    },
+    {
+      "start": 1306.88,
+      "duration": 4.2,
+      "text": "streaming Jim you're gonna do a little"
+    },
+    {
+      "start": 1308.76,
+      "duration": 4.84,
+      "text": "demo of what you guys have built uh of"
+    },
+    {
+      "start": 1311.08,
+      "duration": 5.48,
+      "text": "the custom Dome okay awesome very"
+    },
+    {
+      "start": 1313.6,
+      "duration": 6.04,
+      "text": "exciting so question from the community"
+    },
+    {
+      "start": 1316.56,
+      "duration": 6.16,
+      "text": "when can we use these things"
+    },
+    {
+      "start": 1319.64,
+      "duration": 6.24,
+      "text": "when can we use these things custom Dome"
+    },
+    {
+      "start": 1322.72,
+      "duration": 4.92,
+      "text": "utility yeah no big question um we're"
+    },
+    {
+      "start": 1325.88,
+      "duration": 3.88,
+      "text": "doing a lot of multiplayer testing right"
+    },
+    {
+      "start": 1327.64,
+      "duration": 4.16,
+      "text": "now uh we want to get want to get a"
+    },
+    {
+      "start": 1329.76,
+      "duration": 3.84,
+      "text": "little bit more of that done but I'm"
+    },
+    {
+      "start": 1331.8,
+      "duration": 3.68,
+      "text": "thinking it's gonna be closer to the"
+    },
+    {
+      "start": 1333.6,
+      "duration": 4.76,
+      "text": "beginning of next year what we're"
+    },
+    {
+      "start": 1335.48,
+      "duration": 5.96,
+      "text": "looking at on those so okay that's"
+    },
+    {
+      "start": 1338.36,
+      "duration": 5.72,
+      "text": "awesome good safe point for it so like a"
+    },
+    {
+      "start": 1341.44,
+      "duration": 6.24,
+      "text": "uh a testing kind of thing"
+    },
+    {
+      "start": 1344.08,
+      "duration": 5.48,
+      "text": "or um I think yeah so we're gonna have"
+    },
+    {
+      "start": 1347.68,
+      "duration": 3.56,
+      "text": "testing groups in the beginning anyway"
+    },
+    {
+      "start": 1349.56,
+      "duration": 3.44,
+      "text": "so yeah the beginning of next year"
+    },
+    {
+      "start": 1351.24,
+      "duration": 4.04,
+      "text": "starting with uh the first testing"
+    },
+    {
+      "start": 1353.0,
+      "duration": 5.28,
+      "text": "groups and we'll see how things scale"
+    },
+    {
+      "start": 1355.28,
+      "duration": 5.04,
+      "text": "from there awesome awesome I love it"
+    },
+    {
+      "start": 1358.28,
+      "duration": 4.32,
+      "text": "very exciting I know everybody's ready"
+    },
+    {
+      "start": 1360.32,
+      "duration": 3.92,
+      "text": "to get them in their hands I am as well"
+    },
+    {
+      "start": 1362.6,
+      "duration": 4.6,
+      "text": "I'm going to be building like a madman"
+    },
+    {
+      "start": 1364.24,
+      "duration": 4.4,
+      "text": "with the all the time that I have yeah"
+    },
+    {
+      "start": 1367.2,
+      "duration": 3.12,
+      "text": "that's probably not going to happen but"
+    },
+    {
+      "start": 1368.64,
+      "duration": 4.16,
+      "text": "it'll be fun I want to test and play"
+    },
+    {
+      "start": 1370.32,
+      "duration": 5.44,
+      "text": "around so what what about the difference"
+    },
+    {
+      "start": 1372.8,
+      "duration": 7.68,
+      "text": "in the look of the land versus the look"
+    },
+    {
+      "start": 1375.76,
+      "duration": 7.32,
+      "text": "of the domes Aesthetics so the look of"
+    },
+    {
+      "start": 1380.48,
+      "duration": 4.92,
+      "text": "the land so assuming we're talking about"
+    },
+    {
+      "start": 1383.08,
+      "duration": 4.92,
+      "text": "kits like what you can make your custom"
+    },
+    {
+      "start": 1385.4,
+      "duration": 5.92,
+      "text": "Dome look like compared to what things"
+    },
+    {
+      "start": 1388.0,
+      "duration": 4.84,
+      "text": "look like in the other zones yeah so"
+    },
+    {
+      "start": 1391.32,
+      "duration": 4.08,
+      "text": "there could be a point in the future"
+    },
+    {
+      "start": 1392.84,
+      "duration": 5.28,
+      "text": "where let's say like soulless it's got a"
+    },
+    {
+      "start": 1395.4,
+      "duration": 4.84,
+      "text": "national park kind of vibe going on it's"
+    },
+    {
+      "start": 1398.12,
+      "duration": 3.8,
+      "text": "you know it's got Douglas Furs it's got"
+    },
+    {
+      "start": 1400.24,
+      "duration": 3.04,
+      "text": "that kind of look to it there might be a"
+    },
+    {
+      "start": 1401.92,
+      "duration": 2.96,
+      "text": "point where we have a kit that comes out"
+    },
+    {
+      "start": 1403.28,
+      "duration": 4.0,
+      "text": "for the custom domes that is based on"
+    },
+    {
+      "start": 1404.88,
+      "duration": 5.8,
+      "text": "soless so if you want your custom Dome"
+    },
+    {
+      "start": 1407.28,
+      "duration": 4.8,
+      "text": "to look like that you can so um but yeah"
+    },
+    {
+      "start": 1410.68,
+      "duration": 2.48,
+      "text": "definitely coming up in the future we"
+    },
+    {
+      "start": 1412.08,
+      "duration": 3.52,
+      "text": "going to have lots of different"
+    },
+    {
+      "start": 1413.16,
+      "duration": 3.96,
+      "text": "environment of kits um that you can use"
+    },
+    {
+      "start": 1415.6,
+      "duration": 3.36,
+      "text": "with the custom domes that are similar"
+    },
+    {
+      "start": 1417.12,
+      "duration": 4.32,
+      "text": "to the uh you know you got the paradise"
+    },
+    {
+      "start": 1418.96,
+      "duration": 5.68,
+      "text": "kit uh right now which I think is a good"
+    },
+    {
+      "start": 1421.44,
+      "duration": 5.96,
+      "text": "start to thingss um but yeah lots of"
+    },
+    {
+      "start": 1424.64,
+      "duration": 6.92,
+      "text": "lots of things coming in the future"
+    },
+    {
+      "start": 1427.4,
+      "duration": 6.96,
+      "text": "awesome very cool uh and then the racing"
+    },
+    {
+      "start": 1431.56,
+      "duration": 4.72,
+      "text": "kit somebody uh some announcements Rob"
+    },
+    {
+      "start": 1434.36,
+      "duration": 3.76,
+      "text": "and I made in the past about the racing"
+    },
+    {
+      "start": 1436.28,
+      "duration": 3.68,
+      "text": "kits so what what are when are they"
+    },
+    {
+      "start": 1438.12,
+      "duration": 6.24,
+      "text": "going to be be able to use the race"
+    },
+    {
+      "start": 1439.96,
+      "duration": 6.6,
+      "text": "building kits um well as far as using"
+    },
+    {
+      "start": 1444.36,
+      "duration": 4.04,
+      "text": "them um we'll probably wait till we"
+    },
+    {
+      "start": 1446.56,
+      "duration": 3.76,
+      "text": "actually show something of those first"
+    },
+    {
+      "start": 1448.4,
+      "duration": 3.96,
+      "text": "before we announce that um because it's"
+    },
+    {
+      "start": 1450.32,
+      "duration": 4.92,
+      "text": "you know something is still in progress"
+    },
+    {
+      "start": 1452.36,
+      "duration": 5.52,
+      "text": "right now um one thing to clear up"
+    },
+    {
+      "start": 1455.24,
+      "duration": 4.76,
+      "text": "though is like racing itself we're we're"
+    },
+    {
+      "start": 1457.88,
+      "duration": 4.88,
+      "text": "not talking about bull Jets and stuff"
+    },
+    {
+      "start": 1460.0,
+      "duration": 5.36,
+      "text": "like that racing because the land is in"
+    },
+    {
+      "start": 1462.76,
+      "duration": 5.08,
+      "text": "order so you guys you know cornucopians"
+    },
+    {
+      "start": 1465.36,
+      "duration": 7.12,
+      "text": "you guys saw the racing before um that"
+    },
+    {
+      "start": 1467.84,
+      "duration": 6.84,
+      "text": "was a huge huge uh section of land to to"
+    },
+    {
+      "start": 1472.48,
+      "duration": 4.6,
+      "text": "hold that racetrack it exceeds a copius"
+    },
+    {
+      "start": 1474.68,
+      "duration": 5.32,
+      "text": "by far so um you're going to see that"
+    },
+    {
+      "start": 1477.08,
+      "duration": 4.6,
+      "text": "kind of RAC racing in our own curated uh"
+    },
+    {
+      "start": 1480.0,
+      "duration": 4.56,
+      "text": "megad doomes that's you're going to see"
+    },
+    {
+      "start": 1481.68,
+      "duration": 5.04,
+      "text": "that now as for racing inside of custom"
+    },
+    {
+      "start": 1484.56,
+      "duration": 4.16,
+      "text": "domes that's going to be a different"
+    },
+    {
+      "start": 1486.72,
+      "duration": 3.72,
+      "text": "type of racing something something that"
+    },
+    {
+      "start": 1488.72,
+      "duration": 4.72,
+      "text": "we're not revealing yet but I think it's"
+    },
+    {
+      "start": 1490.44,
+      "duration": 5.44,
+      "text": "going to be very very cool yeah very"
+    },
+    {
+      "start": 1493.44,
+      "duration": 5.2,
+      "text": "exciting might yeah can't wait to see"
+    },
+    {
+      "start": 1495.88,
+      "duration": 7.72,
+      "text": "some of that as well all right last"
+    },
+    {
+      "start": 1498.64,
+      "duration": 6.92,
+      "text": "question for you guys can we"
+    },
+    {
+      "start": 1503.6,
+      "duration": 3.32,
+      "text": "terraform well you know what I'll just"
+    },
+    {
+      "start": 1505.56,
+      "duration": 3.28,
+      "text": "say I'll add to that what is"
+    },
+    {
+      "start": 1506.92,
+      "duration": 4.2,
+      "text": "terraforming for those that don't know"
+    },
+    {
+      "start": 1508.84,
+      "duration": 5.28,
+      "text": "as well I I had seen someone from the"
+    },
+    {
+      "start": 1511.12,
+      "duration": 4.68,
+      "text": "community uh I think M make this"
+    },
+    {
+      "start": 1514.12,
+      "duration": 3.8,
+      "text": "specific question they're talking about"
+    },
+    {
+      "start": 1515.8,
+      "duration": 4.64,
+      "text": "on games where you're manipulating a"
+    },
+    {
+      "start": 1517.92,
+      "duration": 4.44,
+      "text": "landscape it's essentially a height map"
+    },
+    {
+      "start": 1520.44,
+      "duration": 3.88,
+      "text": "is what it is um you can pull it up and"
+    },
+    {
+      "start": 1522.36,
+      "duration": 4.24,
+      "text": "down sometimes you know sometimes it's"
+    },
+    {
+      "start": 1524.32,
+      "duration": 4.44,
+      "text": "voxal based there's a little bit more to"
+    },
+    {
+      "start": 1526.6,
+      "duration": 4.36,
+      "text": "it but that is not the way we're doing"
+    },
+    {
+      "start": 1528.76,
+      "duration": 4.32,
+      "text": "it here so we've we've kind of looked at"
+    },
+    {
+      "start": 1530.96,
+      "duration": 3.68,
+      "text": "doing both methods and the way we're"
+    },
+    {
+      "start": 1533.08,
+      "duration": 4.16,
+      "text": "going to be building land in the custom"
+    },
+    {
+      "start": 1534.64,
+      "duration": 5.08,
+      "text": "domes will be faster and uh performance"
+    },
+    {
+      "start": 1537.24,
+      "duration": 4.88,
+      "text": "will be better so um when we show off"
+    },
+    {
+      "start": 1539.72,
+      "duration": 4.6,
+      "text": "the Builder uh for how you put together"
+    },
+    {
+      "start": 1542.12,
+      "duration": 4.36,
+      "text": "things uh we'll get into more detail"
+    },
+    {
+      "start": 1544.32,
+      "duration": 5.0,
+      "text": "details of that but trust me it's it's"
+    },
+    {
+      "start": 1546.48,
+      "duration": 6.48,
+      "text": "way better it's way faster all right"
+    },
+    {
+      "start": 1549.32,
+      "duration": 5.88,
+      "text": "well that's very exciting okay uh Rob"
+    },
+    {
+      "start": 1552.96,
+      "duration": 4.92,
+      "text": "any other questions for these guys any"
+    },
+    {
+      "start": 1555.2,
+      "duration": 5.8,
+      "text": "anything there from me all right let's"
+    },
+    {
+      "start": 1557.88,
+      "duration": 6.68,
+      "text": "uh when preview wi preview well let's"
+    },
+    {
+      "start": 1561.0,
+      "duration": 6.4,
+      "text": "get this going uh Jim are you ready to"
+    },
+    {
+      "start": 1564.56,
+      "duration": 5.48,
+      "text": "play I hope so I'm not all that great at"
+    },
+    {
+      "start": 1567.4,
+      "duration": 7.12,
+      "text": "Shooters but see what we can do let's"
+    },
+    {
+      "start": 1570.04,
+      "duration": 4.48,
+      "text": "see what you can do man I'll bring it up"
+    },
+    {
+      "start": 1575.52,
+      "duration": 4.84,
+      "text": "here"
+    },
+    {
+      "start": 1577.12,
+      "duration": 6.48,
+      "text": "nice different character there who not"
+    },
+    {
+      "start": 1580.36,
+      "duration": 7.44,
+      "text": "sure what to name her yet I think"
+    },
+    {
+      "start": 1583.6,
+      "duration": 7.12,
+      "text": "Barbara that wall of wall of Guns is"
+    },
+    {
+      "start": 1587.8,
+      "duration": 6.64,
+      "text": "sick inside the"
+    },
+    {
+      "start": 1590.72,
+      "duration": 6.08,
+      "text": "bunker yeah inside the bunker we're"
+    },
+    {
+      "start": 1594.44,
+      "duration": 5.32,
+      "text": "actually very s similar to The Cinematic"
+    },
+    {
+      "start": 1596.8,
+      "duration": 6.44,
+      "text": "here so everyone runs out of the bunker"
+    },
+    {
+      "start": 1599.76,
+      "duration": 5.08,
+      "text": "after the buzzer comes on and you know"
+    },
+    {
+      "start": 1603.24,
+      "duration": 4.28,
+      "text": "depending on the type of game mode that"
+    },
+    {
+      "start": 1604.84,
+      "duration": 6.12,
+      "text": "you're oh we"
+    },
+    {
+      "start": 1607.52,
+      "duration": 8.04,
+      "text": "nice might be captur the flag or death"
+    },
+    {
+      "start": 1610.96,
+      "duration": 6.92,
+      "text": "match or something like that [ __ ] ah a"
+    },
+    {
+      "start": 1615.56,
+      "duration": 4.0,
+      "text": "drone I haven't decided what to call"
+    },
+    {
+      "start": 1617.88,
+      "duration": 4.24,
+      "text": "those yet did they're like for turrets"
+    },
+    {
+      "start": 1619.56,
+      "duration": 5.84,
+      "text": "or ball turrets hovering ball turret"
+    },
+    {
+      "start": 1622.12,
+      "duration": 3.28,
+      "text": "that was a good shot by the way"
+    },
+    {
+      "start": 1625.92,
+      "duration": 7.68,
+      "text": "Jim yeah Jim you're doing better than"
+    },
+    {
+      "start": 1629.08,
+      "duration": 4.52,
+      "text": "usual I know right who the"
+    },
+    {
+      "start": 1634.72,
+      "duration": 7.52,
+      "text": "enemy uh the the people in the red that"
+    },
+    {
+      "start": 1638.04,
+      "duration": 6.84,
+      "text": "are shooting the reddish pink"
+    },
+    {
+      "start": 1642.24,
+      "duration": 5.32,
+      "text": "okay yeah he's mad at him they said"
+    },
+    {
+      "start": 1644.88,
+      "duration": 4.92,
+      "text": "something terrible about you so we got"
+    },
+    {
+      "start": 1647.56,
+      "duration": 6.56,
+      "text": "to we got to take out I'm getting used"
+    },
+    {
+      "start": 1649.8,
+      "duration": 4.32,
+      "text": "to it nowaday oh this is"
+    },
+    {
+      "start": 1657.39,
+      "duration": 3.11,
+      "text": "[Music]"
+    },
+    {
+      "start": 1663.36,
+      "duration": 4.08,
+      "text": "awesome guys we killed"
+    },
+    {
+      "start": 1667.8,
+      "duration": 7.04,
+      "text": "friend oh I like it red red fire and"
+    },
+    {
+      "start": 1670.64,
+      "duration": 6.72,
+      "text": "blue fire it is pretty umly we'll"
+    },
+    {
+      "start": 1674.84,
+      "duration": 4.24,
+      "text": "probably have some uh videos coming out"
+    },
+    {
+      "start": 1677.36,
+      "duration": 3.92,
+      "text": "in the very near you turle show what a"
+    },
+    {
+      "start": 1679.08,
+      "duration": 4.0,
+      "text": "full like night battle looks like here"
+    },
+    {
+      "start": 1681.28,
+      "duration": 4.96,
+      "text": "um it's very"
+    },
+    {
+      "start": 1683.08,
+      "duration": 5.48,
+      "text": "spectacular so this is amazing"
+    },
+    {
+      "start": 1686.24,
+      "duration": 6.24,
+      "text": "guys you made"
+    },
+    {
+      "start": 1688.56,
+      "duration": 7.2,
+      "text": "it so bad with the laundry P you made it"
+    },
+    {
+      "start": 1692.48,
+      "duration": 6.04,
+      "text": "all the way up there uh well done dude"
+    },
+    {
+      "start": 1695.76,
+      "duration": 6.12,
+      "text": "you're with the lights"
+    },
+    {
+      "start": 1698.52,
+      "duration": 5.56,
+      "text": "whoa so all of these assets they will"
+    },
+    {
+      "start": 1701.88,
+      "duration": 6.48,
+      "text": "have to you know everything that's here"
+    },
+    {
+      "start": 1704.08,
+      "duration": 6.4,
+      "text": "they will have with their custom Dome to"
+    },
+    {
+      "start": 1708.36,
+      "duration": 5.64,
+      "text": "uh build it out the way they"
+    },
+    {
+      "start": 1710.48,
+      "duration": 7.12,
+      "text": "want yes okay yes we're we're trying to"
+    },
+    {
+      "start": 1714.0,
+      "duration": 6.92,
+      "text": "allow as much creativity is absolutely"
+    },
+    {
+      "start": 1717.6,
+      "duration": 5.12,
+      "text": "Poss so um even if that means like"
+    },
+    {
+      "start": 1720.92,
+      "duration": 3.84,
+      "text": "you're exceeding something like you're"
+    },
+    {
+      "start": 1722.72,
+      "duration": 3.4,
+      "text": "you're doing too many things um"
+    },
+    {
+      "start": 1724.76,
+      "duration": 3.36,
+      "text": "something that that costs more"
+    },
+    {
+      "start": 1726.12,
+      "duration": 3.24,
+      "text": "performance will warn you and say hey"
+    },
+    {
+      "start": 1728.12,
+      "duration": 2.8,
+      "text": "you're putting way too many of these"
+    },
+    {
+      "start": 1729.36,
+      "duration": 3.52,
+      "text": "things but go ahead you really know what"
+    },
+    {
+      "start": 1730.92,
+      "duration": 4.2,
+      "text": "you're doing uh go ahead and keep"
+    },
+    {
+      "start": 1732.88,
+      "duration": 3.8,
+      "text": "placing more of these things so uh"
+    },
+    {
+      "start": 1735.12,
+      "duration": 3.28,
+      "text": "there's definitely uh we'll have some"
+    },
+    {
+      "start": 1736.68,
+      "duration": 4.32,
+      "text": "guides that come out in the future"
+    },
+    {
+      "start": 1738.4,
+      "duration": 4.08,
+      "text": "probably be me and Jim um a lot of me"
+    },
+    {
+      "start": 1741.0,
+      "duration": 4.88,
+      "text": "when it comes to the environment stuff"
+    },
+    {
+      "start": 1742.48,
+      "duration": 6.24,
+      "text": "of how to design environments that are"
+    },
+    {
+      "start": 1745.88,
+      "duration": 4.16,
+      "text": "um performance friendly okay but we we"
+    },
+    {
+      "start": 1748.72,
+      "duration": 3.88,
+      "text": "really don't want to restrict that kind"
+    },
+    {
+      "start": 1750.04,
+      "duration": 6.0,
+      "text": "of thing we want people to just go nuts"
+    },
+    {
+      "start": 1752.6,
+      "duration": 7.0,
+      "text": "with creativity I love it yeah agree but"
+    },
+    {
+      "start": 1756.04,
+      "duration": 7.08,
+      "text": "this this is a player buil map yeah and"
+    },
+    {
+      "start": 1759.6,
+      "duration": 5.64,
+      "text": "this o over the um the sign over there"
+    },
+    {
+      "start": 1763.12,
+      "duration": 5.56,
+      "text": "yeah what what is"
+    },
+    {
+      "start": 1765.24,
+      "duration": 5.88,
+      "text": "that um that is it's the build"
+    },
+    {
+      "start": 1768.68,
+      "duration": 5.0,
+      "text": "so it's all I mean it's like an ad so"
+    },
+    {
+      "start": 1771.12,
+      "duration": 5.64,
+      "text": "you'll be able to switch out on your"
+    },
+    {
+      "start": 1773.68,
+      "duration": 5.16,
+      "text": "Dome um what's you know if you got"
+    },
+    {
+      "start": 1776.76,
+      "duration": 4.96,
+      "text": "specific branding or it's a type of game"
+    },
+    {
+      "start": 1778.84,
+      "duration": 4.6,
+      "text": "that you run there um that's you know"
+    },
+    {
+      "start": 1781.72,
+      "duration": 4.52,
+      "text": "you can you can upload your own images"
+    },
+    {
+      "start": 1783.44,
+      "duration": 4.44,
+      "text": "in corner copia so it's something that"
+    },
+    {
+      "start": 1786.24,
+      "duration": 5.72,
+      "text": "we'll show off in the future but I think"
+    },
+    {
+      "start": 1787.88,
+      "duration": 4.08,
+      "text": "it's a good way to play Things yeah"
+    },
+    {
+      "start": 1792.04,
+      "duration": 4.48,
+      "text": "absolutely good job oh man I can't wait"
+    },
+    {
+      "start": 1794.36,
+      "duration": 5.04,
+      "text": "to do"
+    },
+    {
+      "start": 1796.52,
+      "duration": 6.28,
+      "text": "this well that was amazing Jim great"
+    },
+    {
+      "start": 1799.4,
+      "duration": 6.0,
+      "text": "playing gotta say you are pro but you"
+    },
+    {
+      "start": 1802.8,
+      "duration": 4.52,
+      "text": "know what wait until I play sorry I"
+    },
+    {
+      "start": 1805.4,
+      "duration": 3.32,
+      "text": "didn't say too much I was busy"
+    },
+    {
+      "start": 1807.32,
+      "duration": 4.16,
+      "text": "concentrating"
+    },
+    {
+      "start": 1808.72,
+      "duration": 5.36,
+      "text": "on falling off everything seriously guys"
+    },
+    {
+      "start": 1811.48,
+      "duration": 5.08,
+      "text": "that's freaking remarkable"
+    },
+    {
+      "start": 1814.08,
+      "duration": 6.6,
+      "text": "unbelievable um I can't I absolutely"
+    },
+    {
+      "start": 1816.56,
+      "duration": 5.8,
+      "text": "can't wait to play I'm yeah amazing work"
+    },
+    {
+      "start": 1820.68,
+      "duration": 3.04,
+      "text": "I know you guys wore yourself out so"
+    },
+    {
+      "start": 1822.36,
+      "duration": 3.76,
+      "text": "thank you very much for all the effort"
+    },
+    {
+      "start": 1823.72,
+      "duration": 4.32,
+      "text": "you're putting in as mentioned everyone"
+    },
+    {
+      "start": 1826.12,
+      "duration": 4.76,
+      "text": "we have a very passionate team and uh"
+    },
+    {
+      "start": 1828.04,
+      "duration": 6.12,
+      "text": "we're grateful to to all be a part of it"
+    },
+    {
+      "start": 1830.88,
+      "duration": 6.08,
+      "text": "it's it's inspiring so thank you guys go"
+    },
+    {
+      "start": 1834.16,
+      "duration": 5.28,
+      "text": "get some rest uh know that the custom"
+    },
+    {
+      "start": 1836.96,
+      "duration": 4.6,
+      "text": "Dome sale is this weekend and uh"
+    },
+    {
+      "start": 1839.44,
+      "duration": 4.84,
+      "text": "hopefully uh you can participate if"
+    },
+    {
+      "start": 1841.56,
+      "duration": 5.68,
+      "text": "you're not resting whatever but um we'll"
+    },
+    {
+      "start": 1844.28,
+      "duration": 4.88,
+      "text": "uh see you guys next week and uh yeah"
+    },
+    {
+      "start": 1847.24,
+      "duration": 4.04,
+      "text": "have a great"
+    },
+    {
+      "start": 1849.16,
+      "duration": 4.36,
+      "text": "weekend well there you have it that's"
+    },
+    {
+      "start": 1851.28,
+      "duration": 5.12,
+      "text": "pretty awesome everything that Jim and"
+    },
+    {
+      "start": 1853.52,
+      "duration": 4.84,
+      "text": "and David showed us there is obviously"
+    },
+    {
+      "start": 1856.4,
+      "duration": 4.56,
+      "text": "uh pretty exciting that shows the"
+    },
+    {
+      "start": 1858.36,
+      "duration": 5.36,
+      "text": "reality of what we're building this is"
+    },
+    {
+      "start": 1860.96,
+      "duration": 5.52,
+      "text": "real you can get in there and play we"
+    },
+    {
+      "start": 1863.72,
+      "duration": 6.16,
+      "text": "are moving as quickly as we can and"
+    },
+    {
+      "start": 1866.48,
+      "duration": 5.64,
+      "text": "doing it as quality as we can towards"
+    },
+    {
+      "start": 1869.88,
+      "duration": 4.2,
+      "text": "actually getting this Alpha release in"
+    },
+    {
+      "start": 1872.12,
+      "duration": 5.24,
+      "text": "your hand so that everybody can play"
+    },
+    {
+      "start": 1874.08,
+      "duration": 6.8,
+      "text": "once again we are going to be showcasing"
+    },
+    {
+      "start": 1877.36,
+      "duration": 5.08,
+      "text": "some of this at the uh cnft tcon and uh"
+    },
+    {
+      "start": 1880.88,
+      "duration": 3.64,
+      "text": "rare Bloom well not rare Bloom but we'll"
+    },
+    {
+      "start": 1882.44,
+      "duration": 4.44,
+      "text": "be showcasing it at cnft tcon we'll be"
+    },
+    {
+      "start": 1884.52,
+      "duration": 4.76,
+      "text": "at rare Bloom event coming up that's all"
+    },
+    {
+      "start": 1886.88,
+      "duration": 5.6,
+      "text": "very exciting we are heads down in"
+    },
+    {
+      "start": 1889.28,
+      "duration": 7.28,
+      "text": "preparation for that don't forget our"
+    },
+    {
+      "start": 1892.48,
+      "duration": 7.36,
+      "text": "our Dum sale coming up uh the 26th 27th"
+    },
+    {
+      "start": 1896.56,
+      "duration": 4.88,
+      "text": "and 28th uh that's either today or uh"
+    },
+    {
+      "start": 1899.84,
+      "duration": 3.32,
+      "text": "tomorrow depending upon when we get this"
+    },
+    {
+      "start": 1901.44,
+      "duration": 3.44,
+      "text": "edited and released thanks again for"
+    },
+    {
+      "start": 1903.16,
+      "duration": 4.32,
+      "text": "watching Copic Cafe Rob do you want to"
+    },
+    {
+      "start": 1904.88,
+      "duration": 5.36,
+      "text": "send us out if you want to say"
+    },
+    {
+      "start": 1907.48,
+      "duration": 7.88,
+      "text": "anything um thanks for"
+    },
+    {
+      "start": 1910.24,
+      "duration": 5.12,
+      "text": "watching see you later goodbye"
+    },
+    {
+      "start": 1920.45,
+      "duration": 15.17,
+      "text": "[Music]"
+    }
+  ],
+  "transcript_text": "[Music] hey everybody Welcome to copi Cafe you've got Rob Greg and Josh Jones here we're glad you came to watch and this is episode 21 so a lot of fun stuff for you we heard your feedback on Twitter we're going to try to keep this one a little more brief and talk a little bit about the custom Dome sale things that are going on with us uh Rob what are you drinking well today I have it's a good one this one an innocent inner winner innocent inner winner sounds like a Gary ve nft I have no idea it says it's high in fiber it's pink dragon fruit light chi I don't know what light Chi apple is bobab vitamins all all these buzzword scientific buzzwords that probably mean nothing okay they'll taste all right so what's the flavor of this innocent inner winner I'm already confused you're already you're already conf yeah I don't I don't know what to do what do you think I'm drinking man well I'm just going to put it out there and say it's probably a water orange orange can I don't know no I tried to set you up I'm drinking I'm drinking a jungle Lily I took a sip of a water l a minute ago just to mess with you you did you did set me up yeah but you finished that drink now what are you gonna go for next back to the waterl that I set you up with yeah nice nice job there trying to steer a win out of that one so this has pineapple cucumber celery coconut water kale spinach parsley Ginger lime blue algae spirulina and it's cold pressed spirulina spirina yeah all right so let's get right into it couple new hires going in the pipeline hasn't happened yet but very exciting because we've been looking for a uh multiplayer network engineer uh that can really help take uh getting multiple players in the game to the next level make sure that we're cure this is all part of prepping us for that Alpha phase in uh 2023 I'm pretty excited I mean we have we have multiplayers now but beefing up that position and and having a a a specialist that that can then work on it as his solo job rather than part of the other things y yeah will will help us to move forward a lot yes and then also a senior level technical artist that will help David a lot with the uh uh well just apparently he's got a a wide area of talents and skills so David's pretty excited about him that's that's good it's good news yeah I think you know we have experts in in each position but like guardi likes to do it's always good to have two or three experts in each position so lessens the load on on that person there takes a little bit of pressure of but also that they can have conversations back and two with each other where they they're kind of at the same level because because sometimes when you're a senior and you talk to talk to a junior that you might have different ideas whereas whereas you have you have that different level and the junior as well then know two or three different voices in the same area I I always think good and I think to grow the team you know having the seniors and the Juniors and and and you know the I don't want to say apprentices I'm looking for a word underneath Junior but having them all go through the ranks together and learning off then some can eventually go up the ladder and then everyone moves up and it's just it just makes for a really nice nice team yeah I do agree it uh Elevate it'll help to elevate the work uh everything that we're doing speed up some of the processes as well which is great because you know we have a lot of deliverables and yeah just a you know reminder on some of the stuff that came up in the last week we have uh pushed off uh removed some sales from some nft sales from this year uh quite a few actually uh and and that's just due to the response some of the response from the community we're trying to listen to our community uh and we're also bringing in projects to collab with so we're going to be doing the cornucopious club uh collector's club uh which is great and we're we're still just getting started with that there's a long way to go but we want to accept copy token for those sales which is pretty cool give some added utility exciting stuff there um and then remember that road map you know was was built a year ago and we've done a few tweaks to it and and is full of disclaimer saying look things things are going to slip on this can you can you imagine planning anything a year in advance and and then building a bull market and a bare Market cycle on top yeah that's a great Point that's a really good point and also in addition to that just startup business I've never built a business ever where I didn't have to spend uh and change strategy multiple times especially in the startup phase because you go in One Direction you learn something you go in a you know for example just quick example we were originally uh building out our own Tech the land Marketplace that spun into the nft market a new Direction with the nft marketplace we still get to go back to that which is great because we have that for the land uh and and when we uh release the land deeds and do that exchange but that was one Spin and then we got going in that new direction we wanted to uh work with derp uh T try to utilize their Tech and what they were doing great great project great guys but the reality was we were while we were doing that we're also still building our own as well and so we've had to you know you you navigate through the market and go in a different direction I we we create all our own assets as well you know we and we're taking on people and then we're training people and then we're trying to to find our way through through the the various crypto yeah uh you know uh what's the word rabbit holes um and then we are in startup mode so we have all those challenges uh you know we choose to build our own assets um think we choose to build our own Assets in this metaverse and and do the other thing not because they're easy because they're hard yeah well and that's that's true and you don't see successful AAA games that are using off the shelf assets buying it from someone else you you've got to create your own look and feel and I I'm really proud of our team with what we've done I think it's remarkable so uh staking uh we've got the uh stake pool going and uh just for anybody who uh may not be aware the uh pool is called copi pool that's the ticker name you can get the ID for the pool and more information uh in our Discord very easily um but that is already up up at uh okay Rob's going to share something here that is at 42 million so took off surprisingly fast and uh we kind of weren't expecting that at all we had scheduled basically 3.5 million copi a little bit more 3.5 to four million copi we had scheduled to be given away as a fee for this uh for everyone staking to this uh pool as part of the rewards of staking with us the plan was to spread that out over 3 to four months uh so that we could give as many people a chance as possible to participate in that well it took off so quick that we had to make a quick adjustment before the pool actually started so it had not begun yet the Epic and the rewards had not yet begun so everybody still had a chance to get in at the 358 epic which is where we paid a Founders rate of0 0125 copi per Ada that was the one Epic that we did that for we then had to make the change and do a declining curve uh basically reducing the max payable per epic uh so the the most rewards are available to those who participate in the earliest and then that goes along uh down until we get down to 50K Ada St it's it's Cal non-custodial the the nft land assets that the nfts they they stay in your wallet nothing has to be moved and and at the same time you'll be receiving um Ada Stak into our pool and you'll also be receiving via drip drops copy token so it's it's a win win yes noncustodial and and that's the way staking is with uh cardano so when you delegate your Ada all you're doing is choosing a pool you're assigning your staking keys to a pool nothing the Ada never leaves your wallet there's no risk nothing like that at all it's simply assigning your keys to a pool so if you assign your keys to copi pool then you are eligible to earn rewards uh from staking uh the copi now the thing is you have to go to Drip Drop to collect those rewards they're going to stack up for a period of SE seven epics but after that they'll drop off and you won't get the ones prior to that so you have to go with some degree of regularity we recommend once a month or once every three weeks to go and make sure you collect those rewards from drip drops uh but it's a great platform if you have any questions just go to our Discord and and ask but yeah these are this was our way of just giving uh you guys some rewards for participating in our pool which is by the way another really important point you still receive your Ada rewards this is not uh as you could see the margin there is 5% this is not like an ispo where the fees are 100% And they're basically selling their token for your Ada rewards that's kind of how ispos work this isn't that we're trying to contribute to the decentralization of cardano security of the the network and uh participate with you guys bring you into that and eventually it could be another stream of Revenue but for quite a while it's costing us a good amount of copi so uh that's just our gift to you thanks for participating we also have land staking so the land staking Works uh in the same almost in the same way if your wallet that you've staked your Ada with uh that you've delegated to copi pool also holds the land nfts and I'm talking about the theme Zone lands not the custom domes if your wallet holds the theme Zone lands then you're earning rewards on that as well and so you can learn more about that in in Discord I think it's pretty awesome we're giv and and if you have and if you have more than one land plot then you you receive multiple award rewards and also the number of rewards that you get are determined by the Rarity of your land plot so so I mean yeah it's amazing there's all you have to do is pay that transaction fee when you withdraw them from Drip Drop so I mean yeah why not yeah exactly and then coming up soon uh we'll have the custom do so at the end of this program of staking about three months from now we'll add the custom Dome staking and also right about that time or maybe slightly before we'll have begun the uh collector's club and we'll be running nft sales with partners for copy token uh and that's going to be pretty cool too but the size of those sales going to be great a lot smaller and those are with Partners we're participating other cnft projects because we want to come alongside you guys and have you participate with us if you're interested so uh what else we got this we got the domes Dome sale coming up some domes tomorrow Friday Saturday and Sunday yeah well this video will probably come out tomorrow might come out today so yeah okay Friday the 26th Saturday the 27th Sunday the 28th if we get it out today great I hope we can um but yeah the the sale is a lot of people really excited um I think there's some misunderstanding about the amount of of ADA that's being raised there was a earlier private sale that's not uh that we collected for quite quite a while back that uh was something that helped us to get started with this project and so that was a very big contribution to us being able to build the team and make this game in the first place now we have uh I think 4 point what's the amount of ADA being raised in this sale oh 4.23 4.23 23 million million Ada so that's the final number of what we're uh raising in this sale and it's not a raise it's Revenue so we're we're selling the nfts um so yeah I think it's an exciting sale we did have some questions from the community on the difference in custom domes and themed zones what what how would you say that Rob how would you explain well I could probably take half an hour explaining it what what I will say you know we have two full decks in our Discord one for the theme zones and one for the custom domes the these are over 20 to get reaching up to 30 different pages so that is the most detailed information that you can get for both of them um as a quick overview the the themed land which we've already sold is part of the the the game the metaverse game where players own the land and you're farming the land and districts are trading between each other and it's all economics and and it's multiplayer games and and people are in the same districts and and it's the main Corner copious game that's how I would explain that land this up upcoming sale is the custom Dome so the custom domes are aimed at a different really Market a different type of player these are for the the person that wants to create their own Dome again it's still multiplayer and we will provide different templates so you can you can have a concert in there you can have an art gallery you can have them both together you provide tools where you can drag and drop can have games together and you can control entry to those games if you want to Via nft access or or it's just for yeah it's for the entrepreneurs and then later on when we have the city and we release that these custom dones can be linked or portal to from a city shop so if you've got somebody like we always say Tesla got no we've got no affiliation with Tesla whatsoever but let's say Tesla have have a a showroom in the city go into that showroom then be transported to these larger custom domes where you'll have the showroom and then probably you'll be able to go outside and do a test driver of of of that particular car so that that's one example how you compare these custom domes um to to the Commerce within a real life Commerce World in within our metaverse game yeah yeah absolutely completely agree and one of the things that we've talked about so in doing something like this with a product we always have to do a lot of vision casting there's a lot that goes into it we have to think through what is it that we want to accomplish what are we offering here um what's the end goal where does it end up we have to go back to our Dev team and say hey guys is this going to work is this going to be performance will it work within our system does this size work does this size work and and all sorts of things like that but additionally in the vision casting process one of the things that I get so excited about is what can we do like so these domes they're for the Creator for the entrepreneur for you guys to get in there and we want to see what you create and build as a community uh so it's really exciting and you get to turn that if you want into a business I've I've said the analogy multiple times but the the influencer could come in potentially and run a PVP match uh there's a variety of things the nft artist can create a gallery and have people in to see their work and make it the stunning display um there's there's so many fun obviously the PVP games we just want to create a way for you guys to build and do what you want now this is the vision casting part that I was going to talk about we were discussing it a few weeks ago in one of the team meetings and what came up was man it would be really cool if we could export the data associated with that dome for example um I've had 200,000 visitors to the Dome I've run 33 PVP competitions here are some of the most exciting camera shots from within uh placing the cameras recording snapshots dumping all of this data x amount of Revenue was generated from this Dome you know if if we have that transactional ability in the future and all of that data can be dumped uh to either update the metadata if it was not a locked policy or be a subset of the metadata there's some technical things we're talking through with it but either way the data is there we associate it with that nft ID and that nft holder and now it's displayed in a Marketplace so you can resell your nft but it actually represents a lot more so very EXC yeah I mean all that's definitely possible and and that's something that you know we'll discuss and will iterate upon um maybe some people might want to keep some of that information private so so there'll definitely be different options available yeah absolutely you might want to have an invite only though you know and it's just you and your friends or or whoever it is that have access to that so there's a there's a variety of different use cases depending upon what the person wants to do but this is kind of the essence of what the custom domes are I think you explained it very well and then the theme lands what how would you differentiate like how would you describe the theme lands which was the previous sale well the the the theme lands are an opportunity as well because again the players will own those land and other players will be coming onto their land and they'll be doing all kinds of farming and and trading and and um moving that the the the goods that are that are produced to to other lands to build the whole economy they'll also be part of of a district and and those districts will be competing against other districts and and the best districts will be getting rewards back and and so that's a whole different kind of economy and a really really powerful one um so but that's a that's part of that's that's gamifying the know that's metav versing the game because because it's a game with it with the in-game currency so so whereas the customer domes is I suppose you would the the custom domes because you can build yourself and build the economy on that that's probably how people are are thinking that the metaverse is is going to is going to build out but we're going in two different two different directions that are actually completely fused together and share in the same tool because who knows which which way it's going to go in the future so so you know we're giving both options yeah agreed I think it gives for a lot of f ability and it it uh creates a diverse environment within the the ecosystem and the longterm plan that we have it really fits well with the story the overall story which the lore will be coming out um at some point we're we're working on it so a lot of good narrations with that which is pretty cool uh but we'll we'll announce more on that later uh you know I think we're trying to wrap it up quickly so why don't we go ahead and get our special guests up here we're really thankful that uh I'm I'm sure you guys are excited to see we're as previously mentioned we've got Jim and David with us here again so let me go ahead and welcome up Jim and David all right welcome up David and Jim copi Cafe this is your second copy Cafe I guess how you guys doing what are you drinking more importantly what are you drinking Jim I'm drinking The Souls of the for look at me I'm drinking an invisibility potion oh how do you do that well cheers guys secret Cheers Cheers glad to have you on the show again we had a few questions from the community and then we'll get right into it with some fun game streaming Jim you're gonna do a little demo of what you guys have built uh of the custom Dome okay awesome very exciting so question from the community when can we use these things when can we use these things custom Dome utility yeah no big question um we're doing a lot of multiplayer testing right now uh we want to get want to get a little bit more of that done but I'm thinking it's gonna be closer to the beginning of next year what we're looking at on those so okay that's awesome good safe point for it so like a uh a testing kind of thing or um I think yeah so we're gonna have testing groups in the beginning anyway so yeah the beginning of next year starting with uh the first testing groups and we'll see how things scale from there awesome awesome I love it very exciting I know everybody's ready to get them in their hands I am as well I'm going to be building like a madman with the all the time that I have yeah that's probably not going to happen but it'll be fun I want to test and play around so what what about the difference in the look of the land versus the look of the domes Aesthetics so the look of the land so assuming we're talking about kits like what you can make your custom Dome look like compared to what things look like in the other zones yeah so there could be a point in the future where let's say like soulless it's got a national park kind of vibe going on it's you know it's got Douglas Furs it's got that kind of look to it there might be a point where we have a kit that comes out for the custom domes that is based on soless so if you want your custom Dome to look like that you can so um but yeah definitely coming up in the future we going to have lots of different environment of kits um that you can use with the custom domes that are similar to the uh you know you got the paradise kit uh right now which I think is a good start to thingss um but yeah lots of lots of things coming in the future awesome very cool uh and then the racing kit somebody uh some announcements Rob and I made in the past about the racing kits so what what are when are they going to be be able to use the race building kits um well as far as using them um we'll probably wait till we actually show something of those first before we announce that um because it's you know something is still in progress right now um one thing to clear up though is like racing itself we're we're not talking about bull Jets and stuff like that racing because the land is in order so you guys you know cornucopians you guys saw the racing before um that was a huge huge uh section of land to to hold that racetrack it exceeds a copius by far so um you're going to see that kind of RAC racing in our own curated uh megad doomes that's you're going to see that now as for racing inside of custom domes that's going to be a different type of racing something something that we're not revealing yet but I think it's going to be very very cool yeah very exciting might yeah can't wait to see some of that as well all right last question for you guys can we terraform well you know what I'll just say I'll add to that what is terraforming for those that don't know as well I I had seen someone from the community uh I think M make this specific question they're talking about on games where you're manipulating a landscape it's essentially a height map is what it is um you can pull it up and down sometimes you know sometimes it's voxal based there's a little bit more to it but that is not the way we're doing it here so we've we've kind of looked at doing both methods and the way we're going to be building land in the custom domes will be faster and uh performance will be better so um when we show off the Builder uh for how you put together things uh we'll get into more detail details of that but trust me it's it's way better it's way faster all right well that's very exciting okay uh Rob any other questions for these guys any anything there from me all right let's uh when preview wi preview well let's get this going uh Jim are you ready to play I hope so I'm not all that great at Shooters but see what we can do let's see what you can do man I'll bring it up here nice different character there who not sure what to name her yet I think Barbara that wall of wall of Guns is sick inside the bunker yeah inside the bunker we're actually very s similar to The Cinematic here so everyone runs out of the bunker after the buzzer comes on and you know depending on the type of game mode that you're oh we nice might be captur the flag or death match or something like that [ __ ] ah a drone I haven't decided what to call those yet did they're like for turrets or ball turrets hovering ball turret that was a good shot by the way Jim yeah Jim you're doing better than usual I know right who the enemy uh the the people in the red that are shooting the reddish pink okay yeah he's mad at him they said something terrible about you so we got to we got to take out I'm getting used to it nowaday oh this is [Music] awesome guys we killed friend oh I like it red red fire and blue fire it is pretty umly we'll probably have some uh videos coming out in the very near you turle show what a full like night battle looks like here um it's very spectacular so this is amazing guys you made it so bad with the laundry P you made it all the way up there uh well done dude you're with the lights whoa so all of these assets they will have to you know everything that's here they will have with their custom Dome to uh build it out the way they want yes okay yes we're we're trying to allow as much creativity is absolutely Poss so um even if that means like you're exceeding something like you're you're doing too many things um something that that costs more performance will warn you and say hey you're putting way too many of these things but go ahead you really know what you're doing uh go ahead and keep placing more of these things so uh there's definitely uh we'll have some guides that come out in the future probably be me and Jim um a lot of me when it comes to the environment stuff of how to design environments that are um performance friendly okay but we we really don't want to restrict that kind of thing we want people to just go nuts with creativity I love it yeah agree but this this is a player buil map yeah and this o over the um the sign over there yeah what what is that um that is it's the build so it's all I mean it's like an ad so you'll be able to switch out on your Dome um what's you know if you got specific branding or it's a type of game that you run there um that's you know you can you can upload your own images in corner copia so it's something that we'll show off in the future but I think it's a good way to play Things yeah absolutely good job oh man I can't wait to do this well that was amazing Jim great playing gotta say you are pro but you know what wait until I play sorry I didn't say too much I was busy concentrating on falling off everything seriously guys that's freaking remarkable unbelievable um I can't I absolutely can't wait to play I'm yeah amazing work I know you guys wore yourself out so thank you very much for all the effort you're putting in as mentioned everyone we have a very passionate team and uh we're grateful to to all be a part of it it's it's inspiring so thank you guys go get some rest uh know that the custom Dome sale is this weekend and uh hopefully uh you can participate if you're not resting whatever but um we'll uh see you guys next week and uh yeah have a great weekend well there you have it that's pretty awesome everything that Jim and and David showed us there is obviously uh pretty exciting that shows the reality of what we're building this is real you can get in there and play we are moving as quickly as we can and doing it as quality as we can towards actually getting this Alpha release in your hand so that everybody can play once again we are going to be showcasing some of this at the uh cnft tcon and uh rare Bloom well not rare Bloom but we'll be showcasing it at cnft tcon we'll be at rare Bloom event coming up that's all very exciting we are heads down in preparation for that don't forget our our Dum sale coming up uh the 26th 27th and 28th uh that's either today or uh tomorrow depending upon when we get this edited and released thanks again for watching Copic Cafe Rob do you want to send us out if you want to say anything um thanks for watching see you later goodbye [Music]",
+  "has_transcript": true,
+  "episode_number": 21,
+  "file_name": "Cafe Rise Episode 21.json"
+}
