@@ -191,29 +191,59 @@ const CONTEXT_STEP = 6; // lines shown before/after on first expand, and per "sh
 let episodes = []; // { title, url, slug, lines: [{start, duration, text}] }
 let allLines = [];  // flattened: { epIndex, lineIndex, start, text }
 
+async function tryLoad(path){
+  try{
+    const res = await fetch(path);
+    if (!res.ok) return null;
+    return await res.json();
+  } catch(e){
+    return null;
+  }
+}
+
+function addEpisode(data, fallbackTitle){
+  const epIndex = episodes.length;
+  episodes.push({
+    title: data.title || fallbackTitle,
+    url: data.url || '',
+    lines: data.transcript || []
+  });
+  (data.transcript || []).forEach((line, lineIndex) => {
+    allLines.push({ epIndex, lineIndex, start: line.start, text: line.text });
+  });
+}
+
 async function loadEpisodes(){
   const statusEl = document.getElementById('status');
   let found = 0, misses = 0, i = 1;
   const MAX_MISSES = 5, MAX_TRY = 300;
 
   while (misses < MAX_MISSES && i <= MAX_TRY){
-    const path = `Cafe Rise/Cafe Rise Episode ${i}.json`;
-    try{
-      const res = await fetch(path);
-      if (!res.ok) { misses++; i++; continue; }
-      const data = await res.json();
-      const epIndex = episodes.length;
-      episodes.push({
-        title: data.title || `Episode ${i}`,
-        url: data.url || '',
-        lines: data.transcript || []
-      });
-      (data.transcript || []).forEach((line, lineIndex) => {
-        allLines.push({ epIndex, lineIndex, start: line.start, text: line.text });
-      });
+    // try the plain filename first
+    const plain = await tryLoad(`Cafe Rise/Cafe Rise Episode ${i}.json`);
+    if (plain){
+      addEpisode(plain, `Episode ${i}`);
       found++;
-      misses = 0; // reset on a hit so gaps in numbering don't stop the scan
-    } catch(e){
+      misses = 0;
+      i++;
+      continue;
+    }
+
+    // fall back to "part 1" / "part 2" (and beyond, just in case) variants
+    let partFound = false;
+    let part = 1;
+    while (true){
+      const data = await tryLoad(`Cafe Rise/Cafe Rise Episode ${i} part ${part}.json`);
+      if (!data) break;
+      addEpisode(data, `Episode ${i} Part ${part}`);
+      found++;
+      partFound = true;
+      part++;
+    }
+
+    if (partFound){
+      misses = 0;
+    } else {
       misses++;
     }
     i++;
