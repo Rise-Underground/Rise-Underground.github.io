@@ -80,12 +80,27 @@
     font-family:var(--font-mono);font-size:10.5px;color:var(--dimmer);text-align:center;margin-bottom:16px;
   }
   .bundle-group-box{
-    border:1px solid var(--line);border-radius:12px;padding:24px 24px 0;margin-bottom:44px;
+    border:1px solid var(--line);border-radius:12px;padding:10px;margin-bottom:44px;
   }
-  .bundle-group-box .nft-card-block{
-    margin-bottom:0;padding-bottom:24px;border-bottom:1px solid var(--line);
+  .bundle-member-block{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:18px 20px;margin-bottom:6px;
   }
-  .bundle-group-box .nft-card-block:last-child{border-bottom:none;}
+  .bundle-member-block:last-child{margin-bottom:0;}
+  .bundle-member-layout{display:grid;grid-template-columns:200px 1fr 1fr 1fr;gap:20px;align-items:start;}
+  @media (max-width:1300px){.bundle-member-layout{grid-template-columns:1fr;}}
+  .bundle-member-title-row{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px;}
+  .bundle-member-title{font-family:var(--font-mono);font-weight:700;font-size:13px;color:var(--text);}
+  .bundle-member-image-col .meter-rarity-img-large,
+  .bundle-member-image-col .meter-rarity-img-empty{max-width:100%;}
+  .bundle-member-gauge-col{display:flex;flex-direction:column;align-items:center;}
+  .bundle-col-label{
+    font-family:var(--font-mono);font-size:10.5px;letter-spacing:0.6px;text-transform:uppercase;
+    color:var(--dim);margin-bottom:8px;text-align:center;
+  }
+  .bundle-member-layout .nft-stat-grid{border:none;background:transparent;gap:0;}
+  .bundle-member-layout .nft-stat-col{background:transparent;padding:0 0 12px;}
+  .bundle-member-layout .nft-stat-col + .nft-stat-col{border-top:1px solid var(--line);padding-top:12px;margin-top:4px;}
   .meter-panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;height:100%;}
   .meter-panel .panel-head h2{font-family:var(--font-mono);font-size:13px;font-weight:600;letter-spacing:0.5px;margin:0;text-transform:uppercase;color:var(--text);}
   .meter-panel-head{justify-content:center;}
@@ -240,10 +255,44 @@ function renderNftPage(){
   NFT_ITEMS.forEach(renderNftCard);
 }
 
+function bundleMemberCardHtml(key){
+  return `
+  <div class="bundle-member-block">
+    <div class="bundle-member-mint-time" id="minttime-${key}" style="display:none;"></div>
+    <div class="bundle-member-layout">
+      <div class="bundle-member-image-col">
+        <div class="bundle-member-title-row">
+          <span class="bundle-member-title" id="title-${key}">Loading&hellip;</span>
+          <a class="mint-now-btn" id="mintnow-${key}" href="#" target="_blank" rel="noopener" style="display:none;">Mint Now</a>
+        </div>
+        <img id="img-${key}" class="meter-rarity-img-large" style="display:none;" alt="Highest-rarity mint so far">
+        <div id="imgEmpty-${key}" class="meter-rarity-img-empty">No image captured yet</div>
+      </div>
+      <div class="bundle-member-gauge-col">
+        <div class="bundle-col-label">Optimal Chain for Minting</div>
+        <svg viewBox="0 0 300 190" width="100%" style="max-width:250px;">
+          <text x="20" y="24" class="meter-chain-label left" fill="#FF5F5A">ADA</text>
+          <text x="280" y="24" class="meter-chain-label right" fill="#7B9EFF" text-anchor="end">BASE</text>
+          <path d="M 30 150 A 120 120 0 0 1 270 150" fill="none" stroke="#232A30" stroke-width="14" stroke-linecap="round"/>
+          <path id="arc-${key}" d="M 30 150 A 120 120 0 0 1 270 150" fill="none" stroke="#4B535A" stroke-width="14" stroke-linecap="round" stroke-dasharray="377" stroke-dashoffset="377"/>
+          <line id="needle-${key}" x1="150" y1="150" x2="150" y2="45" stroke="#E7E5E0" stroke-width="3" stroke-linecap="round" transform="rotate(0 150 150)"/>
+          <circle cx="150" cy="150" r="7" fill="#E7E5E0"/>
+        </svg>
+        <div class="meter-verdict" id="verdict-${key}">Loading&hellip;</div>
+      </div>
+      <div class="nft-stat-grid" id="statgrid-${key}"></div>
+      <div class="bundle-member-odds-col">
+        <div class="bundle-col-label">Odds Breakdown</div>
+        <div class="odds-breakdown-body" id="oddsbreak-${key}"></div>
+      </div>
+    </div>
+  </div>`;
+}
+
 function bundleCardHtml(bundleName, members){
   return `
   <div class="bundle-group-box">
-    ${members.map(m => cardHtml(m.key)).join('')}
+    ${members.map(m => bundleMemberCardHtml(m.key)).join('')}
   </div>`;
 }
 
