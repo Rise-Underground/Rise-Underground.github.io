@@ -79,6 +79,14 @@
   .nft-card-mint-time{
     font-family:var(--font-mono);font-size:10.5px;color:var(--dimmer);text-align:center;margin-bottom:16px;
   }
+  .bundle-summary-block{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:18px 20px 20px;margin-bottom:10px;text-align:center;
+  }
+  .bundle-summary-title{
+    font-family:var(--font-mono);font-weight:700;font-size:15px;letter-spacing:0.4px;
+    color:var(--text);margin-bottom:12px;
+  }
   .bundle-group-box{
     border:1px solid var(--line);border-radius:12px;padding:10px;margin-bottom:44px;
   }
@@ -174,6 +182,7 @@ const FILES = {
 // NFT_Ledger.db -- this page only reads the finished numbers and draws
 // them. See that script for the calculations behind each field.
 let NFT_ITEMS = [];
+let BUNDLE_SUMMARIES = {}; // bundle name -> {name, needle, verdict}
 
 const AFFILIATE_PARAM = 'alc=duLb64P7HB';
 function affiliateUrl(baseUrl){
@@ -208,18 +217,24 @@ async function loadOpenMintKeys(){
 async function loadNftItems(){
   try {
     const res = await fetch(FILES.nftData);
-    if (!res.ok) return [];
+    if (!res.ok) return { items: [], bundleSummaries: {} };
     const data = await res.json();
-    return Array.isArray(data.items) ? data.items : [];
+    const items = Array.isArray(data.items) ? data.items : [];
+    const bundleSummaries = {};
+    (Array.isArray(data.bundle_summaries) ? data.bundle_summaries : []).forEach(b => {
+      bundleSummaries[b.name] = b;
+    });
+    return { items, bundleSummaries };
   } catch (e) {
-    return [];
+    return { items: [], bundleSummaries: {} };
   }
 }
 
 async function init(){
-  const [items, openKeys] = await Promise.all([loadNftItems(), loadOpenMintKeys()]);
+  const [{ items, bundleSummaries }, openKeys] = await Promise.all([loadNftItems(), loadOpenMintKeys()]);
   NFT_ITEMS = (openKeys.size > 0) ? items.filter(it => openKeys.has(it.key)) : items;
   // else: nft_mint_status.csv missing/empty -- show everything rather than an empty page
+  BUNDLE_SUMMARIES = bundleSummaries;
   renderNftPage();
 }
 
@@ -253,6 +268,51 @@ function renderNftPage(){
   container.innerHTML = blocks.join('');
 
   NFT_ITEMS.forEach(renderNftCard);
+  Object.keys(BUNDLE_SUMMARIES).forEach(renderBundleSummary);
+}
+
+function bundleSummaryHtml(bundleName){
+  const bundleId = slugifyForBundle(bundleName);
+  return `
+  <div class="bundle-summary-block">
+    <div class="bundle-summary-title">${bundleName}</div>
+    <svg viewBox="0 0 300 190" width="100%" style="max-width:220px;display:block;margin:0 auto;">
+      <text x="20" y="24" class="meter-chain-label left" fill="#FF5F5A">ADA</text>
+      <text x="280" y="24" class="meter-chain-label right" fill="#7B9EFF" text-anchor="end">BASE</text>
+      <path d="M 30 150 A 120 120 0 0 1 270 150" fill="none" stroke="#232A30" stroke-width="14" stroke-linecap="round"/>
+      <path id="bundlearc-${bundleId}" d="M 30 150 A 120 120 0 0 1 270 150" fill="none" stroke="#4B535A" stroke-width="14" stroke-linecap="round" stroke-dasharray="377" stroke-dashoffset="377"/>
+      <line id="bundleneedle-${bundleId}" x1="150" y1="150" x2="150" y2="45" stroke="#E7E5E0" stroke-width="3" stroke-linecap="round" transform="rotate(0 150 150)"/>
+      <circle cx="150" cy="150" r="7" fill="#E7E5E0"/>
+    </svg>
+    <div class="meter-verdict" id="bundleverdict-${bundleId}"></div>
+  </div>`;
+}
+
+function slugifyForBundle(name){
+  return String(name).toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
+}
+
+function renderBundleSummary(bundleName){
+  const summary = BUNDLE_SUMMARIES[bundleName];
+  if (!summary) return;
+  const bundleId = slugifyForBundle(bundleName);
+  const { angle, arc_pct } = summary.needle;
+
+  const arcEl = document.getElementById(`bundlearc-${bundleId}`);
+  const needleEl = document.getElementById(`bundleneedle-${bundleId}`);
+  const verdictEl = document.getElementById(`bundleverdict-${bundleId}`);
+  if (!arcEl || !needleEl || !verdictEl) return; // summary computed but this bundle has no rendered box on the page
+
+  needleEl.setAttribute('transform', `rotate(${angle} 150 150)`);
+  arcEl.setAttribute('stroke-dashoffset', String(377 - arc_pct));
+
+  if (summary.verdict.mode === 'even'){
+    verdictEl.innerHTML = `Roughly even right now`;
+  } else if (summary.verdict.mode === 'base'){
+    verdictEl.innerHTML = `<span class="chainname base">Base</span> currently favors minting (combined)`;
+  } else {
+    verdictEl.innerHTML = `<span class="chainname ada">Cardano</span> currently favors minting (combined)`;
+  }
 }
 
 function bundleMemberCardHtml(key){
@@ -291,6 +351,7 @@ function bundleMemberCardHtml(key){
 
 function bundleCardHtml(bundleName, members){
   return `
+  ${bundleSummaryHtml(bundleName)}
   <div class="bundle-group-box">
     ${members.map(m => bundleMemberCardHtml(m.key)).join('')}
   </div>`;
