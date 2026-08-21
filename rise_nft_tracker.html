@@ -309,8 +309,13 @@ function ipfsCid(url){
 
 function ipfsToHttp(url, gatewayIndex){
   const cid = ipfsCid(url);
-  if (!cid) return url; // not an ipfs:// URL -- use as-is
-  return IPFS_GATEWAYS[gatewayIndex] + cid;
+  if (cid) return IPFS_GATEWAYS[gatewayIndex] + cid;
+  if (url && (url.startsWith('http://') || url.startsWith('https://'))) return url;
+  // A local path like "images/foo.png" is relative to NFT_Data/ (where
+  // nft_data.json itself lives), not relative to this page (which sits at
+  // the repo root) -- without this prefix the browser looks for
+  // <site-root>/images/... instead of <site-root>/NFT_Data/images/...
+  return url ? 'NFT_Data/' + url : url;
 }
 
 function renderNftCard(item){
