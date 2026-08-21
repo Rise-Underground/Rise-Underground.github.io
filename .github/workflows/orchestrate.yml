@@ -2,7 +2,7 @@ name: Competition Orchestrator
 
 on:
   schedule:
-    - cron: '0 * * * *'   # every hour, on the hour, UTC
+    - cron: '13 * * * *'   # every hour, at :13 UTC -- offset from :00 since GitHub's scheduler deprioritizes on-the-hour cron jobs under load
   workflow_dispatch: {}     # lets you manually trigger a run from the Actions tab too
 
 permissions:
@@ -25,6 +25,14 @@ jobs:
           pip install playwright requests
           playwright install --with-deps chromium
 
+      - name: Restore run log from cache
+        uses: actions/cache@v4
+        with:
+          path: orchestrator_run_log.csv
+          key: orchestrator-log-${{ github.run_id }}
+          restore-keys: |
+            orchestrator-log-
+
       - name: Run orchestrator
         run: python orchestrate.py
 
@@ -32,6 +40,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A
+          git add -A -- . ':!orchestrator_run_log.csv'
           git diff --cached --quiet || git commit -m "Automated update: $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
