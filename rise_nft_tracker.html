@@ -83,9 +83,12 @@
     background:var(--panel);border:1px solid var(--line);border-radius:10px;
     padding:18px 20px 20px;margin-bottom:10px;text-align:center;
   }
+  .bundle-summary-title-row{
+    display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:12px;
+  }
   .bundle-summary-title{
     font-family:var(--font-mono);font-weight:700;font-size:15px;letter-spacing:0.4px;
-    color:var(--text);margin-bottom:12px;
+    color:var(--text);
   }
   .bundle-group-box{
     border:1px solid var(--line);border-radius:12px;padding:10px;margin-bottom:44px;
@@ -275,7 +278,10 @@ function bundleSummaryHtml(bundleName){
   const bundleId = slugifyForBundle(bundleName);
   return `
   <div class="bundle-summary-block">
-    <div class="bundle-summary-title">${bundleName}</div>
+    <div class="bundle-summary-title-row">
+      <span class="bundle-summary-title">${bundleName}</span>
+      <a class="mint-now-btn" id="bundlemintnow-${bundleId}" href="#" target="_blank" rel="noopener" style="display:none;">Mint Now</a>
+    </div>
     <svg viewBox="0 0 300 190" width="100%" style="max-width:220px;display:block;margin:0 auto;">
       <text x="20" y="24" class="meter-chain-label left" fill="#FF5F5A">ADA</text>
       <text x="280" y="24" class="meter-chain-label right" fill="#7B9EFF" text-anchor="end">BASE</text>
@@ -313,6 +319,21 @@ function renderBundleSummary(bundleName){
   } else {
     verdictEl.innerHTML = `<span class="chainname ada">Cardano</span> currently favors minting (combined)`;
   }
+
+  // One Mint Now button for the whole bundle -- any member's URL works,
+  // since bundle-exclusive members' store link already points at the
+  // bundle's own page (see store_full_audit.py).
+  const mintNowEl = document.getElementById(`bundlemintnow-${bundleId}`);
+  if (mintNowEl){
+    const members = NFT_ITEMS.filter(it => it.bundle === bundleName);
+    const storeUrl = members.map(m => ITEM_URLS[m.key]).find(Boolean);
+    if (storeUrl){
+      mintNowEl.href = affiliateUrl(storeUrl);
+      mintNowEl.style.display = '';
+    } else {
+      mintNowEl.style.display = 'none';
+    }
+  }
 }
 
 function bundleMemberCardHtml(key){
@@ -323,7 +344,6 @@ function bundleMemberCardHtml(key){
       <div class="bundle-member-image-col">
         <div class="bundle-member-title-row">
           <span class="bundle-member-title" id="title-${key}">Loading&hellip;</span>
-          <a class="mint-now-btn" id="mintnow-${key}" href="#" target="_blank" rel="noopener" style="display:none;">Mint Now</a>
         </div>
         <img id="img-${key}" class="meter-rarity-img-large" style="display:none;" alt="Highest-rarity mint so far">
         <div id="imgEmpty-${key}" class="meter-rarity-img-empty">No image captured yet</div>
@@ -461,12 +481,14 @@ function renderNftCard(item){
   document.getElementById(`minttime-${key}`).textContent = formatMintTime(item.latest_mint_time);
 
   const mintNowEl = document.getElementById(`mintnow-${key}`);
-  const storeUrl = ITEM_URLS[key];
-  if (storeUrl){
-    mintNowEl.href = affiliateUrl(storeUrl);
-    mintNowEl.style.display = '';
-  } else {
-    mintNowEl.style.display = 'none';
+  if (mintNowEl){
+    const storeUrl = ITEM_URLS[key];
+    if (storeUrl){
+      mintNowEl.href = affiliateUrl(storeUrl);
+      mintNowEl.style.display = '';
+    } else {
+      mintNowEl.style.display = 'none';
+    }
   }
 
   const imgEl = document.getElementById(`img-${key}`);
