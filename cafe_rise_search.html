@@ -558,6 +558,14 @@ function runSearch(q){
     return expandedPerWord.every(options => options.some(opt => lower.includes(opt)));
   });
 
+  // Higher epIndex = later episode/part (episodes load in ascending order,
+  // 1, 2, 3...), so sorting descending by epIndex puts the most recent
+  // episode's hits first. Ties (multiple hits within the same episode)
+  // keep their natural in-episode order (earliest timestamp first).
+  const byRecency = (a, b) => b.epIndex - a.epIndex || a.lineIndex - b.lineIndex;
+  exactMatches.sort(byRecency);
+  relatedMatches.sort(byRecency);
+
   const totalCount = exactMatches.length + relatedMatches.length;
   countEl.textContent = `${exactMatches.length} match${exactMatches.length === 1 ? '' : 'es'}` +
     (relatedMatches.length ? ` · ${relatedMatches.length} related` : '');
