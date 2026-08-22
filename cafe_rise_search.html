@@ -2,79 +2,179 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cafe Rise Transcript Search</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --bg: #0f1210;
-    --panel: #171b18;
-    --line: #2a312c;
-    --ink: #e7e4d8;
-    --dim: #8b9186;
-    --accent: #c9a24a;
-    --accent-dim: #6b5a2c;
+  :root {
+    --black: #0a0908;
+    --black-deep: #050403;
+    --panel: #14120f;
+    --gold: #d9a441;
+    --gold-bright: #f2c057;
+    --red: #c81e1e;
+    --red-dim: #7a1414;
+    --off-white: #ede6d6;
+    --grey: #6b6459;
+    --line: rgba(217,164,65,0.18);
     --mono: "IBM Plex Mono", "Courier New", monospace;
     --serif: "Georgia", "Iowan Old Style", serif;
+    --display: "Oswald", "Arial Narrow", sans-serif;
   }
   *{box-sizing:border-box;}
-  body{
+  html, body{
     margin:0;
-    background:var(--bg);
-    color:var(--ink);
+    background:var(--black);
+    color:var(--off-white);
     font-family:var(--serif);
     line-height:1.5;
   }
-  header{
-    padding:28px 24px 18px;
+  body{ position:relative; }
+
+  /* faint scanline / vault texture, matching the home page */
+  body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    background-image: repeating-linear-gradient(
+      0deg,
+      rgba(255,255,255,0.015),
+      rgba(255,255,255,0.015) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+    z-index:1;
+  }
+
+  .watermark{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:clamp(360px, 52vw, 680px);
+    opacity:0.06;
+    pointer-events:none;
+    user-select:none;
+    z-index:0;
+  }
+
+  nav.topnav{
+    position:sticky;
+    top:0;
+    z-index:6;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:28px;
+    padding:14px 20px;
+    background:rgba(10,9,8,0.92);
+    backdrop-filter:blur(6px);
     border-bottom:1px solid var(--line);
   }
-  header h1{
-    margin:0 0 4px;
-    font-family:var(--mono);
+  nav.topnav a{
+    font-family:var(--display);
+    font-size:12px;
     font-weight:600;
-    font-size:20px;
-    letter-spacing:0.5px;
-    color:var(--accent);
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--grey);
+    text-decoration:none;
+    padding:6px 4px;
+    border-bottom:1px solid transparent;
+    transition:color 0.2s ease, border-color 0.2s ease;
   }
-  header p{
+  nav.topnav a:hover, nav.topnav a:focus-visible{
+    color:var(--gold-bright);
+    border-color:var(--gold-bright);
+    outline:none;
+  }
+  nav.topnav a.current{ color:var(--gold); }
+
+  header{
+    position:relative;
+    z-index:2;
+    padding:36px 24px 18px;
+    text-align:center;
+  }
+  .eyebrow{
+    font-family:var(--mono);
+    font-size:11px;
+    color:var(--red);
+    letter-spacing:0.35em;
+    text-transform:uppercase;
+    margin-bottom:10px;
+  }
+  header h1{
     margin:0;
-    color:var(--dim);
+    font-family:var(--display);
+    font-weight:700;
+    font-size:clamp(30px, 5vw, 46px);
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+    color:var(--off-white);
+  }
+  header h1 span{ color:var(--gold); }
+  header p{
+    margin:10px 0 0;
+    color:var(--grey);
     font-size:13px;
     font-family:var(--mono);
   }
+
   #status{
+    position:relative;
+    z-index:2;
     padding:10px 24px;
     font-family:var(--mono);
     font-size:12px;
-    color:var(--dim);
+    color:var(--grey);
+    text-align:center;
     border-bottom:1px solid var(--line);
   }
   .search-wrap{
+    position:sticky;
+    top:49px;
+    z-index:5;
     padding:20px 24px;
     border-bottom:1px solid var(--line);
-    position:sticky;
-    top:0;
-    background:var(--bg);
-    z-index:5;
+    background:rgba(10,9,8,0.92);
+    backdrop-filter:blur(6px);
   }
   #q{
+    display:block;
     width:100%;
-    padding:12px 14px;
+    max-width:900px;
+    margin:0 auto;
+    padding:13px 16px;
     background:var(--panel);
     border:1px solid var(--line);
-    color:var(--ink);
+    color:var(--off-white);
     font-family:var(--mono);
     font-size:15px;
     outline:none;
     border-radius:2px;
   }
-  #q:focus{border-color:var(--accent);}
+  #q::placeholder{ color:var(--grey); }
+  #q:focus{ border-color:var(--gold); }
   #count{
-    margin-top:8px;
+    max-width:900px;
+    margin:8px auto 0;
     font-family:var(--mono);
     font-size:12px;
-    color:var(--dim);
+    color:var(--grey);
+    text-align:center;
   }
-  main{padding:12px 24px 60px; max-width:900px;}
+
+  main{
+    position:relative;
+    z-index:2;
+    padding:20px 24px 70px;
+    max-width:900px;
+    margin:0 auto;
+  }
   .result{
     border:1px solid var(--line);
     background:var(--panel);
@@ -90,27 +190,32 @@
     align-items:baseline;
     gap:12px;
   }
-  .result-head:hover{background:#1c211d;}
+  .result-head:hover{ background:rgba(217,164,65,0.05); }
   .ep-title{
-    font-family:var(--mono);
-    font-size:12px;
-    color:var(--accent);
-    letter-spacing:0.3px;
+    font-family:var(--display);
+    font-weight:600;
+    font-size:13px;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+    color:var(--gold);
   }
   .timestamp{
     font-family:var(--mono);
     font-size:11px;
-    color:var(--dim);
+    color:var(--grey);
     white-space:nowrap;
+    display:flex;
+    align-items:center;
+    gap:8px;
   }
   .snippet{
-    padding:0 16px 12px;
+    padding:0 16px 14px;
     font-size:15px;
-    color:var(--ink);
+    color:var(--off-white);
   }
   .snippet mark{
-    background:var(--accent-dim);
-    color:#fff5da;
+    background:var(--red-dim);
+    color:var(--gold-bright);
     padding:0 2px;
     border-radius:2px;
   }
@@ -118,25 +223,25 @@
     display:none;
     border-top:1px solid var(--line);
     padding:14px 16px;
-    background:#12150f13;
+    background:rgba(0,0,0,0.2);
   }
-  .context.open{display:block;}
+  .context.open{ display:block; }
   .ctx-line{
     font-size:14px;
-    color:var(--dim);
+    color:var(--grey);
     margin-bottom:6px;
     padding-left:8px;
     border-left:2px solid var(--line);
   }
   .ctx-line.hit{
-    color:var(--ink);
-    border-left-color:var(--accent);
+    color:var(--off-white);
+    border-left-color:var(--gold);
     font-weight:600;
   }
   .ctx-line .t{
     font-family:var(--mono);
     font-size:11px;
-    color:var(--dim);
+    color:var(--grey);
     margin-right:8px;
   }
   .ctx-controls{
@@ -149,28 +254,73 @@
   .ctx-controls button, .yt-link{
     background:none;
     border:1px solid var(--line);
-    color:var(--accent);
+    color:var(--gold);
     font-family:var(--mono);
     font-size:11px;
     padding:6px 10px;
     cursor:pointer;
     border-radius:2px;
     text-decoration:none;
+    transition:border-color 0.2s ease, color 0.2s ease;
   }
-  .ctx-controls button:hover, .yt-link:hover{border-color:var(--accent);}
+  .ctx-controls button:hover, .yt-link:hover{
+    border-color:var(--gold-bright);
+    color:var(--gold-bright);
+  }
+  .ctx-controls button:disabled{ opacity:0.35; cursor:default; }
   #empty{
-    color:var(--dim);
+    color:var(--grey);
     font-family:var(--mono);
     font-size:13px;
     padding:40px 0;
     text-align:center;
   }
+  .related-divider{
+    font-family:var(--mono);
+    font-size:11px;
+    color:var(--grey);
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    margin:20px 0 12px;
+    padding-top:12px;
+    border-top:1px dashed var(--line);
+  }
+  .related-tag{
+    font-family:var(--mono);
+    font-size:9px;
+    color:var(--red);
+    border:1px solid var(--red-dim);
+    border-radius:2px;
+    padding:1px 6px;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+  }
+  .result.related .snippet mark{
+    background:none;
+    color:var(--gold);
+    text-decoration:underline;
+    text-decoration-color:var(--red-dim);
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .result-head, nav.topnav a, .ctx-controls button, .yt-link{ transition:none !important; }
+  }
 </style>
 </head>
 <body>
 
+<img class="watermark" src="assets/riseug_logo_transparent.png" alt="">
+
+<nav class="topnav" aria-label="Site">
+  <a href="index.html">Home</a>
+  <a href="rise_nft_tracker.html">NFT Tracker</a>
+  <a href="leaderboard.html">Leaderboards</a>
+  <a href="cafe_rise_search.html" class="current">Transcript Search</a>
+</nav>
+
 <header>
-  <h1>CAFE RISE — TRANSCRIPT SEARCH</h1>
+  <div class="eyebrow">Cafe Rise</div>
+  <h1>Transcript <span>Search</span></h1>
   <p>searches every loaded episode, line by line</p>
 </header>
 
@@ -254,6 +404,32 @@ async function loadEpisodes(){
     : `no episodes found — check that this file sits next to a "Cafe Rise" folder, and that you're running a local server (not opening the file directly)`;
 }
 
+// Project-specific "related terms" groups, built from actual word
+// co-occurrence in the Cafe Rise transcripts (not generic synonyms).
+// A search for any word in a group also matches other words in that
+// same group, surfaced separately as "related" results.
+const SYNONYM_GROUPS = [
+  ['cornucopias', 'cornucopia', 'cornicopia', 'cornic', 'copic', 'copius'],
+  ['copi', 'kopi'],
+  ['staking', 'stake', 'stakers', 'node', 'nodes', 'reward', 'rewards', 'pool', 'pools'],
+  ['land', 'plot', 'plots', 'dome', 'domes', 'apartment', 'apartments', 'property', 'islands', 'solace', 'realm'],
+  ['nft', 'nfts', 'cnft', 'mint', 'minting', 'minted', 'rarity', 'rarities', 'holder', 'holders', 'bundle', 'bundles', 'marketplace'],
+  ['cardano', 'base', 'ethereum', 'bnb', 'bridge', 'bridging', 'chainport', 'migration', 'migrate', 'swap'],
+  ['token', 'tokens', 'tokenomics', 'utility', 'supply', 'economy', 'distribution', 'allocation', 'listing', 'exchange'],
+  ['racing', 'race', 'vehicle', 'vehicles', 'car', 'cars', 'track', 'tracks', 'jet', 'jetpack', 'drone'],
+  ['engine', 'unreal', 'graphics', 'alpha', 'beta', 'testnet', 'mainnet', 'launch', 'launcher', 'metaverse'],
+  ['community', 'discord', 'team', 'partnership', 'partners'],
+];
+
+const SYNONYM_LOOKUP = {};
+SYNONYM_GROUPS.forEach(group => {
+  group.forEach(word => { SYNONYM_LOOKUP[word] = group; });
+});
+
+function expandWord(word){
+  return SYNONYM_LOOKUP[word] || [word];
+}
+
 function escapeHtml(s){
   return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 }
@@ -276,88 +452,148 @@ function highlight(text, q){
     escapeHtml(text.slice(idx+q.length));
 }
 
+// For related matches, the literal query word may not appear in the line at
+// all -- highlight whichever term from the expanded synonym set actually did.
+function highlightAny(text, terms){
+  const lower = text.toLowerCase();
+  let bestIdx = -1, bestTerm = '';
+  terms.forEach(term => {
+    const idx = lower.indexOf(term);
+    if (idx !== -1 && (bestIdx === -1 || idx < bestIdx)){
+      bestIdx = idx;
+      bestTerm = term;
+    }
+  });
+  if (bestIdx === -1) return escapeHtml(text);
+  return escapeHtml(text.slice(0, bestIdx)) +
+    '<mark>' + escapeHtml(text.slice(bestIdx, bestIdx+bestTerm.length)) + '</mark>' +
+    escapeHtml(text.slice(bestIdx+bestTerm.length));
+}
+
+function buildResultCard(m, snippetHtml, isRelated){
+  const ep = episodes[m.epIndex];
+  const card = document.createElement('div');
+  card.className = 'result' + (isRelated ? ' related' : '');
+
+  const head = document.createElement('div');
+  head.className = 'result-head';
+  head.innerHTML = `<span class="ep-title">${escapeHtml(ep.title)}</span>` +
+    `<span class="timestamp">${isRelated ? '<span class="related-tag">related</span> ' : ''}${fmtTime(m.start)}</span>`;
+
+  const snippet = document.createElement('div');
+  snippet.className = 'snippet';
+  snippet.innerHTML = snippetHtml;
+
+  const context = document.createElement('div');
+  context.className = 'context';
+  let before = CONTEXT_STEP, after = CONTEXT_STEP;
+
+  function renderContext(){
+    const startIdx = Math.max(0, m.lineIndex - before);
+    const endIdx = Math.min(ep.lines.length - 1, m.lineIndex + after);
+    let html = '';
+    for (let idx = startIdx; idx <= endIdx; idx++){
+      const line = ep.lines[idx];
+      const isHit = idx === m.lineIndex;
+      html += `<div class="ctx-line ${isHit ? 'hit' : ''}"><span class="t">${fmtTime(line.start)}</span>${escapeHtml(line.text)}</div>`;
+    }
+    const ytLink = ep.url ? `<a class="yt-link" target="_blank" href="${ep.url}&t=${Math.floor(m.start)}s">watch on youtube ↗</a>` : '<span></span>';
+    html += `<div class="ctx-controls">
+      <button data-dir="before" ${startIdx === 0 ? 'disabled' : ''}>← more before</button>
+      ${ytLink}
+      <button data-dir="after" ${endIdx === ep.lines.length - 1 ? 'disabled' : ''}>more after →</button>
+    </div>`;
+    context.innerHTML = html;
+    context.querySelectorAll('button[data-dir]').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (btn.dataset.dir === 'before') before += CONTEXT_STEP;
+        else after += CONTEXT_STEP;
+        renderContext();
+      });
+    });
+  }
+
+  head.addEventListener('click', () => {
+    const isOpen = context.classList.contains('open');
+    if (!isOpen && context.innerHTML === ''){
+      renderContext();
+    }
+    context.classList.toggle('open');
+  });
+
+  card.appendChild(head);
+  card.appendChild(snippet);
+  card.appendChild(context);
+  return card;
+}
+
 function runSearch(q){
   const resultsEl = document.getElementById('results');
   const countEl = document.getElementById('count');
   resultsEl.innerHTML = '';
 
-  if (!q.trim()){
+  const trimmed = q.trim();
+  if (!trimmed){
     resultsEl.innerHTML = '<div id="empty">start typing to search</div>';
     countEl.textContent = '';
     return;
   }
 
-  const qLower = q.toLowerCase();
-  const matches = allLines.filter(l => l.text.toLowerCase().includes(qLower));
-  countEl.textContent = `${matches.length} match${matches.length === 1 ? '' : 'es'}`;
+  const qLower = trimmed.toLowerCase();
+  const queryWords = qLower.split(/\s+/).filter(Boolean);
 
-  if (matches.length === 0){
+  // Tier 1: exact literal phrase match, same behavior as before.
+  const exactMatches = allLines.filter(l => l.text.toLowerCase().includes(qLower));
+  const exactSet = new Set(exactMatches);
+
+  // Tier 2: related matches -- every query word present, but each word may
+  // match either itself or one of its related terms (AND across words,
+  // OR within each word's group). Only shown when it adds something the
+  // exact match didn't already cover.
+  const expandedPerWord = queryWords.map(expandWord);
+  const relatedMatches = allLines.filter(l => {
+    if (exactSet.has(l)) return false;
+    const lower = l.text.toLowerCase();
+    return expandedPerWord.every(options => options.some(opt => lower.includes(opt)));
+  });
+
+  const totalCount = exactMatches.length + relatedMatches.length;
+  countEl.textContent = `${exactMatches.length} match${exactMatches.length === 1 ? '' : 'es'}` +
+    (relatedMatches.length ? ` · ${relatedMatches.length} related` : '');
+
+  if (totalCount === 0){
     resultsEl.innerHTML = '<div id="empty">no matches</div>';
     return;
   }
 
-  matches.slice(0, 300).forEach(m => {
-    const ep = episodes[m.epIndex];
-    const card = document.createElement('div');
-    card.className = 'result';
-
-    const head = document.createElement('div');
-    head.className = 'result-head';
-    head.innerHTML = `<span class="ep-title">${escapeHtml(ep.title)}</span><span class="timestamp">${fmtTime(m.start)}</span>`;
-
-    const snippet = document.createElement('div');
-    snippet.className = 'snippet';
-    snippet.innerHTML = highlight(m.text, q);
-
-    const context = document.createElement('div');
-    context.className = 'context';
-    let before = CONTEXT_STEP, after = CONTEXT_STEP;
-
-    function renderContext(){
-      const startIdx = Math.max(0, m.lineIndex - before);
-      const endIdx = Math.min(ep.lines.length - 1, m.lineIndex + after);
-      let html = '';
-      for (let idx = startIdx; idx <= endIdx; idx++){
-        const line = ep.lines[idx];
-        const isHit = idx === m.lineIndex;
-        html += `<div class="ctx-line ${isHit ? 'hit' : ''}"><span class="t">${fmtTime(line.start)}</span>${escapeHtml(line.text)}</div>`;
-      }
-      const ytLink = ep.url ? `<a class="yt-link" target="_blank" href="${ep.url}&t=${Math.floor(m.start)}s">watch on youtube ↗</a>` : '<span></span>';
-      html += `<div class="ctx-controls">
-        <button data-dir="before" ${startIdx === 0 ? 'disabled' : ''}>← more before</button>
-        ${ytLink}
-        <button data-dir="after" ${endIdx === ep.lines.length - 1 ? 'disabled' : ''}>more after →</button>
-      </div>`;
-      context.innerHTML = html;
-      context.querySelectorAll('button[data-dir]').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-          e.stopPropagation();
-          if (btn.dataset.dir === 'before') before += CONTEXT_STEP;
-          else after += CONTEXT_STEP;
-          renderContext();
-        });
-      });
-    }
-
-    head.addEventListener('click', () => {
-      const isOpen = context.classList.contains('open');
-      if (!isOpen && context.innerHTML === ''){
-        renderContext();
-      }
-      context.classList.toggle('open');
-    });
-
-    card.appendChild(head);
-    card.appendChild(snippet);
-    card.appendChild(context);
-    resultsEl.appendChild(card);
+  const CAP = 300;
+  exactMatches.slice(0, CAP).forEach(m => {
+    resultsEl.appendChild(buildResultCard(m, highlight(m.text, trimmed), false));
   });
 
-  if (matches.length > 300){
+  if (exactMatches.length > CAP){
     const note = document.createElement('div');
     note.id = 'empty';
-    note.textContent = `showing first 300 of ${matches.length} matches — narrow your search`;
+    note.textContent = `showing first ${CAP} of ${exactMatches.length} matches — narrow your search`;
     resultsEl.appendChild(note);
+  } else if (relatedMatches.length){
+    const remaining = CAP - exactMatches.length;
+    const divider = document.createElement('div');
+    divider.className = 'related-divider';
+    divider.textContent = `related — matched on connected terms, not "${trimmed}" itself`;
+    resultsEl.appendChild(divider);
+
+    const flatTerms = [...new Set(expandedPerWord.flat())];
+    relatedMatches.slice(0, remaining).forEach(m => {
+      resultsEl.appendChild(buildResultCard(m, highlightAny(m.text, flatTerms), true));
+    });
+    if (relatedMatches.length > remaining){
+      const note = document.createElement('div');
+      note.id = 'empty';
+      note.textContent = `+ ${relatedMatches.length - remaining} more related matches — narrow your search`;
+      resultsEl.appendChild(note);
+    }
   }
 }
 
