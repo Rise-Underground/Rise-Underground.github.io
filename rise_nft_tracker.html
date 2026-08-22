@@ -40,10 +40,56 @@
   }
   .brand .mark span{color:var(--amber);}
   .brand .sub{font-family:var(--font-mono);font-size:11px;color:var(--dim);letter-spacing:1.5px;text-transform:uppercase;}
+
+  /* ---------- nav ---------- */
+  nav.site-nav{display:flex;align-items:center;gap:8px;}
+  .nav-link{
+    font-family:var(--font-mono);font-weight:600;font-size:12px;letter-spacing:0.4px;
+    text-transform:uppercase;color:var(--dim);text-decoration:none;
+    border:1px solid var(--line);padding:7px 13px;border-radius:6px;
+    transition:border-color 0.15s ease,color 0.15s ease,background 0.15s ease;
+    white-space:nowrap;
+  }
+  .nav-link:hover,.nav-link:focus-visible{color:var(--amber);border-color:var(--amber);background:rgba(255,180,84,0.08);}
+  .nav-link.current{color:var(--text);border-color:var(--dim);}
+  @media (max-width:760px){
+    header{flex-direction:column;align-items:stretch;gap:14px;}
+    nav.site-nav{justify-content:center;flex-wrap:wrap;}
+  }
+
   .nft-page-title{
     font-family:var(--font-mono);font-weight:700;font-size:22px;letter-spacing:0.5px;
     color:var(--text);text-align:center;margin:4px 0 28px;
   }
+
+  /* ---------- item search ---------- */
+  .nft-search-wrap{position:relative;max-width:420px;margin:0 auto 28px;}
+  .nft-search-input{
+    width:100%;font-family:var(--font-mono);font-size:13px;color:var(--text);
+    background:var(--panel);border:1px solid var(--line);border-radius:8px;
+    padding:11px 14px;outline:none;transition:border-color 0.15s ease;
+  }
+  .nft-search-input::placeholder{color:var(--dimmer);}
+  .nft-search-input:focus{border-color:var(--amber);}
+  .nft-search-results{
+    position:absolute;top:calc(100% + 6px);left:0;right:0;
+    background:var(--panel);border:1px solid var(--line);border-radius:8px;
+    max-height:280px;overflow-y:auto;display:none;z-index:15;
+    box-shadow:0 12px 30px rgba(0,0,0,0.4);
+  }
+  .nft-search-results.open{display:block;}
+  .nft-search-row{
+    padding:10px 14px;font-family:var(--font-mono);font-size:12.5px;color:var(--text);
+    cursor:pointer;border-bottom:1px solid var(--line);
+  }
+  .nft-search-row:last-child{border-bottom:none;}
+  .nft-search-row:hover,.nft-search-row.active{background:var(--panel-2);color:var(--amber);}
+  .nft-search-empty{padding:12px 14px;font-family:var(--font-mono);font-size:12px;color:var(--dimmer);}
+  @keyframes nft-highlight-flash{
+    0%{box-shadow:0 0 0 2px var(--amber);}
+    100%{box-shadow:0 0 0 2px transparent;}
+  }
+  .nft-highlight{animation:nft-highlight-flash 1.6s ease-out;border-radius:10px;}
 
   .panel-head{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;border-bottom:1px solid var(--line);}
   .panel-head h2{font-family:var(--font-mono);font-size:13px;font-weight:600;letter-spacing:0.5px;margin:0;text-transform:uppercase;color:var(--text);}
@@ -160,10 +206,19 @@
     <span class="mark">RISE<span>//</span>NFT</span>
     <span class="sub">Mint Favorability Tracker</span>
   </div>
+  <nav class="site-nav">
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link" href="leaderboard.html">Leaderboards</a>
+    <a class="nav-link" href="cafe_rise_search.html">Transcript Search</a>
+  </nav>
 </header>
 
 <div class="nft-page" id="nftPage">
   <div class="nft-page-title">Mint Favorability Meter</div>
+  <div class="nft-search-wrap">
+    <input type="text" class="nft-search-input" id="nftSearchInput" placeholder="Find an NFT by name&hellip;" autocomplete="off">
+    <div class="nft-search-results" id="nftSearchResults"></div>
+  </div>
   <div class="nft-progress-note" id="nftProgressNote"></div>
   <div class="top-mints-panel" id="nftTopMintsHeader"></div>
   <div id="nftCardsContainer"></div>
@@ -194,6 +249,7 @@ function affiliateUrl(baseUrl){
 }
 
 let ITEM_URLS = {}; // key -> store URL, populated from nft_mint_status.csv
+let ITEM_ORDER = new Map(); // key -> row index in nft_mint_status.csv, i.e. store listing order
 
 function loadCSV(path){
   return new Promise((resolve) => {
@@ -209,9 +265,13 @@ async function loadOpenMintKeys(){
   const rows = await loadCSV(FILES.mintStatus);
   const openKeys = new Set();
   if (!rows) return openKeys; // file missing -- caller falls back to showing everything
-  rows.forEach(r => {
+  // Row order here is the store's own listing order (nft_mint_status.csv is
+  // built straight off store_items_for_sale.csv, which is itself scraped in
+  // listing order) -- index 0 = top of the store = position 1 on this page.
+  rows.forEach((r, i) => {
     const isOpen = r.open === true || String(r.open).trim().toLowerCase() === 'true';
     if (r.key && r.url) ITEM_URLS[String(r.key).trim()] = String(r.url).trim();
+    if (r.key) ITEM_ORDER.set(String(r.key).trim(), i);
     if (isOpen && r.key) openKeys.add(String(r.key).trim());
   });
   return openKeys;
@@ -237,8 +297,19 @@ async function init(){
   const [{ items, bundleSummaries }, openKeys] = await Promise.all([loadNftItems(), loadOpenMintKeys()]);
   NFT_ITEMS = (openKeys.size > 0) ? items.filter(it => openKeys.has(it.key)) : items;
   // else: nft_mint_status.csv missing/empty -- show everything rather than an empty page
+
+  // Order by store listing position (top of store = position 1). Items
+  // with no ITEM_ORDER entry (mint_status.csv missing/incomplete for that
+  // key) sort to the end, in whatever order they arrived in, rather than
+  // disappearing or breaking the sort.
+  NFT_ITEMS = NFT_ITEMS
+    .map((it, i) => ({ it, i, order: ITEM_ORDER.has(it.key) ? ITEM_ORDER.get(it.key) : Infinity }))
+    .sort((a, b) => a.order - b.order || a.i - b.i)
+    .map(x => x.it);
+
   BUNDLE_SUMMARIES = bundleSummaries;
   renderNftPage();
+  initNftSearch();
 }
 
 function renderNftPage(){
@@ -338,7 +409,7 @@ function renderBundleSummary(bundleName){
 
 function bundleMemberCardHtml(key){
   return `
-  <div class="bundle-member-block">
+  <div class="bundle-member-block" id="cardblock-${key}">
     <div class="bundle-member-mint-time" id="minttime-${key}" style="display:none;"></div>
     <div class="bundle-member-layout">
       <div class="bundle-member-image-col">
@@ -379,7 +450,7 @@ function bundleCardHtml(bundleName, members){
 
 function cardHtml(key){
   return `
-  <div class="nft-card-block">
+  <div class="nft-card-block" id="cardblock-${key}">
     <div class="nft-card-title-row">
       <span class="nft-card-title" id="title-${key}">Loading&hellip;</span>
       <a class="mint-now-btn" id="mintnow-${key}" href="#" target="_blank" rel="noopener" style="display:none;">Mint Now</a>
@@ -572,6 +643,100 @@ function renderNftMeter(item){
   document.getElementById(`statgrid-${key}`).innerHTML =
     col('Base &mdash; Minted NFT Distribution', item.distribution.base) +
     col('Cardano &mdash; Minted NFT Distribution', item.distribution.cardano);
+}
+
+// ------------------------------------------------------------------
+// NFT name search -- typing filters a dropdown of matching items;
+// picking one (click or Enter) smooth-scrolls to that card and gives
+// it a brief highlight flash so it's obvious which one matched.
+// ------------------------------------------------------------------
+function escapeHtml(str){
+  return String(str).replace(/[&<>"']/g, c => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
+  }[c]));
+}
+
+function scrollToNftCard(key){
+  const el = document.getElementById(`cardblock-${key}`);
+  if (!el) return;
+  el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  el.classList.remove('nft-highlight');
+  // restart the animation even if the same card is picked twice in a row
+  void el.offsetWidth;
+  el.classList.add('nft-highlight');
+}
+
+function initNftSearch(){
+  const input = document.getElementById('nftSearchInput');
+  const results = document.getElementById('nftSearchResults');
+  let activeIndex = -1;
+  let currentMatches = [];
+
+  function renderResults(query){
+    const q = query.trim().toLowerCase();
+    if (!q){
+      results.classList.remove('open');
+      results.innerHTML = '';
+      currentMatches = [];
+      activeIndex = -1;
+      return;
+    }
+    currentMatches = NFT_ITEMS.filter(it => it.name.toLowerCase().includes(q)).slice(0, 10);
+    activeIndex = -1;
+
+    if (!currentMatches.length){
+      results.innerHTML = `<div class="nft-search-empty">No NFT matches "${escapeHtml(query)}"</div>`;
+      results.classList.add('open');
+      return;
+    }
+    results.innerHTML = currentMatches.map((m, i) => `
+      <div class="nft-search-row" data-key="${m.key}" data-idx="${i}">${escapeHtml(m.name)}</div>
+    `).join('');
+    results.classList.add('open');
+  }
+
+  input.addEventListener('input', (e) => renderResults(e.target.value));
+  input.addEventListener('focus', (e) => { if (e.target.value) renderResults(e.target.value); });
+
+  input.addEventListener('keydown', (e) => {
+    if (!currentMatches.length) return;
+    if (e.key === 'ArrowDown'){
+      e.preventDefault();
+      activeIndex = Math.min(activeIndex + 1, currentMatches.length - 1);
+      updateActiveRow();
+    } else if (e.key === 'ArrowUp'){
+      e.preventDefault();
+      activeIndex = Math.max(activeIndex - 1, 0);
+      updateActiveRow();
+    } else if (e.key === 'Enter'){
+      e.preventDefault();
+      const pick = currentMatches[activeIndex >= 0 ? activeIndex : 0];
+      if (pick){
+        scrollToNftCard(pick.key);
+        results.classList.remove('open');
+      }
+    } else if (e.key === 'Escape'){
+      results.classList.remove('open');
+    }
+  });
+
+  function updateActiveRow(){
+    results.querySelectorAll('.nft-search-row').forEach(row => {
+      row.classList.toggle('active', Number(row.dataset.idx) === activeIndex);
+    });
+  }
+
+  results.addEventListener('click', (e) => {
+    const row = e.target.closest('.nft-search-row');
+    if (!row) return;
+    scrollToNftCard(row.dataset.key);
+    results.classList.remove('open');
+    input.value = '';
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nft-search-wrap')) results.classList.remove('open');
+  });
 }
 
 init();
