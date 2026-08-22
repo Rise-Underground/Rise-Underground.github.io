@@ -5,52 +5,60 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>RISE // NFT Tracker</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 <style>
   :root{
-    --bg:#0A0C0D;
-    --panel:#12161A;
-    --panel-2:#181D22;
-    --line:#232A30;
-    --text:#E7E5E0;
-    --dim:#7B858D;
-    --dimmer:#4B535A;
-    --buy:#35D07F;
-    --sell:#FF5F5A;
-    --amber:#FFB454;
+    /* Palette converged with leaderboard.html and cafe_rise_search.html --
+       warm near-black, gold primary accent, crimson secondary accent, warm
+       off-white text. Rarity-tier colors (Common/Uncommon/Rare/Legendary/
+       Mythic) are left as their own semantic system further down -- those
+       encode game data, not site branding, so they're untouched. */
+    --bg:#0a0908;
+    --panel:#14120f;
+    --panel-2:#1c1712;
+    --line:#2a241c;
+    --text:#ede6d6;
+    --dim:#8a8175;
+    --dimmer:#564f43;
+    --gold:#d9a441;
+    --gold-bright:#f2c057;
+    --crimson:#c81e1e;
+    --ada-chain:#c81e1e;
+    --base-chain:#6f8fc4;
     --font-mono:'IBM Plex Mono', ui-monospace, monospace;
     --font-body:'Inter', system-ui, sans-serif;
+    --font-display:'Oswald', 'Arial Narrow', sans-serif;
   }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:var(--font-body);}
-  ::selection{background:var(--amber);color:#0A0C0D;}
+  ::selection{background:var(--gold);color:#0a0908;}
 
   /* ---------- header ---------- */
   header{
     display:flex;align-items:center;justify-content:space-between;
     padding:22px 32px;border-bottom:1px solid var(--line);
-    position:sticky;top:0;background:rgba(10,12,13,0.92);backdrop-filter:blur(8px);
+    position:sticky;top:0;background:rgba(10,9,8,0.92);backdrop-filter:blur(8px);
     z-index:20;
   }
   .brand{display:flex;align-items:baseline;gap:12px;}
   .brand .mark{
-    font-family:var(--font-mono);font-weight:700;font-size:20px;letter-spacing:0.5px;
-    color:var(--text);
+    font-family:var(--font-display);font-weight:700;font-size:22px;letter-spacing:0.06em;
+    text-transform:uppercase;color:var(--text);
   }
-  .brand .mark span{color:var(--amber);}
+  .brand .mark span{color:var(--gold);}
   .brand .sub{font-family:var(--font-mono);font-size:11px;color:var(--dim);letter-spacing:1.5px;text-transform:uppercase;}
 
   /* ---------- nav ---------- */
   nav.site-nav{display:flex;align-items:center;gap:8px;}
   .nav-link{
-    font-family:var(--font-mono);font-weight:600;font-size:12px;letter-spacing:0.4px;
+    font-family:var(--font-display);font-weight:600;font-size:12px;letter-spacing:0.1em;
     text-transform:uppercase;color:var(--dim);text-decoration:none;
     border:1px solid var(--line);padding:7px 13px;border-radius:6px;
     transition:border-color 0.15s ease,color 0.15s ease,background 0.15s ease;
     white-space:nowrap;
   }
-  .nav-link:hover,.nav-link:focus-visible{color:var(--amber);border-color:var(--amber);background:rgba(255,180,84,0.08);}
+  .nav-link:hover,.nav-link:focus-visible{color:var(--gold-bright);border-color:var(--gold);background:rgba(217,164,65,0.1);}
   .nav-link.current{color:var(--text);border-color:var(--dim);}
   @media (max-width:760px){
     header{flex-direction:column;align-items:stretch;gap:14px;}
@@ -58,8 +66,8 @@
   }
 
   .nft-page-title{
-    font-family:var(--font-mono);font-weight:700;font-size:22px;letter-spacing:0.5px;
-    color:var(--text);text-align:center;margin:4px 0 28px;
+    font-family:var(--font-display);font-weight:700;font-size:26px;letter-spacing:0.05em;
+    text-transform:uppercase;color:var(--text);text-align:center;margin:4px 0 28px;
   }
 
   /* ---------- item search ---------- */
@@ -70,7 +78,7 @@
     padding:11px 14px;outline:none;transition:border-color 0.15s ease;
   }
   .nft-search-input::placeholder{color:var(--dimmer);}
-  .nft-search-input:focus{border-color:var(--amber);}
+  .nft-search-input:focus{border-color:var(--gold);}
   .nft-search-results{
     position:absolute;top:calc(100% + 6px);left:0;right:0;
     background:var(--panel);border:1px solid var(--line);border-radius:8px;
@@ -83,10 +91,10 @@
     cursor:pointer;border-bottom:1px solid var(--line);
   }
   .nft-search-row:last-child{border-bottom:none;}
-  .nft-search-row:hover,.nft-search-row.active{background:var(--panel-2);color:var(--amber);}
+  .nft-search-row:hover,.nft-search-row.active{background:var(--panel-2);color:var(--gold-bright);}
   .nft-search-empty{padding:12px 14px;font-family:var(--font-mono);font-size:12px;color:var(--dimmer);}
   @keyframes nft-highlight-flash{
-    0%{box-shadow:0 0 0 2px var(--amber);}
+    0%{box-shadow:0 0 0 2px var(--gold);}
     100%{box-shadow:0 0 0 2px transparent;}
   }
   .nft-highlight{animation:nft-highlight-flash 1.6s ease-out;border-radius:10px;}
@@ -99,7 +107,7 @@
   }
   .empty-state .big{font-size:15px;color:var(--text);margin-bottom:8px;}
   .empty-state .small{font-size:12px;line-height:1.6;color:var(--dimmer);}
-  .empty-state code{background:var(--panel-2);padding:2px 6px;border-radius:4px;color:var(--amber);}
+  .empty-state code{background:var(--panel-2);padding:2px 6px;border-radius:4px;color:var(--gold);}
 
   footer{padding:24px 32px 40px;text-align:center;font-family:var(--font-mono);font-size:11px;color:var(--dimmer);}
 
@@ -113,8 +121,8 @@
   .nft-card-block{margin-bottom:44px;}
   .nft-card-title-row{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:4px;}
   .nft-card-title{
-    font-family:var(--font-mono);font-weight:700;font-size:16px;letter-spacing:0.4px;
-    color:var(--text);text-align:center;
+    font-family:var(--font-display);font-weight:600;font-size:19px;letter-spacing:0.03em;
+    text-transform:uppercase;color:var(--text);text-align:center;
   }
   .mint-now-btn{
     font-family:var(--font-mono);font-weight:700;font-size:11.5px;letter-spacing:0.4px;
@@ -133,8 +141,8 @@
     display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:12px;
   }
   .bundle-summary-title{
-    font-family:var(--font-mono);font-weight:700;font-size:15px;letter-spacing:0.4px;
-    color:var(--text);
+    font-family:var(--font-display);font-weight:600;font-size:17px;letter-spacing:0.03em;
+    text-transform:uppercase;color:var(--text);
   }
   .bundle-group-box{
     border:1px solid var(--line);border-radius:12px;padding:10px;margin-bottom:44px;
@@ -147,7 +155,7 @@
   .bundle-member-layout{display:grid;grid-template-columns:200px 1fr 1fr 1fr;gap:20px;align-items:start;}
   @media (max-width:1300px){.bundle-member-layout{grid-template-columns:1fr;}}
   .bundle-member-title-row{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px;}
-  .bundle-member-title{font-family:var(--font-mono);font-weight:700;font-size:13px;color:var(--text);}
+  .bundle-member-title{font-family:var(--font-display);font-weight:600;font-size:15px;letter-spacing:0.02em;text-transform:uppercase;color:var(--text);}
   .bundle-member-image-col .meter-rarity-img-large,
   .bundle-member-image-col .meter-rarity-img-empty{max-width:100%;}
   .bundle-member-gauge-col{display:flex;flex-direction:column;align-items:center;}
@@ -172,22 +180,22 @@
   @media (max-width:900px){.top-mints-row{grid-template-columns:1fr;}}
   .top-mint-item{background:var(--panel);padding:16px 20px;display:flex;flex-direction:column;gap:4px;}
   .top-mint-rank{font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--dim);}
-  .top-mint-name{font-family:var(--font-mono);font-size:13px;color:var(--text);font-weight:600;}
+  .top-mint-name{font-family:var(--font-display);font-size:15px;color:var(--text);font-weight:600;text-transform:uppercase;letter-spacing:0.02em;}
   .top-mint-chain{font-family:var(--font-mono);font-size:11px;color:var(--dimmer);}
-  .top-mint-pct{font-family:var(--font-mono);font-size:20px;font-weight:700;color:#F4C430;text-shadow:0 0 8px rgba(244,196,48,0.5);}
+  .top-mint-pct{font-family:var(--font-mono);font-size:20px;font-weight:700;color:#f2c057;text-shadow:0 0 8px rgba(242,192,87,0.5);}
   .meter-rarity-img-empty{
     width:100%;max-width:280px;aspect-ratio:1/1;border-radius:8px;border:1px dashed var(--line);
     display:flex;align-items:center;justify-content:center;text-align:center;padding:16px;
     font-family:var(--font-mono);font-size:11px;color:var(--dimmer);
   }
-  .meter-nft-name{font-family:var(--font-mono);font-size:13px;font-weight:600;color:var(--text);text-align:center;margin-bottom:10px;letter-spacing:0.3px;}
+  .meter-nft-name{font-family:var(--font-display);font-size:15px;font-weight:600;text-transform:uppercase;color:var(--text);text-align:center;margin-bottom:10px;letter-spacing:0.02em;}
   .meter-chain-label{font-family:var(--font-mono);font-size:12px;font-weight:600;letter-spacing:1px;}
-  .meter-chain-label.left{color:var(--sell);}
-  .meter-chain-label.right{color:#7B9EFF;}
+  .meter-chain-label.left{color:var(--ada-chain);}
+  .meter-chain-label.right{color:var(--base-chain);}
   .meter-verdict{font-family:var(--font-mono);font-size:13px;color:var(--text);margin-top:6px;text-align:center;}
   .meter-verdict .chainname{font-weight:700;}
-  .meter-verdict .chainname.ada{color:var(--sell);}
-  .meter-verdict .chainname.base{color:#7B9EFF;}
+  .meter-verdict .chainname.ada{color:var(--ada-chain);}
+  .meter-verdict .chainname.base{color:var(--base-chain);}
   .meter-sub{font-family:var(--font-mono);font-size:17px;color:var(--text);margin-top:16px;text-align:center;}
   .nft-stat-grid{display:grid;grid-template-columns:1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;}
   .nft-stat-col{background:var(--panel);padding:18px 20px;}
@@ -228,7 +236,7 @@
   </div>
 </div>
 
-<footer>RISE // 0xf25620f89d0e23a8ba7b11ab3235b66268794196 &nbsp;·&nbsp; Base &amp; Cardano &nbsp;·&nbsp; local data, not financial advice</footer>
+<footer><a href="https://x.com/RiseUGX" target="_blank" rel="noopener noreferrer" style="color:var(--dim);text-decoration:none;">x.com/RiseUGX</a></footer>
 
 <script>
 const FILES = {
@@ -348,18 +356,18 @@ function renderNftPage(){
 function bundleSummaryHtml(bundleName){
   const bundleId = slugifyForBundle(bundleName);
   return `
-  <div class="bundle-summary-block">
+  <div class="bundle-summary-block" id="bundleblock-${bundleId}">
     <div class="bundle-summary-title-row">
       <span class="bundle-summary-title">${bundleName}</span>
       <a class="mint-now-btn" id="bundlemintnow-${bundleId}" href="#" target="_blank" rel="noopener" style="display:none;">Mint Now</a>
     </div>
     <svg viewBox="0 0 300 190" width="100%" style="max-width:220px;display:block;margin:0 auto;">
-      <text x="20" y="24" class="meter-chain-label left" fill="#FF5F5A">ADA</text>
-      <text x="280" y="24" class="meter-chain-label right" fill="#7B9EFF" text-anchor="end">BASE</text>
-      <path d="M 30 150 A 120 120 0 0 1 270 150" fill="none" stroke="#232A30" stroke-width="14" stroke-linecap="round"/>
-      <path id="bundlearc-${bundleId}" d="M 30 150 A 120 120 0 0 1 270 150" fill="none" stroke="#4B535A" stroke-width="14" stroke-linecap="round" stroke-dasharray="377" stroke-dashoffset="377"/>
-      <line id="bundleneedle-${bundleId}" x1="150" y1="150" x2="150" y2="45" stroke="#E7E5E0" stroke-width="3" stroke-linecap="round" transform="rotate(0 150 150)"/>
-      <circle cx="150" cy="150" r="7" fill="#E7E5E0"/>
+      <text x="20" y="24" class="meter-chain-label left" fill="var(--ada-chain)">ADA</text>
+      <text x="280" y="24" class="meter-chain-label right" fill="var(--base-chain)" text-anchor="end">BASE</text>
+      <path d="M 30 150 A 120 120 0 0 1 270 150" fill="none" stroke="var(--line)" stroke-width="14" stroke-linecap="round"/>
+      <path id="bundlearc-${bundleId}" d="M 30 150 A 120 120 0 0 1 270 150" fill="none" stroke="var(--dimmer)" stroke-width="14" stroke-linecap="round" stroke-dasharray="377" stroke-dashoffset="377"/>
+      <line id="bundleneedle-${bundleId}" x1="150" y1="150" x2="150" y2="45" stroke="var(--text)" stroke-width="3" stroke-linecap="round" transform="rotate(0 150 150)"/>
+      <circle cx="150" cy="150" r="7" fill="var(--text)"/>
     </svg>
     <div class="meter-verdict" id="bundleverdict-${bundleId}"></div>
   </div>`;
@@ -422,12 +430,12 @@ function bundleMemberCardHtml(key){
       <div class="bundle-member-gauge-col">
         <div class="bundle-col-label">Optimal Chain for Minting</div>
         <svg viewBox="0 0 300 190" width="100%" style="max-width:250px;">
-          <text x="20" y="24" class="meter-chain-label left" fill="#FF5F5A">ADA</text>
-          <text x="280" y="24" class="meter-chain-label right" fill="#7B9EFF" text-anchor="end">BASE</text>
-          <path d="M 30 150 A 120 120 0 0 1 270 150" fill="none" stroke="#232A30" stroke-width="14" stroke-linecap="round"/>
-          <path id="arc-${key}" d="M 30 150 A 120 120 0 0 1 270 150" fill="none" stroke="#4B535A" stroke-width="14" stroke-linecap="round" stroke-dasharray="377" stroke-dashoffset="377"/>
-          <line id="needle-${key}" x1="150" y1="150" x2="150" y2="45" stroke="#E7E5E0" stroke-width="3" stroke-linecap="round" transform="rotate(0 150 150)"/>
-          <circle cx="150" cy="150" r="7" fill="#E7E5E0"/>
+          <text x="20" y="24" class="meter-chain-label left" fill="var(--ada-chain)">ADA</text>
+          <text x="280" y="24" class="meter-chain-label right" fill="var(--base-chain)" text-anchor="end">BASE</text>
+          <path d="M 30 150 A 120 120 0 0 1 270 150" fill="none" stroke="var(--line)" stroke-width="14" stroke-linecap="round"/>
+          <path id="arc-${key}" d="M 30 150 A 120 120 0 0 1 270 150" fill="none" stroke="var(--dimmer)" stroke-width="14" stroke-linecap="round" stroke-dasharray="377" stroke-dashoffset="377"/>
+          <line id="needle-${key}" x1="150" y1="150" x2="150" y2="45" stroke="var(--text)" stroke-width="3" stroke-linecap="round" transform="rotate(0 150 150)"/>
+          <circle cx="150" cy="150" r="7" fill="var(--text)"/>
         </svg>
         <div class="meter-verdict" id="verdict-${key}">Loading&hellip;</div>
       </div>
@@ -468,12 +476,12 @@ function cardHtml(key){
         <div class="panel-head meter-panel-head"><h2>Optimal Chain for Minting</h2></div>
         <div class="meter-body">
           <svg viewBox="0 0 300 190" width="100%" style="max-width:330px;">
-            <text x="20" y="24" class="meter-chain-label left" fill="#FF5F5A">ADA</text>
-            <text x="280" y="24" class="meter-chain-label right" fill="#7B9EFF" text-anchor="end">BASE</text>
-            <path d="M 30 150 A 120 120 0 0 1 270 150" fill="none" stroke="#232A30" stroke-width="14" stroke-linecap="round"/>
-            <path id="arc-${key}" d="M 30 150 A 120 120 0 0 1 270 150" fill="none" stroke="#4B535A" stroke-width="14" stroke-linecap="round" stroke-dasharray="377" stroke-dashoffset="377"/>
-            <line id="needle-${key}" x1="150" y1="150" x2="150" y2="45" stroke="#E7E5E0" stroke-width="3" stroke-linecap="round" transform="rotate(0 150 150)"/>
-            <circle cx="150" cy="150" r="7" fill="#E7E5E0"/>
+            <text x="20" y="24" class="meter-chain-label left" fill="var(--ada-chain)">ADA</text>
+            <text x="280" y="24" class="meter-chain-label right" fill="var(--base-chain)" text-anchor="end">BASE</text>
+            <path d="M 30 150 A 120 120 0 0 1 270 150" fill="none" stroke="var(--line)" stroke-width="14" stroke-linecap="round"/>
+            <path id="arc-${key}" d="M 30 150 A 120 120 0 0 1 270 150" fill="none" stroke="var(--dimmer)" stroke-width="14" stroke-linecap="round" stroke-dasharray="377" stroke-dashoffset="377"/>
+            <line id="needle-${key}" x1="150" y1="150" x2="150" y2="45" stroke="var(--text)" stroke-width="3" stroke-linecap="round" transform="rotate(0 150 150)"/>
+            <circle cx="150" cy="150" r="7" fill="var(--text)"/>
           </svg>
           <div class="meter-verdict" id="verdict-${key}">Loading&hellip;</div>
         </div>
@@ -602,7 +610,7 @@ function renderNftMeter(item){
     verdictEl.innerHTML = `<span class="chainname ada">Cardano</span> currently favors minting`;
   }
 
-  const goldVal = pct => `<span style="font-weight:700;color:#F4C430;text-shadow:0 0 8px rgba(244,196,48,0.5);">${pct.toFixed(1)}%</span>`;
+  const goldVal = pct => `<span style="font-weight:700;color:#f2c057;text-shadow:0 0 8px rgba(242,192,87,0.5);">${pct.toFixed(1)}%</span>`;
   const oddsRow = (label, color, pct) => `
     <div class="nft-stat-row">
       <span class="tier"${color ? ` style="color:${color}"` : ''}>${label}</span>
@@ -656,8 +664,8 @@ function escapeHtml(str){
   }[c]));
 }
 
-function scrollToNftCard(key){
-  const el = document.getElementById(`cardblock-${key}`);
+function scrollToNftCard(target){
+  const el = document.getElementById(target.isBundle ? `bundleblock-${target.bundleId}` : `cardblock-${target.key}`);
   if (!el) return;
   el.scrollIntoView({ behavior: 'smooth', block: 'center' });
   el.classList.remove('nft-highlight');
@@ -672,6 +680,21 @@ function initNftSearch(){
   let activeIndex = -1;
   let currentMatches = [];
 
+  function buildSearchCorpus(){
+    // Individual items, plus one entry per unique bundle name (so typing
+    // "founders" finds the bundle itself, not just its member items).
+    const items = NFT_ITEMS.map(it => ({ key: it.key, name: it.name, isBundle: false }));
+    const seenBundles = new Set();
+    const bundles = [];
+    NFT_ITEMS.forEach(it => {
+      if (it.bundle && !seenBundles.has(it.bundle)){
+        seenBundles.add(it.bundle);
+        bundles.push({ bundleId: slugifyForBundle(it.bundle), name: it.bundle, isBundle: true });
+      }
+    });
+    return [...bundles, ...items];
+  }
+
   function renderResults(query){
     const q = query.trim().toLowerCase();
     if (!q){
@@ -681,7 +704,7 @@ function initNftSearch(){
       activeIndex = -1;
       return;
     }
-    currentMatches = NFT_ITEMS.filter(it => it.name.toLowerCase().includes(q)).slice(0, 10);
+    currentMatches = buildSearchCorpus().filter(it => it.name.toLowerCase().includes(q)).slice(0, 10);
     activeIndex = -1;
 
     if (!currentMatches.length){
@@ -690,7 +713,7 @@ function initNftSearch(){
       return;
     }
     results.innerHTML = currentMatches.map((m, i) => `
-      <div class="nft-search-row" data-key="${m.key}" data-idx="${i}">${escapeHtml(m.name)}</div>
+      <div class="nft-search-row" data-idx="${i}">${escapeHtml(m.name)}${m.isBundle ? ' <span style="color:var(--dimmer);">(Bundle)</span>' : ''}</div>
     `).join('');
     results.classList.add('open');
   }
@@ -712,7 +735,7 @@ function initNftSearch(){
       e.preventDefault();
       const pick = currentMatches[activeIndex >= 0 ? activeIndex : 0];
       if (pick){
-        scrollToNftCard(pick.key);
+        scrollToNftCard(pick);
         results.classList.remove('open');
       }
     } else if (e.key === 'Escape'){
@@ -729,7 +752,8 @@ function initNftSearch(){
   results.addEventListener('click', (e) => {
     const row = e.target.closest('.nft-search-row');
     if (!row) return;
-    scrollToNftCard(row.dataset.key);
+    const pick = currentMatches[Number(row.dataset.idx)];
+    if (pick) scrollToNftCard(pick);
     results.classList.remove('open');
     input.value = '';
   });
