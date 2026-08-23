@@ -1,7 +1,7 @@
 """
 Shared competition window logic.
 
-The competition runs 3rd Sunday of the month, 00:00 UTC, through the
+The competition runs 2nd Sunday of the month, 00:00 UTC, through the
 following Saturday, 23:59:59.999 UTC — one 7-day window per month.
 
 compute_competition_window(now) always returns the window that's either
@@ -13,20 +13,20 @@ inside a live competition right now."
 from datetime import datetime, timezone, timedelta
 
 # ---------------------------------------------------------------------
-# TEST MODE — set to False once the test run goes well, to switch back
-# to the real "3rd Sunday of the month" rule below.
+# TEST_MODE is off -- the real "2nd Sunday of the month" rule below is
+# now live. First official window: Sep 13-19, 2026.
 # ---------------------------------------------------------------------
-TEST_MODE = True
-TEST_WINDOW_START = datetime(2026, 8, 16, 0, 0, 0, tzinfo=timezone.utc)   # Sunday Aug 16, 00:00 UTC
-TEST_WINDOW_END = datetime(2026, 8, 22, 23, 59, 59, 999000, tzinfo=timezone.utc)  # Saturday Aug 22, 23:59:59 UTC
+TEST_MODE = False
+TEST_WINDOW_START = datetime(2026, 8, 16, 0, 0, 0, tzinfo=timezone.utc)   # unused while TEST_MODE is off
+TEST_WINDOW_END = datetime(2026, 8, 22, 23, 59, 59, 999000, tzinfo=timezone.utc)  # unused while TEST_MODE is off
 
 
-def get_third_sunday_window(year, month):
+def get_second_sunday_window(year, month):
     first_of_month = datetime(year, month, 1, tzinfo=timezone.utc)
     # Python's weekday(): Monday=0 ... Sunday=6
     days_to_first_sunday = (6 - first_of_month.weekday()) % 7
     first_sunday = first_of_month + timedelta(days=days_to_first_sunday)
-    start = first_sunday + timedelta(days=14)
+    start = first_sunday + timedelta(days=7)
     start = start.replace(hour=0, minute=0, second=0, microsecond=0)
     end = start + timedelta(days=6, hours=23, minutes=59, seconds=59, microseconds=999000)
     return start, end
@@ -37,14 +37,14 @@ def compute_competition_window(now=None):
         now = datetime.now(timezone.utc)
     if TEST_MODE:
         return TEST_WINDOW_START, TEST_WINDOW_END
-    start, end = get_third_sunday_window(now.year, now.month)
+    start, end = get_second_sunday_window(now.year, now.month)
     if now > end:
         next_month = now.month + 1
         next_year = now.year
         if next_month > 12:
             next_month = 1
             next_year += 1
-        start, end = get_third_sunday_window(next_year, next_month)
+        start, end = get_second_sunday_window(next_year, next_month)
     return start, end
 
 
