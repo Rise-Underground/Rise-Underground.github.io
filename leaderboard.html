@@ -393,12 +393,12 @@
   .row.n2 .rank{ color: var(--silver); }
   .row.n3 .rank{ color: var(--bronze); }
 
-  .row.n1{ border-left: 3px solid var(--gold); background: linear-gradient(90deg, rgba(212,165,55,0.09), transparent 45%); }
-  .row.n2{ border-left: 3px solid var(--silver); background: linear-gradient(90deg, rgba(201,204,209,0.07), transparent 45%); }
-  .row.n3{ border-left: 3px solid var(--bronze); background: linear-gradient(90deg, rgba(205,127,50,0.07), transparent 45%); }
-  .row.n1:hover, .row.n1.open{ background: linear-gradient(90deg, rgba(212,165,55,0.14), transparent 45%); }
-  .row.n2:hover, .row.n2.open{ background: linear-gradient(90deg, rgba(201,204,209,0.11), transparent 45%); }
-  .row.n3:hover, .row.n3.open{ background: linear-gradient(90deg, rgba(205,127,50,0.11), transparent 45%); }
+  .row.n1{ border-left: 6px solid var(--gold); background: linear-gradient(90deg, rgba(212,165,55,0.22), rgba(212,165,55,0.03) 55%); box-shadow: inset 0 0 0 1px rgba(212,165,55,0.15); }
+  .row.n2{ border-left: 6px solid var(--silver); background: linear-gradient(90deg, rgba(201,204,209,0.18), rgba(201,204,209,0.02) 55%); box-shadow: inset 0 0 0 1px rgba(201,204,209,0.12); }
+  .row.n3{ border-left: 6px solid var(--bronze); background: linear-gradient(90deg, rgba(205,127,50,0.20), rgba(205,127,50,0.03) 55%); box-shadow: inset 0 0 0 1px rgba(205,127,50,0.14); }
+  .row.n1:hover, .row.n1.open{ background: linear-gradient(90deg, rgba(212,165,55,0.30), rgba(212,165,55,0.05) 55%); }
+  .row.n2:hover, .row.n2.open{ background: linear-gradient(90deg, rgba(201,204,209,0.25), rgba(201,204,209,0.04) 55%); }
+  .row.n3:hover, .row.n3.open{ background: linear-gradient(90deg, rgba(205,127,50,0.28), rgba(205,127,50,0.05) 55%); }
 
   .who .name{
     font-family:'Rajdhani', sans-serif;
@@ -1101,6 +1101,17 @@ function computeOpportunities(placements, boards){
 function renderOpportunities(placements, boards){
   const box = document.getElementById('opportunitiesBox');
   const list = document.getElementById('opportunitiesList');
+
+  // Only show during an ACTIVE competition (start <= now <= end) -- not
+  // before it starts, and not after it ends.
+  const now = new Date();
+  const { start, end } = computeCompetitionWindow(now);
+  const isActive = TEST_MODE ? (now >= TEST_WINDOW_START && now <= TEST_WINDOW_END) : (now >= start && now <= end);
+  if (!isActive){
+    box.style.display = 'none';
+    return;
+  }
+
   const { tier, items } = computeOpportunities(placements, boards);
 
   if (!items.length){
