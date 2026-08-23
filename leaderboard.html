@@ -159,7 +159,11 @@
     align-items:center;
     gap:12px;
   }
-  .home-link{
+  .top-nav{
+    display:flex;
+    gap:10px;
+  }
+  .nav-link{
     font-family:'Rajdhani', sans-serif;
     font-weight:600;
     font-size:13px;
@@ -168,15 +172,19 @@
     color: var(--paper);
     text-decoration:none;
     border:1px solid var(--hairline);
-    padding:6px 12px;
+    padding:6px 14px;
     border-radius: var(--radius);
     transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
     display:inline-flex;
     align-items:center;
-    gap:6px;
   }
-  .home-link:hover,
-  .home-link:focus-visible{
+  .nav-link:hover,
+  .nav-link:focus-visible{
+    color: var(--gold);
+    border-color: var(--gold);
+    background: rgba(212,165,55,0.08);
+  }
+  .nav-link.current{
     color: var(--gold);
     border-color: var(--gold);
     background: rgba(212,165,55,0.08);
@@ -625,7 +633,11 @@
       <div class="tagline">Operating in the shadows</div>
     </div>
     <div class="header-right">
-      <a class="home-link" href="index.html">&larr; Main Menu</a>
+      <nav class="top-nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link current" href="leaderboard.html">Leaderboards</a>
+        <a class="nav-link" href="cafe_rise_search.html">Transcript Search</a>
+      </nav>
       <div class="season-tag" id="seasonTag">MONTH · —</div>
     </div>
   </header>
@@ -658,7 +670,6 @@
   <div class="standings" id="standings" role="list"></div>
 
   <footer>
-    <span id="footerNote">No data loaded</span>
     <a class="social-link" href="https://x.com/RiseUGX" target="_blank" rel="noopener noreferrer" aria-label="RISE Underground on X">
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
@@ -946,7 +957,6 @@ function renderEmptyState(message){
     </div>`;
 }
 
-const footerNote = document.getElementById('footerNote');
 let fullStandings = []; // every player, sorted by points — not just the visible top 10
 
 // ------------------------------------------------------------------
@@ -1013,7 +1023,6 @@ if (location.protocol !== 'file:'){
       const placements = csvToPlacements(placementsText);
       fullStandings = buildStandings(placements);
       renderStandings(fullStandings.slice(0, 10));
-      footerNote.textContent = 'Live data — ir_leaderboard_placements.csv';
 
       const boards = boardsText ? csvToBoards(boardsText) : null;
       renderOpportunities(placements, boards);
