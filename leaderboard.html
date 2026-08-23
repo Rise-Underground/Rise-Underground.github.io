@@ -19,6 +19,8 @@
     --crimson: #e0202b;
     --crimson-dim: #7c141c;
     --gold: #d4a537;
+    --silver: #c9ccd1;
+    --bronze: #cd7f32;
     --danger-red: #ff4d4d;
     --radius: 3px;
   }
@@ -256,6 +258,19 @@
   }
   .countdown-clock .unit-label:last-child{ margin-right:0; }
 
+  .ended-banner{
+    margin-top: 30px;
+    padding: 16px 20px;
+    border: 1px solid var(--gold);
+    border-radius: var(--radius);
+    background: linear-gradient(180deg, rgba(212,165,55,0.10), rgba(212,165,55,0.03));
+    font-family:'Rajdhani', sans-serif;
+    font-weight:600;
+    font-size: clamp(14px, 2vw, 16px);
+    color: var(--paper);
+    letter-spacing:0.02em;
+  }
+
   /* ---------- standings ---------- */
   .board-head{
     display:flex;
@@ -374,9 +389,16 @@
     font-weight:700;
     color: var(--steel);
   }
-  .row:nth-child(1) .rank, .row.n1 .rank{ color: var(--crimson); }
-  .row.n2 .rank{ color: #d7dae0; }
-  .row.n3 .rank{ color: #c48a5a; }
+  .row:nth-child(1) .rank, .row.n1 .rank{ color: var(--gold); }
+  .row.n2 .rank{ color: var(--silver); }
+  .row.n3 .rank{ color: var(--bronze); }
+
+  .row.n1{ border-left: 3px solid var(--gold); background: linear-gradient(90deg, rgba(212,165,55,0.09), transparent 45%); }
+  .row.n2{ border-left: 3px solid var(--silver); background: linear-gradient(90deg, rgba(201,204,209,0.07), transparent 45%); }
+  .row.n3{ border-left: 3px solid var(--bronze); background: linear-gradient(90deg, rgba(205,127,50,0.07), transparent 45%); }
+  .row.n1:hover, .row.n1.open{ background: linear-gradient(90deg, rgba(212,165,55,0.14), transparent 45%); }
+  .row.n2:hover, .row.n2.open{ background: linear-gradient(90deg, rgba(201,204,209,0.11), transparent 45%); }
+  .row.n3:hover, .row.n3.open{ background: linear-gradient(90deg, rgba(205,127,50,0.11), transparent 45%); }
 
   .who .name{
     font-family:'Rajdhani', sans-serif;
@@ -620,12 +642,15 @@
       <div class="countdown-label" id="countdownLabel">COMPETITION STARTS IN</div>
       <div class="countdown-clock" id="countdownClock">—</div>
     </div>
+    <div class="ended-banner" id="endedBanner" style="display:none;">
+      🏆 Congrats to the winners! Practice and get ready for next month's Leader of the Leaderboards.
+    </div>
   </section>
 
   <div class="board-head">
     <h2>Top 10</h2>
     <div class="search-wrap">
-      <input type="text" id="playerSearch" placeholder="Find a racer…" autocomplete="off" aria-label="Search racers by name">
+      <input type="text" id="playerSearch" placeholder="Find a competitor…" autocomplete="off" aria-label="Search competitors by name">
       <div class="search-results" id="searchResults"></div>
     </div>
   </div>
@@ -766,6 +791,39 @@ function tickCountdown(){
 
 tickCountdown();
 setInterval(tickCountdown, 1000);
+
+// ------------------------------------------------------------------
+// "Competition ended" banner.
+//
+// Shows from the moment the competition ends until the next "starts in"
+// countdown takes over (7 days before the next window) -- so there's
+// never a gap or overlap between the two states.
+//
+// TEST_MODE has a fixed one-off window with no "next" cycle, so the
+// banner just stays up once TEST_WINDOW_END passes.
+// ------------------------------------------------------------------
+function tickEndedBanner(){
+  const banner = document.getElementById('endedBanner');
+  const now = new Date();
+
+  if (TEST_MODE){
+    banner.style.display = (now > TEST_WINDOW_END) ? '' : 'none';
+    return;
+  }
+
+  const currentWindow = getThirdSundayWindow(now.getUTCFullYear(), now.getUTCMonth());
+  if (now <= currentWindow.end){
+    banner.style.display = 'none';
+    return;
+  }
+
+  const { start: nextStart } = computeCompetitionWindow(now); // auto-rolls to next window once past end
+  const oneWeekBeforeNext = new Date(nextStart.getTime() - 7 * 24 * 60 * 60 * 1000);
+  banner.style.display = (now < oneWeekBeforeNext) ? '' : 'none';
+}
+
+tickEndedBanner();
+setInterval(tickEndedBanner, 1000);
 
 // ------------------------------------------------------------------
 // Build a small SVG rank gauge. rank 1 = near-full arc, rank 10 = sliver.
