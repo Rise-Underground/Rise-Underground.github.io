@@ -69,30 +69,52 @@ COUNTDOWN = {
         "The rankings are shifting.\n"
         "The pressure is rising.\n\n"
         "This is your chance to make your mark before the end draws near.\n\n"
-        "📣 RISE Underground — Leaders of the Leaderboards"
+        "📣 RISE Underground — Leaders of the Leaderboards\n\n"
+        "{leaderboard_url}"
     ),
     2: (
         "🔥 DAY 2 🔥\n\n"
         "The darkness is almost behind us.\n\n"
         "⚠️ ONLY 2 DAYS REMAIN.\n\n"
+        "Competition begins 00:00 UTC.\n\n"
         "One last push.\n"
         "One last climb.\n"
         "One last chance to change your position.\n\n"
         "🏆 The ultimate ranking is almost complete.\n\n"
-        "Will you RISE?"
+        "Will you RISE?\n\n"
+        "{leaderboard_url}"
     ),
     1: (
         "🔥 DAY 1 🔥\n\n"
-        "THIS IS IT.\n\n"
-        "The countdown ends today.\n\n"
+        "THIS IS IT. Countdown ends today.\n\n"
+        "Competition begins 00:00 UTC.\n\n"
         "🔥 THE FINAL DAY TO RISE. 🔥\n\n"
-        "Every Calido Valley Raceway run, every AeroTrail, every Holocache "
-        "counts toward one ultimate ranking.\n\n"
+        "Every race, every AeroTrail, every Holocache counts toward one "
+        "ultimate ranking.\n\n"
         "🏆 LEADERS OF THE LEADERBOARDS\n\n"
         "No tomorrow. No second chances.\n\n"
-        "Where do you rank?"
+        "{leaderboard_url}"
     ),
 }
+
+# ---------------------------------------------------------------------
+# 1b. Final pre-open countdown -- fires once on the evening before the
+#     competition opens (Sep 12), with a live hours/minutes/seconds
+#     countdown to the actual 00:00 UTC start, rather than a flat day
+#     count like the rest of section 1.
+#     Placeholders: hours_remaining, minutes_remaining, seconds_remaining,
+#     leaderboard_url
+# ---------------------------------------------------------------------
+FINAL_COUNTDOWN = (
+    "🔥 THE FINAL COUNTDOWN 🔥\n\n"
+    "The shadows are almost gone.\n\n"
+    "{hours_remaining}H {minutes_remaining}M {seconds_remaining}S\n\n"
+    "Until the gates open.\n\n"
+    "Sharpen your rides. Ready your wings. The leaderboard is about to wake up.\n\n"
+    "🏆 LEADERS OF THE LEADERBOARDS\n\n"
+    "{leaderboard_url}\n\n"
+    "RISE begins soon."
+)
 
 # ---------------------------------------------------------------------
 # 2. Competition opens -- single post, fired once at start
@@ -209,25 +231,21 @@ LEADERBOARD_UPDATES = [
         "⚡ START YOUR ENGINES. CHASE #1!"
     ),
     (
-        "🏆 LEADERS OF THE LEADERBOARDS 🏆\n\n"
-        "🔥 HOLOCACHE LEADERBOARDS 🔥\n\n"
-        "🥇 {top1_name} — {top1_points} pts\n\n"
-        "How fast can YOU run?\n\n"
-        "Find the Holocaches. Beat the clock. Race past the competition.\n\n"
-        "Claim your place. Own the leaderboard!\n\n"
-        "⏳ {days_remaining} days remaining!"
+        "🔥 THE LEADERBOARD NEVER SLEEPS 🔥\n\n"
+        "Infinity Rising's only competition for all timezones.\n\n"
+        "{top1_name} sits at #1 with {top1_points} points.\n\n"
+        "Every race, every flight, every cache — it all counts.\n\n"
+        "{days_remaining} days left to make your move.\n\n"
+        "Where do YOU rank? {leaderboard_url}"
     ),
     (
-        "🏆 LEADERS OF THE LEADERBOARDS 🏆\n\n"
-        "🔥 HOLOCACHE RACE 🔥\n\n"
-        "🥇 {top1_name} — {top1_points} pts\n\n"
-        "Can YOU take the lead?\n\n"
-        "🗺️ Hunt the Holocaches.\n"
-        "⏱️ Beat the clock.\n"
-        "🏃💨 Pass the pack.\n\n"
-        "Climb higher. Run faster. Own your place!\n\n"
-        "⏳ {days_remaining} days left!\n\n"
-        "🔥 The leaderboard is yours to conquer! 🔥"
+        "⚡ POSITIONS ARE SHIFTING ⚡\n\n"
+        "🥇 {top1_name} — {top1_points}\n"
+        "🥈 {top2_name} — {top2_points}\n"
+        "🥉 {top3_name} — {top3_points}\n\n"
+        "Nobody's safe. Every point matters.\n\n"
+        "{days_remaining} days to change your fate.\n\n"
+        "{leaderboard_url}"
     ),
 ]
 
@@ -239,9 +257,9 @@ FINAL_DAY_BOILERPLATE = [
     (
         "🏆 LEADERS OF THE LEADERBOARDS 🏆\n\n"
         "🔥 FINAL STRETCH. FULL SEND. 🔥\n\n"
-        "The leaders are holding strong—but the race isn't over!\n\n"
+        "Leaders holding strong—but the race isn't over!\n\n"
         "📊 {leaderboard_url}\n\n"
-        "⏳ {days_remaining} days remain!\n\n"
+        "⏳ Less than {hours_remaining}h remain!\n\n"
         "🥇 {top1_name} — {top1_points}\n"
         "🥈 {top2_name} — {top2_points}\n"
         "🥉 {top3_name} — {top3_points}\n\n"
@@ -252,7 +270,7 @@ FINAL_DAY_BOILERPLATE = [
         "🔥 FINAL STRETCH! 🔥\n"
         "The leaders are holding—but the race isn't over!\n\n"
         "📊 {leaderboard_url}\n\n"
-        "⏳ {days_remaining} days left!\n"
+        "⏳ Less than {hours_remaining} hours left!\n"
         "🥇 {top1_name} — {top1_points}\n"
         "🥈 {top2_name} — {top2_points}\n"
         "🥉 {top3_name} — {top3_points}\n\n"
@@ -263,7 +281,7 @@ FINAL_DAY_BOILERPLATE = [
         "🔥 THE CHASE IS ON! 🔥\n\n"
         "The top spots are locked in—but who's coming for them?\n\n"
         "📊 {leaderboard_url}\n\n"
-        "⏳ {days_remaining} days to shake things up!\n\n"
+        "⏳ Less than {hours_remaining}h to shake things up!\n\n"
         "🥇 {top1_name} — {top1_points}\n"
         "🥈 {top2_name} — {top2_points}\n"
         "🥉 {top3_name} — {top3_points}\n\n"
@@ -386,27 +404,37 @@ WINNERS_ANNOUNCEMENT = [
 ]
 
 # ---------------------------------------------------------------------
-# 6. Thank you / next competition -- single post, day after winners.
-#    Placeholder: next_competition_date (computed dynamically -- see
-#    poster.py -- NOT hardcoded "3rd Sunday" like the original draft,
-#    since the real rule is now 2nd Sunday of the month)
+# 6. Monday follow-up posts (day after winners) -- replaces the old
+#    single "Thank You" post with two, per the request for more
+#    Monday activity than Sunday.
+#
+# 6a. Winner stats fanfare -- fires 14:30 UTC. Deliberately avoids
+#     claiming the winner finished #1 on any specific board (they may
+#     have won purely on accumulated points across many boards without
+#     ever taking an individual #1) -- so this only cites how many
+#     boards they placed on and their total points, which is always
+#     well-defined.
+#     Placeholders: winner_name, winner_board_count, winner_points
+#
+# 6b. Monthly continuation -- fires 16:30 UTC, no leaderboard data at
+#     all, no screenshot. Placeholder: next_competition_date (computed
+#     dynamically -- see poster.py -- NOT hardcoded "3rd Sunday" like
+#     the original draft, since the real rule is now 2nd Sunday)
 # ---------------------------------------------------------------------
-THANK_YOU = [
-    (
-        "🏆 THE CHAMPION HAS RISEN! 🏆\n\n"
-        "LEADERS OF THE LEADERBOARDS has come to an end—but the battle isn't over!\n\n"
-        "Thanks to everyone who competed.\n\n"
-        "NEXT COMPETITION: {next_competition_date}\n\n"
-        "Racing • HoloCache • AeroTrails\n\n"
-        "Will YOU claim the top spot?"
-    ),
-    (
-        "🏆 THE FINAL RANKINGS ARE SET! 🏆\n\n"
-        "One Champion now stands at the top!\n\n"
-        "THANK YOU to every competitor who joined the fight.\n\n"
-        "But the leaderboards won't stay quiet for long...\n\n"
-        "NEXT COMPETITION: {next_competition_date}\n\n"
-        "Racing • HoloCache • AeroTrails\n\n"
-        "Will you rise?"
-    ),
-]
+MONDAY_WINNER_STATS = (
+    "🏆 ONE MORE TIME FOR THE CHAMPION! 🏆\n\n"
+    "{winner_name} landed on {winner_board_count} leaderboards for a "
+    "total of {winner_points} points!!!\n\n"
+    "What an amazing effort!!! 🎉🎉🎉\n\n"
+    "Thank you to every single racer, flyer, and hunter who showed up "
+    "this week. Leaders of the Leaderboards wouldn't exist without you."
+)
+
+MONDAY_CONTINUATION = (
+    "🏆 THE LEADERBOARDS NEVER SLEEP 🏆\n\n"
+    "RISE Underground is excited to keep hosting Leaders of the "
+    "Leaderboards every month, for as long as Infinity Rising exists.\n\n"
+    "Get your practice in.\n\n"
+    "The countdown to next month's competition has begun.\n\n"
+    "NEXT COMPETITION: {next_competition_date}"
+)

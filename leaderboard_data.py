@@ -44,6 +44,26 @@ def load_standings(csv_path=PLACEMENTS_CSV):
     return standings
 
 
+def board_count_for_player(player_name, csv_path=PLACEMENTS_CSV):
+    """Returns how many distinct boards a player placed on -- used for
+    the Monday winner-stats post ('landed on N leaderboards'). Counts
+    distinct board names, not total placement rows, so a player with
+    duplicate rows for the same board (shouldn't normally happen, but
+    defensively) isn't double-counted."""
+    if not os.path.exists(csv_path):
+        return 0
+
+    boards = set()
+    with open(csv_path, newline="", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            if row.get("player", "").strip() == player_name:
+                board = row.get("board", "").strip()
+                if board:
+                    boards.add(board)
+    return len(boards)
+
+
 def top_n(standings, n=3):
     """Returns the top N as a flat dict ready for str.format(), e.g.
     top1_name, top1_points, top2_name, top2_points, ... Missing ranks

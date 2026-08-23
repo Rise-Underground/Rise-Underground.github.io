@@ -19,8 +19,15 @@ Requires environment variables (GitHub Actions repository secrets):
 
 import argparse
 import json
+import math
 import os
+import sys
 from datetime import datetime, timezone, timedelta
+
+# Windows' console defaults to cp1252, which can't print emoji -- force
+# UTF-8 so the tweet text (all the 🔥🏆🥇 etc.) doesn't crash on print,
+# especially when output is redirected to a file (> results.txt).
+sys.stdout.reconfigure(encoding="utf-8")
 
 import tweepy
 
@@ -35,11 +42,13 @@ LEADERBOARD_URL = "https://rise-underground.github.io/index.html"
 # ---------------------------------------------------------------------
 # Schedule (all times UTC)
 # ---------------------------------------------------------------------
-COUNTDOWN_HOUR = 16
-UPDATE_HOURS = [14, 20]          # twice a day, days 1-6
-FINAL_DAY_HOURS = [8, 11, 14, 17, 20]   # 5 posts on the final day
-WINNERS_HOUR = 15                # day after competition ends
-THANKYOU_HOUR = 15               # two days after competition ends
+COUNTDOWN_TIME = (16, 0)
+FINAL_COUNTDOWN_TIME = (22, 0)   # once, evening of the day before start (Sep 12)
+UPDATE_TIMES = [(14, 0), (20, 0)]          # twice a day, days 1-6
+FINAL_DAY_TIMES = [(8, 0), (11, 0), (14, 0), (17, 0), (20, 0)]   # 5 posts on the final day
+WINNERS_TIME = (15, 0)                     # day after competition ends
+MONDAY_WINNER_STATS_TIME = (15, 0)         # winner stats fanfare (rounded from 14:30)
+MONDAY_CONTINUATION_TIME = (17, 0)         # monthly-continuation post (rounded from 16:30)
 
 
 def load_state():
@@ -128,7 +137,9 @@ def format_next_competition_date(now):
     used for the Thank You template's {next_competition_date} -- dynamic,
     not the hardcoded '3rd Sunday' text from the original draft."""
     start, _ = compute_competition_window(now)
-    return start.strftime("%A, %B %-d, %Y")
+    # Note: "%-d" (no leading zero) is Linux/Mac-only and crashes on
+    # Windows -- build the day number manually instead for portability.
+    return f"{start.strftime('%A, %B')} {start.day}, {start.strftime('%Y')}"
 
 
 def main():
@@ -168,19 +179,33 @@ def main():
 
     final_day_date = end.date()
     winners_date = most_recent_end.date() + timedelta(days=1)
-    thankyou_date = most_recent_end.date() + timedelta(days=2)
+    monday_date = most_recent_end.date() + timedelta(days=2)   # winner stats + continuation
 
     post_id = None
     text = None
     image_path = None
 
+    now_hm = (now.hour, now.minute)
+
     # ---------------- Countdown phase ----------------
     if one_week_before <= now < start:
         days_remaining = (start.date() - now.date()).days
-        if days_remaining in templates.COUNTDOWN and now.hour == COUNTDOWN_HOUR:
+
+        if days_remaining in templates.COUNTDOWN and now_hm == COUNTDOWN_TIME:
             post_id = f"countdown_day{days_remaining}"
             if post_id not in state["posted_ids"]:
-                text = templates.COUNTDOWN[days_remaining]
+                text = templates.COUNTDOWN[days_remaining].format(leaderboard_url=LEADERBOARD_URL)
+
+        elif days_remaining == 1 and now_hm == FINAL_COUNTDOWN_TIME:
+            post_id = "final_countdown"
+            if post_id not in state["posted_ids"]:
+                diff_seconds = int((start - now).total_seconds())
+                text = templates.FINAL_COUNTDOWN.format(
+                    leaderboard_url=LEADERBOARD_URL,
+                    hours_remaining=diff_seconds // 3600,
+                    minutes_remaining=(diff_seconds % 3600) // 60,
+                    seconds_remaining=diff_seconds % 60,
+                )
 
     # ---------------- Competition opens (once, right at start) ----------------
     elif now >= start and now < start + timedelta(hours=1) and "competition_opens" not in state["posted_ids"]:
@@ -189,8 +214,8 @@ def main():
 
     # ---------------- Live update days (1-6) ----------------
     elif start <= now < datetime.combine(final_day_date, datetime.min.time(), tzinfo=timezone.utc):
-        if now.hour in UPDATE_HOURS:
-            slot_index = UPDATE_HOURS.index(now.hour)
+        if now_hm in UPDATE_TIMES:
+            slot_index = UPDATE_TIMES.index(now_hm)
             post_id = f"update_{now.date().isoformat()}_{slot_index}"
             if post_id not in state["posted_ids"]:
                 standings = leaderboard_data.load_standings()
@@ -200,20 +225,23 @@ def main():
                 data["leaderboard_url"] = LEADERBOARD_URL
                 idx = next_rotation_index(state, "leaderboard_update", len(templates.LEADERBOARD_UPDATES))
                 text = templates.LEADERBOARD_UPDATES[idx].format(**data)
+                image_path = "leaderboard_screenshot.png"
+                if not capture_standings_screenshot(image_path):
+                    image_path = None
 
     # ---------------- Final day (5 posts, boilerplate or movement) ----------------
     elif now.date() == final_day_date and now <= end:
-        if now.hour in FINAL_DAY_HOURS:
-            slot_index = FINAL_DAY_HOURS.index(now.hour)
+        if now_hm in FINAL_DAY_TIMES:
+            slot_index = FINAL_DAY_TIMES.index(now_hm)
             post_id = f"finalday_{slot_index}"
             if post_id not in state["posted_ids"]:
                 standings = leaderboard_data.load_standings()
                 prev_snapshot = leaderboard_data.load_snapshot()
                 movement = leaderboard_data.detect_movement(prev_snapshot, standings)
 
-                days_remaining = max((end.date() - now.date()).days, 0)
+                hours_remaining = max(1, math.ceil((end - now).total_seconds() / 3600))
                 data = leaderboard_data.top_n(standings, 3)
-                data["days_remaining"] = days_remaining
+                data["hours_remaining"] = hours_remaining
                 data["leaderboard_url"] = LEADERBOARD_URL
 
                 if movement is None:
@@ -235,7 +263,7 @@ def main():
                     image_path = None
 
     # ---------------- Winners announcement (day after end) ----------------
-    elif now.date() == winners_date and now.hour == WINNERS_HOUR and "winners" not in state["posted_ids"]:
+    elif now.date() == winners_date and now_hm == WINNERS_TIME and "winners" not in state["posted_ids"]:
         post_id = "winners"
         standings = leaderboard_data.load_standings()
         if len(standings) >= 1:
@@ -253,12 +281,29 @@ def main():
         else:
             print("No standings data available -- skipping winners announcement.")
 
-    # ---------------- Thank you / next competition (2 days after end) ----------------
-    elif now.date() == thankyou_date and now.hour == THANKYOU_HOUR and "thankyou" not in state["posted_ids"]:
-        post_id = "thankyou"
+    # ---------------- Monday: winner stats fanfare (14:30 UTC) ----------------
+    elif now.date() == monday_date and now_hm == MONDAY_WINNER_STATS_TIME and "monday_winner_stats" not in state["posted_ids"]:
+        post_id = "monday_winner_stats"
+        standings = leaderboard_data.load_standings()
+        if len(standings) >= 1:
+            board_count = leaderboard_data.board_count_for_player(standings[0]["name"])
+            data = {
+                "winner_name": standings[0]["name"],
+                "winner_points": standings[0]["points"],
+                "winner_board_count": board_count,
+            }
+            text = templates.MONDAY_WINNER_STATS.format(**data)
+            image_path = "leaderboard_screenshot.png"
+            if not capture_standings_screenshot(image_path):
+                image_path = None
+        else:
+            print("No standings data available -- skipping Monday winner stats post.")
+
+    # ---------------- Monday: monthly continuation (16:30 UTC, no image) ----------------
+    elif now.date() == monday_date and now_hm == MONDAY_CONTINUATION_TIME and "monday_continuation" not in state["posted_ids"]:
+        post_id = "monday_continuation"
         next_date_str = format_next_competition_date(now)
-        idx = next_rotation_index(state, "thankyou", len(templates.THANK_YOU))
-        text = templates.THANK_YOU[idx].format(next_competition_date=next_date_str)
+        text = templates.MONDAY_CONTINUATION.format(next_competition_date=next_date_str)
 
     # ---------------- Nothing scheduled this run ----------------
     if text is None:
