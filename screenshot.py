@@ -33,7 +33,7 @@ def capture_standings_screenshot(out_path="leaderboard_screenshot.png", url=LEAD
     with sync_playwright() as p:
         browser = p.chromium.launch()
         try:
-            page = browser.new_page(viewport={"width": 900, "height": 1000})
+            page = browser.new_page(viewport={"width": 900, "height": 2200})
             page.goto(url, wait_until="networkidle", timeout=timeout_ms)
 
             try:
