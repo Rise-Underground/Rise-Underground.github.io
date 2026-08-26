@@ -115,9 +115,6 @@
   .nft-page{padding:28px 32px 60px;max-width:1400px;margin:0 auto;}
   .nft-top-row{display:grid;grid-template-columns:340px 340px 340px 340px;gap:24px;margin-bottom:28px;justify-content:center;}
   @media (max-width:1500px){.nft-top-row{grid-template-columns:1fr;justify-content:stretch;}}
-  .nft-progress-note{
-    font-family:var(--font-mono);font-size:11.5px;color:var(--dimmer);text-align:center;margin:-16px 0 28px;
-  }
   .nft-card-block{margin-bottom:44px;}
   .nft-card-title-row{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:4px;}
   .nft-card-title{
@@ -205,6 +202,32 @@
   .nft-stat-row .tier{color:var(--dim);}
   .nft-stat-row .val{color:var(--text);}
   .nft-stat-row .exp{color:var(--dimmer);font-size:10.5px;}
+
+  /* ---------- recent mints ticker ---------- */
+  .recent-mints-ticker{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:14px 18px;margin-bottom:28px;overflow-x:auto;
+    display:flex;gap:22px;align-items:center;
+  }
+  .recent-mints-ticker::-webkit-scrollbar{height:6px;}
+  .recent-mints-ticker::-webkit-scrollbar-thumb{background:var(--line);border-radius:3px;}
+  .recent-mint-entry{
+    display:flex;align-items:center;gap:8px;flex-shrink:0;
+    font-family:var(--font-mono);font-size:12px;color:var(--text);white-space:nowrap;
+  }
+  .recent-mint-rank{color:var(--dimmer);font-size:11px;}
+  .recent-mint-thumb{
+    width:28px;height:28px;border-radius:5px;object-fit:cover;
+    border:1px solid var(--line);background:var(--panel-2);flex-shrink:0;
+  }
+  .recent-mint-thumb-empty{
+    width:28px;height:28px;border-radius:5px;border:1px dashed var(--line);
+    background:var(--panel-2);flex-shrink:0;
+  }
+  .recent-mint-name{max-width:220px;overflow:hidden;text-overflow:ellipsis;}
+  .recent-mint-chain{font-size:10px;text-transform:uppercase;letter-spacing:0.5px;}
+  .recent-mint-chain.ada{color:var(--ada-chain);}
+  .recent-mint-chain.base{color:var(--base-chain);}
 </style>
 </head>
 <body>
@@ -227,7 +250,7 @@
     <input type="text" class="nft-search-input" id="nftSearchInput" placeholder="Find an NFT by name&hellip;" autocomplete="off">
     <div class="nft-search-results" id="nftSearchResults"></div>
   </div>
-  <div class="nft-progress-note" id="nftProgressNote"></div>
+  <div class="recent-mints-ticker" id="nftRecentMintsTicker"></div>
   <div class="top-mints-panel" id="nftTopMintsHeader"></div>
   <div id="nftCardsContainer"></div>
   <div class="empty-state" id="nftEmptyState">
@@ -288,21 +311,22 @@ async function loadOpenMintKeys(){
 async function loadNftItems(){
   try {
     const res = await fetch(FILES.nftData);
-    if (!res.ok) return { items: [], bundleSummaries: {} };
+    if (!res.ok) return { items: [], bundleSummaries: {}, recentMints: [] };
     const data = await res.json();
     const items = Array.isArray(data.items) ? data.items : [];
+    const recentMints = Array.isArray(data.recent_mints) ? data.recent_mints : [];
     const bundleSummaries = {};
     (Array.isArray(data.bundle_summaries) ? data.bundle_summaries : []).forEach(b => {
       bundleSummaries[b.name] = b;
     });
-    return { items, bundleSummaries };
+    return { items, bundleSummaries, recentMints };
   } catch (e) {
-    return { items: [], bundleSummaries: {} };
+    return { items: [], bundleSummaries: {}, recentMints: [] };
   }
 }
 
 async function init(){
-  const [{ items, bundleSummaries }, openKeys] = await Promise.all([loadNftItems(), loadOpenMintKeys()]);
+  const [{ items, bundleSummaries, recentMints }, openKeys] = await Promise.all([loadNftItems(), loadOpenMintKeys()]);
   NFT_ITEMS = (openKeys.size > 0) ? items.filter(it => openKeys.has(it.key)) : items;
   // else: nft_mint_status.csv missing/empty -- show everything rather than an empty page
 
@@ -316,14 +340,12 @@ async function init(){
     .map(x => x.it);
 
   BUNDLE_SUMMARIES = bundleSummaries;
+  renderRecentMintsTicker(recentMints);
   renderNftPage();
   initNftSearch();
 }
 
 function renderNftPage(){
-  const note = document.getElementById('nftProgressNote');
-  note.textContent = `${NFT_ITEMS.length} collection${NFT_ITEMS.length === 1 ? '' : 's'} loaded`;
-
   if (NFT_ITEMS.length === 0){
     document.getElementById('nftEmptyState').style.display = '';
     document.getElementById('nftCardsContainer').innerHTML = '';
@@ -418,7 +440,6 @@ function renderBundleSummary(bundleName){
 function bundleMemberCardHtml(key){
   return `
   <div class="bundle-member-block" id="cardblock-${key}">
-    <div class="bundle-member-mint-time" id="minttime-${key}" style="display:none;"></div>
     <div class="bundle-member-layout">
       <div class="bundle-member-image-col">
         <div class="bundle-member-title-row">
@@ -463,7 +484,6 @@ function cardHtml(key){
       <span class="nft-card-title" id="title-${key}">Loading&hellip;</span>
       <a class="mint-now-btn" id="mintnow-${key}" href="#" target="_blank" rel="noopener" style="display:none;">Mint Now</a>
     </div>
-    <div class="nft-card-mint-time" id="minttime-${key}"></div>
     <div class="nft-top-row">
       <div class="meter-panel image-panel">
         <div class="panel-head meter-panel-head"></div>
@@ -495,11 +515,45 @@ function cardHtml(key){
   </div>`;
 }
 
-function formatMintTime(iso){
-  if (!iso) return 'Most recent mint: unknown';
-  const d = new Date(iso);
-  if (isNaN(d.getTime())) return 'Most recent mint: unknown';
-  return `Most recent mint: ${d.toLocaleDateString(undefined, { year:'numeric', month:'short', day:'numeric' })}`;
+function renderRecentMintsTicker(recentMints){
+  const el = document.getElementById('nftRecentMintsTicker');
+  if (!recentMints || recentMints.length === 0){
+    el.style.display = 'none';
+    el.innerHTML = '';
+    return;
+  }
+  el.style.display = '';
+  el.innerHTML = recentMints.map((m, i) => `
+    <div class="recent-mint-entry">
+      <span class="recent-mint-rank">${i + 1}.</span>
+      <img class="recent-mint-thumb" id="mintthumb-${i}" style="display:none;" alt="">
+      <div class="recent-mint-thumb-empty" id="mintthumbEmpty-${i}"></div>
+      <span class="recent-mint-name">${escapeHtml(m.name)}</span>
+      <span class="recent-mint-chain ${m.chain === 'base' ? 'base' : 'ada'}">${m.chain === 'base' ? 'BASE' : 'ADA'}</span>
+    </div>`).join('');
+
+  recentMints.forEach((m, i) => {
+    const imgEl = document.getElementById(`mintthumb-${i}`);
+    const emptyEl = document.getElementById(`mintthumbEmpty-${i}`);
+    if (!m.image){
+      imgEl.style.display = 'none';
+      emptyEl.style.display = '';
+      return;
+    }
+    const cid = ipfsCid(m.image);
+    let gatewayIndex = 0;
+    imgEl.onload = () => { imgEl.style.display = ''; emptyEl.style.display = 'none'; };
+    imgEl.onerror = () => {
+      if (cid && gatewayIndex < IPFS_GATEWAYS.length - 1){
+        gatewayIndex++;
+        imgEl.src = ipfsToHttp(m.image, gatewayIndex);
+      } else {
+        imgEl.style.display = 'none';
+        emptyEl.style.display = '';
+      }
+    };
+    imgEl.src = ipfsToHttp(m.image, gatewayIndex);
+  });
 }
 
 function renderTopMintsHeader(items){
@@ -557,7 +611,6 @@ function ipfsToHttp(url, gatewayIndex){
 function renderNftCard(item){
   const key = item.key;
   document.getElementById(`title-${key}`).textContent = item.name;
-  document.getElementById(`minttime-${key}`).textContent = formatMintTime(item.latest_mint_time);
 
   const mintNowEl = document.getElementById(`mintnow-${key}`);
   if (mintNowEl){
