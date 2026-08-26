@@ -1,51 +1,345 @@
 {
-  "komaru_defense_tiger_m9": "komaru_defense_tiger_m9.jpg",
-  "asuna_armoury_mordred_mk_ii": "asuna_armoury_mordred_mk_ii.jpg",
-  "borne_lee_p99": "borne_lee_p99.jpg",
-  "borne_lee_pr1": "borne_lee_pr1.png",
-  "ravenx_cloudangel": "ravenx_cloudangel.png",
-  "ravenx_skyangel": "ravenx_skyangel.png",
-  "mellowave_marino_sandals": "mellowave_marino_sandals.png",
-  "mellowave_marino_swim_shorts": "mellowave_marino_swim_shorts.png",
-  "hyperwear_marino_sunglasses": "hyperwear_marino_sunglasses.png",
-  "mellowave_solara_sandals": "mellowave_solara_sandals.png",
-  "mellowave_solara_bikini": "mellowave_solara_bikini.png",
-  "hyperwear_solara_sunglasses": "hyperwear_solara_sunglasses.png",
-  "bubblejett_prima_1938": "bubblejett_prima_1938.png",
-  "core_dynamics_spaceworx": "core_dynamics_spaceworx.png",
-  "gti_canyon_2026": "gti_canyon_2026.png",
-  "core_dynamics_cdx_9_blackline": "core_dynamics_cdx_9_blackline.png",
-  "hyperwear_flux_runner_head_band": "hyperwear_flux_runner_head_band.png",
-  "hyperwear_flux_runner_outfit": "hyperwear_flux_runner_outfit.png",
-  "hyperwear_shoes": "hyperwear_shoes.png",
-  "jett_industries_aeron_ai_drone_companion": "jett_industries_aeron_ai_drone_companion.png",
-  "jett_industries_elita_ai_drone_companion": "jett_industries_elita_ai_drone_companion.png",
-  "kazekura_kiko_drone_companion": "kazekura_kiko_drone_companion.png",
-  "luna_di_lusso_bloom_backpack": "luna_di_lusso_bloom_backpack.png",
-  "raven_x_heavenfall_armor": "raven_x_heavenfall_armor.png",
-  "raven_x_heavenfall_battle_heels": "raven_x_heavenfall_battle_heels.png",
-  "raven_x_heavenfall_helmet": "raven_x_heavenfall_helmet.png",
-  "ren_wear_auralis_bloom_boots": "ren_wear_auralis_bloom_boots.png",
-  "ren_wear_auralis_bloom_head_piece": "ren_wear_auralis_bloom_head_piece.png",
-  "ren_wear_auralis_bloom_outfit": "ren_wear_auralis_bloom_outfit.png",
-  "revolt_underground_outfit": "revolt_underground_outfit.png",
-  "revolt_renegade_goggles": "revolt_renegade_goggles.png",
-  "revolt_renegade_the_dissident": "revolt_renegade_the_dissident.png",
-  "revolt_underground_shoes": "revolt_underground_shoes.png",
-  "revolt_renegade_shoes": "revolt_renegade_shoes.png",
-  "revolt_renegade_outfit": "revolt_renegade_outfit.png",
-  "revolt_underground_ras_9": "revolt_underground_ras_9.png",
-  "revolt_underground_hood": "revolt_underground_hood.png",
-  "revolt_underground_rigger_s_revolt": "revolt_underground_rigger_s_revolt.png",
-  "revolt_renegade_rebel_s_rucksack": "revolt_renegade_rebel_s_rucksack.png",
-  "revolt_renegade_rebel_s_reach": "revolt_renegade_rebel_s_reach.png",
-  "rando_s_metalworks_the_instigator": "rando_s_metalworks_the_instigator.png",
-  "black_vector_research_xr_7b_1991": "black_vector_research_xr_7b_1991.png",
-  "core_dynamics_hoss_08_boots": "core_dynamics_hoss_08_boots.png",
-  "core_dynamics_hoss_08_heavy_armor": "core_dynamics_hoss_08_heavy_armor.png",
-  "core_dynamics_hoss_08_helmet": "core_dynamics_hoss_08_helmet.png",
-  "core_dynamics_mars_9": "core_dynamics_mars_9.png",
-  "raven_x_c07_helmet": "raven_x_c07_helmet.png",
-  "raven_x_c07_shoes": "raven_x_c07_shoes.png",
-  "raven_x_c07_suit": "raven_x_c07_suit.png"
+  "komaru_defense_tiger_m9": {
+    "Uncommon": "komaru_defense_tiger_m9_uncommon.jpg",
+    "Common": "komaru_defense_tiger_m9_common.jpg",
+    "Rare": "komaru_defense_tiger_m9_rare.jpg",
+    "Legendary": "komaru_defense_tiger_m9_legendary.jpg",
+    "Mythic": "komaru_defense_tiger_m9_mythic.jpg"
+  },
+  "asuna_armoury_mordred_mk_ii": {
+    "Common": "asuna_armoury_mordred_mk_ii_common.jpg",
+    "Rare": "asuna_armoury_mordred_mk_ii_rare.jpg",
+    "Mythic": "asuna_armoury_mordred_mk_ii_mythic.jpg",
+    "Uncommon": "asuna_armoury_mordred_mk_ii_uncommon.jpg",
+    "Legendary": "asuna_armoury_mordred_mk_ii_legendary.jpg"
+  },
+  "borne_lee_p99": {
+    "Uncommon": "borne_lee_p99_uncommon.jpg",
+    "Rare": "borne_lee_p99_rare.jpg",
+    "Common": "borne_lee_p99_common.jpg",
+    "Legendary": "borne_lee_p99_legendary.jpg",
+    "Mythic": "borne_lee_p99_mythic.jpg"
+  },
+  "borne_lee_pr1": {
+    "Uncommon": "borne_lee_pr1_uncommon.png",
+    "Common": "borne_lee_pr1_common.png",
+    "Rare": "borne_lee_pr1_rare.png",
+    "Legendary": "borne_lee_pr1_legendary.png",
+    "Mythic": "borne_lee_pr1_mythic.png"
+  },
+  "ravenx_cloudangel": {
+    "Rare": "ravenx_cloudangel_rare.png",
+    "Common": "ravenx_cloudangel_common.png",
+    "Uncommon": "ravenx_cloudangel_uncommon.png",
+    "Legendary": "ravenx_cloudangel_legendary.png",
+    "Mythic": "ravenx_cloudangel_mythic.png"
+  },
+  "ravenx_skyangel": {
+    "Common": "ravenx_skyangel_common.png",
+    "Uncommon": "ravenx_skyangel_uncommon.png",
+    "Legendary": "ravenx_skyangel_legendary.png",
+    "Rare": "ravenx_skyangel_rare.png",
+    "Mythic": "ravenx_skyangel_mythic.png"
+  },
+  "mellowave_marino_sandals": {
+    "Rare": "mellowave_marino_sandals_rare.png",
+    "Common": "mellowave_marino_sandals_common.png",
+    "Uncommon": "mellowave_marino_sandals_uncommon.png",
+    "Legendary": "mellowave_marino_sandals_legendary.png",
+    "Mythic": "mellowave_marino_sandals_mythic.png"
+  },
+  "mellowave_marino_swim_shorts": {
+    "Uncommon": "mellowave_marino_swim_shorts_uncommon.png",
+    "Legendary": "mellowave_marino_swim_shorts_legendary.png",
+    "Common": "mellowave_marino_swim_shorts_common.png",
+    "Rare": "mellowave_marino_swim_shorts_rare.png",
+    "Mythic": "mellowave_marino_swim_shorts_mythic.png"
+  },
+  "hyperwear_marino_sunglasses": {
+    "Rare": "hyperwear_marino_sunglasses_rare.png",
+    "Uncommon": "hyperwear_marino_sunglasses_uncommon.png",
+    "Legendary": "hyperwear_marino_sunglasses_legendary.png",
+    "Common": "hyperwear_marino_sunglasses_common.png",
+    "Mythic": "hyperwear_marino_sunglasses_mythic.png"
+  },
+  "mellowave_solara_sandals": {
+    "Mythic": "mellowave_solara_sandals_mythic.png",
+    "Common": "mellowave_solara_sandals_common.png",
+    "Rare": "mellowave_solara_sandals_rare.png",
+    "Uncommon": "mellowave_solara_sandals_uncommon.png",
+    "Legendary": "mellowave_solara_sandals_legendary.png"
+  },
+  "mellowave_solara_bikini": {
+    "Uncommon": "mellowave_solara_bikini_uncommon.png",
+    "Common": "mellowave_solara_bikini_common.png",
+    "Legendary": "mellowave_solara_bikini_legendary.png",
+    "Rare": "mellowave_solara_bikini_rare.png",
+    "Mythic": "mellowave_solara_bikini_mythic.png"
+  },
+  "hyperwear_solara_sunglasses": {
+    "Common": "hyperwear_solara_sunglasses_common.png",
+    "Rare": "hyperwear_solara_sunglasses_rare.png",
+    "Uncommon": "hyperwear_solara_sunglasses_uncommon.png",
+    "Legendary": "hyperwear_solara_sunglasses_legendary.png",
+    "Mythic": "hyperwear_solara_sunglasses_mythic.png"
+  },
+  "bubblejett_prima_1938": {
+    "Common": "bubblejett_prima_1938_common.png",
+    "Uncommon": "bubblejett_prima_1938_uncommon.png",
+    "Legendary": "bubblejett_prima_1938_legendary.png",
+    "Mythic": "bubblejett_prima_1938_mythic.png",
+    "Rare": "bubblejett_prima_1938_rare.png"
+  },
+  "core_dynamics_spaceworx": {
+    "Legendary": "core_dynamics_spaceworx_legendary.png",
+    "Common": "core_dynamics_spaceworx_common.png",
+    "Uncommon": "core_dynamics_spaceworx_uncommon.png",
+    "Rare": "core_dynamics_spaceworx_rare.png",
+    "Mythic": "core_dynamics_spaceworx_mythic.png"
+  },
+  "gti_canyon_2026": {
+    "Uncommon": "gti_canyon_2026_uncommon.png",
+    "Common": "gti_canyon_2026_common.png",
+    "Legendary": "gti_canyon_2026_legendary.png",
+    "Rare": "gti_canyon_2026_rare.png",
+    "Mythic": "gti_canyon_2026_mythic.png"
+  },
+  "core_dynamics_cdx_9_blackline": {
+    "Common": "core_dynamics_cdx_9_blackline_common.png",
+    "Uncommon": "core_dynamics_cdx_9_blackline_uncommon.png",
+    "Rare": "core_dynamics_cdx_9_blackline_rare.png",
+    "Legendary": "core_dynamics_cdx_9_blackline_legendary.png",
+    "Mythic": "core_dynamics_cdx_9_blackline_mythic.png"
+  },
+  "hyperwear_flux_runner_head_band": {
+    "Legendary": "hyperwear_flux_runner_head_band_legendary.png",
+    "Common": "hyperwear_flux_runner_head_band_common.png",
+    "Uncommon": "hyperwear_flux_runner_head_band_uncommon.png",
+    "Rare": "hyperwear_flux_runner_head_band_rare.png",
+    "Mythic": "hyperwear_flux_runner_head_band_mythic.png"
+  },
+  "hyperwear_flux_runner_outfit": {
+    "Uncommon": "hyperwear_flux_runner_outfit_uncommon.png",
+    "Common": "hyperwear_flux_runner_outfit_common.png",
+    "Rare": "hyperwear_flux_runner_outfit_rare.png",
+    "Legendary": "hyperwear_flux_runner_outfit_legendary.png",
+    "Mythic": "hyperwear_flux_runner_outfit_mythic.png"
+  },
+  "hyperwear_shoes": {
+    "Uncommon": "hyperwear_shoes_uncommon.png",
+    "Common": "hyperwear_shoes_common.png",
+    "Rare": "hyperwear_shoes_rare.png",
+    "Legendary": "hyperwear_shoes_legendary.png",
+    "Mythic": "hyperwear_shoes_mythic.png"
+  },
+  "jett_industries_aeron_ai_drone_companion": {
+    "Uncommon": "jett_industries_aeron_ai_drone_companion_uncommon.png",
+    "Common": "jett_industries_aeron_ai_drone_companion_common.png",
+    "Rare": "jett_industries_aeron_ai_drone_companion_rare.png",
+    "Legendary": "jett_industries_aeron_ai_drone_companion_legendary.png",
+    "Mythic": "jett_industries_aeron_ai_drone_companion_mythic.png"
+  },
+  "jett_industries_elita_ai_drone_companion": {
+    "Uncommon": "jett_industries_elita_ai_drone_companion_uncommon.png",
+    "Common": "jett_industries_elita_ai_drone_companion_common.png",
+    "Legendary": "jett_industries_elita_ai_drone_companion_legendary.png",
+    "Rare": "jett_industries_elita_ai_drone_companion_rare.png",
+    "Mythic": "jett_industries_elita_ai_drone_companion_mythic.png"
+  },
+  "kazekura_kiko_drone_companion": {
+    "Uncommon": "kazekura_kiko_drone_companion_uncommon.png",
+    "Common": "kazekura_kiko_drone_companion_common.png",
+    "Rare": "kazekura_kiko_drone_companion_rare.png",
+    "Mythic": "kazekura_kiko_drone_companion_mythic.png",
+    "Legendary": "kazekura_kiko_drone_companion_legendary.png"
+  },
+  "luna_di_lusso_bloom_backpack": {
+    "Uncommon": "luna_di_lusso_bloom_backpack_uncommon.png",
+    "Rare": "luna_di_lusso_bloom_backpack_rare.png",
+    "Common": "luna_di_lusso_bloom_backpack_common.png",
+    "Legendary": "luna_di_lusso_bloom_backpack_legendary.png",
+    "Mythic": "luna_di_lusso_bloom_backpack_mythic.png"
+  },
+  "raven_x_heavenfall_armor": {
+    "Common": "raven_x_heavenfall_armor_common.png",
+    "Uncommon": "raven_x_heavenfall_armor_uncommon.png",
+    "Rare": "raven_x_heavenfall_armor_rare.png",
+    "Legendary": "raven_x_heavenfall_armor_legendary.png",
+    "Mythic": "raven_x_heavenfall_armor_mythic.png"
+  },
+  "raven_x_heavenfall_battle_heels": {
+    "Common": "raven_x_heavenfall_battle_heels_common.png",
+    "Mythic": "raven_x_heavenfall_battle_heels_mythic.png",
+    "Legendary": "raven_x_heavenfall_battle_heels_legendary.png",
+    "Uncommon": "raven_x_heavenfall_battle_heels_uncommon.png",
+    "Rare": "raven_x_heavenfall_battle_heels_rare.png"
+  },
+  "raven_x_heavenfall_helmet": {
+    "Common": "raven_x_heavenfall_helmet_common.png",
+    "Rare": "raven_x_heavenfall_helmet_rare.png",
+    "Uncommon": "raven_x_heavenfall_helmet_uncommon.png",
+    "Legendary": "raven_x_heavenfall_helmet_legendary.png",
+    "Mythic": "raven_x_heavenfall_helmet_mythic.png"
+  },
+  "ren_wear_auralis_bloom_boots": {
+    "Common": "ren_wear_auralis_bloom_boots_common.png",
+    "Uncommon": "ren_wear_auralis_bloom_boots_uncommon.png",
+    "Legendary": "ren_wear_auralis_bloom_boots_legendary.png",
+    "Rare": "ren_wear_auralis_bloom_boots_rare.png",
+    "Mythic": "ren_wear_auralis_bloom_boots_mythic.png"
+  },
+  "ren_wear_auralis_bloom_head_piece": {
+    "Legendary": "ren_wear_auralis_bloom_head_piece_legendary.png",
+    "Uncommon": "ren_wear_auralis_bloom_head_piece_uncommon.png",
+    "Common": "ren_wear_auralis_bloom_head_piece_common.png",
+    "Rare": "ren_wear_auralis_bloom_head_piece_rare.png",
+    "Mythic": "ren_wear_auralis_bloom_head_piece_mythic.png"
+  },
+  "ren_wear_auralis_bloom_outfit": {
+    "Uncommon": "ren_wear_auralis_bloom_outfit_uncommon.png",
+    "Legendary": "ren_wear_auralis_bloom_outfit_legendary.png",
+    "Common": "ren_wear_auralis_bloom_outfit_common.png",
+    "Rare": "ren_wear_auralis_bloom_outfit_rare.png",
+    "Mythic": "ren_wear_auralis_bloom_outfit_mythic.png"
+  },
+  "revolt_underground_outfit": {
+    "Uncommon": "revolt_underground_outfit_uncommon.png",
+    "Rare": "revolt_underground_outfit_rare.png",
+    "Legendary": "revolt_underground_outfit_legendary.png",
+    "Common": "revolt_underground_outfit_common.png",
+    "Mythic": "revolt_underground_outfit_mythic.png"
+  },
+  "revolt_renegade_goggles": {
+    "Rare": "revolt_renegade_goggles_rare.png",
+    "Uncommon": "revolt_renegade_goggles_uncommon.png",
+    "Common": "revolt_renegade_goggles_common.png",
+    "Legendary": "revolt_renegade_goggles_legendary.png",
+    "Mythic": "revolt_renegade_goggles_mythic.png"
+  },
+  "revolt_renegade_the_dissident": {
+    "Rare": "revolt_renegade_the_dissident_rare.png",
+    "Uncommon": "revolt_renegade_the_dissident_uncommon.png",
+    "Common": "revolt_renegade_the_dissident_common.png",
+    "Legendary": "revolt_renegade_the_dissident_legendary.png",
+    "Mythic": "revolt_renegade_the_dissident_mythic.png"
+  },
+  "revolt_underground_shoes": {
+    "Uncommon": "revolt_underground_shoes_uncommon.png",
+    "Legendary": "revolt_underground_shoes_legendary.png",
+    "Common": "revolt_underground_shoes_common.png",
+    "Rare": "revolt_underground_shoes_rare.png",
+    "Mythic": "revolt_underground_shoes_mythic.png"
+  },
+  "revolt_renegade_shoes": {
+    "Uncommon": "revolt_renegade_shoes_uncommon.png",
+    "Legendary": "revolt_renegade_shoes_legendary.png",
+    "Common": "revolt_renegade_shoes_common.png",
+    "Rare": "revolt_renegade_shoes_rare.png",
+    "Mythic": "revolt_renegade_shoes_mythic.png"
+  },
+  "revolt_renegade_outfit": {
+    "Rare": "revolt_renegade_outfit_rare.png",
+    "Uncommon": "revolt_renegade_outfit_uncommon.png",
+    "Common": "revolt_renegade_outfit_common.png",
+    "Mythic": "revolt_renegade_outfit_mythic.png",
+    "Legendary": "revolt_renegade_outfit_legendary.png"
+  },
+  "revolt_underground_ras_9": {
+    "Common": "revolt_underground_ras_9_common.png",
+    "Uncommon": "revolt_underground_ras_9_uncommon.png",
+    "Legendary": "revolt_underground_ras_9_legendary.png",
+    "Rare": "revolt_underground_ras_9_rare.png",
+    "Mythic": "revolt_underground_ras_9_mythic.png"
+  },
+  "revolt_underground_hood": {
+    "Common": "revolt_underground_hood_common.png",
+    "Uncommon": "revolt_underground_hood_uncommon.png",
+    "Rare": "revolt_underground_hood_rare.png",
+    "Mythic": "revolt_underground_hood_mythic.png",
+    "Legendary": "revolt_underground_hood_legendary.png"
+  },
+  "revolt_underground_rigger_s_revolt": {
+    "Common": "revolt_underground_rigger_s_revolt_common.png",
+    "Uncommon": "revolt_underground_rigger_s_revolt_uncommon.png",
+    "Rare": "revolt_underground_rigger_s_revolt_rare.png",
+    "Legendary": "revolt_underground_rigger_s_revolt_legendary.png",
+    "Mythic": "revolt_underground_rigger_s_revolt_mythic.png"
+  },
+  "revolt_renegade_rebel_s_rucksack": {
+    "Common": "revolt_renegade_rebel_s_rucksack_common.png",
+    "Uncommon": "revolt_renegade_rebel_s_rucksack_uncommon.png",
+    "Legendary": "revolt_renegade_rebel_s_rucksack_legendary.png",
+    "Mythic": "revolt_renegade_rebel_s_rucksack_mythic.png",
+    "Rare": "revolt_renegade_rebel_s_rucksack_rare.png"
+  },
+  "revolt_renegade_rebel_s_reach": {
+    "Legendary": "revolt_renegade_rebel_s_reach_legendary.png",
+    "Uncommon": "revolt_renegade_rebel_s_reach_uncommon.png",
+    "Rare": "revolt_renegade_rebel_s_reach_rare.png",
+    "Common": "revolt_renegade_rebel_s_reach_common.png",
+    "Mythic": "revolt_renegade_rebel_s_reach_mythic.png"
+  },
+  "rando_s_metalworks_the_instigator": {
+    "Common": "rando_s_metalworks_the_instigator_common.png",
+    "Rare": "rando_s_metalworks_the_instigator_rare.png",
+    "Legendary": "rando_s_metalworks_the_instigator_legendary.png",
+    "Uncommon": "rando_s_metalworks_the_instigator_uncommon.png",
+    "Mythic": "rando_s_metalworks_the_instigator_mythic.png"
+  },
+  "black_vector_research_xr_7b_1991": {
+    "Legendary": "black_vector_research_xr_7b_1991_legendary.png",
+    "Uncommon": "black_vector_research_xr_7b_1991_uncommon.png",
+    "Common": "black_vector_research_xr_7b_1991_common.png",
+    "Rare": "black_vector_research_xr_7b_1991_rare.png",
+    "Mythic": "black_vector_research_xr_7b_1991_mythic.png"
+  },
+  "core_dynamics_hoss_08_boots": {
+    "Common": "core_dynamics_hoss_08_boots_common.png",
+    "Rare": "core_dynamics_hoss_08_boots_rare.png",
+    "Uncommon": "core_dynamics_hoss_08_boots_uncommon.png",
+    "Legendary": "core_dynamics_hoss_08_boots_legendary.png",
+    "Mythic": "core_dynamics_hoss_08_boots_mythic.png"
+  },
+  "core_dynamics_hoss_08_heavy_armor": {
+    "Rare": "core_dynamics_hoss_08_heavy_armor_rare.png",
+    "Common": "core_dynamics_hoss_08_heavy_armor_common.png",
+    "Uncommon": "core_dynamics_hoss_08_heavy_armor_uncommon.png",
+    "Legendary": "core_dynamics_hoss_08_heavy_armor_legendary.png",
+    "Mythic": "core_dynamics_hoss_08_heavy_armor_mythic.png"
+  },
+  "core_dynamics_hoss_08_helmet": {
+    "Common": "core_dynamics_hoss_08_helmet_common.png",
+    "Uncommon": "core_dynamics_hoss_08_helmet_uncommon.png",
+    "Legendary": "core_dynamics_hoss_08_helmet_legendary.png",
+    "Rare": "core_dynamics_hoss_08_helmet_rare.png",
+    "Mythic": "core_dynamics_hoss_08_helmet_mythic.png"
+  },
+  "core_dynamics_mars_9": {
+    "Uncommon": "core_dynamics_mars_9_uncommon.png",
+    "Common": "core_dynamics_mars_9_common.png",
+    "Rare": "core_dynamics_mars_9_rare.png",
+    "Legendary": "core_dynamics_mars_9_legendary.png",
+    "Mythic": "core_dynamics_mars_9_mythic.png"
+  },
+  "raven_x_c07_helmet": {
+    "Legendary": "raven_x_c07_helmet_legendary.png",
+    "Common": "raven_x_c07_helmet_common.png",
+    "Mythic": "raven_x_c07_helmet_mythic.png",
+    "Rare": "raven_x_c07_helmet_rare.png",
+    "Uncommon": "raven_x_c07_helmet_uncommon.png"
+  },
+  "raven_x_c07_shoes": {
+    "Common": "raven_x_c07_shoes_common.png",
+    "Uncommon": "raven_x_c07_shoes_uncommon.png",
+    "Legendary": "raven_x_c07_shoes_legendary.png",
+    "Rare": "raven_x_c07_shoes_rare.png",
+    "Mythic": "raven_x_c07_shoes_mythic.png"
+  },
+  "raven_x_c07_suit": {
+    "Legendary": "raven_x_c07_suit_legendary.png",
+    "Uncommon": "raven_x_c07_suit_uncommon.png",
+    "Common": "raven_x_c07_suit_common.png",
+    "Rare": "raven_x_c07_suit_rare.png",
+    "Mythic": "raven_x_c07_suit_mythic.png"
+  }
 }
