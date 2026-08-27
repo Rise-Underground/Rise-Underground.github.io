@@ -1,0 +1,2134 @@
+{
+  "title": "Origin Point Episode 3",
+  "source_file": "1787797205002_OP3.txt",
+  "chapters": [],
+  "transcript": [
+    {
+      "start": null,
+      "start_seconds": null,
+      "chapter": null,
+      "text": "highlight a different developer from Infinity Rising. And today we're talking about who haunts"
+    },
+    {
+      "start": "0:13",
+      "start_seconds": 13,
+      "chapter": null,
+      "text": "you, who helps you, and where you end up when you screw around and find out. Our guest is going to be Kai. Kai is a"
+    },
+    {
+      "start": "0:21",
+      "start_seconds": 21,
+      "chapter": null,
+      "text": "senior technical artist. He's going to show us some things, so make sure you stick around for that. And of course, our returning champion, David, the game"
+    },
+    {
+      "start": "0:31",
+      "start_seconds": 31,
+      "chapter": null,
+      "text": "director who has uh also graciously decided to bless us with his presence."
+    },
+    {
+      "start": "0:36",
+      "start_seconds": 36,
+      "chapter": null,
+      "text": "Kai, welcome to the OP. And David, one more episode. I'm gonna have to start calling you co-host."
+    },
+    {
+      "start": "0:42",
+      "start_seconds": 42,
+      "chapter": null,
+      "text": "It's me again. Yes, always around, guys."
+    },
+    {
+      "start": "0:45",
+      "start_seconds": 45,
+      "chapter": null,
+      "text": "That's cool. We know you have nothing better to do."
+    },
+    {
+      "start": "0:49",
+      "start_seconds": 49,
+      "chapter": null,
+      "text": "I just sit around waiting for something to do. So, this was on the menu today, so I decided to show up again. I know both your time is"
+    },
+    {
+      "start": "0:57",
+      "start_seconds": 57,
+      "chapter": null,
+      "text": "valuable. So, really appreciate you guys taking the time out to hop in here and talk about uh some of the, you know, kind of background processes that people"
+    },
+    {
+      "start": "1:06",
+      "start_seconds": 66,
+      "chapter": null,
+      "text": "don't always see uh the hows and wise and uh let's go ahead and uh if you guys are ready, we'll get into it."
+    },
+    {
+      "start": "1:14",
+      "start_seconds": 74,
+      "chapter": null,
+      "text": "You've done vehicle design, mechanics for the vehicles, you know, you've done cockpits, you've done you've done the mechanics for the opening of canopies."
+    },
+    {
+      "start": "1:23",
+      "start_seconds": 83,
+      "chapter": null,
+      "text": "There's a lot of things over time. Lots of spline work. And we'll probably get into why because you're the uh I used to call you the transportation engineer."
+    },
+    {
+      "start": "1:31",
+      "start_seconds": 91,
+      "chapter": null,
+      "text": "Yeah. Mon rails."
+    },
+    {
+      "start": "1:34",
+      "start_seconds": 94,
+      "chapter": null,
+      "text": "Yes. Montreals. Uh well, anything that you really get on and and start moving, right? So,"
+    },
+    {
+      "start": "1:41",
+      "start_seconds": 101,
+      "chapter": null,
+      "text": "um I've got some things I get on and start moving. You do. Where is my rimshot?"
+    },
+    {
+      "start": "1:49",
+      "start_seconds": 109,
+      "chapter": null,
+      "text": "We've done I mean me and you have been in the weeds with a lot of things and I was looking at our conversation whether it's just Unreal being Unreal. You've"
+    },
+    {
+      "start": "1:58",
+      "start_seconds": 118,
+      "chapter": null,
+      "text": "you've done some help with lighting uh materials. Uh, of course the security bots and drone security bots were kind"
+    },
+    {
+      "start": "2:05",
+      "start_seconds": 125,
+      "chapter": null,
+      "text": "of the I think it was the first thing we had in the world that was moving with just, you know, sort of dumb AI. Yeah."
+    },
+    {
+      "start": "2:13",
+      "start_seconds": 133,
+      "chapter": null,
+      "text": "I mean, we we have like we like we still have the like the early prototypes for the crowd stuff and and"
+    },
+    {
+      "start": "2:21",
+      "start_seconds": 141,
+      "chapter": null,
+      "text": "the those NPCs, but um since the since the character has been going so many evolutions,"
+    },
+    {
+      "start": "2:30",
+      "start_seconds": 150,
+      "chapter": null,
+      "text": "uh they've been kind of waiting on that we we have something that we don't have to do too many times over."
+    },
+    {
+      "start": "2:38",
+      "start_seconds": 158,
+      "chapter": null,
+      "text": "Well, we'll be able to get to that, I think, sometime this year. Now that some there's going to be some very final"
+    },
+    {
+      "start": "2:46",
+      "start_seconds": 166,
+      "chapter": null,
+      "text": "changes to the avatar system. Recently, we chopped off the head uh of the avatar. Don't panic anyone. You're still going to have your head in the game."
+    },
+    {
+      "start": "2:53",
+      "start_seconds": 173,
+      "chapter": null,
+      "text": "It's just something technical on our side. So, win guillotine. Yeah, it's it's flowing."
+    },
+    {
+      "start": "2:59",
+      "start_seconds": 179,
+      "chapter": null,
+      "text": "No, somebody would buy that, right? A guillotine 1,000%. Yeah."
+    },
+    {
+      "start": "3:06",
+      "start_seconds": 186,
+      "chapter": null,
+      "text": "Um, so collision Kai, how do you feel about that? A lot of work. Don't you love collision?"
+    },
+    {
+      "start": "3:12",
+      "start_seconds": 192,
+      "chapter": null,
+      "text": "So yeah, like collision in Unreal. So you have the stuff that you see which is all"
+    },
+    {
+      "start": "3:19",
+      "start_seconds": 199,
+      "chapter": null,
+      "text": "nice and uh many millions polygons and all that stuff, but the"
+    },
+    {
+      "start": "3:27",
+      "start_seconds": 207,
+      "chapter": null,
+      "text": "calculations and and the server side stuff that requires really simplistic collision to work. And"
+    },
+    {
+      "start": "3:34",
+      "start_seconds": 214,
+      "chapter": null,
+      "text": "uh obviously with Nanite we have really complex meshes on the world. So"
+    },
+    {
+      "start": "3:44",
+      "start_seconds": 224,
+      "chapter": null,
+      "text": "like most of the time we can get away with with all the all the automated proxy stuff and all that uh that Epic"
+    },
+    {
+      "start": "3:51",
+      "start_seconds": 231,
+      "chapter": null,
+      "text": "provides. But then like some meshes just are too much and you just have to do"
+    },
+    {
+      "start": "3:58",
+      "start_seconds": 238,
+      "chapter": null,
+      "text": "manual collision for them. And then obviously like with with the landscapes"
+    },
+    {
+      "start": "4:06",
+      "start_seconds": 246,
+      "chapter": null,
+      "text": "uh that's another pretty bad collision example like for navigation because like what you see in"
+    },
+    {
+      "start": "4:15",
+      "start_seconds": 255,
+      "chapter": null,
+      "text": "in in visually is totally different on how the engine is is handling like the"
+    },
+    {
+      "start": "4:22",
+      "start_seconds": 262,
+      "chapter": null,
+      "text": "logic and all that. So like for example the character if you if you go break it"
+    },
+    {
+      "start": "4:30",
+      "start_seconds": 270,
+      "chapter": null,
+      "text": "down on on the core the character is nothing but a capsule that goes on the wall like if you strip all the all the"
+    },
+    {
+      "start": "4:37",
+      "start_seconds": 277,
+      "chapter": null,
+      "text": "all all the visuals out then capsule is the only thing that's moving about. I got to stop you guys for just a split"
+    },
+    {
+      "start": "4:45",
+      "start_seconds": 285,
+      "chapter": null,
+      "text": "second because again, a lot of us that are watching this are gamers and we play games, but you guys are throwing a lot of technical terms around like splines"
+    },
+    {
+      "start": "4:54",
+      "start_seconds": 294,
+      "chapter": null,
+      "text": "and meshes and capsules and and and and maybe you guys can elaborate a little bit on on what some of those things are"
+    },
+    {
+      "start": "5:01",
+      "start_seconds": 301,
+      "chapter": null,
+      "text": "just so you know, idiots like me can can follow along. I mean, I could start with the fact that you always have your visual of an asset and then you also"
+    },
+    {
+      "start": "5:09",
+      "start_seconds": 309,
+      "chapter": null,
+      "text": "have a different um thing in the pipeline there, which is the collision."
+    },
+    {
+      "start": "5:13",
+      "start_seconds": 313,
+      "chapter": null,
+      "text": "So, and sometimes we have to do a lot of custom work with that collision bit because you know if you've got some 10 million poly cliff piece or something"
+    },
+    {
+      "start": "5:22",
+      "start_seconds": 322,
+      "chapter": null,
+      "text": "like that, you're not going to get away with 10 million polies for collision."
+    },
+    {
+      "start": "5:26",
+      "start_seconds": 326,
+      "chapter": null,
+      "text": "I love it. I asked for an explanation and what he does is throw more terms at me. It's beautiful. Yeah. Look, David follows direction."
+    },
+    {
+      "start": "5:35",
+      "start_seconds": 335,
+      "chapter": null,
+      "text": "This is why he's the director of the game because he likes to give direction and not uh Now, first of all, okay, you you said"
+    },
+    {
+      "start": "5:42",
+      "start_seconds": 342,
+      "chapter": null,
+      "text": "collision. Now, that is the interacting between two objects whether or not you can pass through it or not in the game. Correct."
+    },
+    {
+      "start": "5:49",
+      "start_seconds": 349,
+      "chapter": null,
+      "text": "Yeah. Yeah. It's it's part of the physics system technically. Um but I would say the biggest problem that's"
+    },
+    {
+      "start": "5:56",
+      "start_seconds": 356,
+      "chapter": null,
+      "text": "come up is the fact that you have nextG lighting. you have the ability to do nanite nextG visuals, but collision is"
+    },
+    {
+      "start": "6:05",
+      "start_seconds": 365,
+      "chapter": null,
+      "text": "still stuck back in, I don't know, 2008 or something like that."
+    },
+    {
+      "start": "6:11",
+      "start_seconds": 371,
+      "chapter": null,
+      "text": "And you just, you know, I wish I wish there were some changes to Unreal in the future that made this stuff a little bit easier. But there's even other challenges like you could have good"
+    },
+    {
+      "start": "6:20",
+      "start_seconds": 380,
+      "chapter": null,
+      "text": "solid simple collision that's performant, but what if you're moving too fast? You could just go right through it. Yeah."
+    },
+    {
+      "start": "6:26",
+      "start_seconds": 386,
+      "chapter": null,
+      "text": "So, I like that your molecules are vibrating fast enough for you to move through it."
+    },
+    {
+      "start": "6:30",
+      "start_seconds": 390,
+      "chapter": null,
+      "text": "That's that's a good technical explanation."
+    },
+    {
+      "start": "6:33",
+      "start_seconds": 393,
+      "chapter": null,
+      "text": "All right. Well, you guys have thrown around a lot of stuff. Maybe it would help for some visual. I know you guys have a test level set up where you're"
+    },
+    {
+      "start": "6:40",
+      "start_seconds": 400,
+      "chapter": null,
+      "text": "going to show us some things. Uh, shall we go ahead and do you want to kick click on that little screen share button?"
+    },
+    {
+      "start": "6:48",
+      "start_seconds": 408,
+      "chapter": null,
+      "text": "I do have I just have some images to go through that were talking about past stuff. Just this is a little bit of a surprise."
+    },
+    {
+      "start": "6:57",
+      "start_seconds": 417,
+      "chapter": null,
+      "text": "Oh, so I thought I like surprises."
+    },
+    {
+      "start": "7:00",
+      "start_seconds": 420,
+      "chapter": null,
+      "text": "I Yeah. So just some things like uh you know I Kai I went through kind of our communications throughout the years and just"
+    },
+    {
+      "start": "7:08",
+      "start_seconds": 428,
+      "chapter": null,
+      "text": "oh god found some interesting images. So I mean even you know from unreleased vehicles to um you know just just maybe some"
+    },
+    {
+      "start": "7:16",
+      "start_seconds": 436,
+      "chapter": null,
+      "text": "funny stuff and just some stuff about how we went about the process, the early evolutions of things. So, give me a second here and I will share my screen."
+    },
+    {
+      "start": "7:26",
+      "start_seconds": 446,
+      "chapter": null,
+      "text": "All right. Can you see what I have on my screen? What is this? What's going on?"
+    },
+    {
+      "start": "7:34",
+      "start_seconds": 454,
+      "chapter": null,
+      "text": "I see sparkly ribbons in the sky."
+    },
+    {
+      "start": "7:36",
+      "start_seconds": 456,
+      "chapter": null,
+      "text": "Yes. Yes. Kai, you want to explain what this is?"
+    },
+    {
+      "start": "7:40",
+      "start_seconds": 460,
+      "chapter": null,
+      "text": "Um, you're like, \"Wait, what is this? I don't remember.\" Is that the first racetrack?"
+    },
+    {
+      "start": "7:46",
+      "start_seconds": 466,
+      "chapter": null,
+      "text": "Yeah. Thank goodness it's not. I think this is when we were doing some performance testing on swines in a level and we just I Yeah, I think so. Al, and I that could"
+    },
+    {
+      "start": "7:55",
+      "start_seconds": 475,
+      "chapter": null,
+      "text": "be also like the first test that I did for the like for the highway system that we scrapped basically."
+    },
+    {
+      "start": "8:05",
+      "start_seconds": 485,
+      "chapter": null,
+      "text": "Oh yeah. Yeah, I have an image of that in here too. So nice. Yeah. Now, wait, you guys said spline again."
+    },
+    {
+      "start": "8:13",
+      "start_seconds": 493,
+      "chapter": null,
+      "text": "What What is a spline? Can you explain to everybody what a spline is?"
+    },
+    {
+      "start": "8:16",
+      "start_seconds": 496,
+      "chapter": null,
+      "text": "Basically, this is like like a my cable for the for the phone. Perfect. That this is basically a spline."
+    },
+    {
+      "start": "8:24",
+      "start_seconds": 504,
+      "chapter": null,
+      "text": "Okay. Two ends and uh it goes whichever way in between. So that's"
+    },
+    {
+      "start": "8:32",
+      "start_seconds": 512,
+      "chapter": null,
+      "text": "So when you're in editor, it's got little points along there. You can create little points and and stretch them and pull them to make the path"
+    },
+    {
+      "start": "8:40",
+      "start_seconds": 520,
+      "chapter": null,
+      "text": "curve in the way that you want it to ultimately end up. Yeah. And it involves a lot of math. But yeah,"
+    },
+    {
+      "start": "8:50",
+      "start_seconds": 530,
+      "chapter": null,
+      "text": "some of the earliest Yeah. The racing elevators, I think, back when Cleo was first being built."
+    },
+    {
+      "start": "8:56",
+      "start_seconds": 536,
+      "chapter": null,
+      "text": "Yeah, that that's the like I think very first even maybe the first elevators. Yeah, something like that. I remember the old"
+    },
+    {
+      "start": "9:04",
+      "start_seconds": 544,
+      "chapter": null,
+      "text": "uh transport we had here. We experimented with different types of doors before we moved on to the newer design. I think there's still some of that."
+    },
+    {
+      "start": "9:11",
+      "start_seconds": 551,
+      "chapter": null,
+      "text": "This that that one got a facelift though. Yeah, it did get a a lot of things got a facelift. I remember the uh"
+    },
+    {
+      "start": "9:18",
+      "start_seconds": 558,
+      "chapter": null,
+      "text": "the Skyway by Bubble Jet before it got ruined by jetpacks, but we're still going to keep them because they they add some motion to the world. You know,"
+    },
+    {
+      "start": "9:27",
+      "start_seconds": 567,
+      "chapter": null,
+      "text": "maybe you can have some crowd riding on there or something like that."
+    },
+    {
+      "start": "9:30",
+      "start_seconds": 570,
+      "chapter": null,
+      "text": "Hey, look, not everybody can afford a jetpack in court, right? We got we got some some lower income people that are,"
+    },
+    {
+      "start": "9:38",
+      "start_seconds": 578,
+      "chapter": null,
+      "text": "you know, living down in the depths of the city there that uh they got to take the public transport. Yeah."
+    },
+    {
+      "start": "9:45",
+      "start_seconds": 585,
+      "chapter": null,
+      "text": "Um this might be a strange one. Um I'm not sure why I was doing this, but there was Yeah, this is an actual racing"
+    },
+    {
+      "start": "9:52",
+      "start_seconds": 592,
+      "chapter": null,
+      "text": "vehicle in Solless. So, and let me tell you, it's not a good time. So, um I was testing I think I was stress testing."
+    },
+    {
+      "start": "10:01",
+      "start_seconds": 601,
+      "chapter": null,
+      "text": "You know, we have these these um what does Matias call them? I forget what he calls them, but we send these line traces down. We have about nine of them"
+    },
+    {
+      "start": "10:09",
+      "start_seconds": 609,
+      "chapter": null,
+      "text": "and that's what operates the uh Yeah. Yeah. Yeah. line line traces to check the the check the height and and uh and uh"
+    },
+    {
+      "start": "10:17",
+      "start_seconds": 617,
+      "chapter": null,
+      "text": "height height to the crown and then adjust the vehicle."
+    },
+    {
+      "start": "10:23",
+      "start_seconds": 623,
+      "chapter": null,
+      "text": "And yeah, I I've imagined that it was a pretty bad on solace because that's going to be a pain in the ass. got a lot"
+    },
+    {
+      "start": "10:30",
+      "start_seconds": 630,
+      "chapter": null,
+      "text": "of extra collision bits and when you're trying to move at any sort of speed that thing just can't keep up the you know it"
+    },
+    {
+      "start": "10:38",
+      "start_seconds": 638,
+      "chapter": null,
+      "text": "just yeah we're we're going to do a lot of this same system in the future is going to be used for um hover things that are"
+    },
+    {
+      "start": "10:46",
+      "start_seconds": 646,
+      "chapter": null,
+      "text": "coming up like mounts but um there's there's going to be some adjustments and rethinks for that specific side of it so"
+    },
+    {
+      "start": "10:54",
+      "start_seconds": 654,
+      "chapter": null,
+      "text": "we'll we'll see how that goes. Um do you know about this kind of Yeah, this is um the CR uh crowd NPC"
+    },
+    {
+      "start": "11:02",
+      "start_seconds": 662,
+      "chapter": null,
+      "text": "testing map. Basically, this is um their uh debug view uh for them to walk"
+    },
+    {
+      "start": "11:10",
+      "start_seconds": 670,
+      "chapter": null,
+      "text": "around and then the green circles and uh cylinders uh"
+    },
+    {
+      "start": "11:17",
+      "start_seconds": 677,
+      "chapter": null,
+      "text": "um gives you know gives them a point that they can access and sit. So"
+    },
+    {
+      "start": "11:24",
+      "start_seconds": 684,
+      "chapter": null,
+      "text": "basically a bench is marked as a smart object that they can walk into and sit on there and then"
+    },
+    {
+      "start": "11:33",
+      "start_seconds": 693,
+      "chapter": null,
+      "text": "uh go about again once they've rested there. And this also like I mean you can see partially what I meant about the"
+    },
+    {
+      "start": "11:42",
+      "start_seconds": 702,
+      "chapter": null,
+      "text": "collision. So the capsule uh like on on the character that's the actual"
+    },
+    {
+      "start": "11:49",
+      "start_seconds": 709,
+      "chapter": null,
+      "text": "thing that's moving in the world and then the character is following that. So"
+    },
+    {
+      "start": "11:56",
+      "start_seconds": 716,
+      "chapter": null,
+      "text": "yeah, animations just kind of go along and you have some IK to help with like foot placement. But yeah, it's it's all fake guys. And basically on the arrows"
+    },
+    {
+      "start": "12:05",
+      "start_seconds": 725,
+      "chapter": null,
+      "text": "is uh the the blue one is uh telling us where the actual capsule is pointing."
+    },
+    {
+      "start": "12:13",
+      "start_seconds": 733,
+      "chapter": null,
+      "text": "And then the yellow one is the head mesh. So we have like a basically the the head if it's looking right then we"
+    },
+    {
+      "start": "12:21",
+      "start_seconds": 741,
+      "chapter": null,
+      "text": "can just see that where it's going and then have other stuff based on that. So yeah. Yeah. I think this is one of your earlier tests of the crowd system."
+    },
+    {
+      "start": "12:30",
+      "start_seconds": 750,
+      "chapter": null,
+      "text": "Yeah. In this one. So, um, yeah. Um, moving on from that, we got balls on the wall."
+    },
+    {
+      "start": "12:41",
+      "start_seconds": 761,
+      "chapter": null,
+      "text": "Yeah. Holy balls, Batman."
+    },
+    {
+      "start": "12:44",
+      "start_seconds": 764,
+      "chapter": null,
+      "text": "That's also What was that all about?"
+    },
+    {
+      "start": "12:45",
+      "start_seconds": 765,
+      "chapter": null,
+      "text": "That's also for the collision for the racing."
+    },
+    {
+      "start": "12:49",
+      "start_seconds": 769,
+      "chapter": null,
+      "text": "We were trying to figure out I don't know if it was impacting making impacts look correct when you hit the wall or it was preventing passing through the wall"
+    },
+    {
+      "start": "12:57",
+      "start_seconds": 777,
+      "chapter": null,
+      "text": "at speed. I think that was the biggest issue."
+    },
+    {
+      "start": "13:00",
+      "start_seconds": 780,
+      "chapter": null,
+      "text": "Yeah. Yeah. I think the main issue was that that if you if you like when you got into the wall, you the wall"
+    },
+    {
+      "start": "13:09",
+      "start_seconds": 789,
+      "chapter": null,
+      "text": "basically sucked you in. So, you couldn't even get away after you get hit by the wall. And then like this was"
+    },
+    {
+      "start": "13:17",
+      "start_seconds": 797,
+      "chapter": null,
+      "text": "basically something we tried that okay well let's try if it works and it actually made make it like it it worked."
+    },
+    {
+      "start": "13:25",
+      "start_seconds": 805,
+      "chapter": null,
+      "text": "So, see, when I look at it, first of all, I I think of uh a giant ping pong table,"
+    },
+    {
+      "start": "13:33",
+      "start_seconds": 813,
+      "chapter": null,
+      "text": "but I also sit there and think, boy, wouldn't that be cool if you're racing and you go along and somehow you could trip that and there all fell onto the track and people had to like weave in and out of them."
+    },
+    {
+      "start": "13:43",
+      "start_seconds": 823,
+      "chapter": null,
+      "text": "There we go."
+    },
+    {
+      "start": "13:44",
+      "start_seconds": 824,
+      "chapter": null,
+      "text": "What's Oh. Oh, I see the gentleman in the back is having um some some neck issues apparently."
+    },
+    {
+      "start": "13:53",
+      "start_seconds": 833,
+      "chapter": null,
+      "text": "Yeah, it's it's funny. It's I mean it's it's hard enough to make things look good in a game, but uh you also have to keep the clothes on."
+    },
+    {
+      "start": "14:00",
+      "start_seconds": 840,
+      "chapter": null,
+      "text": "Yeah. At the same time. So definitely some waiting issues that were going at this time. I just thought it was funny."
+    },
+    {
+      "start": "14:06",
+      "start_seconds": 846,
+      "chapter": null,
+      "text": "Yeah. I don't know it was me or Kai. One of us drew a face and it was funny. That's great."
+    },
+    {
+      "start": "14:11",
+      "start_seconds": 851,
+      "chapter": null,
+      "text": "It was kind of funny. So there there was so many I mean so the community you guys listening to this, you guys see bugs and whatnot. You've not seen the bugs that"
+    },
+    {
+      "start": "14:20",
+      "start_seconds": 860,
+      "chapter": null,
+      "text": "we've seen on our side. So you you never get to see the really really bad stuff."
+    },
+    {
+      "start": "14:25",
+      "start_seconds": 865,
+      "chapter": null,
+      "text": "So I'll tell you this. Uh we've seen enough naked people in there to last a lifetime for sure. We we had that little naked"
+    },
+    {
+      "start": "14:33",
+      "start_seconds": 873,
+      "chapter": null,
+      "text": "phase. You guys remember that? Not you know, I don't know, year and a half ago where we kept having build after build after build that I think it was one of"
+    },
+    {
+      "start": "14:42",
+      "start_seconds": 882,
+      "chapter": null,
+      "text": "the Avatar reworks. But uh I'll tell you what, I didn't hate coming into work that day. Just saying."
+    },
+    {
+      "start": "14:48",
+      "start_seconds": 888,
+      "chapter": null,
+      "text": "Yeah, there has been some nakedness. So it it happens. So um this one here obviously the uh one of the earlier I"
+    },
+    {
+      "start": "14:57",
+      "start_seconds": 897,
+      "chapter": null,
+      "text": "think Kai this is when you were planning out the uh Montreal. Yeah, this I think I think this was"
+    },
+    {
+      "start": "15:04",
+      "start_seconds": 904,
+      "chapter": null,
+      "text": "probably second iteration once once like uh when we added the VIP parking on that"
+    },
+    {
+      "start": "15:10",
+      "start_seconds": 910,
+      "chapter": null,
+      "text": "location and then uh now it's actually gone but uh early kido man it really shows um"
+    },
+    {
+      "start": "15:21",
+      "start_seconds": 921,
+      "chapter": null,
+      "text": "there's a there's a lot of actors and a lot of mash a lot of things going on in this level now this is like it's really it's my how things have changed. Yeah."
+    },
+    {
+      "start": "15:33",
+      "start_seconds": 933,
+      "chapter": null,
+      "text": "Yeah. I think this is the original building of the racing tracks uh as well. So, some of the uh we had some gimbal lock issues with the spline"
+    },
+    {
+      "start": "15:40",
+      "start_seconds": 940,
+      "chapter": null,
+      "text": "system. We had to make our own spline system and I remember us Mat Matias did really good job on on fixing that. Yeah."
+    },
+    {
+      "start": "15:48",
+      "start_seconds": 948,
+      "chapter": null,
+      "text": "That uh spline stuff."
+    },
+    {
+      "start": "15:50",
+      "start_seconds": 950,
+      "chapter": null,
+      "text": "I remember it was quite a pain. Y was in Yeah. Yeah. Y Matias was working primarily on that and they they put it working."
+    },
+    {
+      "start": "15:59",
+      "start_seconds": 959,
+      "chapter": null,
+      "text": "Yeah. A lot of people don't realize when you're on the racing maps, you're driving on an invisible track. Uh so the art that you see like you know this"
+    },
+    {
+      "start": "16:06",
+      "start_seconds": 966,
+      "chapter": null,
+      "text": "thing over here, it's not what you're actually driving on. You're driving on a very smooth uh collision type plane. Uh I think this is one of your test levels"
+    },
+    {
+      "start": "16:15",
+      "start_seconds": 975,
+      "chapter": null,
+      "text": "for Montreal stuff. So you've done multi- test and yeah this this was uh I think this was a"
+    },
+    {
+      "start": "16:22",
+      "start_seconds": 982,
+      "chapter": null,
+      "text": "we had a problem that we didn't have the meshes aligned properly and they were like all over the place"
+    },
+    {
+      "start": "16:30",
+      "start_seconds": 990,
+      "chapter": null,
+      "text": "and uh again this this was down down to some spline spline math things and uh"
+    },
+    {
+      "start": "16:38",
+      "start_seconds": 998,
+      "chapter": null,
+      "text": "it's always it's always math things that's for sure. No matter what you're doing in game development is art or programming, you're doing math stuff."
+    },
+    {
+      "start": "16:46",
+      "start_seconds": 1006,
+      "chapter": null,
+      "text": "So, stupid maths."
+    },
+    {
+      "start": "16:48",
+      "start_seconds": 1008,
+      "chapter": null,
+      "text": "Stupid math. Yeah. Um, this I I had a few more sprinkled in here. These are slightly out of order. Uh, this is how"
+    },
+    {
+      "start": "16:55",
+      "start_seconds": 1015,
+      "chapter": null,
+      "text": "Cleo started. So, very basic version there. Uh, some of the more basic stuff, drawing out the way it's supposed to"
+    },
+    {
+      "start": "17:02",
+      "start_seconds": 1022,
+      "chapter": null,
+      "text": "look. Um, this is when we started planning how uh things would work."
+    },
+    {
+      "start": "17:07",
+      "start_seconds": 1027,
+      "chapter": null,
+      "text": "Yeah. uh in the domes themselves like the logistics things uh we I think we started with there was like two surface"
+    },
+    {
+      "start": "17:14",
+      "start_seconds": 1034,
+      "chapter": null,
+      "text": "stations there was four and now we have one per town. Yeah."
+    },
+    {
+      "start": "17:17",
+      "start_seconds": 1037,
+      "chapter": null,
+      "text": "Uh which makes sense. This is a real blast from the past."
+    },
+    {
+      "start": "17:20",
+      "start_seconds": 1040,
+      "chapter": null,
+      "text": "Yeah. This is this is the very first uh highway high highway test and uh where"
+    },
+    {
+      "start": "17:28",
+      "start_seconds": 1048,
+      "chapter": null,
+      "text": "we where I was testing how the the existing things that we had uh could scale up"
+    },
+    {
+      "start": "17:36",
+      "start_seconds": 1056,
+      "chapter": null,
+      "text": "and uh basically the level and on on there if you see the the red dot on on on the on that's basically the player size."
+    },
+    {
+      "start": "17:46",
+      "start_seconds": 1066,
+      "chapter": null,
+      "text": "Yep. Yeah. is definitely something we we scrapped in favor of free flights, which I think we will see this year, traveling between hangers, things like that."
+    },
+    {
+      "start": "17:58",
+      "start_seconds": 1078,
+      "chapter": null,
+      "text": "Um, I'm going to sprint through a couple of these so we don't go too long here."
+    },
+    {
+      "start": "18:03",
+      "start_seconds": 1083,
+      "chapter": null,
+      "text": "Uh, the birth of Solus one. So, that was Oh, and yeah, there's some of the markings originally. There's a lot of just chicken scratch markings that go"
+    },
+    {
+      "start": "18:11",
+      "start_seconds": 1091,
+      "chapter": null,
+      "text": "between deaths like all the time about things. Plans like this, there's a lot of mirror boarding."
+    },
+    {
+      "start": "18:18",
+      "start_seconds": 1098,
+      "chapter": null,
+      "text": "um setting up things logically. So we can see it here. I don't know if you remember this cut. This this was this we need we needed something to move in the in the hanger which was huge."
+    },
+    {
+      "start": "18:32",
+      "start_seconds": 1112,
+      "chapter": null,
+      "text": "So basically we needed a like a escalator type uh I think this is like the first this is"
+    },
+    {
+      "start": "18:39",
+      "start_seconds": 1119,
+      "chapter": null,
+      "text": "where any like forward moving transport started."
+    },
+    {
+      "start": "18:43",
+      "start_seconds": 1123,
+      "chapter": null,
+      "text": "Yeah. is with that little sled thing that went on. And this is the early edition of the hangers. And we were"
+    },
+    {
+      "start": "18:50",
+      "start_seconds": 1130,
+      "chapter": null,
+      "text": "talking about the logistics of vehicles coming in and auto landings so people didn't play bumper cars."
+    },
+    {
+      "start": "18:57",
+      "start_seconds": 1137,
+      "chapter": null,
+      "text": "Question. Uh is is there any chance of any of some of that stuff coming back?"
+    },
+    {
+      "start": "19:02",
+      "start_seconds": 1142,
+      "chapter": null,
+      "text": "Like I know you guys did work in it in the past, but some of this stuff is really super cool. And I was just curious if uh there are any plans or"
+    },
+    {
+      "start": "19:11",
+      "start_seconds": 1151,
+      "chapter": null,
+      "text": "Well, were the hangers? I mean things evolved a bit but a lot of the same planning and thinking and work that we"
+    },
+    {
+      "start": "19:18",
+      "start_seconds": 1158,
+      "chapter": null,
+      "text": "did with this will go into that just just kind of in a different location rearranged a little bit. Nice."
+    },
+    {
+      "start": "19:25",
+      "start_seconds": 1165,
+      "chapter": null,
+      "text": "Yeah. So you'll definitely see that. Um look at this. What is that?"
+    },
+    {
+      "start": "19:32",
+      "start_seconds": 1172,
+      "chapter": null,
+      "text": "This is an unreleased vehicle at the time and Kai did an incredible job designing this. This is a beautiful vehicle. We weren't sure of the"
+    },
+    {
+      "start": "19:42",
+      "start_seconds": 1182,
+      "chapter": null,
+      "text": "direction of vehicles at the time and if they look too carlike, if that was the wrong way, but I do think we're going to see this come back. Anybody in the"
+    },
+    {
+      "start": "19:50",
+      "start_seconds": 1190,
+      "chapter": null,
+      "text": "comments, if you're interested in owning one of these, uh, please let me know."
+    },
+    {
+      "start": "19:54",
+      "start_seconds": 1194,
+      "chapter": null,
+      "text": "So, you know, I have to tell you it I I look at that and I think, you know, if"
+    },
+    {
+      "start": "20:01",
+      "start_seconds": 1201,
+      "chapter": null,
+      "text": "Porsche or Ferrari made a vehicle in our game, it would look a little something like that. Maybe like an older Porsche. I kind of think the front reminds me of a Mustang."
+    },
+    {
+      "start": "20:12",
+      "start_seconds": 1212,
+      "chapter": null,
+      "text": "Oh, okay. I can see that, too. Yeah."
+    },
+    {
+      "start": "20:14",
+      "start_seconds": 1214,
+      "chapter": null,
+      "text": "See the Mustang thing. But yeah, very cool vehicle. I like it. We also had uh other vehicles like this. I don't know if anybody remembers this."
+    },
+    {
+      "start": "20:22",
+      "start_seconds": 1222,
+      "chapter": null,
+      "text": "This is It's definitely I feel like it would really fit in like Bladeunner or something like that. Uh maybe even in Star Wars and Cortiscent uh going on,"
+    },
+    {
+      "start": "20:32",
+      "start_seconds": 1232,
+      "chapter": null,
+      "text": "but this is one of the ideas that were scrapped. I don't know. these luxury Buicks of the sky uh will will come"
+    },
+    {
+      "start": "20:39",
+      "start_seconds": 1239,
+      "chapter": null,
+      "text": "back. But that's just, you know, that's another older It seems like something Tesla would do. I feel like if you had hover vehicles, Tesla would do something like this."
+    },
+    {
+      "start": "20:49",
+      "start_seconds": 1249,
+      "chapter": null,
+      "text": "I could see that flying around downtown in the city. Like you said, a very Bladeunner type type vibe. Uh in the in"
+    },
+    {
+      "start": "20:55",
+      "start_seconds": 1255,
+      "chapter": null,
+      "text": "the city area, um I think I think that would work really well to be honest. Yep. I just have a few more images here."
+    },
+    {
+      "start": "21:03",
+      "start_seconds": 1263,
+      "chapter": null,
+      "text": "Uh, this is uh what? I'm lost."
+    },
+    {
+      "start": "21:08",
+      "start_seconds": 1268,
+      "chapter": null,
+      "text": "Yeah, I know. That was a That was a huge Oh, wait, wait. No, wait, wait. I got it. I got it. I want to guess. It's mining."
+    },
+    {
+      "start": "21:14",
+      "start_seconds": 1274,
+      "chapter": null,
+      "text": "Yeah, it's I can see the elevator. They're going down. Yeah."
+    },
+    {
+      "start": "21:18",
+      "start_seconds": 1278,
+      "chapter": null,
+      "text": "Yeah. Kai did a lot of elevator work mainly, but uh I guess at one time we were looking into, well, what were mine shafts like back in the day? And turns"
+    },
+    {
+      "start": "21:26",
+      "start_seconds": 1286,
+      "chapter": null,
+      "text": "out they were absolutely horrible. They packed people in like rats. There was a lot of sickness and death. Uh it's I"
+    },
+    {
+      "start": "21:33",
+      "start_seconds": 1293,
+      "chapter": null,
+      "text": "think mining is romanticized in games a bit and uh in real life it's it's absolutely it's it's absolutely horrible"
+    },
+    {
+      "start": "21:42",
+      "start_seconds": 1302,
+      "chapter": null,
+      "text": "especially back during this era. But that's also where the idea of making mining dangerous came from. So u not"
+    },
+    {
+      "start": "21:50",
+      "start_seconds": 1310,
+      "chapter": null,
+      "text": "making it hunky dory like like other games. So and I want to I want to point something out here real quick for everybody involved."
+    },
+    {
+      "start": "22:00",
+      "start_seconds": 1320,
+      "chapter": null,
+      "text": "Look at the guy on the far left hand side and he's smiling, looking over at the people and he's laughing. He's having a good time. And then look at the"
+    },
+    {
+      "start": "22:08",
+      "start_seconds": 1328,
+      "chapter": null,
+      "text": "look on the faces of terror of the people that are getting ready to go down. Like, yeah, the guy who's staying up there, he's"
+    },
+    {
+      "start": "22:16",
+      "start_seconds": 1336,
+      "chapter": null,
+      "text": "like, \"Yeah, hey, see you guys later.\" Anyway, just found that very amusing."
+    },
+    {
+      "start": "22:22",
+      "start_seconds": 1342,
+      "chapter": null,
+      "text": "Rough life there. I'm sure a lot of people probably didn't live past 40. So, yeah. Yeah. Flywheel. Uh the original"
+    },
+    {
+      "start": "22:31",
+      "start_seconds": 1351,
+      "chapter": null,
+      "text": "and I think these are in the soloses now."
+    },
+    {
+      "start": "22:33",
+      "start_seconds": 1353,
+      "chapter": null,
+      "text": "I was going to say we've seen a lot of that in game right now. Yeah. Yeah."
+    },
+    {
+      "start": "22:37",
+      "start_seconds": 1357,
+      "chapter": null,
+      "text": "Uh original I think it's original Montreal design, but we might bring back some of this original design. The idea was to end up making it more open than this."
+    },
+    {
+      "start": "22:46",
+      "start_seconds": 1366,
+      "chapter": null,
+      "text": "So this is the design that you actually have now."
+    },
+    {
+      "start": "22:50",
+      "start_seconds": 1370,
+      "chapter": null,
+      "text": "So but that's about it. I didn't want to get into the newer stuff or I I just wanted to bring those up out of nowhere for for fun."
+    },
+    {
+      "start": "23:01",
+      "start_seconds": 1381,
+      "chapter": null,
+      "text": "Well, I think it's interesting for people to see the evolution over time."
+    },
+    {
+      "start": "23:04",
+      "start_seconds": 1384,
+      "chapter": null,
+      "text": "Yeah. You know, see what it what what what how it was conceptualized. They know what it looks like in the game or most of them do. If if you're running"
+    },
+    {
+      "start": "23:11",
+      "start_seconds": 1391,
+      "chapter": null,
+      "text": "across this video and and you haven't checked out the game, we we are in pre-alpha. It's it's a closed pre-alpha,"
+    },
+    {
+      "start": "23:19",
+      "start_seconds": 1399,
+      "chapter": null,
+      "text": "but you can go to our website and try to get on the list to to get in and check out the game. And there's a couple other ways as well. Community will help you out on our Discord channel, but uh yeah."
+    },
+    {
+      "start": "23:31",
+      "start_seconds": 1411,
+      "chapter": null,
+      "text": "So, you're pretty much ready to jump into the upcoming are are we doing Ghost of Christmas past, Ghost of Christmas? Do you have Ghost of Christmas present?"
+    },
+    {
+      "start": "23:40",
+      "start_seconds": 1420,
+      "chapter": null,
+      "text": "Is that where we're at right now? Or straight into the future? I think it's present and future now."
+    },
+    {
+      "start": "23:46",
+      "start_seconds": 1426,
+      "chapter": null,
+      "text": "All right. I I think is going to do a screen share and go through some things. I'll try to talk a little less."
+    },
+    {
+      "start": "23:54",
+      "start_seconds": 1434,
+      "chapter": null,
+      "text": "Okay. So, oh that looks like a drone."
+    },
+    {
+      "start": "23:58",
+      "start_seconds": 1438,
+      "chapter": null,
+      "text": "That's looks like a drone. And this is actually the security bot version two."
+    },
+    {
+      "start": "24:03",
+      "start_seconds": 1443,
+      "chapter": null,
+      "text": "And uh let's I'll just uh go quickly through what I meant about capsules and meshes. So"
+    },
+    {
+      "start": "24:12",
+      "start_seconds": 1452,
+      "chapter": null,
+      "text": "this is uh the main capsule that actually is moving on the world uh by the engine and all the calculations is"
+    },
+    {
+      "start": "24:20",
+      "start_seconds": 1460,
+      "chapter": null,
+      "text": "based on that. Uh it's going to scale on uh to right size once it's on the the world. But for here it's like this. And"
+    },
+    {
+      "start": "24:28",
+      "start_seconds": 1468,
+      "chapter": null,
+      "text": "then you can see that we have the gray one is like again another collision"
+    },
+    {
+      "start": "24:36",
+      "start_seconds": 1476,
+      "chapter": null,
+      "text": "thing for just for the engine to handle the damage and all that stuff. Let's just hide it. Then we can see our"
+    },
+    {
+      "start": "24:44",
+      "start_seconds": 1484,
+      "chapter": null,
+      "text": "security bot. And these are all the visual stuff that uh players will see."
+    },
+    {
+      "start": "24:51",
+      "start_seconds": 1491,
+      "chapter": null,
+      "text": "When are these going to start shooting at players? K. They're bad."
+    },
+    {
+      "start": "24:56",
+      "start_seconds": 1496,
+      "chapter": null,
+      "text": "Don't ask. You might get it. Let's just play here."
+    },
+    {
+      "start": "25:04",
+      "start_seconds": 1504,
+      "chapter": null,
+      "text": "There be dra wait a minute. Dragons. Yeah, there's always dragons."
+    },
+    {
+      "start": "25:09",
+      "start_seconds": 1509,
+      "chapter": null,
+      "text": "Is that a hot take? Is that a leak? Is that a I'm just kidding."
+    },
+    {
+      "start": "25:14",
+      "start_seconds": 1514,
+      "chapter": null,
+      "text": "In the comments down below, win dragons, right? Yeah. Yeah. So, this is my personal test domain."
+    },
+    {
+      "start": "25:23",
+      "start_seconds": 1523,
+      "chapter": null,
+      "text": "And uh what is happening here is that if I shoot my gun, we are getting getting"
+    },
+    {
+      "start": "25:31",
+      "start_seconds": 1531,
+      "chapter": null,
+      "text": "threat level and um getting wanted status. And um Oh, and there's security drone."
+    },
+    {
+      "start": "25:40",
+      "start_seconds": 1540,
+      "chapter": null,
+      "text": "Yeah, he's not."
+    },
+    {
+      "start": "25:45",
+      "start_seconds": 1545,
+      "chapter": null,
+      "text": "Real quick, I I have a question. I know you're dodging lasers and I don't mean to distract you, but you mentioned the different security zones. Y"
+    },
+    {
+      "start": "25:53",
+      "start_seconds": 1553,
+      "chapter": null,
+      "text": "uh can you tell us a little bit about that? Is it like high level zone where you're punished more for doing bad stuff and and medium and low or how does that work?"
+    },
+    {
+      "start": "26:02",
+      "start_seconds": 1562,
+      "chapter": null,
+      "text": "Yeah, basically it is also the response time. So with high uh high uh or maximum"
+    },
+    {
+      "start": "26:09",
+      "start_seconds": 1569,
+      "chapter": null,
+      "text": "security zone, they're going to spawn like pretty much instantly if you uh get to like uh too high level, okay?"
+    },
+    {
+      "start": "26:18",
+      "start_seconds": 1578,
+      "chapter": null,
+      "text": "And then they come after you. And uh also there is few few bucks here at the"
+    },
+    {
+      "start": "26:25",
+      "start_seconds": 1585,
+      "chapter": null,
+      "text": "moment because I'm playing as a client and uh well cuz it's a test level too, right? I mean like let's face it, it's"
+    },
+    {
+      "start": "26:33",
+      "start_seconds": 1593,
+      "chapter": null,
+      "text": "I I do see in the top right hand corner the the wanted stars. Yeah."
+    },
+    {
+      "start": "26:38",
+      "start_seconds": 1598,
+      "chapter": null,
+      "text": "And that is apparently when you do bad stuff, you get more stars, I assume."
+    },
+    {
+      "start": "26:43",
+      "start_seconds": 1603,
+      "chapter": null,
+      "text": "Yeah. So basically once once you get like one and two they will start to"
+    },
+    {
+      "start": "26:50",
+      "start_seconds": 1610,
+      "chapter": null,
+      "text": "check what are you doing three they come basically guns blazing"
+    },
+    {
+      "start": "26:58",
+      "start_seconds": 1618,
+      "chapter": null,
+      "text": "and four and five obviously even more but uh it's uh"
+    },
+    {
+      "start": "27:05",
+      "start_seconds": 1625,
+      "chapter": null,
+      "text": "it's basic basically a threat level thingy. So if if you keep shooting stuff uh in areas then so for example"
+    },
+    {
+      "start": "27:15",
+      "start_seconds": 1635,
+      "chapter": null,
+      "text": "uh I think uh okay so basically this this is just the no response zone. So I"
+    },
+    {
+      "start": "27:23",
+      "start_seconds": 1643,
+      "chapter": null,
+      "text": "can shoot and nothing happens and then like there is a lot of variables on how fast they are going to"
+    },
+    {
+      "start": "27:31",
+      "start_seconds": 1651,
+      "chapter": null,
+      "text": "uh so essentially if you're in a protected area and you go on a killing spree, uh you're going to have the law increase on you in a GTA kind of way."
+    },
+    {
+      "start": "27:43",
+      "start_seconds": 1663,
+      "chapter": null,
+      "text": "And then you're going to have bounties where other players might come after you. And if you get taken down, guess where you're going to wake up in the future? Prison."
+    },
+    {
+      "start": "27:53",
+      "start_seconds": 1673,
+      "chapter": null,
+      "text": "So, which is, you know, there's some of the I wouldn't say final work, but that on the construction of prison is going on right now. And then we're going to"
+    },
+    {
+      "start": "28:01",
+      "start_seconds": 1681,
+      "chapter": null,
+      "text": "start putting the actual system together for that. But I I know there's plenty of community members out there that would love to see some people go to prison."
+    },
+    {
+      "start": "28:10",
+      "start_seconds": 1690,
+      "chapter": null,
+      "text": "Okay. I have lots of questions. First of all, well, I have a statement and then a lot of the questions. And the first statement is I think a lot of people are"
+    },
+    {
+      "start": "28:18",
+      "start_seconds": 1698,
+      "chapter": null,
+      "text": "going to be happy with this coming into the game because uh right now it's kind of a free-for-all and there are some players that want to play, you know, uh"
+    },
+    {
+      "start": "28:28",
+      "start_seconds": 1708,
+      "chapter": null,
+      "text": "more of the MMO and then there's some people that want to do some of the, you know, more combat related type stuff."
+    },
+    {
+      "start": "28:34",
+      "start_seconds": 1714,
+      "chapter": null,
+      "text": "And so you can stick to the areas that are a little safer and you know, at least you're going to have some help."
+    },
+    {
+      "start": "28:41",
+      "start_seconds": 1721,
+      "chapter": null,
+      "text": "Um, also, you know, spawn camping, uh, with the guns turned off in the medical center. That's kind of a thing of the past. Um, and you you talked about the"
+    },
+    {
+      "start": "28:50",
+      "start_seconds": 1730,
+      "chapter": null,
+      "text": "bounty and the bounty board. So, if if if I kill somebody, I get a bounty on me, right? Which means that like there's"
+    },
+    {
+      "start": "28:59",
+      "start_seconds": 1739,
+      "chapter": null,
+      "text": "some amount of what, like IGC, credit chips, where if somebody kills me, they get those credits."
+    },
+    {
+      "start": "29:05",
+      "start_seconds": 1745,
+      "chapter": null,
+      "text": "Yeah. Yeah. So if if you are on the bounty board and somebody comes after you and they kill you, they will get the"
+    },
+    {
+      "start": "29:13",
+      "start_seconds": 1753,
+      "chapter": null,
+      "text": "credit chips for that kill and they won't get That's awesome."
+    },
+    {
+      "start": "29:16",
+      "start_seconds": 1756,
+      "chapter": null,
+      "text": "And they they don't get like uh obviously they don't get uh threat level. Yeah."
+    },
+    {
+      "start": "29:22",
+      "start_seconds": 1762,
+      "chapter": null,
+      "text": "Increase the stars. Yeah. Okay, that's good because Yeah. You'd hate to just be going after a bounty and then all of a sudden, you know, which actually that"
+    },
+    {
+      "start": "29:30",
+      "start_seconds": 1770,
+      "chapter": null,
+      "text": "robots after you. That actually now reminded me that the thread level"
+    },
+    {
+      "start": "29:36",
+      "start_seconds": 1776,
+      "chapter": null,
+      "text": "actually is a bit of a yeah there is some adjustment that I need to do still because at the moment uh like there's"
+    },
+    {
+      "start": "29:45",
+      "start_seconds": 1785,
+      "chapter": null,
+      "text": "lot of checks uh when when you are shooting in the area and basically like if you are hitting somebody even with"
+    },
+    {
+      "start": "29:54",
+      "start_seconds": 1794,
+      "chapter": null,
+      "text": "bounty your threat level at the moment actually is going up. So, I need to like there is a few things that need to need to be"
+    },
+    {
+      "start": "30:02",
+      "start_seconds": 1802,
+      "chapter": null,
+      "text": "changed, but uh sure, we get it. This is work in progress type stuff. I I hopped in earlier today and I I really liked the"
+    },
+    {
+      "start": "30:10",
+      "start_seconds": 1810,
+      "chapter": null,
+      "text": "bones of it. I did. Basically, you if you're shooting in the wall or something else, you know, your threat"
+    },
+    {
+      "start": "30:17",
+      "start_seconds": 1817,
+      "chapter": null,
+      "text": "level goes up real slowly. If I kill somebody, boom. Yeah. Instant, you know, max thresh threshold. So, uh that is"
+    },
+    {
+      "start": "30:25",
+      "start_seconds": 1825,
+      "chapter": null,
+      "text": "super great. dumb question and maybe you guys haven't even thought about this yet. And if it's too early, just tell"
+    },
+    {
+      "start": "30:32",
+      "start_seconds": 1832,
+      "chapter": null,
+      "text": "me. But have you guys thought about how to keep people from farming? Say a person hops in with a second account and"
+    },
+    {
+      "start": "30:41",
+      "start_seconds": 1841,
+      "chapter": null,
+      "text": "then just keeps getting bounties on themselves. Have you have you guys even thought about the process of how you protect that?"
+    },
+    {
+      "start": "30:48",
+      "start_seconds": 1848,
+      "chapter": null,
+      "text": "I don't think we've I mean problem like that. There's a lot of little things like that that we've talked about, but"
+    },
+    {
+      "start": "30:55",
+      "start_seconds": 1855,
+      "chapter": null,
+      "text": "generally we've said that, you know, we're we're going to cross that bridge when we get there. So, I mean, once you don't want to try to put things into"
+    },
+    {
+      "start": "31:04",
+      "start_seconds": 1864,
+      "chapter": null,
+      "text": "core systems that aren't complete yet, once it's there, once, you know, maybe once problems start showing up, we'll find a way."
+    },
+    {
+      "start": "31:10",
+      "start_seconds": 1870,
+      "chapter": null,
+      "text": "Excellent. All right. Well, I I think you got some other stuff to show us as well."
+    },
+    {
+      "start": "31:15",
+      "start_seconds": 1875,
+      "chapter": null,
+      "text": "Oh, I got Oh, you got a cluster of them. You got two heavies. No, three heavies. M yeah, that should be fun."
+    },
+    {
+      "start": "31:22",
+      "start_seconds": 1882,
+      "chapter": null,
+      "text": "Yeah, I going to die."
+    },
+    {
+      "start": "31:24",
+      "start_seconds": 1884,
+      "chapter": null,
+      "text": "Yeah, I changed some stuff and and now the like the the the spawns are uh"
+    },
+    {
+      "start": "31:30",
+      "start_seconds": 1890,
+      "chapter": null,
+      "text": "partly uh procedural and random. So, yeah, this I mean they're all having a little conversation."
+    },
+    {
+      "start": "31:38",
+      "start_seconds": 1898,
+      "chapter": null,
+      "text": "Yeah, I know you guys have have changed the drones over time and like you said heavies, you've got some that have heavier armor, you've got some that have"
+    },
+    {
+      "start": "31:47",
+      "start_seconds": 1907,
+      "chapter": null,
+      "text": "heavier guns. Have you guys ever created a bot that you guys were actually scared of that you didn't want to go up against?"
+    },
+    {
+      "start": "31:55",
+      "start_seconds": 1915,
+      "chapter": null,
+      "text": "What?"
+    },
+    {
+      "start": "31:57",
+      "start_seconds": 1917,
+      "chapter": null,
+      "text": "I mean, you're like, \"Yeah, I'm not going in there.\" That guy."
+    },
+    {
+      "start": "32:01",
+      "start_seconds": 1921,
+      "chapter": null,
+      "text": "Yeah, it's hard to think about that. I mean, I know me me and Kai, I think we usually push for making them more difficult to fight,"
+    },
+    {
+      "start": "32:08",
+      "start_seconds": 1928,
+      "chapter": null,
+      "text": "whereas QA, you guys are like, \"Yeah, I think it's like Renee, he's like, \"Can you can you I think they're too hard.\" So, it's like they're not hard enough."
+    },
+    {
+      "start": "32:19",
+      "start_seconds": 1939,
+      "chapter": null,
+      "text": "So, I think players need a challenge. I mean, drones, I think even at the heavy the ones like"
+    },
+    {
+      "start": "32:26",
+      "start_seconds": 1946,
+      "chapter": null,
+      "text": "here that that can give people a little bit of a tough time. Um, I think those are very light compared to what people are going to see with rifts."
+    },
+    {
+      "start": "32:34",
+      "start_seconds": 1954,
+      "chapter": null,
+      "text": "I was going to say this is this is the low end, right? When do we talk?"
+    },
+    {
+      "start": "32:39",
+      "start_seconds": 1959,
+      "chapter": null,
+      "text": "Yeah, they're they're just, you know, they're just some terror drones that's out here and causing problems. uh might see another one soon actually is a uh a"
+    },
+    {
+      "start": "32:48",
+      "start_seconds": 1968,
+      "chapter": null,
+      "text": "collection drone from the Terra, but uh we'll talk about that at a later time because there is a there is some"
+    },
+    {
+      "start": "32:56",
+      "start_seconds": 1976,
+      "chapter": null,
+      "text": "miscellaneous quest stuff coming up where there well, you know, I'm not I'm not going to spoil it. Maybe that's for"
+    },
+    {
+      "start": "33:02",
+      "start_seconds": 1982,
+      "chapter": null,
+      "text": "a day, not not here, but yeah, I'm I'm just going to hush."
+    },
+    {
+      "start": "33:08",
+      "start_seconds": 1988,
+      "chapter": null,
+      "text": "I think I think the drones are the bottom of the food chain. The real trouble starts when you start getting into the rift stuff. And I see one in the background over there."
+    },
+    {
+      "start": "33:17",
+      "start_seconds": 1997,
+      "chapter": null,
+      "text": "Yeah. There Kai, you got something to to show and tell about that?"
+    },
+    {
+      "start": "33:21",
+      "start_seconds": 2001,
+      "chapter": null,
+      "text": "Yeah, I can. Um, so basically this is spawned rift and you can see that it's"
+    },
+    {
+      "start": "33:29",
+      "start_seconds": 2009,
+      "chapter": null,
+      "text": "currently spawning few things in the background."
+    },
+    {
+      "start": "33:35",
+      "start_seconds": 2015,
+      "chapter": null,
+      "text": "So what we have and this is still like programmer art uh in in uh"
+    },
+    {
+      "start": "33:42",
+      "start_seconds": 2022,
+      "chapter": null,
+      "text": "yeah don't expect this to be what a feels it looks like finally."
+    },
+    {
+      "start": "33:46",
+      "start_seconds": 2026,
+      "chapter": null,
+      "text": "So what we have is like we have like we can have multiple different Oh I'm too far that one. So basically"
+    },
+    {
+      "start": "33:56",
+      "start_seconds": 2036,
+      "chapter": null,
+      "text": "are are you scared to go up there? Cuz yeah I'd like to see them a little bigger. Hold on just a second."
+    },
+    {
+      "start": "34:03",
+      "start_seconds": 2043,
+      "chapter": null,
+      "text": "He's like, \"Look, I've done I've played this thing before.\" Right."
+    },
+    {
+      "start": "34:06",
+      "start_seconds": 2046,
+      "chapter": null,
+      "text": "Yeah. So, like I mean the like I said uh in the start that uh there's going to be multiple stages and uh this is basically"
+    },
+    {
+      "start": "34:16",
+      "start_seconds": 2056,
+      "chapter": null,
+      "text": "the bare bones of of of the things. So, uh you have to destroy these uh"
+    },
+    {
+      "start": "34:24",
+      "start_seconds": 2064,
+      "chapter": null,
+      "text": "anger stones. Uh they're going obviously going to have like a proper art and uh and uh uh critical hit uh spots that"
+    },
+    {
+      "start": "34:34",
+      "start_seconds": 2074,
+      "chapter": null,
+      "text": "like obviously now they are really easy to shoot since they just uh are uh bullet sponges, but they're going to"
+    },
+    {
+      "start": "34:42",
+      "start_seconds": 2082,
+      "chapter": null,
+      "text": "have a hit location and all that. And you're basically fighting the rift and you're fighting waves that come out of"
+    },
+    {
+      "start": "34:49",
+      "start_seconds": 2089,
+      "chapter": null,
+      "text": "the rift. And then you get down to a rift boss. And then after that point, there's going to be the heart of the"
+    },
+    {
+      "start": "34:56",
+      "start_seconds": 2096,
+      "chapter": null,
+      "text": "rift where you can get some loot if you happen to close it down. But you're you're probably not going to be able to do this by yourself and uh in the end get loot."
+    },
+    {
+      "start": "35:08",
+      "start_seconds": 2108,
+      "chapter": null,
+      "text": "Yeah, I think Do we cover the big boss before? Did we cover that in a cafe? The dread frame?"
+    },
+    {
+      "start": "35:14",
+      "start_seconds": 2114,
+      "chapter": null,
+      "text": "No, I can't remember."
+    },
+    {
+      "start": "35:16",
+      "start_seconds": 2116,
+      "chapter": null,
+      "text": "Yeah. So Oh, there we go. There we go."
+    },
+    {
+      "start": "35:23",
+      "start_seconds": 2123,
+      "chapter": null,
+      "text": "And you do have um you know, I'll talk about the armor maybe a little bit is you have various armor plates that protect uh different uh mech creatures"
+    },
+    {
+      "start": "35:32",
+      "start_seconds": 2132,
+      "chapter": null,
+      "text": "that come out of the rifts. So some of these are like light armor, medium armor. They have different hit points."
+    },
+    {
+      "start": "35:37",
+      "start_seconds": 2137,
+      "chapter": null,
+      "text": "So players over time have to strategize um what weapons and how to take these things out."
+    },
+    {
+      "start": "35:42",
+      "start_seconds": 2142,
+      "chapter": null,
+      "text": "As you say, which order probably is also a concern. Do I take out the big heavy first because you're doing so much"
+    },
+    {
+      "start": "35:50",
+      "start_seconds": 2150,
+      "chapter": null,
+      "text": "damage or all these little ones because they're annoying me? Yeah. Yeah."
+    },
+    {
+      "start": "35:54",
+      "start_seconds": 2154,
+      "chapter": null,
+      "text": "And what it actually is that the little ones should be coming out, but since I actually bucked the rift, they are now stuck there."
+    },
+    {
+      "start": "36:04",
+      "start_seconds": 2164,
+      "chapter": null,
+      "text": "Oh, there is also Yeah, there we go."
+    },
+    {
+      "start": "36:10",
+      "start_seconds": 2170,
+      "chapter": null,
+      "text": "Somebody's going to be like, man, blueberry butt really flies."
+    },
+    {
+      "start": "36:16",
+      "start_seconds": 2176,
+      "chapter": null,
+      "text": "You got that. You got the jabs down there. Those are those are the ones that are really gonna push players as you're trying to like you're trying to take"
+    },
+    {
+      "start": "36:24",
+      "start_seconds": 2184,
+      "chapter": null,
+      "text": "care of blueberry butt over there. And you got these little ankle biters coming at you. I mean, hardly an ankle biter though, right? So, the thing looks like it could run you through."
+    },
+    {
+      "start": "36:36",
+      "start_seconds": 2196,
+      "chapter": null,
+      "text": "I can see this getting out of hand in a in in quick fashion though."
+    },
+    {
+      "start": "36:40",
+      "start_seconds": 2200,
+      "chapter": null,
+      "text": "Yeah. I mean, the thing is that there is like um I think there's 30 of them now."
+    },
+    {
+      "start": "36:45",
+      "start_seconds": 2205,
+      "chapter": null,
+      "text": "And uh since I'm all alone here, they all target me. Uh and they have they have separate threat"
+    },
+    {
+      "start": "36:54",
+      "start_seconds": 2214,
+      "chapter": null,
+      "text": "list. So basically if you have multiple people then they will try to like they"
+    },
+    {
+      "start": "37:02",
+      "start_seconds": 2222,
+      "chapter": null,
+      "text": "they are going to the highest uh threat like like in individual individual"
+    },
+    {
+      "start": "37:09",
+      "start_seconds": 2229,
+      "chapter": null,
+      "text": "threat and also the the the riftw white thread list. So you are not safe if even"
+    },
+    {
+      "start": "37:16",
+      "start_seconds": 2236,
+      "chapter": null,
+      "text": "if you are like just hanging around camping."
+    },
+    {
+      "start": "37:20",
+      "start_seconds": 2240,
+      "chapter": null,
+      "text": "Yeah. So yeah."
+    },
+    {
+      "start": "37:24",
+      "start_seconds": 2244,
+      "chapter": null,
+      "text": "Yeah. I think even at this very work in progress kind of look here. I think you community guys out there can imagine"
+    },
+    {
+      "start": "37:31",
+      "start_seconds": 2251,
+      "chapter": null,
+      "text": "just what a sweatfest this is going to be when the things really start going."
+    },
+    {
+      "start": "37:36",
+      "start_seconds": 2256,
+      "chapter": null,
+      "text": "So it's it's going to be very very sweaty."
+    },
+    {
+      "start": "37:39",
+      "start_seconds": 2259,
+      "chapter": null,
+      "text": "Well, that was going to be one of my questions actually. Are riffs designed to be farmed or survived? I mean,"
+    },
+    {
+      "start": "37:47",
+      "start_seconds": 2267,
+      "chapter": null,
+      "text": "yeah, riffs are designed to make people like upset and break their keyboards."
+    },
+    {
+      "start": "37:53",
+      "start_seconds": 2273,
+      "chapter": null,
+      "text": "So, that's great. That's so nice of you guys."
+    },
+    {
+      "start": "37:55",
+      "start_seconds": 2275,
+      "chapter": null,
+      "text": "You don't have any issues about that, Scruffy. You don't break anything when you play games."
+    },
+    {
+      "start": "38:00",
+      "start_seconds": 2280,
+      "chapter": null,
+      "text": "I will just say that my budget for keyboards and controllers far exceeds what it should, sir. That's I'm going to leave it at that."
+    },
+    {
+      "start": "38:10",
+      "start_seconds": 2290,
+      "chapter": null,
+      "text": "Oh, I like that guy. He's break dancing, dude. That's that's scary. You get a break dancing robot after you, that that's trouble."
+    },
+    {
+      "start": "38:16",
+      "start_seconds": 2296,
+      "chapter": null,
+      "text": "Yeah, if you are too close, that will kill you when when they start spinning around. And uh so they have like a self distracting."
+    },
+    {
+      "start": "38:26",
+      "start_seconds": 2306,
+      "chapter": null,
+      "text": "This is a work in progress and it's it's it's nice to kind of see early stages and how it comes together. And I think a"
+    },
+    {
+      "start": "38:34",
+      "start_seconds": 2314,
+      "chapter": null,
+      "text": "lot of people can understand why it takes so long to build video games because there is a lot going on. This is"
+    },
+    {
+      "start": "38:40",
+      "start_seconds": 2320,
+      "chapter": null,
+      "text": "hard stuff. Uh, anything else you guys want to to kind of share with the audience or is there anything else that you guys have to touch on?"
+    },
+    {
+      "start": "38:49",
+      "start_seconds": 2329,
+      "chapter": null,
+      "text": "Since since I'm doing a lot of work or been doing lot of work elevators there you can see our"
+    },
+    {
+      "start": "38:59",
+      "start_seconds": 2339,
+      "chapter": null,
+      "text": "current ones that are basically going in between few places. Uh, but then show the newer elevators. I love this."
+    },
+    {
+      "start": "39:06",
+      "start_seconds": 2346,
+      "chapter": null,
+      "text": "Then we have this one."
+    },
+    {
+      "start": "39:09",
+      "start_seconds": 2349,
+      "chapter": null,
+      "text": "So, we have our Oh, different button, different floor levels."
+    },
+    {
+      "start": "39:18",
+      "start_seconds": 2358,
+      "chapter": null,
+      "text": "And you have the double safety doors that are there."
+    },
+    {
+      "start": "39:20",
+      "start_seconds": 2360,
+      "chapter": null,
+      "text": "Oh, I missed that. Yeah. Okay. Well, basically, this is one uh elevator that you're going to use in the apartments."
+    },
+    {
+      "start": "39:28",
+      "start_seconds": 2368,
+      "chapter": null,
+      "text": "And um Yeah. Yeah. Actually, it's going down now."
+    },
+    {
+      "start": "39:35",
+      "start_seconds": 2375,
+      "chapter": null,
+      "text": "But since we're a simulator, we need we need to program in the elevator getting stuck, having to call the fire department, and just the occasional"
+    },
+    {
+      "start": "39:43",
+      "start_seconds": 2383,
+      "chapter": null,
+      "text": "freef fall. So yeah, and this there's your freef fall."
+    },
+    {
+      "start": "39:48",
+      "start_seconds": 2388,
+      "chapter": null,
+      "text": "Yeah, that that's what I talk about the collision. This mesh doesn't have the proper collision yet. It's only has the visual stuff."
+    },
+    {
+      "start": "39:56",
+      "start_seconds": 2396,
+      "chapter": null,
+      "text": "And uh then we have the elevator thingy that will show where it's actually going. And then"
+    },
+    {
+      "start": "40:05",
+      "start_seconds": 2405,
+      "chapter": null,
+      "text": "I love the new elevator buttons for the floors because ooh safety doors."
+    },
+    {
+      "start": "40:11",
+      "start_seconds": 2411,
+      "chapter": null,
+      "text": "But yeah, I was the kid that would go in to the elevator and just hit all the floors so that people would hop in and then have to stop at every single floor."
+    },
+    {
+      "start": "40:21",
+      "start_seconds": 2421,
+      "chapter": null,
+      "text": "And it's good to know I can recapture my childhood youth in the game. Love it. Exactly. This is for you. Love it."
+    },
+    {
+      "start": "40:26",
+      "start_seconds": 2426,
+      "chapter": null,
+      "text": "Do I get Wait, do I get a threat level if I do something like that? Is that you guys got that worked in there yet?"
+    },
+    {
+      "start": "40:34",
+      "start_seconds": 2434,
+      "chapter": null,
+      "text": "I think Kai's gonna make a note of it now that you said that."
+    },
+    {
+      "start": "40:38",
+      "start_seconds": 2438,
+      "chapter": null,
+      "text": "That's that's for you."
+    },
+    {
+      "start": "40:40",
+      "start_seconds": 2440,
+      "chapter": null,
+      "text": "We can we can add that to the like I have different types of crimes. So you get like a half star. Yeah, that's a"
+    },
+    {
+      "start": "40:48",
+      "start_seconds": 2448,
+      "chapter": null,
+      "text": "that's a what is that like harassment or I mean what is what's lower than a misdemeanor?"
+    },
+    {
+      "start": "40:54",
+      "start_seconds": 2454,
+      "chapter": null,
+      "text": "High annoyance. Maybe we can have annoyance charges. We just have a nun come out and slap your hands with a ruler or something. I don't know."
+    },
+    {
+      "start": "41:03",
+      "start_seconds": 2463,
+      "chapter": null,
+      "text": "It's a weird lore fit, but you know, I think I could think I can try."
+    },
+    {
+      "start": "41:09",
+      "start_seconds": 2469,
+      "chapter": null,
+      "text": "Some people might like that. So, yeah, have to be careful."
+    },
+    {
+      "start": "41:12",
+      "start_seconds": 2472,
+      "chapter": null,
+      "text": "There are people out there that pay extra for that."
+    },
+    {
+      "start": "41:16",
+      "start_seconds": 2476,
+      "chapter": null,
+      "text": "That's a That's a good I'm writing this down."
+    },
+    {
+      "start": "41:19",
+      "start_seconds": 2479,
+      "chapter": null,
+      "text": "This is how we get some of the crazy weird ideas that we talk about in meetings. I love it. Yeah, it's it's it's the it's the mal malicious compliance. You want something."
+    },
+    {
+      "start": "41:30",
+      "start_seconds": 2490,
+      "chapter": null,
+      "text": "There you go. Yeah."
+    },
+    {
+      "start": "41:33",
+      "start_seconds": 2493,
+      "chapter": null,
+      "text": "All right, gentlemen. Well, again, I I I just want to thank you for your time. We are we're running towards the end of our time and I know yours is valuable. So,"
+    },
+    {
+      "start": "41:42",
+      "start_seconds": 2502,
+      "chapter": null,
+      "text": "uh once again, Kai, appreciate you joining us. David, as always, it is a pleasure. And uh for everybody else, if"
+    },
+    {
+      "start": "41:51",
+      "start_seconds": 2511,
+      "chapter": null,
+      "text": "this is one that hit you, uh make sure like, follow, subscribe, whatever platform you're watching on. And uh we got more Origin Point coming up soon."
+    },
+    {
+      "start": "42:01",
+      "start_seconds": 2521,
+      "chapter": null,
+      "text": "Until then, everybody, game on."
+    }
+  ],
+  "transcript_text": "highlight a different developer from Infinity Rising. And today we're talking about who haunts you, who helps you, and where you end up when you screw around and find out. Our guest is going to be Kai. Kai is a senior technical artist. He's going to show us some things, so make sure you stick around for that. And of course, our returning champion, David, the game director who has uh also graciously decided to bless us with his presence. Kai, welcome to the OP. And David, one more episode. I'm gonna have to start calling you co-host. It's me again. Yes, always around, guys. That's cool. We know you have nothing better to do. I just sit around waiting for something to do. So, this was on the menu today, so I decided to show up again. I know both your time is valuable. So, really appreciate you guys taking the time out to hop in here and talk about uh some of the, you know, kind of background processes that people don't always see uh the hows and wise and uh let's go ahead and uh if you guys are ready, we'll get into it. You've done vehicle design, mechanics for the vehicles, you know, you've done cockpits, you've done you've done the mechanics for the opening of canopies. There's a lot of things over time. Lots of spline work. And we'll probably get into why because you're the uh I used to call you the transportation engineer. Yeah. Mon rails. Yes. Montreals. Uh well, anything that you really get on and and start moving, right? So, um I've got some things I get on and start moving. You do. Where is my rimshot? We've done I mean me and you have been in the weeds with a lot of things and I was looking at our conversation whether it's just Unreal being Unreal. You've you've done some help with lighting uh materials. Uh, of course the security bots and drone security bots were kind of the I think it was the first thing we had in the world that was moving with just, you know, sort of dumb AI. Yeah. I mean, we we have like we like we still have the like the early prototypes for the crowd stuff and and the those NPCs, but um since the since the character has been going so many evolutions, uh they've been kind of waiting on that we we have something that we don't have to do too many times over. Well, we'll be able to get to that, I think, sometime this year. Now that some there's going to be some very final changes to the avatar system. Recently, we chopped off the head uh of the avatar. Don't panic anyone. You're still going to have your head in the game. It's just something technical on our side. So, win guillotine. Yeah, it's it's flowing. No, somebody would buy that, right? A guillotine 1,000%. Yeah. Um, so collision Kai, how do you feel about that? A lot of work. Don't you love collision? So yeah, like collision in Unreal. So you have the stuff that you see which is all nice and uh many millions polygons and all that stuff, but the calculations and and the server side stuff that requires really simplistic collision to work. And uh obviously with Nanite we have really complex meshes on the world. So like most of the time we can get away with with all the all the automated proxy stuff and all that uh that Epic provides. But then like some meshes just are too much and you just have to do manual collision for them. And then obviously like with with the landscapes uh that's another pretty bad collision example like for navigation because like what you see in in in visually is totally different on how the engine is is handling like the logic and all that. So like for example the character if you if you go break it down on on the core the character is nothing but a capsule that goes on the wall like if you strip all the all the all all the visuals out then capsule is the only thing that's moving about. I got to stop you guys for just a split second because again, a lot of us that are watching this are gamers and we play games, but you guys are throwing a lot of technical terms around like splines and meshes and capsules and and and and maybe you guys can elaborate a little bit on on what some of those things are just so you know, idiots like me can can follow along. I mean, I could start with the fact that you always have your visual of an asset and then you also have a different um thing in the pipeline there, which is the collision. So, and sometimes we have to do a lot of custom work with that collision bit because you know if you've got some 10 million poly cliff piece or something like that, you're not going to get away with 10 million polies for collision. I love it. I asked for an explanation and what he does is throw more terms at me. It's beautiful. Yeah. Look, David follows direction. This is why he's the director of the game because he likes to give direction and not uh Now, first of all, okay, you you said collision. Now, that is the interacting between two objects whether or not you can pass through it or not in the game. Correct. Yeah. Yeah. It's it's part of the physics system technically. Um but I would say the biggest problem that's come up is the fact that you have nextG lighting. you have the ability to do nanite nextG visuals, but collision is still stuck back in, I don't know, 2008 or something like that. And you just, you know, I wish I wish there were some changes to Unreal in the future that made this stuff a little bit easier. But there's even other challenges like you could have good solid simple collision that's performant, but what if you're moving too fast? You could just go right through it. Yeah. So, I like that your molecules are vibrating fast enough for you to move through it. That's that's a good technical explanation. All right. Well, you guys have thrown around a lot of stuff. Maybe it would help for some visual. I know you guys have a test level set up where you're going to show us some things. Uh, shall we go ahead and do you want to kick click on that little screen share button? I do have I just have some images to go through that were talking about past stuff. Just this is a little bit of a surprise. Oh, so I thought I like surprises. I Yeah. So just some things like uh you know I Kai I went through kind of our communications throughout the years and just oh god found some interesting images. So I mean even you know from unreleased vehicles to um you know just just maybe some funny stuff and just some stuff about how we went about the process, the early evolutions of things. So, give me a second here and I will share my screen. All right. Can you see what I have on my screen? What is this? What's going on? I see sparkly ribbons in the sky. Yes. Yes. Kai, you want to explain what this is? Um, you're like, \"Wait, what is this? I don't remember.\" Is that the first racetrack? Yeah. Thank goodness it's not. I think this is when we were doing some performance testing on swines in a level and we just I Yeah, I think so. Al, and I that could be also like the first test that I did for the like for the highway system that we scrapped basically. Oh yeah. Yeah, I have an image of that in here too. So nice. Yeah. Now, wait, you guys said spline again. What What is a spline? Can you explain to everybody what a spline is? Basically, this is like like a my cable for the for the phone. Perfect. That this is basically a spline. Okay. Two ends and uh it goes whichever way in between. So that's So when you're in editor, it's got little points along there. You can create little points and and stretch them and pull them to make the path curve in the way that you want it to ultimately end up. Yeah. And it involves a lot of math. But yeah, some of the earliest Yeah. The racing elevators, I think, back when Cleo was first being built. Yeah, that that's the like I think very first even maybe the first elevators. Yeah, something like that. I remember the old uh transport we had here. We experimented with different types of doors before we moved on to the newer design. I think there's still some of that. This that that one got a facelift though. Yeah, it did get a a lot of things got a facelift. I remember the uh the Skyway by Bubble Jet before it got ruined by jetpacks, but we're still going to keep them because they they add some motion to the world. You know, maybe you can have some crowd riding on there or something like that. Hey, look, not everybody can afford a jetpack in court, right? We got we got some some lower income people that are, you know, living down in the depths of the city there that uh they got to take the public transport. Yeah. Um this might be a strange one. Um I'm not sure why I was doing this, but there was Yeah, this is an actual racing vehicle in Solless. So, and let me tell you, it's not a good time. So, um I was testing I think I was stress testing. You know, we have these these um what does Matias call them? I forget what he calls them, but we send these line traces down. We have about nine of them and that's what operates the uh Yeah. Yeah. Yeah. line line traces to check the the check the height and and uh and uh height height to the crown and then adjust the vehicle. And yeah, I I've imagined that it was a pretty bad on solace because that's going to be a pain in the ass. got a lot of extra collision bits and when you're trying to move at any sort of speed that thing just can't keep up the you know it just yeah we're we're going to do a lot of this same system in the future is going to be used for um hover things that are coming up like mounts but um there's there's going to be some adjustments and rethinks for that specific side of it so we'll we'll see how that goes. Um do you know about this kind of Yeah, this is um the CR uh crowd NPC testing map. Basically, this is um their uh debug view uh for them to walk around and then the green circles and uh cylinders uh um gives you know gives them a point that they can access and sit. So basically a bench is marked as a smart object that they can walk into and sit on there and then uh go about again once they've rested there. And this also like I mean you can see partially what I meant about the collision. So the capsule uh like on on the character that's the actual thing that's moving in the world and then the character is following that. So yeah, animations just kind of go along and you have some IK to help with like foot placement. But yeah, it's it's all fake guys. And basically on the arrows is uh the the blue one is uh telling us where the actual capsule is pointing. And then the yellow one is the head mesh. So we have like a basically the the head if it's looking right then we can just see that where it's going and then have other stuff based on that. So yeah. Yeah. I think this is one of your earlier tests of the crowd system. Yeah. In this one. So, um, yeah. Um, moving on from that, we got balls on the wall. Yeah. Holy balls, Batman. That's also What was that all about? That's also for the collision for the racing. We were trying to figure out I don't know if it was impacting making impacts look correct when you hit the wall or it was preventing passing through the wall at speed. I think that was the biggest issue. Yeah. Yeah. I think the main issue was that that if you if you like when you got into the wall, you the wall basically sucked you in. So, you couldn't even get away after you get hit by the wall. And then like this was basically something we tried that okay well let's try if it works and it actually made make it like it it worked. So, see, when I look at it, first of all, I I think of uh a giant ping pong table, but I also sit there and think, boy, wouldn't that be cool if you're racing and you go along and somehow you could trip that and there all fell onto the track and people had to like weave in and out of them. There we go. What's Oh. Oh, I see the gentleman in the back is having um some some neck issues apparently. Yeah, it's it's funny. It's I mean it's it's hard enough to make things look good in a game, but uh you also have to keep the clothes on. Yeah. At the same time. So definitely some waiting issues that were going at this time. I just thought it was funny. Yeah. I don't know it was me or Kai. One of us drew a face and it was funny. That's great. It was kind of funny. So there there was so many I mean so the community you guys listening to this, you guys see bugs and whatnot. You've not seen the bugs that we've seen on our side. So you you never get to see the really really bad stuff. So I'll tell you this. Uh we've seen enough naked people in there to last a lifetime for sure. We we had that little naked phase. You guys remember that? Not you know, I don't know, year and a half ago where we kept having build after build after build that I think it was one of the Avatar reworks. But uh I'll tell you what, I didn't hate coming into work that day. Just saying. Yeah, there has been some nakedness. So it it happens. So um this one here obviously the uh one of the earlier I think Kai this is when you were planning out the uh Montreal. Yeah, this I think I think this was probably second iteration once once like uh when we added the VIP parking on that location and then uh now it's actually gone but uh early kido man it really shows um there's a there's a lot of actors and a lot of mash a lot of things going on in this level now this is like it's really it's my how things have changed. Yeah. Yeah. I think this is the original building of the racing tracks uh as well. So, some of the uh we had some gimbal lock issues with the spline system. We had to make our own spline system and I remember us Mat Matias did really good job on on fixing that. Yeah. That uh spline stuff. I remember it was quite a pain. Y was in Yeah. Yeah. Y Matias was working primarily on that and they they put it working. Yeah. A lot of people don't realize when you're on the racing maps, you're driving on an invisible track. Uh so the art that you see like you know this thing over here, it's not what you're actually driving on. You're driving on a very smooth uh collision type plane. Uh I think this is one of your test levels for Montreal stuff. So you've done multi- test and yeah this this was uh I think this was a we had a problem that we didn't have the meshes aligned properly and they were like all over the place and uh again this this was down down to some spline spline math things and uh it's always it's always math things that's for sure. No matter what you're doing in game development is art or programming, you're doing math stuff. So, stupid maths. Stupid math. Yeah. Um, this I I had a few more sprinkled in here. These are slightly out of order. Uh, this is how Cleo started. So, very basic version there. Uh, some of the more basic stuff, drawing out the way it's supposed to look. Um, this is when we started planning how uh things would work. Yeah. uh in the domes themselves like the logistics things uh we I think we started with there was like two surface stations there was four and now we have one per town. Yeah. Uh which makes sense. This is a real blast from the past. Yeah. This is this is the very first uh highway high highway test and uh where we where I was testing how the the existing things that we had uh could scale up and uh basically the level and on on there if you see the the red dot on on on the on that's basically the player size. Yep. Yeah. is definitely something we we scrapped in favor of free flights, which I think we will see this year, traveling between hangers, things like that. Um, I'm going to sprint through a couple of these so we don't go too long here. Uh, the birth of Solus one. So, that was Oh, and yeah, there's some of the markings originally. There's a lot of just chicken scratch markings that go between deaths like all the time about things. Plans like this, there's a lot of mirror boarding. um setting up things logically. So we can see it here. I don't know if you remember this cut. This this was this we need we needed something to move in the in the hanger which was huge. So basically we needed a like a escalator type uh I think this is like the first this is where any like forward moving transport started. Yeah. is with that little sled thing that went on. And this is the early edition of the hangers. And we were talking about the logistics of vehicles coming in and auto landings so people didn't play bumper cars. Question. Uh is is there any chance of any of some of that stuff coming back? Like I know you guys did work in it in the past, but some of this stuff is really super cool. And I was just curious if uh there are any plans or Well, were the hangers? I mean things evolved a bit but a lot of the same planning and thinking and work that we did with this will go into that just just kind of in a different location rearranged a little bit. Nice. Yeah. So you'll definitely see that. Um look at this. What is that? This is an unreleased vehicle at the time and Kai did an incredible job designing this. This is a beautiful vehicle. We weren't sure of the direction of vehicles at the time and if they look too carlike, if that was the wrong way, but I do think we're going to see this come back. Anybody in the comments, if you're interested in owning one of these, uh, please let me know. So, you know, I have to tell you it I I look at that and I think, you know, if Porsche or Ferrari made a vehicle in our game, it would look a little something like that. Maybe like an older Porsche. I kind of think the front reminds me of a Mustang. Oh, okay. I can see that, too. Yeah. See the Mustang thing. But yeah, very cool vehicle. I like it. We also had uh other vehicles like this. I don't know if anybody remembers this. This is It's definitely I feel like it would really fit in like Bladeunner or something like that. Uh maybe even in Star Wars and Cortiscent uh going on, but this is one of the ideas that were scrapped. I don't know. these luxury Buicks of the sky uh will will come back. But that's just, you know, that's another older It seems like something Tesla would do. I feel like if you had hover vehicles, Tesla would do something like this. I could see that flying around downtown in the city. Like you said, a very Bladeunner type type vibe. Uh in the in the city area, um I think I think that would work really well to be honest. Yep. I just have a few more images here. Uh, this is uh what? I'm lost. Yeah, I know. That was a That was a huge Oh, wait, wait. No, wait, wait. I got it. I got it. I want to guess. It's mining. Yeah, it's I can see the elevator. They're going down. Yeah. Yeah. Kai did a lot of elevator work mainly, but uh I guess at one time we were looking into, well, what were mine shafts like back in the day? And turns out they were absolutely horrible. They packed people in like rats. There was a lot of sickness and death. Uh it's I think mining is romanticized in games a bit and uh in real life it's it's absolutely it's it's absolutely horrible especially back during this era. But that's also where the idea of making mining dangerous came from. So u not making it hunky dory like like other games. So and I want to I want to point something out here real quick for everybody involved. Look at the guy on the far left hand side and he's smiling, looking over at the people and he's laughing. He's having a good time. And then look at the look on the faces of terror of the people that are getting ready to go down. Like, yeah, the guy who's staying up there, he's like, \"Yeah, hey, see you guys later.\" Anyway, just found that very amusing. Rough life there. I'm sure a lot of people probably didn't live past 40. So, yeah. Yeah. Flywheel. Uh the original and I think these are in the soloses now. I was going to say we've seen a lot of that in game right now. Yeah. Yeah. Uh original I think it's original Montreal design, but we might bring back some of this original design. The idea was to end up making it more open than this. So this is the design that you actually have now. So but that's about it. I didn't want to get into the newer stuff or I I just wanted to bring those up out of nowhere for for fun. Well, I think it's interesting for people to see the evolution over time. Yeah. You know, see what it what what what how it was conceptualized. They know what it looks like in the game or most of them do. If if you're running across this video and and you haven't checked out the game, we we are in pre-alpha. It's it's a closed pre-alpha, but you can go to our website and try to get on the list to to get in and check out the game. And there's a couple other ways as well. Community will help you out on our Discord channel, but uh yeah. So, you're pretty much ready to jump into the upcoming are are we doing Ghost of Christmas past, Ghost of Christmas? Do you have Ghost of Christmas present? Is that where we're at right now? Or straight into the future? I think it's present and future now. All right. I I think is going to do a screen share and go through some things. I'll try to talk a little less. Okay. So, oh that looks like a drone. That's looks like a drone. And this is actually the security bot version two. And uh let's I'll just uh go quickly through what I meant about capsules and meshes. So this is uh the main capsule that actually is moving on the world uh by the engine and all the calculations is based on that. Uh it's going to scale on uh to right size once it's on the the world. But for here it's like this. And then you can see that we have the gray one is like again another collision thing for just for the engine to handle the damage and all that stuff. Let's just hide it. Then we can see our security bot. And these are all the visual stuff that uh players will see. When are these going to start shooting at players? K. They're bad. Don't ask. You might get it. Let's just play here. There be dra wait a minute. Dragons. Yeah, there's always dragons. Is that a hot take? Is that a leak? Is that a I'm just kidding. In the comments down below, win dragons, right? Yeah. Yeah. So, this is my personal test domain. And uh what is happening here is that if I shoot my gun, we are getting getting threat level and um getting wanted status. And um Oh, and there's security drone. Yeah, he's not. Real quick, I I have a question. I know you're dodging lasers and I don't mean to distract you, but you mentioned the different security zones. Y uh can you tell us a little bit about that? Is it like high level zone where you're punished more for doing bad stuff and and medium and low or how does that work? Yeah, basically it is also the response time. So with high uh high uh or maximum security zone, they're going to spawn like pretty much instantly if you uh get to like uh too high level, okay? And then they come after you. And uh also there is few few bucks here at the moment because I'm playing as a client and uh well cuz it's a test level too, right? I mean like let's face it, it's I I do see in the top right hand corner the the wanted stars. Yeah. And that is apparently when you do bad stuff, you get more stars, I assume. Yeah. So basically once once you get like one and two they will start to check what are you doing three they come basically guns blazing and four and five obviously even more but uh it's uh it's basic basically a threat level thingy. So if if you keep shooting stuff uh in areas then so for example uh I think uh okay so basically this this is just the no response zone. So I can shoot and nothing happens and then like there is a lot of variables on how fast they are going to uh so essentially if you're in a protected area and you go on a killing spree, uh you're going to have the law increase on you in a GTA kind of way. And then you're going to have bounties where other players might come after you. And if you get taken down, guess where you're going to wake up in the future? Prison. So, which is, you know, there's some of the I wouldn't say final work, but that on the construction of prison is going on right now. And then we're going to start putting the actual system together for that. But I I know there's plenty of community members out there that would love to see some people go to prison. Okay. I have lots of questions. First of all, well, I have a statement and then a lot of the questions. And the first statement is I think a lot of people are going to be happy with this coming into the game because uh right now it's kind of a free-for-all and there are some players that want to play, you know, uh more of the MMO and then there's some people that want to do some of the, you know, more combat related type stuff. And so you can stick to the areas that are a little safer and you know, at least you're going to have some help. Um, also, you know, spawn camping, uh, with the guns turned off in the medical center. That's kind of a thing of the past. Um, and you you talked about the bounty and the bounty board. So, if if if I kill somebody, I get a bounty on me, right? Which means that like there's some amount of what, like IGC, credit chips, where if somebody kills me, they get those credits. Yeah. Yeah. So if if you are on the bounty board and somebody comes after you and they kill you, they will get the credit chips for that kill and they won't get That's awesome. And they they don't get like uh obviously they don't get uh threat level. Yeah. Increase the stars. Yeah. Okay, that's good because Yeah. You'd hate to just be going after a bounty and then all of a sudden, you know, which actually that robots after you. That actually now reminded me that the thread level actually is a bit of a yeah there is some adjustment that I need to do still because at the moment uh like there's lot of checks uh when when you are shooting in the area and basically like if you are hitting somebody even with bounty your threat level at the moment actually is going up. So, I need to like there is a few things that need to need to be changed, but uh sure, we get it. This is work in progress type stuff. I I hopped in earlier today and I I really liked the bones of it. I did. Basically, you if you're shooting in the wall or something else, you know, your threat level goes up real slowly. If I kill somebody, boom. Yeah. Instant, you know, max thresh threshold. So, uh that is super great. dumb question and maybe you guys haven't even thought about this yet. And if it's too early, just tell me. But have you guys thought about how to keep people from farming? Say a person hops in with a second account and then just keeps getting bounties on themselves. Have you have you guys even thought about the process of how you protect that? I don't think we've I mean problem like that. There's a lot of little things like that that we've talked about, but generally we've said that, you know, we're we're going to cross that bridge when we get there. So, I mean, once you don't want to try to put things into core systems that aren't complete yet, once it's there, once, you know, maybe once problems start showing up, we'll find a way. Excellent. All right. Well, I I think you got some other stuff to show us as well. Oh, I got Oh, you got a cluster of them. You got two heavies. No, three heavies. M yeah, that should be fun. Yeah, I going to die. Yeah, I changed some stuff and and now the like the the the spawns are uh partly uh procedural and random. So, yeah, this I mean they're all having a little conversation. Yeah, I know you guys have have changed the drones over time and like you said heavies, you've got some that have heavier armor, you've got some that have heavier guns. Have you guys ever created a bot that you guys were actually scared of that you didn't want to go up against? What? I mean, you're like, \"Yeah, I'm not going in there.\" That guy. Yeah, it's hard to think about that. I mean, I know me me and Kai, I think we usually push for making them more difficult to fight, whereas QA, you guys are like, \"Yeah, I think it's like Renee, he's like, \"Can you can you I think they're too hard.\" So, it's like they're not hard enough. So, I think players need a challenge. I mean, drones, I think even at the heavy the ones like here that that can give people a little bit of a tough time. Um, I think those are very light compared to what people are going to see with rifts. I was going to say this is this is the low end, right? When do we talk? Yeah, they're they're just, you know, they're just some terror drones that's out here and causing problems. uh might see another one soon actually is a uh a collection drone from the Terra, but uh we'll talk about that at a later time because there is a there is some miscellaneous quest stuff coming up where there well, you know, I'm not I'm not going to spoil it. Maybe that's for a day, not not here, but yeah, I'm I'm just going to hush. I think I think the drones are the bottom of the food chain. The real trouble starts when you start getting into the rift stuff. And I see one in the background over there. Yeah. There Kai, you got something to to show and tell about that? Yeah, I can. Um, so basically this is spawned rift and you can see that it's currently spawning few things in the background. So what we have and this is still like programmer art uh in in uh yeah don't expect this to be what a feels it looks like finally. So what we have is like we have like we can have multiple different Oh I'm too far that one. So basically are are you scared to go up there? Cuz yeah I'd like to see them a little bigger. Hold on just a second. He's like, \"Look, I've done I've played this thing before.\" Right. Yeah. So, like I mean the like I said uh in the start that uh there's going to be multiple stages and uh this is basically the bare bones of of of the things. So, uh you have to destroy these uh anger stones. Uh they're going obviously going to have like a proper art and uh and uh uh critical hit uh spots that like obviously now they are really easy to shoot since they just uh are uh bullet sponges, but they're going to have a hit location and all that. And you're basically fighting the rift and you're fighting waves that come out of the rift. And then you get down to a rift boss. And then after that point, there's going to be the heart of the rift where you can get some loot if you happen to close it down. But you're you're probably not going to be able to do this by yourself and uh in the end get loot. Yeah, I think Do we cover the big boss before? Did we cover that in a cafe? The dread frame? No, I can't remember. Yeah. So Oh, there we go. There we go. And you do have um you know, I'll talk about the armor maybe a little bit is you have various armor plates that protect uh different uh mech creatures that come out of the rifts. So some of these are like light armor, medium armor. They have different hit points. So players over time have to strategize um what weapons and how to take these things out. As you say, which order probably is also a concern. Do I take out the big heavy first because you're doing so much damage or all these little ones because they're annoying me? Yeah. Yeah. And what it actually is that the little ones should be coming out, but since I actually bucked the rift, they are now stuck there. Oh, there is also Yeah, there we go. Somebody's going to be like, man, blueberry butt really flies. You got that. You got the jabs down there. Those are those are the ones that are really gonna push players as you're trying to like you're trying to take care of blueberry butt over there. And you got these little ankle biters coming at you. I mean, hardly an ankle biter though, right? So, the thing looks like it could run you through. I can see this getting out of hand in a in in quick fashion though. Yeah. I mean, the thing is that there is like um I think there's 30 of them now. And uh since I'm all alone here, they all target me. Uh and they have they have separate threat list. So basically if you have multiple people then they will try to like they they are going to the highest uh threat like like in individual individual threat and also the the the riftw white thread list. So you are not safe if even if you are like just hanging around camping. Yeah. So yeah. Yeah. I think even at this very work in progress kind of look here. I think you community guys out there can imagine just what a sweatfest this is going to be when the things really start going. So it's it's going to be very very sweaty. Well, that was going to be one of my questions actually. Are riffs designed to be farmed or survived? I mean, yeah, riffs are designed to make people like upset and break their keyboards. So, that's great. That's so nice of you guys. You don't have any issues about that, Scruffy. You don't break anything when you play games. I will just say that my budget for keyboards and controllers far exceeds what it should, sir. That's I'm going to leave it at that. Oh, I like that guy. He's break dancing, dude. That's that's scary. You get a break dancing robot after you, that that's trouble. Yeah, if you are too close, that will kill you when when they start spinning around. And uh so they have like a self distracting. This is a work in progress and it's it's it's nice to kind of see early stages and how it comes together. And I think a lot of people can understand why it takes so long to build video games because there is a lot going on. This is hard stuff. Uh, anything else you guys want to to kind of share with the audience or is there anything else that you guys have to touch on? Since since I'm doing a lot of work or been doing lot of work elevators there you can see our current ones that are basically going in between few places. Uh, but then show the newer elevators. I love this. Then we have this one. So, we have our Oh, different button, different floor levels. And you have the double safety doors that are there. Oh, I missed that. Yeah. Okay. Well, basically, this is one uh elevator that you're going to use in the apartments. And um Yeah. Yeah. Actually, it's going down now. But since we're a simulator, we need we need to program in the elevator getting stuck, having to call the fire department, and just the occasional freef fall. So yeah, and this there's your freef fall. Yeah, that that's what I talk about the collision. This mesh doesn't have the proper collision yet. It's only has the visual stuff. And uh then we have the elevator thingy that will show where it's actually going. And then I love the new elevator buttons for the floors because ooh safety doors. But yeah, I was the kid that would go in to the elevator and just hit all the floors so that people would hop in and then have to stop at every single floor. And it's good to know I can recapture my childhood youth in the game. Love it. Exactly. This is for you. Love it. Do I get Wait, do I get a threat level if I do something like that? Is that you guys got that worked in there yet? I think Kai's gonna make a note of it now that you said that. That's that's for you. We can we can add that to the like I have different types of crimes. So you get like a half star. Yeah, that's a that's a what is that like harassment or I mean what is what's lower than a misdemeanor? High annoyance. Maybe we can have annoyance charges. We just have a nun come out and slap your hands with a ruler or something. I don't know. It's a weird lore fit, but you know, I think I could think I can try. Some people might like that. So, yeah, have to be careful. There are people out there that pay extra for that. That's a That's a good I'm writing this down. This is how we get some of the crazy weird ideas that we talk about in meetings. I love it. Yeah, it's it's it's the it's the mal malicious compliance. You want something. There you go. Yeah. All right, gentlemen. Well, again, I I I just want to thank you for your time. We are we're running towards the end of our time and I know yours is valuable. So, uh once again, Kai, appreciate you joining us. David, as always, it is a pleasure. And uh for everybody else, if this is one that hit you, uh make sure like, follow, subscribe, whatever platform you're watching on. And uh we got more Origin Point coming up soon. Until then, everybody, game on.",
+  "segment_count": 354,
+  "warnings": []
+}

@@ -1,0 +1,2459 @@
+{
+  "title": "Origin Point Episode 1",
+  "source_file": "1787797205002_OP1.txt",
+  "chapters": [
+    "Chapter 1: Intro to Origin Point",
+    "Chapter 2: Understanding Infinity Rising",
+    "Chapter 3: Exploring Game Lore and Community Dynamics",
+    "Chapter 4: Industry Challenges",
+    "Chapter 5: Navigating Adult Themes in Gaming",
+    "Chapter 6: Balancing Humor and Seriousness in Gameplay",
+    "Chapter 7: Elicit Substances",
+    "Chapter 8: Geology and Resource Gathering in the Game",
+    "Chapter 9: Advancements in Game Development Technology",
+    "Chapter 10: The Future of AI and Player Relationships",
+    "Chapter 11: Game Pricing and Perceived Value",
+    "Chapter 12: Anticipating Future Developments in Infinity Rising"
+  ],
+  "transcript": [
+    {
+      "start": "0:04",
+      "start_seconds": 4,
+      "chapter": "Chapter 1: Intro to Origin Point",
+      "text": "Hey everyone, welcome to the first ever episode of Origin Point, the show where each episode we pick a developer from"
+    },
+    {
+      "start": "0:11",
+      "start_seconds": 11,
+      "chapter": "Chapter 1: Intro to Origin Point",
+      "text": "Infinity Rising and dive into a variety of topics regarding video game development and the people that help design and create the game. I'm Scruffy,"
+    },
+    {
+      "start": "0:22",
+      "start_seconds": 22,
+      "chapter": "Chapter 1: Intro to Origin Point",
+      "text": "the QA manager for Infinity Rising, and I'm joined by David, our game director. David, thanks for being here, man. appreciate you."
+    },
+    {
+      "start": "0:30",
+      "start_seconds": 30,
+      "chapter": "Chapter 1: Intro to Origin Point",
+      "text": "Yeah, nice nice beard you have going on there."
+    },
+    {
+      "start": "0:33",
+      "start_seconds": 33,
+      "chapter": "Chapter 1: Intro to Origin Point",
+      "text": "You like that? I've over the holidays I kind of just let it go."
+    },
+    {
+      "start": "0:38",
+      "start_seconds": 38,
+      "chapter": "Chapter 1: Intro to Origin Point",
+      "text": "I I you know, it's weird. I I don't know how it like reached that length. Maybe I wasn't paying attention. It seems like it did it overnight. Like you just kind"
+    },
+    {
+      "start": "0:46",
+      "start_seconds": 46,
+      "chapter": "Chapter 1: Intro to Origin Point",
+      "text": "of glued on like an extra piece. I I don't know. So,"
+    },
+    {
+      "start": "0:50",
+      "start_seconds": 50,
+      "chapter": "Chapter 1: Intro to Origin Point",
+      "text": "we've been in meetings and there have been people that hadn't seen me in a couple. You know, sometimes you go two or three weeks without a particular"
+    },
+    {
+      "start": "0:56",
+      "start_seconds": 56,
+      "chapter": "Chapter 1: Intro to Origin Point",
+      "text": "person being in one of your meetings and they walked in and they're like, \"Oh my goodness, the community also the other day when I was in the watch party.\" Yeah."
+    },
+    {
+      "start": "1:05",
+      "start_seconds": 65,
+      "chapter": "Chapter 1: Intro to Origin Point",
+      "text": "They uh they were doing the goat memes. So, uh yeah. Anyway, appreciate it. So,"
+    },
+    {
+      "start": "1:11",
+      "start_seconds": 71,
+      "chapter": "Chapter 1: Intro to Origin Point",
+      "text": "okay. You actually came up with the name for the show, Origin Point. You You didn't realize you did, I guess. Well, I"
+    },
+    {
+      "start": "1:19",
+      "start_seconds": 79,
+      "chapter": "Chapter 1: Intro to Origin Point",
+      "text": "I was reminded that I did because this is something we wanted to do a long time ago. And you're probably going to ask,"
+    },
+    {
+      "start": "1:25",
+      "start_seconds": 85,
+      "chapter": "Chapter 1: Intro to Origin Point",
+      "text": "well, what does that mean? Origin points. Well, it's it's incredibly boring. Um, but it does it does kind of point at"
+    },
+    {
+      "start": "1:33",
+      "start_seconds": 93,
+      "chapter": "Chapter 1: Intro to Origin Point",
+      "text": "let's let's talk about what it is at a technical level. It's it's really the zero zero zero point as we call it of the x y and z and your vector math. And you know 3D models have an origin point."
+    },
+    {
+      "start": "1:44",
+      "start_seconds": 104,
+      "chapter": "Chapter 1: Intro to Origin Point",
+      "text": "uh many many functions that we might do in a game are everything's always going to have its sort of origin point. So that's that's the dev side of things,"
+    },
+    {
+      "start": "1:54",
+      "start_seconds": 114,
+      "chapter": "Chapter 1: Intro to Origin Point",
+      "text": "but I think it also kind of speaks to like where the game's coming from, the origin point of the game, uh the passion"
+    },
+    {
+      "start": "2:01",
+      "start_seconds": 121,
+      "chapter": "Chapter 1: Intro to Origin Point",
+      "text": "of the team, uh the thought process behind things. So I think it think it kind of has a double meaning besides the boring uh technical side of things. So"
+    },
+    {
+      "start": "2:10",
+      "start_seconds": 130,
+      "chapter": "Chapter 1: Intro to Origin Point",
+      "text": "I like the double double entandras, if you will. Yes. All right. Well, for everybody who isn't familiar with Infinity Rising, real quick, tell everything about the game in 60 seconds."
+    },
+    {
+      "start": "2:22",
+      "start_seconds": 142,
+      "chapter": "Chapter 2: Understanding Infinity Rising",
+      "text": "Ready, go."
+    },
+    {
+      "start": "2:23",
+      "start_seconds": 143,
+      "chapter": "Chapter 2: Understanding Infinity Rising",
+      "text": "Wow. You know, we've always said it's like this is a really tough game to elevator pitch, but uh the main thing is"
+    },
+    {
+      "start": "2:30",
+      "start_seconds": 150,
+      "chapter": "Chapter 2: Understanding Infinity Rising",
+      "text": "it's um we're not really I don't even I kind of hate the word game. This is what I hate. You know, I was talking to Jim,"
+    },
+    {
+      "start": "2:38",
+      "start_seconds": 158,
+      "chapter": "Chapter 2: Understanding Infinity Rising",
+      "text": "you know, uh, earlier about that, and it's like, is this a game? Or, you know,"
+    },
+    {
+      "start": "2:42",
+      "start_seconds": 162,
+      "chapter": "Chapter 2: Understanding Infinity Rising",
+      "text": "we you'll have a you'll have a small developer put up like a one-hour experience, neat little thing, that's a"
+    },
+    {
+      "start": "2:50",
+      "start_seconds": 170,
+      "chapter": "Chapter 2: Understanding Infinity Rising",
+      "text": "game. But then you have something like GTA 6 or, you know, Starfield or these massive Star Citizen. Is that a game or"
+    },
+    {
+      "start": "2:58",
+      "start_seconds": 178,
+      "chapter": "Chapter 2: Understanding Infinity Rising",
+      "text": "is it a lifestyle? It's, you know, it's it's really both. But, uh, anyway, not going to get hung up on that. my gripes"
+    },
+    {
+      "start": "3:04",
+      "start_seconds": 184,
+      "chapter": "Chapter 2: Understanding Infinity Rising",
+      "text": "of the word game. But Infinity Rising is a large open scale uh well not open"
+    },
+    {
+      "start": "3:11",
+      "start_seconds": 191,
+      "chapter": "Chapter 2: Understanding Infinity Rising",
+      "text": "scale openw world uh MMO and um I don't want to just say it's an MMO because it's also more of a simulator. So um and"
+    },
+    {
+      "start": "3:20",
+      "start_seconds": 200,
+      "chapter": "Chapter 2: Understanding Infinity Rising",
+      "text": "it's based in a post-apocalyptic uh universe. It's we go with the multiverse theory. So, uh, you're"
+    },
+    {
+      "start": "3:28",
+      "start_seconds": 208,
+      "chapter": "Chapter 2: Understanding Infinity Rising",
+      "text": "actually in a different version of the Earth, uh, where things have not went as well as they have here. Uh, and our Earth is sort of actually part of the"
+    },
+    {
+      "start": "3:36",
+      "start_seconds": 216,
+      "chapter": "Chapter 2: Understanding Infinity Rising",
+      "text": "lore as well. So, it's it's that's kind of the interesting aspect is we're we're pulling players in from where they currently live on Earth into another Earth. And that's that's all part of it."
+    },
+    {
+      "start": "3:47",
+      "start_seconds": 227,
+      "chapter": "Chapter 2: Understanding Infinity Rising",
+      "text": "And there's a great call to action because that Earth is still under an even greater threat now. And in this"
+    },
+    {
+      "start": "3:55",
+      "start_seconds": 235,
+      "chapter": "Chapter 2: Understanding Infinity Rising",
+      "text": "world, and this is the tough thing, this starts going on forever. You can do a lot of different things. So, um, if you"
+    },
+    {
+      "start": "4:02",
+      "start_seconds": 242,
+      "chapter": "Chapter 2: Understanding Infinity Rising",
+      "text": "look at the average MMO, I would say you you kind of have this mentality of specializations with players. Uh, some"
+    },
+    {
+      "start": "4:10",
+      "start_seconds": 250,
+      "chapter": "Chapter 2: Understanding Infinity Rising",
+      "text": "people might call them classes. Um, but they they surround the idea of more combat. That's like their end point,"
+    },
+    {
+      "start": "4:17",
+      "start_seconds": 257,
+      "chapter": "Chapter 2: Understanding Infinity Rising",
+      "text": "right? I'm a wizard. I'm going to be a wizard. I'm I'm going to be a paladin."
+    },
+    {
+      "start": "4:20",
+      "start_seconds": 260,
+      "chapter": "Chapter 2: Understanding Infinity Rising",
+      "text": "I'm going to be a tank. All surrounds combat. We we don't really do that. Ours kind of surrounds like vocations a little bit. Like if you want to be a woodworker, you want to be an explorer,"
+    },
+    {
+      "start": "4:30",
+      "start_seconds": 270,
+      "chapter": "Chapter 2: Understanding Infinity Rising",
+      "text": "you want to be a minor, you want to be somebody that goes into uh chemistry and works with that, somebody that works in quantum physics. So, it's not that"
+    },
+    {
+      "start": "4:39",
+      "start_seconds": 279,
+      "chapter": "Chapter 2: Understanding Infinity Rising",
+      "text": "combat isn't a part of it. There is a big part that can be combat if you want to be part of it. But the the focus is on a digital life, uh helping out the"
+    },
+    {
+      "start": "4:47",
+      "start_seconds": 287,
+      "chapter": "Chapter 2: Understanding Infinity Rising",
+      "text": "world and not just a combat way, even a economical way. So, there's a lot of different directions players can go. Uh, we have very detailed avatar creators,"
+    },
+    {
+      "start": "4:55",
+      "start_seconds": 295,
+      "chapter": "Chapter 2: Understanding Infinity Rising",
+      "text": "so you can create yourself or create whoever you want to be. Um, you can jetpack around. We have, you know, we have our blood sports, which is kind of"
+    },
+    {
+      "start": "5:04",
+      "start_seconds": 304,
+      "chapter": "Chapter 2: Understanding Infinity Rising",
+      "text": "like a gravity racer, high-speed machines flying around. Um, in a lot of ways, I like to kind of condense down the whole idea as being like it's almost"
+    },
+    {
+      "start": "5:13",
+      "start_seconds": 313,
+      "chapter": "Chapter 2: Understanding Infinity Rising",
+      "text": "like a mini charming, more widely appealing space simulator than something like Star Citizen. You got these big floating domes in the sky. Uh it's a"
+    },
+    {
+      "start": "5:22",
+      "start_seconds": 322,
+      "chapter": "Chapter 2: Understanding Infinity Rising",
+      "text": "Jetson's kind of world where people are flying their jet cars from place to place, hauling things around. Um a lot of high technology has taken place. It's"
+    },
+    {
+      "start": "5:32",
+      "start_seconds": 332,
+      "chapter": "Chapter 2: Understanding Infinity Rising",
+      "text": "a little bit different than our earth here. They have anti-gravity technology that really it's kind of the one thing"
+    },
+    {
+      "start": "5:40",
+      "start_seconds": 340,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "there's an element that they have access to that we call geneium and it brought the ability to have anti-gravity technology and quantum portals. It's It's the one thing that saved the world,"
+    },
+    {
+      "start": "5:51",
+      "start_seconds": 351,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "but it was in a lot of ways the one thing that destroyed the world in the first place. So,"
+    },
+    {
+      "start": "5:56",
+      "start_seconds": 356,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "I love when you get to talking about the lore. I got to tell you guys, I if you have a chance to take a car ride from a"
+    },
+    {
+      "start": "6:05",
+      "start_seconds": 365,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "hotel in Vegas to a Mexican restaurant with this guy, make sure make sure and take up that opportunity because you"
+    },
+    {
+      "start": "6:12",
+      "start_seconds": 372,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "will get so much info on the lore. I was blown away by the way this guy's mind works and it's so fantastic. I'm I'm so"
+    },
+    {
+      "start": "6:19",
+      "start_seconds": 379,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "excited for everybody to be along this journey and find this incredible lore that's been crafted and it's exciting"
+    },
+    {
+      "start": "6:27",
+      "start_seconds": 387,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "and I don't know I don't know how far off we are from them finding some of those details out. Uh but over the"
+    },
+    {
+      "start": "6:34",
+      "start_seconds": 394,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "coming months I would assume little by little they're going to get some nuggets. There's a lot of uh the I feel"
+    },
+    {
+      "start": "6:41",
+      "start_seconds": 401,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "like the in a lot of ways the lore is like bigger than the game itself at least right now because we're still in development. There's there's been a lot of work that's been done into it."
+    },
+    {
+      "start": "6:49",
+      "start_seconds": 409,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "There's got to be I think a lot of like sort of twists and turns over time. Uh you know that's that's something else to talk about I think too is we're not"
+    },
+    {
+      "start": "6:58",
+      "start_seconds": 418,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "looking at the player as coming into the world is like you're the hero, you're the chosen one. The prophecy wrote this about you. I always find that very"
+    },
+    {
+      "start": "7:07",
+      "start_seconds": 427,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "strange that you have these big MMO worlds and um everybody's special that"
+    },
+    {
+      "start": "7:15",
+      "start_seconds": 435,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "that goes in there and everyone it's it's like it's a consistent world at least community-wise. Everybody feels a part of it. They do their own things,"
+    },
+    {
+      "start": "7:23",
+      "start_seconds": 443,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "but yet somehow they're all the hero."
+    },
+    {
+      "start": "7:26",
+      "start_seconds": 446,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "That's that's always been a bit strange to me. So now you and I agree on most things. I mean, we we've had a lot of talks back"
+    },
+    {
+      "start": "7:34",
+      "start_seconds": 454,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "and forth about, you know, future ideas or obviously when we get ready for a game release, often times you and I are"
+    },
+    {
+      "start": "7:41",
+      "start_seconds": 461,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "kind of in there really really hammering through the the the final what we think is going to be the final release, making"
+    },
+    {
+      "start": "7:48",
+      "start_seconds": 468,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "sure that it's uh, you know, passes and everything. However, this is one thing I think we differ on a lot. I want to be the hero. Like, I want to feel special."
+    },
+    {
+      "start": "7:57",
+      "start_seconds": 477,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "That's one of the reasons I play games."
+    },
+    {
+      "start": "7:59",
+      "start_seconds": 479,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "And so my question to you would be, what do you say to the people like me that I"
+    },
+    {
+      "start": "8:07",
+      "start_seconds": 487,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "still want to feel special? I still feel want to feel individualized and like I if if if I don't get in there and do what I need to do, the planet's not going to get saved."
+    },
+    {
+      "start": "8:18",
+      "start_seconds": 498,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "So yeah, throwing the hard questions here, but in reality,"
+    },
+    {
+      "start": "8:22",
+      "start_seconds": 502,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "they told me, hey, they told me not to hold back. That's I was directed by our marketing director. He said, \"Don't be afraid to ask the hard questions.\""
+    },
+    {
+      "start": "8:31",
+      "start_seconds": 511,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "Um, so you can still do that. Really,"
+    },
+    {
+      "start": "8:34",
+      "start_seconds": 514,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "it's what we're kind of saying is we don't have the path laid out for you,"
+    },
+    {
+      "start": "8:39",
+      "start_seconds": 519,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "right? There's a lot of different ways you can go. If you want to get in the world, you want to build up things on plots, you want to connect with people"
+    },
+    {
+      "start": "8:47",
+      "start_seconds": 527,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "and form an entire pipeline and become a steel giant that's, you know, bringing supplies to the front line. And you did that. You orchestrated that whole thing."
+    },
+    {
+      "start": "8:56",
+      "start_seconds": 536,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "You could do that. It's totally organic. You can go that direction on stuff. Um,"
+    },
+    {
+      "start": "9:01",
+      "start_seconds": 541,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "you could go in a total combat direction. You could totally focus on everything that needs to happen in combat because, you know, we have this"
+    },
+    {
+      "start": "9:09",
+      "start_seconds": 549,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "system. You have all the the gear that you can put on. You can upgrade yourself, right? And, you know, you put all these components together like your"
+    },
+    {
+      "start": "9:18",
+      "start_seconds": 558,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "jetpack and your armor and you assemble it in the right way, you could become something that's very, very formidable,"
+    },
+    {
+      "start": "9:23",
+      "start_seconds": 563,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "very, very powerful. And let's let's go back and talk about like how major things happen in the world. Um and and"
+    },
+    {
+      "start": "9:32",
+      "start_seconds": 572,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "maybe why I'm coming from this certain angle is I I think it's a little bit more like if you look at hell divers that's probably a better comparison for"
+    },
+    {
+      "start": "9:40",
+      "start_seconds": 580,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "viewers. They're you're not special like as a hell diver but you can be a part of this thing that's pushing against like"
+    },
+    {
+      "start": "9:48",
+      "start_seconds": 588,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "we need to invade this planet. We need to rid them of the the scum, the bug scum that's there or the or the bots or those those other horrible ones that I"
+    },
+    {
+      "start": "9:57",
+      "start_seconds": 597,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "that that I hate fighting. But you're part of that. And sure, if you're more powerful and impressive, you're going to be up there in a leaderboard as somebody"
+    },
+    {
+      "start": "10:05",
+      "start_seconds": 605,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "that's pushing against the riffs uh the most. So it's that's the more communityoriented is what you're saying. And yeah, you're you're part of something bigger."
+    },
+    {
+      "start": "10:15",
+      "start_seconds": 615,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "Yes. Okay. I like that. I like that."
+    },
+    {
+      "start": "10:18",
+      "start_seconds": 618,
+      "chapter": "Chapter 3: Exploring Game Lore and Community Dynamics",
+      "text": "Excellent. Well, uh, we we've talked a lot again behind the scenes about various I'll say I'll say problems in"
+    },
+    {
+      "start": "10:27",
+      "start_seconds": 627,
+      "chapter": "Chapter 4: Industry Challenges",
+      "text": "gaming. And we don't want to get too negative here. We don't want to bash a whole bunch of other games and stuff like that,"
+    },
+    {
+      "start": "10:32",
+      "start_seconds": 632,
+      "chapter": "Chapter 4: Industry Challenges",
+      "text": "but talk about some of the things that you haven't talked about before on other shows. Maybe, you know,"
+    },
+    {
+      "start": "10:40",
+      "start_seconds": 640,
+      "chapter": "Chapter 4: Industry Challenges",
+      "text": "some of the things how other games tackle them, things that are missing from other games and and and stuff like"
+    },
+    {
+      "start": "10:47",
+      "start_seconds": 647,
+      "chapter": "Chapter 4: Industry Challenges",
+      "text": "that. and and how we're going to try and tackle those issues."
+    },
+    {
+      "start": "10:53",
+      "start_seconds": 653,
+      "chapter": "Chapter 4: Industry Challenges",
+      "text": "I think I mean if you look at gaming as a whole, like the industry, it's been a it's been very weird for like the past couple years. Uh it seems like a lot of"
+    },
+    {
+      "start": "11:02",
+      "start_seconds": 662,
+      "chapter": "Chapter 4: Industry Challenges",
+      "text": "gamers are pretty disgruntled. You have a lot of that going on. I mean, there's there's so many directions that I could go with this one. Uh, you have"
+    },
+    {
+      "start": "11:10",
+      "start_seconds": 670,
+      "chapter": "Chapter 4: Industry Challenges",
+      "text": "everything about people complaining about, you know, poor delivery on games,"
+    },
+    {
+      "start": "11:15",
+      "start_seconds": 675,
+      "chapter": "Chapter 4: Industry Challenges",
+      "text": "too long of timelines to why does why can't I have a sexy female character anymore? Why does why does she have to"
+    },
+    {
+      "start": "11:22",
+      "start_seconds": 682,
+      "chapter": "Chapter 4: Industry Challenges",
+      "text": "look so homely? You know, you have that whole thing going on. Um, there where's my Laura Croft,"
+    },
+    {
+      "start": "11:31",
+      "start_seconds": 691,
+      "chapter": "Chapter 4: Industry Challenges",
+      "text": "right? You know, everybody wants Laura Croft to come back. you know, you go back and look in the day and she's like,"
+    },
+    {
+      "start": "11:35",
+      "start_seconds": 695,
+      "chapter": "Chapter 4: Industry Challenges",
+      "text": "you know, essentially has pixelated parts up here that are very, very low poly. But, um, I think the game industry"
+    },
+    {
+      "start": "11:43",
+      "start_seconds": 703,
+      "chapter": "Chapter 4: Industry Challenges",
+      "text": "went went in a direction that was kind of anti-consumer in a way. And it was um I think there were directors there were"
+    },
+    {
+      "start": "11:52",
+      "start_seconds": 712,
+      "chapter": "Chapter 4: Industry Challenges",
+      "text": "people that were I think they were more about pushing an agenda when they were when they were coming into the game uh rather than telling the own game story"
+    },
+    {
+      "start": "12:00",
+      "start_seconds": 720,
+      "chapter": "Chapter 4: Industry Challenges",
+      "text": "just like kind of on its own letting it be its own thing. They felt the need to inject the personal opinions on things."
+    },
+    {
+      "start": "12:07",
+      "start_seconds": 727,
+      "chapter": "Chapter 4: Industry Challenges",
+      "text": "And I think you know anybody listening to this you you probably feel that in a lot of ways. You don't wanna you don't want to come home after a long shift to"
+    },
+    {
+      "start": "12:15",
+      "start_seconds": 735,
+      "chapter": "Chapter 4: Industry Challenges",
+      "text": "go and play your favorite game to have somebody's agenda like pushed down your throat or something like that. So,"
+    },
+    {
+      "start": "12:21",
+      "start_seconds": 741,
+      "chapter": "Chapter 4: Industry Challenges",
+      "text": "and I think that's kind of across all media. I think we've seen a shift over the past, I don't know, 5 10 years of"
+    },
+    {
+      "start": "12:28",
+      "start_seconds": 748,
+      "chapter": "Chapter 4: Industry Challenges",
+      "text": "this being everybody's cause and everybody wants to input their beliefs and their thoughts"
+    },
+    {
+      "start": "12:37",
+      "start_seconds": 757,
+      "chapter": "Chapter 4: Industry Challenges",
+      "text": "into their product and I understand that. But I'm with you. I don't like agendas in games. Like, leave it open."
+    },
+    {
+      "start": "12:46",
+      "start_seconds": 766,
+      "chapter": "Chapter 4: Industry Challenges",
+      "text": "Allow me to do everything and I'll choose my agenda. the guy next to me can choose"
+    },
+    {
+      "start": "12:53",
+      "start_seconds": 773,
+      "chapter": "Chapter 4: Industry Challenges",
+      "text": "their agenda. And as long as we all have the power to do that, then we'll all be"
+    },
+    {
+      "start": "13:00",
+      "start_seconds": 780,
+      "chapter": "Chapter 4: Industry Challenges",
+      "text": "happy. I mean, you're never going to make everybody happy. That's the other real life is nobody's, you know,"
+    },
+    {
+      "start": "13:05",
+      "start_seconds": 785,
+      "chapter": "Chapter 4: Industry Challenges",
+      "text": "you're never going to have a utopia where everybody totally gets along. And I think I think that's the the beauty of it. But, um, yeah, players can go any"
+    },
+    {
+      "start": "13:13",
+      "start_seconds": 793,
+      "chapter": "Chapter 4: Industry Challenges",
+      "text": "direction. They can create their avatar however they want. They want to be a you know, you want to be a bearded dude running around in a dress. You've done that a few times in the game just for some laughs. So,"
+    },
+    {
+      "start": "13:22",
+      "start_seconds": 802,
+      "chapter": "Chapter 4: Industry Challenges",
+      "text": "I have. I have. Absolutely. And we've got people that make very I'll just say not flattering looking"
+    },
+    {
+      "start": "13:31",
+      "start_seconds": 811,
+      "chapter": "Chapter 4: Industry Challenges",
+      "text": "avatars. Um yeah, we all went to the exact same one."
+    },
+    {
+      "start": "13:38",
+      "start_seconds": 818,
+      "chapter": "Chapter 4: Industry Challenges",
+      "text": "Snoo at all, you know. But I I feel beauty is in the eye of the beholder."
+    },
+    {
+      "start": "13:42",
+      "start_seconds": 822,
+      "chapter": "Chapter 4: Industry Challenges",
+      "text": "Exactly. I I think some people are totally all about that. So the whole warped face and everything. So"
+    },
+    {
+      "start": "13:51",
+      "start_seconds": 831,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "speaking of that, what what what are your takes on like sex and drugs and bodily functions and like let's get into"
+    },
+    {
+      "start": "13:58",
+      "start_seconds": 838,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "the the the the the gnarly stuff that this is the good stuff. Really? Yeah. That's what I'm talking about. This is stuff people want to know about."
+    },
+    {
+      "start": "14:06",
+      "start_seconds": 846,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "How are we going to tackle all of that?"
+    },
+    {
+      "start": "14:08",
+      "start_seconds": 848,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "The shock factor. Um sex. I I don't know. Well, I I don't I don't see that as something being in the"
+    },
+    {
+      "start": "14:16",
+      "start_seconds": 856,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "game. Now, I do see because we're so community focused uh and and being kind of a social platform at the same time,"
+    },
+    {
+      "start": "14:22",
+      "start_seconds": 862,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "actually allowing players to like set relationships and sort of date and having some perks because of that. Um that that might not mean that they get a"
+    },
+    {
+      "start": "14:31",
+      "start_seconds": 871,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "discount on their taxes because they're married or something like that. It may not mean that they could also have a baby. Uh, that's I'm I'm not going to that's out there in the murky. Hey,"
+    },
+    {
+      "start": "14:42",
+      "start_seconds": 882,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "maybe that could happen. I don't know."
+    },
+    {
+      "start": "14:44",
+      "start_seconds": 884,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "You know, because we're trying a lot of games do have breeding mechanics and I know they'll do them for pets and things like that, but and and"
+    },
+    {
+      "start": "14:53",
+      "start_seconds": 893,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "games like The Sims and things have that for people, but yeah, I I wasn't sure,"
+    },
+    {
+      "start": "14:59",
+      "start_seconds": 899,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "you know, about like say adult areas if it could be verifi if age could be verified or not. Um, you know, we've got"
+    },
+    {
+      "start": "15:06",
+      "start_seconds": 906,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "things like custom domes. How much flexibility will people have to when they create their own stuff, you know,"
+    },
+    {
+      "start": "15:12",
+      "start_seconds": 912,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "just just kind of what level or is it going to be, you know, do do we think we want to make it totally wide open? Do we want to keep it locked down and and this"
+    },
+    {
+      "start": "15:21",
+      "start_seconds": 921,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "and that? What are your I mean, just personal thoughts on that."
+    },
+    {
+      "start": "15:24",
+      "start_seconds": 924,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "I talked I talked about this before is something I call the Star Wars line,"
+    },
+    {
+      "start": "15:28",
+      "start_seconds": 928,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "right? And and that's that's probably the best place to be for things. you could let maybe let people branch off from there. But um Star Wars has this"
+    },
+    {
+      "start": "15:37",
+      "start_seconds": 937,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "Star Wars has like some sex, some very sexy stuff that's in there. It's it's got some blood. It's got some arms being chopped off and some blood, but nothing"
+    },
+    {
+      "start": "15:46",
+      "start_seconds": 946,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "ever goes too far. Uh I think in Star Wars and you know, look at look at Princess Leia. You know,"
+    },
+    {
+      "start": "15:52",
+      "start_seconds": 952,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "I was going to say you're bringing back memories of Leia in the slave suit."
+    },
+    {
+      "start": "15:58",
+      "start_seconds": 958,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "You know, nobody can ever forget about that. And it was it was a very sexing outfit. So good."
+    },
+    {
+      "start": "16:04",
+      "start_seconds": 964,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "I went back and watched it just to to to to look at that because I'd seen some Friends episode or something where"
+    },
+    {
+      "start": "16:10",
+      "start_seconds": 970,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "Jennifer Aniston dresses up as Leia and I wanted to go back to the original."
+    },
+    {
+      "start": "16:15",
+      "start_seconds": 975,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "It's interesting, too, because I saw Star Wars when I was so young. Yeah."
+    },
+    {
+      "start": "16:19",
+      "start_seconds": 979,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "And I was not thinking about the opposite sex in in that way at all, but I went back and watched it. I'm like,"
+    },
+    {
+      "start": "16:27",
+      "start_seconds": 987,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "dude, Carrie Fischer was freaking hot."
+    },
+    {
+      "start": "16:30",
+      "start_seconds": 990,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "Oh, I think it hit me when I was younger. I was like, I like watching this. Yeah,"
+    },
+    {
+      "start": "16:37",
+      "start_seconds": 997,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "this didn't make me feel funny. Funny thing."
+    },
+    {
+      "start": "16:42",
+      "start_seconds": 1002,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "Yeah. Um, so I think we have a little bit of everything as long as it it doesn't go necessarily too far and become like too grotesque, you know, as"
+    },
+    {
+      "start": "16:50",
+      "start_seconds": 1010,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "far as, you know, two players going to date each other and then, you know, other games have stuff like this, right? Like Sims is probably like a big one."
+    },
+    {
+      "start": "16:59",
+      "start_seconds": 1019,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "You can have little families. They marry and have babies. But we're talking about a more visceral. You're in a simulator."
+    },
+    {
+      "start": "17:05",
+      "start_seconds": 1025,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "You're your own avatar. You have full control walking up to, you know, a person that you spent time with. How how does that"
+    },
+    {
+      "start": "17:13",
+      "start_seconds": 1033,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "actually happen? You're like, you're like, \"All right, do you want to do this?\" You know, how did how does that actually work in game? How do we have a mechanic for that? I don't know. That's"
+    },
+    {
+      "start": "17:21",
+      "start_seconds": 1041,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "that's all fun stuff. Um there's some other things I think about in games."
+    },
+    {
+      "start": "17:27",
+      "start_seconds": 1047,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "sometimes where like why is it okay for why is it okay for me to chop off somebody's head and blood goes"
+    },
+    {
+      "start": "17:35",
+      "start_seconds": 1055,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "everywhere or spill somebody's guts but yet there's no toilets or bathrooms we we don't we eat all this food in game"
+    },
+    {
+      "start": "17:43",
+      "start_seconds": 1063,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "but yet there's where does it all go where does all the food go uh so you know like some people asked that question like where all the children in"
+    },
+    {
+      "start": "17:52",
+      "start_seconds": 1072,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "games you don't see children in games that much and we kind of know why but Um, why?"
+    },
+    {
+      "start": "17:57",
+      "start_seconds": 1077,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "It's because you don't work with pets or children. Isn't that a rule in Hollywood or something? No. Anyway, go ahead."
+    },
+    {
+      "start": "18:03",
+      "start_seconds": 1083,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "I don't know. But, you know, if you have a need system and you're eating food and you're gaining stamina, you know, can't can't we go further? Can we think about"
+    },
+    {
+      "start": "18:11",
+      "start_seconds": 1091,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "nutrition and calories a bit? We've we've seen stuff happen in games where you could gain weight. Um, you know, we don't want things to be too like intensive and bothering for the player,"
+    },
+    {
+      "start": "18:21",
+      "start_seconds": 1101,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "but could you have a bow mechanic where I don't know, it's it's not too bothersome, but maybe you're out there"
+    },
+    {
+      "start": "18:28",
+      "start_seconds": 1108,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "with your buddy and Solless and you know, he held his bathroom for a long time and you guys are in the woods, you know, looking for something and grizzly"
+    },
+    {
+      "start": "18:38",
+      "start_seconds": 1118,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "bear just comes out of nowhere. Your buddy craps his pants front everyone. Wow. I thought you were gonna say,"
+    },
+    {
+      "start": "18:45",
+      "start_seconds": 1125,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "\"Okay, you're you're you're on the road in the forest and you're searching for something and your buddy has to pull over off to the side to relieve himself,"
+    },
+    {
+      "start": "18:52",
+      "start_seconds": 1132,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "but you went full bear on it.\""
+    },
+    {
+      "start": "18:54",
+      "start_seconds": 1134,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "Just comes out, you know, and because they they don't have the skill to deal with fear situations. Just there he goes, right?"
+    },
+    {
+      "start": "19:02",
+      "start_seconds": 1142,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "That fear skill. Yeah, kids. That's day one."
+    },
+    {
+      "start": "19:06",
+      "start_seconds": 1146,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "Imagine how hilarious that would be just just for streamer content. Well, we talked about battle, too,"
+    },
+    {
+      "start": "19:11",
+      "start_seconds": 1151,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "right? going out and going on the battlefield. And let's face it, that's probably one of the scariest things in life, right? Is is being in battle."
+    },
+    {
+      "start": "19:20",
+      "start_seconds": 1160,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "And I could totally see somebody, you know,"
+    },
+    {
+      "start": "19:23",
+      "start_seconds": 1163,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "you only have a certain amount of of of of time in the day to get your stuff done and you didn't break take your pre-"
+    },
+    {
+      "start": "19:30",
+      "start_seconds": 1170,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "battle dump and uh you know, happens."
+    },
+    {
+      "start": "19:34",
+      "start_seconds": 1174,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "Uh exactly it. I mean, you're, you know,"
+    },
+    {
+      "start": "19:38",
+      "start_seconds": 1178,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "you're looking at your buddy's like needs meter and you notice he's been packing it in there for a few days and you walk up next to him and fire off"
+    },
+    {
+      "start": "19:46",
+      "start_seconds": 1186,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "your meat grinder and, you know, just Would that be great if before a battle there's just like a line of portaotties"
+    },
+    {
+      "start": "19:53",
+      "start_seconds": 1193,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "next to the battlefield and you just see everybody going over there first before the battle starts getting I think it was we had this joke in Vegas"
+    },
+    {
+      "start": "20:01",
+      "start_seconds": 1201,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "like because our backpacks or the pack slot on the player is kind of like a wild card. You can have all kinds of"
+    },
+    {
+      "start": "20:08",
+      "start_seconds": 1208,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "things. You can have a, you know, a drone that pops out and you can use it for surveying. You can use it for storing stuff. You can have jetpacks."
+    },
+    {
+      "start": "20:15",
+      "start_seconds": 1215,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "Why not just have a potty pack? What if your What if your What if your buddies just got to go and battle and he just like hops on the back and you're running"
+    },
+    {
+      "start": "20:24",
+      "start_seconds": 1224,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "around battling and he's doing his business? You know what? What can't potty back?"
+    },
+    {
+      "start": "20:28",
+      "start_seconds": 1228,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "We talked about that specifically and I actually wanted to take it a step further. Right. Right now, we've got"
+    },
+    {
+      "start": "20:35",
+      "start_seconds": 1235,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "we've got a jetpack that's also a backpack. Yeah. I want a jetpack that's also a toilet."
+    },
+    {
+      "start": "20:42",
+      "start_seconds": 1242,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "Because I want to be flying around shooting and in midair my buddy comes and lands on my toilet with his jetpack."
+    },
+    {
+      "start": "20:49",
+      "start_seconds": 1249,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "Yeah. A bombing run. Exactly. Like we could get crazy with this. Absolutely."
+    },
+    {
+      "start": "20:55",
+      "start_seconds": 1255,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "You could Yeah, you could certainly humiliate your enemy that way. Imagine just seeing like 10 people take off"
+    },
+    {
+      "start": "21:02",
+      "start_seconds": 1262,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "their buddy on jetpacks and then it just the place in the background. Yeah. Yeah."
+    },
+    {
+      "start": "21:11",
+      "start_seconds": 1271,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "Then that happens and their needs go down like they they lose stamina because of the smell. I don't Well, and that's the other thing again."
+    },
+    {
+      "start": "21:18",
+      "start_seconds": 1278,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "Would would you get some sort of debuff if if if you're full to the brim, right? If you got turtle heads spoken out."
+    },
+    {
+      "start": "21:26",
+      "start_seconds": 1286,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "I think so."
+    },
+    {
+      "start": "21:27",
+      "start_seconds": 1287,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "Yeah, I would. I think that would have to you might have your animations change where you're standing there and it's like and you hear your buddy's stomach"
+    },
+    {
+      "start": "21:34",
+      "start_seconds": 1294,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "and it's like hey man you might do we need to get you to a bathroom like we're about to go off across this mountain range. It sounds like we need to head"
+    },
+    {
+      "start": "21:43",
+      "start_seconds": 1303,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "back to town or you're going to have an accident. So just I think I think real life in a way is"
+    },
+    {
+      "start": "21:51",
+      "start_seconds": 1311,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "is kind of a beautiful thing. It's very nuanced. There's a lot of humor."
+    },
+    {
+      "start": "21:55",
+      "start_seconds": 1315,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "Everybody poops every day. that that kind of thing. Everything goes on, but games always sometimes like to just kind"
+    },
+    {
+      "start": "22:02",
+      "start_seconds": 1322,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "of focus on this just sometimes very serious kind of world, you know, and it's it's it's not like real life at"
+    },
+    {
+      "start": "22:10",
+      "start_seconds": 1330,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "all. You can have all this ridiculousness at the same time as having a legit world that you're in and"
+    },
+    {
+      "start": "22:17",
+      "start_seconds": 1337,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "a legit civilization and lore that's in a game because that's that's life. There there is sex, there is pooping, there is"
+    },
+    {
+      "start": "22:25",
+      "start_seconds": 1345,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "you know somebody in a wheelchair falls down the stairs. You know it, you know what I'm saying? These are all part of"
+    },
+    {
+      "start": "22:32",
+      "start_seconds": 1352,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "life. I know it's very it's like a horrible thing to say, but but it is it's always funny when you see somebody else fall. I agree."
+    },
+    {
+      "start": "22:40",
+      "start_seconds": 1360,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "I I don't know what it is. If it's not you, it's funny."
+    },
+    {
+      "start": "22:43",
+      "start_seconds": 1363,
+      "chapter": "Chapter 5: Navigating Adult Themes in Gaming",
+      "text": "It's it's hilarious. So Well, and that brings up another good point. You talk about humor and there's a lot of games like you said that have"
+    },
+    {
+      "start": "22:51",
+      "start_seconds": 1371,
+      "chapter": "Chapter 6: Balancing Humor and Seriousness in Gameplay",
+      "text": "zero humor and then there's some games that are just ridiculous, laughable."
+    },
+    {
+      "start": "22:57",
+      "start_seconds": 1377,
+      "chapter": "Chapter 6: Balancing Humor and Seriousness in Gameplay",
+      "text": "I'm assuming you kind of fall somewhere in the middle."
+    },
+    {
+      "start": "23:00",
+      "start_seconds": 1380,
+      "chapter": "Chapter 6: Balancing Humor and Seriousness in Gameplay",
+      "text": "I've I've always kind of liked it's like, you know, I feel like Grandanthm thought it was a good example, right?"
+    },
+    {
+      "start": "23:06",
+      "start_seconds": 1386,
+      "chapter": "Chapter 6: Balancing Humor and Seriousness in Gameplay",
+      "text": "It's it's actually a fairly serious game, but it never takes itself seriously at the same time. And I think there's always that line that we can"
+    },
+    {
+      "start": "23:13",
+      "start_seconds": 1393,
+      "chapter": "Chapter 6: Balancing Humor and Seriousness in Gameplay",
+      "text": "kind of run with that because we're going with the simulator. It's real life. You could you could totally have something very serious and"
+    },
+    {
+      "start": "23:20",
+      "start_seconds": 1400,
+      "chapter": "Chapter 6: Balancing Humor and Seriousness in Gameplay",
+      "text": "heart-wrenching happen and struggle and all of these things and then your buddy can just grab his pants next to you. You"
+    },
+    {
+      "start": "23:27",
+      "start_seconds": 1407,
+      "chapter": "Chapter 6: Balancing Humor and Seriousness in Gameplay",
+      "text": "know, it's because you can you can have that humor. We we have some funny things that are over the uh you know the PA"
+    },
+    {
+      "start": "23:34",
+      "start_seconds": 1414,
+      "chapter": "Chapter 6: Balancing Humor and Seriousness in Gameplay",
+      "text": "that you hear in game. You can hear I know I know Jeff thinks it's really funny when he hears um Nelson as he's"
+    },
+    {
+      "start": "23:42",
+      "start_seconds": 1422,
+      "chapter": "Chapter 6: Balancing Humor and Seriousness in Gameplay",
+      "text": "called he's the security chief. Security chief Nelson. You can hear them yelling at people uh over the things. Stop jumping around on stuff. That kind of,"
+    },
+    {
+      "start": "23:50",
+      "start_seconds": 1430,
+      "chapter": "Chapter 6: Balancing Humor and Seriousness in Gameplay",
+      "text": "you know, there's there's all these like little extra things that start coming out in the game. And I think there's there's just going to be a lot more of those in the future. Look at all of our"
+    },
+    {
+      "start": "23:58",
+      "start_seconds": 1438,
+      "chapter": "Chapter 6: Balancing Humor and Seriousness in Gameplay",
+      "text": "signs. Like some of the you go to like Burrito Boss and you look at, you know,"
+    },
+    {
+      "start": "24:03",
+      "start_seconds": 1443,
+      "chapter": "Chapter 6: Balancing Humor and Seriousness in Gameplay",
+      "text": "even the names of things, it's it's just always a little bit extra just to kind of keep you entertained. And I think I think we'll always do that."
+    },
+    {
+      "start": "24:12",
+      "start_seconds": 1452,
+      "chapter": "Chapter 7: Elicit Substances",
+      "text": "I agree. Yeah. Uh, how about drugs? You know,"
+    },
+    {
+      "start": "24:16",
+      "start_seconds": 1456,
+      "chapter": "Chapter 7: Elicit Substances",
+      "text": "there's there's been a lot of popularity from games that are based solely on drugs. Uh, schedule one comes to mind."
+    },
+    {
+      "start": "24:23",
+      "start_seconds": 1463,
+      "chapter": "Chapter 7: Elicit Substances",
+      "text": "They've they've been very big. And I'm I'm just curious. I know I've we've had community people go, \"Hey, are we"
+    },
+    {
+      "start": "24:31",
+      "start_seconds": 1471,
+      "chapter": "Chapter 7: Elicit Substances",
+      "text": "going to be able to grow weed?\" Or, you know, all that kind of you and I have talked about having some shady guy in the alley, you know, down in in Called City that's, you know, hey man. Well,"
+    },
+    {
+      "start": "24:42",
+      "start_seconds": 1482,
+      "chapter": "Chapter 7: Elicit Substances",
+      "text": "you know, just at more of a PG level,"
+    },
+    {
+      "start": "24:46",
+      "start_seconds": 1486,
+      "chapter": "Chapter 7: Elicit Substances",
+      "text": "um, we're working some of the icons where I think there's like several hundred items. They're going to be going into like the crafting system and"
+    },
+    {
+      "start": "24:52",
+      "start_seconds": 1492,
+      "chapter": "Chapter 7: Elicit Substances",
+      "text": "inventory. And we do have like rum and tobacco and vodka and all these kinds of things. So, there is there is a thought"
+    },
+    {
+      "start": "25:02",
+      "start_seconds": 1502,
+      "chapter": "Chapter 7: Elicit Substances",
+      "text": "about like having a distillery in game and and making your own alcohol and those things actually having effects."
+    },
+    {
+      "start": "25:08",
+      "start_seconds": 1508,
+      "chapter": "Chapter 7: Elicit Substances",
+      "text": "There's there's also some thoughts on growing tobacco and having your own cigar shop, things like that where just a lot of games don't go, but it's in real life it's it's a serious thing."
+    },
+    {
+      "start": "25:19",
+      "start_seconds": 1519,
+      "chapter": "Chapter 7: Elicit Substances",
+      "text": "It's what people do. It's it's it's an economical thing. Um we're definitely going to have that. Now, there there is"
+    },
+    {
+      "start": "25:25",
+      "start_seconds": 1525,
+      "chapter": "Chapter 7: Elicit Substances",
+      "text": "an idea about elicit substances uh as well. Um I'm not I don't know if it's necessarily going to be like cocaine"
+    },
+    {
+      "start": "25:32",
+      "start_seconds": 1532,
+      "chapter": "Chapter 7: Elicit Substances",
+      "text": "that's in the game and wow, you're making cocaine, we're gonna have to shut you down and you're going to prison. though. Maybe it's spice or something like that,"
+    },
+    {
+      "start": "25:40",
+      "start_seconds": 1540,
+      "chapter": "Chapter 7: Elicit Substances",
+      "text": "you know, like some they got like schuma from created. Yeah, maybe maybe they're out there snorting quantite. I don't know."
+    },
+    {
+      "start": "25:47",
+      "start_seconds": 1547,
+      "chapter": "Chapter 7: Elicit Substances",
+      "text": "There will definitely be technologies,"
+    },
+    {
+      "start": "25:50",
+      "start_seconds": 1550,
+      "chapter": "Chapter 7: Elicit Substances",
+      "text": "substances that may not necessarily even be things you would ingest, right? That are considered illegal in this this"
+    },
+    {
+      "start": "25:58",
+      "start_seconds": 1558,
+      "chapter": "Chapter 7: Elicit Substances",
+      "text": "floating world of the sky because it's it's a threat. It's things that mess with quantum nature, things that give people too much power. Um that kind of"
+    },
+    {
+      "start": "26:06",
+      "start_seconds": 1566,
+      "chapter": "Chapter 7: Elicit Substances",
+      "text": "stuff. We're we're certainly going to have that. There's there's definitely going to be, you know, there's there's a build right now that's going out that"
+    },
+    {
+      "start": "26:14",
+      "start_seconds": 1574,
+      "chapter": "Chapter 7: Elicit Substances",
+      "text": "has some of the more extended criminal justice stuff going on where you can set bounties like, oh, you did damage to people, you get a bounty. There's different uh there's lawless areas."
+    },
+    {
+      "start": "26:24",
+      "start_seconds": 1584,
+      "chapter": "Chapter 7: Elicit Substances",
+      "text": "There's um you know, regular PvP areas where you're going to go to prison if you do something wrong. So, that's that's coming out. there's going to be a"
+    },
+    {
+      "start": "26:33",
+      "start_seconds": 1593,
+      "chapter": "Chapter 7: Elicit Substances",
+      "text": "path for lawlessness uh in the game and for people to live on the live on the wild side, live on the the bad side of"
+    },
+    {
+      "start": "26:40",
+      "start_seconds": 1600,
+      "chapter": "Chapter 7: Elicit Substances",
+      "text": "things. Uh certainly if that's something they want to do, just expect life to be a little harder. So,"
+    },
+    {
+      "start": "26:46",
+      "start_seconds": 1606,
+      "chapter": "Chapter 7: Elicit Substances",
+      "text": "super exciting, by the way, because I saw it cooking earlier today and I'm like, \"Oo, as soon as we get done with this, I'm going be able to hop in and"
+    },
+    {
+      "start": "26:54",
+      "start_seconds": 1614,
+      "chapter": "Chapter 7: Elicit Substances",
+      "text": "see some of that really, really cool stuff.\" So, yeah. Awesome. You mentioned the new icons and stuff we were working"
+    },
+    {
+      "start": "27:02",
+      "start_seconds": 1622,
+      "chapter": "Chapter 7: Elicit Substances",
+      "text": "on. I believe that was for the recipe system and I did get a chance to get a glimpse of that just the other day and it was super exciting."
+    },
+    {
+      "start": "27:11",
+      "start_seconds": 1631,
+      "chapter": "Chapter 7: Elicit Substances",
+      "text": "If I can get approval, maybe we'll throw up a graphic and blur some of them out and just I don't know, maybe show a few."
+    },
+    {
+      "start": "27:17",
+      "start_seconds": 1637,
+      "chapter": "Chapter 7: Elicit Substances",
+      "text": "We'll see. But um I I noticed there were a lot of like rocks and minerals and I'm"
+    },
+    {
+      "start": "27:25",
+      "start_seconds": 1645,
+      "chapter": "Chapter 8: Geology and Resource Gathering in the Game",
+      "text": "told that this guy is a little bit of a geology buff. So can you talk a little bit about geology buff? But no"
+    },
+    {
+      "start": "27:34",
+      "start_seconds": 1654,
+      "chapter": "Chapter 8: Geology and Resource Gathering in the Game",
+      "text": "around, you know, I I like geology and I like collecting. I like old stuff. You know, you'll find um you'll find different things like around my house."
+    },
+    {
+      "start": "27:44",
+      "start_seconds": 1664,
+      "chapter": "Chapter 8: Geology and Resource Gathering in the Game",
+      "text": "You'll find a lot of like large geodess and different types of like citrine,"
+    },
+    {
+      "start": "27:48",
+      "start_seconds": 1668,
+      "chapter": "Chapter 8: Geology and Resource Gathering in the Game",
+      "text": "amethyst, and um all these other things that I'll collect over time and just kind of the my travels. Um I've also got like some"
+    },
+    {
+      "start": "27:58",
+      "start_seconds": 1678,
+      "chapter": "Chapter 8: Geology and Resource Gathering in the Game",
+      "text": "dinosaur bones, some some what some people call a chunkosaurus because you don't know what dinosaur it came from."
+    },
+    {
+      "start": "28:05",
+      "start_seconds": 1685,
+      "chapter": "Chapter 8: Geology and Resource Gathering in the Game",
+      "text": "Um I do have um what is the spec? I have I have like a piece of a leg bone from a"
+    },
+    {
+      "start": "28:12",
+      "start_seconds": 1692,
+      "chapter": "Chapter 8: Geology and Resource Gathering in the Game",
+      "text": "very specific dinosaur which triceratops. So I have a piece of a leg bone uh from a triceratops. So uh that's super."
+    },
+    {
+      "start": "28:20",
+      "start_seconds": 1700,
+      "chapter": "Chapter 8: Geology and Resource Gathering in the Game",
+      "text": "Yeah. So I I don't know why I feel it's very nice to hold something and look at it and think this thing lived so long"
+    },
+    {
+      "start": "28:28",
+      "start_seconds": 1708,
+      "chapter": "Chapter 8: Geology and Resource Gathering in the Game",
+      "text": "ago. It was almost like an entirely different age. I love that kind of stuff. But uh yes in game you will also"
+    },
+    {
+      "start": "28:35",
+      "start_seconds": 1715,
+      "chapter": "Chapter 8: Geology and Resource Gathering in the Game",
+      "text": "see things like that like dinosaur fossils that you can find. um amethyst,"
+    },
+    {
+      "start": "28:40",
+      "start_seconds": 1720,
+      "chapter": "Chapter 8: Geology and Resource Gathering in the Game",
+      "text": "you know, you go into, let's say you go into a mine and you go beating on some rocks and you're you're not there just to get some ore. You got the pay dirt"
+    },
+    {
+      "start": "28:48",
+      "start_seconds": 1728,
+      "chapter": "Chapter 8: Geology and Resource Gathering in the Game",
+      "text": "that comes out and you scoop that up and take it with you. You take it to the processor and of course you get your um"
+    },
+    {
+      "start": "28:55",
+      "start_seconds": 1735,
+      "chapter": "Chapter 8: Geology and Resource Gathering in the Game",
+      "text": "you go from having, let's say it's gold that you're looking for. You go from having a very rough gold ore, a lot of other things mixed in to getting something a little bit more purified,"
+    },
+    {
+      "start": "29:06",
+      "start_seconds": 1746,
+      "chapter": "Chapter 8: Geology and Resource Gathering in the Game",
+      "text": "processed gold ore, as we would call it,"
+    },
+    {
+      "start": "29:08",
+      "start_seconds": 1748,
+      "chapter": "Chapter 8: Geology and Resource Gathering in the Game",
+      "text": "but you get a lot of other things that came out of there, too. You might get some iron that's in there. You might get some amethyst that's in there. You might"
+    },
+    {
+      "start": "29:16",
+      "start_seconds": 1756,
+      "chapter": "Chapter 8: Geology and Resource Gathering in the Game",
+      "text": "get things that you can make jewelry with out of those. So, it's kind of like this um I always look at it as kind of like this little bit of a exciting"
+    },
+    {
+      "start": "29:23",
+      "start_seconds": 1763,
+      "chapter": "Chapter 8: Geology and Resource Gathering in the Game",
+      "text": "lottery. You know, you you ever went to those like touristy areas and they have the little sifting stations and kids love to do that. They have this big"
+    },
+    {
+      "start": "29:31",
+      "start_seconds": 1771,
+      "chapter": "Chapter 8: Geology and Resource Gathering in the Game",
+      "text": "block of sand. You scoop it and you you do the panning and they might get jewels and different rocks in there. People love that stuff. Dude, I went on a tour"
+    },
+    {
+      "start": "29:40",
+      "start_seconds": 1780,
+      "chapter": "Chapter 8: Geology and Resource Gathering in the Game",
+      "text": "in Alaska where we actually went to the river and started panning for gold and you got to keep whatever you had and they put it in this little"
+    },
+    {
+      "start": "29:48",
+      "start_seconds": 1788,
+      "chapter": "Chapter 8: Geology and Resource Gathering in the Game",
+      "text": "jar and I've got this little little jar of with a whole bunch of gold flex and I'm like, dude, I went out and actually mined gold, real gold in the real world. It's not much, but yeah. No,"
+    },
+    {
+      "start": "30:00",
+      "start_seconds": 1800,
+      "chapter": "Chapter 8: Geology and Resource Gathering in the Game",
+      "text": "that stuff's super cool to me."
+    },
+    {
+      "start": "30:01",
+      "start_seconds": 1801,
+      "chapter": "Chapter 8: Geology and Resource Gathering in the Game",
+      "text": "Yeah. So, you'll see lots of different uh minerals, uh rock type stuff. um you'll see almost the entire uh somebody"
+    },
+    {
+      "start": "30:09",
+      "start_seconds": 1809,
+      "chapter": "Chapter 8: Geology and Resource Gathering in the Game",
+      "text": "was working on that recently the uh periodic table of elements. So the the entire thing so icons for each like raw"
+    },
+    {
+      "start": "30:16",
+      "start_seconds": 1816,
+      "chapter": "Chapter 8: Geology and Resource Gathering in the Game",
+      "text": "thing out of there. So um there'll be a lot of things for people's like interests like in the game you know things that you're interested in real"
+    },
+    {
+      "start": "30:23",
+      "start_seconds": 1823,
+      "chapter": "Chapter 8: Geology and Resource Gathering in the Game",
+      "text": "life you'll probably see them in the game uh itself."
+    },
+    {
+      "start": "30:27",
+      "start_seconds": 1827,
+      "chapter": "Chapter 8: Geology and Resource Gathering in the Game",
+      "text": "Well what else besides those little icons are you working on right now?"
+    },
+    {
+      "start": "30:31",
+      "start_seconds": 1831,
+      "chapter": "Chapter 8: Geology and Resource Gathering in the Game",
+      "text": "Well, right now we're trying to get Well, we got we got many things in parallel. I think I covered a lot of that on"
+    },
+    {
+      "start": "30:39",
+      "start_seconds": 1839,
+      "chapter": "Chapter 8: Geology and Resource Gathering in the Game",
+      "text": "No, I mean you rice. Oh, me specifically. Yeah, you besides talking to a lot of people all day and trying to keep things straight."
+    },
+    {
+      "start": "30:47",
+      "start_seconds": 1847,
+      "chapter": "Chapter 9: Advancements in Game Development Technology",
+      "text": "I'm trying to work on the backend side of the espirona stuff to speed up the finishing of it. So, uh we're moving to"
+    },
+    {
+      "start": "30:54",
+      "start_seconds": 1854,
+      "chapter": "Chapter 9: Advancements in Game Development Technology",
+      "text": "nanite tessellation on some things. Um there's also been some hang-ups because our our worlds are uh handcrafted. Uh we"
+    },
+    {
+      "start": "31:02",
+      "start_seconds": 1862,
+      "chapter": "Chapter 9: Advancements in Game Development Technology",
+      "text": "have very efficient like workbox system for that and we we use the best technology we can use in Unreal to make those happen where we can get a large 8"
+    },
+    {
+      "start": "31:10",
+      "start_seconds": 1870,
+      "chapter": "Chapter 9: Advancements in Game Development Technology",
+      "text": "by8 kilometer map done like in a couple months with a with a team. Um but I want to speed that up even more. Uh one of the biggest pain points is like building like mountain ranges uh stuff like that."
+    },
+    {
+      "start": "31:22",
+      "start_seconds": 1882,
+      "chapter": "Chapter 9: Advancements in Game Development Technology",
+      "text": "um because sometimes they require just thousands of pieces to make those things actually detailed. And then it's not"
+    },
+    {
+      "start": "31:28",
+      "start_seconds": 1888,
+      "chapter": "Chapter 9: Advancements in Game Development Technology",
+      "text": "just about putting things. It's you have to have a mountain that looks like a mountain at the same time. Um rocks and"
+    },
+    {
+      "start": "31:35",
+      "start_seconds": 1895,
+      "chapter": "Chapter 9: Advancements in Game Development Technology",
+      "text": "mountains may look like very random things, but there's a very specific order. There's a geological history to"
+    },
+    {
+      "start": "31:43",
+      "start_seconds": 1903,
+      "chapter": "Chapter 9: Advancements in Game Development Technology",
+      "text": "these things. So, we're looking more now at um generating things procedurally like mountains outside of the game,"
+    },
+    {
+      "start": "31:49",
+      "start_seconds": 1909,
+      "chapter": "Chapter 9: Advancements in Game Development Technology",
+      "text": "bringing them in more cut up into a lot of different pieces and slices and using actual tessillation and some other procedural stuff to actually give that"
+    },
+    {
+      "start": "31:58",
+      "start_seconds": 1918,
+      "chapter": "Chapter 9: Advancements in Game Development Technology",
+      "text": "detail. So, you go from, you know, a mountain range taking like, you know,"
+    },
+    {
+      "start": "32:03",
+      "start_seconds": 1923,
+      "chapter": "Chapter 9: Advancements in Game Development Technology",
+      "text": "three weeks, like four weeks to being like three or four days. So, Oh, that's great."
+    },
+    {
+      "start": "32:07",
+      "start_seconds": 1927,
+      "chapter": "Chapter 9: Advancements in Game Development Technology",
+      "text": "It's Yeah, because we got, you know, we got 12 zones to do total. Um, trying to speed things up. I do a lot of the uh"
+    },
+    {
+      "start": "32:14",
+      "start_seconds": 1934,
+      "chapter": "Chapter 9: Advancements in Game Development Technology",
+      "text": "technical uh backend side of even being a director and everything else I have to do. I'm I'm helping people creating"
+    },
+    {
+      "start": "32:23",
+      "start_seconds": 1943,
+      "chapter": "Chapter 9: Advancements in Game Development Technology",
+      "text": "tools and systems that make it easier uh for them to develop. me. I've almost got, you know, sometimes I would say"
+    },
+    {
+      "start": "32:30",
+      "start_seconds": 1950,
+      "chapter": "Chapter 9: Advancements in Game Development Technology",
+      "text": "just from the environment side, I feel like sometimes it's gotten so efficient with that that we could just bring in some guy off the street and I could just"
+    },
+    {
+      "start": "32:38",
+      "start_seconds": 1958,
+      "chapter": "Chapter 9: Advancements in Game Development Technology",
+      "text": "sit him down and give him a tutorial and he'd be like building an envir that's that's performant. But we we like"
+    },
+    {
+      "start": "32:46",
+      "start_seconds": 1966,
+      "chapter": "Chapter 9: Advancements in Game Development Technology",
+      "text": "to make very efficient systems because we are a small team and we have to do a lot with a little. So, um, and yeah, you guys don't want to see this guy's time card, trust me."
+    },
+    {
+      "start": "32:56",
+      "start_seconds": 1976,
+      "chapter": "Chapter 9: Advancements in Game Development Technology",
+      "text": "No. No, there's I I've often thought about a way I can build some sort of large jet engines to sort of slow the"
+    },
+    {
+      "start": "33:04",
+      "start_seconds": 1984,
+      "chapter": "Chapter 9: Advancements in Game Development Technology",
+      "text": "turning of the Earth so I can have more time in the day."
+    },
+    {
+      "start": "33:06",
+      "start_seconds": 1986,
+      "chapter": "Chapter 9: Advancements in Game Development Technology",
+      "text": "See, I'm just focusing on cloning myself. Yeah. I figure if I could have two or three other at least two or three versions of myself,"
+    },
+    {
+      "start": "33:15",
+      "start_seconds": 1995,
+      "chapter": "Chapter 9: Advancements in Game Development Technology",
+      "text": "I'd be all right. That would that would be great. Yeah, I could even hang out with myself. So,"
+    },
+    {
+      "start": "33:20",
+      "start_seconds": 2000,
+      "chapter": "Chapter 9: Advancements in Game Development Technology",
+      "text": "you know, hey, maybe something for the game. Maybe there's a feature where we can clone ourselves and one can be off farming and one can be off starting a"
+    },
+    {
+      "start": "33:28",
+      "start_seconds": 2008,
+      "chapter": "Chapter 9: Advancements in Game Development Technology",
+      "text": "relationship with that plays right into what we're working on with the avatar genetic sets. So, um,"
+    },
+    {
+      "start": "33:35",
+      "start_seconds": 2015,
+      "chapter": "Chapter 9: Advancements in Game Development Technology",
+      "text": "so yeah, I mean, you guys, you know,"
+    },
+    {
+      "start": "33:38",
+      "start_seconds": 2018,
+      "chapter": "Chapter 9: Advancements in Game Development Technology",
+      "text": "community out there and I talked about this a little bit in the, uh, cafe rise,"
+    },
+    {
+      "start": "33:43",
+      "start_seconds": 2023,
+      "chapter": "Chapter 9: Advancements in Game Development Technology",
+      "text": "but you know, having a whole family of avatars like with different names and you can eventually have one of those as a follower to go off and help and do"
+    },
+    {
+      "start": "33:52",
+      "start_seconds": 2032,
+      "chapter": "Chapter 9: Advancements in Game Development Technology",
+      "text": "things in the world. So, it's it's almost like you're not just you, you're like a a family lineage kind of thing that's going on. So,"
+    },
+    {
+      "start": "34:00",
+      "start_seconds": 2040,
+      "chapter": "Chapter 9: Advancements in Game Development Technology",
+      "text": "can we have them be like an AI robot? I,"
+    },
+    {
+      "start": "34:03",
+      "start_seconds": 2043,
+      "chapter": "Chapter 9: Advancements in Game Development Technology",
+      "text": "by the way, I did watch that movie Companion that you told me about and I loved it. Good. I loved it. Absolutely loved it. Very good."
+    },
+    {
+      "start": "34:12",
+      "start_seconds": 2052,
+      "chapter": "Chapter 10: The Future of AI and Player Relationships",
+      "text": "Yes."
+    },
+    {
+      "start": "34:12",
+      "start_seconds": 2052,
+      "chapter": "Chapter 10: The Future of AI and Player Relationships",
+      "text": "I I love I love all the AI movies. Her is probably my favorite one. If you haven't seen her,"
+    },
+    {
+      "start": "34:17",
+      "start_seconds": 2057,
+      "chapter": "Chapter 10: The Future of AI and Player Relationships",
+      "text": "I've seen her and her was okay. It was fine. Oh, another one like uh what is it? X."
+    },
+    {
+      "start": "34:24",
+      "start_seconds": 2064,
+      "chapter": "Chapter 10: The Future of AI and Player Relationships",
+      "text": "That's my favorite. That is my favorite of all time. Period."
+    },
+    {
+      "start": "34:27",
+      "start_seconds": 2067,
+      "chapter": "Chapter 10: The Future of AI and Player Relationships",
+      "text": "That's the best. That is so done. Yeah,"
+    },
+    {
+      "start": "34:31",
+      "start_seconds": 2071,
+      "chapter": "Chapter 10: The Future of AI and Player Relationships",
+      "text": "it's it's really really good. And I all of this is jumping around the this the same thought of human relationship with"
+    },
+    {
+      "start": "34:39",
+      "start_seconds": 2079,
+      "chapter": "Chapter 10: The Future of AI and Player Relationships",
+      "text": "artificial intelligence which I think is you know that's why I talked about you know you have these extra genetic sets of avatars that you can create and have"
+    },
+    {
+      "start": "34:48",
+      "start_seconds": 2088,
+      "chapter": "Chapter 10: The Future of AI and Player Relationships",
+      "text": "them be a follower but you know also working on having an LLM function with that let it learn from what you're doing"
+    },
+    {
+      "start": "34:54",
+      "start_seconds": 2094,
+      "chapter": "Chapter 10: The Future of AI and Player Relationships",
+      "text": "in game and then holy cow you're going around the world and experiencing the game doing things and it's like you have"
+    },
+    {
+      "start": "35:02",
+      "start_seconds": 2102,
+      "chapter": "Chapter 10: The Future of AI and Player Relationships",
+      "text": "a a friend or a partner that's that's like a real person uh that's that's actually there. So, it's you know, if you're one of those gamers out there"
+    },
+    {
+      "start": "35:10",
+      "start_seconds": 2110,
+      "chapter": "Chapter 10: The Future of AI and Player Relationships",
+      "text": "that has no friends, we're going to we're going to have you covered in the in the future is is as bad as it sounds."
+    },
+    {
+      "start": "35:17",
+      "start_seconds": 2117,
+      "chapter": "Chapter 10: The Future of AI and Player Relationships",
+      "text": "I I do think why are you looking at me when you say that? Huh? I have no choice right now. Um,"
+    },
+    {
+      "start": "35:25",
+      "start_seconds": 2125,
+      "chapter": "Chapter 10: The Future of AI and Player Relationships",
+      "text": "yeah, it's humanity is we're in the midst of the the greatest technological revolution the world has ever seen and"
+    },
+    {
+      "start": "35:32",
+      "start_seconds": 2132,
+      "chapter": "Chapter 10: The Future of AI and Player Relationships",
+      "text": "it's going to shatter the foundations of relationships and it just the way we do we I think I honestly think even by the"
+    },
+    {
+      "start": "35:42",
+      "start_seconds": 2142,
+      "chapter": "Chapter 10: The Future of AI and Player Relationships",
+      "text": "time let's say I'm like 70 or 80 years old I think normal work is a thing of the past at that point you don't have"
+    },
+    {
+      "start": "35:50",
+      "start_seconds": 2150,
+      "chapter": "Chapter 10: The Future of AI and Player Relationships",
+      "text": "your nineto-five job you don't have things like that I think you also have I think you have hybrid relationships even I I think you have AI that are actually"
+    },
+    {
+      "start": "35:58",
+      "start_seconds": 2158,
+      "chapter": "Chapter 10: The Future of AI and Player Relationships",
+      "text": "in relationships with uh humans and I think we get to a point where the robots you know there's protests in the street"
+    },
+    {
+      "start": "36:07",
+      "start_seconds": 2167,
+      "chapter": "Chapter 10: The Future of AI and Player Relationships",
+      "text": "that robots are people too you know this we're living in such a wild time and I I'm here for it I'm a little scared"
+    },
+    {
+      "start": "36:15",
+      "start_seconds": 2175,
+      "chapter": "Chapter 10: The Future of AI and Player Relationships",
+      "text": "sometimes but it's you know and and what's it going to do for gaming right what happens once somebody can just"
+    },
+    {
+      "start": "36:22",
+      "start_seconds": 2182,
+      "chapter": "Chapter 10: The Future of AI and Player Relationships",
+      "text": "press a button and say, \"Make me a game like this today.\" It's, you know, it, by the way, that's probably a lot further off than people thinks it is. Um,"
+    },
+    {
+      "start": "36:33",
+      "start_seconds": 2193,
+      "chapter": "Chapter 10: The Future of AI and Player Relationships",
+      "text": "I think a lot of this stuff is maybe fur Well, I don't know. I personally think I think the robots and relationships is is probably a little bit closer than"
+    },
+    {
+      "start": "36:42",
+      "start_seconds": 2202,
+      "chapter": "Chapter 10: The Future of AI and Player Relationships",
+      "text": "people don't realize all the pieces that are completely separate off of the different programs right now and how 30 to 50 programs that"
+    },
+    {
+      "start": "36:51",
+      "start_seconds": 2211,
+      "chapter": "Chapter 10: The Future of AI and Player Relationships",
+      "text": "have all these people with different disciplines working on those that very specifically have to be manually moved around talked to the other people of the"
+    },
+    {
+      "start": "37:00",
+      "start_seconds": 2220,
+      "chapter": "Chapter 10: The Future of AI and Player Relationships",
+      "text": "disciplines and that has to go in and be tested and all work together. It is more complicated than film or anything else."
+    },
+    {
+      "start": "37:08",
+      "start_seconds": 2228,
+      "chapter": "Chapter 10: The Future of AI and Player Relationships",
+      "text": "Um, anybody that doesn't know anything about software development or know anything about game development specifically. It is immensely more"
+    },
+    {
+      "start": "37:16",
+      "start_seconds": 2236,
+      "chapter": "Chapter 10: The Future of AI and Player Relationships",
+      "text": "complicated and difficult than many other things. And I'm not just saying that because I'm I'm in it. You know,"
+    },
+    {
+      "start": "37:22",
+      "start_seconds": 2242,
+      "chapter": "Chapter 10: The Future of AI and Player Relationships",
+      "text": "it's it is a very difficult thing. And that's why game developers end up working very very high hours. It's it's not a good field for like, hey, I just"
+    },
+    {
+      "start": "37:30",
+      "start_seconds": 2250,
+      "chapter": "Chapter 10: The Future of AI and Player Relationships",
+      "text": "want to work 9 to5 and and I'm done with the day. It's it's just not that way. We've we've had some crazy hour months."
+    },
+    {
+      "start": "37:38",
+      "start_seconds": 2258,
+      "chapter": "Chapter 10: The Future of AI and Player Relationships",
+      "text": "Yeah. I know I've definitely pulled, you know, 350 hours, 380, probably almost 400 some months just trying to solve"
+    },
+    {
+      "start": "37:46",
+      "start_seconds": 2266,
+      "chapter": "Chapter 10: The Future of AI and Player Relationships",
+      "text": "problems with the team. Uh they have as well. And um and that's you know makes me almost want to go off into"
+    },
+    {
+      "start": "37:54",
+      "start_seconds": 2274,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "uh you know I don't know if it's an uncomfortable subject but you know just gamers and mentality nowadays and how they're just like oh make the game cheaper. Why are you charging 60 bucks?"
+    },
+    {
+      "start": "38:03",
+      "start_seconds": 2283,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "It's like games are expensive. It cost a lot of money to pay people. It costs a lot of money for different licenses. And I mean we've all got to have these"
+    },
+    {
+      "start": "38:12",
+      "start_seconds": 2292,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "beastly computers. I mean everything about it is incredibly expensive. When I was a kid, it was like $40 for a new"
+    },
+    {
+      "start": "38:19",
+      "start_seconds": 2299,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "game. Why is it $60 now? You know, it it it hasn't even kept up with inflation."
+    },
+    {
+      "start": "38:24",
+      "start_seconds": 2304,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "It I got news. When I was a kid, it was $20."
+    },
+    {
+      "start": "38:27",
+      "start_seconds": 2307,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "And I think that we'll see GTA come out around the $100 mark. That'd be my guess."
+    },
+    {
+      "start": "38:36",
+      "start_seconds": 2316,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "Yeah,"
+    },
+    {
+      "start": "38:37",
+      "start_seconds": 2317,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "I think it should be for a game of that scale. And I also think there's there's a psychology difference with this kind"
+    },
+    {
+      "start": "38:44",
+      "start_seconds": 2324,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "of stuff. If you put your you put your blood, sweat, and tears and heart into a game that dev team spends their time on"
+    },
+    {
+      "start": "38:51",
+      "start_seconds": 2331,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "it and you try to come out and undercut the industry and put it out for 20 bucks. I think there's you're taking a"
+    },
+    {
+      "start": "39:00",
+      "start_seconds": 2340,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "gamble there. They could just sing your praises or they could just complain because it's like it's not good enough because to them it's only a $20 game."
+    },
+    {
+      "start": "39:09",
+      "start_seconds": 2349,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "Like you're you're literally putting the value of the game on there. Um, there's a lot of weird things in psychology like this to where you could have a game,"
+    },
+    {
+      "start": "39:17",
+      "start_seconds": 2357,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "let's say it's same game, you released it for $20 and a bunch of people complain and it gets mediocre reviews"
+    },
+    {
+      "start": "39:24",
+      "start_seconds": 2364,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "and then you could release the same game for $100, but because people paid $100 for it, it makes them value the game more. It makes them look into the game"
+    },
+    {
+      "start": "39:32",
+      "start_seconds": 2372,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "more, see everything that the devs did and care about it more. I think Star Citizen has found out something when it"
+    },
+    {
+      "start": "39:39",
+      "start_seconds": 2379,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "comes to this. It's it's it's very very strange. So, I'm not saying we're we're going to go out there and put some ridiculous price on the game, but I think human psychology and how pricing"
+    },
+    {
+      "start": "39:49",
+      "start_seconds": 2389,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "affects things and how value is perceived in the mind is is a very very interesting subject."
+    },
+    {
+      "start": "39:55",
+      "start_seconds": 2395,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "I think you're right. I think a lot of people do put that value, like you said,"
+    },
+    {
+      "start": "39:58",
+      "start_seconds": 2398,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "based on the price. I'm almost the opposite though. Again, maybe I'm the exception, not the rule. But if I sit"
+    },
+    {
+      "start": "40:06",
+      "start_seconds": 2406,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "there and I'm like, man, if I plop down $100 for this game, it better be fantastic."
+    },
+    {
+      "start": "40:12",
+      "start_seconds": 2412,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "You wouldn't know it, though. You would just you would automatically like it better. You just wouldn't know it. So,"
+    },
+    {
+      "start": "40:17",
+      "start_seconds": 2417,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "you would You're thinking that you would think a certain way, but I No, I already do that with my games."
+    },
+    {
+      "start": "40:24",
+      "start_seconds": 2424,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "Look, I am a very frugal gamer when it comes to buying games. Okay. Wait, no,"
+    },
+    {
+      "start": "40:30",
+      "start_seconds": 2430,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "wait, wait, wait, wait. I've got a system, okay? I I have so much of a backlog that I haven't been able to get"
+    },
+    {
+      "start": "40:38",
+      "start_seconds": 2438,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "to because of work and various, you know, life things and all that."
+    },
+    {
+      "start": "40:43",
+      "start_seconds": 2443,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "And so what I do is every so often I go in there and I find games that I've been wanting to play and wait until I look"
+    },
+    {
+      "start": "40:51",
+      "start_seconds": 2451,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "for them to be on sale. I can get them 50, 60, sometimes 80% off and I'm able"
+    },
+    {
+      "start": "41:00",
+      "start_seconds": 2460,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "to buy two or three times the amount of games for the same amount of money. And so that's just the way my brain works."
+    },
+    {
+      "start": "41:07",
+      "start_seconds": 2467,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "Now, will I go out and buy a $70 game occasionally? If I'm really excited and hot about it, I will. I've done it. Uh,"
+    },
+    {
+      "start": "41:16",
+      "start_seconds": 2476,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "but again,"
+    },
+    {
+      "start": "41:18",
+      "start_seconds": 2478,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "if that is trash, I get a little more upset than the one that I paid 15 bucks for if it's trash. Now, again,"
+    },
+    {
+      "start": "41:26",
+      "start_seconds": 2486,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "inherently in the back of my mind, I may end up just liking it a little better because I paid a little more. So, I I I'll never know."
+    },
+    {
+      "start": "41:34",
+      "start_seconds": 2494,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "I think it's kind of like imagine this."
+    },
+    {
+      "start": "41:36",
+      "start_seconds": 2496,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "Imagine like a Ferrari, right? If you bought a Ferrari and you paid $300,000 for that Ferrari. I like this scenario."
+    },
+    {
+      "start": "41:43",
+      "start_seconds": 2503,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "Very good care of that Ferrari. True."
+    },
+    {
+      "start": "41:46",
+      "start_seconds": 2506,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "Very good. You would baby it. You probably spend a lot of time with it."
+    },
+    {
+      "start": "41:49",
+      "start_seconds": 2509,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "Probably just spend time in the garage just kind of sitting there touching the leather."
+    },
+    {
+      "start": "41:53",
+      "start_seconds": 2513,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "I probably can't tell you all the things I would do to it. That's not That's a different show."
+    },
+    {
+      "start": "41:58",
+      "start_seconds": 2518,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "Yeah, we're we're not going to have those game mechanics. Um but let's say look at the tailpipe on that car. Which"
+    },
+    {
+      "start": "42:05",
+      "start_seconds": 2525,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "let's let's switch the scenario and let's say we got you a broken down near broken down Prius from like 2010 and you got it for f 500 bucks."
+    },
+    {
+      "start": "42:16",
+      "start_seconds": 2536,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "Dude, are you looking in my garage right now? Like literally I have a 2011 Prius that doesn't run at the moment."
+    },
+    {
+      "start": "42:23",
+      "start_seconds": 2543,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "I'm not I'm not kidding. I mean, I have another car that I do have another car that works, but I have that mental connection. I just know what kind of car"
+    },
+    {
+      "start": "42:31",
+      "start_seconds": 2551,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "you have. I was I was only off a little bit on the air. He's like, \"Yeah,"
+    },
+    {
+      "start": "42:35",
+      "start_seconds": 2555,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "this guy with the giant goatee and the little handlebar start that Yeah, this guy drives a Prius."
+    },
+    {
+      "start": "42:41",
+      "start_seconds": 2561,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "500 bucks, right? How much are you going to care about that car?\" And I guess,"
+    },
+    {
+      "start": "42:45",
+      "start_seconds": 2565,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "you know, you don't really care about that car. I don't. It's right there. Now,"
+    },
+    {
+      "start": "42:50",
+      "start_seconds": 2570,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "let's say you're going to we're going to give you that $300,000 Ferrari for 500 bucks. Are you going to care about it as much as if you spent 300,000 on that?"
+    },
+    {
+      "start": "43:00",
+      "start_seconds": 2580,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "Absolutely. No,"
+    },
+    {
+      "start": "43:02",
+      "start_seconds": 2582,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "especially if everybody else had to pay 300,000 for it. Yeah, I would. I'm sorry. I would."
+    },
+    {
+      "start": "43:08",
+      "start_seconds": 2588,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "I I think if that was something that was normal and you could keep doing this and buying supercars for $500, I think you"
+    },
+    {
+      "start": "43:16",
+      "start_seconds": 2596,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "would probably take them to the grocery store, run them through the mud, you just wouldn't care as much."
+    },
+    {
+      "start": "43:21",
+      "start_seconds": 2601,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "Well, that's true. If it was a continuous thing, if it was a onetime thing, then no. But you're right. If supercars from now till the end of time were $500,"
+    },
+    {
+      "start": "43:31",
+      "start_seconds": 2611,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "I would go somewhere. I'd park it. If I got a ticket, I'd probably be like, \"Eh, I'm just going to go buy a new one.\""
+    },
+    {
+      "start": "43:39",
+      "start_seconds": 2619,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "I've heard I've actually heard of celebrities that did that. I think it was was it TI or something? He like ran out of gas in his Escalade and he just"
+    },
+    {
+      "start": "43:48",
+      "start_seconds": 2628,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "walked to a dealership, bought another one, and just like left it there. You know, it's like I feel like that mentality is what gamers have actually"
+    },
+    {
+      "start": "43:57",
+      "start_seconds": 2637,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "gained over time that games are a dime a dozen and you know, we just we throw them away easily. And it it also starts to do something to our brain where we're"
+    },
+    {
+      "start": "44:05",
+      "start_seconds": 2645,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "like, I played this game, but I didn't really look into it that much. It's cool, but I want to go buy another one."
+    },
+    {
+      "start": "44:09",
+      "start_seconds": 2649,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "You just find another one sale. And you never look into the depth or focus that the devs actually put in the games. When"
+    },
+    {
+      "start": "44:16",
+      "start_seconds": 2656,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "when I was a kid and I finally got that $40 game that I've been waiting four months or asking my mom for and I played it, a lot of them were in retrospect,"
+    },
+    {
+      "start": "44:27",
+      "start_seconds": 2667,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "not great. But you know what? I loved it. I looked into everything that the devs did. Um, you know, I I looked at every single detail. I really thought about the story,"
+    },
+    {
+      "start": "44:36",
+      "start_seconds": 2676,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "every side quest, every It really took effort. when you when you put effort into something or you pay more money for it and there there is"
+    },
+    {
+      "start": "44:43",
+      "start_seconds": 2683,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "substance there, you're going it's going to be more appealing to you than than you know maybe it would be if it was cheaper."
+    },
+    {
+      "start": "44:51",
+      "start_seconds": 2691,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "So very very insightful. I appreciate that."
+    },
+    {
+      "start": "44:54",
+      "start_seconds": 2694,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "Man, this has been fantastic. You I'm so glad we had you on as the first ever guest because we just flow and and"
+    },
+    {
+      "start": "45:03",
+      "start_seconds": 2703,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "you're so easygoing. You're so knowledgeable and all that conversation. I know your time is precious and and I want to I want to"
+    },
+    {
+      "start": "45:11",
+      "start_seconds": 2711,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "thank you for taking time out of your extremely busy schedule to be here with us. Uh any"
+    },
+    {
+      "start": "45:18",
+      "start_seconds": 2718,
+      "chapter": "Chapter 11: Game Pricing and Perceived Value",
+      "text": "parting words that you want to say for the masses whether they know about the game or not or or just any kind of anything you want to throw out there."
+    },
+    {
+      "start": "45:28",
+      "start_seconds": 2728,
+      "chapter": "Chapter 12: Anticipating Future Developments in Infinity Rising",
+      "text": "Um, no. I would say this the next like three to six months is extremely"
+    },
+    {
+      "start": "45:36",
+      "start_seconds": 2736,
+      "chapter": "Chapter 12: Anticipating Future Developments in Infinity Rising",
+      "text": "important time for us. You're going to see a lot of things come together. There be a lot of value added to the game and we're we're kind of coming up to a more"
+    },
+    {
+      "start": "45:43",
+      "start_seconds": 2743,
+      "chapter": "Chapter 12: Anticipating Future Developments in Infinity Rising",
+      "text": "mainstream launch point uh at least for a alpha states. But I'm I'm just I'm super excited about all the things that"
+    },
+    {
+      "start": "45:50",
+      "start_seconds": 2750,
+      "chapter": "Chapter 12: Anticipating Future Developments in Infinity Rising",
+      "text": "start getting tied together. And I know there's there's some in the community that are like I go in there's like I don't feel like there's a lot to do right now. That's because you're just a"
+    },
+    {
+      "start": "45:58",
+      "start_seconds": 2758,
+      "chapter": "Chapter 12: Anticipating Future Developments in Infinity Rising",
+      "text": "lot of these core systems are coming together. Once those things are filled out more from a content standpoint and we make connections between those,"
+    },
+    {
+      "start": "46:06",
+      "start_seconds": 2766,
+      "chapter": "Chapter 12: Anticipating Future Developments in Infinity Rising",
+      "text": "you're going to be like, \"Oh my goodness, there's a lot to do here.\" I think in the next couple months, there's going to be a lot of things that come out that people are going to be spending"
+    },
+    {
+      "start": "46:15",
+      "start_seconds": 2775,
+      "chapter": "Chapter 12: Anticipating Future Developments in Infinity Rising",
+      "text": "uh daily time uh in the game, like logging in every day to kind of grind away and do things. So, it's that's that's all I want to say. I'm just"
+    },
+    {
+      "start": "46:24",
+      "start_seconds": 2784,
+      "chapter": "Chapter 12: Anticipating Future Developments in Infinity Rising",
+      "text": "really excited for about the next six months of that makes me very happy. That's that's my jam right there by the way is"
+    },
+    {
+      "start": "46:32",
+      "start_seconds": 2792,
+      "chapter": "Chapter 12: Anticipating Future Developments in Infinity Rising",
+      "text": "leveling up is you know some processes progression processes that you're grinding for you got to go save up a"
+    },
+    {
+      "start": "46:40",
+      "start_seconds": 2800,
+      "chapter": "Chapter 12: Anticipating Future Developments in Infinity Rising",
+      "text": "whole bunch of money and then you you're able to get to that one thing and it makes you more powerful and you can do things you know you you do things you"
+    },
+    {
+      "start": "46:49",
+      "start_seconds": 2809,
+      "chapter": "Chapter 12: Anticipating Future Developments in Infinity Rising",
+      "text": "couldn't do before. Maybe it unlocks something. Maybe maybe it makes you more powerful. But that that is so satisfying"
+    },
+    {
+      "start": "46:56",
+      "start_seconds": 2816,
+      "chapter": "Chapter 12: Anticipating Future Developments in Infinity Rising",
+      "text": "to me in games and that's what really just sucks me in that and and then amazing storytelling."
+    },
+    {
+      "start": "47:05",
+      "start_seconds": 2825,
+      "chapter": "Chapter 12: Anticipating Future Developments in Infinity Rising",
+      "text": "Um yeah. So a lot of that's going to be easier to do that we I mean a lot of people don't realize when they play a game like 80%"
+    },
+    {
+      "start": "47:13",
+      "start_seconds": 2833,
+      "chapter": "Chapter 12: Anticipating Future Developments in Infinity Rising",
+      "text": "of the work sometimes is not in the things they're in the things that's under the hood. It's it's not that mountain that you see. It's the"
+    },
+    {
+      "start": "47:21",
+      "start_seconds": 2841,
+      "chapter": "Chapter 12: Anticipating Future Developments in Infinity Rising",
+      "text": "procedural process and pipeline that it took to develop to get you a mountain that's that's in front of your face. And the same thing goes for characters and"
+    },
+    {
+      "start": "47:29",
+      "start_seconds": 2849,
+      "chapter": "Chapter 12: Anticipating Future Developments in Infinity Rising",
+      "text": "game mechanics and all of these kinds of things. It's just we're, you know, it's it's a big game. It's we've been on it for a while, but we're we're about to see the fruits of our labor, I think,"
+    },
+    {
+      "start": "47:40",
+      "start_seconds": 2860,
+      "chapter": "Chapter 12: Anticipating Future Developments in Infinity Rising",
+      "text": "when all these things start coming together. So,"
+    },
+    {
+      "start": "47:43",
+      "start_seconds": 2863,
+      "chapter": "Chapter 12: Anticipating Future Developments in Infinity Rising",
+      "text": "exciting times. Again, I want to thank David for joining us and for everyone else. We are currently in closed access."
+    },
+    {
+      "start": "47:51",
+      "start_seconds": 2871,
+      "chapter": "Chapter 12: Anticipating Future Developments in Infinity Rising",
+      "text": "The game is Infinity Rising, but if you're interested in checking it out,"
+    },
+    {
+      "start": "47:57",
+      "start_seconds": 2877,
+      "chapter": "Chapter 12: Anticipating Future Developments in Infinity Rising",
+      "text": "you can go to our website. It's infinitrisising.com."
+    },
+    {
+      "start": "48:01",
+      "start_seconds": 2881,
+      "chapter": "Chapter 12: Anticipating Future Developments in Infinity Rising",
+      "text": "Fill out the short form, you'll be added to the list, and that way you'll be considered the next time we bring in a new group of players."
+    },
+    {
+      "start": "48:10",
+      "start_seconds": 2890,
+      "chapter": "Chapter 12: Anticipating Future Developments in Infinity Rising",
+      "text": "Don't forget to help us out. feed that YouTube algo people like, subscribe and all of that. Until the next time, game on everybody."
+    }
+  ],
+  "transcript_text": "Hey everyone, welcome to the first ever episode of Origin Point, the show where each episode we pick a developer from Infinity Rising and dive into a variety of topics regarding video game development and the people that help design and create the game. I'm Scruffy, the QA manager for Infinity Rising, and I'm joined by David, our game director. David, thanks for being here, man. appreciate you. Yeah, nice nice beard you have going on there. You like that? I've over the holidays I kind of just let it go. I I you know, it's weird. I I don't know how it like reached that length. Maybe I wasn't paying attention. It seems like it did it overnight. Like you just kind of glued on like an extra piece. I I don't know. So, we've been in meetings and there have been people that hadn't seen me in a couple. You know, sometimes you go two or three weeks without a particular person being in one of your meetings and they walked in and they're like, \"Oh my goodness, the community also the other day when I was in the watch party.\" Yeah. They uh they were doing the goat memes. So, uh yeah. Anyway, appreciate it. So, okay. You actually came up with the name for the show, Origin Point. You You didn't realize you did, I guess. Well, I I was reminded that I did because this is something we wanted to do a long time ago. And you're probably going to ask, well, what does that mean? Origin points. Well, it's it's incredibly boring. Um, but it does it does kind of point at let's let's talk about what it is at a technical level. It's it's really the zero zero zero point as we call it of the x y and z and your vector math. And you know 3D models have an origin point. uh many many functions that we might do in a game are everything's always going to have its sort of origin point. So that's that's the dev side of things, but I think it also kind of speaks to like where the game's coming from, the origin point of the game, uh the passion of the team, uh the thought process behind things. So I think it think it kind of has a double meaning besides the boring uh technical side of things. So I like the double double entandras, if you will. Yes. All right. Well, for everybody who isn't familiar with Infinity Rising, real quick, tell everything about the game in 60 seconds. Ready, go. Wow. You know, we've always said it's like this is a really tough game to elevator pitch, but uh the main thing is it's um we're not really I don't even I kind of hate the word game. This is what I hate. You know, I was talking to Jim, you know, uh, earlier about that, and it's like, is this a game? Or, you know, we you'll have a you'll have a small developer put up like a one-hour experience, neat little thing, that's a game. But then you have something like GTA 6 or, you know, Starfield or these massive Star Citizen. Is that a game or is it a lifestyle? It's, you know, it's it's really both. But, uh, anyway, not going to get hung up on that. my gripes of the word game. But Infinity Rising is a large open scale uh well not open scale openw world uh MMO and um I don't want to just say it's an MMO because it's also more of a simulator. So um and it's based in a post-apocalyptic uh universe. It's we go with the multiverse theory. So, uh, you're actually in a different version of the Earth, uh, where things have not went as well as they have here. Uh, and our Earth is sort of actually part of the lore as well. So, it's it's that's kind of the interesting aspect is we're we're pulling players in from where they currently live on Earth into another Earth. And that's that's all part of it. And there's a great call to action because that Earth is still under an even greater threat now. And in this world, and this is the tough thing, this starts going on forever. You can do a lot of different things. So, um, if you look at the average MMO, I would say you you kind of have this mentality of specializations with players. Uh, some people might call them classes. Um, but they they surround the idea of more combat. That's like their end point, right? I'm a wizard. I'm going to be a wizard. I'm I'm going to be a paladin. I'm going to be a tank. All surrounds combat. We we don't really do that. Ours kind of surrounds like vocations a little bit. Like if you want to be a woodworker, you want to be an explorer, you want to be a minor, you want to be somebody that goes into uh chemistry and works with that, somebody that works in quantum physics. So, it's not that combat isn't a part of it. There is a big part that can be combat if you want to be part of it. But the the focus is on a digital life, uh helping out the world and not just a combat way, even a economical way. So, there's a lot of different directions players can go. Uh, we have very detailed avatar creators, so you can create yourself or create whoever you want to be. Um, you can jetpack around. We have, you know, we have our blood sports, which is kind of like a gravity racer, high-speed machines flying around. Um, in a lot of ways, I like to kind of condense down the whole idea as being like it's almost like a mini charming, more widely appealing space simulator than something like Star Citizen. You got these big floating domes in the sky. Uh it's a Jetson's kind of world where people are flying their jet cars from place to place, hauling things around. Um a lot of high technology has taken place. It's a little bit different than our earth here. They have anti-gravity technology that really it's kind of the one thing there's an element that they have access to that we call geneium and it brought the ability to have anti-gravity technology and quantum portals. It's It's the one thing that saved the world, but it was in a lot of ways the one thing that destroyed the world in the first place. So, I love when you get to talking about the lore. I got to tell you guys, I if you have a chance to take a car ride from a hotel in Vegas to a Mexican restaurant with this guy, make sure make sure and take up that opportunity because you will get so much info on the lore. I was blown away by the way this guy's mind works and it's so fantastic. I'm I'm so excited for everybody to be along this journey and find this incredible lore that's been crafted and it's exciting and I don't know I don't know how far off we are from them finding some of those details out. Uh but over the coming months I would assume little by little they're going to get some nuggets. There's a lot of uh the I feel like the in a lot of ways the lore is like bigger than the game itself at least right now because we're still in development. There's there's been a lot of work that's been done into it. There's got to be I think a lot of like sort of twists and turns over time. Uh you know that's that's something else to talk about I think too is we're not looking at the player as coming into the world is like you're the hero, you're the chosen one. The prophecy wrote this about you. I always find that very strange that you have these big MMO worlds and um everybody's special that that goes in there and everyone it's it's like it's a consistent world at least community-wise. Everybody feels a part of it. They do their own things, but yet somehow they're all the hero. That's that's always been a bit strange to me. So now you and I agree on most things. I mean, we we've had a lot of talks back and forth about, you know, future ideas or obviously when we get ready for a game release, often times you and I are kind of in there really really hammering through the the the final what we think is going to be the final release, making sure that it's uh, you know, passes and everything. However, this is one thing I think we differ on a lot. I want to be the hero. Like, I want to feel special. That's one of the reasons I play games. And so my question to you would be, what do you say to the people like me that I still want to feel special? I still feel want to feel individualized and like I if if if I don't get in there and do what I need to do, the planet's not going to get saved. So yeah, throwing the hard questions here, but in reality, they told me, hey, they told me not to hold back. That's I was directed by our marketing director. He said, \"Don't be afraid to ask the hard questions.\" Um, so you can still do that. Really, it's what we're kind of saying is we don't have the path laid out for you, right? There's a lot of different ways you can go. If you want to get in the world, you want to build up things on plots, you want to connect with people and form an entire pipeline and become a steel giant that's, you know, bringing supplies to the front line. And you did that. You orchestrated that whole thing. You could do that. It's totally organic. You can go that direction on stuff. Um, you could go in a total combat direction. You could totally focus on everything that needs to happen in combat because, you know, we have this system. You have all the the gear that you can put on. You can upgrade yourself, right? And, you know, you put all these components together like your jetpack and your armor and you assemble it in the right way, you could become something that's very, very formidable, very, very powerful. And let's let's go back and talk about like how major things happen in the world. Um and and maybe why I'm coming from this certain angle is I I think it's a little bit more like if you look at hell divers that's probably a better comparison for viewers. They're you're not special like as a hell diver but you can be a part of this thing that's pushing against like we need to invade this planet. We need to rid them of the the scum, the bug scum that's there or the or the bots or those those other horrible ones that I that that I hate fighting. But you're part of that. And sure, if you're more powerful and impressive, you're going to be up there in a leaderboard as somebody that's pushing against the riffs uh the most. So it's that's the more communityoriented is what you're saying. And yeah, you're you're part of something bigger. Yes. Okay. I like that. I like that. Excellent. Well, uh, we we've talked a lot again behind the scenes about various I'll say I'll say problems in gaming. And we don't want to get too negative here. We don't want to bash a whole bunch of other games and stuff like that, but talk about some of the things that you haven't talked about before on other shows. Maybe, you know, some of the things how other games tackle them, things that are missing from other games and and and stuff like that. and and how we're going to try and tackle those issues. I think I mean if you look at gaming as a whole, like the industry, it's been a it's been very weird for like the past couple years. Uh it seems like a lot of gamers are pretty disgruntled. You have a lot of that going on. I mean, there's there's so many directions that I could go with this one. Uh, you have everything about people complaining about, you know, poor delivery on games, too long of timelines to why does why can't I have a sexy female character anymore? Why does why does she have to look so homely? You know, you have that whole thing going on. Um, there where's my Laura Croft, right? You know, everybody wants Laura Croft to come back. you know, you go back and look in the day and she's like, you know, essentially has pixelated parts up here that are very, very low poly. But, um, I think the game industry went went in a direction that was kind of anti-consumer in a way. And it was um I think there were directors there were people that were I think they were more about pushing an agenda when they were when they were coming into the game uh rather than telling the own game story just like kind of on its own letting it be its own thing. They felt the need to inject the personal opinions on things. And I think you know anybody listening to this you you probably feel that in a lot of ways. You don't wanna you don't want to come home after a long shift to go and play your favorite game to have somebody's agenda like pushed down your throat or something like that. So, and I think that's kind of across all media. I think we've seen a shift over the past, I don't know, 5 10 years of this being everybody's cause and everybody wants to input their beliefs and their thoughts into their product and I understand that. But I'm with you. I don't like agendas in games. Like, leave it open. Allow me to do everything and I'll choose my agenda. the guy next to me can choose their agenda. And as long as we all have the power to do that, then we'll all be happy. I mean, you're never going to make everybody happy. That's the other real life is nobody's, you know, you're never going to have a utopia where everybody totally gets along. And I think I think that's the the beauty of it. But, um, yeah, players can go any direction. They can create their avatar however they want. They want to be a you know, you want to be a bearded dude running around in a dress. You've done that a few times in the game just for some laughs. So, I have. I have. Absolutely. And we've got people that make very I'll just say not flattering looking avatars. Um yeah, we all went to the exact same one. Snoo at all, you know. But I I feel beauty is in the eye of the beholder. Exactly. I I think some people are totally all about that. So the whole warped face and everything. So speaking of that, what what what are your takes on like sex and drugs and bodily functions and like let's get into the the the the the gnarly stuff that this is the good stuff. Really? Yeah. That's what I'm talking about. This is stuff people want to know about. How are we going to tackle all of that? The shock factor. Um sex. I I don't know. Well, I I don't I don't see that as something being in the game. Now, I do see because we're so community focused uh and and being kind of a social platform at the same time, actually allowing players to like set relationships and sort of date and having some perks because of that. Um that that might not mean that they get a discount on their taxes because they're married or something like that. It may not mean that they could also have a baby. Uh, that's I'm I'm not going to that's out there in the murky. Hey, maybe that could happen. I don't know. You know, because we're trying a lot of games do have breeding mechanics and I know they'll do them for pets and things like that, but and and games like The Sims and things have that for people, but yeah, I I wasn't sure, you know, about like say adult areas if it could be verifi if age could be verified or not. Um, you know, we've got things like custom domes. How much flexibility will people have to when they create their own stuff, you know, just just kind of what level or is it going to be, you know, do do we think we want to make it totally wide open? Do we want to keep it locked down and and this and that? What are your I mean, just personal thoughts on that. I talked I talked about this before is something I call the Star Wars line, right? And and that's that's probably the best place to be for things. you could let maybe let people branch off from there. But um Star Wars has this Star Wars has like some sex, some very sexy stuff that's in there. It's it's got some blood. It's got some arms being chopped off and some blood, but nothing ever goes too far. Uh I think in Star Wars and you know, look at look at Princess Leia. You know, I was going to say you're bringing back memories of Leia in the slave suit. You know, nobody can ever forget about that. And it was it was a very sexing outfit. So good. I went back and watched it just to to to to look at that because I'd seen some Friends episode or something where Jennifer Aniston dresses up as Leia and I wanted to go back to the original. It's interesting, too, because I saw Star Wars when I was so young. Yeah. And I was not thinking about the opposite sex in in that way at all, but I went back and watched it. I'm like, dude, Carrie Fischer was freaking hot. Oh, I think it hit me when I was younger. I was like, I like watching this. Yeah, this didn't make me feel funny. Funny thing. Yeah. Um, so I think we have a little bit of everything as long as it it doesn't go necessarily too far and become like too grotesque, you know, as far as, you know, two players going to date each other and then, you know, other games have stuff like this, right? Like Sims is probably like a big one. You can have little families. They marry and have babies. But we're talking about a more visceral. You're in a simulator. You're your own avatar. You have full control walking up to, you know, a person that you spent time with. How how does that actually happen? You're like, you're like, \"All right, do you want to do this?\" You know, how did how does that actually work in game? How do we have a mechanic for that? I don't know. That's that's all fun stuff. Um there's some other things I think about in games. sometimes where like why is it okay for why is it okay for me to chop off somebody's head and blood goes everywhere or spill somebody's guts but yet there's no toilets or bathrooms we we don't we eat all this food in game but yet there's where does it all go where does all the food go uh so you know like some people asked that question like where all the children in games you don't see children in games that much and we kind of know why but Um, why? It's because you don't work with pets or children. Isn't that a rule in Hollywood or something? No. Anyway, go ahead. I don't know. But, you know, if you have a need system and you're eating food and you're gaining stamina, you know, can't can't we go further? Can we think about nutrition and calories a bit? We've we've seen stuff happen in games where you could gain weight. Um, you know, we don't want things to be too like intensive and bothering for the player, but could you have a bow mechanic where I don't know, it's it's not too bothersome, but maybe you're out there with your buddy and Solless and you know, he held his bathroom for a long time and you guys are in the woods, you know, looking for something and grizzly bear just comes out of nowhere. Your buddy craps his pants front everyone. Wow. I thought you were gonna say, \"Okay, you're you're you're on the road in the forest and you're searching for something and your buddy has to pull over off to the side to relieve himself, but you went full bear on it.\" Just comes out, you know, and because they they don't have the skill to deal with fear situations. Just there he goes, right? That fear skill. Yeah, kids. That's day one. Imagine how hilarious that would be just just for streamer content. Well, we talked about battle, too, right? going out and going on the battlefield. And let's face it, that's probably one of the scariest things in life, right? Is is being in battle. And I could totally see somebody, you know, you only have a certain amount of of of of time in the day to get your stuff done and you didn't break take your pre- battle dump and uh you know, happens. Uh exactly it. I mean, you're, you know, you're looking at your buddy's like needs meter and you notice he's been packing it in there for a few days and you walk up next to him and fire off your meat grinder and, you know, just Would that be great if before a battle there's just like a line of portaotties next to the battlefield and you just see everybody going over there first before the battle starts getting I think it was we had this joke in Vegas like because our backpacks or the pack slot on the player is kind of like a wild card. You can have all kinds of things. You can have a, you know, a drone that pops out and you can use it for surveying. You can use it for storing stuff. You can have jetpacks. Why not just have a potty pack? What if your What if your What if your buddies just got to go and battle and he just like hops on the back and you're running around battling and he's doing his business? You know what? What can't potty back? We talked about that specifically and I actually wanted to take it a step further. Right. Right now, we've got we've got a jetpack that's also a backpack. Yeah. I want a jetpack that's also a toilet. Because I want to be flying around shooting and in midair my buddy comes and lands on my toilet with his jetpack. Yeah. A bombing run. Exactly. Like we could get crazy with this. Absolutely. You could Yeah, you could certainly humiliate your enemy that way. Imagine just seeing like 10 people take off their buddy on jetpacks and then it just the place in the background. Yeah. Yeah. Then that happens and their needs go down like they they lose stamina because of the smell. I don't Well, and that's the other thing again. Would would you get some sort of debuff if if if you're full to the brim, right? If you got turtle heads spoken out. I think so. Yeah, I would. I think that would have to you might have your animations change where you're standing there and it's like and you hear your buddy's stomach and it's like hey man you might do we need to get you to a bathroom like we're about to go off across this mountain range. It sounds like we need to head back to town or you're going to have an accident. So just I think I think real life in a way is is kind of a beautiful thing. It's very nuanced. There's a lot of humor. Everybody poops every day. that that kind of thing. Everything goes on, but games always sometimes like to just kind of focus on this just sometimes very serious kind of world, you know, and it's it's it's not like real life at all. You can have all this ridiculousness at the same time as having a legit world that you're in and a legit civilization and lore that's in a game because that's that's life. There there is sex, there is pooping, there is you know somebody in a wheelchair falls down the stairs. You know it, you know what I'm saying? These are all part of life. I know it's very it's like a horrible thing to say, but but it is it's always funny when you see somebody else fall. I agree. I I don't know what it is. If it's not you, it's funny. It's it's hilarious. So Well, and that brings up another good point. You talk about humor and there's a lot of games like you said that have zero humor and then there's some games that are just ridiculous, laughable. I'm assuming you kind of fall somewhere in the middle. I've I've always kind of liked it's like, you know, I feel like Grandanthm thought it was a good example, right? It's it's actually a fairly serious game, but it never takes itself seriously at the same time. And I think there's always that line that we can kind of run with that because we're going with the simulator. It's real life. You could you could totally have something very serious and heart-wrenching happen and struggle and all of these things and then your buddy can just grab his pants next to you. You know, it's because you can you can have that humor. We we have some funny things that are over the uh you know the PA that you hear in game. You can hear I know I know Jeff thinks it's really funny when he hears um Nelson as he's called he's the security chief. Security chief Nelson. You can hear them yelling at people uh over the things. Stop jumping around on stuff. That kind of, you know, there's there's all these like little extra things that start coming out in the game. And I think there's there's just going to be a lot more of those in the future. Look at all of our signs. Like some of the you go to like Burrito Boss and you look at, you know, even the names of things, it's it's just always a little bit extra just to kind of keep you entertained. And I think I think we'll always do that. I agree. Yeah. Uh, how about drugs? You know, there's there's been a lot of popularity from games that are based solely on drugs. Uh, schedule one comes to mind. They've they've been very big. And I'm I'm just curious. I know I've we've had community people go, \"Hey, are we going to be able to grow weed?\" Or, you know, all that kind of you and I have talked about having some shady guy in the alley, you know, down in in Called City that's, you know, hey man. Well, you know, just at more of a PG level, um, we're working some of the icons where I think there's like several hundred items. They're going to be going into like the crafting system and inventory. And we do have like rum and tobacco and vodka and all these kinds of things. So, there is there is a thought about like having a distillery in game and and making your own alcohol and those things actually having effects. There's there's also some thoughts on growing tobacco and having your own cigar shop, things like that where just a lot of games don't go, but it's in real life it's it's a serious thing. It's what people do. It's it's it's an economical thing. Um we're definitely going to have that. Now, there there is an idea about elicit substances uh as well. Um I'm not I don't know if it's necessarily going to be like cocaine that's in the game and wow, you're making cocaine, we're gonna have to shut you down and you're going to prison. though. Maybe it's spice or something like that, you know, like some they got like schuma from created. Yeah, maybe maybe they're out there snorting quantite. I don't know. There will definitely be technologies, substances that may not necessarily even be things you would ingest, right? That are considered illegal in this this floating world of the sky because it's it's a threat. It's things that mess with quantum nature, things that give people too much power. Um that kind of stuff. We're we're certainly going to have that. There's there's definitely going to be, you know, there's there's a build right now that's going out that has some of the more extended criminal justice stuff going on where you can set bounties like, oh, you did damage to people, you get a bounty. There's different uh there's lawless areas. There's um you know, regular PvP areas where you're going to go to prison if you do something wrong. So, that's that's coming out. there's going to be a path for lawlessness uh in the game and for people to live on the live on the wild side, live on the the bad side of things. Uh certainly if that's something they want to do, just expect life to be a little harder. So, super exciting, by the way, because I saw it cooking earlier today and I'm like, \"Oo, as soon as we get done with this, I'm going be able to hop in and see some of that really, really cool stuff.\" So, yeah. Awesome. You mentioned the new icons and stuff we were working on. I believe that was for the recipe system and I did get a chance to get a glimpse of that just the other day and it was super exciting. If I can get approval, maybe we'll throw up a graphic and blur some of them out and just I don't know, maybe show a few. We'll see. But um I I noticed there were a lot of like rocks and minerals and I'm told that this guy is a little bit of a geology buff. So can you talk a little bit about geology buff? But no around, you know, I I like geology and I like collecting. I like old stuff. You know, you'll find um you'll find different things like around my house. You'll find a lot of like large geodess and different types of like citrine, amethyst, and um all these other things that I'll collect over time and just kind of the my travels. Um I've also got like some dinosaur bones, some some what some people call a chunkosaurus because you don't know what dinosaur it came from. Um I do have um what is the spec? I have I have like a piece of a leg bone from a very specific dinosaur which triceratops. So I have a piece of a leg bone uh from a triceratops. So uh that's super. Yeah. So I I don't know why I feel it's very nice to hold something and look at it and think this thing lived so long ago. It was almost like an entirely different age. I love that kind of stuff. But uh yes in game you will also see things like that like dinosaur fossils that you can find. um amethyst, you know, you go into, let's say you go into a mine and you go beating on some rocks and you're you're not there just to get some ore. You got the pay dirt that comes out and you scoop that up and take it with you. You take it to the processor and of course you get your um you go from having, let's say it's gold that you're looking for. You go from having a very rough gold ore, a lot of other things mixed in to getting something a little bit more purified, processed gold ore, as we would call it, but you get a lot of other things that came out of there, too. You might get some iron that's in there. You might get some amethyst that's in there. You might get things that you can make jewelry with out of those. So, it's kind of like this um I always look at it as kind of like this little bit of a exciting lottery. You know, you you ever went to those like touristy areas and they have the little sifting stations and kids love to do that. They have this big block of sand. You scoop it and you you do the panning and they might get jewels and different rocks in there. People love that stuff. Dude, I went on a tour in Alaska where we actually went to the river and started panning for gold and you got to keep whatever you had and they put it in this little jar and I've got this little little jar of with a whole bunch of gold flex and I'm like, dude, I went out and actually mined gold, real gold in the real world. It's not much, but yeah. No, that stuff's super cool to me. Yeah. So, you'll see lots of different uh minerals, uh rock type stuff. um you'll see almost the entire uh somebody was working on that recently the uh periodic table of elements. So the the entire thing so icons for each like raw thing out of there. So um there'll be a lot of things for people's like interests like in the game you know things that you're interested in real life you'll probably see them in the game uh itself. Well what else besides those little icons are you working on right now? Well, right now we're trying to get Well, we got we got many things in parallel. I think I covered a lot of that on No, I mean you rice. Oh, me specifically. Yeah, you besides talking to a lot of people all day and trying to keep things straight. I'm trying to work on the backend side of the espirona stuff to speed up the finishing of it. So, uh we're moving to nanite tessellation on some things. Um there's also been some hang-ups because our our worlds are uh handcrafted. Uh we have very efficient like workbox system for that and we we use the best technology we can use in Unreal to make those happen where we can get a large 8 by8 kilometer map done like in a couple months with a with a team. Um but I want to speed that up even more. Uh one of the biggest pain points is like building like mountain ranges uh stuff like that. um because sometimes they require just thousands of pieces to make those things actually detailed. And then it's not just about putting things. It's you have to have a mountain that looks like a mountain at the same time. Um rocks and mountains may look like very random things, but there's a very specific order. There's a geological history to these things. So, we're looking more now at um generating things procedurally like mountains outside of the game, bringing them in more cut up into a lot of different pieces and slices and using actual tessillation and some other procedural stuff to actually give that detail. So, you go from, you know, a mountain range taking like, you know, three weeks, like four weeks to being like three or four days. So, Oh, that's great. It's Yeah, because we got, you know, we got 12 zones to do total. Um, trying to speed things up. I do a lot of the uh technical uh backend side of even being a director and everything else I have to do. I'm I'm helping people creating tools and systems that make it easier uh for them to develop. me. I've almost got, you know, sometimes I would say just from the environment side, I feel like sometimes it's gotten so efficient with that that we could just bring in some guy off the street and I could just sit him down and give him a tutorial and he'd be like building an envir that's that's performant. But we we like to make very efficient systems because we are a small team and we have to do a lot with a little. So, um, and yeah, you guys don't want to see this guy's time card, trust me. No. No, there's I I've often thought about a way I can build some sort of large jet engines to sort of slow the turning of the Earth so I can have more time in the day. See, I'm just focusing on cloning myself. Yeah. I figure if I could have two or three other at least two or three versions of myself, I'd be all right. That would that would be great. Yeah, I could even hang out with myself. So, you know, hey, maybe something for the game. Maybe there's a feature where we can clone ourselves and one can be off farming and one can be off starting a relationship with that plays right into what we're working on with the avatar genetic sets. So, um, so yeah, I mean, you guys, you know, community out there and I talked about this a little bit in the, uh, cafe rise, but you know, having a whole family of avatars like with different names and you can eventually have one of those as a follower to go off and help and do things in the world. So, it's it's almost like you're not just you, you're like a a family lineage kind of thing that's going on. So, can we have them be like an AI robot? I, by the way, I did watch that movie Companion that you told me about and I loved it. Good. I loved it. Absolutely loved it. Very good. Yes. I I love I love all the AI movies. Her is probably my favorite one. If you haven't seen her, I've seen her and her was okay. It was fine. Oh, another one like uh what is it? X. That's my favorite. That is my favorite of all time. Period. That's the best. That is so done. Yeah, it's it's really really good. And I all of this is jumping around the this the same thought of human relationship with artificial intelligence which I think is you know that's why I talked about you know you have these extra genetic sets of avatars that you can create and have them be a follower but you know also working on having an LLM function with that let it learn from what you're doing in game and then holy cow you're going around the world and experiencing the game doing things and it's like you have a a friend or a partner that's that's like a real person uh that's that's actually there. So, it's you know, if you're one of those gamers out there that has no friends, we're going to we're going to have you covered in the in the future is is as bad as it sounds. I I do think why are you looking at me when you say that? Huh? I have no choice right now. Um, yeah, it's humanity is we're in the midst of the the greatest technological revolution the world has ever seen and it's going to shatter the foundations of relationships and it just the way we do we I think I honestly think even by the time let's say I'm like 70 or 80 years old I think normal work is a thing of the past at that point you don't have your nineto-five job you don't have things like that I think you also have I think you have hybrid relationships even I I think you have AI that are actually in relationships with uh humans and I think we get to a point where the robots you know there's protests in the street that robots are people too you know this we're living in such a wild time and I I'm here for it I'm a little scared sometimes but it's you know and and what's it going to do for gaming right what happens once somebody can just press a button and say, \"Make me a game like this today.\" It's, you know, it, by the way, that's probably a lot further off than people thinks it is. Um, I think a lot of this stuff is maybe fur Well, I don't know. I personally think I think the robots and relationships is is probably a little bit closer than people don't realize all the pieces that are completely separate off of the different programs right now and how 30 to 50 programs that have all these people with different disciplines working on those that very specifically have to be manually moved around talked to the other people of the disciplines and that has to go in and be tested and all work together. It is more complicated than film or anything else. Um, anybody that doesn't know anything about software development or know anything about game development specifically. It is immensely more complicated and difficult than many other things. And I'm not just saying that because I'm I'm in it. You know, it's it is a very difficult thing. And that's why game developers end up working very very high hours. It's it's not a good field for like, hey, I just want to work 9 to5 and and I'm done with the day. It's it's just not that way. We've we've had some crazy hour months. Yeah. I know I've definitely pulled, you know, 350 hours, 380, probably almost 400 some months just trying to solve problems with the team. Uh they have as well. And um and that's you know makes me almost want to go off into uh you know I don't know if it's an uncomfortable subject but you know just gamers and mentality nowadays and how they're just like oh make the game cheaper. Why are you charging 60 bucks? It's like games are expensive. It cost a lot of money to pay people. It costs a lot of money for different licenses. And I mean we've all got to have these beastly computers. I mean everything about it is incredibly expensive. When I was a kid, it was like $40 for a new game. Why is it $60 now? You know, it it it hasn't even kept up with inflation. It I got news. When I was a kid, it was $20. And I think that we'll see GTA come out around the $100 mark. That'd be my guess. Yeah, I think it should be for a game of that scale. And I also think there's there's a psychology difference with this kind of stuff. If you put your you put your blood, sweat, and tears and heart into a game that dev team spends their time on it and you try to come out and undercut the industry and put it out for 20 bucks. I think there's you're taking a gamble there. They could just sing your praises or they could just complain because it's like it's not good enough because to them it's only a $20 game. Like you're you're literally putting the value of the game on there. Um, there's a lot of weird things in psychology like this to where you could have a game, let's say it's same game, you released it for $20 and a bunch of people complain and it gets mediocre reviews and then you could release the same game for $100, but because people paid $100 for it, it makes them value the game more. It makes them look into the game more, see everything that the devs did and care about it more. I think Star Citizen has found out something when it comes to this. It's it's it's very very strange. So, I'm not saying we're we're going to go out there and put some ridiculous price on the game, but I think human psychology and how pricing affects things and how value is perceived in the mind is is a very very interesting subject. I think you're right. I think a lot of people do put that value, like you said, based on the price. I'm almost the opposite though. Again, maybe I'm the exception, not the rule. But if I sit there and I'm like, man, if I plop down $100 for this game, it better be fantastic. You wouldn't know it, though. You would just you would automatically like it better. You just wouldn't know it. So, you would You're thinking that you would think a certain way, but I No, I already do that with my games. Look, I am a very frugal gamer when it comes to buying games. Okay. Wait, no, wait, wait, wait, wait. I've got a system, okay? I I have so much of a backlog that I haven't been able to get to because of work and various, you know, life things and all that. And so what I do is every so often I go in there and I find games that I've been wanting to play and wait until I look for them to be on sale. I can get them 50, 60, sometimes 80% off and I'm able to buy two or three times the amount of games for the same amount of money. And so that's just the way my brain works. Now, will I go out and buy a $70 game occasionally? If I'm really excited and hot about it, I will. I've done it. Uh, but again, if that is trash, I get a little more upset than the one that I paid 15 bucks for if it's trash. Now, again, inherently in the back of my mind, I may end up just liking it a little better because I paid a little more. So, I I I'll never know. I think it's kind of like imagine this. Imagine like a Ferrari, right? If you bought a Ferrari and you paid $300,000 for that Ferrari. I like this scenario. Very good care of that Ferrari. True. Very good. You would baby it. You probably spend a lot of time with it. Probably just spend time in the garage just kind of sitting there touching the leather. I probably can't tell you all the things I would do to it. That's not That's a different show. Yeah, we're we're not going to have those game mechanics. Um but let's say look at the tailpipe on that car. Which let's let's switch the scenario and let's say we got you a broken down near broken down Prius from like 2010 and you got it for f 500 bucks. Dude, are you looking in my garage right now? Like literally I have a 2011 Prius that doesn't run at the moment. I'm not I'm not kidding. I mean, I have another car that I do have another car that works, but I have that mental connection. I just know what kind of car you have. I was I was only off a little bit on the air. He's like, \"Yeah, this guy with the giant goatee and the little handlebar start that Yeah, this guy drives a Prius. 500 bucks, right? How much are you going to care about that car?\" And I guess, you know, you don't really care about that car. I don't. It's right there. Now, let's say you're going to we're going to give you that $300,000 Ferrari for 500 bucks. Are you going to care about it as much as if you spent 300,000 on that? Absolutely. No, especially if everybody else had to pay 300,000 for it. Yeah, I would. I'm sorry. I would. I I think if that was something that was normal and you could keep doing this and buying supercars for $500, I think you would probably take them to the grocery store, run them through the mud, you just wouldn't care as much. Well, that's true. If it was a continuous thing, if it was a onetime thing, then no. But you're right. If supercars from now till the end of time were $500, I would go somewhere. I'd park it. If I got a ticket, I'd probably be like, \"Eh, I'm just going to go buy a new one.\" I've heard I've actually heard of celebrities that did that. I think it was was it TI or something? He like ran out of gas in his Escalade and he just walked to a dealership, bought another one, and just like left it there. You know, it's like I feel like that mentality is what gamers have actually gained over time that games are a dime a dozen and you know, we just we throw them away easily. And it it also starts to do something to our brain where we're like, I played this game, but I didn't really look into it that much. It's cool, but I want to go buy another one. You just find another one sale. And you never look into the depth or focus that the devs actually put in the games. When when I was a kid and I finally got that $40 game that I've been waiting four months or asking my mom for and I played it, a lot of them were in retrospect, not great. But you know what? I loved it. I looked into everything that the devs did. Um, you know, I I looked at every single detail. I really thought about the story, every side quest, every It really took effort. when you when you put effort into something or you pay more money for it and there there is substance there, you're going it's going to be more appealing to you than than you know maybe it would be if it was cheaper. So very very insightful. I appreciate that. Man, this has been fantastic. You I'm so glad we had you on as the first ever guest because we just flow and and you're so easygoing. You're so knowledgeable and all that conversation. I know your time is precious and and I want to I want to thank you for taking time out of your extremely busy schedule to be here with us. Uh any parting words that you want to say for the masses whether they know about the game or not or or just any kind of anything you want to throw out there. Um, no. I would say this the next like three to six months is extremely important time for us. You're going to see a lot of things come together. There be a lot of value added to the game and we're we're kind of coming up to a more mainstream launch point uh at least for a alpha states. But I'm I'm just I'm super excited about all the things that start getting tied together. And I know there's there's some in the community that are like I go in there's like I don't feel like there's a lot to do right now. That's because you're just a lot of these core systems are coming together. Once those things are filled out more from a content standpoint and we make connections between those, you're going to be like, \"Oh my goodness, there's a lot to do here.\" I think in the next couple months, there's going to be a lot of things that come out that people are going to be spending uh daily time uh in the game, like logging in every day to kind of grind away and do things. So, it's that's that's all I want to say. I'm just really excited for about the next six months of that makes me very happy. That's that's my jam right there by the way is leveling up is you know some processes progression processes that you're grinding for you got to go save up a whole bunch of money and then you you're able to get to that one thing and it makes you more powerful and you can do things you know you you do things you couldn't do before. Maybe it unlocks something. Maybe maybe it makes you more powerful. But that that is so satisfying to me in games and that's what really just sucks me in that and and then amazing storytelling. Um yeah. So a lot of that's going to be easier to do that we I mean a lot of people don't realize when they play a game like 80% of the work sometimes is not in the things they're in the things that's under the hood. It's it's not that mountain that you see. It's the procedural process and pipeline that it took to develop to get you a mountain that's that's in front of your face. And the same thing goes for characters and game mechanics and all of these kinds of things. It's just we're, you know, it's it's a big game. It's we've been on it for a while, but we're we're about to see the fruits of our labor, I think, when all these things start coming together. So, exciting times. Again, I want to thank David for joining us and for everyone else. We are currently in closed access. The game is Infinity Rising, but if you're interested in checking it out, you can go to our website. It's infinitrisising.com. Fill out the short form, you'll be added to the list, and that way you'll be considered the next time we bring in a new group of players. Don't forget to help us out. feed that YouTube algo people like, subscribe and all of that. Until the next time, game on everybody.",
+  "segment_count": 406,
+  "warnings": []
+}

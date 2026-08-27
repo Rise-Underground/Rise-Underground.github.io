@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cafe Rise Transcript Search</title>
+<title>Rise Underground Search</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -168,6 +168,119 @@
     text-align:center;
   }
 
+  .filter-row{
+    display:flex;
+    justify-content:center;
+    gap:8px;
+    max-width:900px;
+    margin:12px auto 0;
+    flex-wrap:wrap;
+  }
+  .filter-btn{
+    font-family:var(--display);
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--grey);
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:3px;
+    padding:7px 14px;
+    cursor:pointer;
+    transition:color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+  }
+  .filter-btn:hover{ color:var(--gold-bright); border-color:var(--gold-bright); }
+  .filter-btn.active{
+    color:var(--black);
+    background:var(--gold);
+    border-color:var(--gold);
+  }
+
+  .range-row{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    max-width:900px;
+    margin:14px auto 0;
+  }
+  .range-label{
+    font-family:var(--mono);
+    font-size:12px;
+    color:var(--gold-bright);
+    min-width:34px;
+    text-align:center;
+  }
+  .range-caption{
+    font-family:var(--mono);
+    font-size:11px;
+    color:var(--grey);
+    white-space:nowrap;
+  }
+  .range-slider{
+    position:relative;
+    flex:1;
+    height:24px;
+  }
+  .range-track, .range-fill{
+    position:absolute;
+    top:50%;
+    left:0;
+    right:0;
+    height:3px;
+    transform:translateY(-50%);
+    border-radius:2px;
+  }
+  .range-track{ background:var(--line); }
+  .range-fill{ background:var(--gold); left:0; right:0; }
+  .range-slider input[type="range"]{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:24px;
+    margin:0;
+    background:none;
+    pointer-events:none;
+    -webkit-appearance:none;
+    appearance:none;
+  }
+  .range-slider input[type="range"]::-webkit-slider-thumb{
+    pointer-events:auto;
+    -webkit-appearance:none;
+    appearance:none;
+    width:16px;
+    height:16px;
+    border-radius:50%;
+    background:var(--gold-bright);
+    border:2px solid var(--black-deep);
+    cursor:pointer;
+    margin-top:0;
+  }
+  .range-slider input[type="range"]::-moz-range-thumb{
+    pointer-events:auto;
+    width:16px;
+    height:16px;
+    border-radius:50%;
+    background:var(--gold-bright);
+    border:2px solid var(--black-deep);
+    cursor:pointer;
+  }
+  .range-slider input[type="range"]::-webkit-slider-runnable-track{ background:none; }
+  .range-slider input[type="range"]::-moz-range-track{ background:none; }
+
+  .series-tag{
+    font-family:var(--mono);
+    font-size:9px;
+    color:var(--grey);
+    border:1px solid var(--line);
+    border-radius:2px;
+    padding:1px 6px;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    margin-right:6px;
+  }
+
   main{
     position:relative;
     z-index:2;
@@ -315,19 +428,39 @@
   <a href="index.html">Home</a>
   <a href="rise_nft_tracker.html">NFT Tracker</a>
   <a href="leaderboard.html">Leaderboards</a>
-  <a href="cafe_rise_search.html" class="current">Transcript Search</a>
+  <a href="cafe_rise_search.html" class="current">Search</a>
 </nav>
 
 <header>
-  <div class="eyebrow">Cafe Rise</div>
-  <h1>Transcript <span>Search</span></h1>
-  <p>searches every loaded episode, line by line</p>
+  <div class="eyebrow">Rise Underground</div>
+  <h1><span>Search</span></h1>
+  <p>Cafe Rise · Origin Point · AMAs — searched line by line</p>
 </header>
 
 <div id="status">loading episodes…</div>
 
 <div class="search-wrap">
   <input id="q" type="text" placeholder="search a word or phrase…" autocomplete="off">
+
+  <div class="filter-row" id="seriesFilter">
+    <button type="button" class="filter-btn active" data-series="all">All</button>
+    <button type="button" class="filter-btn" data-series="cafe_rise">Cafe Rise</button>
+    <button type="button" class="filter-btn" data-series="origin_point">Origin Point</button>
+    <button type="button" class="filter-btn" data-series="ama">AMAs</button>
+  </div>
+
+  <div class="range-row" id="rangeRow" style="display:none;">
+    <span class="range-label" id="rangeMinLabel">1</span>
+    <div class="range-slider">
+      <div class="range-track"></div>
+      <div class="range-fill" id="rangeFill"></div>
+      <input type="range" id="rangeMin" min="1" max="1" value="1">
+      <input type="range" id="rangeMax" min="1" max="1" value="1">
+    </div>
+    <span class="range-label" id="rangeMaxLabel">1</span>
+    <span class="range-caption" id="rangeCaption">episode range</span>
+  </div>
+
   <div id="count"></div>
 </div>
 
@@ -351,11 +484,21 @@ async function tryLoad(path){
   }
 }
 
-function addEpisode(data, fallbackTitle){
+// Numbered series get scanned upward (Episode 1, 2, 3...) until a run of
+// misses. AMAs have no numbering, so they're read from a manifest instead.
+const SERIES_CONFIG = {
+  cafe_rise:    { label: 'Cafe Rise',    folder: 'transcripts/Cafe_Rise',   filenameFor: n => `Cafe Rise Episode ${n}.json` },
+  origin_point: { label: 'Origin Point', folder: 'transcripts/Origin Point', filenameFor: n => `Origin Point Episode ${n}.json` },
+  ama:          { label: 'AMAs',         folder: 'transcripts/AMAs' },
+};
+
+function addEpisode(data, fallbackTitle, series, number){
   const epIndex = episodes.length;
   episodes.push({
     title: data.title || fallbackTitle,
     url: data.url || '',
+    series,
+    number, // episode number for numbered series, null for AMAs
     lines: data.transcript || []
   });
   (data.transcript || []).forEach((line, lineIndex) => {
@@ -363,16 +506,16 @@ function addEpisode(data, fallbackTitle){
   });
 }
 
-async function loadEpisodes(){
-  const statusEl = document.getElementById('status');
+async function loadNumberedSeries(seriesKey){
+  const cfg = SERIES_CONFIG[seriesKey];
   let found = 0, misses = 0, i = 1;
   const MAX_MISSES = 5, MAX_TRY = 300;
 
   while (misses < MAX_MISSES && i <= MAX_TRY){
     // try the plain filename first
-    const plain = await tryLoad(`Cafe Rise/Cafe Rise Episode ${i}.json`);
+    const plain = await tryLoad(`${cfg.folder}/${cfg.filenameFor(i)}`);
     if (plain){
-      addEpisode(plain, `Episode ${i}`);
+      addEpisode(plain, `${cfg.label} ${i}`, seriesKey, i);
       found++;
       misses = 0;
       i++;
@@ -383,9 +526,10 @@ async function loadEpisodes(){
     let partFound = false;
     let part = 1;
     while (true){
-      const data = await tryLoad(`Cafe Rise/Cafe Rise Episode ${i} part ${part}.json`);
+      const partName = cfg.filenameFor(i).replace(/\.json$/, ` part ${part}.json`);
+      const data = await tryLoad(`${cfg.folder}/${partName}`);
       if (!data) break;
-      addEpisode(data, `Episode ${i} Part ${part}`);
+      addEpisode(data, `${cfg.label} ${i} Part ${part}`, seriesKey, i);
       found++;
       partFound = true;
       part++;
@@ -398,10 +542,40 @@ async function loadEpisodes(){
     }
     i++;
   }
+  return found;
+}
 
+async function loadAmas(){
+  const cfg = SERIES_CONFIG.ama;
+  const index = await tryLoad(`${cfg.folder}/index.json`);
+  if (!index || !Array.isArray(index.files)) return 0;
+
+  let found = 0;
+  for (const filename of index.files){
+    const data = await tryLoad(`${cfg.folder}/${filename}`);
+    if (data){
+      addEpisode(data, filename.replace(/\.json$/i, ''), 'ama', null);
+      found++;
+    }
+  }
+  return found;
+}
+
+async function loadEpisodes(){
+  const statusEl = document.getElementById('status');
+
+  const [cafeRiseCount, originPointCount, amaCount] = await Promise.all([
+    loadNumberedSeries('cafe_rise'),
+    loadNumberedSeries('origin_point'),
+    loadAmas(),
+  ]);
+
+  const found = cafeRiseCount + originPointCount + amaCount;
   statusEl.textContent = found > 0
-    ? `${found} episode${found === 1 ? '' : 's'} loaded — ${allLines.length} lines indexed`
-    : `no episodes found — check that this file sits next to a "Cafe Rise" folder, and that you're running a local server (not opening the file directly)`;
+    ? `${found} episode${found === 1 ? '' : 's'} loaded (${cafeRiseCount} Cafe Rise, ${originPointCount} Origin Point, ${amaCount} AMA) — ${allLines.length} lines indexed`
+    : `no episodes found — check that this file sits next to a "transcripts" folder, and that you're running a local server (not opening the file directly)`;
+
+  setupRangeSlider();
 }
 
 // Project-specific "related terms" groups, built from actual word
@@ -409,13 +583,16 @@ async function loadEpisodes(){
 // A search for any word in a group also matches other words in that
 // same group, surfaced separately as "related" results.
 const SYNONYM_GROUPS = [
-  ['cornucopias', 'cornucopia', 'cornicopia', 'cornic', 'copic', 'copius'],
-  ['copi', 'kopi'],
+  // Matched as substrings (not whole words), so multi-word mis-transcriptions
+  // work fine here. Deliberately excludes bare "copius" -- that's also a real
+  // English word ("copious sized land plots") and would false-positive.
+  ['cornucopias', 'cornucopia', 'cornuc', 'cornic', 'corn copius', 'corner copiu', 'corny copius', 'corn and copious'],
+  ['copi', 'kopi', 'copy'],
   ['staking', 'stake', 'stakers', 'node', 'nodes', 'reward', 'rewards', 'pool', 'pools'],
   ['land', 'plot', 'plots', 'dome', 'domes', 'apartment', 'apartments', 'property', 'islands', 'solace', 'realm'],
   ['nft', 'nfts', 'cnft', 'mint', 'minting', 'minted', 'rarity', 'rarities', 'holder', 'holders', 'bundle', 'bundles', 'marketplace'],
   ['cardano', 'base', 'ethereum', 'bnb', 'bridge', 'bridging', 'chainport', 'migration', 'migrate', 'swap'],
-  ['token', 'tokens', 'tokenomics', 'utility', 'supply', 'economy', 'distribution', 'allocation', 'listing', 'exchange'],
+  ['token', 'tokens', 'tokenomics', 'tokconomics', 'utility', 'supply', 'economy', 'distribution', 'allocation', 'listing', 'exchange'],
   ['racing', 'race', 'vehicle', 'vehicles', 'car', 'cars', 'track', 'tracks', 'jet', 'jetpack', 'drone'],
   ['engine', 'unreal', 'graphics', 'alpha', 'beta', 'testnet', 'mainnet', 'launch', 'launcher', 'metaverse'],
   ['community', 'discord', 'team', 'partnership', 'partners'],
@@ -475,9 +652,11 @@ function buildResultCard(m, snippetHtml, isRelated){
   const card = document.createElement('div');
   card.className = 'result' + (isRelated ? ' related' : '');
 
+  const seriesLabel = SERIES_CONFIG[ep.series] ? SERIES_CONFIG[ep.series].label : ep.series;
+
   const head = document.createElement('div');
   head.className = 'result-head';
-  head.innerHTML = `<span class="ep-title">${escapeHtml(ep.title)}</span>` +
+  head.innerHTML = `<span><span class="series-tag">${escapeHtml(seriesLabel)}</span><span class="ep-title">${escapeHtml(ep.title)}</span></span>` +
     `<span class="timestamp">${isRelated ? '<span class="related-tag">related</span> ' : ''}${fmtTime(m.start)}</span>`;
 
   const snippet = document.createElement('div');
@@ -528,7 +707,102 @@ function buildResultCard(m, snippetHtml, isRelated){
   return card;
 }
 
+// ---- Series filter + episode-range slider ----
+
+let currentSeries = 'all';
+let seriesRanges = {}; // { cafe_rise: {min,max}, origin_point: {min,max} } from loaded episodes
+let currentQuery = '';
+
+function computeSeriesRanges(){
+  ['cafe_rise', 'origin_point'].forEach(key => {
+    const nums = episodes.filter(e => e.series === key && e.number != null).map(e => e.number);
+    if (nums.length){
+      seriesRanges[key] = { min: Math.min(...nums), max: Math.max(...nums) };
+    }
+  });
+}
+
+function setupRangeSlider(){
+  computeSeriesRanges();
+
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentSeries = btn.dataset.series;
+      applySeriesToSlider();
+      runSearch(currentQuery);
+    });
+  });
+
+  const rangeMinEl = document.getElementById('rangeMin');
+  const rangeMaxEl = document.getElementById('rangeMax');
+  [rangeMinEl, rangeMaxEl].forEach(el => {
+    el.addEventListener('input', () => {
+      if (parseInt(rangeMinEl.value) > parseInt(rangeMaxEl.value)){
+        if (el === rangeMinEl) rangeMaxEl.value = rangeMinEl.value;
+        else rangeMinEl.value = rangeMaxEl.value;
+      }
+      updateRangeVisuals();
+      runSearch(currentQuery);
+    });
+  });
+
+  applySeriesToSlider();
+}
+
+function applySeriesToSlider(){
+  const rangeRow = document.getElementById('rangeRow');
+  const range = seriesRanges[currentSeries];
+
+  if (!range || range.min === range.max){
+    rangeRow.style.display = 'none';
+    return;
+  }
+
+  rangeRow.style.display = 'flex';
+  const rangeMinEl = document.getElementById('rangeMin');
+  const rangeMaxEl = document.getElementById('rangeMax');
+  rangeMinEl.min = range.min; rangeMinEl.max = range.max; rangeMinEl.value = range.min;
+  rangeMaxEl.min = range.min; rangeMaxEl.max = range.max; rangeMaxEl.value = range.max;
+  document.getElementById('rangeCaption').textContent = `${SERIES_CONFIG[currentSeries].label} episode range`;
+  updateRangeVisuals();
+}
+
+function updateRangeVisuals(){
+  const rangeMinEl = document.getElementById('rangeMin');
+  const rangeMaxEl = document.getElementById('rangeMax');
+  const min = parseInt(rangeMinEl.min), max = parseInt(rangeMinEl.max);
+  const lo = parseInt(rangeMinEl.value), hi = parseInt(rangeMaxEl.value);
+
+  document.getElementById('rangeMinLabel').textContent = lo;
+  document.getElementById('rangeMaxLabel').textContent = hi;
+
+  const span = max - min || 1;
+  const leftPct = ((lo - min) / span) * 100;
+  const rightPct = ((hi - min) / span) * 100;
+  document.getElementById('rangeFill').style.left = leftPct + '%';
+  document.getElementById('rangeFill').style.right = (100 - rightPct) + '%';
+}
+
+function lineMatchesFilter(l){
+  const ep = episodes[l.epIndex];
+  if (currentSeries === 'all') return true;
+  if (ep.series !== currentSeries) return false;
+
+  const range = seriesRanges[currentSeries];
+  if (!range || ep.number == null) return true; // AMAs (or ungauged series) always pass
+
+  const rangeRow = document.getElementById('rangeRow');
+  if (rangeRow.style.display === 'none') return true;
+
+  const lo = parseInt(document.getElementById('rangeMin').value);
+  const hi = parseInt(document.getElementById('rangeMax').value);
+  return ep.number >= lo && ep.number <= hi;
+}
+
 function runSearch(q){
+  currentQuery = q;
   const resultsEl = document.getElementById('results');
   const countEl = document.getElementById('count');
   resultsEl.innerHTML = '';
@@ -543,8 +817,10 @@ function runSearch(q){
   const qLower = trimmed.toLowerCase();
   const queryWords = qLower.split(/\s+/).filter(Boolean);
 
+  const candidateLines = allLines.filter(lineMatchesFilter);
+
   // Tier 1: exact literal phrase match, same behavior as before.
-  const exactMatches = allLines.filter(l => l.text.toLowerCase().includes(qLower));
+  const exactMatches = candidateLines.filter(l => l.text.toLowerCase().includes(qLower));
   const exactSet = new Set(exactMatches);
 
   // Tier 2: related matches -- every query word present, but each word may
@@ -552,7 +828,7 @@ function runSearch(q){
   // OR within each word's group). Only shown when it adds something the
   // exact match didn't already cover.
   const expandedPerWord = queryWords.map(expandWord);
-  const relatedMatches = allLines.filter(l => {
+  const relatedMatches = candidateLines.filter(l => {
     if (exactSet.has(l)) return false;
     const lower = l.text.toLowerCase();
     return expandedPerWord.every(options => options.some(opt => lower.includes(opt)));

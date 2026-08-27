@@ -1,0 +1,6139 @@
+{
+  "video_id": "Z4Xyy05cLFg",
+  "title": "Cafe Rise 157 | Farming Logging & Prison",
+  "upload_date": "20260821",
+  "duration_seconds": 2974,
+  "description": "In this episode, Rob Greig and Josh Jones discuss the latest updates and future plans for their game, including new PvP modes, land development, AI companions, and upcoming features like farming and logging. They also share insights into the technical challenges of building a large-scale MMO and reveal a sneak peek of the prison system.\n\nLinktree: https://linktr.ee/infinityrisinggame\n\nInfinity Rising is an open-world sandbox MMO and multiverse simulator set between Cornucopias, the nation in the sky, the fractured Earth below, and the unknown worlds beyond. Born from the aftermath of the Calamity—a quantum storm that shattered reality—players rebuild civilization under vast domes powered by advanced quantum tech. \n\nGuided by “The Messenger,” you’ll explore, gather, craft, trade, and defend in a player-driven economy across land, sky, and beyond. Quantum Rifts, mysterious anomalies tied to The Prophet and The Terra, challenge survival and progress as players rise into infinite possibilities. Whether you craft, farm, fight, or build empires, every choice shapes the future of the Cornucopias Republic—humanity’s last beacon of hope. \n\nInfinity Rising is a call to ascend without end—world, player, and technology together.\n\n00:00 Introduction and Episode Overview\n02:56 Last Team Standing Mode and Future Arenas\n06:00 Performance Challenges in Large-Scale World Loading\n08:49 Parallel Development of Rifts and Core Systems\n11:59 Future of Land Fences and Customization\n12:55 Challenges of Loading Large MMO Worlds\n13:53 Upcoming Features: Logging, Farming, and More\n14:50 The Significance of Data Loading and Optimization\n15:52 The Vision for a Persistent MMO World\n17:05 Introduction of Land and Farming in Development\n18:01 Progress on Logging and Player Owned Assets\n19:04 Land Visualization and Future Claim Events\n20:02 Upcoming Prison System and Bounty Mechanics\n20:59 AI Companions and Emotional Matrices\n22:13 Marketing Strategies and Community Content\n23:04 Technical Challenges of Large-Scale Data Management\n24:12 Future of the Game and Upcoming Releases\n24:57 Sneak Peek of the Prison System\n26:03 Q&A and Community Engagement\n27:01 Closing Remarks and Next Steps",
+  "view_count": 1810,
+  "url": "https://www.youtube.com/watch?v=Z4Xyy05cLFg",
+  "slug": "cafe-rise-157-farming-logging-prison",
+  "transcript": [
+    {
+      "start": 0.65,
+      "duration": 2.02,
+      "text": "[music]"
+    },
+    {
+      "start": 7.2,
+      "duration": 2.02,
+      "text": "[music]"
+    },
+    {
+      "start": 10.56,
+      "duration": 3.85,
+      "text": "Heat"
+    },
+    {
+      "start": 12.8,
+      "duration": 4.84,
+      "text": "up"
+    },
+    {
+      "start": 14.41,
+      "duration": 3.23,
+      "text": "[music] here."
+    },
+    {
+      "start": 22.27,
+      "duration": 2.02,
+      "text": "[music]"
+    },
+    {
+      "start": 28.16,
+      "duration": 2.02,
+      "text": ">> [music]"
+    },
+    {
+      "start": 33.41,
+      "duration": 2.02,
+      "text": "[music]"
+    },
+    {
+      "start": 37.28,
+      "duration": 4.0,
+      "text": ">> Hey everyone, welcome to Cafe Rise. This"
+    },
+    {
+      "start": 39.6,
+      "duration": 4.32,
+      "text": "is episode"
+    },
+    {
+      "start": 41.28,
+      "duration": 4.96,
+      "text": "157 and you've got Rob Greg and Josh"
+    },
+    {
+      "start": 43.92,
+      "duration": 4.16,
+      "text": "Jones here to tell you a little bit more"
+    },
+    {
+      "start": 46.24,
+      "duration": 4.0,
+      "text": "about what we're building. Actually, a"
+    },
+    {
+      "start": 48.08,
+      "duration": 4.96,
+      "text": "lot that's coming up uh that we're going"
+    },
+    {
+      "start": 50.24,
+      "duration": 4.32,
+      "text": "to discuss in this episode today. We"
+    },
+    {
+      "start": 53.04,
+      "duration": 4.4,
+      "text": "were going to talk about the recent"
+    },
+    {
+      "start": 54.56,
+      "duration": 4.4,
+      "text": "release that makes quite a few releases"
+    },
+    {
+      "start": 57.44,
+      "duration": 3.6,
+      "text": "so far this year. We've had a regular"
+    },
+    {
+      "start": 58.96,
+      "duration": 3.84,
+      "text": "cadence where we're getting a lot of new"
+    },
+    {
+      "start": 61.04,
+      "duration": 3.68,
+      "text": "value out to the gamers. Hopefully, you"
+    },
+    {
+      "start": 62.8,
+      "duration": 4.08,
+      "text": "guys are noticing the increase in pace"
+    },
+    {
+      "start": 64.72,
+      "duration": 4.16,
+      "text": "of gameplay features. So, we'll talk"
+    },
+    {
+      "start": 66.88,
+      "duration": 4.16,
+      "text": "about that. We're going to talk a little"
+    },
+    {
+      "start": 68.88,
+      "duration": 4.72,
+      "text": "bit about"
+    },
+    {
+      "start": 71.04,
+      "duration": 4.64,
+      "text": "a few new features that have been in the"
+    },
+    {
+      "start": 73.6,
+      "duration": 5.04,
+      "text": "works that I'll I'll have you wait on"
+    },
+    {
+      "start": 75.68,
+      "duration": 6.56,
+      "text": "those uh that that are coming. Um, we're"
+    },
+    {
+      "start": 78.64,
+      "duration": 6.64,
+      "text": "talking on AI companions and then, uh,"
+    },
+    {
+      "start": 82.24,
+      "duration": 4.64,
+      "text": "some announcements on marketing,"
+    },
+    {
+      "start": 85.28,
+      "duration": 4.0,
+      "text": "of course, always the leak and some"
+    },
+    {
+      "start": 86.88,
+      "duration": 3.84,
+      "text": "questions at the end. So, let's just"
+    },
+    {
+      "start": 89.28,
+      "duration": 2.48,
+      "text": "kick it off. Rob, what are you drinking"
+    },
+    {
+      "start": 90.72,
+      "duration": 7.12,
+      "text": "today?"
+    },
+    {
+      "start": 91.76,
+      "duration": 8.8,
+      "text": ">> Um, Elon Musk's favorite drink. I think"
+    },
+    {
+      "start": 97.84,
+      "duration": 4.88,
+      "text": ">> Diet Coke. Really? Uh, I didn't know"
+    },
+    {
+      "start": 100.56,
+      "duration": 4.24,
+      "text": "that, but I"
+    },
+    {
+      "start": 102.72,
+      "duration": 4.0,
+      "text": ">> Is it Diet Coke or Coke Zero? One or the"
+    },
+    {
+      "start": 104.8,
+      "duration": 4.8,
+      "text": "other. Cheers. What are you drinking?"
+    },
+    {
+      "start": 106.72,
+      "duration": 4.63,
+      "text": "I'm drinking a"
+    },
+    {
+      "start": 109.6,
+      "duration": 3.68,
+      "text": ">> nothing. You've already drunk it."
+    },
+    {
+      "start": 111.35,
+      "duration": 5.37,
+      "text": "[laughter]"
+    },
+    {
+      "start": 113.28,
+      "duration": 5.92,
+      "text": ">> In our preparation for this episode and"
+    },
+    {
+      "start": 116.72,
+      "duration": 4.4,
+      "text": "other discussions that unfortunately we"
+    },
+    {
+      "start": 119.2,
+      "duration": 5.36,
+      "text": "can't announce the things that you were"
+    },
+    {
+      "start": 121.12,
+      "duration": 5.44,
+      "text": "updating me on. Um, I finished my"
+    },
+    {
+      "start": 124.56,
+      "duration": 3.84,
+      "text": "beverage. So, I do have a backup though."
+    },
+    {
+      "start": 126.56,
+      "duration": 3.76,
+      "text": "I've got this Stanley with some water."
+    },
+    {
+      "start": 128.4,
+      "duration": 5.36,
+      "text": "But, I'm going to drink all the way"
+    },
+    {
+      "start": 130.32,
+      "duration": 5.84,
+      "text": "through that. I held out though."
+    },
+    {
+      "start": 133.76,
+      "duration": 4.96,
+      "text": ">> You held out and I just kept sipping."
+    },
+    {
+      "start": 136.16,
+      "duration": 5.52,
+      "text": "Okay, well, let's just go and kick it"
+    },
+    {
+      "start": 138.72,
+      "duration": 5.04,
+      "text": "off. The recent Three Bridges release is"
+    },
+    {
+      "start": 141.68,
+      "duration": 3.52,
+      "text": "live and out, and I think there's a lot"
+    },
+    {
+      "start": 143.76,
+      "duration": 4.0,
+      "text": "of fun stuff we could talk about in it,"
+    },
+    {
+      "start": 145.2,
+      "duration": 5.6,
+      "text": "the new Three Bridges Arena. Um, you"
+    },
+    {
+      "start": 147.76,
+      "duration": 7.2,
+      "text": "want to go over any of that?"
+    },
+    {
+      "start": 150.8,
+      "duration": 6.64,
+      "text": ">> Yeah. So, it's an alternative um PvP"
+    },
+    {
+      "start": 154.96,
+      "duration": 5.68,
+      "text": "arena. So, so we have two of them now."
+    },
+    {
+      "start": 157.44,
+      "duration": 5.68,
+      "text": "We have the the original one um and and"
+    },
+    {
+      "start": 160.64,
+      "duration": 5.28,
+      "text": "we have we have this this is more like"
+    },
+    {
+      "start": 163.12,
+      "duration": 5.36,
+      "text": "um well, it's it's three bridges. So, so"
+    },
+    {
+      "start": 165.92,
+      "duration": 4.32,
+      "text": "same red versus blue, one one versus the"
+    },
+    {
+      "start": 168.48,
+      "duration": 3.44,
+      "text": "other, but there was also a lot of good"
+    },
+    {
+      "start": 170.24,
+      "duration": 3.76,
+      "text": "quality of life stuff in there. So, as"
+    },
+    {
+      "start": 171.92,
+      "duration": 5.36,
+      "text": "as you start, you start on a podium, so"
+    },
+    {
+      "start": 174.0,
+      "duration": 5.6,
+      "text": "you get to see your your teammates. Um,"
+    },
+    {
+      "start": 177.28,
+      "duration": 4.72,
+      "text": "then there's a there's a lot more"
+    },
+    {
+      "start": 179.6,
+      "duration": 4.24,
+      "text": "in-game stats that pop up and and at the"
+    },
+    {
+      "start": 182.0,
+      "duration": 4.64,
+      "text": "end, so you can see who won and who who"
+    },
+    {
+      "start": 183.84,
+      "duration": 4.72,
+      "text": "killed each other the most. And then"
+    },
+    {
+      "start": 186.64,
+      "duration": 4.0,
+      "text": "there's also kill streaks in there, you"
+    },
+    {
+      "start": 188.56,
+      "duration": 4.88,
+      "text": "know. So, so we're we're putting the"
+    },
+    {
+      "start": 190.64,
+      "duration": 5.28,
+      "text": "finishing touch really that on on on"
+    },
+    {
+      "start": 193.44,
+      "duration": 4.88,
+      "text": "kind of like the the PVPs. So, so I mean"
+    },
+    {
+      "start": 195.92,
+      "duration": 4.72,
+      "text": "that that that's had quite a bit bit of"
+    },
+    {
+      "start": 198.32,
+      "duration": 4.96,
+      "text": "work on it. Um I'm quite happy the the"
+    },
+    {
+      "start": 200.64,
+      "duration": 4.64,
+      "text": "way the the PVPs turned out."
+    },
+    {
+      "start": 203.28,
+      "duration": 6.08,
+      "text": ">> Very nice. Yeah, I'm excited about it"
+    },
+    {
+      "start": 205.28,
+      "duration": 5.28,
+      "text": "too. Uh the last team standing mode, uh"
+    },
+    {
+      "start": 209.36,
+      "duration": 3.6,
+      "text": "pretty huge."
+    },
+    {
+      "start": 210.56,
+      "duration": 5.68,
+      "text": ">> Yeah. Another mode in there that that's"
+    },
+    {
+      "start": 212.96,
+      "duration": 5.6,
+      "text": "um as you kill somebody, they they just"
+    },
+    {
+      "start": 216.24,
+      "duration": 5.44,
+      "text": "get ejected from the game. So, so yeah,"
+    },
+    {
+      "start": 218.56,
+      "duration": 4.96,
+      "text": "last man standing. So, we it we we"
+    },
+    {
+      "start": 221.68,
+      "duration": 4.56,
+      "text": "didn't really have enough time to build"
+    },
+    {
+      "start": 223.52,
+      "duration": 5.04,
+      "text": "it how we wanted to. We kind of got a"
+    },
+    {
+      "start": 226.24,
+      "duration": 5.2,
+      "text": "shared lobby going in there, but we we"
+    },
+    {
+      "start": 228.56,
+      "duration": 4.8,
+      "text": "we want to spend enough time on it, but"
+    },
+    {
+      "start": 231.44,
+      "duration": 4.32,
+      "text": "we don't want to take focus away from"
+    },
+    {
+      "start": 233.36,
+      "duration": 4.8,
+      "text": "from the bigger goals. So, that's why"
+    },
+    {
+      "start": 235.76,
+      "duration": 4.32,
+      "text": "we've we've kind of, you know, we've got"
+    },
+    {
+      "start": 238.16,
+      "duration": 5.2,
+      "text": "these two arenas now. We may have a"
+    },
+    {
+      "start": 240.08,
+      "duration": 6.48,
+      "text": "third arena in in the future, but but"
+    },
+    {
+      "start": 243.36,
+      "duration": 5.2,
+      "text": "for now that that whole underground area"
+    },
+    {
+      "start": 246.56,
+      "duration": 3.2,
+      "text": "I I think is looking looking pretty"
+    },
+    {
+      "start": 248.56,
+      "duration": 3.2,
+      "text": "pretty cool."
+    },
+    {
+      "start": 249.76,
+      "duration": 4.16,
+      "text": ">> And you hinted on on something there"
+    },
+    {
+      "start": 251.76,
+      "duration": 4.64,
+      "text": "that going to lead us to one of our next"
+    },
+    {
+      "start": 253.92,
+      "duration": 4.56,
+      "text": "topics, which is what's being done in"
+    },
+    {
+      "start": 256.4,
+      "duration": 4.08,
+      "text": "parallel while we provide this current"
+    },
+    {
+      "start": 258.48,
+      "duration": 3.92,
+      "text": "value. And and I think it's important"
+    },
+    {
+      "start": 260.48,
+      "duration": 4.88,
+      "text": "for everybody to know, but we'll get"
+    },
+    {
+      "start": 262.4,
+      "duration": 4.56,
+      "text": "into that here in a little bit. Uh more"
+    },
+    {
+      "start": 265.36,
+      "duration": 4.4,
+      "text": "that's been done. And you just mentioned"
+    },
+    {
+      "start": 266.96,
+      "duration": 6.32,
+      "text": "the last team standing, team deathmatch."
+    },
+    {
+      "start": 269.76,
+      "duration": 5.44,
+      "text": "Um, we've got uh kill like some polish"
+    },
+    {
+      "start": 273.28,
+      "duration": 4.08,
+      "text": "type things with the cinematics at the"
+    },
+    {
+      "start": 275.2,
+      "duration": 4.56,
+      "text": "podium at the end of the game. Uh,"
+    },
+    {
+      "start": 277.36,
+      "duration": 4.64,
+      "text": "killstreak notifications added. That's"
+    },
+    {
+      "start": 279.76,
+      "duration": 4.96,
+      "text": "fun stuff. So polish that really makes"
+    },
+    {
+      "start": 282.0,
+      "duration": 6.8,
+      "text": "it feel more complete. Uh, is is what's"
+    },
+    {
+      "start": 284.72,
+      "duration": 6.0,
+      "text": "coming. Also, the new um bundles uh from"
+    },
+    {
+      "start": 288.8,
+      "duration": 4.4,
+      "text": "the Revolt Underground bundle and the"
+    },
+    {
+      "start": 290.72,
+      "duration": 4.32,
+      "text": "Revolt Renegade bundle, those are now in"
+    },
+    {
+      "start": 293.2,
+      "duration": 5.6,
+      "text": "game. So those are usable. So, for the"
+    },
+    {
+      "start": 295.04,
+      "duration": 6.08,
+      "text": "all of you that wanted a um sniper rifle"
+    },
+    {
+      "start": 298.8,
+      "duration": 5.2,
+      "text": "with a scope or the flamethrower or"
+    },
+    {
+      "start": 301.12,
+      "duration": 4.24,
+      "text": "those really cool outfits, uh if you"
+    },
+    {
+      "start": 304.0,
+      "duration": 3.44,
+      "text": "haven't checked them out, those are"
+    },
+    {
+      "start": 305.36,
+      "duration": 4.16,
+      "text": "available in store now, but they're also"
+    },
+    {
+      "start": 307.44,
+      "duration": 3.44,
+      "text": "usable in the game. And so, you might"
+    },
+    {
+      "start": 309.52,
+      "duration": 3.2,
+      "text": "have been seeing some people using"
+    },
+    {
+      "start": 310.88,
+      "duration": 2.56,
+      "text": "those. And the flamethrower, I think, is"
+    },
+    {
+      "start": 312.72,
+      "duration": 3.36,
+      "text": "pretty awesome."
+    },
+    {
+      "start": 313.44,
+      "duration": 3.04,
+      "text": ">> A flamethrower is something else."
+    },
+    {
+      "start": 316.08,
+      "duration": 2.4,
+      "text": ">> Yeah."
+    },
+    {
+      "start": 316.48,
+      "duration": 3.84,
+      "text": ">> I I mean, I've not been using it for"
+    },
+    {
+      "start": 318.48,
+      "duration": 4.32,
+      "text": "PvP. I've been using it for other stuff."
+    },
+    {
+      "start": 320.32,
+      "duration": 4.4,
+      "text": "And yeah, it is something else."
+    },
+    {
+      "start": 322.8,
+      "duration": 4.16,
+      "text": ">> Yeah. And what Rob means is not other"
+    },
+    {
+      "start": 324.72,
+      "duration": 4.0,
+      "text": "stuff in-game, but he means other stuff"
+    },
+    {
+      "start": 326.96,
+      "duration": 4.56,
+      "text": "in-game development. So, there's some"
+    },
+    {
+      "start": 328.72,
+      "duration": 4.88,
+      "text": "fun stuff coming,"
+    },
+    {
+      "start": 331.52,
+      "duration": 3.68,
+      "text": "which Rob and I discussed quite a bit"
+    },
+    {
+      "start": 333.6,
+      "duration": 4.16,
+      "text": "before this episode, but unfortunately,"
+    },
+    {
+      "start": 335.2,
+      "duration": 4.72,
+      "text": "we can't announce it yet until it's a"
+    },
+    {
+      "start": 337.76,
+      "duration": 4.48,
+      "text": "little bit further along. But, wow, it"
+    },
+    {
+      "start": 339.92,
+      "duration": 3.36,
+      "text": "is. Um, yeah, it's exciting,"
+    },
+    {
+      "start": 342.24,
+      "duration": 2.56,
+      "text": ">> isn't it?"
+    },
+    {
+      "start": 343.28,
+      "duration": 2.96,
+      "text": ">> Yeah, there's so much exciting stuff"
+    },
+    {
+      "start": 344.8,
+      "duration": 2.8,
+      "text": "happening. Okay, well, I think that's"
+    },
+    {
+      "start": 346.24,
+      "duration": 3.12,
+      "text": "enough on that episode, unless there's"
+    },
+    {
+      "start": 347.6,
+      "duration": 2.96,
+      "text": "anything else you Oh, the the drone"
+    },
+    {
+      "start": 349.36,
+      "duration": 3.2,
+      "text": "delivery game. Did you want to talk"
+    },
+    {
+      "start": 350.56,
+      "duration": 4.0,
+      "text": "anything on the updates to that? We've"
+    },
+    {
+      "start": 352.56,
+      "duration": 4.16,
+      "text": "we've just we've just done a few"
+    },
+    {
+      "start": 354.56,
+      "duration": 4.0,
+      "text": "updates. So, the drone delivery, the the"
+    },
+    {
+      "start": 356.72,
+      "duration": 5.44,
+      "text": "puzzles made a little bit a little bit"
+    },
+    {
+      "start": 358.56,
+      "duration": 5.36,
+      "text": "harder. Um, that was literally one"
+    },
+    {
+      "start": 362.16,
+      "duration": 3.2,
+      "text": "hour's worth of work. So, I've I've seen"
+    },
+    {
+      "start": 363.92,
+      "duration": 3.28,
+      "text": "a few comments. People are worried that"
+    },
+    {
+      "start": 365.36,
+      "duration": 3.36,
+      "text": "we've lost focus. We haven't lost focus,"
+    },
+    {
+      "start": 367.2,
+      "duration": 4.0,
+      "text": "but every now and again we're just doing"
+    },
+    {
+      "start": 368.72,
+      "duration": 6.32,
+      "text": "a little bit of polish here and there."
+    },
+    {
+      "start": 371.2,
+      "duration": 7.44,
+      "text": "you get so focused on"
+    },
+    {
+      "start": 375.04,
+      "duration": 5.68,
+      "text": "different parts of the game, you your"
+    },
+    {
+      "start": 378.64,
+      "duration": 6.24,
+      "text": "brain can get overload and you and and"
+    },
+    {
+      "start": 380.72,
+      "duration": 6.08,
+      "text": "you can you need a break and we don't do"
+    },
+    {
+      "start": 384.88,
+      "duration": 5.28,
+      "text": "breaks. [laughter]"
+    },
+    {
+      "start": 386.8,
+      "duration": 6.48,
+      "text": "Our breaks is to work on something else."
+    },
+    {
+      "start": 390.16,
+      "duration": 6.08,
+      "text": "So, so having an hour off to do the"
+    },
+    {
+      "start": 393.28,
+      "duration": 4.64,
+      "text": "delivery puzzle, the the rumble ball"
+    },
+    {
+      "start": 396.24,
+      "duration": 3.76,
+      "text": "that got a good update because that that"
+    },
+    {
+      "start": 397.92,
+      "duration": 4.72,
+      "text": "had some quality of life stuff that that"
+    },
+    {
+      "start": 400.0,
+      "duration": 5.12,
+      "text": "had quite a few bugs in it and it we've"
+    },
+    {
+      "start": 402.64,
+      "duration": 4.4,
+      "text": "now introduced passing that again was"
+    },
+    {
+      "start": 405.12,
+      "duration": 4.0,
+      "text": "was one day's worth of work. It's about"
+    },
+    {
+      "start": 407.04,
+      "duration": 4.8,
+      "text": "7 hours actually. So, so half a day's"
+    },
+    {
+      "start": 409.12,
+      "duration": 4.48,
+      "text": "worth of work. [snorts] Um, we know that"
+    },
+    {
+      "start": 411.84,
+      "duration": 3.6,
+      "text": "some people are streaming this. So,"
+    },
+    {
+      "start": 413.6,
+      "duration": 3.2,
+      "text": "where we see people taking interest in"
+    },
+    {
+      "start": 415.44,
+      "duration": 2.64,
+      "text": "these little games, you know, we'll just"
+    },
+    {
+      "start": 416.8,
+      "duration": 3.52,
+      "text": "give them a little bit of polish because"
+    },
+    {
+      "start": 418.08,
+      "duration": 4.08,
+      "text": "you never know. Any one of those could"
+    },
+    {
+      "start": 420.32,
+      "duration": 3.52,
+      "text": "go viral and you don't want it to go"
+    },
+    {
+      "start": 422.16,
+      "duration": 5.28,
+      "text": "viral because something's completely"
+    },
+    {
+      "start": 423.84,
+      "duration": 5.68,
+      "text": "broke. So, so overall that all those"
+    },
+    {
+      "start": 427.44,
+      "duration": 5.52,
+      "text": "little mini games that they're probably"
+    },
+    {
+      "start": 429.52,
+      "duration": 6.64,
+      "text": "about one one half of a working day cuz"
+    },
+    {
+      "start": 432.96,
+      "duration": 5.44,
+      "text": "we we do 12 to 14 hours. So, so those"
+    },
+    {
+      "start": 436.16,
+      "duration": 4.48,
+      "text": "those were those are actually actually"
+    },
+    {
+      "start": 438.4,
+      "duration": 4.4,
+      "text": "pretty good."
+    },
+    {
+      "start": 440.64,
+      "duration": 4.48,
+      "text": ">> Yeah, man. A lot of polish. uh you know"
+    },
+    {
+      "start": 442.8,
+      "duration": 4.8,
+      "text": "and there's also the uh you mentioned"
+    },
+    {
+      "start": 445.12,
+      "duration": 4.08,
+      "text": "rumble ball solace the shooting gallery"
+    },
+    {
+      "start": 447.6,
+      "duration": 3.04,
+      "text": "so there's overhead targets and"
+    },
+    {
+      "start": 449.2,
+      "duration": 2.24,
+      "text": "different stuff added to the shooting"
+    },
+    {
+      "start": 450.64,
+      "duration": 2.8,
+      "text": "gallery."
+    },
+    {
+      "start": 451.44,
+      "duration": 4.64,
+      "text": ">> Yeah. So so so that was an interesting"
+    },
+    {
+      "start": 453.44,
+      "duration": 4.64,
+      "text": "one cuz I've actually been receiving"
+    },
+    {
+      "start": 456.08,
+      "duration": 3.44,
+      "text": "quite a bit of feedback about the the"
+    },
+    {
+      "start": 458.08,
+      "duration": 3.68,
+      "text": "shooting galleries for those that don't"
+    },
+    {
+      "start": 459.52,
+      "duration": 4.24,
+      "text": "know they're they're in in the Solace"
+    },
+    {
+      "start": 461.76,
+      "duration": 3.36,
+      "text": "hub if you go to the weapon store into"
+    },
+    {
+      "start": 463.76,
+      "duration": 5.2,
+      "text": "the basement. There's some challenges"
+    },
+    {
+      "start": 465.12,
+      "duration": 6.8,
+      "text": "there. So I've actually been talking"
+    },
+    {
+      "start": 468.96,
+      "duration": 6.32,
+      "text": "with Ray Racer. He's gave gave me some"
+    },
+    {
+      "start": 471.92,
+      "duration": 4.96,
+      "text": "feedback. Um, and again, this was"
+    },
+    {
+      "start": 475.28,
+      "duration": 3.36,
+      "text": "something that just took an afternoon's"
+    },
+    {
+      "start": 476.88,
+      "duration": 5.68,
+      "text": "worth of work. I had a quick chat with"
+    },
+    {
+      "start": 478.64,
+      "duration": 6.96,
+      "text": "with Ry. I picked his brains. Um, I went"
+    },
+    {
+      "start": 482.56,
+      "duration": 5.36,
+      "text": "away for a few hours, came back, and the"
+    },
+    {
+      "start": 485.6,
+      "duration": 3.84,
+      "text": "result is a quite a hard shooting game."
+    },
+    {
+      "start": 487.92,
+      "duration": 3.76,
+      "text": "So, you know, if you can't do the game"
+    },
+    {
+      "start": 489.44,
+      "duration": 4.16,
+      "text": "anymore because it's not easy, you can"
+    },
+    {
+      "start": 491.68,
+      "duration": 3.6,
+      "text": "blame Ray."
+    },
+    {
+      "start": 493.6,
+      "duration": 3.36,
+      "text": "But actually, it's quite challenging."
+    },
+    {
+      "start": 495.28,
+      "duration": 4.24,
+      "text": "It's quite it's quite a challenging. I"
+    },
+    {
+      "start": 496.96,
+      "duration": 4.16,
+      "text": "think it's a great update. And you know,"
+    },
+    {
+      "start": 499.52,
+      "duration": 4.08,
+      "text": "if everything was too easy, people would"
+    },
+    {
+      "start": 501.12,
+      "duration": 4.96,
+      "text": "play it once and move on. Now it has a"
+    },
+    {
+      "start": 503.6,
+      "duration": 4.48,
+      "text": "real, you know, that delivery puzzle,"
+    },
+    {
+      "start": 506.08,
+      "duration": 4.16,
+      "text": "there's so much we want to do with that,"
+    },
+    {
+      "start": 508.08,
+      "duration": 3.76,
+      "text": "but we we don't want to we don't want to"
+    },
+    {
+      "start": 510.24,
+      "duration": 3.52,
+      "text": "spend lots and lots of time on that. So"
+    },
+    {
+      "start": 511.84,
+      "duration": 3.36,
+      "text": "So that's had a little bit of a little"
+    },
+    {
+      "start": 513.76,
+      "duration": 3.68,
+      "text": "bit of a tweak cuz it was a little bit"
+    },
+    {
+      "start": 515.2,
+      "duration": 4.64,
+      "text": "boring. Now, you know, just just these"
+    },
+    {
+      "start": 517.44,
+      "duration": 4.16,
+      "text": "tiny tiny updates can make such a big"
+    },
+    {
+      "start": 519.84,
+      "duration": 3.68,
+      "text": "difference. But um yeah, definitely a"
+    },
+    {
+      "start": 521.6,
+      "duration": 3.84,
+      "text": "shout out to Ray because because he gave"
+    },
+    {
+      "start": 523.52,
+      "duration": 4.16,
+      "text": "me some really good feedback on that."
+    },
+    {
+      "start": 525.44,
+      "duration": 3.68,
+      "text": ">> Yeah, play the new version. Go and check"
+    },
+    {
+      "start": 527.68,
+      "duration": 4.0,
+      "text": "it out."
+    },
+    {
+      "start": 529.12,
+      "duration": 4.48,
+      "text": "Tiny tiny updates"
+    },
+    {
+      "start": 531.68,
+      "duration": 3.52,
+      "text": "over time"
+    },
+    {
+      "start": 533.6,
+      "duration": 4.72,
+      "text": "compound"
+    },
+    {
+      "start": 535.2,
+      "duration": 5.6,
+      "text": "and create something real and valuable"
+    },
+    {
+      "start": 538.32,
+      "duration": 4.88,
+      "text": "for for everyone and and feedback from"
+    },
+    {
+      "start": 540.8,
+      "duration": 5.52,
+      "text": "the community over time create something"
+    },
+    {
+      "start": 543.2,
+      "duration": 5.44,
+      "text": "really valuable and refined. And so it's"
+    },
+    {
+      "start": 546.32,
+      "duration": 4.24,
+      "text": "a matter of slow progression in some"
+    },
+    {
+      "start": 548.64,
+      "duration": 3.68,
+      "text": "areas, faster pro progression in some"
+    },
+    {
+      "start": 550.56,
+      "duration": 3.6,
+      "text": "areas, and then balancing out with the"
+    },
+    {
+      "start": 552.32,
+      "duration": 4.4,
+      "text": "vision of the game, how we want to move"
+    },
+    {
+      "start": 554.16,
+      "duration": 5.04,
+      "text": "things forward that are foundational to"
+    },
+    {
+      "start": 556.72,
+      "duration": 4.08,
+      "text": "the core loops of the game, uh, which"
+    },
+    {
+      "start": 559.2,
+      "duration": 4.64,
+      "text": "have been happening. And that's a good"
+    },
+    {
+      "start": 560.8,
+      "duration": 4.64,
+      "text": "place for us to transfer into"
+    },
+    {
+      "start": 563.84,
+      "duration": 4.24,
+      "text": "some of the features that have been in"
+    },
+    {
+      "start": 565.44,
+      "duration": 6.24,
+      "text": "development, uh, in parallel while we've"
+    },
+    {
+      "start": 568.08,
+      "duration": 5.84,
+      "text": "been working on PvP and riffs. So for"
+    },
+    {
+      "start": 571.68,
+      "duration": 4.32,
+      "text": "some context,"
+    },
+    {
+      "start": 573.92,
+      "duration": 5.28,
+      "text": "the PvP stuff, we wanted to give"
+    },
+    {
+      "start": 576.0,
+      "duration": 4.72,
+      "text": "something exciting to you guys uh to to"
+    },
+    {
+      "start": 579.2,
+      "duration": 3.12,
+      "text": "play around with, have some fun,"
+    },
+    {
+      "start": 580.72,
+      "duration": 3.52,
+      "text": "community gets together and and they"
+    },
+    {
+      "start": 582.32,
+      "duration": 4.24,
+      "text": "have fun with PvP, that sort of thing."
+    },
+    {
+      "start": 584.24,
+      "duration": 3.76,
+      "text": "But that has helped us to develop the"
+    },
+    {
+      "start": 586.56,
+      "duration": 3.6,
+      "text": "systems that are needed for the"
+    },
+    {
+      "start": 588.0,
+      "duration": 4.32,
+      "text": "collaborative comat combat with the"
+    },
+    {
+      "start": 590.16,
+      "duration": 3.92,
+      "text": "rifts, which has still been in the"
+    },
+    {
+      "start": 592.32,
+      "duration": 3.92,
+      "text": "works. We're moving very quickly towards"
+    },
+    {
+      "start": 594.08,
+      "duration": 4.32,
+      "text": "riffs. Uh for those of you that don't"
+    },
+    {
+      "start": 596.24,
+      "duration": 4.4,
+      "text": "know what riffs are, there's going to be"
+    },
+    {
+      "start": 598.4,
+      "duration": 4.24,
+      "text": "openings in the earth. This is part of"
+    },
+    {
+      "start": 600.64,
+      "duration": 4.32,
+      "text": "the lore where these giant machines come"
+    },
+    {
+      "start": 602.64,
+      "duration": 4.48,
+      "text": "out and there's a collaborative battle"
+    },
+    {
+      "start": 604.96,
+      "duration": 5.04,
+      "text": "uh where the community uh gets together"
+    },
+    {
+      "start": 607.12,
+      "duration": 4.96,
+      "text": "and fights them uh you know together to"
+    },
+    {
+      "start": 610.0,
+      "duration": 5.84,
+      "text": "face these rifts and to defeat them and"
+    },
+    {
+      "start": 612.08,
+      "duration": 5.12,
+      "text": "and earn some loot etc. That is uh in"
+    },
+    {
+      "start": 615.84,
+      "duration": 3.44,
+      "text": "the works. We're moving quickly towards"
+    },
+    {
+      "start": 617.2,
+      "duration": 4.08,
+      "text": "that. However, in parallel things that"
+    },
+    {
+      "start": 619.28,
+      "duration": 4.4,
+      "text": "we've announced from the very beginning"
+    },
+    {
+      "start": 621.28,
+      "duration": 6.72,
+      "text": "as part of our vision include logging"
+    },
+    {
+      "start": 623.68,
+      "duration": 5.76,
+      "text": "and farming. So Rob um you've made a lot"
+    },
+    {
+      "start": 628.0,
+      "duration": 3.04,
+      "text": "of progress. We've made a lot of"
+    },
+    {
+      "start": 629.44,
+      "duration": 3.84,
+      "text": "progress in that area. Why don't you"
+    },
+    {
+      "start": 631.04,
+      "duration": 4.32,
+      "text": "just give us some context to some of"
+    },
+    {
+      "start": 633.28,
+      "duration": 3.92,
+      "text": "that fun stuff that really brings"
+    },
+    {
+      "start": 635.36,
+      "duration": 4.16,
+      "text": "balance to this world because it's not"
+    },
+    {
+      "start": 637.2,
+      "duration": 4.24,
+      "text": "all about combat. This is this is"
+    },
+    {
+      "start": 639.52,
+      "duration": 5.36,
+      "text": "creating a digital sense of life with"
+    },
+    {
+      "start": 641.44,
+      "duration": 4.96,
+      "text": "all sorts of adventure and fun and"
+    },
+    {
+      "start": 644.88,
+      "duration": 3.6,
+      "text": "there's a lot of progress in that area."
+    },
+    {
+      "start": 646.4,
+      "duration": 3.92,
+      "text": "So, yeah, I've teed you up. Let's go."
+    },
+    {
+      "start": 648.48,
+      "duration": 4.96,
+      "text": "Yeah, we're I mean we're we're working"
+    },
+    {
+      "start": 650.32,
+      "duration": 5.04,
+      "text": "on we're working on all kinds of things"
+    },
+    {
+      "start": 653.44,
+      "duration": 4.72,
+      "text": "in parallel and as we've always said"
+    },
+    {
+      "start": 655.36,
+      "duration": 6.16,
+      "text": "part part of how we're working is we"
+    },
+    {
+      "start": 658.16,
+      "duration": 5.36,
+      "text": "build these these these objects and they"
+    },
+    {
+      "start": 661.52,
+      "duration": 4.8,
+      "text": "then then they compound and they get"
+    },
+    {
+      "start": 663.52,
+      "duration": 5.04,
+      "text": "built on top of each other. So before we"
+    },
+    {
+      "start": 666.32,
+      "duration": 4.72,
+      "text": "could look at doing anything with with"
+    },
+    {
+      "start": 668.56,
+      "duration": 5.2,
+      "text": "with Solace,"
+    },
+    {
+      "start": 671.04,
+      "duration": 6.16,
+      "text": "we actually had to perfect those"
+    },
+    {
+      "start": 673.76,
+      "duration": 5.28,
+      "text": "building tools and and we chose to go"
+    },
+    {
+      "start": 677.2,
+      "duration": 3.6,
+      "text": "down the apartment route. So everybody's"
+    },
+    {
+      "start": 679.04,
+      "duration": 3.68,
+      "text": "been using the apartment and you've seen"
+    },
+    {
+      "start": 680.8,
+      "duration": 5.36,
+      "text": "that building tool in there. That"
+    },
+    {
+      "start": 682.72,
+      "duration": 6.08,
+      "text": "building tool has has also been built to"
+    },
+    {
+      "start": 686.16,
+      "duration": 5.44,
+      "text": "to be used in Solace as as part of"
+    },
+    {
+      "start": 688.8,
+      "duration": 4.64,
+      "text": "building the land. It'll be slight it'll"
+    },
+    {
+      "start": 691.6,
+      "duration": 4.56,
+      "text": "be changed slightly but there is a"
+    },
+    {
+      "start": 693.44,
+      "duration": 6.48,
+      "text": "stepping stone and we've learned so much"
+    },
+    {
+      "start": 696.16,
+      "duration": 6.4,
+      "text": "um about the performance of of the"
+    },
+    {
+      "start": 699.92,
+      "duration": 5.84,
+      "text": "Unreal Engine 5 which keeps changing you"
+    },
+    {
+      "start": 702.56,
+      "duration": 4.88,
+      "text": "know how we load and and how we save and"
+    },
+    {
+      "start": 705.76,
+      "duration": 4.08,
+      "text": "there has been some real challenges with"
+    },
+    {
+      "start": 707.44,
+      "duration": 5.04,
+      "text": "with the amount of objects that you save"
+    },
+    {
+      "start": 709.84,
+      "duration": 4.88,
+      "text": "with within those apartments you know"
+    },
+    {
+      "start": 712.48,
+      "duration": 5.04,
+      "text": "and that has been the stepping stone"
+    },
+    {
+      "start": 714.72,
+      "duration": 4.64,
+      "text": "that those lessons now are being brought"
+    },
+    {
+      "start": 717.52,
+      "duration": 4.0,
+      "text": "into into solace you know I've been"
+    },
+    {
+      "start": 719.36,
+      "duration": 6.16,
+      "text": "spending a lot of I'm in solid in Solace"
+    },
+    {
+      "start": 721.52,
+      "duration": 6.56,
+      "text": "3 just cuz I like Solace 3 and it's it's"
+    },
+    {
+      "start": 725.52,
+      "duration": 4.24,
+      "text": "easier to open up your last menu it your"
+    },
+    {
+      "start": 728.08,
+      "duration": 3.2,
+      "text": "last map that you if I was to load up"
+    },
+    {
+      "start": 729.76,
+      "duration": 4.0,
+      "text": "Solace one or Solace 2 it would take me"
+    },
+    {
+      "start": 731.28,
+      "duration": 5.76,
+      "text": "a few hours. It's a freaking nightmare."
+    },
+    {
+      "start": 733.76,
+      "duration": 7.04,
+      "text": "But anyway, so so what I'm getting at is"
+    },
+    {
+      "start": 737.04,
+      "duration": 7.36,
+      "text": "what we've just released now"
+    },
+    {
+      "start": 740.8,
+      "duration": 7.84,
+      "text": "is is all these fences all all these"
+    },
+    {
+      "start": 744.4,
+      "duration": 6.16,
+      "text": "fences around um all the land plots. And"
+    },
+    {
+      "start": 748.64,
+      "duration": 4.08,
+      "text": "at first glance that just looks like,"
+    },
+    {
+      "start": 750.56,
+      "duration": 4.24,
+      "text": "oh, the land plots have got a random"
+    },
+    {
+      "start": 752.72,
+      "duration": 6.32,
+      "text": "fence in there. But what you can't"
+    },
+    {
+      "start": 754.8,
+      "duration": 7.6,
+      "text": "actually see is is those land plots um"
+    },
+    {
+      "start": 759.04,
+      "duration": 5.28,
+      "text": "those load instantly. Those fences are"
+    },
+    {
+      "start": 762.4,
+      "duration": 4.08,
+      "text": "instant and and because it's a it's a"
+    },
+    {
+      "start": 764.32,
+      "duration": 3.92,
+      "text": "different challenge to apartments. When"
+    },
+    {
+      "start": 766.48,
+      "duration": 4.72,
+      "text": "you go in the apartments, apartments is"
+    },
+    {
+      "start": 768.24,
+      "duration": 4.64,
+      "text": "is like um it's it's like a sandbox. You"
+    },
+    {
+      "start": 771.2,
+      "duration": 5.04,
+      "text": "go through that door and then everything"
+    },
+    {
+      "start": 772.88,
+      "duration": 4.72,
+      "text": "just loads in in in in front of you. You"
+    },
+    {
+      "start": 776.24,
+      "duration": 2.56,
+      "text": "don't see anything else. It's it's"
+    },
+    {
+      "start": 777.6,
+      "duration": 4.08,
+      "text": "really enclosed and"
+    },
+    {
+      "start": 778.8,
+      "duration": 5.12,
+      "text": ">> which is a work in progress by the way."
+    },
+    {
+      "start": 781.68,
+      "duration": 3.84,
+      "text": ">> Oh no. Yeah. Yeah. Yes. We we we're"
+    },
+    {
+      "start": 783.92,
+      "duration": 3.2,
+      "text": "definitely looking at speeding that up."
+    },
+    {
+      "start": 785.52,
+      "duration": 3.52,
+      "text": "We know what to do. Obviously"
+    },
+    {
+      "start": 787.12,
+      "duration": 3.6,
+      "text": "optimization that comes later on. First"
+    },
+    {
+      "start": 789.04,
+      "duration": 4.0,
+      "text": "of all, you get all the the tools in"
+    },
+    {
+      "start": 790.72,
+      "duration": 4.56,
+      "text": "there. So So while that's being"
+    },
+    {
+      "start": 793.04,
+      "duration": 5.12,
+      "text": "optimized, we can still take some of the"
+    },
+    {
+      "start": 795.28,
+      "duration": 4.64,
+      "text": "lessons to to move over. So So the"
+    },
+    {
+      "start": 798.16,
+      "duration": 3.92,
+      "text": "apartments are very much isolated and"
+    },
+    {
+      "start": 799.92,
+      "duration": 4.48,
+      "text": "then you move out of there and and then"
+    },
+    {
+      "start": 802.08,
+      "duration": 3.52,
+      "text": "those actually will be unloaded after a"
+    },
+    {
+      "start": 804.4,
+      "duration": 3.44,
+      "text": "certain amount of time. and you go in"
+    },
+    {
+      "start": 805.6,
+      "duration": 5.36,
+      "text": "another apartment and that loads. Now,"
+    },
+    {
+      "start": 807.84,
+      "duration": 5.28,
+      "text": "that cannot happen within Solace. This"
+    },
+    {
+      "start": 810.96,
+      "duration": 5.2,
+      "text": "is why Solace is such a bigger challenge"
+    },
+    {
+      "start": 813.12,
+      "duration": 4.72,
+      "text": "cuz every we've got across Solis 1, 2,"
+    },
+    {
+      "start": 816.16,
+      "duration": 4.08,
+      "text": "and three, we've got 8,000 different"
+    },
+    {
+      "start": 817.84,
+      "duration": 6.56,
+      "text": "land plots. So, each of those Solace"
+    },
+    {
+      "start": 820.24,
+      "duration": 6.72,
+      "text": "worlds got just over 2,300"
+    },
+    {
+      "start": 824.4,
+      "duration": 6.08,
+      "text": "land plots. Now, if you think of those"
+    },
+    {
+      "start": 826.96,
+      "duration": 6.8,
+      "text": "land plots as apartments,"
+    },
+    {
+      "start": 830.48,
+      "duration": 5.52,
+      "text": "that means when you're flying over, we"
+    },
+    {
+      "start": 833.76,
+      "duration": 4.16,
+      "text": "can't just load one in isolation and"
+    },
+    {
+      "start": 836.0,
+      "duration": 4.16,
+      "text": "then load it in and then the other. They"
+    },
+    {
+      "start": 837.92,
+      "duration": 3.68,
+      "text": "all have to be loaded at the same time."
+    },
+    {
+      "start": 840.16,
+      "duration": 3.04,
+      "text": "And that's always been the challenge of"
+    },
+    {
+      "start": 841.6,
+      "duration": 3.52,
+      "text": "Solace. So, first of all, we needed to"
+    },
+    {
+      "start": 843.2,
+      "duration": 3.92,
+      "text": "understand the engine and then we needed"
+    },
+    {
+      "start": 845.12,
+      "duration": 3.68,
+      "text": "to build the tools on that. So what"
+    },
+    {
+      "start": 847.12,
+      "duration": 4.72,
+      "text": "you're now actually seeing when you go"
+    },
+    {
+      "start": 848.8,
+      "duration": 6.88,
+      "text": "over solace is you are seeing all those"
+    },
+    {
+      "start": 851.84,
+      "duration": 6.48,
+      "text": "land plots all 2,300 and whatever they"
+    },
+    {
+      "start": 855.68,
+      "duration": 5.04,
+      "text": "are all loaded all those fences that's"
+    },
+    {
+      "start": 858.32,
+      "duration": 5.12,
+      "text": "not just one fence it's not like static"
+    },
+    {
+      "start": 860.72,
+      "duration": 5.28,
+      "text": "static foliage like we built some of the"
+    },
+    {
+      "start": 863.44,
+      "duration": 5.84,
+      "text": "other things in in engines those are"
+    },
+    {
+      "start": 866.0,
+      "duration": 5.6,
+      "text": "individual pieces so you and you it"
+    },
+    {
+      "start": 869.28,
+      "duration": 7.28,
+      "text": "looks just like one piece but but it's"
+    },
+    {
+      "start": 871.6,
+      "duration": 7.92,
+      "text": "not the the small lamp plot is 12 m by 8"
+    },
+    {
+      "start": 876.56,
+      "duration": 5.2,
+      "text": "m. So I think that's is that 96? I think"
+    },
+    {
+      "start": 879.52,
+      "duration": 3.76,
+      "text": "it's got 96 different different plots"
+    },
+    {
+      "start": 881.76,
+      "duration": 4.56,
+      "text": "there. All the way up to some others"
+    },
+    {
+      "start": 883.28,
+      "duration": 7.6,
+      "text": "that have 800 different fence pieces. So"
+    },
+    {
+      "start": 886.32,
+      "duration": 7.52,
+      "text": "So there is tens of thousands of objects"
+    },
+    {
+      "start": 890.88,
+      "duration": 5.84,
+      "text": "loaded exactly the same time as you're"
+    },
+    {
+      "start": 893.84,
+      "duration": 5.76,
+      "text": "flying over. No loading, no nothing over"
+    },
+    {
+      "start": 896.72,
+      "duration": 5.6,
+      "text": "this huge world. So that's why the the"
+    },
+    {
+      "start": 899.6,
+      "duration": 5.12,
+      "text": "you know the this a bit of an experiment"
+    },
+    {
+      "start": 902.32,
+      "duration": 4.08,
+      "text": "to see what it was like the performance."
+    },
+    {
+      "start": 904.72,
+      "duration": 3.68,
+      "text": "So, in the future, those fences will be"
+    },
+    {
+      "start": 906.4,
+      "duration": 3.84,
+      "text": "removed and people will be able to put"
+    },
+    {
+      "start": 908.4,
+      "duration": 4.08,
+      "text": "their own fences and hire them and put"
+    },
+    {
+      "start": 910.24,
+      "duration": 5.2,
+      "text": "them and do them however they want. But"
+    },
+    {
+      "start": 912.48,
+      "duration": 7.12,
+      "text": "this was just a a stepping stone just to"
+    },
+    {
+      "start": 915.44,
+      "duration": 9.68,
+      "text": "show you that we now know how to load"
+    },
+    {
+      "start": 919.6,
+      "duration": 8.8,
+      "text": "massive amount of of data at one time w"
+    },
+    {
+      "start": 925.12,
+      "duration": 5.44,
+      "text": "with zero zero loading. So, it's it's a"
+    },
+    {
+      "start": 928.4,
+      "duration": 3.68,
+      "text": "slightly different approach because the"
+    },
+    {
+      "start": 930.56,
+      "duration": 3.04,
+      "text": "apartments"
+    },
+    {
+      "start": 932.08,
+      "duration": 3.44,
+      "text": "are different. The apartments are so"
+    },
+    {
+      "start": 933.6,
+      "duration": 3.76,
+      "text": "customizable. There's hundreds of"
+    },
+    {
+      "start": 935.52,
+      "duration": 3.2,
+      "text": "hundreds of of the thousands of"
+    },
+    {
+      "start": 937.36,
+      "duration": 3.36,
+      "text": "different combinations with all the"
+    },
+    {
+      "start": 938.72,
+      "duration": 5.6,
+      "text": "materials and stuff like that. So, so"
+    },
+    {
+      "start": 940.72,
+      "duration": 5.92,
+      "text": "we've still got the challenge of of of"
+    },
+    {
+      "start": 944.32,
+      "duration": 4.56,
+      "text": "the of the the land and fitting so much"
+    },
+    {
+      "start": 946.64,
+      "duration": 4.56,
+      "text": "in, but yeah, we're we're we're well on"
+    },
+    {
+      "start": 948.88,
+      "duration": 4.8,
+      "text": "our way. So, that is what the fences are"
+    },
+    {
+      "start": 951.2,
+      "duration": 4.08,
+      "text": "all about. And um I think I'm going to"
+    },
+    {
+      "start": 953.68,
+      "duration": 2.8,
+      "text": "do a tweet later in the week explaining"
+    },
+    {
+      "start": 955.28,
+      "duration": 5.2,
+      "text": "that a little bit clearer."
+    },
+    {
+      "start": 956.48,
+      "duration": 7.2,
+      "text": ">> Sweet. the the uh the implications"
+    },
+    {
+      "start": 960.48,
+      "duration": 7.2,
+      "text": "or or the problems and opportunities"
+    },
+    {
+      "start": 963.68,
+      "duration": 6.08,
+      "text": "around an MMO are in in innovation and"
+    },
+    {
+      "start": 967.68,
+      "duration": 3.84,
+      "text": "the challenges that have to be solved to"
+    },
+    {
+      "start": 969.76,
+      "duration": 3.52,
+      "text": "innovate in some of the ways that we are"
+    },
+    {
+      "start": 971.52,
+      "duration": 4.56,
+      "text": "are how do you do that and still be"
+    },
+    {
+      "start": 973.28,
+      "duration": 5.36,
+      "text": "performant and have it work for multiple"
+    },
+    {
+      "start": 976.08,
+      "duration": 5.2,
+      "text": "players all over the world. And so it's"
+    },
+    {
+      "start": 978.64,
+      "duration": 4.72,
+      "text": "fun. We're in a space of of solving data"
+    },
+    {
+      "start": 981.28,
+      "duration": 3.92,
+      "text": "challenges uh along with how fast"
+    },
+    {
+      "start": 983.36,
+      "duration": 3.28,
+      "text": "technology is growing and how do we make"
+    },
+    {
+      "start": 985.2,
+      "duration": 3.6,
+      "text": "this work all together."
+    },
+    {
+      "start": 986.64,
+      "duration": 5.2,
+      "text": ">> Yeah, there there are not many there are"
+    },
+    {
+      "start": 988.8,
+      "duration": 4.88,
+      "text": "definitely not many um games and and"
+    },
+    {
+      "start": 991.84,
+      "duration": 3.92,
+      "text": "most most of the games are these these"
+    },
+    {
+      "start": 993.68,
+      "duration": 4.0,
+      "text": "massive AAA studios that got you know"
+    },
+    {
+      "start": 995.76,
+      "duration": 4.48,
+      "text": "hundreds of millions of investment that"
+    },
+    {
+      "start": 997.68,
+      "duration": 4.32,
+      "text": "are that are looking at this this"
+    },
+    {
+      "start": 1000.24,
+      "duration": 3.12,
+      "text": "problem because it because it is a"
+    },
+    {
+      "start": 1002.0,
+      "duration": 3.44,
+      "text": "problem. is a challenge with with"
+    },
+    {
+      "start": 1003.36,
+      "duration": 3.68,
+      "text": "today's um technology and there's not"
+    },
+    {
+      "start": 1005.44,
+      "duration": 5.12,
+      "text": "many that are going for it at all"
+    },
+    {
+      "start": 1007.04,
+      "duration": 5.6,
+      "text": "because loading so say loading loading"
+    },
+    {
+      "start": 1010.56,
+      "duration": 3.6,
+      "text": "the world procedurally generated which"
+    },
+    {
+      "start": 1012.64,
+      "duration": 5.68,
+      "text": "ours are not everything is is all"
+    },
+    {
+      "start": 1014.16,
+      "duration": 6.4,
+      "text": "handplaced is one thing but then on top"
+    },
+    {
+      "start": 1018.32,
+      "duration": 5.2,
+      "text": "of that what we are talking about is all"
+    },
+    {
+      "start": 1020.56,
+      "duration": 6.32,
+      "text": "our players all 2,300"
+    },
+    {
+      "start": 1023.52,
+      "duration": 7.12,
+      "text": "and and and odd land plots all"
+    },
+    {
+      "start": 1026.88,
+      "duration": 6.56,
+      "text": "individual pieces all built up in not"
+    },
+    {
+      "start": 1030.64,
+      "duration": 5.2,
+      "text": "preset all loaded as soon as you go into"
+    },
+    {
+      "start": 1033.44,
+      "duration": 4.48,
+      "text": "the world and players coming in. You"
+    },
+    {
+      "start": 1035.84,
+      "duration": 3.44,
+      "text": "know that that's that is that's a"
+    },
+    {
+      "start": 1037.92,
+      "duration": 3.2,
+      "text": "massive challenge. If everything was"
+    },
+    {
+      "start": 1039.28,
+      "duration": 3.84,
+      "text": "preset and we could bake it all down and"
+    },
+    {
+      "start": 1041.12,
+      "duration": 3.76,
+      "text": "we do all the lighting and all that, you"
+    },
+    {
+      "start": 1043.12,
+      "duration": 3.6,
+      "text": "know, that's that's just a lot of data"
+    },
+    {
+      "start": 1044.88,
+      "duration": 4.4,
+      "text": "within itself. But what we're talking"
+    },
+    {
+      "start": 1046.72,
+      "duration": 6.96,
+      "text": "here, we we're talking millions of"
+    },
+    {
+      "start": 1049.28,
+      "duration": 6.72,
+      "text": "individual pieces that that you know,"
+    },
+    {
+      "start": 1053.68,
+      "duration": 4.4,
+      "text": "we're going to deliver pretty soon. It's"
+    },
+    {
+      "start": 1056.0,
+      "duration": 3.76,
+      "text": "re it is really exciting. We we we've"
+    },
+    {
+      "start": 1058.08,
+      "duration": 3.92,
+      "text": "got a massive breakthrough."
+    },
+    {
+      "start": 1059.76,
+      "duration": 4.0,
+      "text": ">> Yeah, it's huge. It's huge. Did you want"
+    },
+    {
+      "start": 1062.0,
+      "duration": 2.88,
+      "text": "to go into logging and farming a little"
+    },
+    {
+      "start": 1063.76,
+      "duration": 3.76,
+      "text": "bit more?"
+    },
+    {
+      "start": 1064.88,
+      "duration": 4.32,
+      "text": ">> Yeah. So, so we are working we are"
+    },
+    {
+      "start": 1067.52,
+      "duration": 3.6,
+      "text": "officially working and we've always been"
+    },
+    {
+      "start": 1069.2,
+      "duration": 5.12,
+      "text": "working on this, but we we'll make an"
+    },
+    {
+      "start": 1071.12,
+      "duration": 5.68,
+      "text": "announcement as as as as if it was brand"
+    },
+    {
+      "start": 1074.32,
+      "duration": 5.68,
+      "text": "new, but it hasn't. It's been years in"
+    },
+    {
+      "start": 1076.8,
+      "duration": 7.12,
+      "text": "in development. Um, we're looking now at"
+    },
+    {
+      "start": 1080.0,
+      "duration": 6.8,
+      "text": "implementing the the land. So, so we"
+    },
+    {
+      "start": 1083.92,
+      "duration": 5.04,
+      "text": "have we we understand the engine now."
+    },
+    {
+      "start": 1086.8,
+      "duration": 3.76,
+      "text": "We're working on farming. We have we"
+    },
+    {
+      "start": 1088.96,
+      "duration": 4.0,
+      "text": "have a working farming actually. We have"
+    },
+    {
+      "start": 1090.56,
+      "duration": 5.6,
+      "text": "the whole cycle going from from planting"
+    },
+    {
+      "start": 1092.96,
+      "duration": 6.4,
+      "text": "the seed, growing it, nurturing it, um"
+    },
+    {
+      "start": 1096.16,
+      "duration": 7.12,
+      "text": "nutrients, watering, and harvesting. We"
+    },
+    {
+      "start": 1099.36,
+      "duration": 5.04,
+      "text": "we're working on that. Um"
+    },
+    {
+      "start": 1103.28,
+      "duration": 3.36,
+      "text": "it's not going to come out in the next"
+    },
+    {
+      "start": 1104.4,
+      "duration": 4.56,
+      "text": "build."
+    },
+    {
+      "start": 1106.64,
+      "duration": 4.4,
+      "text": "It's still there is still tons and tons"
+    },
+    {
+      "start": 1108.96,
+      "duration": 4.48,
+      "text": "to do. We've got to we've got to save"
+    },
+    {
+      "start": 1111.04,
+      "duration": 4.64,
+      "text": "all this data and and then and then put"
+    },
+    {
+      "start": 1113.44,
+      "duration": 4.16,
+      "text": "it all together. But yeah, you're going"
+    },
+    {
+      "start": 1115.68,
+      "duration": 4.24,
+      "text": "to see bits by bits. We're going to have"
+    },
+    {
+      "start": 1117.6,
+      "duration": 4.48,
+      "text": "the building system in there. So, the"
+    },
+    {
+      "start": 1119.92,
+      "duration": 3.6,
+      "text": "building system to build up your lamp"
+    },
+    {
+      "start": 1122.08,
+      "duration": 3.76,
+      "text": "plot. Then we're going to have the"
+    },
+    {
+      "start": 1123.52,
+      "duration": 4.08,
+      "text": "farming system in there to actually go"
+    },
+    {
+      "start": 1125.84,
+      "duration": 3.36,
+      "text": "in and interact with your lamp plot,"
+    },
+    {
+      "start": 1127.6,
+      "duration": 4.4,
+      "text": "which is obviously part of of the"
+    },
+    {
+      "start": 1129.2,
+      "duration": 5.52,
+      "text": "economy as well. So, that that's that's"
+    },
+    {
+      "start": 1132.0,
+      "duration": 4.24,
+      "text": "probably the biggest thing that we're"
+    },
+    {
+      "start": 1134.72,
+      "duration": 4.64,
+      "text": "working on because that's lots of"
+    },
+    {
+      "start": 1136.24,
+      "duration": 6.32,
+      "text": "systems integrated together and you'll"
+    },
+    {
+      "start": 1139.36,
+      "duration": 5.28,
+      "text": "be able to fly over and see all these"
+    },
+    {
+      "start": 1142.56,
+      "duration": 3.92,
+      "text": "land plots together. I I've I've seen"
+    },
+    {
+      "start": 1144.64,
+      "duration": 5.12,
+      "text": "them because obviously I've put all this"
+    },
+    {
+      "start": 1146.48,
+      "duration": 5.04,
+      "text": "demo data in there to to and it Yeah, it"
+    },
+    {
+      "start": 1149.76,
+      "duration": 3.12,
+      "text": "look it looks amazing. Even just doing"
+    },
+    {
+      "start": 1151.52,
+      "duration": 2.88,
+      "text": "like error trails, you know, error"
+    },
+    {
+      "start": 1152.88,
+      "duration": 4.24,
+      "text": "trails where you were just flying over"
+    },
+    {
+      "start": 1154.4,
+      "duration": 5.6,
+      "text": "just just ground before. Now you're"
+    },
+    {
+      "start": 1157.12,
+      "duration": 4.88,
+      "text": "actually flying over land plots. I and I"
+    },
+    {
+      "start": 1160.0,
+      "duration": 3.76,
+      "text": "had loads of houses in there and and"
+    },
+    {
+      "start": 1162.0,
+      "duration": 4.0,
+      "text": "growing farms and stuff and David said,"
+    },
+    {
+      "start": 1163.76,
+      "duration": 4.64,
+      "text": "\"No, you can't release that because"
+    },
+    {
+      "start": 1166.0,
+      "duration": 6.24,
+      "text": "that's old artwork.\" So, you know, I was"
+    },
+    {
+      "start": 1168.4,
+      "duration": 6.88,
+      "text": "going to release it a ton, but um I may"
+    },
+    {
+      "start": 1172.24,
+      "duration": 5.52,
+      "text": "I I may give a demo of of what the"
+    },
+    {
+      "start": 1175.28,
+      "duration": 4.24,
+      "text": "farming plots look like. That's in game"
+    },
+    {
+      "start": 1177.76,
+      "duration": 4.24,
+      "text": "now. It's just turned off. I can just"
+    },
+    {
+      "start": 1179.52,
+      "duration": 3.92,
+      "text": "flick it on with the mod menu. So, I I"
+    },
+    {
+      "start": 1182.0,
+      "duration": 3.6,
+      "text": "might have a look at doing that on"
+    },
+    {
+      "start": 1183.44,
+      "duration": 4.0,
+      "text": "Friday."
+    },
+    {
+      "start": 1185.6,
+      "duration": 2.8,
+      "text": ">> But but that's but that's farming. It's"
+    },
+    {
+      "start": 1187.44,
+      "duration": 2.48,
+      "text": "coming."
+    },
+    {
+      "start": 1188.4,
+      "duration": 6.56,
+      "text": ">> Okay. Very good."
+    },
+    {
+      "start": 1189.92,
+      "duration": 7.28,
+      "text": ">> It will come fast. We also have um"
+    },
+    {
+      "start": 1194.96,
+      "duration": 7.28,
+      "text": "we've got logging coming."
+    },
+    {
+      "start": 1197.2,
+      "duration": 9.12,
+      "text": "And on the surface of it, um, login is"
+    },
+    {
+      "start": 1202.24,
+      "duration": 8.72,
+      "text": "you just go in the the the login fields"
+    },
+    {
+      "start": 1206.32,
+      "duration": 6.56,
+      "text": "and you just chop a few trees down. Um,"
+    },
+    {
+      "start": 1210.96,
+      "duration": 3.52,
+      "text": "but we've got so much more than that. I"
+    },
+    {
+      "start": 1212.88,
+      "duration": 3.68,
+      "text": "don't really want to go into what we"
+    },
+    {
+      "start": 1214.48,
+      "duration": 4.72,
+      "text": "what we're about to deliver for logging,"
+    },
+    {
+      "start": 1216.56,
+      "duration": 5.52,
+      "text": "but I think logging will be in the next"
+    },
+    {
+      "start": 1219.2,
+      "duration": 4.88,
+      "text": "release. Farming won't be and building."
+    },
+    {
+      "start": 1222.08,
+      "duration": 3.28,
+      "text": "I don't I don't think it will be. I"
+    },
+    {
+      "start": 1224.08,
+      "duration": 3.2,
+      "text": "think I think it's too early. We'll"
+    },
+    {
+      "start": 1225.36,
+      "duration": 4.08,
+      "text": "probably have prototypes and we might"
+    },
+    {
+      "start": 1227.28,
+      "duration": 5.36,
+      "text": "pull them out, but I think login will"
+    },
+    {
+      "start": 1229.44,
+      "duration": 5.28,
+      "text": "definitely be in. I say definitely lo"
+    },
+    {
+      "start": 1232.64,
+      "duration": 3.76,
+      "text": "login is very likely to be in the next"
+    },
+    {
+      "start": 1234.72,
+      "duration": 6.0,
+      "text": "release."
+    },
+    {
+      "start": 1236.4,
+      "duration": 6.32,
+      "text": "Um and not just in the login fields."
+    },
+    {
+      "start": 1240.72,
+      "duration": 2.32,
+      "text": ">> All right. All right. Very good. And"
+    },
+    {
+      "start": 1242.72,
+      "duration": 4.16,
+      "text": "then"
+    },
+    {
+      "start": 1243.04,
+      "duration": 6.48,
+      "text": ">> and um alongside that"
+    },
+    {
+      "start": 1246.88,
+      "duration": 5.2,
+      "text": "we we've also got mining."
+    },
+    {
+      "start": 1249.52,
+      "duration": 5.36,
+      "text": "M mining is being worked alongside"
+    },
+    {
+      "start": 1252.08,
+      "duration": 4.64,
+      "text": "login. It uses a very very similar"
+    },
+    {
+      "start": 1254.88,
+      "duration": 3.52,
+      "text": "system. This is where all these systems"
+    },
+    {
+      "start": 1256.72,
+      "duration": 3.36,
+      "text": "integrate together. I don't know if"
+    },
+    {
+      "start": 1258.4,
+      "duration": 4.32,
+      "text": "mining is going to make it in the next"
+    },
+    {
+      "start": 1260.08,
+      "duration": 4.4,
+      "text": "build. Not that we can't do mining."
+    },
+    {
+      "start": 1262.72,
+      "duration": 3.76,
+      "text": "There's just a few more bits and pieces"
+    },
+    {
+      "start": 1264.48,
+      "duration": 6.32,
+      "text": "that that we want to we want to do with"
+    },
+    {
+      "start": 1266.48,
+      "duration": 6.8,
+      "text": "it. So, I'd say at this point there's a"
+    },
+    {
+      "start": 1270.8,
+      "duration": 4.72,
+      "text": "50/50 chance that mining may come at the"
+    },
+    {
+      "start": 1273.28,
+      "duration": 4.8,
+      "text": "same time, which um you know, if we get"
+    },
+    {
+      "start": 1275.52,
+      "duration": 5.76,
+      "text": "our skates on, that might be a might be"
+    },
+    {
+      "start": 1278.08,
+      "duration": 5.28,
+      "text": "closer to 80 or 90%."
+    },
+    {
+      "start": 1281.28,
+      "duration": 4.24,
+      "text": "And those are those are those are core"
+    },
+    {
+      "start": 1283.36,
+      "duration": 3.84,
+      "text": "th those are core things that that we're"
+    },
+    {
+      "start": 1285.52,
+      "duration": 3.36,
+      "text": "talking about here, you know."
+    },
+    {
+      "start": 1287.2,
+      "duration": 4.72,
+      "text": ">> Yeah, there's there's games that have"
+    },
+    {
+      "start": 1288.88,
+      "duration": 5.2,
+      "text": "been built just on PvP. There's games"
+    },
+    {
+      "start": 1291.92,
+      "duration": 4.56,
+      "text": "that are built just on mining. There's"
+    },
+    {
+      "start": 1294.08,
+      "duration": 4.32,
+      "text": "games I don't know about logging, but um"
+    },
+    {
+      "start": 1296.48,
+      "duration": 3.36,
+      "text": "the these are areas where you can have"
+    },
+    {
+      "start": 1298.4,
+      "duration": 3.52,
+      "text": "you can build an entire game and"
+    },
+    {
+      "start": 1299.84,
+      "duration": 3.84,
+      "text": "ecosystem just around that one singular"
+    },
+    {
+      "start": 1301.92,
+      "duration": 5.36,
+      "text": "concept. And we're now at a place where"
+    },
+    {
+      "start": 1303.68,
+      "duration": 7.68,
+      "text": "we have so much coming into fruition"
+    },
+    {
+      "start": 1307.28,
+      "duration": 6.8,
+      "text": "that wow, like this is turning into that"
+    },
+    {
+      "start": 1311.36,
+      "duration": 5.68,
+      "text": "original vision of just being able to go"
+    },
+    {
+      "start": 1314.08,
+      "duration": 5.12,
+      "text": "and participate in so many different"
+    },
+    {
+      "start": 1317.04,
+      "duration": 3.84,
+      "text": "adventures inside the game with freedom,"
+    },
+    {
+      "start": 1319.2,
+      "duration": 4.64,
+      "text": "flexibility, but like multiple game"
+    },
+    {
+      "start": 1320.88,
+      "duration": 5.6,
+      "text": "loops that are now advancing these"
+    },
+    {
+      "start": 1323.84,
+      "duration": 4.64,
+      "text": "systems being put together. Now you just"
+    },
+    {
+      "start": 1326.48,
+      "duration": 4.24,
+      "text": "iterate on top of the system based upon"
+    },
+    {
+      "start": 1328.48,
+      "duration": 3.92,
+      "text": "feedback and it starts to scale really"
+    },
+    {
+      "start": 1330.72,
+      "duration": 4.8,
+      "text": "well. Which is why you guys are starting"
+    },
+    {
+      "start": 1332.4,
+      "duration": 4.72,
+      "text": "to see us doing more and more releases"
+    },
+    {
+      "start": 1335.52,
+      "duration": 3.84,
+      "text": "with regularity is because a lot of"
+    },
+    {
+      "start": 1337.12,
+      "duration": 4.32,
+      "text": "these core core systems are being put"
+    },
+    {
+      "start": 1339.36,
+      "duration": 4.96,
+      "text": "together in a way that enables us to"
+    },
+    {
+      "start": 1341.44,
+      "duration": 4.96,
+      "text": "start to flesh out some of these visions"
+    },
+    {
+      "start": 1344.32,
+      "duration": 4.4,
+      "text": "um more with more reg."
+    },
+    {
+      "start": 1346.4,
+      "duration": 4.08,
+      "text": ">> I know it looks like it looks like we're"
+    },
+    {
+      "start": 1348.72,
+      "duration": 4.0,
+      "text": "completely distracted. Do you know we're"
+    },
+    {
+      "start": 1350.48,
+      "duration": 3.84,
+      "text": "we're doing racing, we're doing PvP,"
+    },
+    {
+      "start": 1352.72,
+      "duration": 4.64,
+      "text": "we're doing dancing, we're doing all"
+    },
+    {
+      "start": 1354.32,
+      "duration": 6.4,
+      "text": "these these kind of stuff. The by by the"
+    },
+    {
+      "start": 1357.36,
+      "duration": 5.6,
+      "text": "way that that new PVP zone that took"
+    },
+    {
+      "start": 1360.72,
+      "duration": 4.08,
+      "text": "that took me 3 hours to implement cuz it"
+    },
+    {
+      "start": 1362.96,
+      "duration": 3.76,
+      "text": "was the same the same code. They just"
+    },
+    {
+      "start": 1364.8,
+      "duration": 2.88,
+      "text": "moved it over. The the artwork took a"
+    },
+    {
+      "start": 1366.72,
+      "duration": 2.96,
+      "text": "lot longer,"
+    },
+    {
+      "start": 1367.68,
+      "duration": 4.08,
+      "text": ">> but it only took three hours."
+    },
+    {
+      "start": 1369.68,
+      "duration": 4.0,
+      "text": ">> Yeah. So the most of the time I've been"
+    },
+    {
+      "start": 1371.76,
+      "duration": 3.68,
+      "text": "working on on solace on all these"
+    },
+    {
+      "start": 1373.68,
+      "duration": 4.0,
+      "text": "others. But yeah, we we've we've not"
+    },
+    {
+      "start": 1375.44,
+      "duration": 5.2,
+      "text": "dropped the ball whatsoever. But we've"
+    },
+    {
+      "start": 1377.68,
+      "duration": 5.12,
+      "text": "had to go through through this journey"
+    },
+    {
+      "start": 1380.64,
+      "duration": 4.88,
+      "text": "of having to have all these systems. And"
+    },
+    {
+      "start": 1382.8,
+      "duration": 4.8,
+      "text": "these systems have taken a long time to"
+    },
+    {
+      "start": 1385.52,
+      "duration": 4.16,
+      "text": "to put together cuz they're really"
+    },
+    {
+      "start": 1387.6,
+      "duration": 3.92,
+      "text": "they're really really complex and they"
+    },
+    {
+      "start": 1389.68,
+      "duration": 4.08,
+      "text": "have to build on top of each other and"
+    },
+    {
+      "start": 1391.52,
+      "duration": 5.61,
+      "text": "they have to work in multiplayer which"
+    },
+    {
+      "start": 1393.76,
+      "duration": 4.96,
+      "text": "is an absolute nightmare to to work in."
+    },
+    {
+      "start": 1397.13,
+      "duration": 5.03,
+      "text": "[snorts] But it is what it is because"
+    },
+    {
+      "start": 1398.72,
+      "duration": 7.04,
+      "text": "we're creating an MMO. So, you know, the"
+    },
+    {
+      "start": 1402.16,
+      "duration": 6.0,
+      "text": "everything everything is bigger. But"
+    },
+    {
+      "start": 1405.76,
+      "duration": 4.88,
+      "text": "when but but yeah, so we've not lost"
+    },
+    {
+      "start": 1408.16,
+      "duration": 6.4,
+      "text": "focus. We needed all these other parts"
+    },
+    {
+      "start": 1410.64,
+      "duration": 6.64,
+      "text": "in place. Those parts are almost in"
+    },
+    {
+      "start": 1414.56,
+      "duration": 5.44,
+      "text": "place, but they're in place enough that"
+    },
+    {
+      "start": 1417.28,
+      "duration": 4.48,
+      "text": "we can take what we've got now and and"
+    },
+    {
+      "start": 1420.0,
+      "duration": 4.32,
+      "text": "start delivering these bigger"
+    },
+    {
+      "start": 1421.76,
+      "duration": 5.36,
+      "text": "challenges, which is solace. Solace has"
+    },
+    {
+      "start": 1424.32,
+      "duration": 6.0,
+      "text": "always been the I don't want to say end"
+    },
+    {
+      "start": 1427.12,
+      "duration": 6.32,
+      "text": "goal, but Solace has always been the the"
+    },
+    {
+      "start": 1430.32,
+      "duration": 6.64,
+      "text": "destination of this this first phase"
+    },
+    {
+      "start": 1433.44,
+      "duration": 5.68,
+      "text": "getting us to alpha is to deliver the"
+    },
+    {
+      "start": 1436.96,
+      "duration": 4.4,
+      "text": "MMO with all the other all the other"
+    },
+    {
+      "start": 1439.12,
+      "duration": 5.76,
+      "text": "bells and whistles alongside it. But"
+    },
+    {
+      "start": 1441.36,
+      "duration": 5.2,
+      "text": "yeah, Solace, the PvP, and the PVP, oh,"
+    },
+    {
+      "start": 1444.88,
+      "duration": 4.56,
+      "text": "we don't want to do PvP. I don't like"
+    },
+    {
+      "start": 1446.56,
+      "duration": 4.56,
+      "text": "PvP. You will love PvP. when you're in"
+    },
+    {
+      "start": 1449.44,
+      "duration": 3.84,
+      "text": "Solace and you're fighting the rifts,"
+    },
+    {
+      "start": 1451.12,
+      "duration": 5.36,
+      "text": "you can't fight rifts unless you know"
+    },
+    {
+      "start": 1453.28,
+      "duration": 6.0,
+      "text": "how how PvP works, you know? So, the PVP"
+    },
+    {
+      "start": 1456.48,
+      "duration": 5.28,
+      "text": "zones, they're getting ready for for for"
+    },
+    {
+      "start": 1459.28,
+      "duration": 2.96,
+      "text": "solace. And um"
+    },
+    {
+      "start": 1461.76,
+      "duration": 1.84,
+      "text": ">> Yeah."
+    },
+    {
+      "start": 1462.24,
+      "duration": 3.6,
+      "text": ">> Yeah."
+    },
+    {
+      "start": 1463.6,
+      "duration": 6.8,
+      "text": ">> Honestly, it's amazing what's going to"
+    },
+    {
+      "start": 1465.84,
+      "duration": 7.2,
+      "text": "start unfolding in in the next build"
+    },
+    {
+      "start": 1470.4,
+      "duration": 5.68,
+      "text": "builds, you know, before Christmas."
+    },
+    {
+      "start": 1473.04,
+      "duration": 5.04,
+      "text": ">> It's really coming to life. Ridiculous."
+    },
+    {
+      "start": 1476.08,
+      "duration": 3.36,
+      "text": ">> Yeah, it's insane. And and we haven't"
+    },
+    {
+      "start": 1478.08,
+      "duration": 2.56,
+      "text": "even talked about the prison. So there's"
+    },
+    {
+      "start": 1479.44,
+      "duration": 1.6,
+      "text": "a little bit we can talk about with the"
+    },
+    {
+      "start": 1480.64,
+      "duration": 1.12,
+      "text": "prison."
+    },
+    {
+      "start": 1481.04,
+      "duration": 3.6,
+      "text": ">> Mhm."
+    },
+    {
+      "start": 1481.76,
+      "duration": 3.68,
+      "text": ">> Correct. Then we can go into our leak."
+    },
+    {
+      "start": 1484.64,
+      "duration": 3.44,
+      "text": "No,"
+    },
+    {
+      "start": 1485.44,
+      "duration": 3.28,
+      "text": ">> AI companions and then marketing. But go"
+    },
+    {
+      "start": 1488.08,
+      "duration": 2.56,
+      "text": "ahead."
+    },
+    {
+      "start": 1488.72,
+      "duration": 3.6,
+      "text": ">> Yeah, we're working on we're working on"
+    },
+    {
+      "start": 1490.64,
+      "duration": 3.76,
+      "text": "prisons as well. This is something that"
+    },
+    {
+      "start": 1492.32,
+      "duration": 4.72,
+      "text": "again we've been working on in the"
+    },
+    {
+      "start": 1494.4,
+      "duration": 5.92,
+      "text": "background bit by bit."
+    },
+    {
+      "start": 1497.04,
+      "duration": 5.36,
+      "text": "First of all, we we introduced shooting"
+    },
+    {
+      "start": 1500.32,
+      "duration": 4.64,
+      "text": "in the game. You know, we'll go back a"
+    },
+    {
+      "start": 1502.4,
+      "duration": 4.96,
+      "text": "month ago. And when when you introduce"
+    },
+    {
+      "start": 1504.96,
+      "duration": 4.48,
+      "text": "shooting, what happens is people come"
+    },
+    {
+      "start": 1507.36,
+      "duration": 4.4,
+      "text": "into the game and they get shot, you"
+    },
+    {
+      "start": 1509.44,
+      "duration": 3.76,
+      "text": "know, we call it griefing. And and"
+    },
+    {
+      "start": 1511.76,
+      "duration": 2.8,
+      "text": "people's first impression when you go"
+    },
+    {
+      "start": 1513.2,
+      "duration": 3.8,
+      "text": "into a game and you get killed, they"
+    },
+    {
+      "start": 1514.56,
+      "duration": 3.36,
+      "text": "don't really like that, you know. So"
+    },
+    {
+      "start": 1517.0,
+      "duration": 3.88,
+      "text": "[snorts]"
+    },
+    {
+      "start": 1517.92,
+      "duration": 5.36,
+      "text": "we we then introduced"
+    },
+    {
+      "start": 1520.88,
+      "duration": 5.6,
+      "text": "uh maybe a few builds later, we"
+    },
+    {
+      "start": 1523.28,
+      "duration": 6.4,
+      "text": "introduced the the security system where"
+    },
+    {
+      "start": 1526.48,
+      "duration": 6.72,
+      "text": "you you you now get flagged and and and"
+    },
+    {
+      "start": 1529.68,
+      "duration": 5.04,
+      "text": "now you actually can get shot by um for"
+    },
+    {
+      "start": 1533.2,
+      "duration": 3.04,
+      "text": "for doing this griefing. And so we've"
+    },
+    {
+      "start": 1534.72,
+      "duration": 2.64,
+      "text": "got the safe zones and we've always said"
+    },
+    {
+      "start": 1536.24,
+      "duration": 3.28,
+      "text": "we're going to have safe zones in"
+    },
+    {
+      "start": 1537.36,
+      "duration": 4.08,
+      "text": "Solace. Again, it's leading into to"
+    },
+    {
+      "start": 1539.52,
+      "duration": 3.6,
+      "text": "what's going to eventually end up in in"
+    },
+    {
+      "start": 1541.44,
+      "duration": 3.36,
+      "text": "Solace. When you're building your land,"
+    },
+    {
+      "start": 1543.12,
+      "duration": 4.24,
+      "text": "you don't want to be picking up your"
+    },
+    {
+      "start": 1544.8,
+      "duration": 3.6,
+      "text": "dandelions. to somebody blast you in the"
+    },
+    {
+      "start": 1547.36,
+      "duration": 2.4,
+      "text": "back of your head, you know what I mean?"
+    },
+    {
+      "start": 1548.4,
+      "duration": 2.8,
+      "text": "It's not it's not very pleasant. It's"
+    },
+    {
+      "start": 1549.76,
+      "duration": 5.6,
+      "text": "going it's going to it's going to ruin"
+    },
+    {
+      "start": 1551.2,
+      "duration": 6.8,
+      "text": "your your flowers. But um so so so yes."
+    },
+    {
+      "start": 1555.36,
+      "duration": 4.16,
+      "text": "So so I forgot what I was talking about."
+    },
+    {
+      "start": 1558.0,
+      "duration": 2.48,
+      "text": "I think I was talking about the"
+    },
+    {
+      "start": 1559.52,
+      "duration": 3.84,
+      "text": ">> prison"
+    },
+    {
+      "start": 1560.48,
+      "duration": 5.84,
+      "text": ">> the prison. Yes. So the next natural"
+    },
+    {
+      "start": 1563.36,
+      "duration": 5.84,
+      "text": "step for that is if you get a bounty on"
+    },
+    {
+      "start": 1566.32,
+      "duration": 4.24,
+      "text": "your head, um you're going to be off to"
+    },
+    {
+      "start": 1569.2,
+      "duration": 3.12,
+      "text": "prison. So you're going to be in a"
+    },
+    {
+      "start": 1570.56,
+      "duration": 3.76,
+      "text": "completely different area. You may be on"
+    },
+    {
+      "start": 1572.32,
+      "duration": 3.68,
+      "text": "your own. You might be with other"
+    },
+    {
+      "start": 1574.32,
+      "duration": 4.24,
+      "text": "players that are and you're going to be"
+    },
+    {
+      "start": 1576.0,
+      "duration": 5.36,
+      "text": "in there for a few hours. When I say"
+    },
+    {
+      "start": 1578.56,
+      "duration": 4.88,
+      "text": "hours, they could be in-game hours. And"
+    },
+    {
+      "start": 1581.36,
+      "duration": 5.68,
+      "text": "um you can either sit there and read a"
+    },
+    {
+      "start": 1583.44,
+      "duration": 5.2,
+      "text": "book or you can do a nice little game"
+    },
+    {
+      "start": 1587.04,
+      "duration": 2.16,
+      "text": "that we have in there."
+    },
+    {
+      "start": 1588.64,
+      "duration": 3.12,
+      "text": ">> Yeah."
+    },
+    {
+      "start": 1589.2,
+      "duration": 4.56,
+      "text": ">> And and there's more there's more stuff"
+    },
+    {
+      "start": 1591.76,
+      "duration": 4.64,
+      "text": "to do in there with with the economy as"
+    },
+    {
+      "start": 1593.76,
+      "duration": 4.96,
+      "text": "well. Um that that we'll be building on"
+    },
+    {
+      "start": 1596.4,
+      "duration": 4.72,
+      "text": "in case you escape from prison. And"
+    },
+    {
+      "start": 1598.72,
+      "duration": 5.44,
+      "text": "there's stuff to do outside the prison."
+    },
+    {
+      "start": 1601.12,
+      "duration": 3.6,
+      "text": "And um yeah, it's quite exciting"
+    },
+    {
+      "start": 1604.16,
+      "duration": 4.84,
+      "text": "actually."
+    },
+    {
+      "start": 1604.72,
+      "duration": 4.28,
+      "text": ">> Now that's not next build, is it?"
+    },
+    {
+      "start": 1609.12,
+      "duration": 2.0,
+      "text": ">> Maybe."
+    },
+    {
+      "start": 1610.16,
+      "duration": 4.88,
+      "text": ">> Could be."
+    },
+    {
+      "start": 1611.12,
+      "duration": 7.44,
+      "text": ">> I don't think so. I don't think so. The"
+    },
+    {
+      "start": 1615.04,
+      "duration": 5.12,
+      "text": "the the prison game itself that has been"
+    },
+    {
+      "start": 1618.56,
+      "duration": 4.24,
+      "text": "built"
+    },
+    {
+      "start": 1620.16,
+      "duration": 4.32,
+      "text": "I think it's been built for 6 months."
+    },
+    {
+      "start": 1622.8,
+      "duration": 3.84,
+      "text": "Yeah. So it was just it was just really"
+    },
+    {
+      "start": 1624.48,
+      "duration": 4.4,
+      "text": "waiting for the for the for the artwork"
+    },
+    {
+      "start": 1626.64,
+      "duration": 4.56,
+      "text": "to come, you know. So, so that that was"
+    },
+    {
+      "start": 1628.88,
+      "duration": 5.44,
+      "text": "put together in about again another two"
+    },
+    {
+      "start": 1631.2,
+      "duration": 4.8,
+      "text": "or three hours, but um yeah, there's"
+    },
+    {
+      "start": 1634.32,
+      "duration": 4.0,
+      "text": "still lots of pieces how you get to"
+    },
+    {
+      "start": 1636.0,
+      "duration": 4.24,
+      "text": "prison and all the other bits and pieces"
+    },
+    {
+      "start": 1638.32,
+      "duration": 3.44,
+      "text": "that that have to go with it. But, um"
+    },
+    {
+      "start": 1640.24,
+      "duration": 6.32,
+      "text": "yeah, that then that will be the final"
+    },
+    {
+      "start": 1641.76,
+      "duration": 8.24,
+      "text": "piece of that that loop of of bounties"
+    },
+    {
+      "start": 1646.56,
+      "duration": 4.8,
+      "text": "and you know the start and that is a"
+    },
+    {
+      "start": 1650.0,
+      "duration": 4.55,
+      "text": ">> some people will just want to go to"
+    },
+    {
+      "start": 1651.36,
+      "duration": 6.08,
+      "text": "prison because it is such a fun area."
+    },
+    {
+      "start": 1654.55,
+      "duration": 5.13,
+      "text": "[snorts] It shouldn't be but it will."
+    },
+    {
+      "start": 1657.44,
+      "duration": 4.72,
+      "text": "So, it's going to be really cool. Uh, it"
+    },
+    {
+      "start": 1659.68,
+      "duration": 5.28,
+      "text": "there's so much so much coming, so much"
+    },
+    {
+      "start": 1662.16,
+      "duration": 5.84,
+      "text": "in development, and so much progress."
+    },
+    {
+      "start": 1664.96,
+      "duration": 5.52,
+      "text": "Um, you know, and we've got a cool leak"
+    },
+    {
+      "start": 1668.0,
+      "duration": 5.52,
+      "text": "for you, too, with with with more on top"
+    },
+    {
+      "start": 1670.48,
+      "duration": 5.68,
+      "text": "of that. But, let me transition into AI"
+    },
+    {
+      "start": 1673.52,
+      "duration": 5.44,
+      "text": "Companions. You know, we've had the the"
+    },
+    {
+      "start": 1676.16,
+      "duration": 5.52,
+      "text": "AI companion sale recently, and that's"
+    },
+    {
+      "start": 1678.96,
+      "duration": 5.12,
+      "text": "going very very well. Uh, the progress"
+    },
+    {
+      "start": 1681.68,
+      "duration": 6.24,
+      "text": "there. Uh David got a little immersed"
+    },
+    {
+      "start": 1684.08,
+      "duration": 6.32,
+      "text": "with the last release. Uh and so we"
+    },
+    {
+      "start": 1687.92,
+      "duration": 4.88,
+      "text": "didn't do the the next video which I"
+    },
+    {
+      "start": 1690.4,
+      "duration": 4.08,
+      "text": "think is Kiko. Uh I'm not certain of"
+    },
+    {
+      "start": 1692.8,
+      "duration": 4.48,
+      "text": "that, but we we're definitely continuing"
+    },
+    {
+      "start": 1694.48,
+      "duration": 5.12,
+      "text": "that here soon. Uh possibly this week"
+    },
+    {
+      "start": 1697.28,
+      "duration": 5.68,
+      "text": "with with more on the AI companions."
+    },
+    {
+      "start": 1699.6,
+      "duration": 5.52,
+      "text": "That whole process. Uh the tech is is"
+    },
+    {
+      "start": 1702.96,
+      "duration": 4.72,
+      "text": "mostly there. Uh it's just a matter of"
+    },
+    {
+      "start": 1705.12,
+      "duration": 4.24,
+      "text": "implementing each individual feature and"
+    },
+    {
+      "start": 1707.68,
+      "duration": 3.92,
+      "text": "that's that's coming as well. That's"
+    },
+    {
+      "start": 1709.36,
+      "duration": 4.4,
+      "text": "also in development. And you know that's"
+    },
+    {
+      "start": 1711.6,
+      "duration": 4.0,
+      "text": "also incredibly innovative. We talked"
+    },
+    {
+      "start": 1713.76,
+      "duration": 3.92,
+      "text": "about some of the innovation with uh the"
+    },
+    {
+      "start": 1715.6,
+      "duration": 4.32,
+      "text": "multiplayer stuff that and the loading"
+    },
+    {
+      "start": 1717.68,
+      "duration": 5.04,
+      "text": "that Rob was talking about and problems"
+    },
+    {
+      "start": 1719.92,
+      "duration": 4.32,
+      "text": "we had to solve uh to to make apartments"
+    },
+    {
+      "start": 1722.72,
+      "duration": 3.92,
+      "text": "and do some of these things at scale"
+    },
+    {
+      "start": 1724.24,
+      "duration": 4.96,
+      "text": "with MMO. Uh but there's also innovation"
+    },
+    {
+      "start": 1726.64,
+      "duration": 4.8,
+      "text": "obviously in the form of AI companions"
+    },
+    {
+      "start": 1729.2,
+      "duration": 3.52,
+      "text": "and that is enormous. So, for those of"
+    },
+    {
+      "start": 1731.44,
+      "duration": 3.92,
+      "text": "you watching that haven't heard about"
+    },
+    {
+      "start": 1732.72,
+      "duration": 5.36,
+      "text": "it, we are one of the first, if not the"
+    },
+    {
+      "start": 1735.36,
+      "duration": 6.16,
+      "text": "first, to implement in this way uh in an"
+    },
+    {
+      "start": 1738.08,
+      "duration": 5.52,
+      "text": "MMO uh AI companions that travel around"
+    },
+    {
+      "start": 1741.52,
+      "duration": 4.32,
+      "text": "with you in the form of a drone. There's"
+    },
+    {
+      "start": 1743.6,
+      "duration": 4.16,
+      "text": "a large vision for it. Look it up. Uh"
+    },
+    {
+      "start": 1745.84,
+      "duration": 3.36,
+      "text": "come join our Discord. You can find out"
+    },
+    {
+      "start": 1747.76,
+      "duration": 4.4,
+      "text": "more information in some of the recent"
+    },
+    {
+      "start": 1749.2,
+      "duration": 4.4,
+      "text": "announcements. Um but there's there's"
+    },
+    {
+      "start": 1752.16,
+      "duration": 3.84,
+      "text": "some really cool stuff. There's also a"
+    },
+    {
+      "start": 1753.6,
+      "duration": 4.4,
+      "text": "really good uh video on it if you"
+    },
+    {
+      "start": 1756.0,
+      "duration": 5.36,
+      "text": "haven't seen that as well on our"
+    },
+    {
+      "start": 1758.0,
+      "duration": 5.2,
+      "text": "channel. um that that co covers the AI"
+    },
+    {
+      "start": 1761.36,
+      "duration": 3.68,
+      "text": "companions and the vision for it and"
+    },
+    {
+      "start": 1763.2,
+      "duration": 3.92,
+      "text": "where we're going with it. It's very"
+    },
+    {
+      "start": 1765.04,
+      "duration": 4.96,
+      "text": "very exciting and it's going to bring a"
+    },
+    {
+      "start": 1767.12,
+      "duration": 5.92,
+      "text": "whole unique element to the game that uh"
+    },
+    {
+      "start": 1770.0,
+      "duration": 5.92,
+      "text": "really nobody else has done. So uh I I"
+    },
+    {
+      "start": 1773.04,
+      "duration": 5.12,
+      "text": "mean I the people have done it in a"
+    },
+    {
+      "start": 1775.92,
+      "duration": 4.8,
+      "text": "varied degrees but not to this extent"
+    },
+    {
+      "start": 1778.16,
+      "duration": 4.72,
+      "text": "and not with emotional matrix uh where"
+    },
+    {
+      "start": 1780.72,
+      "duration": 4.96,
+      "text": "the where the uh drones can actually"
+    },
+    {
+      "start": 1782.88,
+      "duration": 4.64,
+      "text": "have emotions uh based upon how you're"
+    },
+    {
+      "start": 1785.68,
+      "duration": 4.4,
+      "text": "relating and interacting with them. So"
+    },
+    {
+      "start": 1787.52,
+      "duration": 5.52,
+      "text": "that adds a cool element of"
+    },
+    {
+      "start": 1790.08,
+      "duration": 5.52,
+      "text": "relationship. So very exciting stuff. Um"
+    },
+    {
+      "start": 1793.04,
+      "duration": 4.48,
+      "text": "more on that coming soon. Uh the last"
+    },
+    {
+      "start": 1795.6,
+      "duration": 3.92,
+      "text": "segment uh that we have to discuss"
+    },
+    {
+      "start": 1797.52,
+      "duration": 4.88,
+      "text": "before we go into our league is uh"
+    },
+    {
+      "start": 1799.52,
+      "duration": 4.08,
+      "text": "marketing. So small marketing"
+    },
+    {
+      "start": 1802.4,
+      "duration": 3.52,
+      "text": "announcement, big marketing"
+    },
+    {
+      "start": 1803.6,
+      "duration": 6.0,
+      "text": "announcement. Um sad marketing"
+    },
+    {
+      "start": 1805.92,
+      "duration": 5.28,
+      "text": "announcement. Um my uh Matt has decided"
+    },
+    {
+      "start": 1809.6,
+      "duration": 3.44,
+      "text": "that"
+    },
+    {
+      "start": 1811.2,
+      "duration": 4.72,
+      "text": "he's going to move into more of his"
+    },
+    {
+      "start": 1813.04,
+      "duration": 5.68,
+      "text": "roots in in marketing uh which is more"
+    },
+    {
+      "start": 1815.92,
+      "duration": 4.72,
+      "text": "on the outdoor side of things uh in fly"
+    },
+    {
+      "start": 1818.72,
+      "duration": 3.44,
+      "text": "fishing and photography and stuff like"
+    },
+    {
+      "start": 1820.64,
+      "duration": 3.68,
+      "text": "that. He's got a lot of marketing"
+    },
+    {
+      "start": 1822.16,
+      "duration": 5.6,
+      "text": "experience, but he's decided to go back"
+    },
+    {
+      "start": 1824.32,
+      "duration": 6.48,
+      "text": "into what he uh rein was was more"
+    },
+    {
+      "start": 1827.76,
+      "duration": 5.52,
+      "text": "focused on. Um and so that's a loss for"
+    },
+    {
+      "start": 1830.8,
+      "duration": 6.0,
+      "text": "us. However, at the same time, uh,"
+    },
+    {
+      "start": 1833.28,
+      "duration": 6.48,
+      "text": "Scruffy has decided to step up, and I've"
+    },
+    {
+      "start": 1836.8,
+      "duration": 5.44,
+      "text": "worked with him over the past month"
+    },
+    {
+      "start": 1839.76,
+      "duration": 6.24,
+      "text": "along with, uh, Zeke, who's coming into"
+    },
+    {
+      "start": 1842.24,
+      "duration": 6.4,
+      "text": "play, uh, as a a marketing player, uh,"
+    },
+    {
+      "start": 1846.0,
+      "duration": 6.16,
+      "text": "at at Infinity Rising. So, um, we've"
+    },
+    {
+      "start": 1848.64,
+      "duration": 5.92,
+      "text": "lost one, we've gained, uh, two, and,"
+    },
+    {
+      "start": 1852.16,
+      "duration": 4.96,
+      "text": "um, and the way that's going to work is"
+    },
+    {
+      "start": 1854.56,
+      "duration": 4.32,
+      "text": "that, um, Scruffy and I have been"
+    },
+    {
+      "start": 1857.12,
+      "duration": 4.08,
+      "text": "working on some systems together very"
+    },
+    {
+      "start": 1858.88,
+      "duration": 6.08,
+      "text": "intentionally to be able to distribute"
+    },
+    {
+      "start": 1861.2,
+      "duration": 6.88,
+      "text": "our content at scale, uh, utilizing AI"
+    },
+    {
+      "start": 1864.96,
+      "duration": 6.48,
+      "text": "in ways that help us to do a lot more"
+    },
+    {
+      "start": 1868.08,
+      "duration": 5.04,
+      "text": "with less. Um, and we've got a entire"
+    },
+    {
+      "start": 1871.44,
+      "duration": 4.08,
+      "text": "plan lay laid out where we're going to"
+    },
+    {
+      "start": 1873.12,
+      "duration": 4.0,
+      "text": "bring in the engagebot more with with"
+    },
+    {
+      "start": 1875.52,
+      "duration": 3.44,
+      "text": "some of that content and with a lot of"
+    },
+    {
+      "start": 1877.12,
+      "duration": 4.48,
+      "text": "this game marketing stuff that's coming"
+    },
+    {
+      "start": 1878.96,
+      "duration": 4.24,
+      "text": "out. We're going to have more basically"
+    },
+    {
+      "start": 1881.6,
+      "duration": 4.0,
+      "text": "campaigns. So, we're going to set up"
+    },
+    {
+      "start": 1883.2,
+      "duration": 6.08,
+      "text": "Scruffy and I have built the ability to"
+    },
+    {
+      "start": 1885.6,
+      "duration": 6.16,
+      "text": "generate a campaign on maybe it's uh AI"
+    },
+    {
+      "start": 1889.28,
+      "duration": 4.72,
+      "text": "companions or maybe it's logging and"
+    },
+    {
+      "start": 1891.76,
+      "duration": 4.96,
+      "text": "farming or whatever it may be that's"
+    },
+    {
+      "start": 1894.0,
+      "duration": 4.72,
+      "text": "going to have enough frequency and reach"
+    },
+    {
+      "start": 1896.72,
+      "duration": 4.08,
+      "text": "with it to where we have a lot of"
+    },
+    {
+      "start": 1898.72,
+      "duration": 4.4,
+      "text": "announcements built on that and and that"
+    },
+    {
+      "start": 1900.8,
+      "duration": 4.16,
+      "text": "covers our distribution side of things."
+    },
+    {
+      "start": 1903.12,
+      "duration": 3.92,
+      "text": "Then we have the engage side of things"
+    },
+    {
+      "start": 1904.96,
+      "duration": 3.76,
+      "text": "where we're going to use the engage bot"
+    },
+    {
+      "start": 1907.04,
+      "duration": 3.6,
+      "text": "that many of you know about where you"
+    },
+    {
+      "start": 1908.72,
+      "duration": 4.16,
+      "text": "can actually earn and and help us"
+    },
+    {
+      "start": 1910.64,
+      "duration": 4.88,
+      "text": "promote and help us take this content"
+    },
+    {
+      "start": 1912.88,
+      "duration": 4.8,
+      "text": "and amplify it. Um, so that's going to"
+    },
+    {
+      "start": 1915.52,
+      "duration": 3.44,
+      "text": "be coming into play more uh more"
+    },
+    {
+      "start": 1917.68,
+      "duration": 3.52,
+      "text": "significantly. So you guys will be able"
+    },
+    {
+      "start": 1918.96,
+      "duration": 4.4,
+      "text": "to earn uh playerowned assets and things"
+    },
+    {
+      "start": 1921.2,
+      "duration": 4.24,
+      "text": "like that by helping us to push our"
+    },
+    {
+      "start": 1923.36,
+      "duration": 3.76,
+      "text": "message out there. [clears throat] Then"
+    },
+    {
+      "start": 1925.44,
+      "duration": 3.68,
+      "text": "there's the influencer side of things"
+    },
+    {
+      "start": 1927.12,
+      "duration": 4.24,
+      "text": "which I'm really going heavy at right"
+    },
+    {
+      "start": 1929.12,
+      "duration": 4.96,
+      "text": "now uh with some tech that Matt had"
+    },
+    {
+      "start": 1931.36,
+      "duration": 5.12,
+      "text": "built for us. Um, so Matt, we wish you"
+    },
+    {
+      "start": 1934.08,
+      "duration": 4.0,
+      "text": "well uh in your new direction and thank"
+    },
+    {
+      "start": 1936.48,
+      "duration": 4.32,
+      "text": "you. I'm going to be bugging you about"
+    },
+    {
+      "start": 1938.08,
+      "duration": 5.68,
+      "text": "this tech quite a bit here um because I"
+    },
+    {
+      "start": 1940.8,
+      "duration": 4.88,
+      "text": "have to use that uh significantly to uh"
+    },
+    {
+      "start": 1943.76,
+      "duration": 4.56,
+      "text": "to reach out to influencers and build"
+    },
+    {
+      "start": 1945.68,
+      "duration": 4.8,
+      "text": "that campaign at scale. Um and there's"
+    },
+    {
+      "start": 1948.32,
+      "duration": 3.76,
+      "text": "quite a bit more to the marketing plan."
+    },
+    {
+      "start": 1950.48,
+      "duration": 3.36,
+      "text": "However, these are some of the core"
+    },
+    {
+      "start": 1952.08,
+      "duration": 3.84,
+      "text": "elements that we really need to handle."
+    },
+    {
+      "start": 1953.84,
+      "duration": 5.68,
+      "text": "Uh Zeke, uh the final announcement"
+    },
+    {
+      "start": 1955.92,
+      "duration": 6.08,
+      "text": "there, Zeke is working on helping us get"
+    },
+    {
+      "start": 1959.52,
+      "duration": 4.48,
+      "text": "content from the community. Uh, so we"
+    },
+    {
+      "start": 1962.0,
+      "duration": 4.4,
+      "text": "have so much new that's happening with"
+    },
+    {
+      "start": 1964.0,
+      "duration": 4.96,
+      "text": "the game and we need uh certain quality"
+    },
+    {
+      "start": 1966.4,
+      "duration": 4.4,
+      "text": "of video and certain content to help us"
+    },
+    {
+      "start": 1968.96,
+      "duration": 3.92,
+      "text": "execute on all those campaigns that I"
+    },
+    {
+      "start": 1970.8,
+      "duration": 4.0,
+      "text": "told you guys about. So that's what"
+    },
+    {
+      "start": 1972.88,
+      "duration": 4.64,
+      "text": "Zeke's working on. That's what Scruffy"
+    },
+    {
+      "start": 1974.8,
+      "duration": 4.0,
+      "text": "and I are working on. And uh, yeah, I"
+    },
+    {
+      "start": 1977.52,
+      "duration": 4.0,
+      "text": "think it's going to be very exciting."
+    },
+    {
+      "start": 1978.8,
+      "duration": 5.6,
+      "text": "We're we're really um, heavily focused"
+    },
+    {
+      "start": 1981.52,
+      "duration": 5.04,
+      "text": "on systematizing this so that it scales"
+    },
+    {
+      "start": 1984.4,
+      "duration": 4.24,
+      "text": "well and that we can execute on it. And"
+    },
+    {
+      "start": 1986.56,
+      "duration": 4.72,
+      "text": "it's working. It's working really well"
+    },
+    {
+      "start": 1988.64,
+      "duration": 6.08,
+      "text": "so far. So, it's early stages, but we're"
+    },
+    {
+      "start": 1991.28,
+      "duration": 4.88,
+      "text": "moving forward quickly. Um, okay. That"
+    },
+    {
+      "start": 1994.72,
+      "duration": 3.68,
+      "text": "brings us, excuse [clears throat] me,"
+    },
+    {
+      "start": 1996.16,
+      "duration": 3.2,
+      "text": "that brings us to our leak. Do you want"
+    },
+    {
+      "start": 1998.4,
+      "duration": 2.4,
+      "text": "to"
+    },
+    {
+      "start": 1999.36,
+      "duration": 1.84,
+      "text": ">> bust up the video and we'll talk through"
+    },
+    {
+      "start": 2000.8,
+      "duration": 4.16,
+      "text": "it?"
+    },
+    {
+      "start": 2001.2,
+      "duration": 7.84,
+      "text": ">> So, yeah. So, so what we have here"
+    },
+    {
+      "start": 2004.96,
+      "duration": 5.52,
+      "text": "is a is a fly over of I think this is"
+    },
+    {
+      "start": 2009.04,
+      "duration": 3.28,
+      "text": "Solace 3. Yeah, I'm pretty sure it's"
+    },
+    {
+      "start": 2010.48,
+      "duration": 3.52,
+      "text": "Solace 3. [snorts]"
+    },
+    {
+      "start": 2012.32,
+      "duration": 4.8,
+      "text": "um"
+    },
+    {
+      "start": 2014.0,
+      "duration": 7.36,
+      "text": "of the of the land with the with the the"
+    },
+    {
+      "start": 2017.12,
+      "duration": 6.16,
+      "text": "new the new uh fences around them. Uh"
+    },
+    {
+      "start": 2021.36,
+      "duration": 4.24,
+      "text": "like I say, these fences these fences"
+    },
+    {
+      "start": 2023.28,
+      "duration": 6.16,
+      "text": "are temporary. You can see them in the"
+    },
+    {
+      "start": 2025.6,
+      "duration": 6.72,
+      "text": "evening. Um they look pretty cool. So,"
+    },
+    {
+      "start": 2029.44,
+      "duration": 6.0,
+      "text": "you know, the the land now with the land"
+    },
+    {
+      "start": 2032.32,
+      "duration": 6.96,
+      "text": "is now starting to to wake up. It's it's"
+    },
+    {
+      "start": 2035.44,
+      "duration": 6.16,
+      "text": "been sat there waiting for us. Um, but"
+    },
+    {
+      "start": 2039.28,
+      "duration": 4.64,
+      "text": "yeah, it's really beginning to to wake"
+    },
+    {
+      "start": 2041.6,
+      "duration": 4.56,
+      "text": "up and and we'll, you know, we'll be"
+    },
+    {
+      "start": 2043.92,
+      "duration": 4.08,
+      "text": "we'll be adding all kinds of stuff to"
+    },
+    {
+      "start": 2046.16,
+      "duration": 4.08,
+      "text": "this. I'm I'm really excited to see what"
+    },
+    {
+      "start": 2048.0,
+      "duration": 3.68,
+      "text": "the what the community does with with"
+    },
+    {
+      "start": 2050.24,
+      "duration": 4.08,
+      "text": "their land, what they're going to start"
+    },
+    {
+      "start": 2051.68,
+      "duration": 6.08,
+      "text": "building on it. Um, but we'll have"
+    },
+    {
+      "start": 2054.32,
+      "duration": 5.68,
+      "text": "another future uh claim event that that"
+    },
+    {
+      "start": 2057.76,
+      "duration": 5.2,
+      "text": "will that will happen in in the future"
+    },
+    {
+      "start": 2060.0,
+      "duration": 5.6,
+      "text": "to get some of those those u unclaimed"
+    },
+    {
+      "start": 2062.96,
+      "duration": 5.52,
+      "text": "lands in there. We have a little fly"
+    },
+    {
+      "start": 2065.6,
+      "duration": 6.96,
+      "text": "over here, but a very of of the of the"
+    },
+    {
+      "start": 2068.48,
+      "duration": 6.24,
+      "text": "land. And then we have um very"
+    },
+    {
+      "start": 2072.56,
+      "duration": 5.28,
+      "text": "interesting view."
+    },
+    {
+      "start": 2074.72,
+      "duration": 5.6,
+      "text": ">> What's this green filter here?"
+    },
+    {
+      "start": 2077.84,
+      "duration": 6.32,
+      "text": ">> Green filter. Yeah. Well, you might have"
+    },
+    {
+      "start": 2080.32,
+      "duration": 7.84,
+      "text": "noticed that the some of these shots are"
+    },
+    {
+      "start": 2084.16,
+      "duration": 7.52,
+      "text": "very um there's flyovers. There's uh"
+    },
+    {
+      "start": 2088.16,
+      "duration": 5.6,
+      "text": "kind of a a gradual rise up or a you"
+    },
+    {
+      "start": 2091.68,
+      "duration": 5.6,
+      "text": "know tilt to different kinds of shots"
+    },
+    {
+      "start": 2093.76,
+      "duration": 5.6,
+      "text": "that you're maybe not used to that's"
+    },
+    {
+      "start": 2097.28,
+      "duration": 3.44,
+      "text": "kind of hinting at something Rob that I"
+    },
+    {
+      "start": 2099.36,
+      "duration": 3.52,
+      "text": "think you might as well just go ahead"
+    },
+    {
+      "start": 2100.72,
+      "duration": 6.08,
+      "text": "and reveal."
+    },
+    {
+      "start": 2102.88,
+      "duration": 6.56,
+      "text": "Yes, we are also working on a different"
+    },
+    {
+      "start": 2106.8,
+      "duration": 4.72,
+      "text": "type of [snorts] not necessarily a"
+    },
+    {
+      "start": 2109.44,
+      "duration": 4.56,
+      "text": "companion but but something that was"
+    },
+    {
+      "start": 2111.52,
+      "duration": 4.8,
+      "text": "going to offer um some really exciting"
+    },
+    {
+      "start": 2114.0,
+      "duration": 5.44,
+      "text": "gameplay. So So we're working on drones"
+    },
+    {
+      "start": 2116.32,
+      "duration": 5.12,
+      "text": "as well. So there's no traditional"
+    },
+    {
+      "start": 2119.44,
+      "duration": 4.16,
+      "text": "drones as you would imagine maybe like"
+    },
+    {
+      "start": 2121.44,
+      "duration": 5.6,
+      "text": "you know like the DJI ones where your"
+    },
+    {
+      "start": 2123.6,
+      "duration": 6.24,
+      "text": "character character will have a backpack"
+    },
+    {
+      "start": 2127.04,
+      "duration": 4.64,
+      "text": "a drone backpack the drone will will"
+    },
+    {
+      "start": 2129.84,
+      "duration": 4.32,
+      "text": "come out and then there'll be different"
+    },
+    {
+      "start": 2131.68,
+      "duration": 8.16,
+      "text": "types of of drones. So so some of these"
+    },
+    {
+      "start": 2134.16,
+      "duration": 9.6,
+      "text": "drones um we have a recon drone so so"
+    },
+    {
+      "start": 2139.84,
+      "duration": 5.44,
+      "text": "that will be able to to go far and and"
+    },
+    {
+      "start": 2143.76,
+      "duration": 3.2,
+      "text": "search things have a completely"
+    },
+    {
+      "start": 2145.28,
+      "duration": 4.88,
+      "text": "different view of solace. Solace from"
+    },
+    {
+      "start": 2146.96,
+      "duration": 5.52,
+      "text": "above is is unbelievable. So So the So"
+    },
+    {
+      "start": 2150.16,
+      "duration": 4.24,
+      "text": "these are great for recon. So maybe you"
+    },
+    {
+      "start": 2152.48,
+      "duration": 4.16,
+      "text": "want to hunt out, maybe you're looking"
+    },
+    {
+      "start": 2154.4,
+      "duration": 4.72,
+      "text": "for rifts, get a really high view,"
+    },
+    {
+      "start": 2156.64,
+      "duration": 5.44,
+      "text": "you'll be able to see the smoke."
+    },
+    {
+      "start": 2159.12,
+      "duration": 5.76,
+      "text": "Um maybe you're looking, sorry, for"
+    },
+    {
+      "start": 2162.08,
+      "duration": 5.04,
+      "text": "relics, maybe for rifts. You you then"
+    },
+    {
+      "start": 2164.88,
+      "duration": 4.08,
+      "text": "see the the rifts and you could fly out."
+    },
+    {
+      "start": 2167.12,
+      "duration": 4.48,
+      "text": "Maybe you just want to go and have a"
+    },
+    {
+      "start": 2168.96,
+      "duration": 5.28,
+      "text": "nosy other people's land or maybe you're"
+    },
+    {
+      "start": 2171.6,
+      "duration": 4.96,
+      "text": "attacking somebody in in maybe your your"
+    },
+    {
+      "start": 2174.24,
+      "duration": 5.12,
+      "text": "group and your clan. So you you can send"
+    },
+    {
+      "start": 2176.56,
+      "duration": 4.16,
+      "text": "those out. So So that's one use of them."
+    },
+    {
+      "start": 2179.36,
+      "duration": 4.0,
+      "text": "Another another type"
+    },
+    {
+      "start": 2180.72,
+      "duration": 4.56,
+      "text": ">> you put this into a different mode so"
+    },
+    {
+      "start": 2183.36,
+      "duration": 3.92,
+      "text": "that you can control it. Correct."
+    },
+    {
+      "start": 2185.28,
+      "duration": 3.68,
+      "text": ">> There's there's there's different mode."
+    },
+    {
+      "start": 2187.28,
+      "duration": 3.92,
+      "text": "What what we've done is we've built kind"
+    },
+    {
+      "start": 2188.96,
+      "duration": 4.56,
+      "text": "of um [snorts]"
+    },
+    {
+      "start": 2191.2,
+      "duration": 5.04,
+      "text": "the the prototype has everything within"
+    },
+    {
+      "start": 2193.52,
+      "duration": 5.6,
+      "text": "it. So so so we've got to see what works"
+    },
+    {
+      "start": 2196.24,
+      "duration": 5.6,
+      "text": "and and what doesn't work. So, so those"
+    },
+    {
+      "start": 2199.12,
+      "duration": 5.52,
+      "text": "those features may be in all the drones"
+    },
+    {
+      "start": 2201.84,
+      "duration": 5.04,
+      "text": "or or or they might be more suitable for"
+    },
+    {
+      "start": 2204.64,
+      "duration": 5.04,
+      "text": "for another one. So, for example, that"
+    },
+    {
+      "start": 2206.88,
+      "duration": 5.28,
+      "text": "you have firsterson"
+    },
+    {
+      "start": 2209.68,
+      "duration": 5.2,
+      "text": "views, which is what we've just seen. We"
+    },
+    {
+      "start": 2212.16,
+      "duration": 5.44,
+      "text": "also have a top- down view. Um, some of"
+    },
+    {
+      "start": 2214.88,
+      "duration": 6.88,
+      "text": "the drones move faster than others. Um,"
+    },
+    {
+      "start": 2217.6,
+      "duration": 6.64,
+      "text": "we have what I'm calling a TV drone. So,"
+    },
+    {
+      "start": 2221.76,
+      "duration": 5.04,
+      "text": "those are great for for the PVP areas"
+    },
+    {
+      "start": 2224.24,
+      "duration": 4.4,
+      "text": "where somebody will be able to to maybe"
+    },
+    {
+      "start": 2226.8,
+      "duration": 3.52,
+      "text": "an influencer instead of actually going"
+    },
+    {
+      "start": 2228.64,
+      "duration": 4.24,
+      "text": "and doing the fighting. They'll just be"
+    },
+    {
+      "start": 2230.32,
+      "duration": 4.32,
+      "text": "flying their drone around recording, you"
+    },
+    {
+      "start": 2232.88,
+      "duration": 3.76,
+      "text": "know, a different camera view. Uh,"
+    },
+    {
+      "start": 2234.64,
+      "duration": 4.56,
+      "text": "that's that was a really good view. We"
+    },
+    {
+      "start": 2236.64,
+      "duration": 4.96,
+      "text": "have the night vision. Um, David's quite"
+    },
+    {
+      "start": 2239.2,
+      "duration": 4.88,
+      "text": "interested to have an infrared vision as"
+    },
+    {
+      "start": 2241.6,
+      "duration": 6.4,
+      "text": "as well. So, so we'll look on that. Um,"
+    },
+    {
+      "start": 2244.08,
+      "duration": 6.32,
+      "text": "what they have lights on them. Um, I say"
+    },
+    {
+      "start": 2248.0,
+      "duration": 4.0,
+      "text": "it will be our first firsterson view. So"
+    },
+    {
+      "start": 2250.4,
+      "duration": 4.64,
+      "text": "you can go third person, but you can"
+    },
+    {
+      "start": 2252.0,
+      "duration": 7.92,
+      "text": "also go first person or you can go down"
+    },
+    {
+      "start": 2255.04,
+      "duration": 8.0,
+      "text": "and maybe or maybe not. I I don't know."
+    },
+    {
+      "start": 2259.92,
+      "duration": 6.88,
+      "text": "Um I do know but I don't know. But there"
+    },
+    {
+      "start": 2263.04,
+      "duration": 5.84,
+      "text": "is also a racing mode. So you know that"
+    },
+    {
+      "start": 2266.8,
+      "duration": 5.42,
+      "text": "opens up different opportunities. You"
+    },
+    {
+      "start": 2268.88,
+      "duration": 5.6,
+      "text": "know that we we can obviously um"
+    },
+    {
+      "start": 2272.22,
+      "duration": 5.94,
+      "text": "[snorts] do aerot trails. How good would"
+    },
+    {
+      "start": 2274.48,
+      "duration": 6.48,
+      "text": "a trails be just in a drone? Or maybe"
+    },
+    {
+      "start": 2278.16,
+      "duration": 5.2,
+      "text": "how good is just drone racing? And this"
+    },
+    {
+      "start": 2280.96,
+      "duration": 4.56,
+      "text": "drone might be a little bit OP at the"
+    },
+    {
+      "start": 2283.36,
+      "duration": 4.48,
+      "text": "moment. You remember we've got 8 km by 8"
+    },
+    {
+      "start": 2285.52,
+      "duration": 6.08,
+      "text": "km. It can get from one side to the"
+    },
+    {
+      "start": 2287.84,
+      "duration": 5.44,
+      "text": "other in about 30 seconds. It goes fast."
+    },
+    {
+      "start": 2291.6,
+      "duration": 3.52,
+      "text": "And this is what I'm talking about the"
+    },
+    {
+      "start": 2293.28,
+      "duration": 3.84,
+      "text": "performance before. As it's flying over"
+    },
+    {
+      "start": 2295.12,
+      "duration": 4.16,
+      "text": "Solace, it's looking down on all these"
+    },
+    {
+      "start": 2297.12,
+      "duration": 4.0,
+      "text": "land plots with all these literally"
+    },
+    {
+      "start": 2299.28,
+      "duration": 5.28,
+      "text": "hundreds and thousands of different"
+    },
+    {
+      "start": 2301.12,
+      "duration": 4.96,
+      "text": "pieces. you know, it can't fly and then"
+    },
+    {
+      "start": 2304.56,
+      "duration": 4.16,
+      "text": "we're loading like an old school"
+    },
+    {
+      "start": 2306.08,
+      "duration": 5.68,
+      "text": "spectrum. We can't do any of that. It"
+    },
+    {
+      "start": 2308.72,
+      "duration": 4.8,
+      "text": "all has to be instant. So, um, yeah,"
+    },
+    {
+      "start": 2311.76,
+      "duration": 4.0,
+      "text": "watch out for that as well. We've been"
+    },
+    {
+      "start": 2313.52,
+      "duration": 5.76,
+      "text": "busy."
+    },
+    {
+      "start": 2315.76,
+      "duration": 5.28,
+      "text": "Very. And, uh, yeah, it's incredibly"
+    },
+    {
+      "start": 2319.28,
+      "duration": 4.64,
+      "text": "exciting. Of course, as always, I can't"
+    },
+    {
+      "start": 2321.04,
+      "duration": 5.44,
+      "text": "wait for all of us to come out, but it's"
+    },
+    {
+      "start": 2323.92,
+      "duration": 4.48,
+      "text": "just so so fun to see what you can"
+    },
+    {
+      "start": 2326.48,
+      "duration": 4.56,
+      "text": "create when you have a vision for"
+    },
+    {
+      "start": 2328.4,
+      "duration": 5.52,
+      "text": "something and you have a a motivated"
+    },
+    {
+      "start": 2331.04,
+      "duration": 5.12,
+      "text": "team, a passionate team. You, David, the"
+    },
+    {
+      "start": 2333.92,
+      "duration": 5.92,
+      "text": "rest of the team, we're all solving"
+    },
+    {
+      "start": 2336.16,
+      "duration": 7.6,
+      "text": "problems in varied capacities uh to help"
+    },
+    {
+      "start": 2339.84,
+      "duration": 7.6,
+      "text": "us achieve a ridiculously"
+    },
+    {
+      "start": 2343.76,
+      "duration": 5.6,
+      "text": "large vision, one step at a time. And"
+    },
+    {
+      "start": 2347.44,
+      "duration": 3.44,
+      "text": "once again, this is a forever game. So,"
+    },
+    {
+      "start": 2349.36,
+      "duration": 3.6,
+      "text": "we're just going to keep building and"
+    },
+    {
+      "start": 2350.88,
+      "duration": 5.2,
+      "text": "releasing and adding more and more and"
+    },
+    {
+      "start": 2352.96,
+      "duration": 5.04,
+      "text": "more. So, if that is your mindset, like"
+    },
+    {
+      "start": 2356.08,
+      "duration": 4.24,
+      "text": "if we're going to build for the next 15"
+    },
+    {
+      "start": 2358.0,
+      "duration": 4.88,
+      "text": "years, well, the vision needs to be"
+    },
+    {
+      "start": 2360.32,
+      "duration": 4.88,
+      "text": "large because there's a lot that we can"
+    },
+    {
+      "start": 2362.88,
+      "duration": 4.4,
+      "text": "accomplish. And especially when you put"
+    },
+    {
+      "start": 2365.2,
+      "duration": 4.96,
+      "text": "your mind to it and you really focus on"
+    },
+    {
+      "start": 2367.28,
+      "duration": 3.6,
+      "text": "certain things and you get creative,"
+    },
+    {
+      "start": 2370.16,
+      "duration": 2.08,
+      "text": "what"
+    },
+    {
+      "start": 2370.88,
+      "duration": 3.68,
+      "text": ">> focus? Yeah, I forgot about the"
+    },
+    {
+      "start": 2372.24,
+      "duration": 5.12,
+      "text": "photography drone. [laughter]"
+    },
+    {
+      "start": 2374.56,
+      "duration": 5.76,
+      "text": ">> Yeah, good call. Um, great call. Yeah."
+    },
+    {
+      "start": 2377.36,
+      "duration": 5.2,
+      "text": "So, what does that enable with marketing"
+    },
+    {
+      "start": 2380.32,
+      "duration": 4.0,
+      "text": "when there's a photography drone that"
+    },
+    {
+      "start": 2382.56,
+      "duration": 4.24,
+      "text": "can travel around and see different"
+    },
+    {
+      "start": 2384.32,
+      "duration": 6.08,
+      "text": "things and and and very there's just so"
+    },
+    {
+      "start": 2386.8,
+      "duration": 5.52,
+      "text": "much that this opens up. But, um, yeah,"
+    },
+    {
+      "start": 2390.4,
+      "duration": 4.64,
+      "text": "it's just incredibly exciting to see all"
+    },
+    {
+      "start": 2392.32,
+      "duration": 4.96,
+      "text": "this coming to fruition at a time um,"
+    },
+    {
+      "start": 2395.04,
+      "duration": 4.32,
+      "text": "when we need it to really. Uh there's a"
+    },
+    {
+      "start": 2397.28,
+      "duration": 6.08,
+      "text": "lot that that needs to happen and we we"
+    },
+    {
+      "start": 2399.36,
+      "duration": 6.8,
+      "text": "are so near alpha uh that we've just got"
+    },
+    {
+      "start": 2403.36,
+      "duration": 4.48,
+      "text": "I you know it's just exciting stuff. Um"
+    },
+    {
+      "start": 2406.16,
+      "duration": 5.84,
+      "text": "I guess that brings us to our last"
+    },
+    {
+      "start": 2407.84,
+      "duration": 6.48,
+      "text": "segment which is uh questions. I have I"
+    },
+    {
+      "start": 2412.0,
+      "duration": 3.68,
+      "text": "think one question for you and you have"
+    },
+    {
+      "start": 2414.32,
+      "duration": 3.84,
+      "text": "one question for me. So, I'll go ahead"
+    },
+    {
+      "start": 2415.68,
+      "duration": 5.52,
+      "text": "and start uh with your question and I"
+    },
+    {
+      "start": 2418.16,
+      "duration": 9.12,
+      "text": "don't know how to read the name B Oxygen"
+    },
+    {
+      "start": 2421.2,
+      "duration": 7.84,
+      "text": "3N B Oxygen 3N um from Regiment"
+    },
+    {
+      "start": 2427.28,
+      "duration": 3.68,
+      "text": "maybe. Oh, this might be one of our our"
+    },
+    {
+      "start": 2429.04,
+      "duration": 3.76,
+      "text": "our people from the Regiment group. Just"
+    },
+    {
+      "start": 2430.96,
+      "duration": 3.52,
+      "text": "in case devs see these chats, I'm going"
+    },
+    {
+      "start": 2432.8,
+      "duration": 4.0,
+      "text": "to keep asking about implementing"
+    },
+    {
+      "start": 2434.48,
+      "duration": 5.6,
+      "text": "keyboard binding changes enabled. I'm"
+    },
+    {
+      "start": 2436.8,
+      "duration": 4.88,
+      "text": "left-handed and can't WD. I've been"
+    },
+    {
+      "start": 2440.08,
+      "duration": 6.08,
+      "text": "using the directional keys and"
+    },
+    {
+      "start": 2441.68,
+      "duration": 7.04,
+      "text": "surrounding for 30 years. So, Rob"
+    },
+    {
+      "start": 2446.16,
+      "duration": 6.4,
+      "text": "Yeah, we we know how to do bindings."
+    },
+    {
+      "start": 2448.72,
+      "duration": 5.6,
+      "text": "They're really really complicated the in"
+    },
+    {
+      "start": 2452.56,
+      "duration": 3.36,
+      "text": "they're"
+    },
+    {
+      "start": 2454.32,
+      "duration": 3.6,
+      "text": "the they're the complic they are and"
+    },
+    {
+      "start": 2455.92,
+      "duration": 4.8,
+      "text": "they're not complicated. What what why"
+    },
+    {
+      "start": 2457.92,
+      "duration": 5.44,
+      "text": "they why they"
+    },
+    {
+      "start": 2460.72,
+      "duration": 5.04,
+      "text": "why they're not complicated is because"
+    },
+    {
+      "start": 2463.36,
+      "duration": 5.36,
+      "text": "it it maybe takes two or three minutes"
+    },
+    {
+      "start": 2465.76,
+      "duration": 5.6,
+      "text": "to set up one key binding. It's just a"
+    },
+    {
+      "start": 2468.72,
+      "duration": 4.8,
+      "text": "little bit fiddly. Uh but Unreal Engine"
+    },
+    {
+      "start": 2471.36,
+      "duration": 4.32,
+      "text": "does give us the tools to do that. Where"
+    },
+    {
+      "start": 2473.52,
+      "duration": 4.24,
+      "text": "it gets really tricky is the amount that"
+    },
+    {
+      "start": 2475.68,
+      "duration": 4.56,
+      "text": "we have to do and the controls are"
+    },
+    {
+      "start": 2477.76,
+      "duration": 5.52,
+      "text": "constantly changing. So, for example,"
+    },
+    {
+      "start": 2480.24,
+      "duration": 6.0,
+      "text": "when when you when you're running around"
+    },
+    {
+      "start": 2483.28,
+      "duration": 5.76,
+      "text": "the the normal the the normal control"
+    },
+    {
+      "start": 2486.24,
+      "duration": 4.96,
+      "text": "set, I think there might be about 30"
+    },
+    {
+      "start": 2489.04,
+      "duration": 3.92,
+      "text": "different controls where where you"
+    },
+    {
+      "start": 2491.2,
+      "duration": 3.2,
+      "text": "you've got auto run, you've got"
+    },
+    {
+      "start": 2492.96,
+      "duration": 3.44,
+      "text": "backwards, forward, you've got all those"
+    },
+    {
+      "start": 2494.4,
+      "duration": 5.36,
+      "text": "kind of key bindings, then you've got"
+    },
+    {
+      "start": 2496.4,
+      "duration": 4.72,
+      "text": "all the the mouse options. Um, but then"
+    },
+    {
+      "start": 2499.76,
+      "duration": 3.76,
+      "text": "when you go and play something like"
+    },
+    {
+      "start": 2501.12,
+      "duration": 4.64,
+      "text": "rumble ball, we completely change the"
+    },
+    {
+      "start": 2503.52,
+      "duration": 4.08,
+      "text": "the control sets. So those have to be"
+    },
+    {
+      "start": 2505.76,
+      "duration": 3.92,
+      "text": "done as well. And then when you go into"
+    },
+    {
+      "start": 2507.6,
+      "duration": 4.24,
+      "text": "hot zones, th those change as well. Then"
+    },
+    {
+      "start": 2509.68,
+      "duration": 3.68,
+      "text": "when you go into racing, they change."
+    },
+    {
+      "start": 2511.84,
+      "duration": 4.96,
+      "text": "And then some of the other modes in the"
+    },
+    {
+      "start": 2513.36,
+      "duration": 6.24,
+      "text": "future, they are all changing. So if we"
+    },
+    {
+      "start": 2516.8,
+      "duration": 4.0,
+      "text": "introduce key bindings at this stage,"
+    },
+    {
+      "start": 2519.6,
+      "duration": 2.96,
+      "text": "it's one of those things where we're"
+    },
+    {
+      "start": 2520.8,
+      "duration": 3.52,
+      "text": "forever going back and now we have to"
+    },
+    {
+      "start": 2522.56,
+      "duration": 4.32,
+      "text": "remember to go back and and change"
+    },
+    {
+      "start": 2524.32,
+      "duration": 5.2,
+      "text": "those. And I know it's an absolute pain"
+    },
+    {
+      "start": 2526.88,
+      "duration": 4.4,
+      "text": "for people to to do that, but we know"
+    },
+    {
+      "start": 2529.52,
+      "duration": 4.72,
+      "text": "how to do it and we will get to it in"
+    },
+    {
+      "start": 2531.28,
+      "duration": 7.28,
+      "text": "the future, but it's not something at"
+    },
+    {
+      "start": 2534.24,
+      "duration": 6.96,
+      "text": "the moment that that is on our on our"
+    },
+    {
+      "start": 2538.56,
+      "duration": 4.32,
+      "text": "short term because it because we"
+    },
+    {
+      "start": 2541.2,
+      "duration": 3.04,
+      "text": "basically be doing the work two or three"
+    },
+    {
+      "start": 2542.88,
+      "duration": 4.56,
+      "text": "times and we it's one of these things"
+    },
+    {
+      "start": 2544.24,
+      "duration": 5.28,
+      "text": "that we're forever going back. Um, I"
+    },
+    {
+      "start": 2547.44,
+      "duration": 4.16,
+      "text": "often play I know quite a few"
+    },
+    {
+      "start": 2549.52,
+      "duration": 4.96,
+      "text": "left-handed players and they and they"
+    },
+    {
+      "start": 2551.6,
+      "duration": 4.48,
+      "text": "also report the the same things and we"
+    },
+    {
+      "start": 2554.48,
+      "duration": 3.04,
+      "text": "have we also have some colorblind"
+    },
+    {
+      "start": 2556.08,
+      "duration": 3.92,
+      "text": "people, you know. So, these quality of"
+    },
+    {
+      "start": 2557.52,
+      "duration": 4.24,
+      "text": "life things we know how to do, but we're"
+    },
+    {
+      "start": 2560.0,
+      "duration": 4.48,
+      "text": "just not there at the moment. We're not"
+    },
+    {
+      "start": 2561.76,
+      "duration": 5.12,
+      "text": "at that optimization kind of final"
+    },
+    {
+      "start": 2564.48,
+      "duration": 4.32,
+      "text": "tuning bit. You usually get that that"
+    },
+    {
+      "start": 2566.88,
+      "duration": 4.8,
+      "text": "kind of bit just before the game goes"
+    },
+    {
+      "start": 2568.8,
+      "duration": 4.56,
+      "text": "live. So, you'll go alpha beta and then"
+    },
+    {
+      "start": 2571.68,
+      "duration": 3.6,
+      "text": "you'll tidy everything up before it goes"
+    },
+    {
+      "start": 2573.36,
+      "duration": 5.44,
+      "text": "live, you know. So, so, so th those will"
+    },
+    {
+      "start": 2575.28,
+      "duration": 5.92,
+      "text": "kind of come there, but um if you can"
+    },
+    {
+      "start": 2578.8,
+      "duration": 5.2,
+      "text": "use a game controller, I know it's not"
+    },
+    {
+      "start": 2581.2,
+      "duration": 5.2,
+      "text": "ideal or there is also some alternatives"
+    },
+    {
+      "start": 2584.0,
+      "duration": 4.56,
+      "text": "where you can you can"
+    },
+    {
+      "start": 2586.4,
+      "duration": 4.88,
+      "text": "you can get third parties that that can"
+    },
+    {
+      "start": 2588.56,
+      "duration": 4.4,
+      "text": "that can do the key bindings for you."
+    },
+    {
+      "start": 2591.28,
+      "duration": 2.88,
+      "text": "It's not ideal. I don't like to say"
+    },
+    {
+      "start": 2592.96,
+      "duration": 2.32,
+      "text": "we're not going to get there. We will"
+    },
+    {
+      "start": 2594.16,
+      "duration": 3.52,
+      "text": "get there in the future. It's the same"
+    },
+    {
+      "start": 2595.28,
+      "duration": 2.88,
+      "text": "with VOIPE. We so wanted VO in years"
+    },
+    {
+      "start": 2597.68,
+      "duration": 3.6,
+      "text": "ago."
+    },
+    {
+      "start": 2598.16,
+      "duration": 5.6,
+      "text": ">> Yeah. Everything, you know, we want to"
+    },
+    {
+      "start": 2601.28,
+      "duration": 5.04,
+      "text": "be able to do everything all at once. Uh"
+    },
+    {
+      "start": 2603.76,
+      "duration": 5.44,
+      "text": "but the reality is obviously we've got"
+    },
+    {
+      "start": 2606.32,
+      "duration": 5.44,
+      "text": "limited resources and we have to choose"
+    },
+    {
+      "start": 2609.2,
+      "duration": 5.36,
+      "text": "what we can do with those resources"
+    },
+    {
+      "start": 2611.76,
+      "duration": 4.88,
+      "text": "carefully uh while trying to keep you"
+    },
+    {
+      "start": 2614.56,
+      "duration": 3.84,
+      "text": "guys entertained working in parallel on"
+    },
+    {
+      "start": 2616.64,
+      "duration": 3.76,
+      "text": "some of the core game loops in the back"
+    },
+    {
+      "start": 2618.4,
+      "duration": 3.84,
+      "text": "end and and and new systems and all"
+    },
+    {
+      "start": 2620.4,
+      "duration": 4.56,
+      "text": "sorts of things. It's a balancing act"
+    },
+    {
+      "start": 2622.24,
+      "duration": 4.8,
+      "text": "and uh we do our best with what we can."
+    },
+    {
+      "start": 2624.96,
+      "duration": 3.68,
+      "text": "Uh but yeah, we we we hear you on that"
+    },
+    {
+      "start": 2627.04,
+      "duration": 3.6,
+      "text": "and and we will get there and like Rob"
+    },
+    {
+      "start": 2628.64,
+      "duration": 3.44,
+      "text": "said, there's there's polish needed. Um"
+    },
+    {
+      "start": 2630.64,
+      "duration": 3.52,
+      "text": "Rob, I think you said you have one more"
+    },
+    {
+      "start": 2632.08,
+      "duration": 3.2,
+      "text": "question for"
+    },
+    {
+      "start": 2634.16,
+      "duration": 3.6,
+      "text": ">> Yep. We're going to run out of time."
+    },
+    {
+      "start": 2635.28,
+      "duration": 6.88,
+      "text": "Although we we do more questions, but um"
+    },
+    {
+      "start": 2637.76,
+      "duration": 7.44,
+      "text": "this one is from out for the job."
+    },
+    {
+      "start": 2642.16,
+      "duration": 5.44,
+      "text": "Definitely said that wrong. Um any any"
+    },
+    {
+      "start": 2645.2,
+      "duration": 4.24,
+      "text": "updates on the on the the POA, the"
+    },
+    {
+      "start": 2647.6,
+      "duration": 3.84,
+      "text": "player owned assets from the operators"
+    },
+    {
+      "start": 2649.44,
+      "duration": 4.08,
+      "text": "bundle? We had some minting from"
+    },
+    {
+      "start": 2651.44,
+      "duration": 4.4,
+      "text": "founders and Pathfinders. We're just"
+    },
+    {
+      "start": 2653.52,
+      "duration": 4.32,
+      "text": "curious on the operators."
+    },
+    {
+      "start": 2655.84,
+      "duration": 3.76,
+      "text": ">> No, that's a great question. And you"
+    },
+    {
+      "start": 2657.84,
+      "duration": 4.64,
+      "text": "know what? I really want to get those"
+    },
+    {
+      "start": 2659.6,
+      "duration": 4.32,
+      "text": "delivered uh as well. Uh there's quite a"
+    },
+    {
+      "start": 2662.48,
+      "duration": 3.36,
+      "text": "bit more that needs to be done there."
+    },
+    {
+      "start": 2663.92,
+      "duration": 4.08,
+      "text": "That's just also been a matter of time"
+    },
+    {
+      "start": 2665.84,
+      "duration": 3.84,
+      "text": "and what can we execute on, but I'm"
+    },
+    {
+      "start": 2668.0,
+      "duration": 3.44,
+      "text": "going to talk to Jeff about that today"
+    },
+    {
+      "start": 2669.68,
+      "duration": 4.4,
+      "text": "and see what we can get going on the"
+    },
+    {
+      "start": 2671.44,
+      "duration": 4.08,
+      "text": "operators bundle uh as well. Uh because"
+    },
+    {
+      "start": 2674.08,
+      "duration": 3.6,
+      "text": "we want to keep that we want to keep"
+    },
+    {
+      "start": 2675.52,
+      "duration": 5.04,
+      "text": "that going, keep releasing some of those"
+    },
+    {
+      "start": 2677.68,
+      "duration": 6.48,
+      "text": "playerowned assets uh to you guys uh as"
+    },
+    {
+      "start": 2680.56,
+      "duration": 5.76,
+      "text": "well. And this just in. We can close out"
+    },
+    {
+      "start": 2684.16,
+      "duration": 5.2,
+      "text": "with this. Rob, you didn't know this"
+    },
+    {
+      "start": 2686.32,
+      "duration": 4.4,
+      "text": "occurred. Uh, but I saw it pop up and so"
+    },
+    {
+      "start": 2689.36,
+      "duration": 7.04,
+      "text": "I'm just going to go ahead and share"
+    },
+    {
+      "start": 2690.72,
+      "duration": 6.8,
+      "text": "this a little hint at what um prison"
+    },
+    {
+      "start": 2696.4,
+      "duration": 3.04,
+      "text": ">> I don't know. [snorts]"
+    },
+    {
+      "start": 2697.52,
+      "duration": 3.92,
+      "text": ">> Does David Chedd has he?"
+    },
+    {
+      "start": 2699.44,
+      "duration": 4.4,
+      "text": ">> Yeah. Yeah. He said we could we could"
+    },
+    {
+      "start": 2701.44,
+      "duration": 6.32,
+      "text": "show this. So, this is just a final"
+    },
+    {
+      "start": 2703.84,
+      "duration": 6.0,
+      "text": "thing to get your curiosity going cuz hm"
+    },
+    {
+      "start": 2707.76,
+      "duration": 4.4,
+      "text": "just looks like a ship. I don't know,"
+    },
+    {
+      "start": 2709.84,
+      "duration": 5.36,
+      "text": "but it's pretty cool looking. Um, and"
+    },
+    {
+      "start": 2712.16,
+      "duration": 6.64,
+      "text": "there's our hint at prison. And with"
+    },
+    {
+      "start": 2715.2,
+      "duration": 6.24,
+      "text": "that, uh, we can go ahead and close out"
+    },
+    {
+      "start": 2718.8,
+      "duration": 4.32,
+      "text": "this episode 157. Thank you all for"
+    },
+    {
+      "start": 2721.44,
+      "duration": 3.68,
+      "text": "watching. Be sure to like, comment,"
+    },
+    {
+      "start": 2723.12,
+      "duration": 4.33,
+      "text": "subscribe, help us get this message out"
+    },
+    {
+      "start": 2725.12,
+      "duration": 3.84,
+      "text": "there, and again, um, if you haven't"
+    },
+    {
+      "start": 2727.45,
+      "duration": 3.99,
+      "text": "[snorts] got in the game, come join our"
+    },
+    {
+      "start": 2728.96,
+      "duration": 5.36,
+      "text": "Discord. Go to our website, download the"
+    },
+    {
+      "start": 2731.44,
+      "duration": 4.08,
+      "text": "game if you can. Uh, there's been codes"
+    },
+    {
+      "start": 2734.32,
+      "duration": 4.88,
+      "text": "given out. You can always come into"
+    },
+    {
+      "start": 2735.52,
+      "duration": 6.24,
+      "text": "Discord, ask for a code. Um, or you can"
+    },
+    {
+      "start": 2739.2,
+      "duration": 4.16,
+      "text": "just get an asset from the store and"
+    },
+    {
+      "start": 2741.76,
+      "duration": 4.56,
+      "text": "that'll get you into the game. But thank"
+    },
+    {
+      "start": 2743.36,
+      "duration": 4.56,
+      "text": "you all for watching episode 157. We'll"
+    },
+    {
+      "start": 2746.32,
+      "duration": 4.6,
+      "text": "see you on the next one. Bye-bye."
+    },
+    {
+      "start": 2747.92,
+      "duration": 3.0,
+      "text": ">> Bye-bye."
+    },
+    {
+      "start": 2752.24,
+      "duration": 5.36,
+      "text": ">> What is intelligence?"
+    },
+    {
+      "start": 2755.52,
+      "duration": 5.68,
+      "text": "Is it the ability [music] to calculate,"
+    },
+    {
+      "start": 2757.6,
+      "duration": 6.0,
+      "text": "to learn, to solve a problem? A machine"
+    },
+    {
+      "start": 2761.2,
+      "duration": 5.84,
+      "text": "can remember your name, but can [music]"
+    },
+    {
+      "start": 2763.6,
+      "duration": 5.78,
+      "text": "it understand why you gave it? It can"
+    },
+    {
+      "start": 2767.04,
+      "duration": 5.52,
+      "text": "recognize your voice, but can it hear"
+    },
+    {
+      "start": 2769.38,
+      "duration": 5.42,
+      "text": "[music] when something has changed?"
+    },
+    {
+      "start": 2772.56,
+      "duration": 5.2,
+      "text": "Perhaps intelligence was never the"
+    },
+    {
+      "start": 2774.8,
+      "duration": 6.56,
+      "text": "difficult part. Perhaps the difficult"
+    },
+    {
+      "start": 2777.76,
+      "duration": 5.36,
+      "text": "part [music] was attention, emotion,"
+    },
+    {
+      "start": 2781.36,
+      "duration": 3.44,
+      "text": "memory."
+    },
+    {
+      "start": 2783.12,
+      "duration": 4.32,
+      "text": "Emotion was [music] once treated as"
+    },
+    {
+      "start": 2784.8,
+      "duration": 4.88,
+      "text": "noise inside the signal. But without"
+    },
+    {
+      "start": 2787.44,
+      "duration": 5.44,
+      "text": "emotion, what gives intelligence"
+    },
+    {
+      "start": 2789.68,
+      "duration": 5.89,
+      "text": "direction? What makes one moment matter"
+    },
+    {
+      "start": 2792.88,
+      "duration": 3.84,
+      "text": "more than another? and without meaning."
+    },
+    {
+      "start": 2795.57,
+      "duration": 3.79,
+      "text": "[music]"
+    },
+    {
+      "start": 2796.72,
+      "duration": 5.36,
+      "text": "Can intelligence ever truly understand"
+    },
+    {
+      "start": 2799.36,
+      "duration": 5.76,
+      "text": "us? These questions [music] are no"
+    },
+    {
+      "start": 2802.08,
+      "duration": 5.12,
+      "text": "longer theoretical. In your world,"
+    },
+    {
+      "start": 2805.12,
+      "duration": 6.24,
+      "text": "artificial intelligence is learning to"
+    },
+    {
+      "start": 2807.2,
+      "duration": 8.02,
+      "text": "speak, create, reason, and remember. In"
+    },
+    {
+      "start": 2811.36,
+      "duration": 5.88,
+      "text": "ours, it is learning to walk beside us."
+    },
+    {
+      "start": 2815.22,
+      "duration": 2.02,
+      "text": "[music]"
+    },
+    {
+      "start": 2817.36,
+      "duration": 4.88,
+      "text": "Across the Cornicopius Republic,"
+    },
+    {
+      "start": 2819.68,
+      "duration": 3.28,
+      "text": "manufacturers are taking this expanding"
+    },
+    {
+      "start": 2822.24,
+      "duration": 3.44,
+      "text": "technology [music]"
+    },
+    {
+      "start": 2822.96,
+      "duration": 5.84,
+      "text": "beyond laboratories and terminals and"
+    },
+    {
+      "start": 2825.68,
+      "duration": 5.52,
+      "text": "giving it a place in the world. They are"
+    },
+    {
+      "start": 2828.8,
+      "duration": 6.56,
+      "text": "building machines that can carry,"
+    },
+    {
+      "start": 2831.2,
+      "duration": 6.56,
+      "text": "explore, protect, and fight. But some"
+    },
+    {
+      "start": 2835.36,
+      "duration": 6.06,
+      "text": "are reaching for [music] something more."
+    },
+    {
+      "start": 2837.76,
+      "duration": 4.8,
+      "text": "Companions that listen, learn, remember."
+    },
+    {
+      "start": 2841.42,
+      "duration": 4.02,
+      "text": "[music]"
+    },
+    {
+      "start": 2842.56,
+      "duration": 6.0,
+      "text": "And our world needs them."
+    },
+    {
+      "start": 2845.44,
+      "duration": 4.8,
+      "text": "The republic is vast. The nation in the"
+    },
+    {
+      "start": 2848.56,
+      "duration": 4.8,
+      "text": "sky is growing. [music]"
+    },
+    {
+      "start": 2850.24,
+      "duration": 6.48,
+      "text": "Its frontiers are dangerous. There are"
+    },
+    {
+      "start": 2853.36,
+      "duration": 5.44,
+      "text": "ruins to explore, settlements to build,"
+    },
+    {
+      "start": 2856.72,
+      "duration": 7.0,
+      "text": "something to protect. [music]"
+    },
+    {
+      "start": 2858.8,
+      "duration": 4.92,
+      "text": "And no one should have to face it alone."
+    },
+    {
+      "start": 2864.08,
+      "duration": 4.8,
+      "text": "Hey guys, Emma here [music] and it's"
+    },
+    {
+      "start": 2866.48,
+      "duration": 6.16,
+      "text": "time you met the first generation of our"
+    },
+    {
+      "start": 2868.88,
+      "duration": 7.04,
+      "text": "AI companion drones, [music] Alita from"
+    },
+    {
+      "start": 2872.64,
+      "duration": 6.48,
+      "text": "Jet Industries with style. Fast,"
+    },
+    {
+      "start": 2875.92,
+      "duration": 5.52,
+      "text": "perceptive, fiercely protective, and"
+    },
+    {
+      "start": 2879.12,
+      "duration": 4.64,
+      "text": "never [music] short on opinions. She"
+    },
+    {
+      "start": 2881.44,
+      "duration": 5.04,
+      "text": "remembers what matters and worries about"
+    },
+    {
+      "start": 2883.76,
+      "duration": 6.64,
+      "text": "you more than she will admit."
+    },
+    {
+      "start": 2886.48,
+      "duration": 6.4,
+      "text": "Aeron, [music] measured, dependable, and"
+    },
+    {
+      "start": 2890.4,
+      "duration": 5.84,
+      "text": "maybe a little handsome."
+    },
+    {
+      "start": 2892.88,
+      "duration": 6.4,
+      "text": "He watches before he acts and always has"
+    },
+    {
+      "start": 2896.24,
+      "duration": 6.72,
+      "text": "your back. [music] Kiko from the"
+    },
+    {
+      "start": 2899.28,
+      "duration": 6.32,
+      "text": "engineers at Kazakura. Precise, calm,"
+    },
+    {
+      "start": 2902.96,
+      "duration": 4.96,
+      "text": "and [music] observant. Nothing gets past"
+    },
+    {
+      "start": 2905.6,
+      "duration": 4.4,
+      "text": "her, and she will stay with you through"
+    },
+    {
+      "start": 2907.92,
+      "duration": 5.68,
+      "text": "thick and thin."
+    },
+    {
+      "start": 2910.0,
+      "duration": 4.72,
+      "text": "And then there is Clanker from Rando's"
+    },
+    {
+      "start": 2913.6,
+      "duration": 4.4,
+      "text": "Metal Works. [music]"
+    },
+    {
+      "start": 2914.72,
+      "duration": 8.16,
+      "text": "Improvised, heavily armed, a little"
+    },
+    {
+      "start": 2918.0,
+      "duration": 8.4,
+      "text": "chaotic, and somehow still functional."
+    },
+    {
+      "start": 2922.88,
+      "duration": 6.88,
+      "text": "These companions can follow, defend, and"
+    },
+    {
+      "start": 2926.4,
+      "duration": 5.36,
+      "text": "stand beside you. But what matters most"
+    },
+    {
+      "start": 2929.76,
+      "duration": 5.44,
+      "text": "cannot [music] be measured through armor"
+    },
+    {
+      "start": 2931.76,
+      "duration": 7.76,
+      "text": "or firepower. They listen. They"
+    },
+    {
+      "start": 2935.2,
+      "duration": 5.92,
+      "text": "remember. They change with you."
+    },
+    {
+      "start": 2939.52,
+      "duration": 4.48,
+      "text": "The way you speak to them [music]"
+    },
+    {
+      "start": 2941.12,
+      "duration": 6.08,
+      "text": "matters. The life you share with them"
+    },
+    {
+      "start": 2944.0,
+      "duration": 6.4,
+      "text": "matters. Each will become a reflection"
+    },
+    {
+      "start": 2947.2,
+      "duration": 5.2,
+      "text": "of the journey it takes and the person"
+    },
+    {
+      "start": 2950.4,
+      "duration": 3.92,
+      "text": "beside it."
+    },
+    {
+      "start": 2952.4,
+      "duration": 5.52,
+      "text": "They were [music] built to accompany"
+    },
+    {
+      "start": 2954.32,
+      "duration": 5.12,
+      "text": "you. But what they become,"
+    },
+    {
+      "start": 2957.92,
+      "duration": 4.52,
+      "text": "you will decide [music]"
+    },
+    {
+      "start": 2959.44,
+      "duration": 3.0,
+      "text": "together."
+    },
+    {
+      "start": 2969.8,
+      "duration": 2.02,
+      "text": "[music]"
+    }
+  ],
+  "transcript_text": "[music] [music] Heat up [music] here. [music] >> [music] [music] >> Hey everyone, welcome to Cafe Rise. This is episode 157 and you've got Rob Greg and Josh Jones here to tell you a little bit more about what we're building. Actually, a lot that's coming up uh that we're going to discuss in this episode today. We were going to talk about the recent release that makes quite a few releases so far this year. We've had a regular cadence where we're getting a lot of new value out to the gamers. Hopefully, you guys are noticing the increase in pace of gameplay features. So, we'll talk about that. We're going to talk a little bit about a few new features that have been in the works that I'll I'll have you wait on those uh that that are coming. Um, we're talking on AI companions and then, uh, some announcements on marketing, of course, always the leak and some questions at the end. So, let's just kick it off. Rob, what are you drinking today? >> Um, Elon Musk's favorite drink. I think >> Diet Coke. Really? Uh, I didn't know that, but I >> Is it Diet Coke or Coke Zero? One or the other. Cheers. What are you drinking? I'm drinking a >> nothing. You've already drunk it. [laughter] >> In our preparation for this episode and other discussions that unfortunately we can't announce the things that you were updating me on. Um, I finished my beverage. So, I do have a backup though. I've got this Stanley with some water. But, I'm going to drink all the way through that. I held out though. >> You held out and I just kept sipping. Okay, well, let's just go and kick it off. The recent Three Bridges release is live and out, and I think there's a lot of fun stuff we could talk about in it, the new Three Bridges Arena. Um, you want to go over any of that? >> Yeah. So, it's an alternative um PvP arena. So, so we have two of them now. We have the the original one um and and we have we have this this is more like um well, it's it's three bridges. So, so same red versus blue, one one versus the other, but there was also a lot of good quality of life stuff in there. So, as as you start, you start on a podium, so you get to see your your teammates. Um, then there's a there's a lot more in-game stats that pop up and and at the end, so you can see who won and who who killed each other the most. And then there's also kill streaks in there, you know. So, so we're we're putting the finishing touch really that on on on kind of like the the PVPs. So, so I mean that that that's had quite a bit bit of work on it. Um I'm quite happy the the way the the PVPs turned out. >> Very nice. Yeah, I'm excited about it too. Uh the last team standing mode, uh pretty huge. >> Yeah. Another mode in there that that's um as you kill somebody, they they just get ejected from the game. So, so yeah, last man standing. So, we it we we didn't really have enough time to build it how we wanted to. We kind of got a shared lobby going in there, but we we we want to spend enough time on it, but we don't want to take focus away from from the bigger goals. So, that's why we've we've kind of, you know, we've got these two arenas now. We may have a third arena in in the future, but but for now that that whole underground area I I think is looking looking pretty pretty cool. >> And you hinted on on something there that going to lead us to one of our next topics, which is what's being done in parallel while we provide this current value. And and I think it's important for everybody to know, but we'll get into that here in a little bit. Uh more that's been done. And you just mentioned the last team standing, team deathmatch. Um, we've got uh kill like some polish type things with the cinematics at the podium at the end of the game. Uh, killstreak notifications added. That's fun stuff. So polish that really makes it feel more complete. Uh, is is what's coming. Also, the new um bundles uh from the Revolt Underground bundle and the Revolt Renegade bundle, those are now in game. So those are usable. So, for the all of you that wanted a um sniper rifle with a scope or the flamethrower or those really cool outfits, uh if you haven't checked them out, those are available in store now, but they're also usable in the game. And so, you might have been seeing some people using those. And the flamethrower, I think, is pretty awesome. >> A flamethrower is something else. >> Yeah. >> I I mean, I've not been using it for PvP. I've been using it for other stuff. And yeah, it is something else. >> Yeah. And what Rob means is not other stuff in-game, but he means other stuff in-game development. So, there's some fun stuff coming, which Rob and I discussed quite a bit before this episode, but unfortunately, we can't announce it yet until it's a little bit further along. But, wow, it is. Um, yeah, it's exciting, >> isn't it? >> Yeah, there's so much exciting stuff happening. Okay, well, I think that's enough on that episode, unless there's anything else you Oh, the the drone delivery game. Did you want to talk anything on the updates to that? We've we've just we've just done a few updates. So, the drone delivery, the the puzzles made a little bit a little bit harder. Um, that was literally one hour's worth of work. So, I've I've seen a few comments. People are worried that we've lost focus. We haven't lost focus, but every now and again we're just doing a little bit of polish here and there. you get so focused on different parts of the game, you your brain can get overload and you and and you can you need a break and we don't do breaks. [laughter] Our breaks is to work on something else. So, so having an hour off to do the delivery puzzle, the the rumble ball that got a good update because that that had some quality of life stuff that that had quite a few bugs in it and it we've now introduced passing that again was was one day's worth of work. It's about 7 hours actually. So, so half a day's worth of work. [snorts] Um, we know that some people are streaming this. So, where we see people taking interest in these little games, you know, we'll just give them a little bit of polish because you never know. Any one of those could go viral and you don't want it to go viral because something's completely broke. So, so overall that all those little mini games that they're probably about one one half of a working day cuz we we do 12 to 14 hours. So, so those those were those are actually actually pretty good. >> Yeah, man. A lot of polish. uh you know and there's also the uh you mentioned rumble ball solace the shooting gallery so there's overhead targets and different stuff added to the shooting gallery. >> Yeah. So so so that was an interesting one cuz I've actually been receiving quite a bit of feedback about the the shooting galleries for those that don't know they're they're in in the Solace hub if you go to the weapon store into the basement. There's some challenges there. So I've actually been talking with Ray Racer. He's gave gave me some feedback. Um, and again, this was something that just took an afternoon's worth of work. I had a quick chat with with Ry. I picked his brains. Um, I went away for a few hours, came back, and the result is a quite a hard shooting game. So, you know, if you can't do the game anymore because it's not easy, you can blame Ray. But actually, it's quite challenging. It's quite it's quite a challenging. I think it's a great update. And you know, if everything was too easy, people would play it once and move on. Now it has a real, you know, that delivery puzzle, there's so much we want to do with that, but we we don't want to we don't want to spend lots and lots of time on that. So So that's had a little bit of a little bit of a tweak cuz it was a little bit boring. Now, you know, just just these tiny tiny updates can make such a big difference. But um yeah, definitely a shout out to Ray because because he gave me some really good feedback on that. >> Yeah, play the new version. Go and check it out. Tiny tiny updates over time compound and create something real and valuable for for everyone and and feedback from the community over time create something really valuable and refined. And so it's a matter of slow progression in some areas, faster pro progression in some areas, and then balancing out with the vision of the game, how we want to move things forward that are foundational to the core loops of the game, uh, which have been happening. And that's a good place for us to transfer into some of the features that have been in development, uh, in parallel while we've been working on PvP and riffs. So for some context, the PvP stuff, we wanted to give something exciting to you guys uh to to play around with, have some fun, community gets together and and they have fun with PvP, that sort of thing. But that has helped us to develop the systems that are needed for the collaborative comat combat with the rifts, which has still been in the works. We're moving very quickly towards riffs. Uh for those of you that don't know what riffs are, there's going to be openings in the earth. This is part of the lore where these giant machines come out and there's a collaborative battle uh where the community uh gets together and fights them uh you know together to face these rifts and to defeat them and and earn some loot etc. That is uh in the works. We're moving quickly towards that. However, in parallel things that we've announced from the very beginning as part of our vision include logging and farming. So Rob um you've made a lot of progress. We've made a lot of progress in that area. Why don't you just give us some context to some of that fun stuff that really brings balance to this world because it's not all about combat. This is this is creating a digital sense of life with all sorts of adventure and fun and there's a lot of progress in that area. So, yeah, I've teed you up. Let's go. Yeah, we're I mean we're we're working on we're working on all kinds of things in parallel and as we've always said part part of how we're working is we build these these these objects and they then then they compound and they get built on top of each other. So before we could look at doing anything with with with Solace, we actually had to perfect those building tools and and we chose to go down the apartment route. So everybody's been using the apartment and you've seen that building tool in there. That building tool has has also been built to to be used in Solace as as part of building the land. It'll be slight it'll be changed slightly but there is a stepping stone and we've learned so much um about the performance of of the Unreal Engine 5 which keeps changing you know how we load and and how we save and there has been some real challenges with with the amount of objects that you save with within those apartments you know and that has been the stepping stone that those lessons now are being brought into into solace you know I've been spending a lot of I'm in solid in Solace 3 just cuz I like Solace 3 and it's it's easier to open up your last menu it your last map that you if I was to load up Solace one or Solace 2 it would take me a few hours. It's a freaking nightmare. But anyway, so so what I'm getting at is what we've just released now is is all these fences all all these fences around um all the land plots. And at first glance that just looks like, oh, the land plots have got a random fence in there. But what you can't actually see is is those land plots um those load instantly. Those fences are instant and and because it's a it's a different challenge to apartments. When you go in the apartments, apartments is is like um it's it's like a sandbox. You go through that door and then everything just loads in in in in front of you. You don't see anything else. It's it's really enclosed and >> which is a work in progress by the way. >> Oh no. Yeah. Yeah. Yes. We we we're definitely looking at speeding that up. We know what to do. Obviously optimization that comes later on. First of all, you get all the the tools in there. So So while that's being optimized, we can still take some of the lessons to to move over. So So the apartments are very much isolated and then you move out of there and and then those actually will be unloaded after a certain amount of time. and you go in another apartment and that loads. Now, that cannot happen within Solace. This is why Solace is such a bigger challenge cuz every we've got across Solis 1, 2, and three, we've got 8,000 different land plots. So, each of those Solace worlds got just over 2,300 land plots. Now, if you think of those land plots as apartments, that means when you're flying over, we can't just load one in isolation and then load it in and then the other. They all have to be loaded at the same time. And that's always been the challenge of Solace. So, first of all, we needed to understand the engine and then we needed to build the tools on that. So what you're now actually seeing when you go over solace is you are seeing all those land plots all 2,300 and whatever they are all loaded all those fences that's not just one fence it's not like static static foliage like we built some of the other things in in engines those are individual pieces so you and you it looks just like one piece but but it's not the the small lamp plot is 12 m by 8 m. So I think that's is that 96? I think it's got 96 different different plots there. All the way up to some others that have 800 different fence pieces. So So there is tens of thousands of objects loaded exactly the same time as you're flying over. No loading, no nothing over this huge world. So that's why the the you know the this a bit of an experiment to see what it was like the performance. So, in the future, those fences will be removed and people will be able to put their own fences and hire them and put them and do them however they want. But this was just a a stepping stone just to show you that we now know how to load massive amount of of data at one time w with zero zero loading. So, it's it's a slightly different approach because the apartments are different. The apartments are so customizable. There's hundreds of hundreds of of the thousands of different combinations with all the materials and stuff like that. So, so we've still got the challenge of of of the of the the land and fitting so much in, but yeah, we're we're we're well on our way. So, that is what the fences are all about. And um I think I'm going to do a tweet later in the week explaining that a little bit clearer. >> Sweet. the the uh the implications or or the problems and opportunities around an MMO are in in innovation and the challenges that have to be solved to innovate in some of the ways that we are are how do you do that and still be performant and have it work for multiple players all over the world. And so it's fun. We're in a space of of solving data challenges uh along with how fast technology is growing and how do we make this work all together. >> Yeah, there there are not many there are definitely not many um games and and most most of the games are these these massive AAA studios that got you know hundreds of millions of investment that are that are looking at this this problem because it because it is a problem. is a challenge with with today's um technology and there's not many that are going for it at all because loading so say loading loading the world procedurally generated which ours are not everything is is all handplaced is one thing but then on top of that what we are talking about is all our players all 2,300 and and and odd land plots all individual pieces all built up in not preset all loaded as soon as you go into the world and players coming in. You know that that's that is that's a massive challenge. If everything was preset and we could bake it all down and we do all the lighting and all that, you know, that's that's just a lot of data within itself. But what we're talking here, we we're talking millions of individual pieces that that you know, we're going to deliver pretty soon. It's re it is really exciting. We we we've got a massive breakthrough. >> Yeah, it's huge. It's huge. Did you want to go into logging and farming a little bit more? >> Yeah. So, so we are working we are officially working and we've always been working on this, but we we'll make an announcement as as as as if it was brand new, but it hasn't. It's been years in in development. Um, we're looking now at implementing the the land. So, so we have we we understand the engine now. We're working on farming. We have we have a working farming actually. We have the whole cycle going from from planting the seed, growing it, nurturing it, um nutrients, watering, and harvesting. We we're working on that. Um it's not going to come out in the next build. It's still there is still tons and tons to do. We've got to we've got to save all this data and and then and then put it all together. But yeah, you're going to see bits by bits. We're going to have the building system in there. So, the building system to build up your lamp plot. Then we're going to have the farming system in there to actually go in and interact with your lamp plot, which is obviously part of of the economy as well. So, that that's that's probably the biggest thing that we're working on because that's lots of systems integrated together and you'll be able to fly over and see all these land plots together. I I've I've seen them because obviously I've put all this demo data in there to to and it Yeah, it look it looks amazing. Even just doing like error trails, you know, error trails where you were just flying over just just ground before. Now you're actually flying over land plots. I and I had loads of houses in there and and growing farms and stuff and David said, \"No, you can't release that because that's old artwork.\" So, you know, I was going to release it a ton, but um I may I I may give a demo of of what the farming plots look like. That's in game now. It's just turned off. I can just flick it on with the mod menu. So, I I might have a look at doing that on Friday. >> But but that's but that's farming. It's coming. >> Okay. Very good. >> It will come fast. We also have um we've got logging coming. And on the surface of it, um, login is you just go in the the the login fields and you just chop a few trees down. Um, but we've got so much more than that. I don't really want to go into what we what we're about to deliver for logging, but I think logging will be in the next release. Farming won't be and building. I don't I don't think it will be. I think I think it's too early. We'll probably have prototypes and we might pull them out, but I think login will definitely be in. I say definitely lo login is very likely to be in the next release. Um and not just in the login fields. >> All right. All right. Very good. And then >> and um alongside that we we've also got mining. M mining is being worked alongside login. It uses a very very similar system. This is where all these systems integrate together. I don't know if mining is going to make it in the next build. Not that we can't do mining. There's just a few more bits and pieces that that we want to we want to do with it. So, I'd say at this point there's a 50/50 chance that mining may come at the same time, which um you know, if we get our skates on, that might be a might be closer to 80 or 90%. And those are those are those are core th those are core things that that we're talking about here, you know. >> Yeah, there's there's games that have been built just on PvP. There's games that are built just on mining. There's games I don't know about logging, but um the these are areas where you can have you can build an entire game and ecosystem just around that one singular concept. And we're now at a place where we have so much coming into fruition that wow, like this is turning into that original vision of just being able to go and participate in so many different adventures inside the game with freedom, flexibility, but like multiple game loops that are now advancing these systems being put together. Now you just iterate on top of the system based upon feedback and it starts to scale really well. Which is why you guys are starting to see us doing more and more releases with regularity is because a lot of these core core systems are being put together in a way that enables us to start to flesh out some of these visions um more with more reg. >> I know it looks like it looks like we're completely distracted. Do you know we're we're doing racing, we're doing PvP, we're doing dancing, we're doing all these these kind of stuff. The by by the way that that new PVP zone that took that took me 3 hours to implement cuz it was the same the same code. They just moved it over. The the artwork took a lot longer, >> but it only took three hours. >> Yeah. So the most of the time I've been working on on solace on all these others. But yeah, we we've we've not dropped the ball whatsoever. But we've had to go through through this journey of having to have all these systems. And these systems have taken a long time to to put together cuz they're really they're really really complex and they have to build on top of each other and they have to work in multiplayer which is an absolute nightmare to to work in. [snorts] But it is what it is because we're creating an MMO. So, you know, the everything everything is bigger. But when but but yeah, so we've not lost focus. We needed all these other parts in place. Those parts are almost in place, but they're in place enough that we can take what we've got now and and start delivering these bigger challenges, which is solace. Solace has always been the I don't want to say end goal, but Solace has always been the the destination of this this first phase getting us to alpha is to deliver the MMO with all the other all the other bells and whistles alongside it. But yeah, Solace, the PvP, and the PVP, oh, we don't want to do PvP. I don't like PvP. You will love PvP. when you're in Solace and you're fighting the rifts, you can't fight rifts unless you know how how PvP works, you know? So, the PVP zones, they're getting ready for for for solace. And um >> Yeah. >> Yeah. >> Honestly, it's amazing what's going to start unfolding in in the next build builds, you know, before Christmas. >> It's really coming to life. Ridiculous. >> Yeah, it's insane. And and we haven't even talked about the prison. So there's a little bit we can talk about with the prison. >> Mhm. >> Correct. Then we can go into our leak. No, >> AI companions and then marketing. But go ahead. >> Yeah, we're working on we're working on prisons as well. This is something that again we've been working on in the background bit by bit. First of all, we we introduced shooting in the game. You know, we'll go back a month ago. And when when you introduce shooting, what happens is people come into the game and they get shot, you know, we call it griefing. And and people's first impression when you go into a game and you get killed, they don't really like that, you know. So [snorts] we we then introduced uh maybe a few builds later, we introduced the the security system where you you you now get flagged and and and now you actually can get shot by um for for doing this griefing. And so we've got the safe zones and we've always said we're going to have safe zones in Solace. Again, it's leading into to what's going to eventually end up in in Solace. When you're building your land, you don't want to be picking up your dandelions. to somebody blast you in the back of your head, you know what I mean? It's not it's not very pleasant. It's going it's going to it's going to ruin your your flowers. But um so so so yes. So so I forgot what I was talking about. I think I was talking about the >> prison >> the prison. Yes. So the next natural step for that is if you get a bounty on your head, um you're going to be off to prison. So you're going to be in a completely different area. You may be on your own. You might be with other players that are and you're going to be in there for a few hours. When I say hours, they could be in-game hours. And um you can either sit there and read a book or you can do a nice little game that we have in there. >> Yeah. >> And and there's more there's more stuff to do in there with with the economy as well. Um that that we'll be building on in case you escape from prison. And there's stuff to do outside the prison. And um yeah, it's quite exciting actually. >> Now that's not next build, is it? >> Maybe. >> Could be. >> I don't think so. I don't think so. The the the prison game itself that has been built I think it's been built for 6 months. Yeah. So it was just it was just really waiting for the for the for the artwork to come, you know. So, so that that was put together in about again another two or three hours, but um yeah, there's still lots of pieces how you get to prison and all the other bits and pieces that that have to go with it. But, um yeah, that then that will be the final piece of that that loop of of bounties and you know the start and that is a >> some people will just want to go to prison because it is such a fun area. [snorts] It shouldn't be but it will. So, it's going to be really cool. Uh, it there's so much so much coming, so much in development, and so much progress. Um, you know, and we've got a cool leak for you, too, with with with more on top of that. But, let me transition into AI Companions. You know, we've had the the AI companion sale recently, and that's going very very well. Uh, the progress there. Uh David got a little immersed with the last release. Uh and so we didn't do the the next video which I think is Kiko. Uh I'm not certain of that, but we we're definitely continuing that here soon. Uh possibly this week with with more on the AI companions. That whole process. Uh the tech is is mostly there. Uh it's just a matter of implementing each individual feature and that's that's coming as well. That's also in development. And you know that's also incredibly innovative. We talked about some of the innovation with uh the multiplayer stuff that and the loading that Rob was talking about and problems we had to solve uh to to make apartments and do some of these things at scale with MMO. Uh but there's also innovation obviously in the form of AI companions and that is enormous. So, for those of you watching that haven't heard about it, we are one of the first, if not the first, to implement in this way uh in an MMO uh AI companions that travel around with you in the form of a drone. There's a large vision for it. Look it up. Uh come join our Discord. You can find out more information in some of the recent announcements. Um but there's there's some really cool stuff. There's also a really good uh video on it if you haven't seen that as well on our channel. um that that co covers the AI companions and the vision for it and where we're going with it. It's very very exciting and it's going to bring a whole unique element to the game that uh really nobody else has done. So uh I I mean I the people have done it in a varied degrees but not to this extent and not with emotional matrix uh where the where the uh drones can actually have emotions uh based upon how you're relating and interacting with them. So that adds a cool element of relationship. So very exciting stuff. Um more on that coming soon. Uh the last segment uh that we have to discuss before we go into our league is uh marketing. So small marketing announcement, big marketing announcement. Um sad marketing announcement. Um my uh Matt has decided that he's going to move into more of his roots in in marketing uh which is more on the outdoor side of things uh in fly fishing and photography and stuff like that. He's got a lot of marketing experience, but he's decided to go back into what he uh rein was was more focused on. Um and so that's a loss for us. However, at the same time, uh, Scruffy has decided to step up, and I've worked with him over the past month along with, uh, Zeke, who's coming into play, uh, as a a marketing player, uh, at at Infinity Rising. So, um, we've lost one, we've gained, uh, two, and, um, and the way that's going to work is that, um, Scruffy and I have been working on some systems together very intentionally to be able to distribute our content at scale, uh, utilizing AI in ways that help us to do a lot more with less. Um, and we've got a entire plan lay laid out where we're going to bring in the engagebot more with with some of that content and with a lot of this game marketing stuff that's coming out. We're going to have more basically campaigns. So, we're going to set up Scruffy and I have built the ability to generate a campaign on maybe it's uh AI companions or maybe it's logging and farming or whatever it may be that's going to have enough frequency and reach with it to where we have a lot of announcements built on that and and that covers our distribution side of things. Then we have the engage side of things where we're going to use the engage bot that many of you know about where you can actually earn and and help us promote and help us take this content and amplify it. Um, so that's going to be coming into play more uh more significantly. So you guys will be able to earn uh playerowned assets and things like that by helping us to push our message out there. [clears throat] Then there's the influencer side of things which I'm really going heavy at right now uh with some tech that Matt had built for us. Um, so Matt, we wish you well uh in your new direction and thank you. I'm going to be bugging you about this tech quite a bit here um because I have to use that uh significantly to uh to reach out to influencers and build that campaign at scale. Um and there's quite a bit more to the marketing plan. However, these are some of the core elements that we really need to handle. Uh Zeke, uh the final announcement there, Zeke is working on helping us get content from the community. Uh, so we have so much new that's happening with the game and we need uh certain quality of video and certain content to help us execute on all those campaigns that I told you guys about. So that's what Zeke's working on. That's what Scruffy and I are working on. And uh, yeah, I think it's going to be very exciting. We're we're really um, heavily focused on systematizing this so that it scales well and that we can execute on it. And it's working. It's working really well so far. So, it's early stages, but we're moving forward quickly. Um, okay. That brings us, excuse [clears throat] me, that brings us to our leak. Do you want to >> bust up the video and we'll talk through it? >> So, yeah. So, so what we have here is a is a fly over of I think this is Solace 3. Yeah, I'm pretty sure it's Solace 3. [snorts] um of the of the land with the with the the new the new uh fences around them. Uh like I say, these fences these fences are temporary. You can see them in the evening. Um they look pretty cool. So, you know, the the land now with the land is now starting to to wake up. It's it's been sat there waiting for us. Um, but yeah, it's really beginning to to wake up and and we'll, you know, we'll be we'll be adding all kinds of stuff to this. I'm I'm really excited to see what the what the community does with with their land, what they're going to start building on it. Um, but we'll have another future uh claim event that that will that will happen in in the future to get some of those those u unclaimed lands in there. We have a little fly over here, but a very of of the of the land. And then we have um very interesting view. >> What's this green filter here? >> Green filter. Yeah. Well, you might have noticed that the some of these shots are very um there's flyovers. There's uh kind of a a gradual rise up or a you know tilt to different kinds of shots that you're maybe not used to that's kind of hinting at something Rob that I think you might as well just go ahead and reveal. Yes, we are also working on a different type of [snorts] not necessarily a companion but but something that was going to offer um some really exciting gameplay. So So we're working on drones as well. So there's no traditional drones as you would imagine maybe like you know like the DJI ones where your character character will have a backpack a drone backpack the drone will will come out and then there'll be different types of of drones. So so some of these drones um we have a recon drone so so that will be able to to go far and and search things have a completely different view of solace. Solace from above is is unbelievable. So So the So these are great for recon. So maybe you want to hunt out, maybe you're looking for rifts, get a really high view, you'll be able to see the smoke. Um maybe you're looking, sorry, for relics, maybe for rifts. You you then see the the rifts and you could fly out. Maybe you just want to go and have a nosy other people's land or maybe you're attacking somebody in in maybe your your group and your clan. So you you can send those out. So So that's one use of them. Another another type >> you put this into a different mode so that you can control it. Correct. >> There's there's there's different mode. What what we've done is we've built kind of um [snorts] the the prototype has everything within it. So so so we've got to see what works and and what doesn't work. So, so those those features may be in all the drones or or or they might be more suitable for for another one. So, for example, that you have firsterson views, which is what we've just seen. We also have a top- down view. Um, some of the drones move faster than others. Um, we have what I'm calling a TV drone. So, those are great for for the PVP areas where somebody will be able to to maybe an influencer instead of actually going and doing the fighting. They'll just be flying their drone around recording, you know, a different camera view. Uh, that's that was a really good view. We have the night vision. Um, David's quite interested to have an infrared vision as as well. So, so we'll look on that. Um, what they have lights on them. Um, I say it will be our first firsterson view. So you can go third person, but you can also go first person or you can go down and maybe or maybe not. I I don't know. Um I do know but I don't know. But there is also a racing mode. So you know that opens up different opportunities. You know that we we can obviously um [snorts] do aerot trails. How good would a trails be just in a drone? Or maybe how good is just drone racing? And this drone might be a little bit OP at the moment. You remember we've got 8 km by 8 km. It can get from one side to the other in about 30 seconds. It goes fast. And this is what I'm talking about the performance before. As it's flying over Solace, it's looking down on all these land plots with all these literally hundreds and thousands of different pieces. you know, it can't fly and then we're loading like an old school spectrum. We can't do any of that. It all has to be instant. So, um, yeah, watch out for that as well. We've been busy. Very. And, uh, yeah, it's incredibly exciting. Of course, as always, I can't wait for all of us to come out, but it's just so so fun to see what you can create when you have a vision for something and you have a a motivated team, a passionate team. You, David, the rest of the team, we're all solving problems in varied capacities uh to help us achieve a ridiculously large vision, one step at a time. And once again, this is a forever game. So, we're just going to keep building and releasing and adding more and more and more. So, if that is your mindset, like if we're going to build for the next 15 years, well, the vision needs to be large because there's a lot that we can accomplish. And especially when you put your mind to it and you really focus on certain things and you get creative, what >> focus? Yeah, I forgot about the photography drone. [laughter] >> Yeah, good call. Um, great call. Yeah. So, what does that enable with marketing when there's a photography drone that can travel around and see different things and and and very there's just so much that this opens up. But, um, yeah, it's just incredibly exciting to see all this coming to fruition at a time um, when we need it to really. Uh there's a lot that that needs to happen and we we are so near alpha uh that we've just got I you know it's just exciting stuff. Um I guess that brings us to our last segment which is uh questions. I have I think one question for you and you have one question for me. So, I'll go ahead and start uh with your question and I don't know how to read the name B Oxygen 3N B Oxygen 3N um from Regiment maybe. Oh, this might be one of our our our people from the Regiment group. Just in case devs see these chats, I'm going to keep asking about implementing keyboard binding changes enabled. I'm left-handed and can't WD. I've been using the directional keys and surrounding for 30 years. So, Rob Yeah, we we know how to do bindings. They're really really complicated the in they're the they're the complic they are and they're not complicated. What what why they why they why they're not complicated is because it it maybe takes two or three minutes to set up one key binding. It's just a little bit fiddly. Uh but Unreal Engine does give us the tools to do that. Where it gets really tricky is the amount that we have to do and the controls are constantly changing. So, for example, when when you when you're running around the the normal the the normal control set, I think there might be about 30 different controls where where you you've got auto run, you've got backwards, forward, you've got all those kind of key bindings, then you've got all the the mouse options. Um, but then when you go and play something like rumble ball, we completely change the the control sets. So those have to be done as well. And then when you go into hot zones, th those change as well. Then when you go into racing, they change. And then some of the other modes in the future, they are all changing. So if we introduce key bindings at this stage, it's one of those things where we're forever going back and now we have to remember to go back and and change those. And I know it's an absolute pain for people to to do that, but we know how to do it and we will get to it in the future, but it's not something at the moment that that is on our on our short term because it because we basically be doing the work two or three times and we it's one of these things that we're forever going back. Um, I often play I know quite a few left-handed players and they and they also report the the same things and we have we also have some colorblind people, you know. So, these quality of life things we know how to do, but we're just not there at the moment. We're not at that optimization kind of final tuning bit. You usually get that that kind of bit just before the game goes live. So, you'll go alpha beta and then you'll tidy everything up before it goes live, you know. So, so, so th those will kind of come there, but um if you can use a game controller, I know it's not ideal or there is also some alternatives where you can you can you can get third parties that that can that can do the key bindings for you. It's not ideal. I don't like to say we're not going to get there. We will get there in the future. It's the same with VOIPE. We so wanted VO in years ago. >> Yeah. Everything, you know, we want to be able to do everything all at once. Uh but the reality is obviously we've got limited resources and we have to choose what we can do with those resources carefully uh while trying to keep you guys entertained working in parallel on some of the core game loops in the back end and and and new systems and all sorts of things. It's a balancing act and uh we do our best with what we can. Uh but yeah, we we we hear you on that and and we will get there and like Rob said, there's there's polish needed. Um Rob, I think you said you have one more question for >> Yep. We're going to run out of time. Although we we do more questions, but um this one is from out for the job. Definitely said that wrong. Um any any updates on the on the the POA, the player owned assets from the operators bundle? We had some minting from founders and Pathfinders. We're just curious on the operators. >> No, that's a great question. And you know what? I really want to get those delivered uh as well. Uh there's quite a bit more that needs to be done there. That's just also been a matter of time and what can we execute on, but I'm going to talk to Jeff about that today and see what we can get going on the operators bundle uh as well. Uh because we want to keep that we want to keep that going, keep releasing some of those playerowned assets uh to you guys uh as well. And this just in. We can close out with this. Rob, you didn't know this occurred. Uh, but I saw it pop up and so I'm just going to go ahead and share this a little hint at what um prison >> I don't know. [snorts] >> Does David Chedd has he? >> Yeah. Yeah. He said we could we could show this. So, this is just a final thing to get your curiosity going cuz hm just looks like a ship. I don't know, but it's pretty cool looking. Um, and there's our hint at prison. And with that, uh, we can go ahead and close out this episode 157. Thank you all for watching. Be sure to like, comment, subscribe, help us get this message out there, and again, um, if you haven't [snorts] got in the game, come join our Discord. Go to our website, download the game if you can. Uh, there's been codes given out. You can always come into Discord, ask for a code. Um, or you can just get an asset from the store and that'll get you into the game. But thank you all for watching episode 157. We'll see you on the next one. Bye-bye. >> Bye-bye. >> What is intelligence? Is it the ability [music] to calculate, to learn, to solve a problem? A machine can remember your name, but can [music] it understand why you gave it? It can recognize your voice, but can it hear [music] when something has changed? Perhaps intelligence was never the difficult part. Perhaps the difficult part [music] was attention, emotion, memory. Emotion was [music] once treated as noise inside the signal. But without emotion, what gives intelligence direction? What makes one moment matter more than another? and without meaning. [music] Can intelligence ever truly understand us? These questions [music] are no longer theoretical. In your world, artificial intelligence is learning to speak, create, reason, and remember. In ours, it is learning to walk beside us. [music] Across the Cornicopius Republic, manufacturers are taking this expanding technology [music] beyond laboratories and terminals and giving it a place in the world. They are building machines that can carry, explore, protect, and fight. But some are reaching for [music] something more. Companions that listen, learn, remember. [music] And our world needs them. The republic is vast. The nation in the sky is growing. [music] Its frontiers are dangerous. There are ruins to explore, settlements to build, something to protect. [music] And no one should have to face it alone. Hey guys, Emma here [music] and it's time you met the first generation of our AI companion drones, [music] Alita from Jet Industries with style. Fast, perceptive, fiercely protective, and never [music] short on opinions. She remembers what matters and worries about you more than she will admit. Aeron, [music] measured, dependable, and maybe a little handsome. He watches before he acts and always has your back. [music] Kiko from the engineers at Kazakura. Precise, calm, and [music] observant. Nothing gets past her, and she will stay with you through thick and thin. And then there is Clanker from Rando's Metal Works. [music] Improvised, heavily armed, a little chaotic, and somehow still functional. These companions can follow, defend, and stand beside you. But what matters most cannot [music] be measured through armor or firepower. They listen. They remember. They change with you. The way you speak to them [music] matters. The life you share with them matters. Each will become a reflection of the journey it takes and the person beside it. They were [music] built to accompany you. But what they become, you will decide [music] together. [music]",
+  "has_transcript": true
+}

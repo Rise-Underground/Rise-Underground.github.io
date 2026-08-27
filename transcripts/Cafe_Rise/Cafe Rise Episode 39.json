@@ -1,0 +1,4669 @@
+{
+  "video_id": "QWHL4kOqrNQ",
+  "title": "DEV UPDATES + Q&A | COPICafe Episode 39 | Cornucopias",
+  "upload_date": "20230127",
+  "duration_seconds": 2367,
+  "description": "Rob and Josh give a huge update on the mobile games development. Josh goes on to explain some exiting news for the racing game. Rob and Josh then expand upon a few other updates relating to Solace. Josh explains how you can find the winning meme from our meme contest and then moves on to answer 3 community questions. Finally, Rob and Josh move on to share some exciting new leaks!\n\nEntheos A.I https://www.entheosart.com/\n\n00:00 Beverage Choices\n04:41 Mobile Update\n08:28 Racing Game Update\n15:12 General Updates\n20:13 Meme Contest Results\n22:07 Questions from the community\n30:00 Leaks\n\nhttps://linktr.ee/cornucopias.game",
+  "view_count": 2025,
+  "url": "https://www.youtube.com/watch?v=QWHL4kOqrNQ",
+  "slug": "dev-updates-qa-copicafe-episode-39-cornucopias",
+  "transcript": [
+    {
+      "start": 2.08,
+      "duration": 9.52,
+      "text": "[Music]"
+    },
+    {
+      "start": 9.52,
+      "duration": 4.4,
+      "text": "hey everyone welcome to copi Cafe"
+    },
+    {
+      "start": 11.6,
+      "duration": 3.2,
+      "text": "episode 39 we're excited to be here with"
+    },
+    {
+      "start": 13.92,
+      "duration": 3.36,
+      "text": "you"
+    },
+    {
+      "start": 14.8,
+      "duration": 4.0,
+      "text": "today dang I was so excited with that"
+    },
+    {
+      "start": 17.28,
+      "duration": 3.4,
+      "text": "intro that my dog got up and he's going"
+    },
+    {
+      "start": 18.8,
+      "duration": 3.72,
+      "text": "to look for a toy to throw to me so"
+    },
+    {
+      "start": 20.68,
+      "duration": 6.52,
+      "text": "hopefully that's not in the audio we got"
+    },
+    {
+      "start": 22.52,
+      "duration": 7.08,
+      "text": "Rob Greg here Josh Jones um and uh yeah"
+    },
+    {
+      "start": 27.2,
+      "duration": 5.32,
+      "text": "some cool little updates for you today"
+    },
+    {
+      "start": 29.6,
+      "duration": 4.28,
+      "text": "should be quick episode hopefully but uh"
+    },
+    {
+      "start": 32.52,
+      "duration": 4.36,
+      "text": "yeah we're glad to be here and glad to"
+    },
+    {
+      "start": 33.88,
+      "duration": 6.68,
+      "text": "tell you what's going on with uh copi uh"
+    },
+    {
+      "start": 36.88,
+      "duration": 7.64,
+      "text": "corn copius so Rob what are you drinking"
+    },
+    {
+      "start": 40.56,
+      "duration": 6.68,
+      "text": "today sir yeah so"
+    },
+    {
+      "start": 44.52,
+      "duration": 6.2,
+      "text": "today I'm just gonna grab this I've"
+    },
+    {
+      "start": 47.24,
+      "duration": 6.16,
+      "text": "already made it I'm having real fruit"
+    },
+    {
+      "start": 50.72,
+      "duration": 5.0,
+      "text": "double strength apple and black"
+    },
+    {
+      "start": 53.4,
+      "duration": 4.8,
+      "text": "currant you've made it what do you mean"
+    },
+    {
+      "start": 55.72,
+      "duration": 4.92,
+      "text": "you made it oh well I don't have a I"
+    },
+    {
+      "start": 58.2,
+      "duration": 4.8,
+      "text": "don't have a a tap on tap"
+    },
+    {
+      "start": 60.64,
+      "duration": 5.28,
+      "text": "gotcha and I'm and I'm going to you know"
+    },
+    {
+      "start": 63.0,
+      "duration": 5.52,
+      "text": "Apple black cor and a banana a banana"
+    },
+    {
+      "start": 65.92,
+      "duration": 6.0,
+      "text": "okay that's great so we're bringing food"
+    },
+    {
+      "start": 68.52,
+      "duration": 5.72,
+      "text": "and snacks now to copy Cafe banana yeah"
+    },
+    {
+      "start": 71.92,
+      "duration": 5.48,
+      "text": "why not helps with a"
+    },
+    {
+      "start": 74.24,
+      "duration": 6.28,
+      "text": "hangover all right all right notice"
+    },
+    {
+      "start": 77.4,
+      "duration": 3.12,
+      "text": "anything new about my"
+    },
+    {
+      "start": 80.72,
+      "duration": 9.36,
+      "text": "realm yes you now have a a new image"
+    },
+    {
+      "start": 86.68,
+      "duration": 6.72,
+      "text": "behind you I do"
+    },
+    {
+      "start": 90.08,
+      "duration": 7.12,
+      "text": "got a image it's from entheos"
+    },
+    {
+      "start": 93.4,
+      "duration": 8.04,
+      "text": "AI we got it at cnft con I think you've"
+    },
+    {
+      "start": 97.2,
+      "duration": 7.48,
+      "text": "got one behind you as well"
+    },
+    {
+      "start": 101.44,
+      "duration": 8.36,
+      "text": "yep see if you can make your finger H"
+    },
+    {
+      "start": 104.68,
+      "duration": 8.0,
+      "text": "it not easy to do because the camera's"
+    },
+    {
+      "start": 109.8,
+      "duration": 4.72,
+      "text": "reversed messes with your brain uh"
+    },
+    {
+      "start": 112.68,
+      "duration": 4.16,
+      "text": "anyway so mine's just some abstract"
+    },
+    {
+      "start": 114.52,
+      "duration": 4.12,
+      "text": "trees like just I I don't know if"
+    },
+    {
+      "start": 116.84,
+      "duration": 4.72,
+      "text": "there's people in it are there people in"
+    },
+    {
+      "start": 118.64,
+      "duration": 6.32,
+      "text": "that oh there's a dude there's a little"
+    },
+    {
+      "start": 121.56,
+      "duration": 7.52,
+      "text": "dude right there what dude's doing it"
+    },
+    {
+      "start": 124.96,
+      "duration": 5.8,
+      "text": "looks like something from um Avatar I"
+    },
+    {
+      "start": 129.08,
+      "duration": 3.44,
+      "text": "watched that movie again the other day"
+    },
+    {
+      "start": 130.76,
+      "duration": 3.88,
+      "text": "you're dude you're right wait did you"
+    },
+    {
+      "start": 132.52,
+      "duration": 3.8,
+      "text": "watch the new one or the no I I haven't"
+    },
+    {
+      "start": 134.64,
+      "duration": 5.32,
+      "text": "watched that yet the old one okay so the"
+    },
+    {
+      "start": 136.32,
+      "duration": 6.2,
+      "text": "new one is freaking awesome you watch it"
+    },
+    {
+      "start": 139.96,
+      "duration": 5.08,
+      "text": "yeah three hours long it is a time"
+    },
+    {
+      "start": 142.52,
+      "duration": 5.56,
+      "text": "commitment be ready to uh take a"
+    },
+    {
+      "start": 145.04,
+      "duration": 5.84,
+      "text": "bathroom break but uh I thought it was"
+    },
+    {
+      "start": 148.08,
+      "duration": 5.04,
+      "text": "excellent really amazing Graphics work"
+    },
+    {
+      "start": 150.88,
+      "duration": 6.44,
+      "text": "in there and everything they're doing is"
+    },
+    {
+      "start": 153.12,
+      "duration": 6.8,
+      "text": "is very impressive uh the plot was it's"
+    },
+    {
+      "start": 157.32,
+      "duration": 6.12,
+      "text": "okay but it was just it was enjoyable"
+    },
+    {
+      "start": 159.92,
+      "duration": 4.84,
+      "text": "you know it was be Beauty in in what"
+    },
+    {
+      "start": 163.44,
+      "duration": 3.4,
+      "text": "people are creating"
+    },
+    {
+      "start": 164.76,
+      "duration": 4.68,
+      "text": "there uh"
+    },
+    {
+      "start": 166.84,
+      "duration": 5.76,
+      "text": "so in case you're wondering I haven't"
+    },
+    {
+      "start": 169.44,
+      "duration": 5.76,
+      "text": "announced my drink yet yeah why are you"
+    },
+    {
+      "start": 172.6,
+      "duration": 5.52,
+      "text": "drinking leave everybody hanging yeah"
+    },
+    {
+      "start": 175.2,
+      "duration": 6.24,
+      "text": "what are you drinking um it's really"
+    },
+    {
+      "start": 178.12,
+      "duration": 7.08,
+      "text": "exciting as usual"
+    },
+    {
+      "start": 181.44,
+      "duration": 6.64,
+      "text": "water oh but what's that cup this is"
+    },
+    {
+      "start": 185.2,
+      "duration": 5.56,
+      "text": "Cabo Bob's man I would take you next"
+    },
+    {
+      "start": 188.08,
+      "duration": 4.68,
+      "text": "time you come to Austin but you're like"
+    },
+    {
+      "start": 190.76,
+      "duration": 5.4,
+      "text": "weird about texmax"
+    },
+    {
+      "start": 192.76,
+      "duration": 4.64,
+      "text": "food yeah but I eat I think we're just"
+    },
+    {
+      "start": 196.16,
+      "duration": 5.16,
+      "text": "gonna we're gonna have to convert you"
+    },
+    {
+      "start": 197.4,
+      "duration": 6.04,
+      "text": "sooner or later yeah um but uh yeah it's"
+    },
+    {
+      "start": 201.32,
+      "duration": 6.36,
+      "text": "good it's just I"
+    },
+    {
+      "start": 203.44,
+      "duration": 5.76,
+      "text": "tried huh I tried a bit of sushi I like"
+    },
+    {
+      "start": 207.68,
+      "duration": 5.88,
+      "text": "I like some sushi have to do with text"
+    },
+    {
+      "start": 209.2,
+      "duration": 6.4,
+      "text": "mix just trying new foods okay gotta"
+    },
+    {
+      "start": 213.56,
+      "duration": 5.48,
+      "text": "gotcha this is in the new category to"
+    },
+    {
+      "start": 215.6,
+      "duration": 7.52,
+      "text": "you yeah I feel bad for for you guys in"
+    },
+    {
+      "start": 219.04,
+      "duration": 6.36,
+      "text": "the UK you're like food variety deprived"
+    },
+    {
+      "start": 223.12,
+      "duration": 4.4,
+      "text": "we've gota we gota like next time you"
+    },
+    {
+      "start": 225.4,
+      "duration": 4.84,
+      "text": "come to Austin we're gonna try two new"
+    },
+    {
+      "start": 227.52,
+      "duration": 6.56,
+      "text": "pallets okay maybe we go get some"
+    },
+    {
+      "start": 230.24,
+      "duration": 5.68,
+      "text": "Ethiopian food or or African food or"
+    },
+    {
+      "start": 234.08,
+      "duration": 3.0,
+      "text": "something weird that you've never had"
+    },
+    {
+      "start": 235.92,
+      "duration": 5.32,
+      "text": "have you ever had"
+    },
+    {
+      "start": 237.08,
+      "duration": 7.04,
+      "text": "Thai Thai food um"
+    },
+    {
+      "start": 241.24,
+      "duration": 4.6,
+      "text": "I believe I probably have I I you I"
+    },
+    {
+      "start": 244.12,
+      "duration": 4.48,
+      "text": "can't I can't"
+    },
+    {
+      "start": 245.84,
+      "duration": 4.96,
+      "text": "remember potato type dishes in the UK"
+    },
+    {
+      "start": 248.6,
+      "duration": 5.0,
+      "text": "and then you've got Indian you've got"
+    },
+    {
+      "start": 250.8,
+      "duration": 5.04,
+      "text": "guys have great Indian food there I had"
+    },
+    {
+      "start": 253.6,
+      "duration": 4.16,
+      "text": "a steak last night I had a nice sirine"
+    },
+    {
+      "start": 255.84,
+      "duration": 4.76,
+      "text": "was good we went out for a meal birthday"
+    },
+    {
+      "start": 257.76,
+      "duration": 5.6,
+      "text": "meal I believe a wagu steak is going to"
+    },
+    {
+      "start": 260.6,
+      "duration": 6.2,
+      "text": "be my Friday night I've worked real hard"
+    },
+    {
+      "start": 263.36,
+      "duration": 5.64,
+      "text": "yeah in the gym and on work all week"
+    },
+    {
+      "start": 266.8,
+      "duration": 3.6,
+      "text": "cheat meal kind of thing I had one of"
+    },
+    {
+      "start": 269.0,
+      "duration": 3.44,
+      "text": "those in America that was that was"
+    },
+    {
+      "start": 270.4,
+      "duration": 3.64,
+      "text": "really nice well I made a wagu steak for"
+    },
+    {
+      "start": 272.44,
+      "duration": 3.64,
+      "text": "you when you guys came to my place what"
+    },
+    {
+      "start": 274.04,
+      "duration": 7.12,
+      "text": "did you think on the bar what you think"
+    },
+    {
+      "start": 276.08,
+      "duration": 7.16,
+      "text": "it was really nice yeah very very solid"
+    },
+    {
+      "start": 281.16,
+      "duration": 4.4,
+      "text": "um all right let's get this kicked off"
+    },
+    {
+      "start": 283.24,
+      "duration": 6.28,
+      "text": "let's get this party started Mobile"
+    },
+    {
+      "start": 285.56,
+      "duration": 6.76,
+      "text": "update we'll start with the what might"
+    },
+    {
+      "start": 289.52,
+      "duration": 5.8,
+      "text": "be bad news for some I don't think it's"
+    },
+    {
+      "start": 292.32,
+      "duration": 7.52,
+      "text": "bad news at all really um we're"
+    },
+    {
+      "start": 295.32,
+      "duration": 7.6,
+      "text": "T despite the image we showed last week"
+    },
+    {
+      "start": 299.84,
+      "duration": 6.0,
+      "text": "um which well the the image we showed"
+    },
+    {
+      "start": 302.92,
+      "duration": 6.12,
+      "text": "was revealing of a significant amount of"
+    },
+    {
+      "start": 305.84,
+      "duration": 5.36,
+      "text": "real solid progress that we're making in"
+    },
+    {
+      "start": 309.04,
+      "duration": 4.8,
+      "text": "in the mobile game but we've decided to"
+    },
+    {
+      "start": 311.2,
+      "duration": 6.36,
+      "text": "table it for right now and the reason is"
+    },
+    {
+      "start": 313.84,
+      "duration": 5.72,
+      "text": "this we have three people that we can"
+    },
+    {
+      "start": 317.56,
+      "duration": 5.56,
+      "text": "capture and pull over that we're working"
+    },
+    {
+      "start": 319.56,
+      "duration": 6.4,
+      "text": "on the mobile game and get them more"
+    },
+    {
+      "start": 323.12,
+      "duration": 5.96,
+      "text": "integrated with moving the racing game"
+    },
+    {
+      "start": 325.96,
+      "duration": 5.6,
+      "text": "along faster moving soless along faster"
+    },
+    {
+      "start": 329.08,
+      "duration": 5.2,
+      "text": "and that you know that's where our"
+    },
+    {
+      "start": 331.56,
+      "duration": 4.6,
+      "text": "primary promises to community are uh in"
+    },
+    {
+      "start": 334.28,
+      "duration": 4.08,
+      "text": "terms of utility of these different"
+    },
+    {
+      "start": 336.16,
+      "duration": 4.72,
+      "text": "assets like land and nfts and things"
+    },
+    {
+      "start": 338.36,
+      "duration": 4.76,
+      "text": "like that um the mobile game is an"
+    },
+    {
+      "start": 340.88,
+      "duration": 4.36,
+      "text": "important piece of what we're doing"
+    },
+    {
+      "start": 343.12,
+      "duration": 4.52,
+      "text": "because it captures such a large market"
+    },
+    {
+      "start": 345.24,
+      "duration": 4.16,
+      "text": "share eventually that we'll be able to"
+    },
+    {
+      "start": 347.64,
+      "duration": 3.24,
+      "text": "bring over and integrate with the main"
+    },
+    {
+      "start": 349.4,
+      "duration": 3.8,
+      "text": "game and so there's a variety of things"
+    },
+    {
+      "start": 350.88,
+      "duration": 5.16,
+      "text": "that we're looking at doing there um the"
+    },
+    {
+      "start": 353.2,
+      "duration": 5.68,
+      "text": "good news is that we have developed a"
+    },
+    {
+      "start": 356.04,
+      "duration": 5.56,
+      "text": "mobile game uh We've developed testing"
+    },
+    {
+      "start": 358.88,
+      "duration": 5.12,
+      "text": "processes with that and refined our"
+    },
+    {
+      "start": 361.6,
+      "duration": 4.32,
+      "text": "testing process we've improved our"
+    },
+    {
+      "start": 364.0,
+      "duration": 4.88,
+      "text": "mobile mobile Dev on developing on"
+    },
+    {
+      "start": 365.92,
+      "duration": 6.24,
+      "text": "Unreal Engine 5 which is fantastic so"
+    },
+    {
+      "start": 368.88,
+      "duration": 4.52,
+      "text": "we've got a very integrated feel now"
+    },
+    {
+      "start": 372.16,
+      "duration": 3.44,
+      "text": "where we're going to be able to move"
+    },
+    {
+      "start": 373.4,
+      "duration": 5.0,
+      "text": "things along more quickly and we'll get"
+    },
+    {
+      "start": 375.6,
+      "duration": 4.96,
+      "text": "we we will continue with the mobile game"
+    },
+    {
+      "start": 378.4,
+      "duration": 4.52,
+      "text": "uh when the timing is right and we feel"
+    },
+    {
+      "start": 380.56,
+      "duration": 4.08,
+      "text": "like we've really solidified uh some of"
+    },
+    {
+      "start": 382.92,
+      "duration": 4.32,
+      "text": "these other things any comments you have"
+    },
+    {
+      "start": 384.64,
+      "duration": 4.52,
+      "text": "on that Rob well I mean the beauty of"
+    },
+    {
+      "start": 387.24,
+      "duration": 5.68,
+      "text": "that mobile game because because we now"
+    },
+    {
+      "start": 389.16,
+      "duration": 6.08,
+      "text": "built within ue5 we're we're only a"
+    },
+    {
+      "start": 392.92,
+      "duration": 4.76,
+      "text": "month or so into that build is is that"
+    },
+    {
+      "start": 395.24,
+      "duration": 5.96,
+      "text": "those blueprints can be used within the"
+    },
+    {
+      "start": 397.68,
+      "duration": 7.24,
+      "text": "main game and you know Dean's done such"
+    },
+    {
+      "start": 401.2,
+      "duration": 5.68,
+      "text": "a good job of building that the new ui5"
+    },
+    {
+      "start": 404.92,
+      "duration": 5.4,
+      "text": "mobile game that we"
+    },
+    {
+      "start": 406.88,
+      "duration": 6.8,
+      "text": "thought it's it's would be a shame just"
+    },
+    {
+      "start": 410.32,
+      "duration": 6.48,
+      "text": "to release this to create kind of like a"
+    },
+    {
+      "start": 413.68,
+      "duration": 6.96,
+      "text": "lower powered art version of this for a"
+    },
+    {
+      "start": 416.8,
+      "duration": 5.04,
+      "text": "mobile when we can we can use the full"
+    },
+    {
+      "start": 420.64,
+      "duration": 5.56,
+      "text": "power of"
+    },
+    {
+      "start": 421.84,
+      "duration": 6.8,
+      "text": "ue5 and have that game somewhere else"
+    },
+    {
+      "start": 426.2,
+      "duration": 4.12,
+      "text": "with within our within our main PC"
+    },
+    {
+      "start": 428.64,
+      "duration": 4.28,
+      "text": "that's all I'll say within our main game"
+    },
+    {
+      "start": 430.32,
+      "duration": 5.56,
+      "text": "so so none of that code has been wasted"
+    },
+    {
+      "start": 432.92,
+      "duration": 6.28,
+      "text": "whatsoever but yeah we we also noticed"
+    },
+    {
+      "start": 435.88,
+      "duration": 6.12,
+      "text": "that because now Declan and the team are"
+    },
+    {
+      "start": 439.2,
+      "duration": 5.48,
+      "text": "more integrated that there was that you"
+    },
+    {
+      "start": 442.0,
+      "duration": 5.32,
+      "text": "know keeping your ears to the ground"
+    },
+    {
+      "start": 444.68,
+      "duration": 5.04,
+      "text": "David was was having some some extra"
+    },
+    {
+      "start": 447.32,
+      "duration": 5.16,
+      "text": "meetings with Dean to to bring bring him"
+    },
+    {
+      "start": 449.72,
+      "duration": 5.64,
+      "text": "up to speed in in how ue5 works and and"
+    },
+    {
+      "start": 452.48,
+      "duration": 5.96,
+      "text": "Jim was and and some of the other team"
+    },
+    {
+      "start": 455.36,
+      "duration": 6.68,
+      "text": "so we're kind of noticing that you know"
+    },
+    {
+      "start": 458.44,
+      "duration": 5.28,
+      "text": "some resources were slightly moving over"
+    },
+    {
+      "start": 462.04,
+      "duration": 3.32,
+      "text": "to be on the mobile and that and that"
+    },
+    {
+      "start": 463.72,
+      "duration": 3.4,
+      "text": "wasn't the point of the mobile at all"
+    },
+    {
+      "start": 465.36,
+      "duration": 4.2,
+      "text": "the mobile was supposed to be this small"
+    },
+    {
+      "start": 467.12,
+      "duration": 5.72,
+      "text": "team so you"
+    },
+    {
+      "start": 469.56,
+      "duration": 6.0,
+      "text": "know now that that we've moved those"
+    },
+    {
+      "start": 472.84,
+      "duration": 5.28,
+      "text": "resources over to the main game it means"
+    },
+    {
+      "start": 475.56,
+      "duration": 5.16,
+      "text": "that we kind of not leaking skills into"
+    },
+    {
+      "start": 478.12,
+      "duration": 5.32,
+      "text": "the mobile into leaking you know work"
+    },
+    {
+      "start": 480.72,
+      "duration": 5.08,
+      "text": "and time into that mobile game so so"
+    },
+    {
+      "start": 483.44,
+      "duration": 5.52,
+      "text": "therefore you know everybody is back on"
+    },
+    {
+      "start": 485.8,
+      "duration": 5.04,
+      "text": "back on fulltime but working on the mete"
+    },
+    {
+      "start": 488.96,
+      "duration": 5.16,
+      "text": "yeah it just allows for more Synergy"
+    },
+    {
+      "start": 490.84,
+      "duration": 5.28,
+      "text": "with our team and a more rapid"
+    },
+    {
+      "start": 494.12,
+      "duration": 5.6,
+      "text": "development in terms of things like"
+    },
+    {
+      "start": 496.12,
+      "duration": 5.84,
+      "text": "solices Solace and and um you know nfts"
+    },
+    {
+      "start": 499.72,
+      "duration": 5.8,
+      "text": "that have been sold uh that we want to"
+    },
+    {
+      "start": 501.96,
+      "duration": 5.6,
+      "text": "give people our community utility for as"
+    },
+    {
+      "start": 505.52,
+      "duration": 3.52,
+      "text": "quickly as we can which is very excited"
+    },
+    {
+      "start": 507.56,
+      "duration": 3.32,
+      "text": "that brings us to our next topic which"
+    },
+    {
+      "start": 509.04,
+      "duration": 4.28,
+      "text": "is the racing"
+    },
+    {
+      "start": 510.88,
+      "duration": 6.0,
+      "text": "game I want you guys to know what we're"
+    },
+    {
+      "start": 513.32,
+      "duration": 6.44,
+      "text": "doing with and and that that last point"
+    },
+    {
+      "start": 516.88,
+      "duration": 5.36,
+      "text": "is part of this point we want to release"
+    },
+    {
+      "start": 519.76,
+      "duration": 5.84,
+      "text": "anything that we release needs to be"
+    },
+    {
+      "start": 522.24,
+      "duration": 6.24,
+      "text": "Paramount quality triaa type quality"
+    },
+    {
+      "start": 525.6,
+      "duration": 5.2,
+      "text": "what we're doing with the racing game is"
+    },
+    {
+      "start": 528.48,
+      "duration": 4.64,
+      "text": "remarkable we're breaking it down like"
+    },
+    {
+      "start": 530.8,
+      "duration": 3.68,
+      "text": "we're looking at every single detail"
+    },
+    {
+      "start": 533.12,
+      "duration": 3.4,
+      "text": "right now you've done thorough planning"
+    },
+    {
+      "start": 534.48,
+      "duration": 4.16,
+      "text": "on the reward systems and the seasons"
+    },
+    {
+      "start": 536.52,
+      "duration": 4.32,
+      "text": "and the tournaments we we're looking at"
+    },
+    {
+      "start": 538.64,
+      "duration": 4.04,
+      "text": "the breaking system system uh you know"
+    },
+    {
+      "start": 540.84,
+      "duration": 4.28,
+      "text": "there's three different types of braking"
+    },
+    {
+      "start": 542.68,
+      "duration": 4.32,
+      "text": "systems within the vehicles that'll be"
+    },
+    {
+      "start": 545.12,
+      "duration": 3.76,
+      "text": "able to be utilized in the racing game"
+    },
+    {
+      "start": 547.0,
+      "duration": 4.4,
+      "text": "like that is that's when you start to"
+    },
+    {
+      "start": 548.88,
+      "duration": 7.88,
+      "text": "get into the refinement that allows you"
+    },
+    {
+      "start": 551.4,
+      "duration": 7.92,
+      "text": "to you know navigate this race track and"
+    },
+    {
+      "start": 556.76,
+      "duration": 4.56,
+      "text": "improve what's your strategy for I'm I'm"
+    },
+    {
+      "start": 559.32,
+      "duration": 3.44,
+      "text": "only going to be on turn number two I'm"
+    },
+    {
+      "start": 561.32,
+      "duration": 3.76,
+      "text": "only going to be using the reverse"
+    },
+    {
+      "start": 562.76,
+      "duration": 4.88,
+      "text": "thrusters or whatever because you know"
+    },
+    {
+      "start": 565.08,
+      "duration": 4.76,
+      "text": "so you start to get strategy and and"
+    },
+    {
+      "start": 567.64,
+      "duration": 4.44,
+      "text": "elements that allow for this ual"
+    },
+    {
+      "start": 569.84,
+      "duration": 5.52,
+      "text": "Improvement and you know we're breaking"
+    },
+    {
+      "start": 572.08,
+      "duration": 5.12,
+      "text": "down the gears into uh you know or the"
+    },
+    {
+      "start": 575.36,
+      "duration": 4.04,
+      "text": "parts of the vehicle and the upgrades"
+    },
+    {
+      "start": 577.2,
+      "duration": 3.68,
+      "text": "into into all of these different"
+    },
+    {
+      "start": 579.4,
+      "duration": 3.28,
+      "text": "upgrades that you could do with your"
+    },
+    {
+      "start": 580.88,
+      "duration": 3.12,
+      "text": "vehicle and different fun stuff like"
+    },
+    {
+      "start": 582.68,
+      "duration": 3.92,
+      "text": "that"
+    },
+    {
+      "start": 584.0,
+      "duration": 4.92,
+      "text": "sponsorship um that's something for the"
+    },
+    {
+      "start": 586.6,
+      "duration": 4.52,
+      "text": "leak leak image later we'll talk about"
+    },
+    {
+      "start": 588.92,
+      "duration": 5.32,
+      "text": "it more on the leak image we have some"
+    },
+    {
+      "start": 591.12,
+      "duration": 5.6,
+      "text": "really fun stuff happening there so and"
+    },
+    {
+      "start": 594.24,
+      "duration": 5.52,
+      "text": "the afterburners don't forget that the"
+    },
+    {
+      "start": 596.72,
+      "duration": 6.92,
+      "text": "afterburners yes sir the afterburners uh"
+    },
+    {
+      "start": 599.76,
+      "duration": 5.76,
+      "text": "the custom UI for your tooling like your"
+    },
+    {
+      "start": 603.64,
+      "duration": 4.64,
+      "text": "speed and temperature and things like"
+    },
+    {
+      "start": 605.52,
+      "duration": 4.8,
+      "text": "that yeah it's going to be unique per"
+    },
+    {
+      "start": 608.28,
+      "duration": 6.4,
+      "text": "the vehicle that you're driving so if"
+    },
+    {
+      "start": 610.32,
+      "duration": 6.28,
+      "text": "you're in a GTI Javelin it has one um UI"
+    },
+    {
+      "start": 614.68,
+      "duration": 3.56,
+      "text": "that that feels like home to you you"
+    },
+    {
+      "start": 616.6,
+      "duration": 3.2,
+      "text": "know this is this is your tools that"
+    },
+    {
+      "start": 618.24,
+      "duration": 4.96,
+      "text": "you're looking at during the race if"
+    },
+    {
+      "start": 619.8,
+      "duration": 5.08,
+      "text": "you're in a bubble jet it has its own UI"
+    },
+    {
+      "start": 623.2,
+      "duration": 3.16,
+      "text": "um some of the new vehicles that'll be"
+    },
+    {
+      "start": 624.88,
+      "duration": 3.56,
+      "text": "coming out with the racing sale have"
+    },
+    {
+      "start": 626.36,
+      "duration": 5.08,
+      "text": "their own the point there being"
+    },
+    {
+      "start": 628.44,
+      "duration": 5.28,
+      "text": "Paramount quality we we want to launch a"
+    },
+    {
+      "start": 631.44,
+      "duration": 5.68,
+      "text": "AAA and we are going to launch AAA"
+    },
+    {
+      "start": 633.72,
+      "duration": 5.08,
+      "text": "quality Graphics in game uh for you guys"
+    },
+    {
+      "start": 637.12,
+      "duration": 3.48,
+      "text": "so that's that's the first thing that"
+    },
+    {
+      "start": 638.8,
+      "duration": 5.72,
+      "text": "you'll get to experience from cornic"
+    },
+    {
+      "start": 640.6,
+      "duration": 5.68,
+      "text": "Copus uh we are concerned that the"
+    },
+    {
+      "start": 644.52,
+      "duration": 4.16,
+      "text": "racing game doesn't create the"
+    },
+    {
+      "start": 646.28,
+      "duration": 5.6,
+      "text": "perception that cornic Copus is just a"
+    },
+    {
+      "start": 648.68,
+      "duration": 4.4,
+      "text": "racing you know project but yeah uh so"
+    },
+    {
+      "start": 651.88,
+      "duration": 3.76,
+      "text": "we'll have different things that we need"
+    },
+    {
+      "start": 653.08,
+      "duration": 5.0,
+      "text": "to do to to incorporate into that so"
+    },
+    {
+      "start": 655.64,
+      "duration": 5.16,
+      "text": "that people realize that no this is only"
+    },
+    {
+      "start": 658.08,
+      "duration": 6.56,
+      "text": "one small element of what cor cor Copus"
+    },
+    {
+      "start": 660.8,
+      "duration": 6.76,
+      "text": "is doing but uh yeah I'm fired up about"
+    },
+    {
+      "start": 664.64,
+      "duration": 4.64,
+      "text": "it what what it's let's not forget"
+    },
+    {
+      "start": 667.56,
+      "duration": 4.24,
+      "text": "though while while we're building this"
+    },
+    {
+      "start": 669.28,
+      "duration": 5.0,
+      "text": "racing game the majority elements that"
+    },
+    {
+      "start": 671.8,
+      "duration": 4.88,
+      "text": "are going into that we're actually"
+    },
+    {
+      "start": 674.28,
+      "duration": 4.16,
+      "text": "building for the metaverse as well you"
+    },
+    {
+      "start": 676.68,
+      "duration": 4.36,
+      "text": "know so there'll be a reward system in"
+    },
+    {
+      "start": 678.44,
+      "duration": 5.56,
+      "text": "there there will be points and"
+    },
+    {
+      "start": 681.04,
+      "duration": 4.88,
+      "text": "milestones for people to to build"
+    },
+    {
+      "start": 684.0,
+      "duration": 4.56,
+      "text": "there'll be multiplayer in there there's"
+    },
+    {
+      "start": 685.92,
+      "duration": 4.08,
+      "text": "a desktop launcher in there um there"
+    },
+    {
+      "start": 688.56,
+      "duration": 4.96,
+      "text": "will be some leader boards but"
+    },
+    {
+      "start": 690.0,
+      "duration": 5.4,
+      "text": "leaderboards are all powered via apis"
+    },
+    {
+      "start": 693.52,
+      "duration": 4.28,
+      "text": "and then there's a lot of back office"
+    },
+    {
+      "start": 695.4,
+      "duration": 6.0,
+      "text": "testing uh that that will happen with"
+    },
+    {
+      "start": 697.8,
+      "duration": 6.16,
+      "text": "that and with the community as well so a"
+    },
+    {
+      "start": 701.4,
+      "duration": 6.6,
+      "text": "lot of the stuff that is being built for"
+    },
+    {
+      "start": 703.96,
+      "duration": 6.48,
+      "text": "the racing game is directly going to be"
+    },
+    {
+      "start": 708.0,
+      "duration": 4.84,
+      "text": "usable as well for for the metaverse"
+    },
+    {
+      "start": 710.44,
+      "duration": 5.56,
+      "text": "game so so we we've definitely not lost"
+    },
+    {
+      "start": 712.84,
+      "duration": 5.12,
+      "text": "focus on the metaverse whatsoever that"
+    },
+    {
+      "start": 716.0,
+      "duration": 4.32,
+      "text": "is coming along really really well and"
+    },
+    {
+      "start": 717.96,
+      "duration": 6.08,
+      "text": "we've got we've we'll have a few leaks"
+    },
+    {
+      "start": 720.32,
+      "duration": 6.6,
+      "text": "about that later on as well you have a"
+    },
+    {
+      "start": 724.04,
+      "duration": 4.52,
+      "text": "uh really good point there all of this"
+    },
+    {
+      "start": 726.92,
+      "duration": 3.2,
+      "text": "stuff being done in parallel that's why"
+    },
+    {
+      "start": 728.56,
+      "duration": 4.44,
+      "text": "we're also trying to give you updates on"
+    },
+    {
+      "start": 730.12,
+      "duration": 6.0,
+      "text": "copi Cafe on on the different projects"
+    },
+    {
+      "start": 733.0,
+      "duration": 4.32,
+      "text": "that are going on on a weekly basis uh"
+    },
+    {
+      "start": 736.12,
+      "duration": 3.64,
+      "text": "because all these things are happening"
+    },
+    {
+      "start": 737.32,
+      "duration": 5.48,
+      "text": "at the same time but the importance of"
+    },
+    {
+      "start": 739.76,
+      "duration": 5.4,
+      "text": "that point uh of how for example the"
+    },
+    {
+      "start": 742.8,
+      "duration": 6.8,
+      "text": "reward system will scale to other parts"
+    },
+    {
+      "start": 745.16,
+      "duration": 6.32,
+      "text": "of the game is that we're laying"
+    },
+    {
+      "start": 749.6,
+      "duration": 5.32,
+      "text": "we've gone incredibly fast with what"
+    },
+    {
+      "start": 751.48,
+      "duration": 5.76,
+      "text": "we've developed but it's only going to"
+    },
+    {
+      "start": 754.92,
+      "duration": 5.48,
+      "text": "get faster and the reason I say that is"
+    },
+    {
+      "start": 757.24,
+      "duration": 5.04,
+      "text": "things like the reward system now that"
+    },
+    {
+      "start": 760.4,
+      "duration": 4.24,
+      "text": "Foundation is laid we've gone through"
+    },
+    {
+      "start": 762.28,
+      "duration": 4.72,
+      "text": "the iterations back and forth we make"
+    },
+    {
+      "start": 764.64,
+      "duration": 4.48,
+      "text": "minor tweaks to what we bring into the"
+    },
+    {
+      "start": 767.0,
+      "duration": 4.4,
+      "text": "the rest of the game but that makes that"
+    },
+    {
+      "start": 769.12,
+      "duration": 3.84,
+      "text": "next step for us that much faster"
+    },
+    {
+      "start": 771.4,
+      "duration": 3.2,
+      "text": "another example of that would be the"
+    },
+    {
+      "start": 772.96,
+      "duration": 3.8,
+      "text": "work that David's done that we haven't"
+    },
+    {
+      "start": 774.6,
+      "duration": 5.0,
+      "text": "been able to show you guys yet uh but"
+    },
+    {
+      "start": 776.76,
+      "duration": 5.96,
+      "text": "the entrance area where you park your uh"
+    },
+    {
+      "start": 779.6,
+      "duration": 5.24,
+      "text": "bubble jjet when you go to Solace uh the"
+    },
+    {
+      "start": 782.72,
+      "duration": 4.6,
+      "text": "the travel system to get you to the"
+    },
+    {
+      "start": 784.84,
+      "duration": 4.32,
+      "text": "lobby area and then the travel system to"
+    },
+    {
+      "start": 787.32,
+      "duration": 5.68,
+      "text": "get you where you want to go within"
+    },
+    {
+      "start": 789.16,
+      "duration": 7.04,
+      "text": "Solace that whole system replicates to"
+    },
+    {
+      "start": 793.0,
+      "duration": 5.44,
+      "text": "the next Solace and to the next uh even"
+    },
+    {
+      "start": 796.2,
+      "duration": 3.6,
+      "text": "to esparanza but The Branding and the"
+    },
+    {
+      "start": 798.44,
+      "duration": 4.44,
+      "text": "look and feel will change a little bit"
+    },
+    {
+      "start": 799.8,
+      "duration": 5.52,
+      "text": "for esparanza so when when we say it"
+    },
+    {
+      "start": 802.88,
+      "duration": 3.88,
+      "text": "starts to scale this long the long part"
+    },
+    {
+      "start": 805.32,
+      "duration": 5.28,
+      "text": "is laying all these foundational"
+    },
+    {
+      "start": 806.76,
+      "duration": 6.32,
+      "text": "elements all the art for Solace has been"
+    },
+    {
+      "start": 810.6,
+      "duration": 5.44,
+      "text": "produced at this point it'll be used for"
+    },
+    {
+      "start": 813.08,
+      "duration": 5.24,
+      "text": "Solace too uh so we just have to lay"
+    },
+    {
+      "start": 816.04,
+      "duration": 4.8,
+      "text": "that out but that speeds things up as we"
+    },
+    {
+      "start": 818.32,
+      "duration": 4.56,
+      "text": "go additionally bringing on and"
+    },
+    {
+      "start": 820.84,
+      "duration": 4.12,
+      "text": "developing the team members so we'll"
+    },
+    {
+      "start": 822.88,
+      "duration": 4.44,
+      "text": "eventually later this year have four"
+    },
+    {
+      "start": 824.96,
+      "duration": 4.24,
+      "text": "Junior developers working on Solace"
+    },
+    {
+      "start": 827.32,
+      "duration": 4.6,
+      "text": "sectors alone then we'll have another"
+    },
+    {
+      "start": 829.2,
+      "duration": 5.32,
+      "text": "four working on esperenza sectors alone"
+    },
+    {
+      "start": 831.92,
+      "duration": 4.32,
+      "text": "so that speeds things up laying the"
+    },
+    {
+      "start": 834.52,
+      "duration": 4.04,
+      "text": "foundation is the long part even though"
+    },
+    {
+      "start": 836.24,
+      "duration": 4.44,
+      "text": "we've gone incredibly fast it's only"
+    },
+    {
+      "start": 838.56,
+      "duration": 3.96,
+      "text": "speeding up from here so that's the the"
+    },
+    {
+      "start": 840.68,
+      "duration": 4.88,
+      "text": "point I wanted to make there yeah I"
+    },
+    {
+      "start": 842.52,
+      "duration": 4.16,
+      "text": "think think you mentioned the Solace to"
+    },
+    {
+      "start": 845.56,
+      "duration": 4.88,
+      "text": "that's"
+    },
+    {
+      "start": 846.68,
+      "duration": 5.6,
+      "text": "twwo I think I think we've we're"
+    },
+    {
+      "start": 850.44,
+      "duration": 4.56,
+      "text": "definitely in the planning stage we may"
+    },
+    {
+      "start": 852.28,
+      "duration": 5.12,
+      "text": "have started the build on that I'd have"
+    },
+    {
+      "start": 855.0,
+      "duration": 4.32,
+      "text": "to check that but yeah that's very very"
+    },
+    {
+      "start": 857.4,
+      "duration": 3.92,
+      "text": "close well started the build in terms of"
+    },
+    {
+      "start": 859.32,
+      "duration": 4.08,
+      "text": "the fact that we have tons of assets for"
+    },
+    {
+      "start": 861.32,
+      "duration": 4.76,
+      "text": "it we might have started the build on it"
+    },
+    {
+      "start": 863.4,
+      "duration": 5.2,
+      "text": "but we have tons of assets so the"
+    },
+    {
+      "start": 866.08,
+      "duration": 5.16,
+      "text": "initial work you get a long way fairly"
+    },
+    {
+      "start": 868.6,
+      "duration": 6.36,
+      "text": "quickly yeah then the longer harder part"
+    },
+    {
+      "start": 871.24,
+      "duration": 5.56,
+      "text": "of the stage of the development is the"
+    },
+    {
+      "start": 874.96,
+      "duration": 4.72,
+      "text": "refinement which is what we're utilizing"
+    },
+    {
+      "start": 876.8,
+      "duration": 5.8,
+      "text": "that gr grid system for go to you know"
+    },
+    {
+      "start": 879.68,
+      "duration": 4.72,
+      "text": "B52 you made the funny joke last week uh"
+    },
+    {
+      "start": 882.6,
+      "duration": 7.12,
+      "text": "you know go to section"
+    },
+    {
+      "start": 884.4,
+      "duration": 7.24,
+      "text": "113 got you got one on that 113 yeah"
+    },
+    {
+      "start": 889.72,
+      "duration": 5.92,
+      "text": "because there's not a there's not that's"
+    },
+    {
+      "start": 891.64,
+      "duration": 9.04,
+      "text": "that doesn't exist a13"
+    },
+    {
+      "start": 895.64,
+      "duration": 7.48,
+      "text": "A3 that's A1 A1 sauce brown sauce no I'm"
+    },
+    {
+      "start": 900.68,
+      "duration": 4.64,
+      "text": "trying I I thought you might be putting"
+    },
+    {
+      "start": 903.12,
+      "duration": 4.72,
+      "text": "a little Easter egg in there what's"
+    },
+    {
+      "start": 905.32,
+      "duration": 6.0,
+      "text": "what's the number always used in Pixar"
+    },
+    {
+      "start": 907.84,
+      "duration": 6.32,
+      "text": "movies is that a13 oh I have no idea I"
+    },
+    {
+      "start": 911.32,
+      "duration": 5.88,
+      "text": "don't know no what what what got me"
+    },
+    {
+      "start": 914.16,
+      "duration": 5.0,
+      "text": "excited and I saw I I actually saw you"
+    },
+    {
+      "start": 917.2,
+      "duration": 5.32,
+      "text": "and Matt got quite excited about this as"
+    },
+    {
+      "start": 919.16,
+      "duration": 5.24,
+      "text": "well because on on Tuesday in in our"
+    },
+    {
+      "start": 922.52,
+      "duration": 3.24,
+      "text": "weekly meeting all the team gets"
+    },
+    {
+      "start": 924.4,
+      "duration": 5.04,
+      "text": "together and we have kind of like a show"
+    },
+    {
+      "start": 925.76,
+      "duration": 5.8,
+      "text": "and a tell um and to Tobias showed off"
+    },
+    {
+      "start": 929.44,
+      "duration": 5.64,
+      "text": "um some of the work that he's been"
+    },
+    {
+      "start": 931.56,
+      "duration": 6.84,
+      "text": "building in Solace of like a Cave"
+    },
+    {
+      "start": 935.08,
+      "duration": 6.52,
+      "text": "System go through the in the water and"
+    },
+    {
+      "start": 938.4,
+      "duration": 6.44,
+      "text": "and yeah that was quite quite a massive"
+    },
+    {
+      "start": 941.6,
+      "duration": 4.76,
+      "text": "area and I don't know if you mentioned"
+    },
+    {
+      "start": 944.84,
+      "duration": 3.84,
+      "text": "it then but were you're talking about"
+    },
+    {
+      "start": 946.36,
+      "duration": 4.32,
+      "text": "scavenger hunts but then I saw a lot of"
+    },
+    {
+      "start": 948.68,
+      "duration": 3.56,
+      "text": "chatter later on between you and Matt"
+    },
+    {
+      "start": 950.68,
+      "duration": 4.12,
+      "text": "getting excited about the scavenger"
+    },
+    {
+      "start": 952.24,
+      "duration": 5.64,
+      "text": "hunts and well yeah because you know"
+    },
+    {
+      "start": 954.8,
+      "duration": 4.84,
+      "text": "it's this giant explorable land right"
+    },
+    {
+      "start": 957.88,
+      "duration": 5.08,
+      "text": "it's 40 minutes to walk across on the X"
+    },
+    {
+      "start": 959.64,
+      "duration": 5.72,
+      "text": "and Y AIS on each either way that means"
+    },
+    {
+      "start": 962.96,
+      "duration": 4.68,
+      "text": "there's so much exploring to do right"
+    },
+    {
+      "start": 965.36,
+      "duration": 4.28,
+      "text": "and just that alone is is fun as"
+    },
+    {
+      "start": 967.64,
+      "duration": 4.16,
+      "text": "beautiful as we've made it but now if"
+    },
+    {
+      "start": 969.64,
+      "duration": 4.36,
+      "text": "it's like hey when you're out exploring"
+    },
+    {
+      "start": 971.8,
+      "duration": 4.32,
+      "text": "you could find one of these items these"
+    },
+    {
+      "start": 974.0,
+      "duration": 4.76,
+      "text": "are 13 items that we want you to go and"
+    },
+    {
+      "start": 976.12,
+      "duration": 5.04,
+      "text": "find I mean that's that's a loow hanging"
+    },
+    {
+      "start": 978.76,
+      "duration": 5.64,
+      "text": "fruit for a great game for people to go"
+    },
+    {
+      "start": 981.16,
+      "duration": 4.76,
+      "text": "you know just explore and find stuff but"
+    },
+    {
+      "start": 984.4,
+      "duration": 3.76,
+      "text": "obviously there's so much more to what"
+    },
+    {
+      "start": 985.92,
+      "duration": 4.96,
+      "text": "we're building but yeah I mean that was"
+    },
+    {
+      "start": 988.16,
+      "duration": 4.68,
+      "text": "just I mean it was we got we got to move"
+    },
+    {
+      "start": 990.88,
+      "duration": 3.12,
+      "text": "to the next topic though um because"
+    },
+    {
+      "start": 992.84,
+      "duration": 2.8,
+      "text": "we're we're tight what is there"
+    },
+    {
+      "start": 994.0,
+      "duration": 3.12,
+      "text": "something you really what did you want I"
+    },
+    {
+      "start": 995.64,
+      "duration": 3.48,
+      "text": "was I was just going to say to get to"
+    },
+    {
+      "start": 997.12,
+      "duration": 4.88,
+      "text": "that cave system you're going to have to"
+    },
+    {
+      "start": 999.12,
+      "duration": 4.36,
+      "text": "either swim or a canoe or who knows it's"
+    },
+    {
+      "start": 1002.0,
+      "duration": 3.96,
+      "text": "not it's not something you're just going"
+    },
+    {
+      "start": 1003.48,
+      "duration": 5.36,
+      "text": "to stumble across no that's that's a"
+    },
+    {
+      "start": 1005.96,
+      "duration": 5.52,
+      "text": "good point um but they will uh the the"
+    },
+    {
+      "start": 1008.84,
+      "duration": 5.16,
+      "text": "community will all update each other on"
+    },
+    {
+      "start": 1011.48,
+      "duration": 4.44,
+      "text": "how to get there and things will happen"
+    },
+    {
+      "start": 1014.0,
+      "duration": 3.8,
+      "text": "that that enables people to find certain"
+    },
+    {
+      "start": 1015.92,
+      "duration": 4.76,
+      "text": "things for the scavenger hun it'll be"
+    },
+    {
+      "start": 1017.8,
+      "duration": 5.48,
+      "text": "fun to do something like once one person"
+    },
+    {
+      "start": 1020.68,
+      "duration": 4.4,
+      "text": "finds it it moves to a new location for"
+    },
+    {
+      "start": 1023.28,
+      "duration": 3.72,
+      "text": "the next person it'll be crazy all the"
+    },
+    {
+      "start": 1025.08,
+      "duration": 3.84,
+      "text": "YouTube videos here's how you get to"
+    },
+    {
+      "start": 1027.0,
+      "duration": 4.24,
+      "text": "this location and and do this yeah and"
+    },
+    {
+      "start": 1028.92,
+      "duration": 4.92,
+      "text": "then discovered that yeah yeah we'll"
+    },
+    {
+      "start": 1031.24,
+      "duration": 5.64,
+      "text": "change it up okay uh so we've done the"
+    },
+    {
+      "start": 1033.84,
+      "duration": 5.76,
+      "text": "Mobile update we've done the racing game"
+    },
+    {
+      "start": 1036.88,
+      "duration": 4.88,
+      "text": "update uh little updates on Solace I"
+    },
+    {
+      "start": 1039.6,
+      "duration": 4.2,
+      "text": "mean that's just moving along greatly uh"
+    },
+    {
+      "start": 1041.76,
+      "duration": 4.48,
+      "text": "we're going to be adding four new devs"
+    },
+    {
+      "start": 1043.8,
+      "duration": 4.24,
+      "text": "for that probably in about three months"
+    },
+    {
+      "start": 1046.24,
+      "duration": 4.08,
+      "text": "something like that when we're ready to"
+    },
+    {
+      "start": 1048.04,
+      "duration": 5.12,
+      "text": "bring them on and and train them uh"
+    },
+    {
+      "start": 1050.32,
+      "duration": 5.08,
+      "text": "it'll be junior devs uh to to speed up"
+    },
+    {
+      "start": 1053.16,
+      "duration": 4.08,
+      "text": "the sector production and then that'll"
+    },
+    {
+      "start": 1055.4,
+      "duration": 4.24,
+      "text": "beauty of of bringing some of the mobile"
+    },
+    {
+      "start": 1057.24,
+      "duration": 3.96,
+      "text": "team over is they're already trained up"
+    },
+    {
+      "start": 1059.64,
+      "duration": 5.32,
+      "text": "they they know our company well they"
+    },
+    {
+      "start": 1061.2,
+      "duration": 8.6,
+      "text": "know how we work so they're up to speed"
+    },
+    {
+      "start": 1064.96,
+      "duration": 7.36,
+      "text": "yeah agreed uh so the the final updates"
+    },
+    {
+      "start": 1069.8,
+      "duration": 5.08,
+      "text": "I'll cover some of the website and uh"
+    },
+    {
+      "start": 1072.32,
+      "duration": 5.32,
+      "text": "copious Academy and stuff like that all"
+    },
+    {
+      "start": 1074.88,
+      "duration": 4.48,
+      "text": "of that moving forward quickly website"
+    },
+    {
+      "start": 1077.64,
+      "duration": 4.84,
+      "text": "uh where we should have the internal"
+    },
+    {
+      "start": 1079.36,
+      "duration": 5.96,
+      "text": "team uh testing and uh doing the last"
+    },
+    {
+      "start": 1082.48,
+      "duration": 5.56,
+      "text": "minute refinements and quality checks"
+    },
+    {
+      "start": 1085.32,
+      "duration": 4.44,
+      "text": "next week I believe so they're they're"
+    },
+    {
+      "start": 1088.04,
+      "duration": 4.08,
+      "text": "deploying that to the staging"
+    },
+    {
+      "start": 1089.76,
+      "duration": 3.88,
+      "text": "environment right now and uh so then"
+    },
+    {
+      "start": 1092.12,
+      "duration": 4.72,
+      "text": "we'll do internal feedback and"
+    },
+    {
+      "start": 1093.64,
+      "duration": 5.24,
+      "text": "refinement from the um you know all the"
+    },
+    {
+      "start": 1096.84,
+      "duration": 4.08,
+      "text": "little tiny fixes and little tweaks"
+    },
+    {
+      "start": 1098.88,
+      "duration": 3.48,
+      "text": "there that'll start next week and then"
+    },
+    {
+      "start": 1100.92,
+      "duration": 4.04,
+      "text": "hopefully we'll launch the new website"
+    },
+    {
+      "start": 1102.36,
+      "duration": 4.88,
+      "text": "you know I'd say probably two to three"
+    },
+    {
+      "start": 1104.96,
+      "duration": 5.28,
+      "text": "weeks somewhere around there really um"
+    },
+    {
+      "start": 1107.24,
+      "duration": 4.96,
+      "text": "yeah MVP version but it's gonna MVP is"
+    },
+    {
+      "start": 1110.24,
+      "duration": 4.32,
+      "text": "night and day better than what we have"
+    },
+    {
+      "start": 1112.2,
+      "duration": 4.04,
+      "text": "right now February okay yeah super"
+    },
+    {
+      "start": 1114.56,
+      "duration": 5.2,
+      "text": "stoked about that Copus Academy is"
+    },
+    {
+      "start": 1116.24,
+      "duration": 5.04,
+      "text": "moving along um that's not final that"
+    },
+    {
+      "start": 1119.76,
+      "duration": 2.84,
+      "text": "that's the brand name for that but"
+    },
+    {
+      "start": 1121.28,
+      "duration": 3.6,
+      "text": "that's the that's going to be our"
+    },
+    {
+      "start": 1122.6,
+      "duration": 4.16,
+      "text": "gamification of Education platform"
+    },
+    {
+      "start": 1124.88,
+      "duration": 4.0,
+      "text": "things were looking amazing there"
+    },
+    {
+      "start": 1126.76,
+      "duration": 4.92,
+      "text": "constantly looking at that the nft"
+    },
+    {
+      "start": 1128.88,
+      "duration": 5.68,
+      "text": "marketplace is is coming along um just"
+    },
+    {
+      "start": 1131.68,
+      "duration": 6.6,
+      "text": "so much so much under the the hood that"
+    },
+    {
+      "start": 1134.56,
+      "duration": 5.64,
+      "text": "you guys uh are I can't wait to reveal"
+    },
+    {
+      "start": 1138.28,
+      "duration": 3.64,
+      "text": "there there lots of stuff that we're"
+    },
+    {
+      "start": 1140.2,
+      "duration": 3.6,
+      "text": "working on that we just can't tell you"
+    },
+    {
+      "start": 1141.92,
+      "duration": 4.28,
+      "text": "at the moment especially to do with the"
+    },
+    {
+      "start": 1143.8,
+      "duration": 5.28,
+      "text": "racing game and and the website and the"
+    },
+    {
+      "start": 1146.2,
+      "duration": 4.52,
+      "text": "marketplace and yeah that just look for"
+    },
+    {
+      "start": 1149.08,
+      "duration": 3.4,
+      "text": "a lot of good stuff I mean there's just"
+    },
+    {
+      "start": 1150.72,
+      "duration": 5.48,
+      "text": "so much this is a year of delivery it's"
+    },
+    {
+      "start": 1152.48,
+      "duration": 6.56,
+      "text": "the year of the Corn um year of the Corn"
+    },
+    {
+      "start": 1156.2,
+      "duration": 5.44,
+      "text": "yeah just a a lot that's going to happen"
+    },
+    {
+      "start": 1159.04,
+      "duration": 4.48,
+      "text": "this year for us and um I'm really"
+    },
+    {
+      "start": 1161.64,
+      "duration": 4.36,
+      "text": "pumped about it actually had a call with"
+    },
+    {
+      "start": 1163.52,
+      "duration": 4.64,
+      "text": "one of our advisers earlier this morning"
+    },
+    {
+      "start": 1166.0,
+      "duration": 5.04,
+      "text": "where uh David came in and we showed him"
+    },
+    {
+      "start": 1168.16,
+      "duration": 4.84,
+      "text": "around Solace and we showed him some of"
+    },
+    {
+      "start": 1171.04,
+      "duration": 3.56,
+      "text": "the uh the stuff that we haven't shared"
+    },
+    {
+      "start": 1173.0,
+      "duration": 3.12,
+      "text": "with the community yet but the logistics"
+    },
+    {
+      "start": 1174.6,
+      "duration": 4.28,
+      "text": "system for getting into the domes and"
+    },
+    {
+      "start": 1176.12,
+      "duration": 5.84,
+      "text": "all of that blown away he was like oh my"
+    },
+    {
+      "start": 1178.88,
+      "duration": 5.12,
+      "text": "gosh this is yeah so it's it's really"
+    },
+    {
+      "start": 1181.96,
+      "duration": 3.96,
+      "text": "fun because you get you talk to people"
+    },
+    {
+      "start": 1184.0,
+      "duration": 4.2,
+      "text": "like that that are talking to so many"
+    },
+    {
+      "start": 1185.92,
+      "duration": 3.44,
+      "text": "projects that they've been a part of and"
+    },
+    {
+      "start": 1188.2,
+      "duration": 4.04,
+      "text": "building because they're you know"
+    },
+    {
+      "start": 1189.36,
+      "duration": 4.84,
+      "text": "they're like a a launcher of projects"
+    },
+    {
+      "start": 1192.24,
+      "duration": 4.08,
+      "text": "and um it was the master Ventures group"
+    },
+    {
+      "start": 1194.2,
+      "duration": 5.16,
+      "text": "that I was talking to Kyle and you know"
+    },
+    {
+      "start": 1196.32,
+      "duration": 4.56,
+      "text": "they get perspective from from uh what's"
+    },
+    {
+      "start": 1199.36,
+      "duration": 3.32,
+      "text": "happening in the industry and and"
+    },
+    {
+      "start": 1200.88,
+      "duration": 3.68,
+      "text": "they're just really encouraged to see"
+    },
+    {
+      "start": 1202.68,
+      "duration": 4.12,
+      "text": "people in the bare Market that are just"
+    },
+    {
+      "start": 1204.56,
+      "duration": 5.16,
+      "text": "building and building building like we"
+    },
+    {
+      "start": 1206.8,
+      "duration": 4.56,
+      "text": "are and and so he was real positive"
+    },
+    {
+      "start": 1209.72,
+      "duration": 3.48,
+      "text": "about what we've got going on so that"
+    },
+    {
+      "start": 1211.36,
+      "duration": 4.56,
+      "text": "was good good to have that call all"
+    },
+    {
+      "start": 1213.2,
+      "duration": 6.12,
+      "text": "right we got a meme"
+    },
+    {
+      "start": 1215.92,
+      "duration": 5.84,
+      "text": "winner we show the meme but go to our"
+    },
+    {
+      "start": 1219.32,
+      "duration": 3.8,
+      "text": "Twitter it's the pin tweet right now"
+    },
+    {
+      "start": 1221.76,
+      "duration": 3.48,
+      "text": "what would you say about it did you like"
+    },
+    {
+      "start": 1223.12,
+      "duration": 4.4,
+      "text": "that one were you happy with the winner"
+    },
+    {
+      "start": 1225.24,
+      "duration": 4.4,
+      "text": "um yeah I thought I thought all four"
+    },
+    {
+      "start": 1227.52,
+      "duration": 5.24,
+      "text": "entries were really really really strong"
+    },
+    {
+      "start": 1229.64,
+      "duration": 4.88,
+      "text": "it's not the winner was it's not the one"
+    },
+    {
+      "start": 1232.76,
+      "duration": 5.48,
+      "text": "I voted for but you can only vote for"
+    },
+    {
+      "start": 1234.52,
+      "duration": 6.28,
+      "text": "one of them yeah yeah um I I thought"
+    },
+    {
+      "start": 1238.24,
+      "duration": 6.56,
+      "text": "they were to go to our Twitter check out"
+    },
+    {
+      "start": 1240.8,
+      "duration": 5.56,
+      "text": "the meme winners share it like it um"
+    },
+    {
+      "start": 1244.8,
+      "duration": 3.36,
+      "text": "it's the year of the Corn guys let's"
+    },
+    {
+      "start": 1246.36,
+      "duration": 3.52,
+      "text": "keep these memes going we're gonna they"
+    },
+    {
+      "start": 1248.16,
+      "duration": 3.68,
+      "text": "were all really happy I I was quite"
+    },
+    {
+      "start": 1249.88,
+      "duration": 4.88,
+      "text": "pleased as well that"
+    },
+    {
+      "start": 1251.84,
+      "duration": 7.08,
+      "text": "um Empire she came"
+    },
+    {
+      "start": 1254.76,
+      "duration": 6.08,
+      "text": "second um must have put in May maybe"
+    },
+    {
+      "start": 1258.92,
+      "duration": 5.48,
+      "text": "about a hundred different"
+    },
+    {
+      "start": 1260.84,
+      "duration": 5.2,
+      "text": "memes so so it was it it was you know it"
+    },
+    {
+      "start": 1264.4,
+      "duration": 3.32,
+      "text": "was it was there's so many there's so"
+    },
+    {
+      "start": 1266.04,
+      "duration": 4.04,
+      "text": "many memes I really encourage you guys"
+    },
+    {
+      "start": 1267.72,
+      "duration": 5.2,
+      "text": "in the community just go to Twitter and"
+    },
+    {
+      "start": 1270.08,
+      "duration": 7.2,
+      "text": "do a search for the hashtag yearofthe"
+    },
+    {
+      "start": 1272.92,
+      "duration": 6.52,
+      "text": "corn yep so and I I don't this might be"
+    },
+    {
+      "start": 1277.28,
+      "duration": 5.12,
+      "text": "an announcement or not but we are giving"
+    },
+    {
+      "start": 1279.44,
+      "duration": 4.44,
+      "text": "away the fourth prize as well aren't we"
+    },
+    {
+      "start": 1282.4,
+      "duration": 2.64,
+      "text": "yeah I don't know if we announced that"
+    },
+    {
+      "start": 1283.88,
+      "duration": 2.92,
+      "text": "publicly yet no because that was"
+    },
+    {
+      "start": 1285.04,
+      "duration": 4.36,
+      "text": "discussed in a team meeting that was"
+    },
+    {
+      "start": 1286.8,
+      "duration": 4.64,
+      "text": "your your suggestion I fully agree with"
+    },
+    {
+      "start": 1289.4,
+      "duration": 4.68,
+      "text": "it it's everyone's a winner yeah"
+    },
+    {
+      "start": 1291.44,
+      "duration": 4.12,
+      "text": "everyone's a winner not everyone that"
+    },
+    {
+      "start": 1294.08,
+      "duration": 2.64,
+      "text": "made one but hey you know what you're a"
+    },
+    {
+      "start": 1295.56,
+      "duration": 2.96,
+      "text": "winner because we're going to try to"
+    },
+    {
+      "start": 1296.72,
+      "duration": 5.68,
+      "text": "display as many of those that we can"
+    },
+    {
+      "start": 1298.52,
+      "duration": 6.16,
+      "text": "this year and just to be a part of"
+    },
+    {
+      "start": 1302.4,
+      "duration": 4.0,
+      "text": "collectively creating you know with our"
+    },
+    {
+      "start": 1304.68,
+      "duration": 3.48,
+      "text": "community that's what that was this"
+    },
+    {
+      "start": 1306.4,
+      "duration": 4.12,
+      "text": "project and what we were doing I've seen"
+    },
+    {
+      "start": 1308.16,
+      "duration": 4.08,
+      "text": "some other people have taken on uh some"
+    },
+    {
+      "start": 1310.52,
+      "duration": 3.68,
+      "text": "of they've seen what we're doing and so"
+    },
+    {
+      "start": 1312.24,
+      "duration": 4.44,
+      "text": "other groups are doing meme contests"
+    },
+    {
+      "start": 1314.2,
+      "duration": 4.6,
+      "text": "which is is cool it's an endearment it's"
+    },
+    {
+      "start": 1316.68,
+      "duration": 5.96,
+      "text": "a it's a compliment they like the idea"
+    },
+    {
+      "start": 1318.8,
+      "duration": 6.64,
+      "text": "great um copy copy we don't mind copy"
+    },
+    {
+      "start": 1322.64,
+      "duration": 5.84,
+      "text": "copy we don't mind at all please it's"
+    },
+    {
+      "start": 1325.44,
+      "duration": 5.08,
+      "text": "endearing we we we love that um so three"
+    },
+    {
+      "start": 1328.48,
+      "duration": 5.68,
+      "text": "questions from the community that's next"
+    },
+    {
+      "start": 1330.52,
+      "duration": 7.72,
+      "text": "up okay question you want answer you"
+    },
+    {
+      "start": 1334.16,
+      "duration": 6.44,
+      "text": "want me to I I don't have it on my"
+    },
+    {
+      "start": 1338.24,
+      "duration": 4.76,
+      "text": "screen I close I close all the"
+    },
+    {
+      "start": 1340.6,
+      "duration": 4.68,
+      "text": "applications down because it makes my it"
+    },
+    {
+      "start": 1343.0,
+      "duration": 3.68,
+      "text": "makes the streaming go slower yeah we"
+    },
+    {
+      "start": 1345.28,
+      "duration": 3.8,
+      "text": "need to we need to figure that out for"
+    },
+    {
+      "start": 1346.68,
+      "duration": 5.88,
+      "text": "your PC all right"
+    },
+    {
+      "start": 1349.08,
+      "duration": 6.24,
+      "text": "uh when is the map land grab uh when is"
+    },
+    {
+      "start": 1352.56,
+      "duration": 5.76,
+      "text": "the map and the land grab I'll take that"
+    },
+    {
+      "start": 1355.32,
+      "duration": 6.08,
+      "text": "question um and then I'll give you you"
+    },
+    {
+      "start": 1358.32,
+      "duration": 5.28,
+      "text": "get the other two questions Rob maybe"
+    },
+    {
+      "start": 1361.4,
+      "duration": 3.68,
+      "text": "I'll just sit quiet I don't know I might"
+    },
+    {
+      "start": 1363.6,
+      "duration": 5.24,
+      "text": "have to interject sometimes it's hard"
+    },
+    {
+      "start": 1365.08,
+      "duration": 6.12,
+      "text": "for me to not talk all right so when the"
+    },
+    {
+      "start": 1368.84,
+      "duration": 4.52,
+      "text": "map and land grab you know what I would"
+    },
+    {
+      "start": 1371.2,
+      "duration": 4.24,
+      "text": "love to do that next month but the"
+    },
+    {
+      "start": 1373.36,
+      "duration": 5.16,
+      "text": "reality is we wanted to get something in"
+    },
+    {
+      "start": 1375.44,
+      "duration": 5.04,
+      "text": "your hand uh which is the racing game to"
+    },
+    {
+      "start": 1378.52,
+      "duration": 4.56,
+      "text": "get some utility for those vehicles and"
+    },
+    {
+      "start": 1380.48,
+      "duration": 4.72,
+      "text": "and that was that's a smaller scale"
+    },
+    {
+      "start": 1383.08,
+      "duration": 4.4,
+      "text": "project that we get to you know get in"
+    },
+    {
+      "start": 1385.2,
+      "duration": 4.12,
+      "text": "the community's hands quickly doesn't"
+    },
+    {
+      "start": 1387.48,
+      "duration": 5.52,
+      "text": "mean we're not working on the land grab"
+    },
+    {
+      "start": 1389.32,
+      "duration": 6.0,
+      "text": "like Solace is in full steam ahead uh so"
+    },
+    {
+      "start": 1393.0,
+      "duration": 4.08,
+      "text": "we are taring for later this year"
+    },
+    {
+      "start": 1395.32,
+      "duration": 3.88,
+      "text": "something with a map and and some sort"
+    },
+    {
+      "start": 1397.08,
+      "duration": 4.36,
+      "text": "of land grab release I don't know if"
+    },
+    {
+      "start": 1399.2,
+      "duration": 4.04,
+      "text": "we'll hit that Target but we like I said"
+    },
+    {
+      "start": 1401.44,
+      "duration": 3.76,
+      "text": "we are scaling up uh we're going to be"
+    },
+    {
+      "start": 1403.24,
+      "duration": 3.8,
+      "text": "adding on four to eight new Junior"
+    },
+    {
+      "start": 1405.2,
+      "duration": 4.0,
+      "text": "developers so that should help"
+    },
+    {
+      "start": 1407.04,
+      "duration": 4.32,
+      "text": "significantly with that and then we did"
+    },
+    {
+      "start": 1409.2,
+      "duration": 5.2,
+      "text": "just pull over a programmer that would"
+    },
+    {
+      "start": 1411.36,
+      "duration": 6.2,
+      "text": "be able to work on the land plots within"
+    },
+    {
+      "start": 1414.4,
+      "duration": 5.68,
+      "text": "Solace and so we are moving as rapidly"
+    },
+    {
+      "start": 1417.56,
+      "duration": 5.16,
+      "text": "as we can very efficiently through the"
+    },
+    {
+      "start": 1420.08,
+      "duration": 4.12,
+      "text": "process of getting that in your hands"
+    },
+    {
+      "start": 1422.72,
+      "duration": 3.72,
+      "text": "but I don't I really don't want to say a"
+    },
+    {
+      "start": 1424.2,
+      "duration": 4.4,
+      "text": "date it's difficult important to us that"
+    },
+    {
+      "start": 1426.44,
+      "duration": 3.44,
+      "text": "we get that in your hands it is"
+    },
+    {
+      "start": 1428.6,
+      "duration": 4.12,
+      "text": "difficult because we've not we've not"
+    },
+    {
+      "start": 1429.88,
+      "duration": 5.0,
+      "text": "just kind of sold random land or or you"
+    },
+    {
+      "start": 1432.72,
+      "duration": 5.4,
+      "text": "know little squares that that we have to"
+    },
+    {
+      "start": 1434.88,
+      "duration": 4.84,
+      "text": "actually build out the land and figure"
+    },
+    {
+      "start": 1438.12,
+      "duration": 4.76,
+      "text": "out still in"
+    },
+    {
+      "start": 1439.72,
+      "duration": 5.64,
+      "text": "uae5 how many plots we're going to have"
+    },
+    {
+      "start": 1442.88,
+      "duration": 4.44,
+      "text": "per District so we don't actually know"
+    },
+    {
+      "start": 1445.36,
+      "duration": 3.88,
+      "text": "how many solices that there's going to"
+    },
+    {
+      "start": 1447.32,
+      "duration": 3.84,
+      "text": "be yet there might be solace one two"
+    },
+    {
+      "start": 1449.24,
+      "duration": 3.92,
+      "text": "three four five and the reason you say"
+    },
+    {
+      "start": 1451.16,
+      "duration": 3.96,
+      "text": "that is because of performance we have"
+    },
+    {
+      "start": 1453.16,
+      "duration": 4.08,
+      "text": "to see how many we push as much as we"
+    },
+    {
+      "start": 1455.12,
+      "duration": 4.44,
+      "text": "can right we have to test the"
+    },
+    {
+      "start": 1457.24,
+      "duration": 4.52,
+      "text": "performance of that sector make sure"
+    },
+    {
+      "start": 1459.56,
+      "duration": 4.32,
+      "text": "that we're delivering on top quality and"
+    },
+    {
+      "start": 1461.76,
+      "duration": 4.24,
+      "text": "if we have to go down in the number of"
+    },
+    {
+      "start": 1463.88,
+      "duration": 3.56,
+      "text": "plots that goes that we had projected"
+    },
+    {
+      "start": 1466.0,
+      "duration": 3.76,
+      "text": "that means we would have to do one more"
+    },
+    {
+      "start": 1467.44,
+      "duration": 5.48,
+      "text": "solace or whatever but that's okay all"
+    },
+    {
+      "start": 1469.76,
+      "duration": 5.48,
+      "text": "of that is because our our vision is to"
+    },
+    {
+      "start": 1472.92,
+      "duration": 4.68,
+      "text": "bring you top quality and you're going"
+    },
+    {
+      "start": 1475.24,
+      "duration": 4.96,
+      "text": "to get a land plot that's its own unique"
+    },
+    {
+      "start": 1477.6,
+      "duration": 4.88,
+      "text": "feel like our our entire all of these"
+    },
+    {
+      "start": 1480.2,
+      "duration": 4.16,
+      "text": "environments that we're creating are"
+    },
+    {
+      "start": 1482.48,
+      "duration": 4.04,
+      "text": "worth exploring they're they're all"
+    },
+    {
+      "start": 1484.36,
+      "duration": 4.8,
+      "text": "different it's not like everybody gets"
+    },
+    {
+      "start": 1486.52,
+      "duration": 5.28,
+      "text": "the exact same land plot that's a good"
+    },
+    {
+      "start": 1489.16,
+      "duration": 5.64,
+      "text": "point Solace 2 will not be the same"
+    },
+    {
+      "start": 1491.8,
+      "duration": 6.2,
+      "text": "layout as solace one and Solace three"
+    },
+    {
+      "start": 1494.8,
+      "duration": 5.48,
+      "text": "they're all they're all complete built"
+    },
+    {
+      "start": 1498.0,
+      "duration": 4.2,
+      "text": "built from scratch a lot of the items"
+    },
+    {
+      "start": 1500.28,
+      "duration": 3.72,
+      "text": "are hand placed down some of the"
+    },
+    {
+      "start": 1502.2,
+      "duration": 3.64,
+      "text": "procedurally generated but a lot of them"
+    },
+    {
+      "start": 1504.0,
+      "duration": 3.36,
+      "text": "are hand placed and then they have to be"
+    },
+    {
+      "start": 1505.84,
+      "duration": 3.32,
+      "text": "tested to make sure you can get in and"
+    },
+    {
+      "start": 1507.36,
+      "duration": 4.64,
+      "text": "out of these places and that and that"
+    },
+    {
+      "start": 1509.16,
+      "duration": 5.2,
+      "text": "the it works really well from a player's"
+    },
+    {
+      "start": 1512.0,
+      "duration": 5.2,
+      "text": "point of view and all the on all all the"
+    },
+    {
+      "start": 1514.36,
+      "duration": 6.08,
+      "text": "other elements so so yeah it is it is"
+    },
+    {
+      "start": 1517.2,
+      "duration": 4.88,
+      "text": "time consuming but I mean the product"
+    },
+    {
+      "start": 1520.44,
+      "duration": 3.96,
+      "text": "speaks for itself when when you're"
+    },
+    {
+      "start": 1522.08,
+      "duration": 4.48,
+      "text": "walking around Solace or when you when"
+    },
+    {
+      "start": 1524.4,
+      "duration": 4.72,
+      "text": "you see some some of these leaks that"
+    },
+    {
+      "start": 1526.56,
+      "duration": 5.6,
+      "text": "we're about to show you of Solace"
+    },
+    {
+      "start": 1529.12,
+      "duration": 5.48,
+      "text": "yeah and the leak quality so we've"
+    },
+    {
+      "start": 1532.16,
+      "duration": 5.16,
+      "text": "shared videos via YouTube yeah the"
+    },
+    {
+      "start": 1534.6,
+      "duration": 5.56,
+      "text": "quality is it's great there but it's not"
+    },
+    {
+      "start": 1537.32,
+      "duration": 5.52,
+      "text": "quite no as close and for example of"
+    },
+    {
+      "start": 1540.16,
+      "duration": 6.76,
+      "text": "like the the the iPhone footage of"
+    },
+    {
+      "start": 1542.84,
+      "duration": 5.68,
+      "text": "people playing in Solus yeah at cnft con"
+    },
+    {
+      "start": 1546.92,
+      "duration": 4.56,
+      "text": "even that doesn't do it justice but when"
+    },
+    {
+      "start": 1548.52,
+      "duration": 6.28,
+      "text": "you're standing at cnft con or sitting"
+    },
+    {
+      "start": 1551.48,
+      "duration": 5.68,
+      "text": "and exploring Solace you're getting the"
+    },
+    {
+      "start": 1554.8,
+      "duration": 7.04,
+      "text": "best example of the quality of what"
+    },
+    {
+      "start": 1557.16,
+      "duration": 7.0,
+      "text": "we're doing 4K 60 frames per second it's"
+    },
+    {
+      "start": 1561.84,
+      "duration": 5.0,
+      "text": "freaking remarkable and like the quality"
+    },
+    {
+      "start": 1564.16,
+      "duration": 5.72,
+      "text": "is through the roof and you know so that"
+    },
+    {
+      "start": 1566.84,
+      "duration": 5.84,
+      "text": "just I also know that that since David's"
+    },
+    {
+      "start": 1569.88,
+      "duration": 6.6,
+      "text": "putting this new this new mesh system"
+    },
+    {
+      "start": 1572.68,
+      "duration": 6.72,
+      "text": "that that the theity has actually gone"
+    },
+    {
+      "start": 1576.48,
+      "duration": 4.56,
+      "text": "up absolutely quality's gone up and"
+    },
+    {
+      "start": 1579.4,
+      "duration": 4.68,
+      "text": "efficiency and speed of development has"
+    },
+    {
+      "start": 1581.04,
+      "duration": 6.52,
+      "text": "gone up and so"
+    },
+    {
+      "start": 1584.08,
+      "duration": 5.44,
+      "text": "the like I said in the beginning all of"
+    },
+    {
+      "start": 1587.56,
+      "duration": 4.6,
+      "text": "this stuff is the foundation that's the"
+    },
+    {
+      "start": 1589.52,
+      "duration": 6.84,
+      "text": "slow part we build upon that and it"
+    },
+    {
+      "start": 1592.16,
+      "duration": 5.8,
+      "text": "speeds up and uh so it is for for that"
+    },
+    {
+      "start": 1596.36,
+      "duration": 3.24,
+      "text": "reason somewhat hard to predict timing"
+    },
+    {
+      "start": 1597.96,
+      "duration": 3.28,
+      "text": "but yeah we're working hard behind the"
+    },
+    {
+      "start": 1599.6,
+      "duration": 3.6,
+      "text": "scenes to make this happen we really"
+    },
+    {
+      "start": 1601.24,
+      "duration": 4.56,
+      "text": "want to make it happen as quick I'd like"
+    },
+    {
+      "start": 1603.2,
+      "duration": 5.04,
+      "text": "to get more video leaks out as well but"
+    },
+    {
+      "start": 1605.8,
+      "duration": 3.96,
+      "text": "they take that's gonna be happening"
+    },
+    {
+      "start": 1608.24,
+      "duration": 4.16,
+      "text": "there will be a lot more content coming"
+    },
+    {
+      "start": 1609.76,
+      "duration": 5.08,
+      "text": "out with the racing game and with Solace"
+    },
+    {
+      "start": 1612.4,
+      "duration": 4.16,
+      "text": "when we start internal testing Matt will"
+    },
+    {
+      "start": 1614.84,
+      "duration": 3.44,
+      "text": "be able to make more videos we'll get"
+    },
+    {
+      "start": 1616.56,
+      "duration": 4.56,
+      "text": "Callum set up for some of those videos"
+    },
+    {
+      "start": 1618.28,
+      "duration": 7.28,
+      "text": "too uh it'll be great so next question"
+    },
+    {
+      "start": 1621.12,
+      "duration": 7.76,
+      "text": "is the um the release date of the OG the"
+    },
+    {
+      "start": 1625.56,
+      "duration": 6.0,
+      "text": "new this the annual OG vehicle and I'm"
+    },
+    {
+      "start": 1628.88,
+      "duration": 4.44,
+      "text": "going to say that I don't know the exact"
+    },
+    {
+      "start": 1631.56,
+      "duration": 3.96,
+      "text": "date of that but we are targeting"
+    },
+    {
+      "start": 1633.32,
+      "duration": 4.64,
+      "text": "releasing that around the launch of the"
+    },
+    {
+      "start": 1635.52,
+      "duration": 6.0,
+      "text": "racing game and the first nft sale of"
+    },
+    {
+      "start": 1637.96,
+      "duration": 5.76,
+      "text": "this year which will be uh coming in uh"
+    },
+    {
+      "start": 1641.52,
+      "duration": 3.84,
+      "text": "like late March early April somewhere"
+    },
+    {
+      "start": 1643.72,
+      "duration": 4.64,
+      "text": "around there we're going to launch the"
+    },
+    {
+      "start": 1645.36,
+      "duration": 5.68,
+      "text": "racing game and do an nft sale around"
+    },
+    {
+      "start": 1648.36,
+      "duration": 5.36,
+      "text": "that same time period and so that's also"
+    },
+    {
+      "start": 1651.04,
+      "duration": 7.0,
+      "text": "when the OG vehicle would be released as"
+    },
+    {
+      "start": 1653.72,
+      "duration": 7.24,
+      "text": "well but man the that OG vehicle it's"
+    },
+    {
+      "start": 1658.04,
+      "duration": 5.72,
+      "text": "GNA be so yeah it's gonna be remember"
+    },
+    {
+      "start": 1660.96,
+      "duration": 8.96,
+      "text": "the OG vehicle is is free transaction"
+    },
+    {
+      "start": 1663.76,
+      "duration": 9.92,
+      "text": "fees but free to the ogs correct correct"
+    },
+    {
+      "start": 1669.92,
+      "duration": 5.76,
+      "text": "um not it's not going to be an existing"
+    },
+    {
+      "start": 1673.68,
+      "duration": 4.6,
+      "text": "NF it's also gonna be a very whittel"
+    },
+    {
+      "start": 1675.68,
+      "duration": 4.72,
+      "text": "down OG so there's gonna be less of this"
+    },
+    {
+      "start": 1678.28,
+      "duration": 4.12,
+      "text": "yeah because what we're going to do is"
+    },
+    {
+      "start": 1680.4,
+      "duration": 4.16,
+      "text": "we're going to do hey if you're an OG"
+    },
+    {
+      "start": 1682.4,
+      "duration": 4.44,
+      "text": "you got two weeks to respond to this"
+    },
+    {
+      "start": 1684.56,
+      "duration": 3.88,
+      "text": "form that you're still active and then"
+    },
+    {
+      "start": 1686.84,
+      "duration": 3.96,
+      "text": "we're going to evaluate everybody that's"
+    },
+    {
+      "start": 1688.44,
+      "duration": 5.0,
+      "text": "in there so that group will get Whitted"
+    },
+    {
+      "start": 1690.8,
+      "duration": 5.84,
+      "text": "down a little bit through that process"
+    },
+    {
+      "start": 1693.44,
+      "duration": 4.48,
+      "text": "um and uh and again there's always"
+    },
+    {
+      "start": 1696.64,
+      "duration": 3.28,
+      "text": "opportunities for those that are"
+    },
+    {
+      "start": 1697.92,
+      "duration": 4.6,
+      "text": "contributing value in our community to"
+    },
+    {
+      "start": 1699.92,
+      "duration": 6.16,
+      "text": "become OG and that's information that's"
+    },
+    {
+      "start": 1702.52,
+      "duration": 6.36,
+      "text": "in OG's ogs will grow but first we need"
+    },
+    {
+      "start": 1706.08,
+      "duration": 4.16,
+      "text": "to do some pruning you know the the the"
+    },
+    {
+      "start": 1708.88,
+      "duration": 3.36,
+      "text": "we know there's a there's a lot of"
+    },
+    {
+      "start": 1710.24,
+      "duration": 4.36,
+      "text": "inactive ones looking at some previous"
+    },
+    {
+      "start": 1712.24,
+      "duration": 4.56,
+      "text": "mints they've you know there's been a"
+    },
+    {
+      "start": 1714.6,
+      "duration": 4.2,
+      "text": "lot of waiting around where are these"
+    },
+    {
+      "start": 1716.8,
+      "duration": 3.68,
+      "text": "ogs don't they realize a lot of people"
+    },
+    {
+      "start": 1718.8,
+      "duration": 3.8,
+      "text": "come in when it's hot and everything's"
+    },
+    {
+      "start": 1720.48,
+      "duration": 5.12,
+      "text": "Euphoria in the bull market it's"
+    },
+    {
+      "start": 1722.6,
+      "duration": 5.2,
+      "text": "everybody's just having a party and you"
+    },
+    {
+      "start": 1725.6,
+      "duration": 4.2,
+      "text": "know they lose interest when when it's"
+    },
+    {
+      "start": 1727.8,
+      "duration": 3.8,
+      "text": "it's so that's that's the natural thing"
+    },
+    {
+      "start": 1729.8,
+      "duration": 4.52,
+      "text": "that happens in a bare market like we're"
+    },
+    {
+      "start": 1731.6,
+      "duration": 4.36,
+      "text": "in um but man our community is still"
+    },
+    {
+      "start": 1734.32,
+      "duration": 3.52,
+      "text": "incredibly engaged so it's awesome to"
+    },
+    {
+      "start": 1735.96,
+      "duration": 4.56,
+      "text": "see that but we do need to whittle that"
+    },
+    {
+      "start": 1737.84,
+      "duration": 4.08,
+      "text": "that group down last question and then"
+    },
+    {
+      "start": 1740.52,
+      "duration": 5.28,
+      "text": "we'll go on to our"
+    },
+    {
+      "start": 1741.92,
+      "duration": 5.12,
+      "text": "leak uh challenge uh a friend oh can you"
+    },
+    {
+      "start": 1745.8,
+      "duration": 3.52,
+      "text": "challenge a friend set up your own"
+    },
+    {
+      "start": 1747.04,
+      "duration": 5.36,
+      "text": "custom race when we release the racing"
+    },
+    {
+      "start": 1749.32,
+      "duration": 5.2,
+      "text": "game I think it's a great question and"
+    },
+    {
+      "start": 1752.4,
+      "duration": 4.44,
+      "text": "it's what what do you say Rob well I"
+    },
+    {
+      "start": 1754.52,
+      "duration": 4.16,
+      "text": "think we we are definitely gonna we"
+    },
+    {
+      "start": 1756.84,
+      "duration": 4.44,
+      "text": "we're looking at launching the racing"
+    },
+    {
+      "start": 1758.68,
+      "duration": 5.44,
+      "text": "game with with multiplayer an element"
+    },
+    {
+      "start": 1761.28,
+      "duration": 4.84,
+      "text": "will be part of it um so the leagues"
+    },
+    {
+      "start": 1764.12,
+      "duration": 4.08,
+      "text": "won't be mult well well they'll kind of"
+    },
+    {
+      "start": 1766.12,
+      "duration": 3.76,
+      "text": "be but but the there'll be there'll be"
+    },
+    {
+      "start": 1768.2,
+      "duration": 3.08,
+      "text": "single player race where where you're in"
+    },
+    {
+      "start": 1769.88,
+      "duration": 3.96,
+      "text": "a league and there'll also be"
+    },
+    {
+      "start": 1771.28,
+      "duration": 4.72,
+      "text": "multiplayer maybe for fun to begin with"
+    },
+    {
+      "start": 1773.84,
+      "duration": 3.88,
+      "text": "while while we figure out the the the"
+    },
+    {
+      "start": 1776.0,
+      "duration": 3.24,
+      "text": "performance because we don't want people"
+    },
+    {
+      "start": 1777.72,
+      "duration": 4.6,
+      "text": "racing in"
+    },
+    {
+      "start": 1779.24,
+      "duration": 5.32,
+      "text": "leagues if if you have lag time so so"
+    },
+    {
+      "start": 1782.32,
+      "duration": 4.0,
+      "text": "we've got to do a lot of testing there"
+    },
+    {
+      "start": 1784.56,
+      "duration": 4.04,
+      "text": "um but there's there's quite a lot of"
+    },
+    {
+      "start": 1786.32,
+      "duration": 4.32,
+      "text": "other custom elements as well that that"
+    },
+    {
+      "start": 1788.6,
+      "duration": 3.64,
+      "text": "we're looking at maybe custom"
+    },
+    {
+      "start": 1790.64,
+      "duration": 4.2,
+      "text": "leagues"
+    },
+    {
+      "start": 1792.24,
+      "duration": 4.96,
+      "text": "um I'm not going to say too much on that"
+    },
+    {
+      "start": 1794.84,
+      "duration": 4.52,
+      "text": "but that that'll be um yeah that'll be"
+    },
+    {
+      "start": 1797.2,
+      "duration": 4.0,
+      "text": "pretty pretty good if we pull them off"
+    },
+    {
+      "start": 1799.36,
+      "duration": 5.36,
+      "text": "as well all right here we go let's get"
+    },
+    {
+      "start": 1801.2,
+      "duration": 5.92,
+      "text": "us over to some of these leaks and start"
+    },
+    {
+      "start": 1804.72,
+      "duration": 6.76,
+      "text": "uh sharing the beautiful artwork we've"
+    },
+    {
+      "start": 1807.12,
+      "duration": 9.44,
+      "text": "got going on here leaky leaky leaky"
+    },
+    {
+      "start": 1811.48,
+      "duration": 6.6,
+      "text": "leaky okay well look at"
+    },
+    {
+      "start": 1816.56,
+      "duration": 5.44,
+      "text": "that"
+    },
+    {
+      "start": 1818.08,
+      "duration": 6.12,
+      "text": "remarkable this is a section of Solace"
+    },
+    {
+      "start": 1822.0,
+      "duration": 4.72,
+      "text": "yeah it looks I mean that just looks"
+    },
+    {
+      "start": 1824.2,
+      "duration": 6.64,
+      "text": "like a photograph somebody's taken"
+    },
+    {
+      "start": 1826.72,
+      "duration": 7.24,
+      "text": "doesn't it yeah incredibly just it's"
+    },
+    {
+      "start": 1830.84,
+      "duration": 4.6,
+      "text": "just beautiful you know artwork you can"
+    },
+    {
+      "start": 1833.96,
+      "duration": 5.36,
+      "text": "you could literally imagine yourself"
+    },
+    {
+      "start": 1835.44,
+      "duration": 5.92,
+      "text": "walking up and uh spending the day there"
+    },
+    {
+      "start": 1839.32,
+      "duration": 4.8,
+      "text": "and fly fishing in that stream or you"
+    },
+    {
+      "start": 1841.36,
+      "duration": 7.2,
+      "text": "know whatever may be uh going on that we"
+    },
+    {
+      "start": 1844.12,
+      "duration": 7.6,
+      "text": "have as an maybe huh canoeing maybe"
+    },
+    {
+      "start": 1848.56,
+      "duration": 6.76,
+      "text": "canoeing yeah H gliding did I just make"
+    },
+    {
+      "start": 1851.72,
+      "duration": 7.28,
+      "text": "that up hand gliding would be uh awesome"
+    },
+    {
+      "start": 1855.32,
+      "duration": 6.76,
+      "text": "I'd love to do that um but yeah this is"
+    },
+    {
+      "start": 1859.0,
+      "duration": 5.04,
+      "text": "uh this is an example of all the you"
+    },
+    {
+      "start": 1862.08,
+      "duration": 3.6,
+      "text": "know the tooling that we've built to"
+    },
+    {
+      "start": 1864.04,
+      "duration": 4.92,
+      "text": "make things more efficient and build"
+    },
+    {
+      "start": 1865.68,
+      "duration": 7.28,
+      "text": "more quickly but the power of ue5 Unreal"
+    },
+    {
+      "start": 1868.96,
+      "duration": 7.44,
+      "text": "Engine five and just having a an amazing"
+    },
+    {
+      "start": 1872.96,
+      "duration": 7.52,
+      "text": "uh talented Team all working together to"
+    },
+    {
+      "start": 1876.4,
+      "duration": 6.2,
+      "text": "uh really make all of these um images"
+    },
+    {
+      "start": 1880.48,
+      "duration": 4.0,
+      "text": "come to life the all of the different"
+    },
+    {
+      "start": 1882.6,
+      "duration": 4.16,
+      "text": "sections the many sections of Solace"
+    },
+    {
+      "start": 1884.48,
+      "duration": 3.68,
+      "text": "that takes 40 minutes to walk across"
+    },
+    {
+      "start": 1886.76,
+      "duration": 4.56,
+      "text": "they're bringing him to life and"
+    },
+    {
+      "start": 1888.16,
+      "duration": 5.76,
+      "text": "improving each area uh one by one you"
+    },
+    {
+      "start": 1891.32,
+      "duration": 6.12,
+      "text": "know we're going through each segment"
+    },
+    {
+      "start": 1893.92,
+      "duration": 6.76,
+      "text": "that tree on the right that looks like"
+    },
+    {
+      "start": 1897.44,
+      "duration": 5.44,
+      "text": "it's had an elephant on the top of"
+    },
+    {
+      "start": 1900.68,
+      "duration": 6.32,
+      "text": "it do you know how you get an elephant"
+    },
+    {
+      "start": 1902.88,
+      "duration": 7.44,
+      "text": "up a tree oh gosh I know that this is"
+    },
+    {
+      "start": 1907.0,
+      "duration": 5.8,
+      "text": "going to be sadly not funny you just you"
+    },
+    {
+      "start": 1910.32,
+      "duration": 4.76,
+      "text": "just let it sit on an acorn and wait for"
+    },
+    {
+      "start": 1912.8,
+      "duration": 2.28,
+      "text": "it to"
+    },
+    {
+      "start": 1915.52,
+      "duration": 5.68,
+      "text": "grow there's another one so bad that's"
+    },
+    {
+      "start": 1918.72,
+      "duration": 4.92,
+      "text": "so bad all right here's another scene"
+    },
+    {
+      "start": 1921.2,
+      "duration": 5.12,
+      "text": "from Solace now you're looking at the"
+    },
+    {
+      "start": 1923.64,
+      "duration": 5.16,
+      "text": "waterfall I believe is is way back"
+    },
+    {
+      "start": 1926.32,
+      "duration": 4.8,
+      "text": "behind uh that you know this is much"
+    },
+    {
+      "start": 1928.8,
+      "duration": 4.8,
+      "text": "further away uh it take a while to get"
+    },
+    {
+      "start": 1931.12,
+      "duration": 4.8,
+      "text": "to the waterfall from here probably a 30"
+    },
+    {
+      "start": 1933.6,
+      "duration": 5.08,
+      "text": "minute hike but this is another"
+    },
+    {
+      "start": 1935.92,
+      "duration": 6.8,
+      "text": "beautiful uh epic scene and this tree is"
+    },
+    {
+      "start": 1938.68,
+      "duration": 5.88,
+      "text": "definitely um had a little uh wind shear"
+    },
+    {
+      "start": 1942.72,
+      "duration": 4.16,
+      "text": "but yeah the the the trees are all"
+    },
+    {
+      "start": 1944.56,
+      "duration": 5.56,
+      "text": "unique there's a lot of you know there's"
+    },
+    {
+      "start": 1946.88,
+      "duration": 5.0,
+      "text": "procedurally gener at but there's a real"
+    },
+    {
+      "start": 1950.12,
+      "duration": 4.8,
+      "text": "solid amount of variety in all of our"
+    },
+    {
+      "start": 1951.88,
+      "duration": 5.2,
+      "text": "trees which is very cool yeah and in the"
+    },
+    {
+      "start": 1954.92,
+      "duration": 4.56,
+      "text": "distance we can see the the hot air"
+    },
+    {
+      "start": 1957.08,
+      "duration": 5.36,
+      "text": "balloons and then at the front there in"
+    },
+    {
+      "start": 1959.48,
+      "duration": 6.08,
+      "text": "the bottom left is a really cool"
+    },
+    {
+      "start": 1962.44,
+      "duration": 6.8,
+      "text": "campsite something's going on down there"
+    },
+    {
+      "start": 1965.56,
+      "duration": 8.96,
+      "text": "yep yep people camping enjoying the"
+    },
+    {
+      "start": 1969.24,
+      "duration": 8.64,
+      "text": "cornicopia space uh enjoying the Solace"
+    },
+    {
+      "start": 1974.52,
+      "duration": 6.68,
+      "text": "uh sunsets oh boy Siri my my Apple watch"
+    },
+    {
+      "start": 1977.88,
+      "duration": 6.08,
+      "text": "starts to talk to me just randomly now"
+    },
+    {
+      "start": 1981.2,
+      "duration": 4.64,
+      "text": "so I need to yeah that campsite looks a"
+    },
+    {
+      "start": 1983.96,
+      "duration": 4.88,
+      "text": "little bit upgraded from two trees and a"
+    },
+    {
+      "start": 1985.84,
+      "duration": 5.6,
+      "text": "Hummock it's probably level two yeah"
+    },
+    {
+      "start": 1988.84,
+      "duration": 6.04,
+      "text": "survival quite a bit better for"
+    },
+    {
+      "start": 1991.44,
+      "duration": 8.88,
+      "text": "sure I agree uh well let's let's take a"
+    },
+    {
+      "start": 1994.88,
+      "duration": 8.36,
+      "text": "look at what's next here oh whoa the"
+    },
+    {
+      "start": 2000.32,
+      "duration": 5.88,
+      "text": "Kopi Cafe vehicle what are you what are"
+    },
+    {
+      "start": 2003.24,
+      "duration": 5.6,
+      "text": "you drinking Rob well we already know"
+    },
+    {
+      "start": 2006.2,
+      "duration": 4.04,
+      "text": "but yeah so so this this is this is the"
+    },
+    {
+      "start": 2008.84,
+      "duration": 4.88,
+      "text": "free"
+    },
+    {
+      "start": 2010.24,
+      "duration": 7.32,
+      "text": "vehicle however it's got some"
+    },
+    {
+      "start": 2013.72,
+      "duration": 6.88,
+      "text": "custom library on it or custom custom"
+    },
+    {
+      "start": 2017.56,
+      "duration": 5.88,
+      "text": "stickers yeah this is foreshadowing of"
+    },
+    {
+      "start": 2020.6,
+      "duration": 4.32,
+      "text": "what we are going to have available for"
+    },
+    {
+      "start": 2023.44,
+      "duration": 3.88,
+      "text": "sponsorship"
+    },
+    {
+      "start": 2024.92,
+      "duration": 4.68,
+      "text": "packages uh customization of your"
+    },
+    {
+      "start": 2027.32,
+      "duration": 4.16,
+      "text": "vehicle in the future where you could"
+    },
+    {
+      "start": 2029.6,
+      "duration": 4.36,
+      "text": "add to the wrap you could create your"
+    },
+    {
+      "start": 2031.48,
+      "duration": 5.68,
+      "text": "own WP that sort of thing uh that goes"
+    },
+    {
+      "start": 2033.96,
+      "duration": 5.8,
+      "text": "onto the vehicle um definitely uh"
+    },
+    {
+      "start": 2037.16,
+      "duration": 4.76,
+      "text": "will'll get sponsorships and and things"
+    },
+    {
+      "start": 2039.76,
+      "duration": 4.88,
+      "text": "and you know so for example maybe uh"
+    },
+    {
+      "start": 2041.92,
+      "duration": 5.24,
+      "text": "McLaren wants to get their branding on"
+    },
+    {
+      "start": 2044.64,
+      "duration": 4.44,
+      "text": "these cars because they're getting uh"
+    },
+    {
+      "start": 2047.16,
+      "duration": 3.76,
+      "text": "you know when we've got two million"
+    },
+    {
+      "start": 2049.08,
+      "duration": 3.96,
+      "text": "people playing the racing game and"
+    },
+    {
+      "start": 2050.92,
+      "duration": 4.76,
+      "text": "Esports five different Esports leagues"
+    },
+    {
+      "start": 2053.04,
+      "duration": 4.4,
+      "text": "are competing and all sorts of stuff and"
+    },
+    {
+      "start": 2055.68,
+      "duration": 4.48,
+      "text": "they know that they could get a 100"
+    },
+    {
+      "start": 2057.44,
+      "duration": 4.32,
+      "text": "million impressions over the year or"
+    },
+    {
+      "start": 2060.16,
+      "duration": 3.28,
+      "text": "whatever the numbers are you know with"
+    },
+    {
+      "start": 2061.76,
+      "duration": 3.08,
+      "text": "the number of races we have they're"
+    },
+    {
+      "start": 2063.44,
+      "duration": 2.92,
+      "text": "going to get that many impressions of"
+    },
+    {
+      "start": 2064.84,
+      "duration": 3.8,
+      "text": "their brand you know it becomes a"
+    },
+    {
+      "start": 2066.36,
+      "duration": 5.0,
+      "text": "powerful thing that we can offer to them"
+    },
+    {
+      "start": 2068.64,
+      "duration": 5.32,
+      "text": "which also gets their Community aware of"
+    },
+    {
+      "start": 2071.36,
+      "duration": 5.04,
+      "text": "what we're doing here into this game and"
+    },
+    {
+      "start": 2073.96,
+      "duration": 4.48,
+      "text": "uh yeah you know it could be a lot of"
+    },
+    {
+      "start": 2076.4,
+      "duration": 3.76,
+      "text": "potential there I'm obviously talking"
+    },
+    {
+      "start": 2078.44,
+      "duration": 4.88,
+      "text": "really big but hey this is where we're"
+    },
+    {
+      "start": 2080.16,
+      "duration": 5.84,
+      "text": "going well I can see teams and guilds"
+    },
+    {
+      "start": 2083.32,
+      "duration": 5.12,
+      "text": "putting putting their um their brands"
+    },
+    {
+      "start": 2086.0,
+      "duration": 6.88,
+      "text": "and logos on there as well and we have"
+    },
+    {
+      "start": 2088.44,
+      "duration": 6.64,
+      "text": "team racing yep absolutely teams guilds"
+    },
+    {
+      "start": 2092.88,
+      "duration": 4.28,
+      "text": "all sorts of fun stuff you know cardano"
+    },
+    {
+      "start": 2095.08,
+      "duration": 5.0,
+      "text": "nft projects could sponsor we've got"
+    },
+    {
+      "start": 2097.16,
+      "duration": 5.0,
+      "text": "meld that going to do their own rap y um"
+    },
+    {
+      "start": 2100.08,
+      "duration": 4.68,
+      "text": "you know so a lot well well the rap that"
+    },
+    {
+      "start": 2102.16,
+      "duration": 5.6,
+      "text": "rrap is a level on top of this isn't it"
+    },
+    {
+      "start": 2104.76,
+      "duration": 5.12,
+      "text": "this is this is kind of like small bits"
+    },
+    {
+      "start": 2107.76,
+      "duration": 3.56,
+      "text": "of of stickers and Library I think the"
+    },
+    {
+      "start": 2109.88,
+      "duration": 4.24,
+      "text": "rap is going to"
+    },
+    {
+      "start": 2111.32,
+      "duration": 4.88,
+      "text": "be bit more"
+    },
+    {
+      "start": 2114.12,
+      "duration": 4.56,
+      "text": "involved um if you're talking about a"
+    },
+    {
+      "start": 2116.2,
+      "duration": 5.88,
+      "text": "custom WAP so so David had made it"
+    },
+    {
+      "start": 2118.68,
+      "duration": 5.6,
+      "text": "possible for us to do uh the type of"
+    },
+    {
+      "start": 2122.08,
+      "duration": 5.2,
+      "text": "thing where it's a very basic you know"
+    },
+    {
+      "start": 2124.28,
+      "duration": 4.88,
+      "text": "add your logo or something like that yes"
+    },
+    {
+      "start": 2127.28,
+      "duration": 4.48,
+      "text": "he'd made that but then there could be"
+    },
+    {
+      "start": 2129.16,
+      "duration": 4.92,
+      "text": "more advanced type Partnerships that's"
+    },
+    {
+      "start": 2131.76,
+      "duration": 3.92,
+      "text": "not available to everyone unless you are"
+    },
+    {
+      "start": 2134.08,
+      "duration": 5.72,
+      "text": "you know really participating in a"
+    },
+    {
+      "start": 2135.68,
+      "duration": 6.72,
+      "text": "certain way where we do a custom WAP"
+    },
+    {
+      "start": 2139.8,
+      "duration": 4.0,
+      "text": "build yeah having said that this is this"
+    },
+    {
+      "start": 2142.4,
+      "duration": 3.0,
+      "text": "looks a little bit more than just the"
+    },
+    {
+      "start": 2143.8,
+      "duration": 3.44,
+      "text": "sticker because we've got the the"
+    },
+    {
+      "start": 2145.4,
+      "duration": 4.28,
+      "text": "writing down the side and we've got some"
+    },
+    {
+      "start": 2147.24,
+      "duration": 4.2,
+      "text": "colors changed the look of the yeah yeah"
+    },
+    {
+      "start": 2149.68,
+      "duration": 4.4,
+      "text": "this could be a full wrap this is more"
+    },
+    {
+      "start": 2151.44,
+      "duration": 5.0,
+      "text": "like a customer app but you know the the"
+    },
+    {
+      "start": 2154.08,
+      "duration": 4.64,
+      "text": "the point being is that the technology"
+    },
+    {
+      "start": 2156.44,
+      "duration": 5.2,
+      "text": "is set where he can embed that image"
+    },
+    {
+      "start": 2158.72,
+      "duration": 5.52,
+      "text": "into the mesh in a very simple way for a"
+    },
+    {
+      "start": 2161.64,
+      "duration": 4.04,
+      "text": "lot of oneoff type deals where it's just"
+    },
+    {
+      "start": 2164.24,
+      "duration": 5.28,
+      "text": "like yeah I want to put my picture on"
+    },
+    {
+      "start": 2165.68,
+      "duration": 6.16,
+      "text": "there or whatever um and then you know"
+    },
+    {
+      "start": 2169.52,
+      "duration": 6.2,
+      "text": "we can obviously do more advanced"
+    },
+    {
+      "start": 2171.84,
+      "duration": 6.48,
+      "text": "further like a full wrap design which"
+    },
+    {
+      "start": 2175.72,
+      "duration": 4.72,
+      "text": "takes a lot of um you know takes more"
+    },
+    {
+      "start": 2178.32,
+      "duration": 3.68,
+      "text": "hours and more development time but"
+    },
+    {
+      "start": 2180.44,
+      "duration": 4.32,
+      "text": "there'll be there'll be so much"
+    },
+    {
+      "start": 2182.0,
+      "duration": 6.0,
+      "text": "customization available in in the future"
+    },
+    {
+      "start": 2184.76,
+      "duration": 6.52,
+      "text": "um even this out the blocks"
+    },
+    {
+      "start": 2188.0,
+      "duration": 6.24,
+      "text": "is way more advanced we we imagined a"
+    },
+    {
+      "start": 2191.28,
+      "duration": 5.96,
+      "text": "few months ago"
+    },
+    {
+      "start": 2194.24,
+      "duration": 4.96,
+      "text": "absolutely not just sticker on top of"
+    },
+    {
+      "start": 2197.24,
+      "duration": 5.36,
+      "text": "the there's lots more stuff under the"
+    },
+    {
+      "start": 2199.2,
+      "duration": 4.92,
+      "text": "hood going on here yeah and just looking"
+    },
+    {
+      "start": 2202.6,
+      "duration": 3.32,
+      "text": "at the vehicle upgrades and all the"
+    },
+    {
+      "start": 2204.12,
+      "duration": 3.6,
+      "text": "things that we're planning out right now"
+    },
+    {
+      "start": 2205.92,
+      "duration": 4.0,
+      "text": "and the different systems that you can"
+    },
+    {
+      "start": 2207.72,
+      "duration": 4.04,
+      "text": "and and how we're going to build that up"
+    },
+    {
+      "start": 2209.92,
+      "duration": 3.8,
+      "text": "over time the vision for the racing game"
+    },
+    {
+      "start": 2211.76,
+      "duration": 4.48,
+      "text": "is pretty solid I think we're going to"
+    },
+    {
+      "start": 2213.72,
+      "duration": 4.76,
+      "text": "have uh something very special and"
+    },
+    {
+      "start": 2216.24,
+      "duration": 5.88,
+      "text": "obviously you know we're starting with a"
+    },
+    {
+      "start": 2218.48,
+      "duration": 5.0,
+      "text": "MVP which is definitely we're not going"
+    },
+    {
+      "start": 2222.12,
+      "duration": 5.96,
+      "text": "to release anything that we're not"
+    },
+    {
+      "start": 2223.48,
+      "duration": 6.08,
+      "text": "confident in and proud of um but it"
+    },
+    {
+      "start": 2228.08,
+      "duration": 3.36,
+      "text": "because each thing that we put out it"
+    },
+    {
+      "start": 2229.56,
+      "duration": 4.48,
+      "text": "represents our brand and it needs to be"
+    },
+    {
+      "start": 2231.44,
+      "duration": 4.64,
+      "text": "you know Paramount that it's high"
+    },
+    {
+      "start": 2234.04,
+      "duration": 3.48,
+      "text": "quality and and a great experience as"
+    },
+    {
+      "start": 2236.08,
+      "duration": 3.48,
+      "text": "much as possible obviously we're going"
+    },
+    {
+      "start": 2237.52,
+      "duration": 4.44,
+      "text": "to do a lot of testing a lot of"
+    },
+    {
+      "start": 2239.56,
+      "duration": 4.32,
+      "text": "debugging and it's just going to take"
+    },
+    {
+      "start": 2241.96,
+      "duration": 4.56,
+      "text": "time to really build this game up to"
+    },
+    {
+      "start": 2243.88,
+      "duration": 4.4,
+      "text": "where we want it to be but um the first"
+    },
+    {
+      "start": 2246.52,
+      "duration": 3.84,
+      "text": "iteration I'm pretty pumped about we're"
+    },
+    {
+      "start": 2248.28,
+      "duration": 3.88,
+      "text": "going to have an amazing racing game for"
+    },
+    {
+      "start": 2250.36,
+      "duration": 3.32,
+      "text": "sure they've gotten a lot figured out"
+    },
+    {
+      "start": 2252.16,
+      "duration": 4.2,
+      "text": "with the physics over the last couple of"
+    },
+    {
+      "start": 2253.68,
+      "duration": 4.4,
+      "text": "weeks which is great the hovering"
+    },
+    {
+      "start": 2256.36,
+      "duration": 3.72,
+      "text": "vehicle and the aspects you know they're"
+    },
+    {
+      "start": 2258.08,
+      "duration": 5.44,
+      "text": "talking about the the different braking"
+    },
+    {
+      "start": 2260.08,
+      "duration": 6.0,
+      "text": "types and uh three different brake types"
+    },
+    {
+      "start": 2263.52,
+      "duration": 5.16,
+      "text": "and uh you saw that image that they sent"
+    },
+    {
+      "start": 2266.08,
+      "duration": 5.04,
+      "text": "where we're we're breaking down all the"
+    },
+    {
+      "start": 2268.68,
+      "duration": 5.68,
+      "text": "different specs of the vehicle um and"
+    },
+    {
+      "start": 2271.12,
+      "duration": 5.36,
+      "text": "giving it all this this is what gives"
+    },
+    {
+      "start": 2274.36,
+      "duration": 3.72,
+      "text": "you that ability to really strategize"
+    },
+    {
+      "start": 2276.48,
+      "duration": 4.44,
+      "text": "around how you're going to go around the"
+    },
+    {
+      "start": 2278.08,
+      "duration": 5.36,
+      "text": "track what vehicle uh is going to be the"
+    },
+    {
+      "start": 2280.92,
+      "duration": 5.64,
+      "text": "best for this type of track what type of"
+    },
+    {
+      "start": 2283.44,
+      "duration": 5.44,
+      "text": "braking do I want to use on turn number"
+    },
+    {
+      "start": 2286.56,
+      "duration": 5.08,
+      "text": "two uh you know all of these different"
+    },
+    {
+      "start": 2288.88,
+      "duration": 5.0,
+      "text": "things come into play for uh improving"
+    },
+    {
+      "start": 2291.64,
+      "duration": 4.2,
+      "text": "and getting better and better at uh"
+    },
+    {
+      "start": 2293.88,
+      "duration": 3.88,
+      "text": "having a great racing time I can't wait"
+    },
+    {
+      "start": 2295.84,
+      "duration": 4.8,
+      "text": "to see what the guys that played the old"
+    },
+    {
+      "start": 2297.76,
+      "duration": 4.48,
+      "text": "version of the game in cnft conon that"
+    },
+    {
+      "start": 2300.64,
+      "duration": 3.76,
+      "text": "were there were a few guys that were"
+    },
+    {
+      "start": 2302.24,
+      "duration": 4.88,
+      "text": "just like remarkable they like they were"
+    },
+    {
+      "start": 2304.4,
+      "duration": 4.76,
+      "text": "just getting these insanely super fast"
+    },
+    {
+      "start": 2307.12,
+      "duration": 5.12,
+      "text": "yeah super super fast but I can't wait"
+    },
+    {
+      "start": 2309.16,
+      "duration": 5.12,
+      "text": "to see what they say when it requires a"
+    },
+    {
+      "start": 2312.24,
+      "duration": 3.84,
+      "text": "little bit more of them you know you got"
+    },
+    {
+      "start": 2314.28,
+      "duration": 3.08,
+      "text": "to use the right brakes on this Turner"
+    },
+    {
+      "start": 2316.08,
+      "duration": 2.96,
+      "text": "you got you know yeah you didn't need"
+    },
+    {
+      "start": 2317.36,
+      "duration": 4.08,
+      "text": "any breaks on that last course but I"
+    },
+    {
+      "start": 2319.04,
+      "duration": 5.72,
+      "text": "mean now now you'll have breaks you'll"
+    },
+    {
+      "start": 2321.44,
+      "duration": 4.6,
+      "text": "have afterburners you'll have other"
+    },
+    {
+      "start": 2324.76,
+      "duration": 3.24,
+      "text": "stuff that we're putting in that we're"
+    },
+    {
+      "start": 2326.04,
+      "duration": 4.24,
+      "text": "not announcing yeah that there there'll"
+    },
+    {
+      "start": 2328.0,
+      "duration": 4.88,
+      "text": "be there'll be lots of stuff yeah a lot"
+    },
+    {
+      "start": 2330.28,
+      "duration": 4.76,
+      "text": "of new stuff well hey that's it for the"
+    },
+    {
+      "start": 2332.88,
+      "duration": 4.24,
+      "text": "leaks for today hopefully you guys enjoy"
+    },
+    {
+      "start": 2335.04,
+      "duration": 4.88,
+      "text": "that yep you will definitely see Rob and"
+    },
+    {
+      "start": 2337.12,
+      "duration": 5.48,
+      "text": "I Out Racing in the copi cafe vehicle"
+    },
+    {
+      "start": 2339.92,
+      "duration": 6.24,
+      "text": "one of these days hopefully very soon"
+    },
+    {
+      "start": 2342.6,
+      "duration": 8.84,
+      "text": "and until next time have a wonderful day"
+    },
+    {
+      "start": 2346.16,
+      "duration": 5.28,
+      "text": "and we will see you soon bye bye"
+    }
+  ],
+  "transcript_text": "[Music] hey everyone welcome to copi Cafe episode 39 we're excited to be here with you today dang I was so excited with that intro that my dog got up and he's going to look for a toy to throw to me so hopefully that's not in the audio we got Rob Greg here Josh Jones um and uh yeah some cool little updates for you today should be quick episode hopefully but uh yeah we're glad to be here and glad to tell you what's going on with uh copi uh corn copius so Rob what are you drinking today sir yeah so today I'm just gonna grab this I've already made it I'm having real fruit double strength apple and black currant you've made it what do you mean you made it oh well I don't have a I don't have a a tap on tap gotcha and I'm and I'm going to you know Apple black cor and a banana a banana okay that's great so we're bringing food and snacks now to copy Cafe banana yeah why not helps with a hangover all right all right notice anything new about my realm yes you now have a a new image behind you I do got a image it's from entheos AI we got it at cnft con I think you've got one behind you as well yep see if you can make your finger H it not easy to do because the camera's reversed messes with your brain uh anyway so mine's just some abstract trees like just I I don't know if there's people in it are there people in that oh there's a dude there's a little dude right there what dude's doing it looks like something from um Avatar I watched that movie again the other day you're dude you're right wait did you watch the new one or the no I I haven't watched that yet the old one okay so the new one is freaking awesome you watch it yeah three hours long it is a time commitment be ready to uh take a bathroom break but uh I thought it was excellent really amazing Graphics work in there and everything they're doing is is very impressive uh the plot was it's okay but it was just it was enjoyable you know it was be Beauty in in what people are creating there uh so in case you're wondering I haven't announced my drink yet yeah why are you drinking leave everybody hanging yeah what are you drinking um it's really exciting as usual water oh but what's that cup this is Cabo Bob's man I would take you next time you come to Austin but you're like weird about texmax food yeah but I eat I think we're just gonna we're gonna have to convert you sooner or later yeah um but uh yeah it's good it's just I tried huh I tried a bit of sushi I like I like some sushi have to do with text mix just trying new foods okay gotta gotcha this is in the new category to you yeah I feel bad for for you guys in the UK you're like food variety deprived we've gota we gota like next time you come to Austin we're gonna try two new pallets okay maybe we go get some Ethiopian food or or African food or something weird that you've never had have you ever had Thai Thai food um I believe I probably have I I you I can't I can't remember potato type dishes in the UK and then you've got Indian you've got guys have great Indian food there I had a steak last night I had a nice sirine was good we went out for a meal birthday meal I believe a wagu steak is going to be my Friday night I've worked real hard yeah in the gym and on work all week cheat meal kind of thing I had one of those in America that was that was really nice well I made a wagu steak for you when you guys came to my place what did you think on the bar what you think it was really nice yeah very very solid um all right let's get this kicked off let's get this party started Mobile update we'll start with the what might be bad news for some I don't think it's bad news at all really um we're T despite the image we showed last week um which well the the image we showed was revealing of a significant amount of real solid progress that we're making in in the mobile game but we've decided to table it for right now and the reason is this we have three people that we can capture and pull over that we're working on the mobile game and get them more integrated with moving the racing game along faster moving soless along faster and that you know that's where our primary promises to community are uh in terms of utility of these different assets like land and nfts and things like that um the mobile game is an important piece of what we're doing because it captures such a large market share eventually that we'll be able to bring over and integrate with the main game and so there's a variety of things that we're looking at doing there um the good news is that we have developed a mobile game uh We've developed testing processes with that and refined our testing process we've improved our mobile mobile Dev on developing on Unreal Engine 5 which is fantastic so we've got a very integrated feel now where we're going to be able to move things along more quickly and we'll get we we will continue with the mobile game uh when the timing is right and we feel like we've really solidified uh some of these other things any comments you have on that Rob well I mean the beauty of that mobile game because because we now built within ue5 we're we're only a month or so into that build is is that those blueprints can be used within the main game and you know Dean's done such a good job of building that the new ui5 mobile game that we thought it's it's would be a shame just to release this to create kind of like a lower powered art version of this for a mobile when we can we can use the full power of ue5 and have that game somewhere else with within our within our main PC that's all I'll say within our main game so so none of that code has been wasted whatsoever but yeah we we also noticed that because now Declan and the team are more integrated that there was that you know keeping your ears to the ground David was was having some some extra meetings with Dean to to bring bring him up to speed in in how ue5 works and and Jim was and and some of the other team so we're kind of noticing that you know some resources were slightly moving over to be on the mobile and that and that wasn't the point of the mobile at all the mobile was supposed to be this small team so you know now that that we've moved those resources over to the main game it means that we kind of not leaking skills into the mobile into leaking you know work and time into that mobile game so so therefore you know everybody is back on back on fulltime but working on the mete yeah it just allows for more Synergy with our team and a more rapid development in terms of things like solices Solace and and um you know nfts that have been sold uh that we want to give people our community utility for as quickly as we can which is very excited that brings us to our next topic which is the racing game I want you guys to know what we're doing with and and that that last point is part of this point we want to release anything that we release needs to be Paramount quality triaa type quality what we're doing with the racing game is remarkable we're breaking it down like we're looking at every single detail right now you've done thorough planning on the reward systems and the seasons and the tournaments we we're looking at the breaking system system uh you know there's three different types of braking systems within the vehicles that'll be able to be utilized in the racing game like that is that's when you start to get into the refinement that allows you to you know navigate this race track and improve what's your strategy for I'm I'm only going to be on turn number two I'm only going to be using the reverse thrusters or whatever because you know so you start to get strategy and and elements that allow for this ual Improvement and you know we're breaking down the gears into uh you know or the parts of the vehicle and the upgrades into into all of these different upgrades that you could do with your vehicle and different fun stuff like that sponsorship um that's something for the leak leak image later we'll talk about it more on the leak image we have some really fun stuff happening there so and the afterburners don't forget that the afterburners yes sir the afterburners uh the custom UI for your tooling like your speed and temperature and things like that yeah it's going to be unique per the vehicle that you're driving so if you're in a GTI Javelin it has one um UI that that feels like home to you you know this is this is your tools that you're looking at during the race if you're in a bubble jet it has its own UI um some of the new vehicles that'll be coming out with the racing sale have their own the point there being Paramount quality we we want to launch a AAA and we are going to launch AAA quality Graphics in game uh for you guys so that's that's the first thing that you'll get to experience from cornic Copus uh we are concerned that the racing game doesn't create the perception that cornic Copus is just a racing you know project but yeah uh so we'll have different things that we need to do to to incorporate into that so that people realize that no this is only one small element of what cor cor Copus is doing but uh yeah I'm fired up about it what what it's let's not forget though while while we're building this racing game the majority elements that are going into that we're actually building for the metaverse as well you know so there'll be a reward system in there there will be points and milestones for people to to build there'll be multiplayer in there there's a desktop launcher in there um there will be some leader boards but leaderboards are all powered via apis and then there's a lot of back office testing uh that that will happen with that and with the community as well so a lot of the stuff that is being built for the racing game is directly going to be usable as well for for the metaverse game so so we we've definitely not lost focus on the metaverse whatsoever that is coming along really really well and we've got we've we'll have a few leaks about that later on as well you have a uh really good point there all of this stuff being done in parallel that's why we're also trying to give you updates on copi Cafe on on the different projects that are going on on a weekly basis uh because all these things are happening at the same time but the importance of that point uh of how for example the reward system will scale to other parts of the game is that we're laying we've gone incredibly fast with what we've developed but it's only going to get faster and the reason I say that is things like the reward system now that Foundation is laid we've gone through the iterations back and forth we make minor tweaks to what we bring into the the rest of the game but that makes that next step for us that much faster another example of that would be the work that David's done that we haven't been able to show you guys yet uh but the entrance area where you park your uh bubble jjet when you go to Solace uh the the travel system to get you to the lobby area and then the travel system to get you where you want to go within Solace that whole system replicates to the next Solace and to the next uh even to esparanza but The Branding and the look and feel will change a little bit for esparanza so when when we say it starts to scale this long the long part is laying all these foundational elements all the art for Solace has been produced at this point it'll be used for Solace too uh so we just have to lay that out but that speeds things up as we go additionally bringing on and developing the team members so we'll eventually later this year have four Junior developers working on Solace sectors alone then we'll have another four working on esperenza sectors alone so that speeds things up laying the foundation is the long part even though we've gone incredibly fast it's only speeding up from here so that's the the point I wanted to make there yeah I think think you mentioned the Solace to that's twwo I think I think we've we're definitely in the planning stage we may have started the build on that I'd have to check that but yeah that's very very close well started the build in terms of the fact that we have tons of assets for it we might have started the build on it but we have tons of assets so the initial work you get a long way fairly quickly yeah then the longer harder part of the stage of the development is the refinement which is what we're utilizing that gr grid system for go to you know B52 you made the funny joke last week uh you know go to section 113 got you got one on that 113 yeah because there's not a there's not that's that doesn't exist a13 A3 that's A1 A1 sauce brown sauce no I'm trying I I thought you might be putting a little Easter egg in there what's what's the number always used in Pixar movies is that a13 oh I have no idea I don't know no what what what got me excited and I saw I I actually saw you and Matt got quite excited about this as well because on on Tuesday in in our weekly meeting all the team gets together and we have kind of like a show and a tell um and to Tobias showed off um some of the work that he's been building in Solace of like a Cave System go through the in the water and and yeah that was quite quite a massive area and I don't know if you mentioned it then but were you're talking about scavenger hunts but then I saw a lot of chatter later on between you and Matt getting excited about the scavenger hunts and well yeah because you know it's this giant explorable land right it's 40 minutes to walk across on the X and Y AIS on each either way that means there's so much exploring to do right and just that alone is is fun as beautiful as we've made it but now if it's like hey when you're out exploring you could find one of these items these are 13 items that we want you to go and find I mean that's that's a loow hanging fruit for a great game for people to go you know just explore and find stuff but obviously there's so much more to what we're building but yeah I mean that was just I mean it was we got we got to move to the next topic though um because we're we're tight what is there something you really what did you want I was I was just going to say to get to that cave system you're going to have to either swim or a canoe or who knows it's not it's not something you're just going to stumble across no that's that's a good point um but they will uh the the community will all update each other on how to get there and things will happen that that enables people to find certain things for the scavenger hun it'll be fun to do something like once one person finds it it moves to a new location for the next person it'll be crazy all the YouTube videos here's how you get to this location and and do this yeah and then discovered that yeah yeah we'll change it up okay uh so we've done the Mobile update we've done the racing game update uh little updates on Solace I mean that's just moving along greatly uh we're going to be adding four new devs for that probably in about three months something like that when we're ready to bring them on and and train them uh it'll be junior devs uh to to speed up the sector production and then that'll beauty of of bringing some of the mobile team over is they're already trained up they they know our company well they know how we work so they're up to speed yeah agreed uh so the the final updates I'll cover some of the website and uh copious Academy and stuff like that all of that moving forward quickly website uh where we should have the internal team uh testing and uh doing the last minute refinements and quality checks next week I believe so they're they're deploying that to the staging environment right now and uh so then we'll do internal feedback and refinement from the um you know all the little tiny fixes and little tweaks there that'll start next week and then hopefully we'll launch the new website you know I'd say probably two to three weeks somewhere around there really um yeah MVP version but it's gonna MVP is night and day better than what we have right now February okay yeah super stoked about that Copus Academy is moving along um that's not final that that's the brand name for that but that's the that's going to be our gamification of Education platform things were looking amazing there constantly looking at that the nft marketplace is is coming along um just so much so much under the the hood that you guys uh are I can't wait to reveal there there lots of stuff that we're working on that we just can't tell you at the moment especially to do with the racing game and and the website and the marketplace and yeah that just look for a lot of good stuff I mean there's just so much this is a year of delivery it's the year of the Corn um year of the Corn yeah just a a lot that's going to happen this year for us and um I'm really pumped about it actually had a call with one of our advisers earlier this morning where uh David came in and we showed him around Solace and we showed him some of the uh the stuff that we haven't shared with the community yet but the logistics system for getting into the domes and all of that blown away he was like oh my gosh this is yeah so it's it's really fun because you get you talk to people like that that are talking to so many projects that they've been a part of and building because they're you know they're like a a launcher of projects and um it was the master Ventures group that I was talking to Kyle and you know they get perspective from from uh what's happening in the industry and and they're just really encouraged to see people in the bare Market that are just building and building building like we are and and so he was real positive about what we've got going on so that was good good to have that call all right we got a meme winner we show the meme but go to our Twitter it's the pin tweet right now what would you say about it did you like that one were you happy with the winner um yeah I thought I thought all four entries were really really really strong it's not the winner was it's not the one I voted for but you can only vote for one of them yeah yeah um I I thought they were to go to our Twitter check out the meme winners share it like it um it's the year of the Corn guys let's keep these memes going we're gonna they were all really happy I I was quite pleased as well that um Empire she came second um must have put in May maybe about a hundred different memes so so it was it it was you know it was it was there's so many there's so many memes I really encourage you guys in the community just go to Twitter and do a search for the hashtag yearofthe corn yep so and I I don't this might be an announcement or not but we are giving away the fourth prize as well aren't we yeah I don't know if we announced that publicly yet no because that was discussed in a team meeting that was your your suggestion I fully agree with it it's everyone's a winner yeah everyone's a winner not everyone that made one but hey you know what you're a winner because we're going to try to display as many of those that we can this year and just to be a part of collectively creating you know with our community that's what that was this project and what we were doing I've seen some other people have taken on uh some of they've seen what we're doing and so other groups are doing meme contests which is is cool it's an endearment it's a it's a compliment they like the idea great um copy copy we don't mind copy copy we don't mind at all please it's endearing we we we love that um so three questions from the community that's next up okay question you want answer you want me to I I don't have it on my screen I close I close all the applications down because it makes my it makes the streaming go slower yeah we need to we need to figure that out for your PC all right uh when is the map land grab uh when is the map and the land grab I'll take that question um and then I'll give you you get the other two questions Rob maybe I'll just sit quiet I don't know I might have to interject sometimes it's hard for me to not talk all right so when the map and land grab you know what I would love to do that next month but the reality is we wanted to get something in your hand uh which is the racing game to get some utility for those vehicles and and that was that's a smaller scale project that we get to you know get in the community's hands quickly doesn't mean we're not working on the land grab like Solace is in full steam ahead uh so we are taring for later this year something with a map and and some sort of land grab release I don't know if we'll hit that Target but we like I said we are scaling up uh we're going to be adding on four to eight new Junior developers so that should help significantly with that and then we did just pull over a programmer that would be able to work on the land plots within Solace and so we are moving as rapidly as we can very efficiently through the process of getting that in your hands but I don't I really don't want to say a date it's difficult important to us that we get that in your hands it is difficult because we've not we've not just kind of sold random land or or you know little squares that that we have to actually build out the land and figure out still in uae5 how many plots we're going to have per District so we don't actually know how many solices that there's going to be yet there might be solace one two three four five and the reason you say that is because of performance we have to see how many we push as much as we can right we have to test the performance of that sector make sure that we're delivering on top quality and if we have to go down in the number of plots that goes that we had projected that means we would have to do one more solace or whatever but that's okay all of that is because our our vision is to bring you top quality and you're going to get a land plot that's its own unique feel like our our entire all of these environments that we're creating are worth exploring they're they're all different it's not like everybody gets the exact same land plot that's a good point Solace 2 will not be the same layout as solace one and Solace three they're all they're all complete built built from scratch a lot of the items are hand placed down some of the procedurally generated but a lot of them are hand placed and then they have to be tested to make sure you can get in and out of these places and that and that the it works really well from a player's point of view and all the on all all the other elements so so yeah it is it is time consuming but I mean the product speaks for itself when when you're walking around Solace or when you when you see some some of these leaks that we're about to show you of Solace yeah and the leak quality so we've shared videos via YouTube yeah the quality is it's great there but it's not quite no as close and for example of like the the the iPhone footage of people playing in Solus yeah at cnft con even that doesn't do it justice but when you're standing at cnft con or sitting and exploring Solace you're getting the best example of the quality of what we're doing 4K 60 frames per second it's freaking remarkable and like the quality is through the roof and you know so that just I also know that that since David's putting this new this new mesh system that that the theity has actually gone up absolutely quality's gone up and efficiency and speed of development has gone up and so the like I said in the beginning all of this stuff is the foundation that's the slow part we build upon that and it speeds up and uh so it is for for that reason somewhat hard to predict timing but yeah we're working hard behind the scenes to make this happen we really want to make it happen as quick I'd like to get more video leaks out as well but they take that's gonna be happening there will be a lot more content coming out with the racing game and with Solace when we start internal testing Matt will be able to make more videos we'll get Callum set up for some of those videos too uh it'll be great so next question is the um the release date of the OG the new this the annual OG vehicle and I'm going to say that I don't know the exact date of that but we are targeting releasing that around the launch of the racing game and the first nft sale of this year which will be uh coming in uh like late March early April somewhere around there we're going to launch the racing game and do an nft sale around that same time period and so that's also when the OG vehicle would be released as well but man the that OG vehicle it's GNA be so yeah it's gonna be remember the OG vehicle is is free transaction fees but free to the ogs correct correct um not it's not going to be an existing NF it's also gonna be a very whittel down OG so there's gonna be less of this yeah because what we're going to do is we're going to do hey if you're an OG you got two weeks to respond to this form that you're still active and then we're going to evaluate everybody that's in there so that group will get Whitted down a little bit through that process um and uh and again there's always opportunities for those that are contributing value in our community to become OG and that's information that's in OG's ogs will grow but first we need to do some pruning you know the the the we know there's a there's a lot of inactive ones looking at some previous mints they've you know there's been a lot of waiting around where are these ogs don't they realize a lot of people come in when it's hot and everything's Euphoria in the bull market it's everybody's just having a party and you know they lose interest when when it's it's so that's that's the natural thing that happens in a bare market like we're in um but man our community is still incredibly engaged so it's awesome to see that but we do need to whittle that that group down last question and then we'll go on to our leak uh challenge uh a friend oh can you challenge a friend set up your own custom race when we release the racing game I think it's a great question and it's what what do you say Rob well I think we we are definitely gonna we we're looking at launching the racing game with with multiplayer an element will be part of it um so the leagues won't be mult well well they'll kind of be but but the there'll be there'll be single player race where where you're in a league and there'll also be multiplayer maybe for fun to begin with while while we figure out the the the performance because we don't want people racing in leagues if if you have lag time so so we've got to do a lot of testing there um but there's there's quite a lot of other custom elements as well that that we're looking at maybe custom leagues um I'm not going to say too much on that but that that'll be um yeah that'll be pretty pretty good if we pull them off as well all right here we go let's get us over to some of these leaks and start uh sharing the beautiful artwork we've got going on here leaky leaky leaky leaky okay well look at that remarkable this is a section of Solace yeah it looks I mean that just looks like a photograph somebody's taken doesn't it yeah incredibly just it's just beautiful you know artwork you can you could literally imagine yourself walking up and uh spending the day there and fly fishing in that stream or you know whatever may be uh going on that we have as an maybe huh canoeing maybe canoeing yeah H gliding did I just make that up hand gliding would be uh awesome I'd love to do that um but yeah this is uh this is an example of all the you know the tooling that we've built to make things more efficient and build more quickly but the power of ue5 Unreal Engine five and just having a an amazing uh talented Team all working together to uh really make all of these um images come to life the all of the different sections the many sections of Solace that takes 40 minutes to walk across they're bringing him to life and improving each area uh one by one you know we're going through each segment that tree on the right that looks like it's had an elephant on the top of it do you know how you get an elephant up a tree oh gosh I know that this is going to be sadly not funny you just you just let it sit on an acorn and wait for it to grow there's another one so bad that's so bad all right here's another scene from Solace now you're looking at the waterfall I believe is is way back behind uh that you know this is much further away uh it take a while to get to the waterfall from here probably a 30 minute hike but this is another beautiful uh epic scene and this tree is definitely um had a little uh wind shear but yeah the the the trees are all unique there's a lot of you know there's procedurally gener at but there's a real solid amount of variety in all of our trees which is very cool yeah and in the distance we can see the the hot air balloons and then at the front there in the bottom left is a really cool campsite something's going on down there yep yep people camping enjoying the cornicopia space uh enjoying the Solace uh sunsets oh boy Siri my my Apple watch starts to talk to me just randomly now so I need to yeah that campsite looks a little bit upgraded from two trees and a Hummock it's probably level two yeah survival quite a bit better for sure I agree uh well let's let's take a look at what's next here oh whoa the Kopi Cafe vehicle what are you what are you drinking Rob well we already know but yeah so so this this is this is the free vehicle however it's got some custom library on it or custom custom stickers yeah this is foreshadowing of what we are going to have available for sponsorship packages uh customization of your vehicle in the future where you could add to the wrap you could create your own WP that sort of thing uh that goes onto the vehicle um definitely uh will'll get sponsorships and and things and you know so for example maybe uh McLaren wants to get their branding on these cars because they're getting uh you know when we've got two million people playing the racing game and Esports five different Esports leagues are competing and all sorts of stuff and they know that they could get a 100 million impressions over the year or whatever the numbers are you know with the number of races we have they're going to get that many impressions of their brand you know it becomes a powerful thing that we can offer to them which also gets their Community aware of what we're doing here into this game and uh yeah you know it could be a lot of potential there I'm obviously talking really big but hey this is where we're going well I can see teams and guilds putting putting their um their brands and logos on there as well and we have team racing yep absolutely teams guilds all sorts of fun stuff you know cardano nft projects could sponsor we've got meld that going to do their own rap y um you know so a lot well well the rap that rrap is a level on top of this isn't it this is this is kind of like small bits of of stickers and Library I think the rap is going to be bit more involved um if you're talking about a custom WAP so so David had made it possible for us to do uh the type of thing where it's a very basic you know add your logo or something like that yes he'd made that but then there could be more advanced type Partnerships that's not available to everyone unless you are you know really participating in a certain way where we do a custom WAP build yeah having said that this is this looks a little bit more than just the sticker because we've got the the writing down the side and we've got some colors changed the look of the yeah yeah this could be a full wrap this is more like a customer app but you know the the the point being is that the technology is set where he can embed that image into the mesh in a very simple way for a lot of oneoff type deals where it's just like yeah I want to put my picture on there or whatever um and then you know we can obviously do more advanced further like a full wrap design which takes a lot of um you know takes more hours and more development time but there'll be there'll be so much customization available in in the future um even this out the blocks is way more advanced we we imagined a few months ago absolutely not just sticker on top of the there's lots more stuff under the hood going on here yeah and just looking at the vehicle upgrades and all the things that we're planning out right now and the different systems that you can and and how we're going to build that up over time the vision for the racing game is pretty solid I think we're going to have uh something very special and obviously you know we're starting with a MVP which is definitely we're not going to release anything that we're not confident in and proud of um but it because each thing that we put out it represents our brand and it needs to be you know Paramount that it's high quality and and a great experience as much as possible obviously we're going to do a lot of testing a lot of debugging and it's just going to take time to really build this game up to where we want it to be but um the first iteration I'm pretty pumped about we're going to have an amazing racing game for sure they've gotten a lot figured out with the physics over the last couple of weeks which is great the hovering vehicle and the aspects you know they're talking about the the different braking types and uh three different brake types and uh you saw that image that they sent where we're we're breaking down all the different specs of the vehicle um and giving it all this this is what gives you that ability to really strategize around how you're going to go around the track what vehicle uh is going to be the best for this type of track what type of braking do I want to use on turn number two uh you know all of these different things come into play for uh improving and getting better and better at uh having a great racing time I can't wait to see what the guys that played the old version of the game in cnft conon that were there were a few guys that were just like remarkable they like they were just getting these insanely super fast yeah super super fast but I can't wait to see what they say when it requires a little bit more of them you know you got to use the right brakes on this Turner you got you know yeah you didn't need any breaks on that last course but I mean now now you'll have breaks you'll have afterburners you'll have other stuff that we're putting in that we're not announcing yeah that there there'll be there'll be lots of stuff yeah a lot of new stuff well hey that's it for the leaks for today hopefully you guys enjoy that yep you will definitely see Rob and I Out Racing in the copi cafe vehicle one of these days hopefully very soon and until next time have a wonderful day and we will see you soon bye bye",
+  "has_transcript": true
+}

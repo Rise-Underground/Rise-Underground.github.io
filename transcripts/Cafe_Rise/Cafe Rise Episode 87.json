@@ -1,0 +1,5054 @@
+{
+  "video_id": "tgWB-tOAULk",
+  "title": "Covering All BASEs | Copi Cafe 87 | Cornucopias",
+  "upload_date": "20240413",
+  "duration_seconds": 2629,
+  "description": "Welcome to another exciting episode of Copi Cafe, where our founders Rob Greig and Josh Jones talk about updates on the next game build, the expansion into the Base ecosystem, the F9R vehicle NFT sale on Base, our game database architecture, and leak with BIG potential.\n\n00:00 Beverage Choices\n03:30 Avatar Creator\n07:44 Base\n10:31 Maximalism\n17:19 F9R Sale\n20:27 Node Update\n23:30 COPI Boar Interview\n24:04 Architecture Over  view\n36:48 Leak!\n\nLinktree: https://linktr.ee/cornucopiasgame\n\nCornucopias is a cutting edge MMO RPG, set in a world where humanity has ascended from the earth's surface and created a breathtaking New World in the sky.\n\nThis Fantastical realm is a system of floating islands carved from the land we once called home now encased in a radically advanced dome-shaped structures suspended high above the clouds. Each one is a futuristic Marvel with its own unique environment identity and thriving communities it's within these domes. \n\nThe Epic Journey begins here, as players take control of their own personal Avatar. Which gives them the freedom to choose their Destiny, be immersed in vast Landscapes. explore vibrant settlements and engage in a myriad of activities such as crafting, commerce, combat, racing, and more.\n\nWelcome to a world where the sky is no longer the limit!",
+  "view_count": 2402,
+  "url": "https://www.youtube.com/watch?v=tgWB-tOAULk",
+  "slug": "covering-all-bases-copi-cafe-87-cornucopias",
+  "transcript": [
+    {
+      "start": 8.12,
+      "duration": 5.64,
+      "text": "cornucopias is a cuttingedge open world"
+    },
+    {
+      "start": 10.8,
+      "duration": 5.6,
+      "text": "MMO set in a world where Humanity has"
+    },
+    {
+      "start": 13.76,
+      "duration": 5.64,
+      "text": "ascended from the Earth's surface and"
+    },
+    {
+      "start": 16.4,
+      "duration": 6.56,
+      "text": "created a breathtaking New World in the"
+    },
+    {
+      "start": 19.4,
+      "duration": 6.52,
+      "text": "sky this Fantastical realm is a system"
+    },
+    {
+      "start": 22.96,
+      "duration": 6.04,
+      "text": "of floating islands carved from the land"
+    },
+    {
+      "start": 25.92,
+      "duration": 5.36,
+      "text": "we once called home now encased in"
+    },
+    {
+      "start": 29.0,
+      "duration": 5.16,
+      "text": "radically advanced dome-shaped"
+    },
+    {
+      "start": 31.28,
+      "duration": 6.36,
+      "text": "structures suspended high above the"
+    },
+    {
+      "start": 34.16,
+      "duration": 6.68,
+      "text": "clouds each one is a futuristic Marvel"
+    },
+    {
+      "start": 37.64,
+      "duration": 6.08,
+      "text": "with its own unique environment identity"
+    },
+    {
+      "start": 40.84,
+      "duration": 6.52,
+      "text": "and thriving communities it is Within"
+    },
+    {
+      "start": 43.72,
+      "duration": 5.56,
+      "text": "These domes The Epic Journey Begins here"
+    },
+    {
+      "start": 47.36,
+      "duration": 4.44,
+      "text": "players take control of their own"
+    },
+    {
+      "start": 49.28,
+      "duration": 5.6,
+      "text": "personal Avatar which gives them the"
+    },
+    {
+      "start": 51.8,
+      "duration": 6.2,
+      "text": "freedom to choose their Destiny be"
+    },
+    {
+      "start": 54.88,
+      "duration": 5.52,
+      "text": "immersed in vast Landscapes explore"
+    },
+    {
+      "start": 58.0,
+      "duration": 6.04,
+      "text": "vibrant settlements and engage engage in"
+    },
+    {
+      "start": 60.4,
+      "duration": 8.12,
+      "text": "a myriad of activities such as crafting"
+    },
+    {
+      "start": 64.04,
+      "duration": 7.56,
+      "text": "Commerce combat racing and more welcome"
+    },
+    {
+      "start": 68.52,
+      "duration": 6.28,
+      "text": "to a world where the sky is no longer"
+    },
+    {
+      "start": 71.6,
+      "duration": 3.2,
+      "text": "the limit"
+    },
+    {
+      "start": 94.04,
+      "duration": 4.48,
+      "text": "hey everyone welcome to copy Cafe this"
+    },
+    {
+      "start": 96.52,
+      "duration": 4.8,
+      "text": "is episode number"
+    },
+    {
+      "start": 98.52,
+      "duration": 4.4,
+      "text": "87 that's hard to believe we're nearing"
+    },
+    {
+      "start": 101.32,
+      "duration": 4.36,
+      "text": "100 Rob we got to do something special"
+    },
+    {
+      "start": 102.92,
+      "duration": 6.44,
+      "text": "for that one but you got Rob Greg here"
+    },
+    {
+      "start": 105.68,
+      "duration": 5.36,
+      "text": "and Josh Josh Jones and we're excited we"
+    },
+    {
+      "start": 109.36,
+      "duration": 4.0,
+      "text": "we had a we took a week off last week"
+    },
+    {
+      "start": 111.04,
+      "duration": 5.48,
+      "text": "you had a little break indeed uh a"
+    },
+    {
+      "start": 113.36,
+      "duration": 5.16,
+      "text": "vacation probably much needed um and"
+    },
+    {
+      "start": 116.52,
+      "duration": 4.32,
+      "text": "then you got a little bit sick which is"
+    },
+    {
+      "start": 118.52,
+      "duration": 4.72,
+      "text": "a bummer but"
+    },
+    {
+      "start": 120.84,
+      "duration": 5.0,
+      "text": "watch out for those an exciting episode"
+    },
+    {
+      "start": 123.24,
+      "duration": 4.84,
+      "text": "for you this week we've got some uh"
+    },
+    {
+      "start": 125.84,
+      "duration": 3.48,
+      "text": "release details the next release uh"
+    },
+    {
+      "start": 128.08,
+      "duration": 3.76,
+      "text": "we'll talk to you a little bit about"
+    },
+    {
+      "start": 129.32,
+      "duration": 6.4,
+      "text": "that we'll talk to you about base uh and"
+    },
+    {
+      "start": 131.84,
+      "duration": 5.44,
+      "text": "expanding our uh chain Base to Base uh"
+    },
+    {
+      "start": 135.72,
+      "duration": 3.76,
+      "text": "and then we'll talk a little bit about"
+    },
+    {
+      "start": 137.28,
+      "duration": 3.84,
+      "text": "nodes so a good episode we got some"
+    },
+    {
+      "start": 139.48,
+      "duration": 3.52,
+      "text": "Community questions as well that we'll"
+    },
+    {
+      "start": 141.12,
+      "duration": 5.88,
+      "text": "go over and of course as always we've"
+    },
+    {
+      "start": 143.0,
+      "duration": 7.24,
+      "text": "got a leak so uh let's go ahead and get"
+    },
+    {
+      "start": 147.0,
+      "duration": 6.72,
+      "text": "started you ready indeed let's do it"
+    },
+    {
+      "start": 150.24,
+      "duration": 6.2,
+      "text": "what are you drinking well today yes"
+    },
+    {
+      "start": 153.72,
+      "duration": 5.8,
+      "text": "with my plain germs I'm drinking in the"
+    },
+    {
+      "start": 156.44,
+      "duration": 5.96,
+      "text": "UK what is called a lmip which is kind"
+    },
+    {
+      "start": 159.52,
+      "duration": 6.0,
+      "text": "of like a powdered powdered medicine"
+    },
+    {
+      "start": 162.4,
+      "duration": 6.44,
+      "text": "drink with paracetamol and all kinds of"
+    },
+    {
+      "start": 165.52,
+      "duration": 5.52,
+      "text": "lemon and it's just hot lemon with par"
+    },
+    {
+      "start": 168.84,
+      "duration": 4.56,
+      "text": "lemsip they call it very very big brand"
+    },
+    {
+      "start": 171.04,
+      "duration": 7.44,
+      "text": "in the UK"
+    },
+    {
+      "start": 173.4,
+      "duration": 8.32,
+      "text": "lmip um well I've got the minion cup"
+    },
+    {
+      "start": 178.48,
+      "duration": 3.24,
+      "text": "once again"
+    },
+    {
+      "start": 182.36,
+      "duration": 8.36,
+      "text": "huh yes yes well done sir um it is a"
+    },
+    {
+      "start": 187.44,
+      "duration": 6.8,
+      "text": "diet Dr Pepper in here today diet Dr"
+    },
+    {
+      "start": 190.72,
+      "duration": 4.2,
+      "text": "Pepper yeah I can't be having 40 grams"
+    },
+    {
+      "start": 194.24,
+      "duration": 3.64,
+      "text": "of"
+    },
+    {
+      "start": 194.92,
+      "duration": 5.76,
+      "text": "sugar so instead I'm choosing the uh"
+    },
+    {
+      "start": 197.88,
+      "duration": 6.24,
+      "text": "artificial sugar I'm choosing a a lesser"
+    },
+    {
+      "start": 200.68,
+      "duration": 5.52,
+      "text": "evil in my opinion nice enough yet to be"
+    },
+    {
+      "start": 204.12,
+      "duration": 4.72,
+      "text": "seen whether that's actually lesser I"
+    },
+    {
+      "start": 206.2,
+      "duration": 6.32,
+      "text": "don't know anyway all right let's let's"
+    },
+    {
+      "start": 208.84,
+      "duration": 6.64,
+      "text": "get right at it so so exciting week I've"
+    },
+    {
+      "start": 212.52,
+      "duration": 4.52,
+      "text": "seen some of the player Avatar have you"
+    },
+    {
+      "start": 215.48,
+      "duration": 3.56,
+      "text": "have you seen some of the sliders and"
+    },
+    {
+      "start": 217.04,
+      "duration": 3.72,
+      "text": "what's going on some of the examples"
+    },
+    {
+      "start": 219.04,
+      "duration": 4.28,
+      "text": "some of what's been created I have yes"
+    },
+    {
+      "start": 220.76,
+      "duration": 5.28,
+      "text": "I've I've recreated"
+    },
+    {
+      "start": 223.32,
+      "duration": 6.0,
+      "text": "um a few of my favorite characters from"
+    },
+    {
+      "start": 226.04,
+      "duration": 3.28,
+      "text": "from from The Walking"
+    },
+    {
+      "start": 229.4,
+      "duration": 4.36,
+      "text": "Dead nice I mean we're getting some"
+    },
+    {
+      "start": 232.04,
+      "duration": 3.28,
+      "text": "interesting Creations out of this I"
+    },
+    {
+      "start": 233.76,
+      "duration": 4.48,
+      "text": "jumped into a meeting today where they"
+    },
+    {
+      "start": 235.32,
+      "duration": 4.76,
+      "text": "were testing all the sliders at Max and"
+    },
+    {
+      "start": 238.24,
+      "duration": 4.48,
+      "text": "just messing around and that created"
+    },
+    {
+      "start": 240.08,
+      "duration": 4.96,
+      "text": "some pretty unique uh y looking"
+    },
+    {
+      "start": 242.72,
+      "duration": 4.8,
+      "text": "individuals incredibly challenging"
+    },
+    {
+      "start": 245.04,
+      "duration": 6.0,
+      "text": "getting this refined and balanced to the"
+    },
+    {
+      "start": 247.52,
+      "duration": 5.2,
+      "text": "point where we like it um I do believe"
+    },
+    {
+      "start": 251.04,
+      "duration": 4.76,
+      "text": "they've run into several things that"
+    },
+    {
+      "start": 252.72,
+      "duration": 5.28,
+      "text": "might cause a slight delay of the"
+    },
+    {
+      "start": 255.8,
+      "duration": 6.24,
+      "text": "original date of the 12th but it's"
+    },
+    {
+      "start": 258.0,
+      "duration": 6.04,
+      "text": "coming very soon so um could we release"
+    },
+    {
+      "start": 262.04,
+      "duration": 4.76,
+      "text": "it on the 12th when this episode is out"
+    },
+    {
+      "start": 264.04,
+      "duration": 3.96,
+      "text": "it's possible but I'm guessing right now"
+    },
+    {
+      "start": 266.8,
+      "duration": 3.04,
+      "text": "based upon the way things are going"
+    },
+    {
+      "start": 268.0,
+      "duration": 3.76,
+      "text": "today that we might just let's just kick"
+    },
+    {
+      "start": 269.84,
+      "duration": 4.08,
+      "text": "it a few days back yeah we probably"
+    },
+    {
+      "start": 271.76,
+      "duration": 4.88,
+      "text": "should not let them have the weekend"
+    },
+    {
+      "start": 273.92,
+      "duration": 5.52,
+      "text": "yeah yeah let them add a little bit more"
+    },
+    {
+      "start": 276.64,
+      "duration": 5.48,
+      "text": "uh and and resolve some of the issues um"
+    },
+    {
+      "start": 279.44,
+      "duration": 5.6,
+      "text": "but again guys uh and and gals like"
+    },
+    {
+      "start": 282.12,
+      "duration": 5.24,
+      "text": "please understand what the complexity"
+    },
+    {
+      "start": 285.04,
+      "duration": 5.88,
+      "text": "and the enormity of this"
+    },
+    {
+      "start": 287.36,
+      "duration": 7.4,
+      "text": "release this is uh no small task to"
+    },
+    {
+      "start": 290.92,
+      "duration": 6.44,
+      "text": "build an avatar creator at this level so"
+    },
+    {
+      "start": 294.76,
+      "duration": 5.52,
+      "text": "uh the team has been heads down working"
+    },
+    {
+      "start": 297.36,
+      "duration": 4.88,
+      "text": "incredibly hard it it it require Ires so"
+    },
+    {
+      "start": 300.28,
+      "duration": 5.8,
+      "text": "many different skill sets to pull this"
+    },
+    {
+      "start": 302.24,
+      "duration": 5.12,
+      "text": "off so uh we're lucky uh we built an"
+    },
+    {
+      "start": 306.08,
+      "duration": 3.32,
+      "text": "amazing team because they're doing an"
+    },
+    {
+      "start": 307.36,
+      "duration": 3.68,
+      "text": "excellent job um and it's going to be"
+    },
+    {
+      "start": 309.4,
+      "duration": 3.52,
+      "text": "far from perfect and there's more in the"
+    },
+    {
+      "start": 311.04,
+      "duration": 3.28,
+      "text": "build it's not just the Avatar Creator"
+    },
+    {
+      "start": 312.92,
+      "duration": 4.0,
+      "text": "there there's lots more stuff that we've"
+    },
+    {
+      "start": 314.32,
+      "duration": 4.2,
+      "text": "added into it as well there is there is"
+    },
+    {
+      "start": 316.92,
+      "duration": 6.2,
+      "text": "some good stuff some of it we'll talk"
+    },
+    {
+      "start": 318.52,
+      "duration": 7.48,
+      "text": "about uh well today um as well so okay"
+    },
+    {
+      "start": 323.12,
+      "duration": 5.28,
+      "text": "so anything else on the Avatar Creator"
+    },
+    {
+      "start": 326.0,
+      "duration": 5.64,
+      "text": "that we want to talk about well okay"
+    },
+    {
+      "start": 328.4,
+      "duration": 5.96,
+      "text": "I've seen some really cool avatars with"
+    },
+    {
+      "start": 331.64,
+      "duration": 4.16,
+      "text": "different tattoos yep some good tattoos"
+    },
+    {
+      "start": 334.36,
+      "duration": 3.08,
+      "text": "in there yeah there's more than one some"
+    },
+    {
+      "start": 335.8,
+      "duration": 4.52,
+      "text": "of them look pretty cool I'm really"
+    },
+    {
+      "start": 337.44,
+      "duration": 6.0,
+      "text": "excited about that and furthermore Matt"
+    },
+    {
+      "start": 340.32,
+      "duration": 4.84,
+      "text": "this morning asked if there was a Bob"
+    },
+    {
+      "start": 343.44,
+      "duration": 5.6,
+      "text": "Ross"
+    },
+    {
+      "start": 345.16,
+      "duration": 6.8,
+      "text": "fro to which David quickly responded"
+    },
+    {
+      "start": 349.04,
+      "duration": 5.48,
+      "text": "with a snapshot of the character that he"
+    },
+    {
+      "start": 351.96,
+      "duration": 5.48,
+      "text": "was demoing to us one of the male guys"
+    },
+    {
+      "start": 354.52,
+      "duration": 5.28,
+      "text": "that he was building with a Bob Ross"
+    },
+    {
+      "start": 357.44,
+      "duration": 5.16,
+      "text": "type fro it wasn't quite Bob Ross color"
+    },
+    {
+      "start": 359.8,
+      "duration": 4.56,
+      "text": "but it was he just quickly uh reverted"
+    },
+    {
+      "start": 362.6,
+      "duration": 4.8,
+      "text": "back with that so I am excited to know"
+    },
+    {
+      "start": 364.36,
+      "duration": 5.8,
+      "text": "that you can get some Bob Ross style"
+    },
+    {
+      "start": 367.4,
+      "duration": 4.84,
+      "text": "hair now what I'm not so excited about"
+    },
+    {
+      "start": 370.16,
+      "duration": 4.68,
+      "text": "is we may not have beards with this"
+    },
+    {
+      "start": 372.24,
+      "duration": 5.24,
+      "text": "first release which yeah but I mean"
+    },
+    {
+      "start": 374.84,
+      "duration": 2.64,
+      "text": "beards have to"
+    },
+    {
+      "start": 377.72,
+      "duration": 6.72,
+      "text": "grow yes they do yes they do they're new"
+    },
+    {
+      "start": 382.44,
+      "duration": 4.28,
+      "text": "these are new characters they got give"
+    },
+    {
+      "start": 384.44,
+      "duration": 4.44,
+      "text": "them time to grow a beard you know"
+    },
+    {
+      "start": 386.72,
+      "duration": 4.4,
+      "text": "that's that's a good point so maybe with"
+    },
+    {
+      "start": 388.88,
+      "duration": 5.52,
+      "text": "the announce we don't have beards we"
+    },
+    {
+      "start": 391.12,
+      "duration": 6.24,
+      "text": "just tell the community that's okay they"
+    },
+    {
+      "start": 394.4,
+      "duration": 5.4,
+      "text": "will grow y give some tattoos before"
+    },
+    {
+      "start": 397.36,
+      "duration": 4.56,
+      "text": "beards let's get"
+    },
+    {
+      "start": 399.8,
+      "duration": 3.76,
+      "text": "priorities yeah I Gotta Have A Beard"
+    },
+    {
+      "start": 401.92,
+      "duration": 3.68,
+      "text": "though and in fact I talked to David"
+    },
+    {
+      "start": 403.56,
+      "duration": 4.28,
+      "text": "about that this morning in the thread"
+    },
+    {
+      "start": 405.6,
+      "duration": 5.44,
+      "text": "and said hey we need to have beards or I"
+    },
+    {
+      "start": 407.84,
+      "duration": 6.88,
+      "text": "quit and he did uh he did say that"
+    },
+    {
+      "start": 411.04,
+      "duration": 5.84,
+      "text": "they're coming soon so I don't know"
+    },
+    {
+      "start": 414.72,
+      "duration": 3.2,
+      "text": "when there's a lot of styles of beards"
+    },
+    {
+      "start": 416.88,
+      "duration": 3.64,
+      "text": "what are they going to be yeah but I"
+    },
+    {
+      "start": 417.92,
+      "duration": 5.6,
+      "text": "want yellow faces blue and and and green"
+    },
+    {
+      "start": 420.52,
+      "duration": 6.4,
+      "text": "faces or I quit but see I already made"
+    },
+    {
+      "start": 423.52,
+      "duration": 4.56,
+      "text": "demands I already did the quit threat no"
+    },
+    {
+      "start": 426.92,
+      "duration": 3.48,
+      "text": "this is the only time you'll see me"
+    },
+    {
+      "start": 428.08,
+      "duration": 4.56,
+      "text": "wearing red as well I very very"
+    },
+    {
+      "start": 430.4,
+      "duration": 3.84,
+      "text": "extremely rarely wear red I was just I"
+    },
+    {
+      "start": 432.64,
+      "duration": 3.16,
+      "text": "was literally just about to ask you"
+    },
+    {
+      "start": 434.24,
+      "duration": 4.52,
+      "text": "about your shirt do you need to talk"
+    },
+    {
+      "start": 435.8,
+      "duration": 6.96,
+      "text": "about anything going on with City right"
+    },
+    {
+      "start": 438.76,
+      "duration": 6.36,
+      "text": "now no no I mean after winning the the"
+    },
+    {
+      "start": 442.76,
+      "duration": 4.4,
+      "text": "the the treble last year we're on track"
+    },
+    {
+      "start": 445.12,
+      "duration": 4.96,
+      "text": "to to win it again we had a good a good"
+    },
+    {
+      "start": 447.16,
+      "duration": 5.52,
+      "text": "draw this week yeah that's the reason I"
+    },
+    {
+      "start": 450.08,
+      "duration": 7.76,
+      "text": "was wearing this top yeah yeah I figured"
+    },
+    {
+      "start": 452.68,
+      "duration": 5.92,
+      "text": "I figured that um okay so next up uh me"
+    },
+    {
+      "start": 457.84,
+      "duration": 3.36,
+      "text": "or"
+    },
+    {
+      "start": 458.6,
+      "duration": 4.8,
+      "text": "anything yeah so the the date push but"
+    },
+    {
+      "start": 461.2,
+      "duration": 5.44,
+      "text": "we've also got uh we'll we'll save the"
+    },
+    {
+      "start": 463.4,
+      "duration": 5.96,
+      "text": "leak till later as usual next up is base"
+    },
+    {
+      "start": 466.64,
+      "duration": 6.16,
+      "text": "um so many of you have seen we've added"
+    },
+    {
+      "start": 469.36,
+      "duration": 6.72,
+      "text": "base to the mix of chains that we're"
+    },
+    {
+      "start": 472.8,
+      "duration": 5.0,
+      "text": "supporting uh and as always we announced"
+    },
+    {
+      "start": 476.08,
+      "duration": 6.32,
+      "text": "this in our white paper the original"
+    },
+    {
+      "start": 477.8,
+      "duration": 6.0,
+      "text": "white paper win 20 21 yep maybe November"
+    },
+    {
+      "start": 482.4,
+      "duration": 4.32,
+      "text": "is when we published the white paper"
+    },
+    {
+      "start": 483.8,
+      "duration": 5.64,
+      "text": "somewhere around there of 2021 was when"
+    },
+    {
+      "start": 486.72,
+      "duration": 6.2,
+      "text": "we announced that we plan to be chain"
+    },
+    {
+      "start": 489.44,
+      "duration": 5.76,
+      "text": "agnostic and offer to cast a wide net"
+    },
+    {
+      "start": 492.92,
+      "duration": 4.36,
+      "text": "and a large player player base but"
+    },
+    {
+      "start": 495.2,
+      "duration": 4.96,
+      "text": "there's so many reasons for this this is"
+    },
+    {
+      "start": 497.28,
+      "duration": 5.36,
+      "text": "just one of them uh and so yeah we're"
+    },
+    {
+      "start": 500.16,
+      "duration": 5.76,
+      "text": "we're happy to call cardono our home"
+    },
+    {
+      "start": 502.64,
+      "duration": 6.36,
+      "text": "chain but we are we are expanding also"
+    },
+    {
+      "start": 505.92,
+      "duration": 5.56,
+      "text": "to base and this is a strategy that we"
+    },
+    {
+      "start": 509.0,
+      "duration": 4.64,
+      "text": "want to used to capture more players"
+    },
+    {
+      "start": 511.48,
+      "duration": 3.8,
+      "text": "more interest in what we're doing and"
+    },
+    {
+      "start": 513.64,
+      "duration": 3.2,
+      "text": "that's the final step I've announced"
+    },
+    {
+      "start": 515.28,
+      "duration": 3.56,
+      "text": "this many times too by the way but"
+    },
+    {
+      "start": 516.84,
+      "duration": 5.24,
+      "text": "that's the final step before we really"
+    },
+    {
+      "start": 518.84,
+      "duration": 4.96,
+      "text": "start going after mainstream and we"
+    },
+    {
+      "start": 522.08,
+      "duration": 4.56,
+      "text": "might we might start going after"
+    },
+    {
+      "start": 523.8,
+      "duration": 4.64,
+      "text": "mainstream later this year uh but the"
+    },
+    {
+      "start": 526.64,
+      "duration": 5.56,
+      "text": "idea is that we get as many people as we"
+    },
+    {
+      "start": 528.44,
+      "duration": 6.12,
+      "text": "can playing this game so um that's"
+    },
+    {
+      "start": 532.2,
+      "duration": 5.76,
+      "text": "that's one of many but I mean ba Bas is"
+    },
+    {
+      "start": 534.56,
+      "duration": 6.4,
+      "text": "exciting because obviously it's part of"
+    },
+    {
+      "start": 537.96,
+      "duration": 3.0,
+      "text": "um"
+    },
+    {
+      "start": 542.04,
+      "duration": 5.36,
+      "text": "coinbase it'll come back to me yeah so"
+    },
+    {
+      "start": 544.96,
+      "duration": 6.36,
+      "text": "so it's part of coinbase it's Brian"
+    },
+    {
+      "start": 547.4,
+      "duration": 7.28,
+      "text": "Armstrong's baby they already have a 100"
+    },
+    {
+      "start": 551.32,
+      "duration": 6.56,
+      "text": "million users of that platform you know"
+    },
+    {
+      "start": 554.68,
+      "duration": 6.72,
+      "text": "it's brand new we will be I think one of"
+    },
+    {
+      "start": 557.88,
+      "duration": 5.84,
+      "text": "the the very first games um especially a"
+    },
+    {
+      "start": 561.4,
+      "duration": 4.68,
+      "text": "game that's well established with as far"
+    },
+    {
+      "start": 563.72,
+      "duration": 5.2,
+      "text": "along as we are so so we've got a really"
+    },
+    {
+      "start": 566.08,
+      "duration": 5.4,
+      "text": "good chance of getting a lot of eyeballs"
+    },
+    {
+      "start": 568.92,
+      "duration": 5.0,
+      "text": "on our project and those 100 million"
+    },
+    {
+      "start": 571.48,
+      "duration": 4.2,
+      "text": "eyeballs then you know will'll be seeing"
+    },
+    {
+      "start": 573.92,
+      "duration": 3.44,
+      "text": "they'll be playing our game they'll be"
+    },
+    {
+      "start": 575.68,
+      "duration": 3.72,
+      "text": "seeing the bubble Jets they'll be seeing"
+    },
+    {
+      "start": 577.36,
+      "duration": 3.88,
+      "text": "the land and if they want those bubble"
+    },
+    {
+      "start": 579.4,
+      "duration": 4.44,
+      "text": "Jets all their land well guess what they"
+    },
+    {
+      "start": 581.24,
+      "duration": 5.6,
+      "text": "now are now a great opportunity for us"
+    },
+    {
+      "start": 583.84,
+      "duration": 5.32,
+      "text": "to teach them about cardano so you have"
+    },
+    {
+      "start": 586.84,
+      "duration": 3.96,
+      "text": "to have a cardano wallet obviously and"
+    },
+    {
+      "start": 589.16,
+      "duration": 4.2,
+      "text": "and they're only available on the"
+    },
+    {
+      "start": 590.8,
+      "duration": 4.56,
+      "text": "secondaries and then vice versa as well"
+    },
+    {
+      "start": 593.36,
+      "duration": 4.44,
+      "text": "it's a great opportunity for our"
+    },
+    {
+      "start": 595.36,
+      "duration": 4.48,
+      "text": "cardano um"
+    },
+    {
+      "start": 597.8,
+      "duration": 5.6,
+      "text": "base player base"
+    },
+    {
+      "start": 599.84,
+      "duration": 5.52,
+      "text": "to to learn about the this upcoming um"
+    },
+    {
+      "start": 603.4,
+      "duration": 4.24,
+      "text": "chain as well so so there's some really"
+    },
+    {
+      "start": 605.36,
+      "duration": 4.2,
+      "text": "good cross-pollination going on there"
+    },
+    {
+      "start": 607.64,
+      "duration": 4.56,
+      "text": "and and this part of our definitely part"
+    },
+    {
+      "start": 609.56,
+      "duration": 5.0,
+      "text": "of our chain agnostics um"
+    },
+    {
+      "start": 612.2,
+      "duration": 5.52,
+      "text": "strategy is actually the fourth chain"
+    },
+    {
+      "start": 614.56,
+      "duration": 7.16,
+      "text": "we're on now because the the copy token"
+    },
+    {
+      "start": 617.72,
+      "duration": 6.52,
+      "text": "is is cardano ethereum B&B smart chain"
+    },
+    {
+      "start": 621.72,
+      "duration": 5.24,
+      "text": "and now introducing base so so this is"
+    },
+    {
+      "start": 624.24,
+      "duration": 4.72,
+      "text": "the fourth you know we we've been chain"
+    },
+    {
+      "start": 626.96,
+      "duration": 3.36,
+      "text": "agnostic and multi-chain from the"
+    },
+    {
+      "start": 628.96,
+      "duration": 5.0,
+      "text": "beginning"
+    },
+    {
+      "start": 630.32,
+      "duration": 6.92,
+      "text": "yes yes we have and another thing that I"
+    },
+    {
+      "start": 633.96,
+      "duration": 7.2,
+      "text": "want to emphasize that the"
+    },
+    {
+      "start": 637.24,
+      "duration": 6.72,
+      "text": "amount of people that we can bring in is"
+    },
+    {
+      "start": 641.16,
+      "duration": 6.36,
+      "text": "correlative to how easy we make the"
+    },
+    {
+      "start": 643.96,
+      "duration": 6.0,
+      "text": "process yeah ideally in the future"
+    },
+    {
+      "start": 647.52,
+      "duration": 4.44,
+      "text": "there's not even a talk of what chain it"
+    },
+    {
+      "start": 649.96,
+      "duration": 3.96,
+      "text": "is with the user base and the players"
+    },
+    {
+      "start": 651.96,
+      "duration": 4.64,
+      "text": "that coming on that it's all seamless"
+    },
+    {
+      "start": 653.92,
+      "duration": 5.88,
+      "text": "it's behind the scenes but it empowers"
+    },
+    {
+      "start": 656.6,
+      "duration": 5.84,
+      "text": "them in so many ways and"
+    },
+    {
+      "start": 659.8,
+      "duration": 4.84,
+      "text": "uh so looking to the Future who knows"
+    },
+    {
+      "start": 662.44,
+      "duration": 4.16,
+      "text": "what chain is leading the race or how it"
+    },
+    {
+      "start": 664.64,
+      "duration": 4.64,
+      "text": "works but what we want is success for"
+    },
+    {
+      "start": 666.6,
+      "duration": 4.64,
+      "text": "all of them and we want success for this"
+    },
+    {
+      "start": 669.28,
+      "duration": 5.48,
+      "text": "industry and the easier we make it for"
+    },
+    {
+      "start": 671.24,
+      "duration": 7.68,
+      "text": "everyone the better yeah I we we've had"
+    },
+    {
+      "start": 674.76,
+      "duration": 6.8,
+      "text": "lots of sport as well I I I saw um I I"
+    },
+    {
+      "start": 678.92,
+      "duration": 5.4,
+      "text": "saw a video that Dan made from crypto"
+    },
+    {
+      "start": 681.56,
+      "duration": 5.84,
+      "text": "Capital Ventures and we all know he's a"
+    },
+    {
+      "start": 684.32,
+      "duration": 4.68,
+      "text": "huge huge huge supporter of of cardano"
+    },
+    {
+      "start": 687.4,
+      "duration": 4.12,
+      "text": "he said he's going to do more content on"
+    },
+    {
+      "start": 689.0,
+      "duration": 4.36,
+      "text": "base and and for him he's got exactly"
+    },
+    {
+      "start": 691.52,
+      "duration": 4.84,
+      "text": "the same message you know people will"
+    },
+    {
+      "start": 693.36,
+      "duration": 4.76,
+      "text": "have a go a coinbase wallet on that"
+    },
+    {
+      "start": 696.36,
+      "duration": 4.08,
+      "text": "coinbase wallet they don't need to leave"
+    },
+    {
+      "start": 698.12,
+      "duration": 4.48,
+      "text": "coinbase they they will have their"
+    },
+    {
+      "start": 700.44,
+      "duration": 4.84,
+      "text": "native assets they will have nfts on"
+    },
+    {
+      "start": 702.6,
+      "duration": 5.2,
+      "text": "there they they actually for web too"
+    },
+    {
+      "start": 705.28,
+      "duration": 4.56,
+      "text": "it's actually an a single experience you"
+    },
+    {
+      "start": 707.8,
+      "duration": 4.32,
+      "text": "go on there and you have everything in"
+    },
+    {
+      "start": 709.84,
+      "duration": 3.76,
+      "text": "one place then later on if they want to"
+    },
+    {
+      "start": 712.12,
+      "duration": 4.28,
+      "text": "they can learn about other chains but"
+    },
+    {
+      "start": 713.6,
+      "duration": 4.2,
+      "text": "they don't need to I mean that could and"
+    },
+    {
+      "start": 716.4,
+      "duration": 3.6,
+      "text": "that is an absolutely amazing"
+    },
+    {
+      "start": 717.8,
+      "duration": 6.36,
+      "text": "opportunity for for you know new people"
+    },
+    {
+      "start": 720.0,
+      "duration": 6.8,
+      "text": "to enter the ecosystem I also saw today"
+    },
+    {
+      "start": 724.16,
+      "duration": 5.0,
+      "text": "Thursday as we're filming this um crypto"
+    },
+    {
+      "start": 726.8,
+      "duration": 6.28,
+      "text": "Pro let's get Dan back"
+    },
+    {
+      "start": 729.16,
+      "duration": 6.32,
+      "text": "on in a while yeah say today I also saw"
+    },
+    {
+      "start": 733.08,
+      "duration": 4.6,
+      "text": "an interview crypto Crow with Charles"
+    },
+    {
+      "start": 735.48,
+      "duration": 4.8,
+      "text": "hoskinson and and you know Charles was"
+    },
+    {
+      "start": 737.68,
+      "duration": 5.08,
+      "text": "talking about projects going cross chain"
+    },
+    {
+      "start": 740.28,
+      "duration": 4.72,
+      "text": "and multi-chain and how positive that is"
+    },
+    {
+      "start": 742.76,
+      "duration": 5.44,
+      "text": "to actually bring more eyes into the"
+    },
+    {
+      "start": 745.0,
+      "duration": 5.0,
+      "text": "card cardan ecosystem which is you know"
+    },
+    {
+      "start": 748.2,
+      "duration": 4.44,
+      "text": "exactly the same for phos ophy that that"
+    },
+    {
+      "start": 750.0,
+      "duration": 5.68,
+      "text": "we share we want all the chains to"
+    },
+    {
+      "start": 752.64,
+      "duration": 5.32,
+      "text": "succeed but because we want web 3 to"
+    },
+    {
+      "start": 755.68,
+      "duration": 5.84,
+      "text": "succeed and we don't sued in our little"
+    },
+    {
+      "start": 757.96,
+      "duration": 5.32,
+      "text": "Echo Chambers we succeed"
+    },
+    {
+      "start": 761.52,
+      "duration": 5.0,
+      "text": "together"
+    },
+    {
+      "start": 763.28,
+      "duration": 5.16,
+      "text": "100% the the mindset of"
+    },
+    {
+      "start": 766.52,
+      "duration": 5.32,
+      "text": "maximalism is"
+    },
+    {
+      "start": 768.44,
+      "duration": 6.36,
+      "text": "one that unfortunately is not very"
+    },
+    {
+      "start": 771.84,
+      "duration": 4.92,
+      "text": "welcoming to new people you know when"
+    },
+    {
+      "start": 774.8,
+      "duration": 4.0,
+      "text": "when somebody comes in and they see a"
+    },
+    {
+      "start": 776.76,
+      "duration": 4.92,
+      "text": "bunch of fighting about which chain is"
+    },
+    {
+      "start": 778.8,
+      "duration": 4.72,
+      "text": "better that kind of pushes people away"
+    },
+    {
+      "start": 781.68,
+      "duration": 3.92,
+      "text": "it makes people go you know what I don't"
+    },
+    {
+      "start": 783.52,
+      "duration": 5.32,
+      "text": "feel comfortable with this I'm not in"
+    },
+    {
+      "start": 785.6,
+      "duration": 4.92,
+      "text": "this space I'm just I'm not ready for"
+    },
+    {
+      "start": 788.84,
+      "duration": 3.84,
+      "text": "this and people turn away because"
+    },
+    {
+      "start": 790.52,
+      "duration": 4.08,
+      "text": "they're already so intimidated by what"
+    },
+    {
+      "start": 792.68,
+      "duration": 4.4,
+      "text": "crypto looks like they don't know how to"
+    },
+    {
+      "start": 794.6,
+      "duration": 4.24,
+      "text": "use this stuff it's intimidating they've"
+    },
+    {
+      "start": 797.08,
+      "duration": 4.64,
+      "text": "heard that it's volatility that there's"
+    },
+    {
+      "start": 798.84,
+      "duration": 5.12,
+      "text": "scams they've heard all these things um"
+    },
+    {
+      "start": 801.72,
+      "duration": 4.32,
+      "text": "but they know that wow Bitcoin ETF it's"
+    },
+    {
+      "start": 803.96,
+      "duration": 3.72,
+      "text": "all over the news I want to get in but"
+    },
+    {
+      "start": 806.04,
+      "duration": 4.24,
+      "text": "then they see a bunch of of fighting and"
+    },
+    {
+      "start": 807.68,
+      "duration": 4.6,
+      "text": "bickering on Twitter about what chain"
+    },
+    {
+      "start": 810.28,
+      "duration": 5.44,
+      "text": "and blah blah blah this kind of thing"
+    },
+    {
+      "start": 812.28,
+      "duration": 6.76,
+      "text": "needs to stop but we we need overall in"
+    },
+    {
+      "start": 815.72,
+      "duration": 5.4,
+      "text": "this industry we need to start thinking"
+    },
+    {
+      "start": 819.04,
+      "duration": 5.52,
+      "text": "about the bigger picture yeah and"
+    },
+    {
+      "start": 821.12,
+      "duration": 6.88,
+      "text": "bringing in the masses and maximalism"
+    },
+    {
+      "start": 824.56,
+      "duration": 5.44,
+      "text": "does not help that at at all like what"
+    },
+    {
+      "start": 828.0,
+      "duration": 4.56,
+      "text": "we need is friendly welcoming"
+    },
+    {
+      "start": 830.0,
+      "duration": 5.12,
+      "text": "environments to bring people into it and"
+    },
+    {
+      "start": 832.56,
+      "duration": 5.32,
+      "text": "show them what this chain is like and"
+    },
+    {
+      "start": 835.12,
+      "duration": 4.04,
+      "text": "what is this chain like and you decide"
+    },
+    {
+      "start": 837.88,
+      "duration": 4.32,
+      "text": "and they're going to go to the chain"
+    },
+    {
+      "start": 839.16,
+      "duration": 5.52,
+      "text": "that's best for them like and I think it"
+    },
+    {
+      "start": 842.2,
+      "duration": 5.08,
+      "text": "I think it's also part of of showing"
+    },
+    {
+      "start": 844.68,
+      "duration": 5.84,
+      "text": "that the space is very early cuz we had"
+    },
+    {
+      "start": 847.28,
+      "duration": 6.08,
+      "text": "this with gaming as well in in the early"
+    },
+    {
+      "start": 850.52,
+      "duration": 4.76,
+      "text": "days they didn't have the tools to go"
+    },
+    {
+      "start": 853.36,
+      "duration": 3.92,
+      "text": "crossplatform so so you would have"
+    },
+    {
+      "start": 855.28,
+      "duration": 4.28,
+      "text": "people that would only develop say for"
+    },
+    {
+      "start": 857.28,
+      "duration": 4.28,
+      "text": "the PC or then people would develop for"
+    },
+    {
+      "start": 859.56,
+      "duration": 4.48,
+      "text": "the Xbox or for the PlayStation or the"
+    },
+    {
+      "start": 861.56,
+      "duration": 5.32,
+      "text": "Nintendo and then as the tools was built"
+    },
+    {
+      "start": 864.04,
+      "duration": 6.6,
+      "text": "and and as the space evolved what we"
+    },
+    {
+      "start": 866.88,
+      "duration": 6.76,
+      "text": "then saw is is games like fortnite that"
+    },
+    {
+      "start": 870.64,
+      "duration": 4.76,
+      "text": "were then building one game and actually"
+    },
+    {
+      "start": 873.64,
+      "duration": 4.32,
+      "text": "the platform didn't didn't matter cuz"
+    },
+    {
+      "start": 875.4,
+      "duration": 6.88,
+      "text": "you can then play fortnite on mobile or"
+    },
+    {
+      "start": 877.96,
+      "duration": 7.24,
+      "text": "on PC on Xbox on Playstation um and then"
+    },
+    {
+      "start": 882.28,
+      "duration": 5.0,
+      "text": "this space evolved even more because"
+    },
+    {
+      "start": 885.2,
+      "duration": 4.44,
+      "text": "only Xbox fortnite could play Xbox"
+    },
+    {
+      "start": 887.28,
+      "duration": 5.0,
+      "text": "fortnite then the next level came in"
+    },
+    {
+      "start": 889.64,
+      "duration": 5.12,
+      "text": "where now you now you've got Xbox"
+    },
+    {
+      "start": 892.28,
+      "duration": 4.68,
+      "text": "against PlayStation and yet it"
+    },
+    {
+      "start": 894.76,
+      "duration": 4.76,
+      "text": "absolutely does not matter what what"
+    },
+    {
+      "start": 896.96,
+      "duration": 6.2,
+      "text": "your Xbox and and it's exactly the same"
+    },
+    {
+      "start": 899.52,
+      "duration": 5.84,
+      "text": "for us in terms of blockchain as as the"
+    },
+    {
+      "start": 903.16,
+      "duration": 4.8,
+      "text": "tools are are evolving and as as the"
+    },
+    {
+      "start": 905.36,
+      "duration": 4.88,
+      "text": "space gets more and more mature we will"
+    },
+    {
+      "start": 907.96,
+      "duration": 4.32,
+      "text": "see this where everything becomes you"
+    },
+    {
+      "start": 910.24,
+      "duration": 3.88,
+      "text": "know agnostic with with each other but"
+    },
+    {
+      "start": 912.28,
+      "duration": 4.32,
+      "text": "at the moment we kind of are at that"
+    },
+    {
+      "start": 914.12,
+      "duration": 5.32,
+      "text": "early stage where where people go oh no"
+    },
+    {
+      "start": 916.6,
+      "duration": 5.36,
+      "text": "I need to protect protect where I am but"
+    },
+    {
+      "start": 919.44,
+      "duration": 6.0,
+      "text": "in the long term it it'll mean nothing"
+    },
+    {
+      "start": 921.96,
+      "duration": 5.36,
+      "text": "nobody will care the the exciting stuff"
+    },
+    {
+      "start": 925.44,
+      "duration": 4.92,
+      "text": "for me"
+    },
+    {
+      "start": 927.32,
+      "duration": 6.28,
+      "text": "is and this is kind of somewhat"
+    },
+    {
+      "start": 930.36,
+      "duration": 6.48,
+      "text": "antagonistic to my idea of the you know"
+    },
+    {
+      "start": 933.6,
+      "duration": 5.04,
+      "text": "just being careful of maximalism but I'm"
+    },
+    {
+      "start": 936.84,
+      "duration": 4.6,
+      "text": "excited to have a competition like a"
+    },
+    {
+      "start": 938.64,
+      "duration": 5.52,
+      "text": "race of the chains we've talked about it"
+    },
+    {
+      "start": 941.44,
+      "duration": 5.12,
+      "text": "before um and and we're moving in that"
+    },
+    {
+      "start": 944.16,
+      "duration": 4.44,
+      "text": "direction where cardano Community gets"
+    },
+    {
+      "start": 946.56,
+      "duration": 3.88,
+      "text": "to compete with the base community and"
+    },
+    {
+      "start": 948.6,
+      "duration": 4.8,
+      "text": "you know whatever the other communities"
+    },
+    {
+      "start": 950.44,
+      "duration": 4.36,
+      "text": "are that we want to do that with but uh"
+    },
+    {
+      "start": 953.4,
+      "duration": 2.8,
+      "text": "and we haven't announced that yet but"
+    },
+    {
+      "start": 954.8,
+      "duration": 3.32,
+      "text": "we'll we'll bring on another chain"
+    },
+    {
+      "start": 956.2,
+      "duration": 4.52,
+      "text": "hopefully and have three different"
+    },
+    {
+      "start": 958.12,
+      "duration": 5.2,
+      "text": "chains that that we do a competition"
+    },
+    {
+      "start": 960.72,
+      "duration": 4.88,
+      "text": "with and we're we're quickly moving to"
+    },
+    {
+      "start": 963.32,
+      "duration": 5.48,
+      "text": "the place where we'll have the"
+    },
+    {
+      "start": 965.6,
+      "duration": 7.0,
+      "text": "leaderboards uh we'll we'll have the uh"
+    },
+    {
+      "start": 968.8,
+      "duration": 6.16,
+      "text": "ability to uh store data to the database"
+    },
+    {
+      "start": 972.6,
+      "duration": 3.92,
+      "text": "Y and we should be able to then run"
+    },
+    {
+      "start": 974.96,
+      "duration": 4.0,
+      "text": "small tournaments and start building up"
+    },
+    {
+      "start": 976.52,
+      "duration": 4.8,
+      "text": "to a bigger one if possible I'd love to"
+    },
+    {
+      "start": 978.96,
+      "duration": 4.92,
+      "text": "do that by Rare Evo later this year that"
+    },
+    {
+      "start": 981.32,
+      "duration": 4.44,
+      "text": "that almost happened this build so so"
+    },
+    {
+      "start": 983.88,
+      "duration": 4.56,
+      "text": "we're we're in a transition now where we"
+    },
+    {
+      "start": 985.76,
+      "duration": 5.8,
+      "text": "do have the save into the database so"
+    },
+    {
+      "start": 988.44,
+      "duration": 4.52,
+      "text": "what we've done done is we've unhooked"
+    },
+    {
+      "start": 991.56,
+      "duration": 3.48,
+      "text": "the saving"
+    },
+    {
+      "start": 992.96,
+      "duration": 3.76,
+      "text": "locally but we don't have time to put"
+    },
+    {
+      "start": 995.04,
+      "duration": 2.76,
+      "text": "all that back together so we we're going"
+    },
+    {
+      "start": 996.72,
+      "duration": 2.96,
+      "text": "this is going to be a little bit of a"
+    },
+    {
+      "start": 997.8,
+      "duration": 4.16,
+      "text": "funny build where where we do have"
+    },
+    {
+      "start": 999.68,
+      "duration": 4.04,
+      "text": "saving to the database and we've"
+    },
+    {
+      "start": 1001.96,
+      "duration": 3.88,
+      "text": "unhooked other bits but putting them"
+    },
+    {
+      "start": 1003.72,
+      "duration": 4.36,
+      "text": "back to so it it it's a bit of a funny"
+    },
+    {
+      "start": 1005.84,
+      "duration": 5.48,
+      "text": "build in in that sense but the build"
+    },
+    {
+      "start": 1008.08,
+      "duration": 5.64,
+      "text": "after will have everything saving to the"
+    },
+    {
+      "start": 1011.32,
+      "duration": 4.56,
+      "text": "database so the hoc caches and the races"
+    },
+    {
+      "start": 1013.72,
+      "duration": 3.8,
+      "text": "and then we'll be able to have um"
+    },
+    {
+      "start": 1015.88,
+      "duration": 3.32,
+      "text": "leaderboards and then obviously when we"
+    },
+    {
+      "start": 1017.52,
+      "duration": 3.84,
+      "text": "have leaderboards then yeah definitely"
+    },
+    {
+      "start": 1019.2,
+      "duration": 4.72,
+      "text": "we will start to have competitions and"
+    },
+    {
+      "start": 1021.36,
+      "duration": 6.44,
+      "text": "those competitions will be rewarded with"
+    },
+    {
+      "start": 1023.92,
+      "duration": 6.4,
+      "text": "we reach tour platform uh a couple days"
+    },
+    {
+      "start": 1027.8,
+      "duration": 5.36,
+      "text": "ago so re-engaging trying to see where"
+    },
+    {
+      "start": 1030.32,
+      "duration": 5.48,
+      "text": "they're at in terms of their integration"
+    },
+    {
+      "start": 1033.16,
+      "duration": 5.32,
+      "text": "with Unreal Engine uh so we're looking"
+    },
+    {
+      "start": 1035.8,
+      "duration": 4.88,
+      "text": "into that I believe that was Matt um"
+    },
+    {
+      "start": 1038.48,
+      "duration": 5.08,
+      "text": "yeah but yeah and in the not to near"
+    },
+    {
+      "start": 1040.68,
+      "duration": 4.88,
+      "text": "future we will we will have the f9r that"
+    },
+    {
+      "start": 1043.56,
+      "duration": 3.32,
+      "text": "quite a lot of people have already raced"
+    },
+    {
+      "start": 1045.56,
+      "duration": 3.44,
+      "text": "we we will have we hav't talked about"
+    },
+    {
+      "start": 1046.88,
+      "duration": 5.04,
+      "text": "that yet that's an important go yeah so"
+    },
+    {
+      "start": 1049.0,
+      "duration": 4.8,
+      "text": "will have that sale on on Bas so that"
+    },
+    {
+      "start": 1051.92,
+      "duration": 5.64,
+      "text": "will be our first"
+    },
+    {
+      "start": 1053.8,
+      "duration": 5.32,
+      "text": "nft um vehicle on Bas currently for the"
+    },
+    {
+      "start": 1057.56,
+      "duration": 3.56,
+      "text": "for the last month I mean we've been"
+    },
+    {
+      "start": 1059.12,
+      "duration": 5.24,
+      "text": "we've been selling the the the the file"
+    },
+    {
+      "start": 1061.12,
+      "duration": 5.4,
+      "text": "nodes on cardano and base so so so we're"
+    },
+    {
+      "start": 1064.36,
+      "duration": 3.64,
+      "text": "all they're already doing really well"
+    },
+    {
+      "start": 1066.52,
+      "duration": 2.48,
+      "text": "and actually I've got some num numbers"
+    },
+    {
+      "start": 1068.0,
+      "duration": 3.12,
+      "text": "on those because we're going to talk"
+    },
+    {
+      "start": 1069.0,
+      "duration": 7.6,
+      "text": "about those in a bit but we've sold"
+    },
+    {
+      "start": 1071.12,
+      "duration": 8.68,
+      "text": "nearly 5,000 um cop nft node licenses on"
+    },
+    {
+      "start": 1076.6,
+      "duration": 5.64,
+      "text": "cardano and just over 2,000 on base now"
+    },
+    {
+      "start": 1079.8,
+      "duration": 4.32,
+      "text": "so we've already got a a really we we're"
+    },
+    {
+      "start": 1082.24,
+      "duration": 4.04,
+      "text": "establishing a good I want to keep"
+    },
+    {
+      "start": 1084.12,
+      "duration": 5.08,
+      "text": "saying Bas every other every other word"
+    },
+    {
+      "start": 1086.28,
+      "duration": 5.96,
+      "text": "we're establishing a good base on on the"
+    },
+    {
+      "start": 1089.2,
+      "duration": 6.36,
+      "text": "on Bas and and on cardano and then their"
+    },
+    {
+      "start": 1092.24,
+      "duration": 4.72,
+      "text": "marketing turn into a good play there so"
+    },
+    {
+      "start": 1095.56,
+      "duration": 3.84,
+      "text": "so we'll have that the thing we need to"
+    },
+    {
+      "start": 1096.96,
+      "duration": 5.96,
+      "text": "emphasize there though is that we're"
+    },
+    {
+      "start": 1099.4,
+      "duration": 5.32,
+      "text": "gonna have the class system yeah and yes"
+    },
+    {
+      "start": 1102.92,
+      "duration": 3.68,
+      "text": "this is an S class that we're offering"
+    },
+    {
+      "start": 1104.72,
+      "duration": 3.44,
+      "text": "on Bas but there will be an S-Class on"
+    },
+    {
+      "start": 1106.6,
+      "duration": 4.48,
+      "text": "cardono there will be that's I was"
+    },
+    {
+      "start": 1108.16,
+      "duration": 8.08,
+      "text": "leading up to of the each of the chains"
+    },
+    {
+      "start": 1111.08,
+      "duration": 7.6,
+      "text": "will have um a vehicle in each class at"
+    },
+    {
+      "start": 1116.24,
+      "duration": 4.4,
+      "text": "minimum so we want to balance that out"
+    },
+    {
+      "start": 1118.68,
+      "duration": 4.16,
+      "text": "over time and when we have the league"
+    },
+    {
+      "start": 1120.64,
+      "duration": 4.72,
+      "text": "the cornucopious Racing League and the"
+    },
+    {
+      "start": 1122.84,
+      "duration": 5.0,
+      "text": "competitions the the classes are"
+    },
+    {
+      "start": 1125.36,
+      "duration": 5.08,
+      "text": "important because the C classes will be"
+    },
+    {
+      "start": 1127.84,
+      "duration": 4.28,
+      "text": "racing against c-classes the B's against"
+    },
+    {
+      "start": 1130.44,
+      "duration": 3.72,
+      "text": "the B's and the A's and the A's and and"
+    },
+    {
+      "start": 1132.12,
+      "duration": 3.12,
+      "text": "the S's and the s's so so you w have the"
+    },
+    {
+      "start": 1134.16,
+      "duration": 3.84,
+      "text": "S"
+    },
+    {
+      "start": 1135.24,
+      "duration": 4.08,
+      "text": "versus sorry go ahead yeah so so I'm"
+    },
+    {
+      "start": 1138.0,
+      "duration": 2.92,
+      "text": "just saying so the we'll have"
+    },
+    {
+      "start": 1139.32,
+      "duration": 3.48,
+      "text": "competitions in each of the different"
+    },
+    {
+      "start": 1140.92,
+      "duration": 5.12,
+      "text": "classes so the bubble Jets will be"
+    },
+    {
+      "start": 1142.8,
+      "duration": 5.28,
+      "text": "racing in their class the the the t3s"
+    },
+    {
+      "start": 1146.04,
+      "duration": 5.24,
+      "text": "will be racing in theirs and so on and"
+    },
+    {
+      "start": 1148.08,
+      "duration": 5.12,
+      "text": "so on right I mean in your case though"
+    },
+    {
+      "start": 1151.28,
+      "duration": 4.72,
+      "text": "it might be more fair that if you use"
+    },
+    {
+      "start": 1153.2,
+      "duration": 4.52,
+      "text": "the S-Class against me with the cclass"
+    },
+    {
+      "start": 1156.0,
+      "duration": 4.8,
+      "text": "just to kind of even well i' I've"
+    },
+    {
+      "start": 1157.72,
+      "duration": 7.4,
+      "text": "roasted that I've I've um I've raced"
+    },
+    {
+      "start": 1160.8,
+      "duration": 9.08,
+      "text": "that f9r and it I was too I mean the T3"
+    },
+    {
+      "start": 1165.12,
+      "duration": 9.72,
+      "text": "is too fast for me I I think I think I'm"
+    },
+    {
+      "start": 1169.88,
+      "duration": 4.96,
+      "text": "I'm at the a class seems to be my sweet"
+    },
+    {
+      "start": 1175.92,
+      "duration": 7.48,
+      "text": "spot I love it man I I can't wait like I"
+    },
+    {
+      "start": 1180.88,
+      "duration": 5.24,
+      "text": "think we do need to have a a team tney"
+    },
+    {
+      "start": 1183.4,
+      "duration": 4.84,
+      "text": "or something that's fair or whatever at"
+    },
+    {
+      "start": 1186.12,
+      "duration": 3.84,
+      "text": "some point we'll do more tournaments"
+    },
+    {
+      "start": 1188.24,
+      "duration": 3.64,
+      "text": "like we we got a lot of experimenting to"
+    },
+    {
+      "start": 1189.96,
+      "duration": 4.28,
+      "text": "do with the tournaments we got a lot of"
+    },
+    {
+      "start": 1191.88,
+      "duration": 4.2,
+      "text": "events coming soon as well we'll start"
+    },
+    {
+      "start": 1194.24,
+      "duration": 3.8,
+      "text": "doing more events having more fun in a"
+    },
+    {
+      "start": 1196.08,
+      "duration": 3.08,
+      "text": "variety of ways I noticed cop boore did"
+    },
+    {
+      "start": 1198.04,
+      "duration": 2.72,
+      "text": "one recently"
+    },
+    {
+      "start": 1199.16,
+      "duration": 4.4,
+      "text": "that was"
+    },
+    {
+      "start": 1200.76,
+      "duration": 5.68,
+      "text": "interesting there was a KOB boore cup I"
+    },
+    {
+      "start": 1203.56,
+      "duration": 5.24,
+      "text": "believe yeah he minted his own nft as"
+    },
+    {
+      "start": 1206.44,
+      "duration": 4.72,
+      "text": "well that was quite easy that that"
+    },
+    {
+      "start": 1208.8,
+      "duration": 3.56,
+      "text": "pretty good that as well yeah it was I"
+    },
+    {
+      "start": 1211.16,
+      "duration": 3.16,
+      "text": "think he must have spent all weekend"
+    },
+    {
+      "start": 1212.36,
+      "duration": 6.24,
+      "text": "sculpting"
+    },
+    {
+      "start": 1214.32,
+      "duration": 6.4,
+      "text": "that all weekend sculpting it using uh"
+    },
+    {
+      "start": 1218.6,
+      "duration": 3.84,
+      "text": "what's the name of the AI Dallas was it"
+    },
+    {
+      "start": 1220.72,
+      "duration": 3.2,
+      "text": "Dallas I don't know what what he would"
+    },
+    {
+      "start": 1222.44,
+      "duration": 3.84,
+      "text": "have done with that but that it looks"
+    },
+    {
+      "start": 1223.92,
+      "duration": 5.16,
+      "text": "cool uh very cool okay so did we cover"
+    },
+    {
+      "start": 1226.28,
+      "duration": 5.08,
+      "text": "everything I think we did nodes no"
+    },
+    {
+      "start": 1229.08,
+      "duration": 4.8,
+      "text": "update yeah I we cover that as well a"
+    },
+    {
+      "start": 1231.36,
+      "duration": 5.08,
+      "text": "little bit we did well did you want to"
+    },
+    {
+      "start": 1233.88,
+      "duration": 7.8,
+      "text": "go over the the number of nodes sold"
+    },
+    {
+      "start": 1236.44,
+      "duration": 8.32,
+      "text": "yeah so so in total with cardano and Bas"
+    },
+    {
+      "start": 1241.68,
+      "duration": 6.68,
+      "text": "we've sold just under"
+    },
+    {
+      "start": 1244.76,
+      "duration": 6.4,
+      "text": "7,000 nodes of of the 20,000 that are"
+    },
+    {
+      "start": 1248.36,
+      "duration": 4.64,
+      "text": "for sale we said that this sale is going"
+    },
+    {
+      "start": 1251.16,
+      "duration": 4.92,
+      "text": "to be a slow sale and it's going to end"
+    },
+    {
+      "start": 1253.0,
+      "duration": 5.88,
+      "text": "on the 1st of July and then we're going"
+    },
+    {
+      "start": 1256.08,
+      "duration": 5.32,
+      "text": "to distribute the nfts on cardano and on"
+    },
+    {
+      "start": 1258.88,
+      "duration": 4.2,
+      "text": "Bas I mean on base they kind of get"
+    },
+    {
+      "start": 1261.4,
+      "duration": 4.12,
+      "text": "distributed already but you can't move"
+    },
+    {
+      "start": 1263.08,
+      "duration": 4.76,
+      "text": "them they're locked you know different"
+    },
+    {
+      "start": 1265.52,
+      "duration": 3.72,
+      "text": "rules for for different chains but so so"
+    },
+    {
+      "start": 1267.84,
+      "duration": 3.28,
+      "text": "everybody will be able to sell them on"
+    },
+    {
+      "start": 1269.24,
+      "duration": 5.8,
+      "text": "the secondary on the 1st of July at"
+    },
+    {
+      "start": 1271.12,
+      "duration": 7.36,
+      "text": "exactly the same time um in terms of"
+    },
+    {
+      "start": 1275.04,
+      "duration": 7.6,
+      "text": "rewards for that first year we've we've"
+    },
+    {
+      "start": 1278.48,
+      "duration": 6.4,
+      "text": "set aside approximately 26 million copy"
+    },
+    {
+      "start": 1282.64,
+      "duration": 5.04,
+      "text": "rewards that will be distri that number"
+    },
+    {
+      "start": 1284.88,
+      "duration": 6.24,
+      "text": "is fixed however that will be"
+    },
+    {
+      "start": 1287.68,
+      "duration": 7.08,
+      "text": "distributed by all the active nodes so"
+    },
+    {
+      "start": 1291.12,
+      "duration": 5.96,
+      "text": "if we if we only have 7,000 nodes then"
+    },
+    {
+      "start": 1294.76,
+      "duration": 4.96,
+      "text": "those rewards are distributed across"
+    },
+    {
+      "start": 1297.08,
+      "duration": 4.68,
+      "text": "those so um yeah so I mean we hope we"
+    },
+    {
+      "start": 1299.72,
+      "duration": 5.2,
+      "text": "sell a few more but if we don't that"
+    },
+    {
+      "start": 1301.76,
+      "duration": 6.96,
+      "text": "that's what we've said we said was if uh"
+    },
+    {
+      "start": 1304.92,
+      "duration": 7.48,
+      "text": "if we're not sold out by July 1st um"
+    },
+    {
+      "start": 1308.72,
+      "duration": 7.04,
+      "text": "then we're pause sales for a bit uh but"
+    },
+    {
+      "start": 1312.4,
+      "duration": 5.76,
+      "text": "that we will likely resume sales at some"
+    },
+    {
+      "start": 1315.76,
+      "duration": 6.24,
+      "text": "point point but rewards automatically"
+    },
+    {
+      "start": 1318.16,
+      "duration": 7.08,
+      "text": "start start uh July 1st if not sooner if"
+    },
+    {
+      "start": 1322.0,
+      "duration": 7.0,
+      "text": "we're ready sooner and being ready means"
+    },
+    {
+      "start": 1325.24,
+      "duration": 5.4,
+      "text": "sold out and uh the software is ready"
+    },
+    {
+      "start": 1329.0,
+      "duration": 4.16,
+      "text": "but the software is doing incredibly"
+    },
+    {
+      "start": 1330.64,
+      "duration": 3.92,
+      "text": "well and so for any of you guys that"
+    },
+    {
+      "start": 1333.16,
+      "duration": 3.68,
+      "text": "might be watching this that don't have"
+    },
+    {
+      "start": 1334.56,
+      "duration": 4.12,
+      "text": "nodes yet go over to the website it's"
+    },
+    {
+      "start": 1336.84,
+      "duration": 4.4,
+      "text": "easy to find there's a slider on the"
+    },
+    {
+      "start": 1338.68,
+      "duration": 3.88,
+      "text": "main Banner click to go to the sale very"
+    },
+    {
+      "start": 1341.24,
+      "duration": 3.8,
+      "text": "easy to"
+    },
+    {
+      "start": 1342.56,
+      "duration": 5.32,
+      "text": "participate y available on cardano and"
+    },
+    {
+      "start": 1345.04,
+      "duration": 4.92,
+      "text": "base either of the chains and then a few"
+    },
+    {
+      "start": 1347.88,
+      "duration": 5.64,
+      "text": "weeks maybe maybe next week or the one"
+    },
+    {
+      "start": 1349.96,
+      "duration": 7.08,
+      "text": "after we will actually bring Greg on and"
+    },
+    {
+      "start": 1353.52,
+      "duration": 5.4,
+      "text": "he and he can talk cuz he's had a big"
+    },
+    {
+      "start": 1357.04,
+      "duration": 5.08,
+      "text": "he's just achieved a big milestone and"
+    },
+    {
+      "start": 1358.92,
+      "duration": 6.8,
+      "text": "we'll talk about that in the future yeah"
+    },
+    {
+      "start": 1362.12,
+      "duration": 7.0,
+      "text": "yeah that I agree I I wish we could have"
+    },
+    {
+      "start": 1365.72,
+      "duration": 5.56,
+      "text": "had uh Greg on today we got we need to"
+    },
+    {
+      "start": 1369.12,
+      "duration": 5.24,
+      "text": "have David on show the Avatar Creator"
+    },
+    {
+      "start": 1371.28,
+      "duration": 4.64,
+      "text": "maybe do that next week um we need to"
+    },
+    {
+      "start": 1374.36,
+      "duration": 3.72,
+      "text": "have Josh"
+    },
+    {
+      "start": 1375.92,
+      "duration": 3.48,
+      "text": "on am I allowed to say his name we"
+    },
+    {
+      "start": 1378.08,
+      "duration": 3.4,
+      "text": "haven't really announced that yet yeah"
+    },
+    {
+      "start": 1379.4,
+      "duration": 3.84,
+      "text": "we have announced it oh we have okay"
+    },
+    {
+      "start": 1381.48,
+      "duration": 4.08,
+      "text": "yeah I mean you go in Discord is is is"
+    },
+    {
+      "start": 1383.24,
+      "duration": 4.32,
+      "text": "next to his name oh okay gotcha good"
+    },
+    {
+      "start": 1385.56,
+      "duration": 3.44,
+      "text": "good um and then we need to have Greg on"
+    },
+    {
+      "start": 1387.56,
+      "duration": 4.48,
+      "text": "so those are three people we need to"
+    },
+    {
+      "start": 1389.0,
+      "duration": 5.88,
+      "text": "have in the very near future uh that's"
+    },
+    {
+      "start": 1392.04,
+      "duration": 6.04,
+      "text": "from the team but we also need to start"
+    },
+    {
+      "start": 1394.88,
+      "duration": 6.0,
+      "text": "having some more uh external voices like"
+    },
+    {
+      "start": 1398.08,
+      "duration": 5.48,
+      "text": "Dan crypto Capital Venture crypto Crow"
+    },
+    {
+      "start": 1400.88,
+      "duration": 4.6,
+      "text": "at some point whatever cardano with Paul"
+    },
+    {
+      "start": 1403.56,
+      "duration": 3.36,
+      "text": "we we need to we need to speak to fared"
+    },
+    {
+      "start": 1405.48,
+      "duration": 4.76,
+      "text": "as well we"
+    },
+    {
+      "start": 1406.92,
+      "duration": 4.84,
+      "text": "need Paul those and get them into the"
+    },
+    {
+      "start": 1410.24,
+      "duration": 3.92,
+      "text": "game do a"
+    },
+    {
+      "start": 1411.76,
+      "duration": 5.88,
+      "text": "race we will definitely race them all in"
+    },
+    {
+      "start": 1414.16,
+      "duration": 6.4,
+      "text": "fact we we're still waiting cop Bo he's"
+    },
+    {
+      "start": 1417.64,
+      "duration": 5.64,
+      "text": "had so many shout outs this episode um"
+    },
+    {
+      "start": 1420.56,
+      "duration": 4.72,
+      "text": "he he interview exclusive interview with"
+    },
+    {
+      "start": 1423.28,
+      "duration": 4.32,
+      "text": "Ben I don't think we've had Ben on our"
+    },
+    {
+      "start": 1425.28,
+      "duration": 4.16,
+      "text": "show yet have we um so we're just"
+    },
+    {
+      "start": 1427.6,
+      "duration": 4.24,
+      "text": "waiting to to sign that off pretty soon"
+    },
+    {
+      "start": 1429.44,
+      "duration": 4.92,
+      "text": "that video yeah and I noticed that what"
+    },
+    {
+      "start": 1431.84,
+      "duration": 4.96,
+      "text": "Ben was asking for feedback on that uh"
+    },
+    {
+      "start": 1434.36,
+      "duration": 4.56,
+      "text": "interview we haven't I I haven't been"
+    },
+    {
+      "start": 1436.8,
+      "duration": 4.36,
+      "text": "able to watch it yet so I need to watch"
+    },
+    {
+      "start": 1438.92,
+      "duration": 5.92,
+      "text": "it I feel bad but I have not had a free"
+    },
+    {
+      "start": 1441.16,
+      "duration": 7.16,
+      "text": "minute I don't ever so it's challenging"
+    },
+    {
+      "start": 1444.84,
+      "duration": 5.32,
+      "text": "um okay uh you ready to go over the"
+    },
+    {
+      "start": 1448.32,
+      "duration": 4.28,
+      "text": "architecture"
+    },
+    {
+      "start": 1450.16,
+      "duration": 5.16,
+      "text": "overview yes hopefully this is a little"
+    },
+    {
+      "start": 1452.6,
+      "duration": 4.44,
+      "text": "bit of fun so so what I've done is"
+    },
+    {
+      "start": 1455.32,
+      "duration": 4.72,
+      "text": "instead of having Community questions"
+    },
+    {
+      "start": 1457.04,
+      "duration": 5.36,
+      "text": "this week since since since we did a"
+    },
+    {
+      "start": 1460.04,
+      "duration": 4.44,
+      "text": "tweet we had a little bit of questions"
+    },
+    {
+      "start": 1462.4,
+      "duration": 4.6,
+      "text": "one or two questions from the community"
+    },
+    {
+      "start": 1464.48,
+      "duration": 4.84,
+      "text": "some positive some negative but what was"
+    },
+    {
+      "start": 1467.0,
+      "duration": 6.6,
+      "text": "obvious is that there's lots of"
+    },
+    {
+      "start": 1469.32,
+      "duration": 6.8,
+      "text": "confusion um of different areas so so"
+    },
+    {
+      "start": 1473.6,
+      "duration": 5.52,
+      "text": "what I did is is I threw together a bit"
+    },
+    {
+      "start": 1476.12,
+      "duration": 5.64,
+      "text": "of a highlevel presentation it's not"
+    },
+    {
+      "start": 1479.12,
+      "duration": 5.08,
+      "text": "100% accurate I could drill down into"
+    },
+    {
+      "start": 1481.76,
+      "duration": 5.12,
+      "text": "but but anyway let's get to it it's it's"
+    },
+    {
+      "start": 1484.2,
+      "duration": 6.76,
+      "text": "it's pretty I I think it's it's it's"
+    },
+    {
+      "start": 1486.88,
+      "duration": 6.8,
+      "text": "good enough it's good enough on on"
+    },
+    {
+      "start": 1490.96,
+      "duration": 5.44,
+      "text": "um I'm calling at web 3 gaming I don't"
+    },
+    {
+      "start": 1493.68,
+      "duration": 6.0,
+      "text": "know wait Rob did you actually start"
+    },
+    {
+      "start": 1496.4,
+      "duration": 5.12,
+      "text": "with a branded slide this time F Well"
+    },
+    {
+      "start": 1499.68,
+      "duration": 4.2,
+      "text": "I'm Dreaming I'm going to be invited on"
+    },
+    {
+      "start": 1501.52,
+      "duration": 2.36,
+      "text": "TED"
+    },
+    {
+      "start": 1504.44,
+      "duration": 7.12,
+      "text": "Talks okay go"
+    },
+    {
+      "start": 1508.24,
+      "duration": 4.24,
+      "text": "so there's five slides four of them will"
+    },
+    {
+      "start": 1511.56,
+      "duration": 4.08,
+      "text": "fit"
+    },
+    {
+      "start": 1512.48,
+      "duration": 5.2,
+      "text": "together so so here we go so so when we"
+    },
+    {
+      "start": 1515.64,
+      "duration": 5.76,
+      "text": "when we when we look and we planned this"
+    },
+    {
+      "start": 1517.68,
+      "duration": 6.28,
+      "text": "architecture you know years ago so when"
+    },
+    {
+      "start": 1521.4,
+      "duration": 4.6,
+      "text": "we look at the blockchain layer there's"
+    },
+    {
+      "start": 1523.96,
+      "duration": 3.24,
+      "text": "different level there's different types"
+    },
+    {
+      "start": 1526.0,
+      "duration": 3.08,
+      "text": "of blockchain some of them are"
+    },
+    {
+      "start": 1527.2,
+      "duration": 4.0,
+      "text": "centralized some are decentralized you"
+    },
+    {
+      "start": 1529.08,
+      "duration": 3.88,
+      "text": "know we know cardano is the most"
+    },
+    {
+      "start": 1531.2,
+      "duration": 3.52,
+      "text": "decentralized and we know we've just"
+    },
+    {
+      "start": 1532.96,
+      "duration": 4.04,
+      "text": "moved to base which is is actually"
+    },
+    {
+      "start": 1534.72,
+      "duration": 5.48,
+      "text": "centralized at the moment but they all"
+    },
+    {
+      "start": 1537.0,
+      "duration": 5.48,
+      "text": "follow a similar pattern as in they have"
+    },
+    {
+      "start": 1540.2,
+      "duration": 5.6,
+      "text": "individual addresses and and those"
+    },
+    {
+      "start": 1542.48,
+      "duration": 5.2,
+      "text": "individual addresses is where the nfts"
+    },
+    {
+      "start": 1545.8,
+      "duration": 4.0,
+      "text": "are found so you have your bubble Jets"
+    },
+    {
+      "start": 1547.68,
+      "duration": 5.96,
+      "text": "nfts your land nfts you actually have"
+    },
+    {
+      "start": 1549.8,
+      "duration": 6.52,
+      "text": "your tokens on there and and other nfts"
+    },
+    {
+      "start": 1553.64,
+      "duration": 5.24,
+      "text": "and and and that's kind of how they all"
+    },
+    {
+      "start": 1556.32,
+      "duration": 5.08,
+      "text": "work and this is demonstra that you know"
+    },
+    {
+      "start": 1558.88,
+      "duration": 5.44,
+      "text": "in the future we will we will connect to"
+    },
+    {
+      "start": 1561.4,
+      "duration": 6.44,
+      "text": "to to others so so this layer part of"
+    },
+    {
+      "start": 1564.32,
+      "duration": 6.36,
+      "text": "our game is both decentralized and"
+    },
+    {
+      "start": 1567.84,
+      "duration": 5.2,
+      "text": "centralized the beauty of web 3 is is"
+    },
+    {
+      "start": 1570.68,
+      "duration": 4.36,
+      "text": "you know it's so powerful and then"
+    },
+    {
+      "start": 1573.04,
+      "duration": 4.48,
+      "text": "joining on to that we have this what I'm"
+    },
+    {
+      "start": 1575.04,
+      "duration": 4.52,
+      "text": "calling a connection layer which again"
+    },
+    {
+      "start": 1577.52,
+      "duration": 4.8,
+      "text": "could be decentralized or centralized"
+    },
+    {
+      "start": 1579.56,
+      "duration": 6.76,
+      "text": "and basically the the game or websites"
+    },
+    {
+      "start": 1582.32,
+      "duration": 6.12,
+      "text": "what they do is they talk to um to the"
+    },
+    {
+      "start": 1586.32,
+      "duration": 5.64,
+      "text": "actual blockchains themselves cuz talk"
+    },
+    {
+      "start": 1588.44,
+      "duration": 7.4,
+      "text": "or blockchain is is quite slow via VIA a"
+    },
+    {
+      "start": 1591.96,
+      "duration": 6.36,
+      "text": "wallet or via a blockchain API now when"
+    },
+    {
+      "start": 1595.84,
+      "duration": 5.12,
+      "text": "you look at the wallets nothing is"
+    },
+    {
+      "start": 1598.32,
+      "duration": 6.36,
+      "text": "actually ever stored in your wallet your"
+    },
+    {
+      "start": 1600.96,
+      "duration": 6.72,
+      "text": "wallet is a view into into the"
+    },
+    {
+      "start": 1604.68,
+      "duration": 4.6,
+      "text": "blockchain so so we do read the wallets"
+    },
+    {
+      "start": 1607.68,
+      "duration": 4.64,
+      "text": "but but really what you're doing is when"
+    },
+    {
+      "start": 1609.28,
+      "duration": 6.16,
+      "text": "you're connecting your wallet to our"
+    },
+    {
+      "start": 1612.32,
+      "duration": 5.04,
+      "text": "game you are confirming that you are the"
+    },
+    {
+      "start": 1615.44,
+      "duration": 3.64,
+      "text": "owner of that wallet cuz otherwise how"
+    },
+    {
+      "start": 1617.36,
+      "duration": 3.76,
+      "text": "would you have access to that and then"
+    },
+    {
+      "start": 1619.08,
+      "duration": 5.08,
+      "text": "from then on when we go and and look at"
+    },
+    {
+      "start": 1621.12,
+      "duration": 5.4,
+      "text": "your nfts or when we refresh everything"
+    },
+    {
+      "start": 1624.16,
+      "duration": 3.92,
+      "text": "what we actually do is is is we can look"
+    },
+    {
+      "start": 1626.52,
+      "duration": 4.28,
+      "text": "straight on the blockchain then because"
+    },
+    {
+      "start": 1628.08,
+      "duration": 4.6,
+      "text": "you've confirmed so if you move those"
+    },
+    {
+      "start": 1630.8,
+      "duration": 3.84,
+      "text": "those nfts we don't have to read your"
+    },
+    {
+      "start": 1632.68,
+      "duration": 4.32,
+      "text": "wallet we will already know and and we"
+    },
+    {
+      "start": 1634.64,
+      "duration": 4.92,
+      "text": "will have triggers in place and and what"
+    },
+    {
+      "start": 1637.0,
+      "duration": 4.6,
+      "text": "we actually do is we take then that"
+    },
+    {
+      "start": 1639.56,
+      "duration": 5.32,
+      "text": "address we monitor that address in the"
+    },
+    {
+      "start": 1641.6,
+      "duration": 7.36,
+      "text": "background we we have a have a service"
+    },
+    {
+      "start": 1644.88,
+      "duration": 6.44,
+      "text": "um and we then keep a copy of that in in"
+    },
+    {
+      "start": 1648.96,
+      "duration": 4.24,
+      "text": "our database in our Central database and"
+    },
+    {
+      "start": 1651.32,
+      "duration": 4.28,
+      "text": "I'll get on to that in a minute because"
+    },
+    {
+      "start": 1653.2,
+      "duration": 5.2,
+      "text": "that's quite important but also what we"
+    },
+    {
+      "start": 1655.6,
+      "duration": 5.6,
+      "text": "what we are building is we we are"
+    },
+    {
+      "start": 1658.4,
+      "duration": 4.68,
+      "text": "building our own layer too and and this"
+    },
+    {
+      "start": 1661.2,
+      "duration": 5.52,
+      "text": "is what we're we're working with deer"
+    },
+    {
+      "start": 1663.08,
+      "duration": 5.52,
+      "text": "with as when we have vehicle you're"
+    },
+    {
+      "start": 1666.72,
+      "duration": 3.36,
+      "text": "doing racing and you've got track racing"
+    },
+    {
+      "start": 1668.6,
+      "duration": 3.44,
+      "text": "and you got fastest times and the"
+    },
+    {
+      "start": 1670.08,
+      "duration": 4.16,
+      "text": "history of the vehicles and all that"
+    },
+    {
+      "start": 1672.04,
+      "duration": 4.28,
+      "text": "they will be saved in our Central"
+    },
+    {
+      "start": 1674.24,
+      "duration": 6.08,
+      "text": "database and they will also then be"
+    },
+    {
+      "start": 1676.32,
+      "duration": 7.16,
+      "text": "slowly pushed out to this layer two um"
+    },
+    {
+      "start": 1680.32,
+      "duration": 5.64,
+      "text": "via this this history API and then that"
+    },
+    {
+      "start": 1683.48,
+      "duration": 4.04,
+      "text": "layer two will have multiple nodes and"
+    },
+    {
+      "start": 1685.96,
+      "duration": 4.0,
+      "text": "then other people that want to build"
+    },
+    {
+      "start": 1687.52,
+      "duration": 5.28,
+      "text": "services on the back of our data they"
+    },
+    {
+      "start": 1689.96,
+      "duration": 5.24,
+      "text": "talk to to this layer too the the"
+    },
+    {
+      "start": 1692.8,
+      "duration": 4.72,
+      "text": "various nodes pull the data that they"
+    },
+    {
+      "start": 1695.2,
+      "duration": 5.88,
+      "text": "want off those nodes and what that does"
+    },
+    {
+      "start": 1697.52,
+      "duration": 6.8,
+      "text": "is that that takes all the pressure off"
+    },
+    {
+      "start": 1701.08,
+      "duration": 6.48,
+      "text": "our our um Central database and it"
+    },
+    {
+      "start": 1704.32,
+      "duration": 6.88,
+      "text": "actually it reduces cost but also makes"
+    },
+    {
+      "start": 1707.56,
+      "duration": 5.68,
+      "text": "it it a great way for for us to to offer"
+    },
+    {
+      "start": 1711.2,
+      "duration": 4.68,
+      "text": "services to to other people so those can"
+    },
+    {
+      "start": 1713.24,
+      "duration": 4.76,
+      "text": "be centralized or"
+    },
+    {
+      "start": 1715.88,
+      "duration": 6.76,
+      "text": "decentralized and then we come further"
+    },
+    {
+      "start": 1718.0,
+      "duration": 7.24,
+      "text": "down into our Cloud layer um which"
+    },
+    {
+      "start": 1722.64,
+      "duration": 4.88,
+      "text": "currently is on AWS and and this and"
+    },
+    {
+      "start": 1725.24,
+      "duration": 3.8,
+      "text": "this is centralized and you know a lot"
+    },
+    {
+      "start": 1727.52,
+      "duration": 4.4,
+      "text": "of confusion that I've seen is people"
+    },
+    {
+      "start": 1729.04,
+      "duration": 4.2,
+      "text": "are going you know are where you saving"
+    },
+    {
+      "start": 1731.92,
+      "duration": 2.84,
+      "text": "your games now are you going to be"
+    },
+    {
+      "start": 1733.24,
+      "duration": 3.68,
+      "text": "saving them on cardano are you going to"
+    },
+    {
+      "start": 1734.76,
+      "duration": 4.32,
+      "text": "be saving them on Bas what no that"
+    },
+    {
+      "start": 1736.92,
+      "duration": 5.44,
+      "text": "they're going to be saved in a central"
+    },
+    {
+      "start": 1739.08,
+      "duration": 5.36,
+      "text": "database our model is is a hybrid model"
+    },
+    {
+      "start": 1742.36,
+      "duration": 5.84,
+      "text": "and it has to be that way because it's"
+    },
+    {
+      "start": 1744.44,
+      "duration": 5.4,
+      "text": "very slow to to update a blockchain um"
+    },
+    {
+      "start": 1748.2,
+      "duration": 3.16,
+      "text": "and when you're playing a game and"
+    },
+    {
+      "start": 1749.84,
+      "duration": 4.88,
+      "text": "you've got hundreds and thousands of"
+    },
+    {
+      "start": 1751.36,
+      "duration": 5.96,
+      "text": "players they want instant instant"
+    },
+    {
+      "start": 1754.72,
+      "duration": 5.32,
+      "text": "responses and I've just showed that way"
+    },
+    {
+      "start": 1757.32,
+      "duration": 5.08,
+      "text": "but the idea in mind has always been"
+    },
+    {
+      "start": 1760.04,
+      "duration": 6.12,
+      "text": "that we gradually decentralize over time"
+    },
+    {
+      "start": 1762.4,
+      "duration": 5.0,
+      "text": "yeah we're able to hybrid currently yes"
+    },
+    {
+      "start": 1766.16,
+      "duration": 3.44,
+      "text": "definitely and that and that's like I"
+    },
+    {
+      "start": 1767.4,
+      "duration": 5.16,
+      "text": "say when working with with daer we can"
+    },
+    {
+      "start": 1769.6,
+      "duration": 5.04,
+      "text": "slowly offload some some of that data to"
+    },
+    {
+      "start": 1772.56,
+      "duration": 4.28,
+      "text": "a chain we don't know how just not real"
+    },
+    {
+      "start": 1774.64,
+      "duration": 5.16,
+      "text": "time how fast we'll be able to"
+    },
+    {
+      "start": 1776.84,
+      "duration": 5.2,
+      "text": "decentralize but nodes is one step in"
+    },
+    {
+      "start": 1779.8,
+      "duration": 4.64,
+      "text": "that direction we'll take other steps as"
+    },
+    {
+      "start": 1782.04,
+      "duration": 4.8,
+      "text": "well yes which this we also announced in"
+    },
+    {
+      "start": 1784.44,
+      "duration": 7.0,
+      "text": "our early days in the original white"
+    },
+    {
+      "start": 1786.84,
+      "duration": 6.44,
+      "text": "paper I believe yeah and and also within"
+    },
+    {
+      "start": 1791.44,
+      "duration": 4.24,
+      "text": "our Cloud we you know we have our"
+    },
+    {
+      "start": 1793.28,
+      "duration": 5.72,
+      "text": "website we we have the the copi wiki we"
+    },
+    {
+      "start": 1795.68,
+      "duration": 6.28,
+      "text": "have the marketplace we have a number of"
+    },
+    {
+      "start": 1799.0,
+      "duration": 4.68,
+      "text": "databases um the the we have web two"
+    },
+    {
+      "start": 1801.96,
+      "duration": 4.16,
+      "text": "databases you know so those look after"
+    },
+    {
+      "start": 1803.68,
+      "duration": 4.8,
+      "text": "some of our marketplaces we synchronize"
+    },
+    {
+      "start": 1806.12,
+      "duration": 4.84,
+      "text": "the blockchain it's a lot easier for us"
+    },
+    {
+      "start": 1808.48,
+      "duration": 4.52,
+      "text": "to access a a central database like I"
+    },
+    {
+      "start": 1810.96,
+      "duration": 3.68,
+      "text": "say than the blockchain so so they're"
+    },
+    {
+      "start": 1813.0,
+      "duration": 3.72,
+      "text": "always synchronizing in the background"
+    },
+    {
+      "start": 1814.64,
+      "duration": 3.92,
+      "text": "but we'll go here for Speed and we have"
+    },
+    {
+      "start": 1816.72,
+      "duration": 4.52,
+      "text": "the game database so as your game is"
+    },
+    {
+      "start": 1818.56,
+      "duration": 5.56,
+      "text": "saving it's saving rapidly to that"
+    },
+    {
+      "start": 1821.24,
+      "duration": 4.12,
+      "text": "database when you're going across if we"
+    },
+    {
+      "start": 1824.12,
+      "duration": 4.48,
+      "text": "look if we look at the different"
+    },
+    {
+      "start": 1825.36,
+      "duration": 6.04,
+      "text": "instances of of server files and"
+    },
+    {
+      "start": 1828.6,
+      "duration": 5.0,
+      "text": "they are maybe in Europe or in America"
+    },
+    {
+      "start": 1831.4,
+      "duration": 3.68,
+      "text": "what traditionally happens in in other"
+    },
+    {
+      "start": 1833.6,
+      "duration": 3.36,
+      "text": "games is you'll go in a particular"
+    },
+    {
+      "start": 1835.08,
+      "duration": 3.64,
+      "text": "server and whatever happens on that"
+    },
+    {
+      "start": 1836.96,
+      "duration": 3.36,
+      "text": "server stays on that server you go in"
+    },
+    {
+      "start": 1838.72,
+      "duration": 3.72,
+      "text": "another one it might be might be the"
+    },
+    {
+      "start": 1840.32,
+      "duration": 4.8,
+      "text": "same theme but it looks completely"
+    },
+    {
+      "start": 1842.44,
+      "duration": 4.64,
+      "text": "different now in our game because"
+    },
+    {
+      "start": 1845.12,
+      "duration": 5.32,
+      "text": "everything is synchronized at the back"
+    },
+    {
+      "start": 1847.08,
+      "duration": 7.6,
+      "text": "end if you update a land plot in in"
+    },
+    {
+      "start": 1850.44,
+      "duration": 6.72,
+      "text": "solace in say America that will quickly"
+    },
+    {
+      "start": 1854.68,
+      "duration": 4.64,
+      "text": "be synchronized via the database and"
+    },
+    {
+      "start": 1857.16,
+      "duration": 5.12,
+      "text": "then find its way to Europe or Africa or"
+    },
+    {
+      "start": 1859.32,
+      "duration": 5.24,
+      "text": "Asia or Australia so all all that will"
+    },
+    {
+      "start": 1862.28,
+      "duration": 4.84,
+      "text": "will be happening in the background so"
+    },
+    {
+      "start": 1864.56,
+      "duration": 3.76,
+      "text": "you're in one permanent world you it"
+    },
+    {
+      "start": 1867.12,
+      "duration": 4.28,
+      "text": "doesn't matter whether you're going into"
+    },
+    {
+      "start": 1868.32,
+      "duration": 5.08,
+      "text": "Europe or America you should be in in in"
+    },
+    {
+      "start": 1871.4,
+      "duration": 7.08,
+      "text": "the same the same live"
+    },
+    {
+      "start": 1873.4,
+      "duration": 7.44,
+      "text": "world and we also have our um different"
+    },
+    {
+      "start": 1878.48,
+      "duration": 4.44,
+      "text": "environments set up for for for our Dev"
+    },
+    {
+      "start": 1880.84,
+      "duration": 5.88,
+      "text": "team so we have the the dev team testing"
+    },
+    {
+      "start": 1882.92,
+      "duration": 5.52,
+      "text": "stage in deployment and and and moving"
+    },
+    {
+      "start": 1886.72,
+      "duration": 4.36,
+      "text": "then moving along to"
+    },
+    {
+      "start": 1888.44,
+      "duration": 6.36,
+      "text": "well testing the testing environment is"
+    },
+    {
+      "start": 1891.08,
+      "duration": 5.36,
+      "text": "a is a big announcement really uh that"
+    },
+    {
+      "start": 1894.8,
+      "duration": 4.04,
+      "text": "that we now have the testing server"
+    },
+    {
+      "start": 1896.44,
+      "duration": 6.2,
+      "text": "setup because of what it"
+    },
+    {
+      "start": 1898.84,
+      "duration": 6.2,
+      "text": "allows yes I we we we we can't we were"
+    },
+    {
+      "start": 1902.64,
+      "duration": 4.28,
+      "text": "testing before in staging so we've"
+    },
+    {
+      "start": 1905.04,
+      "duration": 4.72,
+      "text": "always had a test server now we split it"
+    },
+    {
+      "start": 1906.92,
+      "duration": 4.72,
+      "text": "so we've got staging and testing as as"
+    },
+    {
+      "start": 1909.76,
+      "duration": 4.0,
+      "text": "we're getting more and more more builds"
+    },
+    {
+      "start": 1911.64,
+      "duration": 4.04,
+      "text": "out and we've also built a lot of"
+    },
+    {
+      "start": 1913.76,
+      "duration": 4.8,
+      "text": "testing tools as well development for"
+    },
+    {
+      "start": 1915.68,
+      "duration": 4.64,
+      "text": "the team efficiency yeah so so we we are"
+    },
+    {
+      "start": 1918.56,
+      "duration": 3.6,
+      "text": "evolving but these things take time and"
+    },
+    {
+      "start": 1920.32,
+      "duration": 4.56,
+      "text": "they're really really complex especially"
+    },
+    {
+      "start": 1922.16,
+      "duration": 4.96,
+      "text": "when you've got a a live game because it"
+    },
+    {
+      "start": 1924.88,
+      "duration": 4.28,
+      "text": "is a live game that we have or be we've"
+    },
+    {
+      "start": 1927.12,
+      "duration": 5.16,
+      "text": "only got a couple of servers that is"
+    },
+    {
+      "start": 1929.16,
+      "duration": 5.56,
+      "text": "live we run them 24 hours non-stop now"
+    },
+    {
+      "start": 1932.28,
+      "duration": 5.52,
+      "text": "for the for the last six seven months"
+    },
+    {
+      "start": 1934.72,
+      "duration": 3.96,
+      "text": "and and then we go to the bottom game we"
+    },
+    {
+      "start": 1937.8,
+      "duration": 3.12,
+      "text": "bottom"
+    },
+    {
+      "start": 1938.68,
+      "duration": 5.36,
+      "text": "LEL say again"
+    },
+    {
+      "start": 1940.92,
+      "duration": 5.04,
+      "text": "sorry we've used a ton of Amazon credits"
+    },
+    {
+      "start": 1944.04,
+      "duration": 4.08,
+      "text": "at you know the cost for running these"
+    },
+    {
+      "start": 1945.96,
+      "duration": 4.08,
+      "text": "servers just for the small amount of"
+    },
+    {
+      "start": 1948.12,
+      "duration": 5.16,
+      "text": "people that we currently have playing"
+    },
+    {
+      "start": 1950.04,
+      "duration": 5.44,
+      "text": "our small test group it's incredibly"
+    },
+    {
+      "start": 1953.28,
+      "duration": 4.88,
+      "text": "expensive now we're optimizing those"
+    },
+    {
+      "start": 1955.48,
+      "duration": 4.44,
+      "text": "costs but uh that is definitely"
+    },
+    {
+      "start": 1958.16,
+      "duration": 4.56,
+      "text": "something that we you know we're looking"
+    },
+    {
+      "start": 1959.92,
+      "duration": 4.84,
+      "text": "into how do we optimize this more how do"
+    },
+    {
+      "start": 1962.72,
+      "duration": 3.88,
+      "text": "we work with am Amazon to get a little"
+    },
+    {
+      "start": 1964.76,
+      "duration": 3.96,
+      "text": "bit more free credit go ahead yeah no"
+    },
+    {
+      "start": 1966.6,
+      "duration": 4.44,
+      "text": "and that's a really good point and I and"
+    },
+    {
+      "start": 1968.72,
+      "duration": 4.16,
+      "text": "actually leads me into this so so the"
+    },
+    {
+      "start": 1971.04,
+      "duration": 5.44,
+      "text": "game itself when when you're playing the"
+    },
+    {
+      "start": 1972.88,
+      "duration": 5.8,
+      "text": "game on on your PC you you're playing on"
+    },
+    {
+      "start": 1976.48,
+      "duration": 4.12,
+      "text": "your PC and and you're actually playing"
+    },
+    {
+      "start": 1978.68,
+      "duration": 3.96,
+      "text": "on one of our server instances so as"
+    },
+    {
+      "start": 1980.6,
+      "duration": 3.44,
+      "text": "your character is running around in I"
+    },
+    {
+      "start": 1982.64,
+      "duration": 3.6,
+      "text": "mean it's keeping it in sync but in"
+    },
+    {
+      "start": 1984.04,
+      "duration": 6.0,
+      "text": "theory you're you're kind of moving on"
+    },
+    {
+      "start": 1986.24,
+      "duration": 6.4,
+      "text": "both of them um and what we've done is"
+    },
+    {
+      "start": 1990.04,
+      "duration": 5.32,
+      "text": "introducing the the the nodes the nodes"
+    },
+    {
+      "start": 1992.64,
+      "duration": 4.68,
+      "text": "are very much decentralized nodes and"
+    },
+    {
+      "start": 1995.36,
+      "duration": 6.2,
+      "text": "and what they do is is when we have an"
+    },
+    {
+      "start": 1997.32,
+      "duration": 6.72,
+      "text": "update to our game those those um the"
+    },
+    {
+      "start": 2001.56,
+      "duration": 5.04,
+      "text": "client files will be sent to one or or"
+    },
+    {
+      "start": 2004.04,
+      "duration": 4.56,
+      "text": "multiple nodes and then those nodes can"
+    },
+    {
+      "start": 2006.6,
+      "duration": 3.64,
+      "text": "then talk to each other and they will be"
+    },
+    {
+      "start": 2008.6,
+      "duration": 3.92,
+      "text": "able to then distribute it to the"
+    },
+    {
+      "start": 2010.24,
+      "duration": 4.12,
+      "text": "player's PC and and if one of those"
+    },
+    {
+      "start": 2012.52,
+      "duration": 3.48,
+      "text": "fails while it's updating the player can"
+    },
+    {
+      "start": 2014.36,
+      "duration": 3.8,
+      "text": "go and get another one and what this"
+    },
+    {
+      "start": 2016.0,
+      "duration": 4.48,
+      "text": "slide shows is that in the future not"
+    },
+    {
+      "start": 2018.16,
+      "duration": 4.88,
+      "text": "currently but in the future we will have"
+    },
+    {
+      "start": 2020.48,
+      "duration": 5.36,
+      "text": "nodes that are running on PCS on Mac on"
+    },
+    {
+      "start": 2023.04,
+      "duration": 6.0,
+      "text": "Linux or on on your the same PC as the"
+    },
+    {
+      "start": 2025.84,
+      "duration": 5.68,
+      "text": "games running on vpss and on all kinds"
+    },
+    {
+      "start": 2029.04,
+      "duration": 6.36,
+      "text": "of cloud so our nodes will be able to to"
+    },
+    {
+      "start": 2031.52,
+      "duration": 6.44,
+      "text": "run everywhere and be real and it's and"
+    },
+    {
+      "start": 2035.4,
+      "duration": 5.8,
+      "text": "you know when we're talking about saving"
+    },
+    {
+      "start": 2037.96,
+      "duration": 5.24,
+      "text": "costs what not only does do the nodes"
+    },
+    {
+      "start": 2041.2,
+      "duration": 4.2,
+      "text": "help us to distribute our game without a"
+    },
+    {
+      "start": 2043.2,
+      "duration": 5.24,
+      "text": "single point of failure but when our"
+    },
+    {
+      "start": 2045.4,
+      "duration": 6.64,
+      "text": "games up to say 100 gigabytes every time"
+    },
+    {
+      "start": 2048.44,
+      "duration": 6.04,
+      "text": "we download 100 gigabytes to a user's um"
+    },
+    {
+      "start": 2052.04,
+      "duration": 4.8,
+      "text": "PC that costs us money I mean it might"
+    },
+    {
+      "start": 2054.48,
+      "duration": 3.76,
+      "text": "only be fractions of Penny from Amazon I"
+    },
+    {
+      "start": 2056.84,
+      "duration": 4.6,
+      "text": "don't know if you were on the Amazon"
+    },
+    {
+      "start": 2058.24,
+      "duration": 6.56,
+      "text": "call recently were you on it no well we"
+    },
+    {
+      "start": 2061.44,
+      "duration": 5.88,
+      "text": "we went through okay how can we optimize"
+    },
+    {
+      "start": 2064.8,
+      "duration": 5.52,
+      "text": "we we were talking with our uh rep they"
+    },
+    {
+      "start": 2067.32,
+      "duration": 4.72,
+      "text": "had the a team of five on the call like"
+    },
+    {
+      "start": 2070.32,
+      "duration": 6.16,
+      "text": "and they came full force with us which"
+    },
+    {
+      "start": 2072.04,
+      "duration": 7.32,
+      "text": "was great uh and one of the areas that"
+    },
+    {
+      "start": 2076.48,
+      "duration": 4.64,
+      "text": "really needed optimization was we we"
+    },
+    {
+      "start": 2079.36,
+      "duration": 4.56,
+      "text": "clearly figured out that that was game"
+    },
+    {
+      "start": 2081.12,
+      "duration": 6.08,
+      "text": "download c those were costs associated"
+    },
+    {
+      "start": 2083.92,
+      "duration": 6.2,
+      "text": "with the download of the files yeah um"
+    },
+    {
+      "start": 2087.2,
+      "duration": 5.52,
+      "text": "and so yeah this this node system can"
+    },
+    {
+      "start": 2090.12,
+      "duration": 4.4,
+      "text": "really help reduce that that's one area"
+    },
+    {
+      "start": 2092.72,
+      "duration": 4.12,
+      "text": "that can help reduce that a little bit"
+    },
+    {
+      "start": 2094.52,
+      "duration": 4.08,
+      "text": "it's it's it saves us a lot of money so"
+    },
+    {
+      "start": 2096.84,
+      "duration": 4.68,
+      "text": "you know so that that's why we're really"
+    },
+    {
+      "start": 2098.6,
+      "duration": 6.0,
+      "text": "happy to to reward people that are are"
+    },
+    {
+      "start": 2101.52,
+      "duration": 5.76,
+      "text": "running these nodes with the copy token"
+    },
+    {
+      "start": 2104.6,
+      "duration": 5.6,
+      "text": "because you you we it is true you are"
+    },
+    {
+      "start": 2107.28,
+      "duration": 5.0,
+      "text": "providing a valuable service for us you"
+    },
+    {
+      "start": 2110.2,
+      "duration": 4.64,
+      "text": "you're saving us money but you're also"
+    },
+    {
+      "start": 2112.28,
+      "duration": 6.12,
+      "text": "improving to to to speed up the"
+    },
+    {
+      "start": 2114.84,
+      "duration": 5.2,
+      "text": "downloads in many cases but Al but also"
+    },
+    {
+      "start": 2118.4,
+      "duration": 3.6,
+      "text": "giving us getting rid of that single"
+    },
+    {
+      "start": 2120.04,
+      "duration": 3.76,
+      "text": "point of failure but another benefit"
+    },
+    {
+      "start": 2122.0,
+      "duration": 3.52,
+      "text": "that yeah that we don't we we I don't"
+    },
+    {
+      "start": 2123.8,
+      "duration": 3.6,
+      "text": "think we've ever talked about before"
+    },
+    {
+      "start": 2125.52,
+      "duration": 4.08,
+      "text": "it's a huge cost-saving for us and it"
+    },
+    {
+      "start": 2127.4,
+      "duration": 4.48,
+      "text": "really does add up especially when we"
+    },
+    {
+      "start": 2129.6,
+      "duration": 4.68,
+      "text": "get to 100 gigabytes and we might be"
+    },
+    {
+      "start": 2131.88,
+      "duration": 5.24,
+      "text": "doing an update every two weeks or every"
+    },
+    {
+      "start": 2134.28,
+      "duration": 5.28,
+      "text": "four weeks over 100,000 PCS it's"
+    },
+    {
+      "start": 2137.12,
+      "duration": 4.4,
+      "text": "enormous yeah so so we're glad to get"
+    },
+    {
+      "start": 2139.56,
+      "duration": 5.76,
+      "text": "ahead of the curve of that and then this"
+    },
+    {
+      "start": 2141.52,
+      "duration": 6.56,
+      "text": "kind of final final um system is is how"
+    },
+    {
+      "start": 2145.32,
+      "duration": 6.28,
+      "text": "it all kind of works together and um you"
+    },
+    {
+      "start": 2148.08,
+      "duration": 5.36,
+      "text": "know I I hope that that explains some of"
+    },
+    {
+      "start": 2151.6,
+      "duration": 3.88,
+      "text": "the questions that I've been seeing of"
+    },
+    {
+      "start": 2153.44,
+      "duration": 4.76,
+      "text": "how the different blockchains work how"
+    },
+    {
+      "start": 2155.48,
+      "duration": 4.92,
+      "text": "we can expand across blockchain chains"
+    },
+    {
+      "start": 2158.2,
+      "duration": 5.92,
+      "text": "and all the data is actually held"
+    },
+    {
+      "start": 2160.4,
+      "duration": 6.36,
+      "text": "centrally so so so the player only sees"
+    },
+    {
+      "start": 2164.12,
+      "duration": 4.72,
+      "text": "just all their assets it doesn't matter"
+    },
+    {
+      "start": 2166.76,
+      "duration": 4.4,
+      "text": "where they are so so we've had this"
+    },
+    {
+      "start": 2168.84,
+      "duration": 4.8,
+      "text": "design for a few years it's been peer"
+    },
+    {
+      "start": 2171.16,
+      "duration": 5.24,
+      "text": "reviewed and you know we're we're quite"
+    },
+    {
+      "start": 2173.64,
+      "duration": 5.24,
+      "text": "a way into this and then you know I I I"
+    },
+    {
+      "start": 2176.4,
+      "duration": 4.92,
+      "text": "think more and more web 3 games will be"
+    },
+    {
+      "start": 2178.88,
+      "duration": 5.2,
+      "text": "built this way because this is how you"
+    },
+    {
+      "start": 2181.32,
+      "duration": 5.88,
+      "text": "should build a a modern web three game"
+    },
+    {
+      "start": 2184.08,
+      "duration": 5.24,
+      "text": "in my opinion yeah it's a good diagram"
+    },
+    {
+      "start": 2187.2,
+      "duration": 5.76,
+      "text": "it really helps flush out a lot of what"
+    },
+    {
+      "start": 2189.32,
+      "duration": 7.56,
+      "text": "our teams have put together over time uh"
+    },
+    {
+      "start": 2192.96,
+      "duration": 6.76,
+      "text": "and explain it in a good easy to"
+    },
+    {
+      "start": 2196.88,
+      "duration": 4.6,
+      "text": "understand visual way so I think it's"
+    },
+    {
+      "start": 2199.72,
+      "duration": 3.88,
+      "text": "very helpful hopefully it answered a lot"
+    },
+    {
+      "start": 2201.48,
+      "duration": 3.72,
+      "text": "of your questions from from the"
+    },
+    {
+      "start": 2203.6,
+      "duration": 3.4,
+      "text": "community because we've seen quite a bit"
+    },
+    {
+      "start": 2205.2,
+      "duration": 4.24,
+      "text": "of them we didn't go through anything"
+    },
+    {
+      "start": 2207.0,
+      "duration": 5.12,
+      "text": "anyone in particular uh but do we want"
+    },
+    {
+      "start": 2209.44,
+      "duration": 8.56,
+      "text": "to go into the leak now we can go into"
+    },
+    {
+      "start": 2212.12,
+      "duration": 7.88,
+      "text": "the leak so so the leak so a few weeks"
+    },
+    {
+      "start": 2218.0,
+      "duration": 5.48,
+      "text": "ago before I went on"
+    },
+    {
+      "start": 2220.0,
+      "duration": 6.68,
+      "text": "holiday um"
+    },
+    {
+      "start": 2223.48,
+      "duration": 5.4,
+      "text": "Hollow Day Hollow Hol day yeah a few a"
+    },
+    {
+      "start": 2226.68,
+      "duration": 5.08,
+      "text": "few weeks ago I was I think it was a"
+    },
+    {
+      "start": 2228.88,
+      "duration": 4.96,
+      "text": "Friday Friday or Saturday night I was"
+    },
+    {
+      "start": 2231.76,
+      "duration": 4.48,
+      "text": "streaming in in Discord and it was about"
+    },
+    {
+      "start": 2233.84,
+      "duration": 4.68,
+      "text": "30 people that that were following me"
+    },
+    {
+      "start": 2236.24,
+      "duration": 3.72,
+      "text": "and um I kind of told them I was on a"
+    },
+    {
+      "start": 2238.52,
+      "duration": 3.92,
+      "text": "secret mission so I'm going to tell you"
+    },
+    {
+      "start": 2239.96,
+      "duration": 5.8,
+      "text": "what that secret mission was so I was"
+    },
+    {
+      "start": 2242.44,
+      "duration": 5.48,
+      "text": "exploring kedo Valley um and I was"
+    },
+    {
+      "start": 2245.76,
+      "duration": 4.32,
+      "text": "climbing up all kind of knoks and"
+    },
+    {
+      "start": 2247.92,
+      "duration": 4.28,
+      "text": "crannies and and going to lots of places"
+    },
+    {
+      "start": 2250.08,
+      "duration": 4.04,
+      "text": "I've never been before didn't even know"
+    },
+    {
+      "start": 2252.2,
+      "duration": 5.12,
+      "text": "exist in some cases and every now and"
+    },
+    {
+      "start": 2254.12,
+      "duration": 6.8,
+      "text": "again I would pause and not do anything"
+    },
+    {
+      "start": 2257.32,
+      "duration": 5.52,
+      "text": "and so what that secret mission was um I"
+    },
+    {
+      "start": 2260.92,
+      "duration": 5.24,
+      "text": "was taking screenshots of certain"
+    },
+    {
+      "start": 2262.84,
+      "duration": 5.6,
+      "text": "locations where Hollow caches will now"
+    },
+    {
+      "start": 2266.16,
+      "duration": 4.24,
+      "text": "be stored so what we're going to do is"
+    },
+    {
+      "start": 2268.44,
+      "duration": 4.16,
+      "text": "we're going to remove all the existing"
+    },
+    {
+      "start": 2270.4,
+      "duration": 5.88,
+      "text": "Hol caches we are going to give them a"
+    },
+    {
+      "start": 2272.6,
+      "duration": 6.56,
+      "text": "bit of a trim we're going to have only"
+    },
+    {
+      "start": 2276.28,
+      "duration": 6.24,
+      "text": "100 Holo caches in new locations we're"
+    },
+    {
+      "start": 2279.16,
+      "duration": 6.96,
+      "text": "going to have 40 common 28 uncommon 18"
+    },
+    {
+      "start": 2282.52,
+      "duration": 5.4,
+      "text": "rare 10 legendary and four Mythic so it"
+    },
+    {
+      "start": 2286.12,
+      "duration": 3.48,
+      "text": "kind of makes sense in the future we"
+    },
+    {
+      "start": 2287.92,
+      "duration": 4.04,
+      "text": "will save them and have all kinds of"
+    },
+    {
+      "start": 2289.6,
+      "duration": 5.8,
+      "text": "competitions and and speed runs against"
+    },
+    {
+      "start": 2291.96,
+      "duration": 6.0,
+      "text": "them um and one of the locations I will"
+    },
+    {
+      "start": 2295.4,
+      "duration": 4.32,
+      "text": "give you a clue some people may remember"
+    },
+    {
+      "start": 2297.96,
+      "duration": 2.92,
+      "text": "them I've actually got screenshots and"
+    },
+    {
+      "start": 2299.72,
+      "duration": 3.04,
+      "text": "I've looked back at them and I can't"
+    },
+    {
+      "start": 2300.88,
+      "duration": 6.2,
+      "text": "even remember how I got to these places"
+    },
+    {
+      "start": 2302.76,
+      "duration": 6.48,
+      "text": "but um yeah a few months ago I was on"
+    },
+    {
+      "start": 2307.08,
+      "duration": 5.12,
+      "text": "one of the"
+    },
+    {
+      "start": 2309.24,
+      "duration": 5.96,
+      "text": "community's um little adventure games"
+    },
+    {
+      "start": 2312.2,
+      "duration": 5.12,
+      "text": "run by Zeke from from the mafia that was"
+    },
+    {
+      "start": 2315.2,
+      "duration": 4.04,
+      "text": "great that that was great I I actually I"
+    },
+    {
+      "start": 2317.32,
+      "duration": 3.88,
+      "text": "wasn't on that but I watched a good"
+    },
+    {
+      "start": 2319.24,
+      "duration": 5.2,
+      "text": "chunk of it I was bummed because I think"
+    },
+    {
+      "start": 2321.2,
+      "duration": 5.2,
+      "text": "I was in Dallas unable to get on enjoin"
+    },
+    {
+      "start": 2324.44,
+      "duration": 4.36,
+      "text": "you guys but I did watch some of it it"
+    },
+    {
+      "start": 2326.4,
+      "duration": 5.8,
+      "text": "was fun you kept breaking the rules and"
+    },
+    {
+      "start": 2328.8,
+      "duration": 4.64,
+      "text": "Zeke needed to uh keep you in line it"
+    },
+    {
+      "start": 2332.2,
+      "duration": 4.12,
+      "text": "was"
+    },
+    {
+      "start": 2333.44,
+      "duration": 4.64,
+      "text": "and this is where one of them is there"
+    },
+    {
+      "start": 2336.32,
+      "duration": 4.4,
+      "text": "was part of there was part of that"
+    },
+    {
+      "start": 2338.08,
+      "duration": 5.48,
+      "text": "stream Where in particular I started it"
+    },
+    {
+      "start": 2340.72,
+      "duration": 4.64,
+      "text": "I started you had to jump and I kept and"
+    },
+    {
+      "start": 2343.56,
+      "duration": 3.4,
+      "text": "he said I only want people to jump once"
+    },
+    {
+      "start": 2345.36,
+      "duration": 4.2,
+      "text": "and I kept going back and jumping again"
+    },
+    {
+      "start": 2346.96,
+      "duration": 4.12,
+      "text": "and again and then a few other people"
+    },
+    {
+      "start": 2349.56,
+      "duration": 4.76,
+      "text": "where if you if you were part of that"
+    },
+    {
+      "start": 2351.08,
+      "duration": 5.0,
+      "text": "stream if if you remember it um to just"
+    },
+    {
+      "start": 2354.32,
+      "duration": 5.92,
+      "text": "to to make Zeke a little bit happy it"
+    },
+    {
+      "start": 2356.08,
+      "duration": 8.28,
+      "text": "did inspire me and there is a holoc cach"
+    },
+    {
+      "start": 2360.24,
+      "duration": 6.68,
+      "text": "somewhere there so it wasn't in vain"
+    },
+    {
+      "start": 2364.36,
+      "duration": 5.52,
+      "text": "yeah okay that's that's a great leak I'm"
+    },
+    {
+      "start": 2366.92,
+      "duration": 5.88,
+      "text": "excited to to try the new holash"
+    },
+    {
+      "start": 2369.88,
+      "duration": 5.2,
+      "text": "challenge I'm also excited to do uh"
+    },
+    {
+      "start": 2372.8,
+      "duration": 4.32,
+      "text": "speed races have it saved to database"
+    },
+    {
+      "start": 2375.08,
+      "duration": 4.0,
+      "text": "things like that uh what we can do"
+    },
+    {
+      "start": 2377.12,
+      "duration": 3.68,
+      "text": "eventually with rewards around that what"
+    },
+    {
+      "start": 2379.08,
+      "duration": 5.72,
+      "text": "we can do with leaderboards I mean that"
+    },
+    {
+      "start": 2380.8,
+      "duration": 5.96,
+      "text": "will gamify everything so it's very very"
+    },
+    {
+      "start": 2384.8,
+      "duration": 3.52,
+      "text": "exciting overall I think at the moment"
+    },
+    {
+      "start": 2386.76,
+      "duration": 3.28,
+      "text": "you know at the start of the show we"
+    },
+    {
+      "start": 2388.32,
+      "duration": 3.36,
+      "text": "talked about we need to unhook things"
+    },
+    {
+      "start": 2390.04,
+      "duration": 5.04,
+      "text": "getting ready to save in the Daya base"
+    },
+    {
+      "start": 2391.68,
+      "duration": 5.72,
+      "text": "and stop locally in this build the"
+    },
+    {
+      "start": 2395.08,
+      "duration": 4.04,
+      "text": "saving of those Hollow caches may be"
+    },
+    {
+      "start": 2397.4,
+      "duration": 5.32,
+      "text": "broke so you might be able to collect"
+    },
+    {
+      "start": 2399.12,
+      "duration": 6.24,
+      "text": "them it might not pop up so we know"
+    },
+    {
+      "start": 2402.72,
+      "duration": 4.92,
+      "text": "that's potentially uh something that's"
+    },
+    {
+      "start": 2405.36,
+      "duration": 4.28,
+      "text": "just crept in because we just can't do"
+    },
+    {
+      "start": 2407.64,
+      "duration": 5.36,
+      "text": "it all at the same time but in the"
+    },
+    {
+      "start": 2409.64,
+      "duration": 5.92,
+      "text": "following the following build those so"
+    },
+    {
+      "start": 2413.0,
+      "duration": 4.6,
+      "text": "so learn those locations now CU in the"
+    },
+    {
+      "start": 2415.56,
+      "duration": 3.6,
+      "text": "following build those will be saved to"
+    },
+    {
+      "start": 2417.6,
+      "duration": 4.32,
+      "text": "the database we'll probably have the"
+    },
+    {
+      "start": 2419.16,
+      "duration": 5.0,
+      "text": "ability to reset all those have a timer"
+    },
+    {
+      "start": 2421.92,
+      "duration": 4.12,
+      "text": "behind them have a leaderboard that's"
+    },
+    {
+      "start": 2424.16,
+      "duration": 4.28,
+      "text": "going to be really exciting and not only"
+    },
+    {
+      "start": 2426.04,
+      "duration": 5.28,
+      "text": "for Hol cash but if we have the ability"
+    },
+    {
+      "start": 2428.44,
+      "duration": 4.48,
+      "text": "to save we're getting very close then to"
+    },
+    {
+      "start": 2431.32,
+      "duration": 5.0,
+      "text": "to doing that for the for the racing of"
+    },
+    {
+      "start": 2432.92,
+      "duration": 6.88,
+      "text": "the vehicle so all those cardo NF are"
+    },
+    {
+      "start": 2436.32,
+      "duration": 5.4,
+      "text": "about to get a huge boost yeah yeah it's"
+    },
+    {
+      "start": 2439.8,
+      "duration": 4.56,
+      "text": "it's going to get a lot stickier a lot"
+    },
+    {
+      "start": 2441.72,
+      "duration": 5.6,
+      "text": "more fun yeah I mean just being able to"
+    },
+    {
+      "start": 2444.36,
+      "duration": 5.76,
+      "text": "have leaderboards yeah is is going to be"
+    },
+    {
+      "start": 2447.32,
+      "duration": 4.72,
+      "text": "a ton can I just slip in one one more"
+    },
+    {
+      "start": 2450.12,
+      "duration": 6.44,
+      "text": "because I I I just want to slip in with"
+    },
+    {
+      "start": 2452.04,
+      "duration": 8.16,
+      "text": "one more we are we are now um running"
+    },
+    {
+      "start": 2456.56,
+      "duration": 5.6,
+      "text": "around obviously in in Solace 2 um"
+    },
+    {
+      "start": 2460.2,
+      "duration": 4.12,
+      "text": "testing that area we're testing solace"
+    },
+    {
+      "start": 2462.16,
+      "duration": 5.84,
+      "text": "one we're testing Solace 2 we're about"
+    },
+    {
+      "start": 2464.32,
+      "duration": 7.76,
+      "text": "to test Solace three we have broke"
+    },
+    {
+      "start": 2468.0,
+      "duration": 7.68,
+      "text": "ground on esparanza one and the team is"
+    },
+    {
+      "start": 2472.08,
+      "duration": 5.32,
+      "text": "is working really hard doing the artwork"
+    },
+    {
+      "start": 2475.68,
+      "duration": 4.88,
+      "text": "and and then starting to lay that out as"
+    },
+    {
+      "start": 2477.4,
+      "duration": 5.6,
+      "text": "well so there's a lot a lot of things to"
+    },
+    {
+      "start": 2480.56,
+      "duration": 4.24,
+      "text": "come we we are very busy I mean"
+    },
+    {
+      "start": 2483.0,
+      "duration": 5.28,
+      "text": "technically that's not really a leak"
+    },
+    {
+      "start": 2484.8,
+      "duration": 4.96,
+      "text": "because we've shown images from Franza"
+    },
+    {
+      "start": 2488.28,
+      "duration": 3.16,
+      "text": "that was the old that was the old one"
+    },
+    {
+      "start": 2489.76,
+      "duration": 4.56,
+      "text": "this these have all been it was an older"
+    },
+    {
+      "start": 2491.44,
+      "duration": 5.44,
+      "text": "one yes but we've we've started the in"
+    },
+    {
+      "start": 2494.32,
+      "duration": 5.76,
+      "text": "in imagery for esparanza and the study"
+    },
+    {
+      "start": 2496.88,
+      "duration": 4.92,
+      "text": "and the research and and the uh ideation"
+    },
+    {
+      "start": 2500.08,
+      "duration": 4.08,
+      "text": "that that began long ago and you've seen"
+    },
+    {
+      "start": 2501.8,
+      "duration": 5.56,
+      "text": "some of those images that's been refined"
+    },
+    {
+      "start": 2504.16,
+      "duration": 7.84,
+      "text": "for sure uh but now what you're saying"
+    },
+    {
+      "start": 2507.36,
+      "duration": 6.96,
+      "text": "really is that energy of the team is now"
+    },
+    {
+      "start": 2512.0,
+      "duration": 4.56,
+      "text": "beginning to really focus on asperen"
+    },
+    {
+      "start": 2514.32,
+      "duration": 5.08,
+      "text": "because we've gotten solid so far along"
+    },
+    {
+      "start": 2516.56,
+      "duration": 5.56,
+      "text": "which means that we're the land plot uh"
+    },
+    {
+      "start": 2519.4,
+      "duration": 4.32,
+      "text": "diagramming stage and selection in towns"
+    },
+    {
+      "start": 2522.12,
+      "duration": 3.8,
+      "text": "and things of that nature we we'll get"
+    },
+    {
+      "start": 2523.72,
+      "duration": 5.28,
+      "text": "there once we built it but yeah we built"
+    },
+    {
+      "start": 2525.92,
+      "duration": 5.56,
+      "text": "we built a lot of tools while building"
+    },
+    {
+      "start": 2529.0,
+      "duration": 4.16,
+      "text": "solace one two and three and we improved"
+    },
+    {
+      "start": 2531.48,
+      "duration": 3.76,
+      "text": "the artwork and we improved all the"
+    },
+    {
+      "start": 2533.16,
+      "duration": 3.44,
+      "text": "different process I say we I've not done"
+    },
+    {
+      "start": 2535.24,
+      "duration": 3.76,
+      "text": "any of this David and his team have done"
+    },
+    {
+      "start": 2536.6,
+      "duration": 4.6,
+      "text": "all this we brought on a lot more people"
+    },
+    {
+      "start": 2539.0,
+      "duration": 4.76,
+      "text": "over over the the last 90 days you know"
+    },
+    {
+      "start": 2541.2,
+      "duration": 6.16,
+      "text": "another 10 10 more people have joined us"
+    },
+    {
+      "start": 2543.76,
+      "duration": 5.28,
+      "text": "so so yeah the The Esperanza is but"
+    },
+    {
+      "start": 2547.36,
+      "duration": 3.44,
+      "text": "let's not get ahead of ourselves we're"
+    },
+    {
+      "start": 2549.04,
+      "duration": 3.16,
+      "text": "going to have Solace before that we're"
+    },
+    {
+      "start": 2550.8,
+      "duration": 3.08,
+      "text": "going to have all the three solices for"
+    },
+    {
+      "start": 2552.2,
+      "duration": 3.8,
+      "text": "you to run around then you'll get to"
+    },
+    {
+      "start": 2553.88,
+      "duration": 4.64,
+      "text": "choose your land plots and then just"
+    },
+    {
+      "start": 2556.0,
+      "duration": 5.56,
+      "text": "after that I mean then esparanza one two"
+    },
+    {
+      "start": 2558.52,
+      "duration": 6.28,
+      "text": "and three it's crazy it's going to be an"
+    },
+    {
+      "start": 2561.56,
+      "duration": 6.4,
+      "text": "exciting year a very exciting year well"
+    },
+    {
+      "start": 2564.8,
+      "duration": 5.64,
+      "text": "thank you all for joining hope you"
+    },
+    {
+      "start": 2567.96,
+      "duration": 3.88,
+      "text": "enjoyed this episode of copy Cafe Rob"
+    },
+    {
+      "start": 2570.44,
+      "duration": 2.88,
+      "text": "it's good to have you back I'm glad you"
+    },
+    {
+      "start": 2571.84,
+      "duration": 3.12,
+      "text": "got to get a little bit of rest I'm"
+    },
+    {
+      "start": 2573.32,
+      "duration": 4.92,
+      "text": "bummed that you got sick at the end of"
+    },
+    {
+      "start": 2574.96,
+      "duration": 4.68,
+      "text": "it that sucks but is what is thanks"
+    },
+    {
+      "start": 2578.24,
+      "duration": 3.6,
+      "text": "again for watching and we'll see you"
+    },
+    {
+      "start": 2579.64,
+      "duration": 2.2,
+      "text": "next"
+    },
+    {
+      "start": 2584.32,
+      "duration": 6.48,
+      "text": "week what you say yeah I'm in a game all"
+    },
+    {
+      "start": 2587.44,
+      "duration": 6.08,
+      "text": "day game all"
+    },
+    {
+      "start": 2590.8,
+      "duration": 6.92,
+      "text": "day with the doctor say wait till the"
+    },
+    {
+      "start": 2593.52,
+      "duration": 7.25,
+      "text": "song goes away faster than a Doro ride"
+    },
+    {
+      "start": 2597.72,
+      "duration": 12.39,
+      "text": "aito like a mosquito"
+    },
+    {
+      "start": 2600.77,
+      "duration": 9.34,
+      "text": "[Music]"
+    }
+  ],
+  "transcript_text": "cornucopias is a cuttingedge open world MMO set in a world where Humanity has ascended from the Earth's surface and created a breathtaking New World in the sky this Fantastical realm is a system of floating islands carved from the land we once called home now encased in radically advanced dome-shaped structures suspended high above the clouds each one is a futuristic Marvel with its own unique environment identity and thriving communities it is Within These domes The Epic Journey Begins here players take control of their own personal Avatar which gives them the freedom to choose their Destiny be immersed in vast Landscapes explore vibrant settlements and engage engage in a myriad of activities such as crafting Commerce combat racing and more welcome to a world where the sky is no longer the limit hey everyone welcome to copy Cafe this is episode number 87 that's hard to believe we're nearing 100 Rob we got to do something special for that one but you got Rob Greg here and Josh Josh Jones and we're excited we we had a we took a week off last week you had a little break indeed uh a vacation probably much needed um and then you got a little bit sick which is a bummer but watch out for those an exciting episode for you this week we've got some uh release details the next release uh we'll talk to you a little bit about that we'll talk to you about base uh and expanding our uh chain Base to Base uh and then we'll talk a little bit about nodes so a good episode we got some Community questions as well that we'll go over and of course as always we've got a leak so uh let's go ahead and get started you ready indeed let's do it what are you drinking well today yes with my plain germs I'm drinking in the UK what is called a lmip which is kind of like a powdered powdered medicine drink with paracetamol and all kinds of lemon and it's just hot lemon with par lemsip they call it very very big brand in the UK lmip um well I've got the minion cup once again huh yes yes well done sir um it is a diet Dr Pepper in here today diet Dr Pepper yeah I can't be having 40 grams of sugar so instead I'm choosing the uh artificial sugar I'm choosing a a lesser evil in my opinion nice enough yet to be seen whether that's actually lesser I don't know anyway all right let's let's get right at it so so exciting week I've seen some of the player Avatar have you have you seen some of the sliders and what's going on some of the examples some of what's been created I have yes I've I've recreated um a few of my favorite characters from from from The Walking Dead nice I mean we're getting some interesting Creations out of this I jumped into a meeting today where they were testing all the sliders at Max and just messing around and that created some pretty unique uh y looking individuals incredibly challenging getting this refined and balanced to the point where we like it um I do believe they've run into several things that might cause a slight delay of the original date of the 12th but it's coming very soon so um could we release it on the 12th when this episode is out it's possible but I'm guessing right now based upon the way things are going today that we might just let's just kick it a few days back yeah we probably should not let them have the weekend yeah yeah let them add a little bit more uh and and resolve some of the issues um but again guys uh and and gals like please understand what the complexity and the enormity of this release this is uh no small task to build an avatar creator at this level so uh the team has been heads down working incredibly hard it it it require Ires so many different skill sets to pull this off so uh we're lucky uh we built an amazing team because they're doing an excellent job um and it's going to be far from perfect and there's more in the build it's not just the Avatar Creator there there's lots more stuff that we've added into it as well there is there is some good stuff some of it we'll talk about uh well today um as well so okay so anything else on the Avatar Creator that we want to talk about well okay I've seen some really cool avatars with different tattoos yep some good tattoos in there yeah there's more than one some of them look pretty cool I'm really excited about that and furthermore Matt this morning asked if there was a Bob Ross fro to which David quickly responded with a snapshot of the character that he was demoing to us one of the male guys that he was building with a Bob Ross type fro it wasn't quite Bob Ross color but it was he just quickly uh reverted back with that so I am excited to know that you can get some Bob Ross style hair now what I'm not so excited about is we may not have beards with this first release which yeah but I mean beards have to grow yes they do yes they do they're new these are new characters they got give them time to grow a beard you know that's that's a good point so maybe with the announce we don't have beards we just tell the community that's okay they will grow y give some tattoos before beards let's get priorities yeah I Gotta Have A Beard though and in fact I talked to David about that this morning in the thread and said hey we need to have beards or I quit and he did uh he did say that they're coming soon so I don't know when there's a lot of styles of beards what are they going to be yeah but I want yellow faces blue and and and green faces or I quit but see I already made demands I already did the quit threat no this is the only time you'll see me wearing red as well I very very extremely rarely wear red I was just I was literally just about to ask you about your shirt do you need to talk about anything going on with City right now no no I mean after winning the the the the treble last year we're on track to to win it again we had a good a good draw this week yeah that's the reason I was wearing this top yeah yeah I figured I figured that um okay so next up uh me or anything yeah so the the date push but we've also got uh we'll we'll save the leak till later as usual next up is base um so many of you have seen we've added base to the mix of chains that we're supporting uh and as always we announced this in our white paper the original white paper win 20 21 yep maybe November is when we published the white paper somewhere around there of 2021 was when we announced that we plan to be chain agnostic and offer to cast a wide net and a large player player base but there's so many reasons for this this is just one of them uh and so yeah we're we're happy to call cardono our home chain but we are we are expanding also to base and this is a strategy that we want to used to capture more players more interest in what we're doing and that's the final step I've announced this many times too by the way but that's the final step before we really start going after mainstream and we might we might start going after mainstream later this year uh but the idea is that we get as many people as we can playing this game so um that's that's one of many but I mean ba Bas is exciting because obviously it's part of um coinbase it'll come back to me yeah so so it's part of coinbase it's Brian Armstrong's baby they already have a 100 million users of that platform you know it's brand new we will be I think one of the the very first games um especially a game that's well established with as far along as we are so so we've got a really good chance of getting a lot of eyeballs on our project and those 100 million eyeballs then you know will'll be seeing they'll be playing our game they'll be seeing the bubble Jets they'll be seeing the land and if they want those bubble Jets all their land well guess what they now are now a great opportunity for us to teach them about cardano so you have to have a cardano wallet obviously and and they're only available on the secondaries and then vice versa as well it's a great opportunity for our cardano um base player base to to learn about the this upcoming um chain as well so so there's some really good cross-pollination going on there and and this part of our definitely part of our chain agnostics um strategy is actually the fourth chain we're on now because the the copy token is is cardano ethereum B&B smart chain and now introducing base so so this is the fourth you know we we've been chain agnostic and multi-chain from the beginning yes yes we have and another thing that I want to emphasize that the amount of people that we can bring in is correlative to how easy we make the process yeah ideally in the future there's not even a talk of what chain it is with the user base and the players that coming on that it's all seamless it's behind the scenes but it empowers them in so many ways and uh so looking to the Future who knows what chain is leading the race or how it works but what we want is success for all of them and we want success for this industry and the easier we make it for everyone the better yeah I we we've had lots of sport as well I I I saw um I I saw a video that Dan made from crypto Capital Ventures and we all know he's a huge huge huge supporter of of cardano he said he's going to do more content on base and and for him he's got exactly the same message you know people will have a go a coinbase wallet on that coinbase wallet they don't need to leave coinbase they they will have their native assets they will have nfts on there they they actually for web too it's actually an a single experience you go on there and you have everything in one place then later on if they want to they can learn about other chains but they don't need to I mean that could and that is an absolutely amazing opportunity for for you know new people to enter the ecosystem I also saw today Thursday as we're filming this um crypto Pro let's get Dan back on in a while yeah say today I also saw an interview crypto Crow with Charles hoskinson and and you know Charles was talking about projects going cross chain and multi-chain and how positive that is to actually bring more eyes into the card cardan ecosystem which is you know exactly the same for phos ophy that that we share we want all the chains to succeed but because we want web 3 to succeed and we don't sued in our little Echo Chambers we succeed together 100% the the mindset of maximalism is one that unfortunately is not very welcoming to new people you know when when somebody comes in and they see a bunch of fighting about which chain is better that kind of pushes people away it makes people go you know what I don't feel comfortable with this I'm not in this space I'm just I'm not ready for this and people turn away because they're already so intimidated by what crypto looks like they don't know how to use this stuff it's intimidating they've heard that it's volatility that there's scams they've heard all these things um but they know that wow Bitcoin ETF it's all over the news I want to get in but then they see a bunch of of fighting and bickering on Twitter about what chain and blah blah blah this kind of thing needs to stop but we we need overall in this industry we need to start thinking about the bigger picture yeah and bringing in the masses and maximalism does not help that at at all like what we need is friendly welcoming environments to bring people into it and show them what this chain is like and what is this chain like and you decide and they're going to go to the chain that's best for them like and I think it I think it's also part of of showing that the space is very early cuz we had this with gaming as well in in the early days they didn't have the tools to go crossplatform so so you would have people that would only develop say for the PC or then people would develop for the Xbox or for the PlayStation or the Nintendo and then as the tools was built and and as the space evolved what we then saw is is games like fortnite that were then building one game and actually the platform didn't didn't matter cuz you can then play fortnite on mobile or on PC on Xbox on Playstation um and then this space evolved even more because only Xbox fortnite could play Xbox fortnite then the next level came in where now you now you've got Xbox against PlayStation and yet it absolutely does not matter what what your Xbox and and it's exactly the same for us in terms of blockchain as as the tools are are evolving and as as the space gets more and more mature we will see this where everything becomes you know agnostic with with each other but at the moment we kind of are at that early stage where where people go oh no I need to protect protect where I am but in the long term it it'll mean nothing nobody will care the the exciting stuff for me is and this is kind of somewhat antagonistic to my idea of the you know just being careful of maximalism but I'm excited to have a competition like a race of the chains we've talked about it before um and and we're moving in that direction where cardano Community gets to compete with the base community and you know whatever the other communities are that we want to do that with but uh and we haven't announced that yet but we'll we'll bring on another chain hopefully and have three different chains that that we do a competition with and we're we're quickly moving to the place where we'll have the leaderboards uh we'll we'll have the uh ability to uh store data to the database Y and we should be able to then run small tournaments and start building up to a bigger one if possible I'd love to do that by Rare Evo later this year that that almost happened this build so so we're we're in a transition now where we do have the save into the database so what we've done done is we've unhooked the saving locally but we don't have time to put all that back together so we we're going this is going to be a little bit of a funny build where where we do have saving to the database and we've unhooked other bits but putting them back to so it it it's a bit of a funny build in in that sense but the build after will have everything saving to the database so the hoc caches and the races and then we'll be able to have um leaderboards and then obviously when we have leaderboards then yeah definitely we will start to have competitions and those competitions will be rewarded with we reach tour platform uh a couple days ago so re-engaging trying to see where they're at in terms of their integration with Unreal Engine uh so we're looking into that I believe that was Matt um yeah but yeah and in the not to near future we will we will have the f9r that quite a lot of people have already raced we we will have we hav't talked about that yet that's an important go yeah so will have that sale on on Bas so that will be our first nft um vehicle on Bas currently for the for the last month I mean we've been we've been selling the the the the file nodes on cardano and base so so so we're all they're already doing really well and actually I've got some num numbers on those because we're going to talk about those in a bit but we've sold nearly 5,000 um cop nft node licenses on cardano and just over 2,000 on base now so we've already got a a really we we're establishing a good I want to keep saying Bas every other every other word we're establishing a good base on on the on Bas and and on cardano and then their marketing turn into a good play there so so we'll have that the thing we need to emphasize there though is that we're gonna have the class system yeah and yes this is an S class that we're offering on Bas but there will be an S-Class on cardono there will be that's I was leading up to of the each of the chains will have um a vehicle in each class at minimum so we want to balance that out over time and when we have the league the cornucopious Racing League and the competitions the the classes are important because the C classes will be racing against c-classes the B's against the B's and the A's and the A's and and the S's and the s's so so you w have the S versus sorry go ahead yeah so so I'm just saying so the we'll have competitions in each of the different classes so the bubble Jets will be racing in their class the the the t3s will be racing in theirs and so on and so on right I mean in your case though it might be more fair that if you use the S-Class against me with the cclass just to kind of even well i' I've roasted that I've I've um I've raced that f9r and it I was too I mean the T3 is too fast for me I I think I think I'm I'm at the a class seems to be my sweet spot I love it man I I can't wait like I think we do need to have a a team tney or something that's fair or whatever at some point we'll do more tournaments like we we got a lot of experimenting to do with the tournaments we got a lot of events coming soon as well we'll start doing more events having more fun in a variety of ways I noticed cop boore did one recently that was interesting there was a KOB boore cup I believe yeah he minted his own nft as well that was quite easy that that pretty good that as well yeah it was I think he must have spent all weekend sculpting that all weekend sculpting it using uh what's the name of the AI Dallas was it Dallas I don't know what what he would have done with that but that it looks cool uh very cool okay so did we cover everything I think we did nodes no update yeah I we cover that as well a little bit we did well did you want to go over the the number of nodes sold yeah so so in total with cardano and Bas we've sold just under 7,000 nodes of of the 20,000 that are for sale we said that this sale is going to be a slow sale and it's going to end on the 1st of July and then we're going to distribute the nfts on cardano and on Bas I mean on base they kind of get distributed already but you can't move them they're locked you know different rules for for different chains but so so everybody will be able to sell them on the secondary on the 1st of July at exactly the same time um in terms of rewards for that first year we've we've set aside approximately 26 million copy rewards that will be distri that number is fixed however that will be distributed by all the active nodes so if we if we only have 7,000 nodes then those rewards are distributed across those so um yeah so I mean we hope we sell a few more but if we don't that that's what we've said we said was if uh if we're not sold out by July 1st um then we're pause sales for a bit uh but that we will likely resume sales at some point point but rewards automatically start start uh July 1st if not sooner if we're ready sooner and being ready means sold out and uh the software is ready but the software is doing incredibly well and so for any of you guys that might be watching this that don't have nodes yet go over to the website it's easy to find there's a slider on the main Banner click to go to the sale very easy to participate y available on cardano and base either of the chains and then a few weeks maybe maybe next week or the one after we will actually bring Greg on and he and he can talk cuz he's had a big he's just achieved a big milestone and we'll talk about that in the future yeah yeah that I agree I I wish we could have had uh Greg on today we got we need to have David on show the Avatar Creator maybe do that next week um we need to have Josh on am I allowed to say his name we haven't really announced that yet yeah we have announced it oh we have okay yeah I mean you go in Discord is is is next to his name oh okay gotcha good good um and then we need to have Greg on so those are three people we need to have in the very near future uh that's from the team but we also need to start having some more uh external voices like Dan crypto Capital Venture crypto Crow at some point whatever cardano with Paul we we need to we need to speak to fared as well we need Paul those and get them into the game do a race we will definitely race them all in fact we we're still waiting cop Bo he's had so many shout outs this episode um he he interview exclusive interview with Ben I don't think we've had Ben on our show yet have we um so we're just waiting to to sign that off pretty soon that video yeah and I noticed that what Ben was asking for feedback on that uh interview we haven't I I haven't been able to watch it yet so I need to watch it I feel bad but I have not had a free minute I don't ever so it's challenging um okay uh you ready to go over the architecture overview yes hopefully this is a little bit of fun so so what I've done is instead of having Community questions this week since since since we did a tweet we had a little bit of questions one or two questions from the community some positive some negative but what was obvious is that there's lots of confusion um of different areas so so what I did is is I threw together a bit of a highlevel presentation it's not 100% accurate I could drill down into but but anyway let's get to it it's it's it's pretty I I think it's it's it's good enough it's good enough on on um I'm calling at web 3 gaming I don't know wait Rob did you actually start with a branded slide this time F Well I'm Dreaming I'm going to be invited on TED Talks okay go so there's five slides four of them will fit together so so here we go so so when we when we when we look and we planned this architecture you know years ago so when we look at the blockchain layer there's different level there's different types of blockchain some of them are centralized some are decentralized you know we know cardano is the most decentralized and we know we've just moved to base which is is actually centralized at the moment but they all follow a similar pattern as in they have individual addresses and and those individual addresses is where the nfts are found so you have your bubble Jets nfts your land nfts you actually have your tokens on there and and other nfts and and and that's kind of how they all work and this is demonstra that you know in the future we will we will connect to to to others so so this layer part of our game is both decentralized and centralized the beauty of web 3 is is you know it's so powerful and then joining on to that we have this what I'm calling a connection layer which again could be decentralized or centralized and basically the the game or websites what they do is they talk to um to the actual blockchains themselves cuz talk or blockchain is is quite slow via VIA a wallet or via a blockchain API now when you look at the wallets nothing is actually ever stored in your wallet your wallet is a view into into the blockchain so so we do read the wallets but but really what you're doing is when you're connecting your wallet to our game you are confirming that you are the owner of that wallet cuz otherwise how would you have access to that and then from then on when we go and and look at your nfts or when we refresh everything what we actually do is is is we can look straight on the blockchain then because you've confirmed so if you move those those nfts we don't have to read your wallet we will already know and and we will have triggers in place and and what we actually do is we take then that address we monitor that address in the background we we have a have a service um and we then keep a copy of that in in our database in our Central database and I'll get on to that in a minute because that's quite important but also what we what we are building is we we are building our own layer too and and this is what we're we're working with deer with as when we have vehicle you're doing racing and you've got track racing and you got fastest times and the history of the vehicles and all that they will be saved in our Central database and they will also then be slowly pushed out to this layer two um via this this history API and then that layer two will have multiple nodes and then other people that want to build services on the back of our data they talk to to this layer too the the various nodes pull the data that they want off those nodes and what that does is that that takes all the pressure off our our um Central database and it actually it reduces cost but also makes it it a great way for for us to to offer services to to other people so those can be centralized or decentralized and then we come further down into our Cloud layer um which currently is on AWS and and this and this is centralized and you know a lot of confusion that I've seen is people are going you know are where you saving your games now are you going to be saving them on cardano are you going to be saving them on Bas what no that they're going to be saved in a central database our model is is a hybrid model and it has to be that way because it's very slow to to update a blockchain um and when you're playing a game and you've got hundreds and thousands of players they want instant instant responses and I've just showed that way but the idea in mind has always been that we gradually decentralize over time yeah we're able to hybrid currently yes definitely and that and that's like I say when working with with daer we can slowly offload some some of that data to a chain we don't know how just not real time how fast we'll be able to decentralize but nodes is one step in that direction we'll take other steps as well yes which this we also announced in our early days in the original white paper I believe yeah and and also within our Cloud we you know we have our website we we have the the copi wiki we have the marketplace we have a number of databases um the the we have web two databases you know so those look after some of our marketplaces we synchronize the blockchain it's a lot easier for us to access a a central database like I say than the blockchain so so they're always synchronizing in the background but we'll go here for Speed and we have the game database so as your game is saving it's saving rapidly to that database when you're going across if we look if we look at the different instances of of server files and they are maybe in Europe or in America what traditionally happens in in other games is you'll go in a particular server and whatever happens on that server stays on that server you go in another one it might be might be the same theme but it looks completely different now in our game because everything is synchronized at the back end if you update a land plot in in solace in say America that will quickly be synchronized via the database and then find its way to Europe or Africa or Asia or Australia so all all that will will be happening in the background so you're in one permanent world you it doesn't matter whether you're going into Europe or America you should be in in in the same the same live world and we also have our um different environments set up for for for our Dev team so we have the the dev team testing stage in deployment and and and moving then moving along to well testing the testing environment is a is a big announcement really uh that that we now have the testing server setup because of what it allows yes I we we we we can't we were testing before in staging so we've always had a test server now we split it so we've got staging and testing as as we're getting more and more more builds out and we've also built a lot of testing tools as well development for the team efficiency yeah so so we we are evolving but these things take time and they're really really complex especially when you've got a a live game because it is a live game that we have or be we've only got a couple of servers that is live we run them 24 hours non-stop now for the for the last six seven months and and then we go to the bottom game we bottom LEL say again sorry we've used a ton of Amazon credits at you know the cost for running these servers just for the small amount of people that we currently have playing our small test group it's incredibly expensive now we're optimizing those costs but uh that is definitely something that we you know we're looking into how do we optimize this more how do we work with am Amazon to get a little bit more free credit go ahead yeah no and that's a really good point and I and actually leads me into this so so the game itself when when you're playing the game on on your PC you you're playing on your PC and and you're actually playing on one of our server instances so as your character is running around in I mean it's keeping it in sync but in theory you're you're kind of moving on both of them um and what we've done is introducing the the the nodes the nodes are very much decentralized nodes and and what they do is is when we have an update to our game those those um the client files will be sent to one or or multiple nodes and then those nodes can then talk to each other and they will be able to then distribute it to the player's PC and and if one of those fails while it's updating the player can go and get another one and what this slide shows is that in the future not currently but in the future we will have nodes that are running on PCS on Mac on Linux or on on your the same PC as the games running on vpss and on all kinds of cloud so our nodes will be able to to run everywhere and be real and it's and you know when we're talking about saving costs what not only does do the nodes help us to distribute our game without a single point of failure but when our games up to say 100 gigabytes every time we download 100 gigabytes to a user's um PC that costs us money I mean it might only be fractions of Penny from Amazon I don't know if you were on the Amazon call recently were you on it no well we we went through okay how can we optimize we we were talking with our uh rep they had the a team of five on the call like and they came full force with us which was great uh and one of the areas that really needed optimization was we we clearly figured out that that was game download c those were costs associated with the download of the files yeah um and so yeah this this node system can really help reduce that that's one area that can help reduce that a little bit it's it's it saves us a lot of money so you know so that that's why we're really happy to to reward people that are are running these nodes with the copy token because you you we it is true you are providing a valuable service for us you you're saving us money but you're also improving to to to speed up the downloads in many cases but Al but also giving us getting rid of that single point of failure but another benefit that yeah that we don't we we I don't think we've ever talked about before it's a huge cost-saving for us and it really does add up especially when we get to 100 gigabytes and we might be doing an update every two weeks or every four weeks over 100,000 PCS it's enormous yeah so so we're glad to get ahead of the curve of that and then this kind of final final um system is is how it all kind of works together and um you know I I hope that that explains some of the questions that I've been seeing of how the different blockchains work how we can expand across blockchain chains and all the data is actually held centrally so so so the player only sees just all their assets it doesn't matter where they are so so we've had this design for a few years it's been peer reviewed and you know we're we're quite a way into this and then you know I I I think more and more web 3 games will be built this way because this is how you should build a a modern web three game in my opinion yeah it's a good diagram it really helps flush out a lot of what our teams have put together over time uh and explain it in a good easy to understand visual way so I think it's very helpful hopefully it answered a lot of your questions from from the community because we've seen quite a bit of them we didn't go through anything anyone in particular uh but do we want to go into the leak now we can go into the leak so so the leak so a few weeks ago before I went on holiday um Hollow Day Hollow Hol day yeah a few a few weeks ago I was I think it was a Friday Friday or Saturday night I was streaming in in Discord and it was about 30 people that that were following me and um I kind of told them I was on a secret mission so I'm going to tell you what that secret mission was so I was exploring kedo Valley um and I was climbing up all kind of knoks and crannies and and going to lots of places I've never been before didn't even know exist in some cases and every now and again I would pause and not do anything and so what that secret mission was um I was taking screenshots of certain locations where Hollow caches will now be stored so what we're going to do is we're going to remove all the existing Hol caches we are going to give them a bit of a trim we're going to have only 100 Holo caches in new locations we're going to have 40 common 28 uncommon 18 rare 10 legendary and four Mythic so it kind of makes sense in the future we will save them and have all kinds of competitions and and speed runs against them um and one of the locations I will give you a clue some people may remember them I've actually got screenshots and I've looked back at them and I can't even remember how I got to these places but um yeah a few months ago I was on one of the community's um little adventure games run by Zeke from from the mafia that was great that that was great I I actually I wasn't on that but I watched a good chunk of it I was bummed because I think I was in Dallas unable to get on enjoin you guys but I did watch some of it it was fun you kept breaking the rules and Zeke needed to uh keep you in line it was and this is where one of them is there was part of there was part of that stream Where in particular I started it I started you had to jump and I kept and he said I only want people to jump once and I kept going back and jumping again and again and then a few other people where if you if you were part of that stream if if you remember it um to just to to make Zeke a little bit happy it did inspire me and there is a holoc cach somewhere there so it wasn't in vain yeah okay that's that's a great leak I'm excited to to try the new holash challenge I'm also excited to do uh speed races have it saved to database things like that uh what we can do eventually with rewards around that what we can do with leaderboards I mean that will gamify everything so it's very very exciting overall I think at the moment you know at the start of the show we talked about we need to unhook things getting ready to save in the Daya base and stop locally in this build the saving of those Hollow caches may be broke so you might be able to collect them it might not pop up so we know that's potentially uh something that's just crept in because we just can't do it all at the same time but in the following the following build those so so learn those locations now CU in the following build those will be saved to the database we'll probably have the ability to reset all those have a timer behind them have a leaderboard that's going to be really exciting and not only for Hol cash but if we have the ability to save we're getting very close then to to doing that for the for the racing of the vehicle so all those cardo NF are about to get a huge boost yeah yeah it's it's going to get a lot stickier a lot more fun yeah I mean just being able to have leaderboards yeah is is going to be a ton can I just slip in one one more because I I I just want to slip in with one more we are we are now um running around obviously in in Solace 2 um testing that area we're testing solace one we're testing Solace 2 we're about to test Solace three we have broke ground on esparanza one and the team is is working really hard doing the artwork and and then starting to lay that out as well so there's a lot a lot of things to come we we are very busy I mean technically that's not really a leak because we've shown images from Franza that was the old that was the old one this these have all been it was an older one yes but we've we've started the in in imagery for esparanza and the study and the research and and the uh ideation that that began long ago and you've seen some of those images that's been refined for sure uh but now what you're saying really is that energy of the team is now beginning to really focus on asperen because we've gotten solid so far along which means that we're the land plot uh diagramming stage and selection in towns and things of that nature we we'll get there once we built it but yeah we built we built a lot of tools while building solace one two and three and we improved the artwork and we improved all the different process I say we I've not done any of this David and his team have done all this we brought on a lot more people over over the the last 90 days you know another 10 10 more people have joined us so so yeah the The Esperanza is but let's not get ahead of ourselves we're going to have Solace before that we're going to have all the three solices for you to run around then you'll get to choose your land plots and then just after that I mean then esparanza one two and three it's crazy it's going to be an exciting year a very exciting year well thank you all for joining hope you enjoyed this episode of copy Cafe Rob it's good to have you back I'm glad you got to get a little bit of rest I'm bummed that you got sick at the end of it that sucks but is what is thanks again for watching and we'll see you next week what you say yeah I'm in a game all day game all day with the doctor say wait till the song goes away faster than a Doro ride aito like a mosquito [Music]",
+  "has_transcript": true
+}
