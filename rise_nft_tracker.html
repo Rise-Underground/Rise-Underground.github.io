@@ -34,6 +34,30 @@
   html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:var(--font-body);}
   ::selection{background:var(--gold);color:#0a0908;}
 
+  /* ---------- disclaimer modal ---------- */
+  #disclaimer-overlay{
+    position:fixed;inset:0;background:rgba(10,9,8,0.82);backdrop-filter:blur(4px);
+    display:flex;align-items:center;justify-content:center;z-index:1000;padding:20px;
+  }
+  #disclaimer-overlay.hidden{display:none;}
+  #disclaimer-modal{
+    background:var(--panel);border:1px solid var(--line);border-radius:12px;
+    max-width:520px;width:100%;padding:26px 28px;box-shadow:0 12px 40px rgba(0,0,0,0.5);
+  }
+  #disclaimer-modal h2{
+    margin:0 0 14px 0;font-family:var(--font-display);font-weight:700;font-size:18px;
+    letter-spacing:0.04em;text-transform:uppercase;color:var(--gold-bright);
+  }
+  #disclaimer-modal p{
+    margin:0 0 20px 0;font-size:14px;line-height:1.6;color:var(--text);
+  }
+  #disclaimer-modal button{
+    background:var(--gold);color:#0a0908;border:none;border-radius:6px;
+    padding:10px 22px;font-family:var(--font-body);font-weight:600;font-size:14px;
+    cursor:pointer;transition:background 0.15s ease;
+  }
+  #disclaimer-modal button:hover{background:var(--gold-bright);}
+
   /* ---------- header ---------- */
   header{
     display:flex;align-items:center;justify-content:space-between;
@@ -239,6 +263,13 @@
 </style>
 </head>
 <body>
+<div id="disclaimer-overlay" class="hidden">
+  <div id="disclaimer-modal">
+    <h2>A Note On This Data</h2>
+    <p>This tracker updates hourly and reflects our current understanding of how Infinity Rising's mint distribution and rarity system works. While we believe it to be accurate, gaps in our understanding or errors — either in how the team originally distributed rarity or in how this tracker calculates it — are possible. This tool is provided for informational purposes only, to give the community insight into the current state of open mints, and should not be considered financial advice.</p>
+    <button id="disclaimer-dismiss">Got it</button>
+  </div>
+</div>
 
 <header>
   <div class="brand">
@@ -836,6 +867,30 @@ function initNftSearch(){
 }
 
 init();
+</script>
+<script>
+(function(){
+  var STORAGE_KEY = 'riseDisclaimerDismissedAt';
+  var WEEK_MS = 7 * 24 * 60 * 60 * 1000;
+  var overlay = document.getElementById('disclaimer-overlay');
+  var dismissBtn = document.getElementById('disclaimer-dismiss');
+
+  function shouldShow(){
+    var last = localStorage.getItem(STORAGE_KEY);
+    if(!last) return true;
+    var elapsed = Date.now() - parseInt(last, 10);
+    return isNaN(elapsed) || elapsed >= WEEK_MS;
+  }
+
+  if(shouldShow()){
+    overlay.classList.remove('hidden');
+  }
+
+  dismissBtn.addEventListener('click', function(){
+    localStorage.setItem(STORAGE_KEY, Date.now().toString());
+    overlay.classList.add('hidden');
+  });
+})();
 </script>
 </body>
 </html>
