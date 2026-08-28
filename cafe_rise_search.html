@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rise Underground Search</title>
+<title>Infinity Rising Almanac — Rise Underground</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -445,6 +445,73 @@
     gap:4px;
     flex-shrink:0;
   }
+
+  /* --- Almanac Stats --- */
+  .almanac-stats{
+    max-width:640px;
+    margin:0 auto 44px;
+    padding:0 24px;
+    text-align:center;
+  }
+  .almanac-hero{
+    border:1px solid var(--gold-bright);
+    background:linear-gradient(180deg, rgba(217,164,65,0.10), rgba(217,164,65,0.02));
+    border-radius:6px;
+    padding:28px 20px 24px;
+    margin-bottom:16px;
+    box-shadow:0 0 30px rgba(217,164,65,0.08);
+  }
+  .almanac-hero-num{
+    font-family:var(--display);
+    font-weight:800;
+    font-size:clamp(48px, 9vw, 84px);
+    line-height:1;
+    color:var(--gold-bright);
+    text-shadow:0 0 24px rgba(217,164,65,0.35);
+  }
+  .almanac-hero-label{
+    font-family:var(--mono);
+    font-size:13px;
+    letter-spacing:0.15em;
+    text-transform:uppercase;
+    color:var(--off-white);
+    margin-top:6px;
+  }
+  .almanac-mini-row{
+    display:flex;
+    gap:12px;
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+  .almanac-mini{
+    flex:1;
+    min-width:120px;
+    border:1px solid var(--line);
+    background:var(--panel);
+    border-radius:5px;
+    padding:14px 10px;
+  }
+  .almanac-mini-num{
+    font-family:var(--display);
+    font-weight:700;
+    font-size:26px;
+    color:var(--off-white);
+  }
+  .almanac-mini-label{
+    font-family:var(--mono);
+    font-size:9.5px;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--grey);
+    margin-top:3px;
+  }
+  .almanac-note{
+    font-family:var(--serif);
+    font-size:12px;
+    color:var(--grey);
+    margin-top:16px;
+    font-style:italic;
+  }
   /* --- Feature Archive --- */
   .archive-section{
     position:relative;
@@ -594,7 +661,7 @@
   .status-complete{ color:var(--gold-bright); }
   .status-wip{ color:#8fb3d9; }
   .status-partial{ color:#c9a15a; }
-  .status-cancelled, .status-pivoted{ color:var(--grey); }
+  .status-cancelled, .status-pivoted{ color:#e06666; }
 
   .archive-item-detail{
     display:none;
@@ -637,9 +704,30 @@
 
 <header>
   <div class="eyebrow">Rise Underground</div>
-  <h1><span>Search</span></h1>
-  <p>Cafe Rise · Origin Point · AMAs — searched line by line</p>
+  <h1><span>Infinity Rising Almanac</span></h1>
+  <p>Every milestone the team has shared — features, hiring, partnerships, and everything in between — all in one place.</p>
 </header>
+
+<div class="almanac-stats">
+  <div class="almanac-hero">
+    <div class="almanac-hero-num" id="almanacCompleteNum">0</div>
+    <div class="almanac-hero-label">Completed &amp; Shipped</div>
+  </div>
+  <div class="almanac-mini-row">
+    <div class="almanac-mini">
+      <div class="almanac-mini-num" id="almanacWipNum">0</div>
+      <div class="almanac-mini-label">In Progress</div>
+    </div>
+    <div class="almanac-mini">
+      <div class="almanac-mini-num" id="almanacPartialNum">0</div>
+      <div class="almanac-mini-label">Partially Complete</div>
+    </div>
+    <div class="almanac-mini">
+      <div class="almanac-mini-num" id="almanacPivotedNum">0</div>
+      <div class="almanac-mini-label">Pivoted</div>
+    </div>
+  </div>
+</div>
 
 <div id="status">loading episodes…</div>
 
@@ -1111,9 +1199,15 @@ function archiveStatusClass(status){
   if (s === 'complete') return 'status-complete';
   if (s === 'wip') return 'status-wip';
   if (s.startsWith('partial')) return 'status-partial';
-  if (s === 'pivoted') return 'status-pivoted';
-  if (s.startsWith('cancelled')) return 'status-cancelled';
+  if (s === 'pivoted' || s.startsWith('cancelled')) return 'status-pivoted';
   return 'status-wip';
+}
+
+// Cancelled/Scrapped is merged into Pivoted for display purposes.
+function archiveStatusLabel(status){
+  const s = (status || '').toLowerCase();
+  if (s.startsWith('cancelled')) return 'Pivoted';
+  return status;
 }
 
 // Splits a description into timeline rows wherever an inline citation
@@ -1179,7 +1273,7 @@ function buildArchiveItem(item){
   const head = document.createElement('div');
   head.className = 'archive-item-head';
   head.innerHTML = `<span class="archive-item-name">${item.name}</span>
-    <span class="archive-status ${archiveStatusClass(item.status)}">${item.status}</span>`;
+    <span class="archive-status ${archiveStatusClass(item.status)}">${archiveStatusLabel(item.status)}</span>`;
   head.addEventListener('click', () => el.classList.toggle('open'));
 
   const detail = document.createElement('div');
@@ -1252,6 +1346,49 @@ function buildArchiveCategory(cat){
   el.appendChild(body);
   return el;
 }
+
+
+// --- Almanac summary stats (computed from ready categories only, i.e.
+// everything actually reviewed so far) ---
+function computeAlmanacStats(){
+  const counts = { Complete: 0, WIP: 0, 'Partial Completion': 0, Pivoted: 0, Other: 0 };
+  function tally(items){
+    items.forEach(it => {
+      let s = it.status || '';
+      if (/^cancelled/i.test(s)) s = 'Pivoted';
+      if (counts.hasOwnProperty(s)) counts[s]++;
+      else counts.Other++;
+    });
+  }
+  ARCHIVE_DATA.forEach(cat => {
+    if (!cat.ready) return;
+    if (cat.items) tally(cat.items);
+    if (cat.subs) cat.subs.forEach(sub => tally(sub.items));
+  });
+  return counts;
+}
+
+function animateCount(el, target, duration){
+  if (!el) return;
+  const start = 0;
+  const startTime = performance.now();
+  function step(now){
+    const progress = Math.min((now - startTime) / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    el.textContent = Math.round(start + (target - start) * eased);
+    if (progress < 1) requestAnimationFrame(step);
+    else el.textContent = target;
+  }
+  requestAnimationFrame(step);
+}
+
+(function initAlmanacStats(){
+  const counts = computeAlmanacStats();
+  animateCount(document.getElementById('almanacCompleteNum'), counts['Complete'], 1100);
+  animateCount(document.getElementById('almanacWipNum'), counts['WIP'], 900);
+  animateCount(document.getElementById('almanacPartialNum'), counts['Partial Completion'], 900);
+  animateCount(document.getElementById('almanacPivotedNum'), counts['Pivoted'], 900);
+})();
 
 const archiveRoot = document.getElementById('archiveRoot');
 ARCHIVE_DATA.forEach(cat => archiveRoot.appendChild(buildArchiveCategory(cat)));
