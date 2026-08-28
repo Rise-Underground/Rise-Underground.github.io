@@ -418,6 +418,171 @@
   @media (prefers-reduced-motion: reduce){
     .result-head, nav.topnav a, .ctx-controls button, .yt-link{ transition:none !important; }
   }
+
+  /* --- Feature Archive --- */
+  .archive-section{
+    position:relative;
+    z-index:2;
+    max-width:900px;
+    margin:0 auto 70px;
+    padding:0 24px;
+  }
+  .archive-heading{
+    font-family:var(--mono);
+    font-size:11px;
+    color:var(--grey);
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    margin:8px 0 4px;
+    padding-top:22px;
+    border-top:1px dashed var(--line);
+  }
+  .archive-sub-heading{
+    font-family:var(--serif);
+    font-size:13px;
+    color:var(--grey);
+    margin:0 0 16px;
+  }
+  .archive-cat{
+    border:1px solid var(--line);
+    background:var(--panel);
+    border-radius:3px;
+    margin-bottom:8px;
+    overflow:hidden;
+  }
+  .archive-cat-head{
+    padding:12px 16px;
+    cursor:pointer;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:12px;
+  }
+  .archive-cat-head:hover{ background:rgba(217,164,65,0.05); }
+  .archive-cat-name{
+    font-family:var(--display);
+    font-weight:600;
+    font-size:13px;
+    letter-spacing:0.05em;
+    text-transform:uppercase;
+    color:var(--gold);
+  }
+  .archive-cat.locked .archive-cat-name{ color:var(--grey); }
+  .archive-caret{
+    font-family:var(--mono);
+    font-size:11px;
+    color:var(--grey);
+    transition:transform 0.2s ease;
+    flex-shrink:0;
+  }
+  .archive-cat.open > .archive-cat-head .archive-caret{ transform:rotate(90deg); }
+  .archive-cat-body{
+    display:none;
+    border-top:1px solid var(--line);
+    padding:10px 12px 12px;
+    background:rgba(0,0,0,0.2);
+  }
+  .archive-cat.open > .archive-cat-body{ display:block; }
+  .archive-soon{
+    font-family:var(--mono);
+    font-size:12px;
+    color:var(--grey);
+    padding:6px 4px 4px;
+    letter-spacing:0.05em;
+  }
+
+  .archive-sub{
+    border:1px solid var(--line);
+    border-radius:3px;
+    margin-bottom:8px;
+    overflow:hidden;
+    background:rgba(0,0,0,0.15);
+  }
+  .archive-sub-head{
+    padding:10px 14px;
+    cursor:pointer;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:12px;
+  }
+  .archive-sub-head:hover{ background:rgba(217,164,65,0.05); }
+  .archive-sub-name{
+    font-family:var(--display);
+    font-weight:600;
+    font-size:12px;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+    color:var(--gold-bright);
+  }
+  .archive-sub-body{
+    display:none;
+    border-top:1px solid var(--line);
+    padding:8px 10px 10px;
+  }
+  .archive-sub.open > .archive-sub-body{ display:block; }
+
+  .archive-item{
+    border-bottom:1px solid var(--line);
+  }
+  .archive-item:last-child{ border-bottom:none; }
+  .archive-item-head{
+    padding:9px 8px;
+    cursor:pointer;
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:10px;
+  }
+  .archive-item-head:hover .archive-item-name{ color:var(--gold-bright); }
+  .archive-item-name{
+    font-family:var(--serif);
+    font-size:14px;
+    color:var(--off-white);
+    transition:color 0.2s ease;
+  }
+  .archive-status{
+    font-family:var(--mono);
+    font-size:9px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    padding:2px 7px;
+    border-radius:2px;
+    white-space:nowrap;
+    flex-shrink:0;
+    border:1px solid currentColor;
+  }
+  .status-complete{ color:var(--gold-bright); }
+  .status-wip{ color:#8fb3d9; }
+  .status-partial{ color:#c9a15a; }
+  .status-cancelled, .status-pivoted{ color:var(--grey); }
+
+  .archive-item-detail{
+    display:none;
+    padding:0 8px 12px;
+  }
+  .archive-item.open .archive-item-detail{ display:block; }
+  .archive-item-desc{
+    font-size:13.5px;
+    color:var(--off-white);
+    line-height:1.55;
+    margin-bottom:8px;
+  }
+  .archive-cite-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:5px;
+  }
+  .archive-cite{
+    font-family:var(--mono);
+    font-size:9px;
+    color:var(--red);
+    border:1px solid var(--red-dim);
+    border-radius:2px;
+    padding:1px 6px;
+    letter-spacing:0.05em;
+  }
+
 </style>
 </head>
 <body>
@@ -467,6 +632,13 @@
 <main id="results">
   <div id="empty">start typing to search</div>
 </main>
+
+<section class="archive-section">
+  <div class="archive-heading">Feature Archive</div>
+  <p class="archive-sub-heading">Every feature the team has talked about on-air, organized by category. Click a category to open it up.</p>
+  <div id="archiveRoot"></div>
+</section>
+
 
 <script>
 const CONTEXT_STEP = 6; // lines shown before/after on first expand, and per "show more" click
@@ -888,6 +1060,90 @@ document.getElementById('q').addEventListener('input', (e) => {
 });
 
 loadEpisodes();
+</script>
+
+
+<script>
+const ARCHIVE_DATA = [{"id": "world-exploration", "label": "World & Exploration", "ready": true, "subs": [{"id": "new-world-zones", "label": "New World Zones", "items": [{"name": "Solace (Zones 1, 2 & 3)", "desc": "Cornucopias' starting world region (internally \u2018Life on the Farm\u2019); confirmed early and built out over roughly two years: proprietary world-building tools, water/foliage/nanite tech, weather and day/night systems, and a scavenger hunt system were developed alongside it; all three 8km x 8km domes were hand-built with curated (non-procedural) geography, QA-tested down to ~60-70 bugs, and publicly released at Rare Evo (~a month ahead of schedule); ongoing polish (tree/rock texture variety, deep forest detail, performance optimization, land plot development) continued after release.", "status": "Complete", "cr": ["CR1", "CR9", "CR10", "CR22", "CR23", "CR24", "CR25", "CR35", "CR36", "CR37", "CR39", "CR45", "CR48", "CR50", "CR53", "CR56", "CR57", "CR58", "CR61", "CR63", "CR64", "CR69", "CR70", "CR71", "CR72", "CR75", "CR76", "CR78", "CR81", "CR83", "CR84", "CR86", "CR87", "CR88", "CR91", "CR92", "CR93", "CR94", "CR95", "CR99", "CR100", "CR101", "CR102", "CR111", "CR115", "CR126", "CR142"]}, {"name": "Esperanza (Zones 1, 2 & 3)", "desc": "the desert/canyon-themed region following Solace (internally \u2018Wild West\u2019); development began in tandem with Solace, with art/asset production, a hub city mirroring Solace's, and glimpse-preview areas shown ahead of full release; as of the most recent mention the zones exist but still need polish and hub-to-hub travel work, with full release timing having slipped several times.", "status": "WIP", "cr": ["CR1", "CR9", "CR27", "CR31", "CR56", "CR57", "CR63", "CR75", "CR83", "CR87", "CR90", "CR92", "CR99", "CR101", "CR102", "CR104", "CR114", "CR116", "CR119", "CR121", "CR126", "CR128", "CR130", "CR132", "CR137", "CR140", "CR148"]}, {"name": "Fortune (Zones 1, 2 & 3)", "desc": "the third full world region after Esperanza (internally \u2018Eastern,\u2019 later revealed as Japan/samurai-themed); name finalized early, with the first revealed in-world asset being a Double Dragon Mythic weapon; zone work had started as of the most recent mention but remains early-stage relative to Solace/Esperanza.", "status": "WIP", "cr": ["CR1", "CR9", "CR17", "CR27", "CR75", "CR148"]}, {"name": "Zone 4 (Isola)", "desc": "the fourth planned world zone, originally teased as a volcanic-island theme (Canary Islands/Greece, black sand) but ultimately decided by community vote as \u2018Isola,\u2019 a tropical rainforest zone (Thailand/SE Asia); confirmed to be developed only after Esperanza and Fortune are delivered, with a possible land sale later.", "status": "WIP", "cr": ["CR1", "CR18", "CR23", "CR106", "CR154"]}, {"name": "Calido Valley / Resort / Megadome", "desc": "the game's starter/tutorial zone (replacing the originally planned \u2018Starter Island\u2019); built out as a metaverse hub with a resort, racing pavilion, city district (financial district above, cyberpunk area below), international airport, observation tower with a quantum barrier shield reveal, a nighttime/midnight mode, and the Cornucopias Labs facility; used throughout as a controlled public-testing ground for core systems (multiplayer, compass, holo caches, voice chat) before those systems moved to Solace.", "status": "Complete", "cr": ["CR47", "CR52", "CR57", "CR60", "CR62", "CR63", "CR64", "CR65", "CR74", "CR75", "CR114", "CR115", "CR120", "CR127", "CR130", "CR132"]}, {"name": "World-building tools & production pipeline", "desc": "internal tooling built to speed up zone creation: an asset/environment tool, a grid-based work-assignment system (refined from ~100 small boxes down to ~20 larger ones, then to a 36-box \u2018work box\u2019 system), a land-first build order (full terrain before land plots), and supporting QA/bug-report tooling (auto system-spec capture, GPS-tagged bug reports).", "status": "Complete", "cr": ["CR37", "CR38", "CR56", "CR63", "CR71"]}, {"name": "World scale & theme-zone planning", "desc": "overall plan of 12 theme zones (each with multiple 8km x 8km maps, home bubbles, and custom domes), described at full scale as 36 handcrafted domes (~26x the size of GTA 5); sectors-per-zone was later reduced from ten to five based on performance testing, with four districts per sector; three zones (Solace, Esperanza, Fortune) plus a starter island were formally announced early via the Copi Wiki.", "status": "Complete", "cr": ["CR1", "CR32", "CR36", "CR44", "CR49"]}, {"name": "Hub cities & Central City", "desc": "each major zone gets its own central hub city (mirroring Solace's \u2018Reserve at Solace,\u2019 with apartment areas, stores, and a real-estate building); Esperanza and Fortune hubs are planned similarly, each sized for 50,000-100,000 players; medical center/respawn-point buildings were added to Solace and Kid Toledo; underground tunnel areas beneath the hub city were also revealed as an upcoming traversable feature. A separate, longer-term \u2018Central City\u2019 metaverse/B2B hub was also confirmed as planned but described as far off.", "status": "Complete", "cr": ["CR82", "CR134", "CR136", "CR139", "CR143", "CR144"]}, {"name": "The Alleian (starting ship/hub)", "desc": "a new luxury ship serving as the starting location/onboarding area for early access players (in-lore donated by a billionaire), featuring a spawn area, banners, and a globe display; replaced the previous scattered spawn points, though guide/NPC/task content was still to come as of its introduction.", "status": "Complete", "cr": ["CR129", "CR132"]}, {"name": "Land sale & land districts system", "desc": "moved away from the original whitepaper model (40 villages/36 houses) to a districts system where each zone contains multiple land masses/districts with different utility (mining, fishing, etc.); the first of two planned zone land sales covered fixed-supply playable land across three zones, previewed with a cave-environment teaser clip and early UE5 land-environment renders (e.g. Aspen trees).", "status": "Complete", "cr": ["CR3", "CR4", "CR6", "CR7"]}, {"name": "Cardano World", "desc": "A new custom-dome-based world showcasing the Cardano ecosystem is in development, featuring sections like DeFi, metaverse, profile NFTs, and gaming, with a Cardano headquarters and teleport links to individual projects' custom domes. Cardano World is being built within the game space, intended to feature different Cardano-related projects, such as headquarters custom domes discoverable by exploring the zone.", "status": "Cancelled/Scrapped", "cr": ["CR14", "CR15"]}, {"name": "Prison system", "desc": "A prison area/game has been built (in development for ~6 months) for players who get bounties from griefing; includes activities to do while imprisoned and mechanics for escaping, tied into the bounty/security system already live.", "status": "WIP", "cr": ["CR157"]}, {"name": "Sector Areas / Lost Bubbles", "desc": "Planned unowned 'no man's land' sector areas (called 'lost bubbles') featuring open PVP, destroyed infrastructure, underground cave sections opening to exposed landscape, and rogue AI/robots. Described as a later stage of development.", "status": "WIP", "cr": ["CR66"]}, {"name": "Glimpse of Fear (formerly Glimpse of Soulless)", "desc": "The zone previously called Glimpse of Soulless has been renamed and reworked into Glimpse of Fear, tied to a new Quantum Monster story (Julia's story) coming in this build. Mentioned delivery timing: very soon.", "status": "Complete", "cr": ["CR109"]}, {"name": "New Global Map & Antique Shop", "desc": "New global map area shown featuring free apartments, large skyscrapers/buildings, and a new antique shop (still uncolored/WIP) which serves as the starting point for the Relic Quest.", "status": "Complete", "cr": ["CR150"]}, {"name": "Environment, Lighting & Post-Processing", "desc": "Environment asset shaders and post-processing got major updates with detail passes across assets, noticeably elevating overall visual quality in the Mythical Sunrise build; additional lumen/lighting work for Solace further enhanced contrast and visuals on 4K displays; a full day/night cycle later shipped running a complete 24-hour cycle in 4 real-world hours, consistent across all zones (Solace, Esperanza, etc.) as part of the living-world design.", "status": "Complete", "cr": ["CR67", "CR68", "CR71"]}]}, {"id": "map-navigation", "label": "Map & Navigation", "items": [{"name": "Compass", "desc": "an icon-based HUD guiding players toward nearby points of interest, tasks, fishing spots, mines, races, and mystery locations, confirmed early and explicitly kept distinct from the planned mini-map; later evolved into a fuller guidance system with icons/key helping new players find locations like Calido Raceway and public transport, built on existing tech and planned to grow into a tasking/XP system with mystery map markers.", "status": "Complete", "cr": ["CR1", "CR72", "CR105"]}, {"name": "Mini-Map", "desc": "referenced early as a future addition to the compass HUD, explicitly kept as a separate feature from the compass itself; confirmed as coming but not being actively resourced (estimated ~6 months out), with placement (e.g. top-right overlay) still undecided since priority stayed on core systems.", "status": "WIP", "cr": ["CR1", "CR72", "CR84"]}, {"name": "Directional Pointer", "desc": "a screen-edge-snapping indicator (up to 10 simultaneous targets) originally built for the Delivery Quest, adopted as a core quality-of-life navigation feature; later extended to show distance/text detail (e.g. floor number, drop-off instructions) for finding specific locations like apartment blocks.", "status": "Complete", "cr": ["CR1", "CR151", "CR152"]}, {"name": "Map System", "desc": "the full pop-up/interactive map (land blocks, custom player-placed markers) confirmed early, evolving through an in-house map system with public land-plot data, a toggleable land-plot/resource overlay, high-def overhead views, a GTA-style legend (major locations, stores, ATMs), and waypoint/destination selection feeding into the compass; released as Map System v2 (filter/search, set markers, compass navigation) with further tools for locating and visualizing claimed land plots by rarity/status, and ongoing 3D map rendering work for Solace.", "status": "Complete", "cr": ["CR1", "CR53", "CR100", "CR101", "CR104", "CR111", "CR129", "CR132", "CR134", "CR142", "CR144", "CR147"]}, {"name": "Keyboard remapping", "desc": "planned for future builds (requested by community)", "status": "WIP", "cr": ["CR1"]}, {"name": "Land plot scanner", "desc": "in-game scanning utility that lets players scan the world to locate and identify their land plots on the map", "status": "Complete", "cr": ["CR1"]}, {"name": "New Jump Puzzles", "desc": "More jump puzzles, including a larger one called 'the monstrosity,' are being added in the Calido Magic Hour update. Mentioned delivery timing: Friday (this week).", "status": "WIP", "cr": ["CR65"]}, {"name": "Day/Night Cycle Testing", "desc": "The team has been releasing builds representing different times of day (Golden Hour, Mythic Sunshine) specifically to test performance and lighting issues; performance has improved and a full day/night cycle (ranging from 8 to 24 hours) is being worked toward. Mentioned delivery timing: coming soon.", "status": "Complete", "cr": ["CR68"]}, {"name": "Trail & Points of Interest System", "desc": "Trails will run throughout the different sectors/zones with special interest points along them for players to discover; trail markers are not yet active in the current build but are planned.", "status": "WIP", "cr": ["CR72"]}, {"name": "Resource/Points-of-Interest Info Device & Web Map", "desc": "An in-game device (hologram/graphic) will show resources and points of interest near a land plot, mirrored on an interactive web map for the land rush where players can zoom and favorite locations.", "status": "WIP", "cr": ["CR85"]}, {"name": "Wrist-Mounted Visualizer Device", "desc": "In-game wrist-mounted computer shows a holographic visualization of land plots with serial numbers and nearby resources, used for prospecting during the land rush.", "status": "WIP", "cr": ["CR91"]}, {"name": "Land Detector / Scanner Device", "desc": "A new device that lets players wander the land, activate a beam to locate land blocks, and preview plot sizes (small, medium, large) ahead of the land grab.", "status": "Complete", "cr": ["CR100"]}, {"name": "Land Plot Scanner", "desc": "A feature that shows NFT/land-plot holders where their land plots are located within the new Solace domes, driving community excitement and heavy server load for testing.", "status": "Complete", "cr": ["CR101"]}, {"name": "Land Grab Web Map & High-Res Land Plot Images", "desc": "Team is building a web-based map for the land rush showing wallet-linked land plots, filters, favorites, and eventually high-resolution 4K/8K explorable images of each plot taken in-Unreal Engine; MVP is close to release with a big update expected next week. Mentioned delivery timing: next week (update), MVP imminent.", "status": "WIP", "cr": ["CR114"]}, {"name": "Land Favoriting / Interactive Land Map", "desc": "A web-based back-end map tool letting players log into their account, view the full land map across three sub-maps, favorite plots they are interested in, and take actions from the plot page; expected to add per-property photos in the future. Mentioned delivery timing: Imminent, this week or next.", "status": "WIP", "cr": ["CR115"]}, {"name": "New Onboarding Flow (World Breaker to Museum)", "desc": "The game's starting sequence is being reworked so players exit the World Breaker into a new Loading Bay and then into a Museum area with lore, fixing disorientation issues from the previous build where players spawned with no context. Mentioned delivery timing: next build (553).", "status": "WIP", "cr": ["CR120"]}, {"name": "Terra Tunnel", "desc": "A new Terra tunnel has been built as part of the content coming in the next build.", "status": "Complete", "cr": ["CR128"]}, {"name": "New Parking Area", "desc": "A new parking area has been built out as part of the upcoming build's content.", "status": "Complete", "cr": ["CR128"]}, {"name": "Land Grab / Land Claim Selection Event", "desc": "Land claim system going live where players link wallets holding land NFTs to their account, favorite properties via website tool, then place claims once the event goes live; selection runs by rarity (mythic first) with random selection among ties, moving through smalls to copious plots over roughly 1-2 weeks. Mentioned delivery timing: within 30 days.", "status": "Partial Completion", "cr": ["CR133"]}, {"name": "Land Grab FAQ Document", "desc": "A document answering community/guild questions about the land grab (already 50% complete) is being prepared for release, to be published around Friday with branding. Mentioned delivery timing: around Friday.", "status": "Complete", "cr": ["CR133"]}, {"name": "Grid system for zone planning", "desc": "A proprietary grid tool (e.g. region B52) lets teams assign and coordinate art/graphics work per zone, improving efficiency for planning, solidifying, and testing each new zone.", "status": "Complete", "cr": ["CR38"]}, {"name": "Custom cloud system & sky view", "desc": "A custom, programmatically-moving cloud system has been built giving a panoramic 500km in-game view over Earth from Calido Valley, tied into upcoming lore.", "status": "Complete", "cr": ["CR51"]}, {"name": "Map Creator Algorithm", "desc": "A map creator algorithm has been developed to randomly generate maps and levels for the mobile game, creating efficiencies and fun level-building methods.", "status": "Complete", "cr": ["CR33"]}]}, {"id": "travel-transport", "label": "Travel & Transport", "items": [{"name": "Boats / canoes / kayaks", "desc": "water vehicles for crossing rivers, lakes, and coastal areas", "status": "WIP", "cr": ["CR1"]}, {"name": "Water system", "desc": "currently players can walk on water (explained in-lore as being frozen by a Quantum Storm). Full water interaction is not yet active", "status": "Partial Completion", "cr": ["CR1"]}, {"name": "Surface swimming", "desc": "first phase of water interaction; players will be able to swim on top of water. Confirmed as coming before diving", "status": "WIP", "cr": ["CR1"]}, {"name": "Underwater diving", "desc": "longer-term addition after surface swimming is live; needs a gameplay loop to justify it (e.g. underwater treasure, loot, or creatures). Oxygen/drowning mechanics already prototyped", "status": "WIP", "cr": ["CR1"]}, {"name": "Water creatures", "desc": "hinted at lurking in bodies of water; adds danger and reason to be cautious when swimming in deep or remote areas", "status": "WIP", "cr": ["CR1"]}, {"name": "Drowning / health system tie-in", "desc": "oxygen deprivation and drowning confirmed as part of the character health/needs system", "status": "WIP", "cr": ["CR1"]}, {"name": "World Travel System (Cloud Gate / Sector Travel Ships)", "desc": "large public transport ships used to travel from the home bubble to theme zones without load screens; NPC-piloted; described as limo-style in appearance with a fully built-out interior; can hold approximately 100 players though likely won't carry that many in practice; cloud gates confirmed as the launchers that send players into different areas; highways (shown as green lines on the world map) connect all areas of the world", "status": "Complete", "cr": ["CR1", "CR6", "CR8", "CR12", "CR32", "CR50", "CR54"]}, {"name": "Dome entry / docking sequence", "desc": "detailed sequence for entering a dome: fly in, dock/park your vehicle, then walk through a themed lobby into the dome interior; vehicle access gated by the player account syncing with your NFT wallet, confirming which vehicles you're permitted to fly", "status": "WIP", "cr": ["CR54"]}, {"name": "Calido Valley / Calido Resort", "desc": "the central racing and sector hub area; 8km x 8km dedicated zone; the main entry point for new players", "status": "Complete", "cr": ["CR1"]}, {"name": "Mounts", "desc": "rideable creatures or vehicles with inventory storage capacity; development moved to early next year; quadruped animation significantly more complex than bipeds, requiring unique animation sets per species; still confirmed on roadmap as of CR31 but delayed (CR1, CR17, CR31)", "status": "WIP", "cr": ["CR1", "CR17", "CR31"]}, {"name": "Railway system", "desc": "in-world train network used to transport resources (e.g. corn/biofuel) between zones; featured in the Wild West zone lore and mobile game narrative; trains can be raided as part of gameplay events", "status": "Cancelled/Scrapped", "cr": ["CR2"]}, {"name": "Flexible Solace Start Locations", "desc": "Confirmed today that a future update will let players choose to start directly in Solace 1, 2, or 3 instead of being forced through the buggy Calido-to-Solace travel route.", "status": "Complete", "cr": ["CR101"]}, {"name": "Alternate Start Points & Faster NFT Travel", "desc": "Future plans confirmed to let players start directly in their own land plot or sector apartment, and to travel via owned NFT vehicles faster than public transport, alongside speeding up general public transport.", "status": "WIP", "cr": ["CR101"]}, {"name": "Jetpacks", "desc": "Zero-G manufacturer's jetpacks, planned in multiple models (e.g. JP 1100) with varying fuel/speed/storage traits, built to let players travel/explore faster and escape danger, releasing with the upcoming sale (CR103). Once live, they let players explore Solace more efficiently (tested around Calido, usable in Rumble Ball) and were used in a community play test flying between checkpoints, including a community-found \"bouncing\" technique to extend distance. Launch drastically improved Solace/Calido exploration with a bird's-eye view, making large-open-world traversal far easier; holo caches continue to evolve alongside them. Flight was confirmed working in an internal build (Scruffy testing it, including a fall-damage death from flying too high).", "status": "Complete", "cr": ["CR103", "CR107", "CR111", "CR115", "CR142"]}, {"name": "Cargo Terminal / Inventory Transfer System", "desc": "A new cargo terminal system is being built to let players transfer resources from vehicles (e.g., Bubble Jet) to surface stations and land plots, with an in-game currency fee, cheaper for NFT owners; inventory system upgrade currently in progress.", "status": "WIP", "cr": ["CR103"]}, {"name": "Aero Trails", "desc": "New traversal/racing trail system with 25 loops built around Calido City requiring boost management and route-finding; showcased live in a competitive race segment and included in the upcoming build. Mentioned delivery timing: This week or pushed to Jan 3rd.", "status": "Complete", "cr": ["CR115"]}, {"name": "Water Traversal Mechanics", "desc": "Team confirmed swimming, diving underwater, and boats/canoes (previously shown) are in development for crossing water bodies, alongside jetpack crossing already possible.", "status": "WIP", "cr": ["CR118"]}, {"name": "Calido International Airport", "desc": "Tobias showed the Calido International Airport with large hangar-scale interiors, landing pads for vehicles from bubble jets to Atmos ships, and underground vehicle storage; performance was improved via mesh/batch instancing to reduce draw calls.", "status": "Complete", "cr": ["CR121"]}, {"name": "Quantum Gate Effects", "desc": "Environment artist Toby mentioned currently helping produce visual effects such as the Quantum Gate as part of ongoing environment art work alongside Solace.", "status": "WIP", "cr": ["CR93"]}, {"name": "Bubble Jet / Public Transport Travel", "desc": "Confirmed that players without a bubble jet or javelin will need to use public transport, which will be shown in the upcoming land sale video demonstrating in-game travel between zones.", "status": "WIP", "cr": ["CR5"]}, {"name": "Hoverboard travel item", "desc": "A new leaked image reveals a hoverboard (with matching boots) intended to increase player travel speed, powered by a replaceable nuclear-type core, tied into the game's lore.", "status": "WIP", "cr": ["CR31"]}]}]}, {"id": "gameplay-core-loops", "label": "Gameplay & Core Loops", "ready": false}, {"id": "animals-creatures", "label": "Animals & Creatures", "ready": false}, {"id": "building-property", "label": "Building & Property", "ready": false}, {"id": "social-multiplayer", "label": "Social & Multiplayer", "ready": false}, {"id": "racing-esports", "label": "Racing & Esports", "ready": false}, {"id": "economy-progression", "label": "Economy & Progression", "ready": false}, {"id": "avatars-customisation", "label": "Avatars & Customisation", "ready": false}, {"id": "ai-npcs", "label": "AI & NPCs", "ready": false}, {"id": "platforms-additional-products", "label": "Platforms & Additional Products", "ready": false}, {"id": "seasonal-content-events", "label": "Seasonal Content & Events", "ready": false}, {"id": "nodes-infrastructure", "label": "Nodes & Infrastructure", "ready": false}, {"id": "lore-story", "label": "Lore & Story", "ready": false}, {"id": "partnerships-advisers", "label": "Partnerships & Advisers", "ready": false}, {"id": "rd-future-technology", "label": "R&D & Future Technology", "ready": false}, {"id": "team-hiring", "label": "Team & Hiring", "ready": true, "items": [{"name": "Zach (Project Manager)", "desc": "joined CR37 (January 2023) as project manager, tasked with organizing multiple parallel deliverables; by CR44 was helping flesh out individual projects, define acceptance criteria, and plan MVP delivery across teams.", "status": "Complete", "cr": ["CR37", "CR44"]}, {"name": "Tobias (Environment Artist)", "desc": "joined CR31 (late 2022) from Germany; trained and assigned to Solace environment art, freeing David to focus more on Esperanza.", "status": "Complete", "cr": ["CR31"]}, {"name": "Julian (Project Manager)", "desc": "joined January 2022 as an IT project manager/scrum master; organized the previously scrambling team structure across UK/Europe and North America, running daily agile standups across 5-6 concurrent projects, and set up sprint organization (via Asana) across mobile, PC game, and marketing efforts.", "status": "Complete", "cr": ["CR3", "CR9"]}, {"name": "Greg (Node/Backend Architecture)", "desc": "after early-stage hiring talks (CR76), Greg (a veteran in network client-server and commercial development) joined to redesign node architecture for efficiency, working with Jeff and the AWS team on the node backend; architecture finalization with implementation to follow.", "status": "Complete", "cr": ["CR76", "CR80", "CR81"]}, {"name": "Michael (React Developer)", "desc": "a React developer hire was confirmed (CR30), then started (CR33), found within the Cornucopias community; responsible for website redesign, Copious Academy, portfolio dashboard, and desktop launcher frontend, helping centralize coding across multiple parallel projects.", "status": "Complete", "cr": ["CR30", "CR33"]}, {"name": "Full-time animator", "desc": "hired CR42 (early 2023), the first dedicated animator on the team; completed male and female locomotion sets (walk, jog, run, idle) and moved on to climbing and other interaction animations, enabling the character animation system to progress rapidly.", "status": "Complete", "cr": ["CR42"]}, {"name": "Junior Environment Artists", "desc": "an ongoing hiring thread to accelerate land/zone art production for Solace, Esperanza and Fortune: recruitment began (CR79), the first hire completed final interviews (CR81), three more joined (CR83), several more were added and trained on Unreal Engine workflows (CR85), and a plan to add four junior developers for Solace sectors (then four more for Esperanza) was set (CR39).", "status": "Complete", "cr": ["CR39", "CR79", "CR81", "CR83", "CR85"]}, {"name": "Progression System Backend Hire", "desc": "a new hire joined to implement the backend architecture and progression system per existing crafting/progression planning docs (CR80); a second hire with full-stack and long Cardano development history joined to build the Achievement/progression system backend, starting with server-side holo-cache data saving (CR81).", "status": "Status Unknown", "cr": ["CR80", "CR81"]}, {"name": "Team Growth Timeline", "desc": "headcount grew steadily throughout development: 18 employees in Q1 2022 up to ~27 by Q4 2022 (CR36); over 50 people including externals/mods by CR35; job security guaranteed for three years with hiring funded gradually via NFT sales (CR11); two new members onboarded in Q2 with more planned for Q3/Q4 (CR57); grew to 33 people with a further 10-20% planned for 2024 (CR75); to 42 internal full-time staff / 60+ with contractors (CR83); 11 new hires in a single 90-day sprint bringing the team past 70 (CR86); 7+ new members added with more programmers sought (CR89); to 52 members (CR92); plans to grow to 40-50 by end of 2024 (CR81); continued growth funded by land grab/market sales (CR141); further staffing expansion planned for 2026 (CR147).", "status": "Complete", "cr": ["CR11", "CR35", "CR36", "CR57", "CR75", "CR81", "CR83", "CR86", "CR89", "CR92", "CR141", "CR147"]}, {"name": "Josh Jones (Social Media Manager)", "desc": "a new social media manager joined the team (CR86) and was publicly announced as Josh Jones, previously the 'Late Game Crypto' content creator (CR88).", "status": "Complete", "cr": ["CR86", "CR88"]}, {"name": "Process Building & Agile Methodology", "desc": "project management processes and systems were built out across marketing, art, PC game, mobile game, and desktop launcher teams to position the company to scale (CR8); Zach later spent five months implementing agile methodology across all development teams, setting up sprints, task backlogs, and cross-departmental coordination (CR54).", "status": "Complete", "cr": ["CR8", "CR54"]}, {"name": "Team Events", "desc": "plans confirmed for team-building events through the year, including smaller workshop-style meetups for globally distributed team members (CR11) and a US-based team retreat/workshop week in Colorado (CR12).", "status": "Complete", "cr": ["CR11", "CR12"]}, {"name": "Discord Moderator Program", "desc": "a weekly meeting with moderators was implemented to improve communication after mods felt out of the loop (CR24), followed by a moderator training program to bolster the Discord moderation crew (CR25).", "status": "Complete", "cr": ["CR24", "CR25"]}, {"name": "Founder/Employee Token Vesting", "desc": "founders agreed to double their token vesting period (same start date, halved distribution pace), with nearly full team agreement (CR31); the employee token release schedule was later finalized after resolving tax/compliance hurdles, with many team members electing to extend their vesting.", "status": "Complete", "cr": ["CR31", "CR45"]}, {"name": "QA Team", "desc": "the QA department (led by Anon) tested the web interface across browsers/devices while moving from laptops to proper hardware ahead of full game testing (CR51); two new QA hires joined from the community with plans for more, supporting Solace testing passes (CR83).", "status": "Status Unknown", "cr": ["CR51", "CR83"]}, {"name": "Jim (Technical Director)", "desc": "one of the co-founders; responsible for technical architecture, multiplayer systems, UE5 development, and game physics", "status": "Complete", "cr": ["CR1"]}, {"name": "David (Creative Director)", "desc": "one of the co-founders; responsible for art direction, environment creation, NPC design, lore, and game visuals", "status": "Complete", "cr": ["CR1"]}, {"name": "Jeff (UI/UX Director)", "desc": "responsible for UI/UX design across the game, desktop launcher, and website; involved since early development; also supports quality assurance and testing processes alongside Ant", "status": "Complete", "cr": ["CR1", "CR48"]}, {"name": "Mark (Designer / Video Editor)", "desc": "joined September 2021; responsible for in-game brand designs, land deck imagery, NFT artwork support, UI design contributions, and Copi Cafe video editing", "status": "Complete", "cr": ["CR31"]}, {"name": "Dean / Declan (Mobile Game Developer)", "desc": "lead developer on the Running Gun UE5 mobile game; moved development from Mac to Windows for better UE5 performance; to be introduced to the community with a demo when timing is right; joined the team approximately 18 months prior \u2014 originally built the earlier Unity-based mobile game before it was shelved; moved to the UE5 team around Christmas; now leading the in-game menu build, including controller support (mouse/keyboard/controller)", "status": "Complete", "cr": ["CR38", "CR55"]}, {"name": "Senior DevOps / networking engineer", "desc": "hired around CR22; responsible for cloud multiplayer infrastructure, server architecture, and the replication systems underpinning multiplayer", "status": "Complete", "cr": ["CR22"]}, {"name": "Junior developers (4\u20138 planned)", "desc": "planned hire of 4\u20138 junior UE5 developers in approximately 3 months from CR39 to accelerate Solace sector production; some mobile team members being redeployed to Solace following Running Gun shelving", "status": "Status Unknown", "cr": ["CR39"]}, {"name": "Monte Carlo / economy simulation consultancy", "desc": "Machinations confirmed as Monte Carlo simulation partner (CR47) \u2014 contract signed; will model game economy, run contingency plans, test for inflation/deflation events, and pursue \"Verified by Machinations\" seal; full engagement later in 2023; preliminary modelling for racing game first; employee token release schedule finalised by Ben (Director of Finance) after compliance process (CR45)", "status": "Status Unknown", "cr": ["CR42", "CR45", "CR47"]}, {"name": "Ant (Chief Quality Officer / Co-founder)", "desc": "one of the four co-founders of Cornucopious; leads quality assurance across all game releases; oversees the racing game testing tier rollout process; described as shy but mentioned as a future Copi Cafe guest", "status": "Complete", "cr": ["CR46"]}, {"name": "Machinations (economy simulation partner)", "desc": "specialist company hired to run Monte Carlo simulations on the in-game economy; translates game design documents into diagrams; simulates all possible outcomes and tests for inflation and deflation events; verifies if the game economy passes criteria for the \"Verified by Machinations\" seal (balanced, sustainable, and unexploitable economy); contract signed CR47; full engagement planned later in 2023; preliminary modelling for the racing game first", "status": "Status Unknown", "cr": ["CR47"]}, {"name": "Hiring More Experienced Developers", "desc": "The team has been heavily interviewing additional experienced developers (not junior-level) to bring on soon, as part of a strategy to build quickly and remain lean ahead of the next bull cycle.", "status": "Status Unknown", "cr": ["CR64"]}, {"name": "New Database/API Hire (33rd Employee)", "desc": "Cornucopias announced bringing on their 33rd permanent employee, a hire focused on database and API setup for game data transmission (XP, progression, etc.).", "status": "Complete", "cr": ["CR66"]}, {"name": "New Staff Additions", "desc": "The team hired a new junior artist working on Solace/Solace 2 assets, and brought on 'Scruffy' full-time to handle testing and social media/live streaming.", "status": "Complete", "cr": ["CR70"]}, {"name": "Marketing Director Role Change", "desc": "Matt moved laterally from Community/NFT Director to Marketing Director just before this episode to support a ramp-up in marketing efforts.", "status": "Complete", "cr": ["CR79"]}, {"name": "Team Page and Careers Page", "desc": "Team is building out a team page and careers page as part of hiring efforts to accelerate delivery this year.", "status": "Status Unknown", "cr": ["CR79"]}, {"name": "Props Artist Hiring", "desc": "The team is actively going through a number of new hires, including props artists, to speed up sector development and allow more parallel work.", "status": "Status Unknown", "cr": ["CR82"]}, {"name": "Senior Game Systems Programmer", "desc": "New senior game systems programmer hired to work on systems such as AI/NPC movement and gameplay mechanics like mining and fishing.", "status": "Complete", "cr": ["CR83"]}, {"name": "UK HR Hire", "desc": "New HR person hired to manage the UK side of the growing team, complementing existing US/Europe HR coverage as the company scales.", "status": "Complete", "cr": ["CR83"]}, {"name": "Marketing Director Hire (Matt Nations)", "desc": "Matt Nations brought on as Marketing Director roughly three weeks prior, tasked with building marketing processes, delegating tasks, and driving the goal of making Cornucopias a household name in web3.", "status": "Complete", "cr": ["CR83"]}, {"name": "Advisory Board Expansion", "desc": "Cornucopias officially onboarded three new advisers: Philip Black (game economist, ex-Zynga/Amazon Games/EA, already helped with the published copi utility and game economy planning), Jen Donaho (marketing expert from League of Legends), and Eric Peterson (Star Citizen co-founder/Wing Commander designer). First advisory call held last week with monthly meetings planned going forward.", "status": "Status Unknown", "cr": ["CR100"]}, {"name": "Unreal Engine Developer Recruitment", "desc": "Team is actively recruiting additional Unreal Engine game programmers to speed up development of game loops, aiming to onboard one before year end and then roughly one to two per month afterward, targeting a team size around 100. Mentioned delivery timing: one hire before end of year, then 1-2/month.", "status": "Status Unknown", "cr": ["CR114"]}, {"name": "New Art Team Members", "desc": "Several new art team members were hired this year including Jillian, Katherine, Devin, and intern Antoine, helping build out Solace's environment and props.", "status": "Complete", "cr": ["CR115"]}, {"name": "New Programmer Hires", "desc": "A new programmer is being brought on board within about two weeks, with plans to add 3-6 more programmers over the first six months of 2025 to scale up gameplay development. Mentioned delivery timing: Within two weeks / first 6 months of 2025.", "status": "WIP", "cr": ["CR116"]}, {"name": "New Developer/Programmer Hire", "desc": "Team announced a new developer/programmer joining to help increase gameplay output.", "status": "Complete", "cr": ["CR118"]}, {"name": "Video Production Team", "desc": "Team is building up a video production team to produce more marketing videos as part of scaling marketing efforts.", "status": "Status Unknown", "cr": ["CR118"]}, {"name": "Crafting Programmer Hire", "desc": "A new programmer focused specifically on crafting is joining the team in a couple of weeks to help build out the crafting system. Mentioned delivery timing: starts in a couple of weeks.", "status": "Status Unknown", "cr": ["CR119"]}, {"name": "Monthly Cross-Department Show & Tell", "desc": "Following a successful team meeting where each department (art, environment, programming, creatures) presented their in-progress work, the team confirmed plans to make this cross-department show-and-tell a recurring monthly event. Mentioned delivery timing: once a month.", "status": "Status Unknown", "cr": ["CR121"]}, {"name": "Alpha Launch Fundraising Round", "desc": "The team is actively building relationships with VC groups and an investment banker in preparation for a fundraising round timed around the alpha launch to support team growth. Mentioned delivery timing: around alpha launch time.", "status": "Cancelled/Scrapped", "cr": ["CR139"]}, {"name": "Marketing team changes (Scruffy & Zeke)", "desc": "Matt is departing marketing to pursue other interests; Scruffy is stepping up and Zeke has joined as a new marketing team member focused on gathering community content.", "status": "Complete", "cr": ["CR157"]}, {"name": "Internal Communications Platform Switch", "desc": "The team switched off Telegram onto a new internal communications platform this week to create more efficient communication, part of broader organizational restructuring as the team scales.", "status": "Complete", "cr": ["CR2"]}, {"name": "Callum's Transition to Video Content Role", "desc": "Callum, previously handling social media scheduling, is moving into producing YouTube videos, team interviews, walkthroughs, and event footage, starting with filming the Manchester trip.", "status": "Cancelled/Scrapped", "cr": ["CR12"]}, {"name": "Financial Analyst Hire", "desc": "A newly hired Certified Financial Analyst with extensive M&A, budgeting, and finance background has joined the team to help manage complex crypto financials and improve tokenomics understanding.", "status": "Complete", "cr": ["CR14"]}, {"name": "Gaming Artist Hire", "desc": "An artist from the UK has joined the team to help speed up production of artwork for the game's sectors, with the first sector still months away from announcement.", "status": "Complete", "cr": ["CR14"]}, {"name": "New Team Hires", "desc": "A new artist has joined the team and is quickly picking up cutting-edge processes; Steve ('Pops' from Discord) has joined full-time after multiple departments sought him out. Additional interviews are ongoing for an artist/UE5 developer and a junior apprentice role. Two new hires confirmed: a senior devops/networking engineer (promoted from an existing contractor role) to build cloud multiplayer infrastructure, and a skilled 3D animator/artist to support and expand the art team.", "status": "Complete", "cr": ["CR15", "CR22"]}, {"name": "New Hires: Multiplayer Network Engineer & Senior Technical Artist", "desc": "Team is actively hiring a multiplayer network engineer to improve multiplayer systems ahead of the 2023 Alpha, and a senior technical artist to support David's art team. Mentioned delivery timing: Ahead of 2023 Alpha.", "status": "Status Unknown", "cr": ["CR21"]}, {"name": "Junior Analyst for Crafting Economy", "desc": "A junior analyst has been hired to help build out the in-game crafting/processing economy (raw materials to finished products), starting the following Monday. Mentioned delivery timing: starts Monday.", "status": "Complete", "cr": ["CR23"]}, {"name": "Employee Wellness & Benefits Program", "desc": "Company has launched an ADP-based benefits program in the US and is moving to implement a similar program in the UK, alongside consideration of a wellness program for staff.", "status": "Status Unknown", "cr": ["CR29"]}, {"name": "Programmer & Animator Hiring", "desc": "Team is actively interviewing more programmers and plans to add an animator and additional team members before the next major development cycle, roughly a year to a year and a half away.", "status": "Status Unknown", "cr": ["CR37"]}, {"name": "Finance Team Expansion", "desc": "Alex, a recent finance/accounting graduate, has joined under Director of Finance Ben to help track accounting, crypto wallets, and fund management.", "status": "Complete", "cr": ["CR55"]}]}];
+
+function archiveStatusClass(status){
+  const s = (status || '').toLowerCase();
+  if (s === 'complete') return 'status-complete';
+  if (s === 'wip') return 'status-wip';
+  if (s.startsWith('partial')) return 'status-partial';
+  if (s === 'pivoted') return 'status-pivoted';
+  if (s.startsWith('cancelled')) return 'status-cancelled';
+  return 'status-wip';
+}
+
+function buildArchiveItem(item){
+  const el = document.createElement('div');
+  el.className = 'archive-item';
+
+  const head = document.createElement('div');
+  head.className = 'archive-item-head';
+  head.innerHTML = `<span class="archive-item-name">${item.name}</span>
+    <span class="archive-status ${archiveStatusClass(item.status)}">${item.status}</span>`;
+  head.addEventListener('click', () => el.classList.toggle('open'));
+
+  const detail = document.createElement('div');
+  detail.className = 'archive-item-detail';
+  const cites = (item.cr || []).map(c => `<span class="archive-cite">${c}</span>`).join('');
+  detail.innerHTML = `<div class="archive-item-desc">${item.desc}</div>
+    <div class="archive-cite-row">${cites}</div>`;
+
+  el.appendChild(head);
+  el.appendChild(detail);
+  return el;
+}
+
+function buildArchiveSub(sub){
+  const el = document.createElement('div');
+  el.className = 'archive-sub';
+
+  const head = document.createElement('div');
+  head.className = 'archive-sub-head';
+  head.innerHTML = `<span class="archive-sub-name">${sub.label}</span>
+    <span class="archive-caret">▸ ${sub.items.length}</span>`;
+  head.addEventListener('click', () => el.classList.toggle('open'));
+
+  const body = document.createElement('div');
+  body.className = 'archive-sub-body';
+  sub.items.forEach(item => body.appendChild(buildArchiveItem(item)));
+
+  el.appendChild(head);
+  el.appendChild(body);
+  return el;
+}
+
+function buildArchiveCategory(cat){
+  const el = document.createElement('div');
+  el.className = 'archive-cat' + (cat.ready ? '' : ' locked');
+
+  const head = document.createElement('div');
+  head.className = 'archive-cat-head';
+  head.innerHTML = `<span class="archive-cat-name">${cat.label}</span>
+    <span class="archive-caret">▸</span>`;
+  head.addEventListener('click', () => el.classList.toggle('open'));
+
+  const body = document.createElement('div');
+  body.className = 'archive-cat-body';
+
+  if (!cat.ready){
+    body.innerHTML = `<div class="archive-soon">coming soon</div>`;
+  } else if (cat.subs){
+    cat.subs.forEach(sub => body.appendChild(buildArchiveSub(sub)));
+  } else if (cat.items){
+    cat.items.forEach(item => body.appendChild(buildArchiveItem(item)));
+  }
+
+  el.appendChild(head);
+  el.appendChild(body);
+  return el;
+}
+
+const archiveRoot = document.getElementById('archiveRoot');
+ARCHIVE_DATA.forEach(cat => archiveRoot.appendChild(buildArchiveCategory(cat)));
 </script>
 
 </body>
