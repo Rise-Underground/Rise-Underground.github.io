@@ -454,21 +454,34 @@
     padding:0 24px;
   }
   .archive-heading{
-    font-family:var(--mono);
-    font-size:11px;
-    color:var(--grey);
-    letter-spacing:0.2em;
+    font-family:var(--display);
+    font-weight:700;
+    font-size:clamp(28px, 4vw, 40px);
+    color:var(--gold);
+    letter-spacing:0.06em;
     text-transform:uppercase;
-    margin:8px 0 4px;
-    padding-top:22px;
+    margin:8px 0 10px;
+    padding-top:30px;
     border-top:1px dashed var(--line);
   }
   .archive-sub-heading{
     font-family:var(--serif);
-    font-size:13px;
+    font-size:15px;
     color:var(--grey);
-    margin:0 0 16px;
+    margin:0 0 6px;
   }
+  .archive-feedback{
+    font-family:var(--mono);
+    font-size:11px;
+    color:var(--grey);
+    margin:0 0 20px;
+  }
+  .archive-feedback a{
+    color:var(--gold);
+    text-decoration:none;
+    border-bottom:1px solid var(--red-dim);
+  }
+  .archive-feedback a:hover{ color:var(--gold-bright); }
   .archive-cat{
     border:1px solid var(--line);
     background:var(--panel);
@@ -656,12 +669,13 @@
 </div>
 
 <main id="results">
-  <div id="empty">start typing to search</div>
+  <div id="empty"></div>
 </main>
 
 <section class="archive-section">
   <div class="archive-heading">Feature Archive</div>
   <p class="archive-sub-heading">Every feature the team has talked about on-air, organized by category. Click a category to open it up.</p>
+  <p class="archive-feedback">If you see any inaccuracies, let us know by posting on X <a href="https://x.com/RiseUGX" target="_blank" rel="noopener">@RiseUGX</a>.</p>
   <div id="archiveRoot"></div>
 </section>
 
@@ -1007,7 +1021,7 @@ function runSearch(q){
 
   const trimmed = q.trim();
   if (!trimmed){
-    resultsEl.innerHTML = '<div id="empty">start typing to search</div>';
+    resultsEl.innerHTML = '<div id="empty"></div>';
     countEl.textContent = '';
     return;
   }
