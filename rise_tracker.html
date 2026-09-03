@@ -506,23 +506,19 @@
   <div class="card chart-card">
     <div class="chart-head">
       <div>
-        <div class="chart-title">Cumulative LP Tokens Staked</div>
-        <div class="chart-desc">Running total of LP tokens held in each staking contract &mdash; not RISE-equivalent, not comparable to the chart above</div>
+        <div class="chart-title">Cumulative LP Tokens Staked &amp; Minswap Liquidity</div>
+        <div class="chart-desc">LP token totals (left axis) for the two Base staking contracts, plus net RISE added via Minswap liquidity add/remove events (right axis, RISE) &mdash; different units, not directly comparable</div>
       </div>
       <div class="legend">
         <span><i class="dot" style="background:#B98AFF"></i>Aerodrome (vAMM-WETH/RISE)</span>
         <span><i class="dot" style="background:#5FE0D0"></i>Uniswap V2 (UNI-V2)</span>
+        <span><i class="dot" style="background:#FF7A29"></i>Minswap (RISE/ADA)</span>
       </div>
     </div>
     <div class="chart-canvas-wrap">
       <canvas id="lpChart"></canvas>
     </div>
   </div>
-
-  <footer>
-    <div>Source: rise_ledger.db &middot; evm_transfers (chain=base, token=rise / lp_rise_weth_aero / lp_rise_weth_univ2)</div>
-    <div>Mockup &mdash; not yet wired to auto-refresh from live data</div>
-  </footer>
 
 </div>
 
@@ -871,10 +867,42 @@ async function loadDashboard() {
     }
   });
 
-  // ---------- Chart 3: LP staking (two pools, own axis -- never combined with RISE) ----------
+  // ---------- Chart 3: LP staking (Base, two pools) + Minswap liquidity (Cardano, own axis) ----------
   const lpPools = data.lp_staking;
   const aeroDays = lpPools.lp_rise_weth_aero.days;
   const univ2ByDate = new Map(lpPools.lp_rise_weth_univ2.days.map(d => [d.date, d.cumulative_balance]));
+
+  // Minswap has no separate LP-token balance the way Aerodrome/Uniswap V2 do --
+  // this table only records the RISE/ADA amounts per add/remove event, so the
+  // series here is "cumulative net RISE added via Minswap liquidity events,"
+  // not a token count. Non-fatal: if pool_summary.json isn't available, the
+  // other two lines still render fine, this one just stays empty.
+  let minswapByDate = new Map();
+  try {
+    const poolRes = await fetch('pool_summary.json');
+    if (poolRes.ok) {
+      const poolData = await poolRes.json();
+      const rows = (poolData.daily_summary || [])
+        .filter(r => r.chain === 'Cardano' && r.pool_name === 'Minswap RISE/ADA')
+        .sort((a, b) => a.date.localeCompare(b.date));
+      let running = 0;
+      for (const r of rows) {
+        running += (r.lp_add_volume || 0) - (r.lp_remove_volume || 0);
+        minswapByDate.set(r.date, running);
+      }
+    }
+  } catch (err) {
+    console.error('Minswap liquidity load failed (non-fatal):', err);
+  }
+
+  // Forward-fill Minswap onto the Aerodrome date axis so the line is continuous
+  // rather than only showing points on days it happened to have an event.
+  const minswapSeries = [];
+  let lastMinswap = null;
+  for (const d of aeroDays) {
+    if (minswapByDate.has(d.date)) lastMinswap = minswapByDate.get(d.date);
+    minswapSeries.push(lastMinswap);
+  }
 
   new Chart(document.getElementById('lpChart'), {
     type: 'line',
@@ -891,6 +919,7 @@ async function loadDashboard() {
           pointHoverBackgroundColor: '#B98AFF',
           tension: 0.25,
           spanGaps: true,
+          yAxisID: 'y',
         },
         {
           label: 'Uniswap V2',
@@ -902,6 +931,20 @@ async function loadDashboard() {
           pointHoverBackgroundColor: '#5FE0D0',
           tension: 0.25,
           spanGaps: false,
+          yAxisID: 'y',
+        },
+        {
+          label: 'Minswap',
+          data: minswapSeries,
+          borderColor: '#FF7A29',
+          borderWidth: 2.2,
+          borderDash: [4, 3],
+          pointRadius: 0,
+          pointHoverRadius: 4,
+          pointHoverBackgroundColor: '#FF7A29',
+          tension: 0.25,
+          spanGaps: true,
+          yAxisID: 'y1',
         }
       ]
     },
@@ -918,7 +961,9 @@ async function loadDashboard() {
           callbacks: {
             label: (ctx) => {
               if (ctx.parsed.y === null) return null;
-              const unit = ctx.dataset.label === 'Aerodrome' ? 'vAMM-WETH/RISE' : 'UNI-V2';
+              const unit = ctx.dataset.label === 'Aerodrome' ? 'vAMM-WETH/RISE'
+                : ctx.dataset.label === 'Uniswap V2' ? 'UNI-V2'
+                : 'RISE (net added via Minswap LP events)';
               return ctx.dataset.label + ': ' + formatNum(ctx.parsed.y) + ' ' + unit;
             }
           }
@@ -926,7 +971,8 @@ async function loadDashboard() {
       },
       scales: {
         x: { grid: { display: false }, ticks: { maxTicksLimit: 8, font: { size: 10 } } },
-        y: { grid: { color: 'rgba(255,255,255,0.04)' }, ticks: { font: { size: 10 }, callback: (v) => formatCompact(v) } }
+        y: { position: 'left', grid: { color: 'rgba(255,255,255,0.04)' }, ticks: { font: { size: 10 }, callback: (v) => formatCompact(v) } },
+        y1: { position: 'right', grid: { display: false }, ticks: { font: { size: 10 }, callback: (v) => formatCompact(v) } }
       }
     }
   });
