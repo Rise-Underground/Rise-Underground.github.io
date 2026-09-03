@@ -1,0 +1,185 @@
+{
+  "verified": [
+    {
+      "header": "In-Game Currency (IGC) and Game Economy",
+      "item_name": "RISE Tokenomics Staking",
+      "page": 10,
+      "note": "Duration-based multiplier staking via Aerodrome/Minswap confirmed: 'Number of RISE tokens staked, weighted by duration (Multiplier)' with multiplier capped at 100 weeks."
+    },
+    {
+      "header": "In-Game Currency (IGC) and Game Economy",
+      "item_name": "Cornucopias Credits (CC)",
+      "page": 5,
+      "note": "Confirmed as standard in-game currency: 'Earned through play (quests, trade, loot, activities) and spent on everyday costs—repairs, crafting fees, travel, and vendor purchases.'"
+    },
+    {
+      "header": "In-Game Currency (IGC) and Game Economy",
+      "item_name": "Infinity Reward Points",
+      "page": 12,
+      "note": "Off-chain reward currency earned through gameplay (digital real estate, farming, racing, gathering, quests, crafting, exploration, building, mining, combat, fishing) and redeemable for marketplace discounts. Determines player share of daily RISE reward pool."
+    },
+    {
+      "header": "In-Game Currency (IGC) and Game Economy",
+      "item_name": "RISE Token",
+      "page": 5,
+      "note": "Confirmed as premium on-chain currency: 'Premium on-chain currency purchased with real money. Used for premium purchases such as Cornucopias Credit Packs, cosmetics, seasonal content, and infrastructure services.'"
+    },
+    {
+      "header": "In-Game Currency (IGC) and Game Economy",
+      "item_name": "Infinity Reward Eligibility Threshold",
+      "page": 14,
+      "note": "Minimum 3,000 RISE balance required for daily RISE reward-pool distributions (Phase 1). Explicitly framed as anti-exploit safeguard with RISE remaining fully owned/accessible. Node operator balances count toward threshold."
+    },
+    {
+      "header": "In-Game Currency (IGC) and Game Economy",
+      "item_name": "Reward Multipliers",
+      "page": 13,
+      "note": "Multiple stacking methods confirmed: 'Liquid staking of RISE in your player account or purchasing a season pass' plus 'Using eligible Player-Owned-Assets: Multipliers based on rarity' and 'Multipliers based on collection.'"
+    },
+    {
+      "header": "In-Game Currency (IGC) and Game Economy",
+      "item_name": "Asset Synthesizer",
+      "page": 23,
+      "note": "Converts eligible in-game items (rare/special/unique) into tradeable player assets via dashboard using Infinity plus small RISE fee. GTI Jester confirmed as first earnable X-Class racer example."
+    },
+    {
+      "header": "In-Game Currency (IGC) and Game Economy",
+      "item_name": "RISE Rewards on Every Marketplace Purchase",
+      "page": 22,
+      "note": "Confirmed: 'Every purchase on the primary marketplace will reward users with RISE to their rewards dashboard. Users that pay with RISE will receive more rewards; Users who pay with other currencies will still earn RISE rewards, but at a reduced rate.'"
+    },
+    {
+      "header": "In-Game Currency (IGC) and Game Economy",
+      "item_name": "Revenue Sources",
+      "page": 19,
+      "note": "Marketplace revenue sources confirmed: premium asset sales (fiat/crypto/RISE with many RISE-only), Cornucopias Credit packs, node license sales, and season passes (four per year)."
+    },
+    {
+      "header": "In-Game Currency (IGC) and Game Economy",
+      "item_name": "Peer-to-Peer Marketplace Fee",
+      "page": 19,
+      "note": "Confirmed 5% flat fee on player-to-player transactions: 'Applied to every player-to-player transaction, with proceeds allocated to RISE burns and reward-pool replenishment. The split between burns and reward pool replenishment will eventually be controlled through governance.'"
+    },
+    {
+      "header": "In-Game Currency (IGC) and Game Economy",
+      "item_name": "Buyback Destination Framework",
+      "page": 20,
+      "note": "Repurchased RISE allocated across: 'Reward Pool Replenishment, Liquidity Provision, and Treasury Resources.' Community governance input planned as it matures."
+    },
+    {
+      "header": "In-Game Currency (IGC) and Game Economy",
+      "item_name": "Buyback Activation Timeline",
+      "page": 20,
+      "note": "Structured buyback framework activates 'Upon initiation of the Alpha release on Steam and Epic.' Proportion flexes based on fiat/crypto/RISE payment mix."
+    },
+    {
+      "header": "In-Game Currency (IGC) and Game Economy",
+      "item_name": "Migration Platforms & Mechanics",
+      "page": 26,
+      "note": "COPI-to-RISE migration via ChainPort and VyFi at fixed 1:1 rate. Official sites remain open through December 31, 2026."
+    },
+    {
+      "header": "In-Game Currency (IGC) and Game Economy",
+      "item_name": "Migration Event Timeline",
+      "page": 26,
+      "note": "November 13, 15:00 UTC: COPI trading paused, DEX liquidity withdrawn. November 13, 16:00 UTC: RISE trading live on CEXs, liquidity re-established on DEXs (RISE/X pairs), stake pools opened with boosted APRs."
+    },
+    {
+      "header": "In-Game Currency (IGC) and Game Economy",
+      "item_name": "Legacy COPI Pool Risk Warning",
+      "page": 27,
+      "note": "LPs warned to withdraw COPI liquidity before cutoff due to risk of bot arbitrage exploitation. 'Legacy COPI pairs will be deprecated and will no longer reflect valid market value.'"
+    },
+    {
+      "header": "In-Game Currency (IGC) and Game Economy",
+      "item_name": "RISE Total Supply Cap",
+      "page": 27,
+      "note": "Capped at 3,000,000,000 RISE, 840 million fewer than original COPI supply."
+    },
+    {
+      "header": "In-Game Currency (IGC) and Game Economy",
+      "item_name": "Community Rewards Restructuring",
+      "page": 27,
+      "note": "Original 1.75B COPI Community Rewards pool reduced and split: Community Rewards (724.1M) and Node Rewards (241.4M)."
+    },
+    {
+      "header": "In-Game Currency (IGC) and Game Economy",
+      "item_name": "Emissions Index Change",
+      "page": 27,
+      "note": "Daily emissions changed from 2.5bps to 5bps of restructured RISE pool. 'This transition from a play-to-earn framework to an engagement-driven model' corrected front-loaded original model."
+    },
+    {
+      "header": "In-Game Currency (IGC) and Game Economy",
+      "item_name": "Team/Advisor Allocation Reduction",
+      "page": 28,
+      "note": "Reduced from 921.6M to 821.6M tokens, keeping team percentage within industry norms. Advisor portion fully vested/distributed by February 2024."
+    },
+    {
+      "header": "In-Game Currency (IGC) and Game Economy",
+      "item_name": "Liquidity Allocation Increase",
+      "page": 28,
+      "note": "Increased by 49.6M to 164.6M, reserved exclusively for top-tier exchange listings (Bybit, OKX, Binance, Coinbase, Bitget, Upbit)."
+    },
+    {
+      "header": "Play to Earn / Play and Earn",
+      "item_name": "Skilled Gameplay Rewards",
+      "page": 10,
+      "note": "Contribution formula confirmed: 'Allocation of the Reward per User = The Contribution per User over the defined time period / The Sum of the Contributions for All of the Users in the System for the defined time period.' Applies to LP staking, RISE staking, nodes, and gameplay."
+    },
+    {
+      "header": "Play to Earn / Play and Earn",
+      "item_name": "Infinity-Earning Activities (Full List)",
+      "page": 12,
+      "note": "Confirmed activities: digital real estate, farming, racing events, gathering, quests, crafting, exploration, building, mining, combat, fishing, 'and other gameplay' (explicitly not limited)."
+    },
+    {
+      "header": "Play to Earn / Play and Earn",
+      "item_name": "POA Multipliers on Infinity Earnings",
+      "page": 14,
+      "note": "Eligible POAs unlock 'Multipliers based on rarity' and 'Multipliers based on collection' that boost Infinity earned. Additionally enable claiming free core resources (e.g., lumber) tied to reward system."
+    },
+    {
+      "header": "Play to Earn / Play and Earn",
+      "item_name": "Reward Eligibility Framework",
+      "page": 14,
+      "note": "Phase 1 (testing through Alpha to Season X): all players earn Infinity for marketplace discounts/Asset Synthesizer use immediately. Phase 2 (Alpha to Beta and beyond): seasonal model with season pass introducing exclusive content and reward-eligibility perks."
+    },
+    {
+      "header": "Marketplace",
+      "item_name": "Exclusive RISE-Only Items (Marketplace Roadmap Phase 2, ~Q1 2026)",
+      "page": 22,
+      "note": "Confirmed: 'Certain premium game assets will be exclusively purchasable with RISE.' Gradual transition toward majority RISE-only as player base matures; accessibility prioritized through beta."
+    },
+    {
+      "header": "Marketplace",
+      "item_name": "Smart Contract P2P Marketplace (Marketplace Roadmap Phase 3, ~Q2 2026)",
+      "page": 22,
+      "note": "All items listed exclusively in RISE with no credit card/alternate currencies. Seamless cross-chain trading (Base and Cardano) via Infinity Wallet. Flat 5% platform fee applies."
+    },
+    {
+      "header": "Wallets",
+      "item_name": "Credit Card Payment Rails",
+      "page": 21,
+      "note": "Confirmed payment methods: 'Stripe (direct credit card support), Apple Pay, Google Pay' all accepted in Infinity Wallet purchase flow."
+    },
+    {
+      "header": "Governance",
+      "item_name": "Voting Eligibility (Current)",
+      "page": 17,
+      "note": "Governance credits accrue on cross-chain RISE balances (initially off-chain, transitioning to on-chain). Eligible sources: staked RISE, staked LP tokens (weighted by RISE share), RISE in player account. Unclaimed rewards and vesting tokens explicitly ineligible."
+    },
+    {
+      "header": "Governance",
+      "item_name": "Voting Process (Current)",
+      "page": 17,
+      "note": "Proposals created/managed by project representatives with community coordination. Yes/No or Multiple Choice format. Includes snapshot date, discussion thread link, and defined end date with transparent results tally."
+    },
+    {
+      "header": "Governance",
+      "item_name": "Advisory → Binding Governance Maturity Path",
+      "page": 18,
+      "note": "Votes are 'initially advisory (non-binding)' with project team holding final implementation authority. Intent stated to 'expand the influence of community voting and gradually integrate binding mechanisms where appropriate.'"
+    }
+  ],
+  "unverified": []
+}
