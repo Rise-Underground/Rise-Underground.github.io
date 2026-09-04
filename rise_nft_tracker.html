@@ -65,13 +65,15 @@
     position:sticky;top:0;background:rgba(10,9,8,0.92);backdrop-filter:blur(8px);
     z-index:20;
   }
-  .brand{display:flex;align-items:baseline;gap:12px;}
+  .brand{display:flex;align-items:center;gap:12px;}
+  .brand-logo{height:32px;width:auto;display:block;filter:drop-shadow(0 0 10px rgba(217,164,65,0.4));}
   .brand .mark{
     font-family:var(--font-display);font-weight:700;font-size:26px;letter-spacing:0.06em;
     text-transform:uppercase;color:var(--text);
   }
   .brand .mark span{color:var(--gold);}
   .brand .sub{font-family:var(--font-mono);font-size:11px;color:var(--dim);letter-spacing:1.5px;text-transform:uppercase;}
+  .tagline{font-family:var(--font-mono);font-size:11px;color:var(--dim);letter-spacing:1.5px;text-transform:uppercase;}
 
   /* ---------- nav ---------- */
   nav.site-nav{display:flex;align-items:center;gap:8px;}
@@ -89,6 +91,11 @@
     nav.site-nav{justify-content:center;flex-wrap:wrap;}
   }
 
+  .nft-page-title-wrap{ position:relative; overflow:hidden; }
+  .hero-watermark{
+    position:absolute;top:-14px;left:50%;transform:translateX(-50%);
+    width:200px;height:auto;opacity:0.07;pointer-events:none;user-select:none;z-index:0;
+  }
   .nft-page-title{
     font-family:var(--font-display);font-weight:700;font-size:26px;letter-spacing:0.05em;
     text-transform:uppercase;color:var(--text);text-align:center;margin:4px 0 28px;
@@ -273,17 +280,25 @@
 
 <header>
   <div class="brand">
+    <img src="RISE_UG_LOGO_Transparent.png" alt="Rise Underground" class="brand-logo"
+         onerror="this.style.display='none';">
     <span class="mark">RISE POA Tracker</span>
   </div>
+  <div class="tagline">Operating in the shadows</div>
   <nav class="site-nav">
     <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link current" href="rise_nft_tracker.html">POA Tracker</a>
+    <a class="nav-link" href="cafe_rise_search.html">IR Almanac</a>
     <a class="nav-link" href="leaderboard.html">Leaderboards</a>
-    <a class="nav-link" href="cafe_rise_search.html">The IR Almanac</a>
+    <a class="nav-link" href="rise_tracker.html">Rise Tracker</a>
   </nav>
 </header>
 
 <div class="nft-page" id="nftPage">
-  <div class="nft-page-title">Mint Favorability Meter</div>
+  <div class="nft-page-title-wrap">
+    <img src="RISE_UG_LOGO_Transparent.png" alt="" class="hero-watermark" onerror="this.style.display='none';">
+    <div class="nft-page-title">Mint Favorability Meter</div>
+  </div>
   <div class="nft-search-wrap">
     <input type="text" class="nft-search-input" id="nftSearchInput" placeholder="Find an NFT by name&hellip;" autocomplete="off">
     <div class="nft-search-results" id="nftSearchResults"></div>
