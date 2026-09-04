@@ -44,6 +44,73 @@
     margin: 0 auto;
     padding: 56px 28px 90px;
   }
+  nav.topnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 14px 28px;
+    border-bottom: 1px solid var(--border);
+    background: rgba(9,11,16,0.92);
+    backdrop-filter: blur(6px);
+    position: sticky;
+    top: 0;
+    z-index: 20;
+  }
+  .brand-block {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .brand-logo {
+    height: 40px;
+    width: auto;
+    display: block;
+    filter: drop-shadow(0 0 10px rgba(255,122,41,0.45));
+  }
+  .brand-fallback {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--text);
+  }
+  .nav-links {
+    display: flex;
+    gap: 28px;
+  }
+  .hero-watermark {
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    width: 220px;
+    height: auto;
+    opacity: 0.14;
+    pointer-events: none;
+    user-select: none;
+  }
+  .eyebrow-wrap {
+    position: relative;
+    overflow: hidden;
+  }
+  nav.topnav a {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  nav.topnav a:hover,
+  nav.topnav a:focus-visible {
+    color: var(--gold);
+  }
+  nav.topnav a.current {
+    color: var(--ember);
+  }
   .eyebrow {
     font-family: 'JetBrains Mono', monospace;
     font-size: 12px;
@@ -382,10 +449,26 @@
 </style>
 </head>
 <body>
+<nav class="topnav" aria-label="Site">
+  <div class="brand-block">
+    <img src="RISE_UG_LOGO_Transparent.png" alt="Rise Underground" class="brand-logo"
+         onerror="this.style.display='none'; document.getElementById('brandFallback').style.display='block';">
+    <div class="brand-fallback" id="brandFallback" style="display:none;">Rise Underground</div>
+  </div>
+  <div class="nav-links">
+  <a href="index.html">Home</a>
+  <a href="rise_nft_tracker.html">POA Tracker</a>
+  <a href="cafe_rise_search.html">IR Almanac</a>
+  <a href="leaderboard.html">Leaderboards</a>
+  </div>
+</nav>
 <div class="wrap">
 
-  <div class="eyebrow">Infinity Rising</div>
-  <h1>RISE Tracker</h1>
+  <div class="eyebrow-wrap">
+    <img src="RISE_UG_LOGO_Transparent.png" alt="" class="hero-watermark" onerror="this.style.display='none';">
+    <div class="eyebrow">Infinity Rising</div>
+    <h1>RISE Tracker</h1>
+  </div>
 
   <div class="card" style="padding: 32px;">
     <div class="top-tier-grid">
