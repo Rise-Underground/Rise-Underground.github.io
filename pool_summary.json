@@ -34634,21 +34634,21 @@
       "pool_name": "Pool 1 (Uniswap V2 Clone)",
       "date": "2026-09-06",
       "buy_volume": 57154.2862,
-      "sell_volume": 197567.3419,
+      "sell_volume": 253458.706,
       "buy_txns": 4,
-      "sell_txns": 12,
-      "net_volume": -140413.0557,
-      "unique_makers": 9,
-      "closing_price": 6.033826587188549e-07,
+      "sell_txns": 13,
+      "net_volume": -196304.4199,
+      "unique_makers": 10,
+      "closing_price": 6.024522011459965e-07,
       "lp_add_volume": 0.0,
       "lp_adds": 0,
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "LP_TOKEN",
-      "buy_volume_usd": 86.58,
-      "sell_volume_usd": 299.3,
-      "closing_price_usd": 0.00151493,
-      "quote_usd_price": 2510.7304842129497
+      "buy_volume_usd": 86.0,
+      "sell_volume_usd": 381.37,
+      "closing_price_usd": 0.00150467,
+      "quote_usd_price": 2497.5790018764014
     },
     {
       "chain": "Base",
@@ -34666,10 +34666,10 @@
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "LP_TOKEN",
-      "buy_volume_usd": 173.42,
-      "sell_volume_usd": 1875.74,
-      "closing_price_usd": 0.00150795,
-      "quote_usd_price": 2510.7304842129497
+      "buy_volume_usd": 172.51,
+      "sell_volume_usd": 1865.92,
+      "closing_price_usd": 0.00150005,
+      "quote_usd_price": 2497.5790018764014
     },
     {
       "chain": "Cardano",
@@ -34688,9 +34688,9 @@
       "lp_removes": 1,
       "lp_flow_unit": "RISE",
       "buy_volume_usd": 0.0,
-      "sell_volume_usd": 85.48,
-      "closing_price_usd": 0.00155883,
-      "quote_usd_price": 0.221768769859825
+      "sell_volume_usd": 84.72,
+      "closing_price_usd": 0.00154498,
+      "quote_usd_price": 0.21979831916591952
     },
     {
       "chain": "Cardano",
@@ -34708,10 +34708,10 @@
       "lp_remove_volume": 273336619.251137,
       "lp_removes": 3,
       "lp_flow_unit": "RISE",
-      "buy_volume_usd": 149.38,
-      "sell_volume_usd": 992.81,
-      "closing_price_usd": 0.00156224,
-      "quote_usd_price": 0.221768769859825
+      "buy_volume_usd": 148.05,
+      "sell_volume_usd": 983.99,
+      "closing_price_usd": 0.00154836,
+      "quote_usd_price": 0.21979831916591952
     },
     {
       "chain": "Cardano",
@@ -34732,7 +34732,7 @@
       "buy_volume_usd": null,
       "sell_volume_usd": null,
       "closing_price_usd": null,
-      "quote_usd_price": 0.221768769859825
+      "quote_usd_price": 0.21979831916591952
     },
     {
       "chain": "Cardano",
@@ -34753,7 +34753,7 @@
       "buy_volume_usd": null,
       "sell_volume_usd": null,
       "closing_price_usd": null,
-      "quote_usd_price": 0.221768769859825
+      "quote_usd_price": 0.21979831916591952
     }
   ],
   "reserve_daily_summary": [
