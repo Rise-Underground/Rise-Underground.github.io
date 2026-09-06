@@ -34645,31 +34645,31 @@
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "LP_TOKEN",
-      "buy_volume_usd": 85.92,
-      "sell_volume_usd": 297.01,
-      "closing_price_usd": 0.00150335,
-      "quote_usd_price": 2491.540515123123
+      "buy_volume_usd": 85.82,
+      "sell_volume_usd": 296.67,
+      "closing_price_usd": 0.00150159,
+      "quote_usd_price": 2488.6277715041856
     },
     {
       "chain": "Base",
       "pool_name": "Pool 2 (Aerodrome vAMM)",
       "date": "2026-09-06",
-      "buy_volume": 57501.4164,
-      "sell_volume": 707438.9933,
-      "buy_txns": 10,
-      "sell_txns": 8,
-      "net_volume": -649937.5769,
+      "buy_volume": 57630.5394,
+      "sell_volume": 750479.9733,
+      "buy_txns": 11,
+      "sell_txns": 9,
+      "net_volume": -692849.4339,
       "unique_makers": 7,
-      "closing_price": 6.043265744531552e-07,
+      "closing_price": 6.040423765247052e-07,
       "lp_add_volume": 0.0,
       "lp_adds": 0,
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "LP_TOKEN",
-      "buy_volume_usd": 86.58,
-      "sell_volume_usd": 1065.19,
-      "closing_price_usd": 0.0015057,
-      "quote_usd_price": 2491.540515123123
+      "buy_volume_usd": 86.63,
+      "sell_volume_usd": 1128.15,
+      "closing_price_usd": 0.00150324,
+      "quote_usd_price": 2488.6277715041856
     },
     {
       "chain": "Cardano",
@@ -34688,9 +34688,9 @@
       "lp_removes": 1,
       "lp_flow_unit": "RISE",
       "buy_volume_usd": 0.0,
-      "sell_volume_usd": 84.54,
-      "closing_price_usd": 0.00154184,
-      "quote_usd_price": 0.21935149522353722
+      "sell_volume_usd": 84.4,
+      "closing_price_usd": 0.00153921,
+      "quote_usd_price": 0.21897847165218573
     },
     {
       "chain": "Cardano",
@@ -34708,10 +34708,10 @@
       "lp_remove_volume": 273336619.251137,
       "lp_removes": 3,
       "lp_flow_unit": "RISE",
-      "buy_volume_usd": 147.75,
-      "sell_volume_usd": 981.99,
-      "closing_price_usd": 0.00154521,
-      "quote_usd_price": 0.21935149522353722
+      "buy_volume_usd": 147.5,
+      "sell_volume_usd": 980.32,
+      "closing_price_usd": 0.00154258,
+      "quote_usd_price": 0.21897847165218573
     },
     {
       "chain": "Cardano",
@@ -34732,7 +34732,7 @@
       "buy_volume_usd": null,
       "sell_volume_usd": null,
       "closing_price_usd": null,
-      "quote_usd_price": 0.21935149522353722
+      "quote_usd_price": 0.21897847165218573
     },
     {
       "chain": "Cardano",
@@ -34753,7 +34753,7 @@
       "buy_volume_usd": null,
       "sell_volume_usd": null,
       "closing_price_usd": null,
-      "quote_usd_price": 0.21935149522353722
+      "quote_usd_price": 0.21897847165218573
     }
   ],
   "reserve_daily_summary": [
