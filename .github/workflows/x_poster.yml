@@ -2,7 +2,7 @@ name: X Poster
 
 on:
   schedule:
-    - cron: "0 * * * *"   # every hour, on the hour -- same cadence as the Competition Orchestrator
+    - cron: "13 * * * *"   # every hour, at :13 -- offset from :00 since GitHub's scheduler deprioritizes on-the-hour cron jobs under load (same fix already applied to orchestrate.yml)
   workflow_dispatch:        # allows manual trigger from the Actions tab for testing
     inputs:
       dry_run:

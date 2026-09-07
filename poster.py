@@ -185,7 +185,12 @@ def main():
     text = None
     image_path = None
 
-    now_hm = (now.hour, now.minute)
+    # Compare on the hour only, not the exact minute. The workflow now
+    # fires at :13 past each hour (not :00) to dodge GitHub's on-the-hour
+    # scheduler throttling -- every scheduled time in this file is on the
+    # hour (minute 0), and this runs once per hour regardless, so hour-only
+    # comparison is safe and avoids missing every slot due to the offset.
+    now_hm = (now.hour, 0)
 
     # ---------------- Countdown phase ----------------
     if one_week_before <= now < start:
