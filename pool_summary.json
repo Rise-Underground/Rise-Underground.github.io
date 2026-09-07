@@ -34772,9 +34772,30 @@
       "lp_removes": 0,
       "lp_flow_unit": "RISE",
       "buy_volume_usd": 0.0,
-      "sell_volume_usd": 18.49,
-      "closing_price_usd": 0.00154384,
-      "quote_usd_price": 0.2203526380398788
+      "sell_volume_usd": 18.56,
+      "closing_price_usd": 0.00154969,
+      "quote_usd_price": 0.22118714408390613
+    },
+    {
+      "chain": "Cardano",
+      "pool_name": "Minswap V2 Order Contract",
+      "date": "2026-09-07",
+      "buy_volume": 0.0,
+      "sell_volume": 11979.0,
+      "buy_txns": 0,
+      "sell_txns": 1,
+      "net_volume": -11979.0,
+      "unique_makers": null,
+      "closing_price": null,
+      "lp_add_volume": 0.0,
+      "lp_adds": 0,
+      "lp_remove_volume": 0.0,
+      "lp_removes": 0,
+      "lp_flow_unit": "RISE",
+      "buy_volume_usd": null,
+      "sell_volume_usd": null,
+      "closing_price_usd": null,
+      "quote_usd_price": 0.22118714408390613
     }
   ],
   "reserve_daily_summary": [
