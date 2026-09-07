@@ -119,6 +119,48 @@
     .opportunities-box{ display:none !important; }
   }
 
+  /* ---------- last-updated clock ---------- */
+  .last-updated-box{
+    position:fixed;
+    top: 20px;
+    right: 20px;
+    width: 220px;
+    max-width: 42vw;
+    background: linear-gradient(180deg, var(--asphalt-2), var(--panel));
+    border: 1px solid var(--hairline);
+    border-radius: 6px;
+    padding: 16px;
+    z-index: 30;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+    text-align: center;
+  }
+  .lu-title{
+    font-family:'Rajdhani', sans-serif;
+    font-weight:700;
+    font-size:15px;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color: var(--gold);
+    margin-bottom:8px;
+  }
+  .lu-elapsed{
+    font-family:'JetBrains Mono', monospace;
+    font-weight:700;
+    font-size:20px;
+    color: var(--paper);
+  }
+  .lu-caption{
+    font-family:'JetBrains Mono', monospace;
+    font-size:10.5px;
+    color: var(--steel);
+    letter-spacing:0.04em;
+    margin-top:4px;
+  }
+
+  @media (max-width: 700px){
+    .last-updated-box{ display:none !important; }
+  }
+
   /* ---------- header ---------- */
   header{
     display:flex;
@@ -631,6 +673,12 @@
     <div id="opportunitiesList"></div>
   </div>
 
+  <div class="last-updated-box" id="lastUpdatedBox" style="display:none;">
+    <div class="lu-title">Last Updated</div>
+    <div class="lu-elapsed" id="lastUpdatedElapsed">—</div>
+    <div class="lu-caption" id="lastUpdatedCaption"></div>
+  </div>
+
   <header>
     <div class="brand-block">
       <img src="RISE_UG_LOGO_Transparent.png" alt="Rise Underground" class="brand-logo"
@@ -1022,7 +1070,14 @@ renderEmptyState('No standings loaded.');
 // directly (file://) blocks fetch() entirely, so nothing loads that way.
 if (location.protocol !== 'file:'){
   Promise.all([
-    fetch('ir_leaderboard_placements.csv?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.text() : Promise.reject()),
+    fetch('ir_leaderboard_placements.csv?t=' + Date.now(), { cache: 'no-store' }).then(r => {
+      if (!r.ok) return Promise.reject();
+      // capture the file's actual last-modified time (GitHub Pages sets
+      // this automatically) before consuming the body as text
+      const lastModifiedHeader = r.headers.get('Last-Modified');
+      placementsLastModified = lastModifiedHeader ? new Date(lastModifiedHeader) : null;
+      return r.text();
+    }),
     fetch('ir_leaderboard_boards.csv?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.text() : null).catch(() => null),
   ])
     .then(([placementsText, boardsText]) => {
@@ -1032,12 +1087,54 @@ if (location.protocol !== 'file:'){
 
       const boards = boardsText ? csvToBoards(boardsText) : null;
       renderOpportunities(placements, boards);
+      renderLastUpdatedClock();
+      setInterval(renderLastUpdatedClock, 1000);
     })
     .catch(() => {
       renderEmptyState('ir_leaderboard_placements.csv not found in this folder yet.');
     });
 } else {
   renderEmptyState('Open this page via a local server (not by double-clicking the file) to auto-load standings.');
+}
+
+// ------------------------------------------------------------------
+// "Last updated" clock -- shows how long it's been since the placements
+// CSV file itself was actually modified (its real Last-Modified HTTP
+// header, not just when this page happened to fetch it). Same
+// active-competition-only gating as the opportunities box.
+// ------------------------------------------------------------------
+let placementsLastModified = null;
+
+function formatElapsed(ms){
+  const totalSeconds = Math.floor(ms / 1000);
+  const days = Math.floor(totalSeconds / 86400);
+  const hours = Math.floor((totalSeconds % 86400) / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
+
+  if (days > 0) return `${days}d ${hours}h ${minutes}m`;
+  if (hours > 0) return `${hours}h ${minutes}m ${seconds}s`;
+  if (minutes > 0) return `${minutes}m ${seconds}s`;
+  return `${seconds}s`;
+}
+
+function renderLastUpdatedClock(){
+  const box = document.getElementById('lastUpdatedBox');
+
+  const now = new Date();
+  const { start, end } = computeCompetitionWindow(now);
+  const isActive = TEST_MODE ? (now >= TEST_WINDOW_START && now <= TEST_WINDOW_END) : (now >= start && now <= end);
+
+  if (!isActive || !placementsLastModified){
+    box.style.display = 'none';
+    return;
+  }
+  box.style.display = '';
+
+  const elapsedMs = now - placementsLastModified;
+  document.getElementById('lastUpdatedElapsed').textContent = formatElapsed(elapsedMs);
+  document.getElementById('lastUpdatedCaption').textContent =
+    'as of ' + placementsLastModified.toUTCString().replace(' GMT', ' UTC');
 }
 
 // ------------------------------------------------------------------
