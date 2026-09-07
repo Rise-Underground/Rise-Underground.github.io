@@ -721,10 +721,8 @@ function buildStandings(placements){
 // ------------------------------------------------------------------
 // Competition window + countdown clock.
 //
-// TEST_MODE hardcodes the window to Sun Aug 16 - Sat Aug 22 for this
-// test run. Set TEST_MODE to false once that goes well, to switch to
-// the real "3rd Sunday of month" rule (already written below,
-// currently unused while TEST_MODE is on).
+// TEST_MODE hardcodes the window to Sun Aug 16 - Sat Aug 22 for testing.
+// Currently OFF -- using the real "2nd Sunday of month" rule below.
 //
 // Clock visibility:
 //   - more than 7 days before start: hidden
@@ -733,16 +731,16 @@ function buildStandings(placements){
 //   - after the competition ends: hidden, until the next 7-day-before
 //     window opens
 // ------------------------------------------------------------------
-const TEST_MODE = true;
+const TEST_MODE = false;
 const TEST_WINDOW_START = new Date(Date.UTC(2026, 7, 16, 0, 0, 0, 0));   // Aug is month index 7
 const TEST_WINDOW_END = new Date(Date.UTC(2026, 7, 22, 23, 59, 59, 999));
 
-function getThirdSundayWindow(year, monthIndex){
+function getSecondSundayWindow(year, monthIndex){
   const firstOfMonth = new Date(Date.UTC(year, monthIndex, 1));
   const daysToFirstSunday = (7 - firstOfMonth.getUTCDay()) % 7;
   const firstSunday = new Date(Date.UTC(year, monthIndex, 1 + daysToFirstSunday));
   const start = new Date(firstSunday);
-  start.setUTCDate(firstSunday.getUTCDate() + 14);
+  start.setUTCDate(firstSunday.getUTCDate() + 7);
   start.setUTCHours(0, 0, 0, 0);
   const end = new Date(start);
   end.setUTCDate(start.getUTCDate() + 6);
@@ -752,11 +750,11 @@ function getThirdSundayWindow(year, monthIndex){
 
 function computeCompetitionWindow(now){
   if (TEST_MODE) return { start: TEST_WINDOW_START, end: TEST_WINDOW_END };
-  let { start, end } = getThirdSundayWindow(now.getUTCFullYear(), now.getUTCMonth());
+  let { start, end } = getSecondSundayWindow(now.getUTCFullYear(), now.getUTCMonth());
   if (now > end){
     let nextMonth = now.getUTCMonth() + 1, nextYear = now.getUTCFullYear();
     if (nextMonth > 11){ nextMonth = 0; nextYear += 1; }
-    ({ start, end } = getThirdSundayWindow(nextYear, nextMonth));
+    ({ start, end } = getSecondSundayWindow(nextYear, nextMonth));
   }
   return { start, end };
 }
@@ -824,7 +822,7 @@ function tickEndedBanner(){
     return;
   }
 
-  const currentWindow = getThirdSundayWindow(now.getUTCFullYear(), now.getUTCMonth());
+  const currentWindow = getSecondSundayWindow(now.getUTCFullYear(), now.getUTCMonth());
   if (now <= currentWindow.end){
     banner.style.display = 'none';
     return;
