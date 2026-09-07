@@ -4,6 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>RISE Staking Pool &mdash; Dashboard</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Infinity Rising — RISE Tracker">
+<meta property="og:description" content="RISE Token Ecosystem Dashboard. Cardano · Base · Flows · Rewards.">
+<meta property="og:image" content="https://rise-underground.github.io/assets/rise_tracker.jpg">
+<meta property="og:url" content="https://rise-underground.github.io/rise_tracker.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
@@ -63,7 +68,7 @@
     gap: 12px;
   }
   .brand-logo {
-    height: 40px;
+    height: 92px;
     width: auto;
     display: block;
     filter: drop-shadow(0 0 10px rgba(255,122,41,0.45));
@@ -72,20 +77,46 @@
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
     letter-spacing: 0.08em;
-    font-size: 14px;
+    font-size: 20px;
     text-transform: uppercase;
     color: var(--text);
   }
   .tagline {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
+    font-size: 12px;
     letter-spacing: 0.1em;
     color: var(--muted);
     text-transform: uppercase;
   }
   .nav-links {
     display: flex;
-    gap: 28px;
+    gap: 10px;
+  }
+  .nav-link{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight:600;
+    font-size:13px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color: #f0ede6;
+    text-decoration:none;
+    border:1px solid #29292c;
+    padding:6px 14px;
+    border-radius: 3px;
+    transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+    display:inline-flex;
+    align-items:center;
+  }
+  .nav-link:hover,
+  .nav-link:focus-visible{
+    color: #d4a537;
+    border-color: #d4a537;
+    background: rgba(212,165,55,0.08);
+  }
+  .nav-link.current{
+    color: #d4a537;
+    border-color: #d4a537;
+    background: rgba(212,165,55,0.08);
   }
   .hero-watermark {
     position: absolute;
@@ -464,11 +495,11 @@
     <div class="tagline">Operating in the shadows</div>
   </div>
   <div class="nav-links">
-  <a href="index.html">Home</a>
-  <a href="poa_tracker.html">POA Tracker</a>
-  <a href="ir_almanac.html">IR Almanac</a>
-  <a href="leaderboard.html">Leaderboards</a>
-  <a href="rise_tracker.html" class="current">Rise Tracker</a>
+  <a class="nav-link" href="index.html">Home</a>
+  <a class="nav-link" href="poa_tracker.html">POA Tracker</a>
+  <a class="nav-link" href="ir_almanac.html">IR Almanac</a>
+  <a class="nav-link" href="leaderboard.html">Leaderboards</a>
+  <a class="nav-link current" href="rise_tracker.html">Rise Tracker</a>
   </div>
 </nav>
 <div class="wrap">
