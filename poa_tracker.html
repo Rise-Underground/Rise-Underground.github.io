@@ -74,6 +74,8 @@
   .brand .mark span{color:var(--gold);}
   .brand .sub{font-family:var(--font-mono);font-size:11px;color:var(--dim);letter-spacing:1.5px;text-transform:uppercase;}
   .tagline{font-family:var(--font-mono);font-size:11px;color:var(--dim);letter-spacing:1.5px;text-transform:uppercase;}
+  .last-updated{font-family:var(--font-mono);font-size:11px;color:var(--dim);letter-spacing:1px;}
+  .last-updated .dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--gold);margin-right:6px;vertical-align:middle;}
 
   /* ---------- nav ---------- */
   nav.site-nav{display:flex;align-items:center;gap:8px;}
@@ -285,6 +287,7 @@
     <span class="mark">RISE POA Tracker</span>
   </div>
   <div class="tagline">Operating in the shadows</div>
+  <div class="last-updated" id="lastUpdated" style="display:none;"></div>
   <nav class="site-nav">
     <a class="nav-link" href="index.html">Home</a>
     <a class="nav-link current" href="rise_nft_tracker.html">POA Tracker</a>
@@ -364,7 +367,7 @@ async function loadOpenMintKeys(){
 async function loadNftItems(){
   try {
     const res = await fetch(FILES.nftData);
-    if (!res.ok) return { items: [], bundleSummaries: {}, recentMints: [] };
+    if (!res.ok) return { items: [], bundleSummaries: {}, recentMints: [], generatedAt: null };
     const data = await res.json();
     const items = Array.isArray(data.items) ? data.items : [];
     const recentMints = Array.isArray(data.recent_mints) ? data.recent_mints : [];
@@ -372,14 +375,45 @@ async function loadNftItems(){
     (Array.isArray(data.bundle_summaries) ? data.bundle_summaries : []).forEach(b => {
       bundleSummaries[b.name] = b;
     });
-    return { items, bundleSummaries, recentMints };
+    return { items, bundleSummaries, recentMints, generatedAt: data.generated_at || null };
   } catch (e) {
-    return { items: [], bundleSummaries: {}, recentMints: [] };
+    return { items: [], bundleSummaries: {}, recentMints: [], generatedAt: null };
   }
 }
 
+// "Last updated" clock -- reads generated_at from nft_data.json (set by
+// unified_nft_updater.py's Step 5 export) and counts up in real time
+// rather than re-fetching, so it keeps ticking between hourly refreshes.
+let LAST_UPDATED_DT = null;
+function formatAgo(seconds){
+  if (seconds < 60) return 'just now';
+  const mins = Math.floor(seconds / 60);
+  if (mins < 60) return `${mins} minute${mins === 1 ? '' : 's'} ago`;
+  const hours = Math.floor(mins / 60);
+  if (hours < 24) return `${hours} hour${hours === 1 ? '' : 's'} ago`;
+  const days = Math.floor(hours / 24);
+  return `${days} day${days === 1 ? '' : 's'} ago`;
+}
+function tickLastUpdated(){
+  const el = document.getElementById('lastUpdated');
+  if (!el || !LAST_UPDATED_DT) return;
+  const seconds = Math.floor((Date.now() - LAST_UPDATED_DT.getTime()) / 1000);
+  el.innerHTML = `<span class="dot"></span>Last updated ${formatAgo(Math.max(seconds, 0))}`;
+}
+function initLastUpdated(generatedAt){
+  if (!generatedAt) return; // field missing (old export) -- leave hidden
+  const dt = new Date(generatedAt);
+  if (isNaN(dt.getTime())) return;
+  LAST_UPDATED_DT = dt;
+  const el = document.getElementById('lastUpdated');
+  if (el) el.style.display = '';
+  tickLastUpdated();
+  setInterval(tickLastUpdated, 30000);
+}
+
 async function init(){
-  const [{ items, bundleSummaries, recentMints }, openKeys] = await Promise.all([loadNftItems(), loadOpenMintKeys()]);
+  const [{ items, bundleSummaries, recentMints, generatedAt }, openKeys] = await Promise.all([loadNftItems(), loadOpenMintKeys()]);
+  initLastUpdated(generatedAt);
   NFT_ITEMS = (openKeys.size > 0) ? items.filter(it => openKeys.has(it.key)) : items;
   // else: nft_mint_status.csv missing/empty -- show everything rather than an empty page
 
