@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>RISE X-Post — Item Picker</title>
+<style>
+  :root {
+    --bg: #0a0908;
+    --panel: #14120f;
+    --panel-2: #1c1712;
+    --line: #2a241c;
+    --text: #ede6d6;
+    --dim: #8a8175;
+    --dimmer: #564f43;
+    --gold: #d9a441;
+    --gold-bright: #f2c057;
+    --ada-chain: #c81e1e;
+    --base-chain: #6f8fc4;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 28px 32px 60px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  h1 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 4px;
+  }
+  p.sub {
+    color: var(--dim);
+    font-size: 13px;
+    margin: 0 0 22px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 14px;
+  }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 14px;
+    cursor: pointer;
+    text-align: center;
+    transition: border-color 0.15s ease, background 0.15s ease;
+  }
+  .card:hover { border-color: var(--gold); }
+  .card.selected {
+    border-color: var(--gold);
+    background: var(--panel-2);
+    box-shadow: 0 0 0 1px var(--gold);
+  }
+  .card .name {
+    font-size: 12.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin-bottom: 2px;
+    min-height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card .tag {
+    font-size: 10px;
+    color: var(--dimmer);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+  .mythic {
+    font-family: ui-monospace, Menlo, monospace;
+    font-size: 11px;
+    color: var(--gold-bright);
+    margin-top: 4px;
+  }
+  .meter-chain-label { font-family: ui-monospace, Menlo, monospace; font-size: 10px; font-weight: 600; }
+  .meter-chain-label.left { fill: var(--ada-chain); }
+  .meter-chain-label.right { fill: var(--base-chain); }
+  .meter-verdict {
+    font-family: ui-monospace, Menlo, monospace;
+    font-size: 10.5px;
+    color: var(--text);
+    margin-top: 2px;
+  }
+  .meter-verdict .chainname.ada { color: var(--ada-chain); font-weight: 700; }
+  .meter-verdict .chainname.base { color: var(--base-chain); font-weight: 700; }
+
+  #output {
+    margin-top: 24px;
+    max-width: 420px;
+    padding: 14px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    font-size: 13px;
+    display: none;
+  }
+  #output.show { display: block; }
+  #output .key {
+    font-family: ui-monospace, Menlo, monospace;
+    color: var(--gold-bright);
+    word-break: break-all;
+    font-size: 11px;
+  }
+  #output button {
+    margin-top: 10px;
+    padding: 8px 14px;
+    background: var(--gold);
+    border: none;
+    border-radius: 6px;
+    color: #0a0908;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  #composerWrap {
+    margin-top: 24px;
+    display: none;
+  }
+  #composerWrap.show { display: block; }
+  #composerCanvas {
+    max-width: 100%;
+    width: 700px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    display: block;
+  }
+  #downloadBtn {
+    margin-top: 12px;
+    margin-left: 8px;
+    padding: 10px 18px;
+    background: var(--gold);
+    border: none;
+    border-radius: 6px;
+    color: #0a0908;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  #saveLocationBtn {
+    margin-top: 12px;
+    padding: 10px 18px;
+    background: var(--panel-2);
+    border: 1px solid var(--gold);
+    border-radius: 6px;
+    color: var(--gold-bright);
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<h1>Pick today's item</h1>
+<p class="sub">Same needle gauge as the POA tracker — click the one you want to post.</p>
+
+<div class="grid" id="grid"></div>
+
+<div id="output">
+  <div>Selected: <strong id="outName"></strong></div>
+  <div class="key" id="outKey"></div>
+  <button id="copyBtn">Copy selection JSON</button>
+</div>
+
+<div id="composerWrap">
+  <canvas id="composerCanvas" width="1168" height="784"></canvas>
+  <button id="saveLocationBtn">Set Save Location (one-time)</button>
+  <button id="downloadBtn">Save Image</button>
+</div>
+
+<script>
+let DATA = null;
+let selected = null;
+
+async function load() {
+  const res = await fetch('nft_data.json');
+  DATA = await res.json();
+  render();
+}
+
+function gaugeSvg(angle, arcPct) {
+  return `
+    <svg viewBox="0 0 300 190" width="100%" style="max-width:180px;">
+      <text x="20" y="24" class="meter-chain-label left">ADA</text>
+      <text x="280" y="24" class="meter-chain-label right" text-anchor="end">BASE</text>
+      <path d="M 30 150 A 120 120 0 0 1 270 150" fill="none" stroke="var(--line)" stroke-width="12" stroke-linecap="round"/>
+      <path d="M 30 150 A 120 120 0 0 1 270 150" fill="none" stroke="var(--dimmer)" stroke-width="12" stroke-linecap="round" stroke-dasharray="377" stroke-dashoffset="${377 - arcPct}"/>
+      <line x1="150" y1="150" x2="150" y2="45" stroke="var(--text)" stroke-width="3" stroke-linecap="round" transform="rotate(${angle} 150 150)"/>
+      <circle cx="150" cy="150" r="6" fill="var(--text)"/>
+    </svg>`;
+}
+
+function verdictText(mode) {
+  if (mode === 'even') return `Roughly even`;
+  if (mode === 'base') return `<span class="chainname base">Base</span> favors minting`;
+  return `<span class="chainname ada">Cardano</span> favors minting`;
+}
+
+function render() {
+  const grid = document.getElementById('grid');
+  grid.innerHTML = '';
+
+  DATA.items.forEach(item => {
+    const mythicPct = item.best_mythic ? item.best_mythic.pct.toFixed(2) + '%' : null;
+    addCard(item.name, item.key, 'item', item.needle.angle, item.needle.arc_pct, item.verdict.mode, mythicPct);
+  });
+
+  DATA.bundle_summaries.forEach(b => {
+    addCard(b.name, b.name, 'bundle', b.needle.angle, b.needle.arc_pct, b.verdict.mode, null);
+  });
+}
+
+function addCard(name, key, type, angle, arcPct, verdictMode, mythicPct) {
+  const grid = document.getElementById('grid');
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.dataset.key = key;
+  card.innerHTML = `
+    <div class="name">${name}</div>
+    <div class="tag">${type}</div>
+    ${gaugeSvg(angle, arcPct)}
+    <div class="meter-verdict">${verdictText(verdictMode)}</div>
+    ${mythicPct ? `<div class="mythic">Mythic best: ${mythicPct}</div>` : ''}
+  `;
+  card.addEventListener('click', () => select(card, name, key, type));
+  grid.appendChild(card);
+}
+
+async function select(card, name, key, type) {
+  document.querySelectorAll('.card').forEach(c => c.classList.remove('selected'));
+  card.classList.add('selected');
+
+  const record = type === 'item'
+    ? DATA.items.find(i => i.key === key)
+    : DATA.bundle_summaries.find(b => b.name === key);
+
+  selected = { name, key, type, record };
+
+  document.getElementById('output').classList.add('show');
+  document.getElementById('outName').textContent = name;
+  document.getElementById('outKey').textContent = JSON.stringify({ name, key, type });
+
+  await composeImage(selected);
+  downloadImage();
+}
+
+let SAVE_HANDLE = null; // File System Access handle, once user picks the target file
+
+function fsAccessSupported() {
+  return 'showSaveFilePicker' in window;
+}
+
+async function chooseSaveLocation() {
+  if (!fsAccessSupported()) return;
+  try {
+    SAVE_HANDLE = await window.showSaveFilePicker({
+      suggestedName: 'POA_x_post_image.png',
+      types: [{ description: 'PNG image', accept: { 'image/png': ['.png'] } }],
+    });
+    document.getElementById('saveLocationBtn').textContent = 'Save location set ✓';
+  } catch (err) {
+    // user cancelled the picker -- not an error worth surfacing
+  }
+}
+
+function downloadImage() {
+  if (!selected) return;
+  const canvas = document.getElementById('composerCanvas');
+  canvas.toBlob(async (blob) => {
+    if (!blob) {
+      alert('Could not generate the image. This usually means template.jpg or nft_data.json failed to load, or you opened this file directly instead of through the local server.');
+      return;
+    }
+
+    if (SAVE_HANDLE) {
+      // silently overwrite the same file every time, no dialog
+      try {
+        const writable = await SAVE_HANDLE.createWritable();
+        await writable.write(blob);
+        await writable.close();
+        return;
+      } catch (err) {
+        alert('Could not overwrite the saved file (it may have been moved or deleted). Click "Set Save Location" again.\n\n' + err.message);
+        SAVE_HANDLE = null;
+      }
+    }
+
+    // fallback: no save location chosen yet, or File System Access unsupported --
+    // do a normal download with the fixed filename. Browsers append (1), (2), etc.
+    // to repeat downloads of the same name rather than overwriting.
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.download = 'POA_x_post_image.png';
+    link.href = url;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+  }, 'image/png');
+}
+
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(JSON.stringify({ name: selected.name, key: selected.key, type: selected.type }, null, 2));
+});
+
+// ---------- compositor: draws the selected item's gauge + stats into the
+// "PASTE TRACKER HERE" box on template.jpg ----------
+let TEMPLATE_IMG = null;
+function loadTemplate() {
+  return new Promise((resolve) => {
+    const img = new Image();
+    img.onload = () => { TEMPLATE_IMG = img; resolve(); };
+    img.src = 'template.jpg';
+  });
+}
+
+// Box coordinates measured on the 1168x784 template.
+const BOX = { x: 40, y: 352, w: 1090, h: 318 };
+
+function drawGauge(ctx, cx, cy, r, angle, arcPct, color) {
+  const start = Math.PI;               // left point (180deg)
+  const end = Math.PI * 2;              // right point (0/360deg)
+  const progressEnd = start + (arcPct / 377) * Math.PI;
+
+  // track
+  ctx.beginPath();
+  ctx.arc(cx, cy, r, start, end, false);
+  ctx.strokeStyle = '#2a241c';
+  ctx.lineWidth = r * 0.11;
+  ctx.lineCap = 'round';
+  ctx.stroke();
+
+  // progress
+  ctx.beginPath();
+  ctx.arc(cx, cy, r, start, progressEnd, false);
+  ctx.strokeStyle = '#564f43';
+  ctx.lineWidth = r * 0.11;
+  ctx.lineCap = 'round';
+  ctx.stroke();
+
+  // needle
+  const rad = angle * Math.PI / 180;
+  const len = r * 0.88;
+  const nx = cx + len * Math.sin(rad);
+  const ny = cy - len * Math.cos(rad);
+  ctx.beginPath();
+  ctx.moveTo(cx, cy);
+  ctx.lineTo(nx, ny);
+  ctx.strokeStyle = color;
+  ctx.lineWidth = Math.max(3, r * 0.03);
+  ctx.lineCap = 'round';
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.arc(cx, cy, r * 0.06, 0, Math.PI * 2);
+  ctx.fillStyle = color;
+  ctx.fill();
+
+  // ADA / BASE labels
+  ctx.font = `700 ${Math.round(r * 0.13)}px ui-monospace, Menlo, monospace`;
+  ctx.fillStyle = '#c81e1e';
+  ctx.textAlign = 'left';
+  ctx.fillText('ADA', cx - r - 4, cy - r * 0.05);
+  ctx.fillStyle = '#6f8fc4';
+  ctx.textAlign = 'right';
+  ctx.fillText('BASE', cx + r + 4, cy - r * 0.05);
+}
+
+function verdictLabel(mode) {
+  if (mode === 'even') return { text: 'Roughly even', color: '#ede6d6' };
+  if (mode === 'base') return { text: 'BASE favors minting', color: '#6f8fc4' };
+  return { text: 'CARDANO favors minting', color: '#c81e1e' };
+}
+
+async function composeImage(sel) {
+  document.getElementById('composerWrap').classList.add('show');
+  if (!TEMPLATE_IMG) await loadTemplate();
+
+  const canvas = document.getElementById('composerCanvas');
+  const ctx = canvas.getContext('2d');
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.drawImage(TEMPLATE_IMG, 0, 0);
+
+  // cover the "PASTE TRACKER HERE" placeholder text baked into the template
+  ctx.fillStyle = 'rgb(8,8,8)';
+  ctx.fillRect(BOX.x + 6, BOX.y + 6, BOX.w - 12, BOX.h - 12);
+
+  const r = sel.record;
+  const gaugeCx = BOX.x + 190;
+  const gaugeCy = BOX.y + 190;
+  const gaugeR = 100;
+
+  // item / bundle name inside the box
+  ctx.font = '700 30px Arial, sans-serif';
+  ctx.fillStyle = '#ede6d6';
+  ctx.textAlign = 'left';
+  wrapText(ctx, sel.name.toUpperCase(), BOX.x + 30, BOX.y + 60, BOX.w - 60, 34);
+
+  drawGauge(ctx, gaugeCx, gaugeCy, gaugeR, r.needle.angle, r.needle.arc_pct, '#ede6d6');
+
+  const v = verdictLabel(r.verdict.mode);
+  ctx.font = '600 15px ui-monospace, Menlo, monospace';
+  ctx.fillStyle = v.color;
+  ctx.textAlign = 'center';
+  ctx.fillText(v.text, gaugeCx, gaugeCy + gaugeR + 20);
+
+  // stats column (right side of box) -- odds breakdown when present (items),
+  // otherwise just the verdict for bundles (no per-item odds on summaries)
+  const statX = BOX.x + 460;
+  let statY = BOX.y + 110;
+  ctx.textAlign = 'left';
+
+  if (sel.type === 'item' && r.odds_breakdown) {
+    const drawOddsCol = (heading, odds, x) => {
+      ctx.font = '700 14px ui-monospace, Menlo, monospace';
+      ctx.fillStyle = '#8a8175';
+      ctx.fillText(heading.toUpperCase(), x, statY);
+      let y = statY + 30;
+      const rows = [
+        ['Mythic', odds.Mythic, '#EB724D'],
+        ['Legendary', odds.Legendary, '#9633B3'],
+        ['Rare', odds.Rare, '#4EDFE7'],
+      ];
+      rows.forEach(([label, pct, color]) => {
+        ctx.font = '600 15px ui-monospace, Menlo, monospace';
+        ctx.fillStyle = color;
+        ctx.fillText(label, x, y);
+        ctx.fillStyle = '#f2c057';
+        ctx.textAlign = 'right';
+        ctx.fillText(pct.toFixed(2) + '%', x + 210, y);
+        ctx.textAlign = 'left';
+        y += 30;
+      });
+    };
+    drawOddsCol('Base', r.odds_breakdown.base, statX);
+    drawOddsCol('Cardano', r.odds_breakdown.cardano, statX + 250);
+  }
+
+  if (r.best_mythic) {
+    ctx.font = '700 16px ui-monospace, Menlo, monospace';
+    ctx.fillStyle = '#f2c057';
+    ctx.textAlign = 'left';
+    ctx.fillText(
+      `Best mythic odds: ${r.best_mythic.chain} (${r.best_mythic.pct.toFixed(2)}%)`,
+      statX, statY + 140
+    );
+  }
+}
+
+function wrapText(ctx, text, x, y, maxWidth, lineHeight) {
+  const words = text.split(' ');
+  let line = '';
+  let curY = y;
+  for (let i = 0; i < words.length; i++) {
+    const test = line + words[i] + ' ';
+    if (ctx.measureText(test).width > maxWidth && line !== '') {
+      ctx.fillText(line, x, curY);
+      line = words[i] + ' ';
+      curY += lineHeight;
+    } else {
+      line = test;
+    }
+  }
+  ctx.fillText(line, x, curY);
+}
+
+document.getElementById('downloadBtn').addEventListener('click', downloadImage);
+document.getElementById('saveLocationBtn').addEventListener('click', chooseSaveLocation);
+
+if (!fsAccessSupported()) {
+  document.getElementById('saveLocationBtn').style.display = 'none';
+}
+
+load();
+</script>
+
+</body>
+</html>
