@@ -207,7 +207,13 @@ function render() {
   const grid = document.getElementById('grid');
   grid.innerHTML = '';
 
-  DATA.items.forEach(item => {
+  const sortedItems = [...DATA.items].sort((a, b) => {
+    const pctA = a.best_mythic ? a.best_mythic.pct : -1;
+    const pctB = b.best_mythic ? b.best_mythic.pct : -1;
+    return pctB - pctA;
+  });
+
+  sortedItems.forEach(item => {
     const mythicPct = item.best_mythic ? item.best_mythic.pct.toFixed(2) + '%' : null;
     addCard(item.name, item.key, 'item', item.needle.angle, item.needle.arc_pct, item.verdict.mode, mythicPct);
   });
