@@ -31,6 +31,30 @@
     --muted-2: #4E5566;
   }
   * { box-sizing: border-box; }
+
+  /* ---------- disclaimer modal ---------- */
+  #disclaimer-overlay{
+    position:fixed;inset:0;background:rgba(9,11,16,0.82);backdrop-filter:blur(4px);
+    display:flex;align-items:center;justify-content:center;z-index:1000;padding:20px;
+  }
+  #disclaimer-overlay.hidden{display:none;}
+  #disclaimer-modal{
+    background:var(--surface);border:1px solid var(--border);border-radius:12px;
+    max-width:560px;width:100%;padding:26px 28px;box-shadow:0 12px 40px rgba(0,0,0,0.5);
+  }
+  #disclaimer-modal h2{
+    margin:0 0 14px 0;font-family:'Rajdhani', sans-serif;font-weight:700;font-size:18px;
+    letter-spacing:0.04em;text-transform:uppercase;color:var(--gold);
+  }
+  #disclaimer-modal p{
+    margin:0 0 20px 0;font-size:14px;line-height:1.6;color:var(--text);
+  }
+  #disclaimer-modal button{
+    background:var(--gold);color:#090B10;border:none;border-radius:6px;
+    padding:10px 22px;font-family:'Inter', sans-serif;font-weight:600;font-size:14px;
+    cursor:pointer;transition:opacity 0.15s ease;
+  }
+  #disclaimer-modal button:hover{opacity:0.85;}
   html, body {
     margin: 0;
     background: var(--bg);
@@ -466,6 +490,7 @@
     gap: 10px;
   }
   .chart-title { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 17px; }
+  .chart-note { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--ember); max-width: 420px; line-height: 1.4; }
   .chart-desc { color: var(--muted); font-size: 12.5px; margin-top: 4px; }
   .legend { display: flex; gap: 16px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--muted); }
   .legend span { display: inline-flex; align-items: center; gap: 6px; }
@@ -488,6 +513,14 @@
 </style>
 </head>
 <body>
+
+<div id="disclaimer-overlay" class="hidden">
+  <div id="disclaimer-modal">
+    <h2>A Note On This Data</h2>
+    <p>The RISE/COPI token ecosystem is highly complex, spanning four chains, multiple staking and rewards avenues, and a token migration — not to mention the difficulty of reconciling data across both EVM and UTXO chains. To the best of our ability, we've pieced it all together to bring you this dashboard, and we hope to add even more information over time. That said, we had to make some assumptions along the way that, if incorrect, could lead to imperfect data. This dashboard is provided for informational purposes only, to give the community a general view of RISE token flow, and should not be used to make financial decisions.</p>
+    <button id="disclaimer-dismiss">Got it</button>
+  </div>
+</div>
 <nav class="topnav" aria-label="Site">
   <div class="brand-block">
     <img src="RISE_UG_LOGO_Transparent.png" alt="Rise Underground" class="brand-logo"
@@ -565,17 +598,14 @@
           <div>
             <div class="term-label" id="volLabel24h" title="Only one day of granularity is available per data point, so this is the most recent day's totals, not a true rolling 24h window.">24H Net Flow</div>
             <div class="term-value" id="chipVolNet24h">&mdash;</div>
-            <div class="term-label" id="chipVolPct24h" style="margin-top: 4px;">&mdash;</div>
           </div>
           <div>
             <div class="term-label">7D Net Flow</div>
             <div class="term-value" id="chipVolNet7d">&mdash;</div>
-            <div class="term-label" id="chipVolPct7d" style="margin-top: 4px;">&mdash;</div>
           </div>
           <div>
             <div class="term-label">30D Net Flow</div>
             <div class="term-value" id="chipVolNet30d">&mdash;</div>
-            <div class="term-label" id="chipVolPct30d" style="margin-top: 4px;">&mdash;</div>
           </div>
         </div>
       </div>
@@ -629,9 +659,9 @@
 
   <div class="card chart-card">
     <div class="chart-head">
-      <div>
+      <div style="display:flex; align-items:baseline; gap:14px; flex-wrap:wrap;">
         <div class="chart-title">Cumulative LP Tokens Staked &amp; Minswap Liquidity</div>
-        <div class="chart-desc">LP token totals (left axis) for the two Base staking contracts, plus net RISE added via Minswap liquidity add/remove events (right axis, RISE) &mdash; different units, not directly comparable</div>
+        <div class="chart-note">Note: we are trying to resolve the data for the Minswap pool so it does not incorrectly show massive LP removals and adds as part of its normal rebalancing.</div>
       </div>
       <div class="legend">
         <span><i class="dot" style="background:#B98AFF"></i>Aerodrome (vAMM-WETH/RISE)</span>
@@ -831,31 +861,23 @@ async function loadDashboard() {
       return { net, total, pct };
     }
 
-    function renderVol(netId, pctId, windowStats) {
+    function renderVol(netId, windowStats) {
       const netEl = document.getElementById(netId);
-      const pctEl = document.getElementById(pctId);
       const sign = windowStats.net >= 0 ? '+' : '';
       netEl.textContent = sign + formatCompact(windowStats.net);
       netEl.style.color = windowStats.net >= 0 ? '#35D07F' : '#FF5468';
-      pctEl.textContent = windowStats.total > 0
-        ? sign + windowStats.pct.toFixed(1) + '% of volume'
-        : 'no volume';
     }
 
     // "24H" = most recent single day bucket -- see the tooltip on the label,
     // the underlying data is daily-granularity, not a true rolling 24h window.
-    renderVol('chipVolNet24h', 'chipVolPct24h', sumWindow(1));
-    renderVol('chipVolNet7d', 'chipVolPct7d', sumWindow(7));
-    renderVol('chipVolNet30d', 'chipVolPct30d', sumWindow(30));
+    renderVol('chipVolNet24h', sumWindow(1));
+    renderVol('chipVolNet7d', sumWindow(7));
+    renderVol('chipVolNet30d', sumWindow(30));
   } catch (err) {
     console.error('Trading volume load failed (non-fatal):', err);
     for (const id of ['chipVolNet24h', 'chipVolNet7d', 'chipVolNet30d']) {
       const el = document.getElementById(id);
       if (el) el.textContent = 'N/A';
-    }
-    for (const id of ['chipVolPct24h', 'chipVolPct7d', 'chipVolPct30d']) {
-      const el = document.getElementById(id);
-      if (el) el.textContent = 'pool_summary.json not found';
     }
   }
 
@@ -1104,6 +1126,30 @@ async function loadDashboard() {
 
 loadDashboard();
 
+</script>
+<script>
+(function(){
+  var STORAGE_KEY = 'riseTrackerDisclaimerDismissedAt';
+  var WEEK_MS = 7 * 24 * 60 * 60 * 1000;
+  var overlay = document.getElementById('disclaimer-overlay');
+  var dismissBtn = document.getElementById('disclaimer-dismiss');
+
+  function shouldShow(){
+    var last = localStorage.getItem(STORAGE_KEY);
+    if(!last) return true;
+    var elapsed = Date.now() - parseInt(last, 10);
+    return isNaN(elapsed) || elapsed >= WEEK_MS;
+  }
+
+  if(shouldShow()){
+    overlay.classList.remove('hidden');
+  }
+
+  dismissBtn.addEventListener('click', function(){
+    localStorage.setItem(STORAGE_KEY, Date.now().toString());
+    overlay.classList.add('hidden');
+  });
+})();
 </script>
 </body>
 </html>
