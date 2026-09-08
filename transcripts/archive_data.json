@@ -3746,14 +3746,9 @@
       },
       {
         "name": "Unreal Engine Version Upgrades",
-        "desc": "the project moved through successive UE5 versions (5.3 → 5.5 → 5.5.4) to fix technical/material issues and unlock new features; UE5.5 specifically brought Mega Lighting, reducing the ~200 manually placed lights needed in Calido City for realistic bounce lighting. (CC116, CC128) Confirmed currently on Unreal Engine 5.6, targeting UE5.9 within roughly 7-8 months -- the version Epic has indicated will be the final UE5 release before UE6, meaning all of Epic's building tools will have graduated out of experimental/beta by then. (CR158)",
+        "desc": "the project moved through successive UE5 versions (5.3 → 5.5 → 5.5.4) to fix technical/material issues and unlock new features; UE5.5 specifically brought Mega Lighting, reducing the ~200 manually placed lights needed in Calido City for realistic bounce lighting. (CC116, CC128)",
         "status": "Complete",
-        "citationLinks": {
-          "CR158": {
-            "url": null,
-            "verified": false
-          }
-        }
+        "citationLinks": {}
       },
       {
         "name": "FSR (AMD Upscaling) Support",
@@ -3994,6 +3989,17 @@
         "name": "Hidden Lore Poem (Observation Tower)",
         "desc": "a poem revealed while riding the megadome observation tower down, containing hints of hidden world lore, shown during a live demo. (CC52)",
         "status": "Complete"
+      },
+      {
+        "name": "UE5.9 Upgrade Target",
+        "desc": "Confirmed currently on Unreal Engine 5.6, targeting UE5.9 within roughly 7-8 months -- the version Epic has indicated will be the final UE5 release before UE6, meaning all of Epic's building tools will have graduated out of experimental/beta by then. (CR158)",
+        "status": "WIP",
+        "citationLinks": {
+          "CR158": {
+            "url": null,
+            "verified": false
+          }
+        }
       }
     ]
   }
