@@ -94,6 +94,17 @@
   }
   .nav-link:hover,.nav-link:focus-visible{color:var(--gold-bright);border-color:var(--gold);background:rgba(217,164,65,0.1);}
   .nav-link.current{color:var(--text);border-color:var(--dim);}
+
+  /* ---------- nft mode tabs (solo / bundles) ---------- */
+  .nft-mode-tabs{display:flex;gap:8px;margin:0 0 18px;}
+  .nft-mode-tab{
+    font-family:var(--font-display);font-weight:600;font-size:12px;letter-spacing:0.1em;
+    text-transform:uppercase;color:var(--dim);background:transparent;cursor:pointer;
+    border:1px solid var(--line);padding:9px 18px;border-radius:6px;
+    transition:border-color 0.15s ease,color 0.15s ease,background 0.15s ease;
+  }
+  .nft-mode-tab:hover{color:var(--gold-bright);border-color:var(--gold);}
+  .nft-mode-tab.active{color:var(--text);border-color:var(--gold);background:rgba(217,164,65,0.1);}
   @media (max-width:760px){
     header{flex-direction:column;align-items:stretch;gap:14px;}
     nav.site-nav{justify-content:center;flex-wrap:wrap;}
@@ -314,7 +325,12 @@
   </div>
   <div class="recent-mints-ticker" id="nftRecentMintsTicker"></div>
   <div class="top-mints-panel" id="nftTopMintsHeader"></div>
+  <div class="nft-mode-tabs">
+    <button type="button" class="nft-mode-tab active" id="nftTabSolo" onclick="setNftMode('solo')">Solo Items</button>
+    <button type="button" class="nft-mode-tab" id="nftTabBundles" onclick="setNftMode('bundles')">Bundles</button>
+  </div>
   <div id="nftCardsContainer"></div>
+  <div id="nftBundleContainer" style="display:none;"></div>
   <div class="empty-state" id="nftEmptyState">
     <div class="big">No collection data yet</div>
     <div class="small">Run <code>python export_nft_json.py</code> to generate <code>NFT_Data/nft_data.json</code> from <code>NFT_Ledger.db</code> &mdash; cards populate automatically once it's present, sorted by most recent mint.</div>
@@ -442,30 +458,55 @@ function renderNftPage(){
   if (NFT_ITEMS.length === 0){
     document.getElementById('nftEmptyState').style.display = '';
     document.getElementById('nftCardsContainer').innerHTML = '';
+    document.getElementById('nftBundleContainer').innerHTML = '';
     return;
   }
   document.getElementById('nftEmptyState').style.display = 'none';
 
   renderTopMintsHeader(NFT_ITEMS);
 
-  const container = document.getElementById('nftCardsContainer');
+  const soloContainer = document.getElementById('nftCardsContainer');
+  const bundleContainer = document.getElementById('nftBundleContainer');
   const rendered = new Set();
-  const blocks = [];
+  const soloBlocks = [];
+  const bundleBlocks = [];
   NFT_ITEMS.forEach(it => {
     if (rendered.has(it.key)) return;
     if (it.bundle){
       const members = NFT_ITEMS.filter(x => x.bundle === it.bundle);
       members.forEach(m => rendered.add(m.key));
-      blocks.push(bundleCardHtml(it.bundle, members));
+      bundleBlocks.push(bundleCardHtml(it.bundle, members));
+      // Not exclusive to the bundle AND actually live for solo sale right
+      // now -- otherwise the only real way to get it is via the bundle,
+      // and a standalone "Mint Now" card would be misleading.
+      members.filter(m => m.bundle_exclusive === false && m.solo_sale).forEach(m => {
+        soloBlocks.push(cardHtml(m.key));
+      });
     } else {
       rendered.add(it.key);
-      blocks.push(cardHtml(it.key));
+      soloBlocks.push(cardHtml(it.key));
     }
   });
-  container.innerHTML = blocks.join('');
+  soloContainer.innerHTML = soloBlocks.join('');
+  bundleContainer.innerHTML = bundleBlocks.join('');
 
-  NFT_ITEMS.forEach(renderNftCard);
+  NFT_ITEMS.forEach(item => {
+    if (!item.bundle || (item.bundle_exclusive === false && item.solo_sale)){
+      renderNftCard(item, item.key);
+    }
+    if (item.bundle){
+      renderNftCard(item, (item.bundle_exclusive === false && item.solo_sale) ? `${item.key}--bundle` : item.key);
+    }
+  });
   Object.keys(BUNDLE_SUMMARIES).forEach(renderBundleSummary);
+}
+
+function setNftMode(mode){
+  const solo = mode !== 'bundles';
+  document.getElementById('nftCardsContainer').style.display = solo ? '' : 'none';
+  document.getElementById('nftBundleContainer').style.display = solo ? 'none' : '';
+  document.getElementById('nftTabSolo').classList.toggle('active', solo);
+  document.getElementById('nftTabBundles').classList.toggle('active', !solo);
 }
 
 function bundleSummaryHtml(bundleName){
@@ -530,16 +571,16 @@ function renderBundleSummary(bundleName){
   }
 }
 
-function bundleMemberCardHtml(key){
+function bundleMemberCardHtml(key, domKey){
   return `
-  <div class="bundle-member-block" id="cardblock-${key}">
+  <div class="bundle-member-block" id="cardblock-${domKey}">
     <div class="bundle-member-layout">
       <div class="bundle-member-image-col">
         <div class="bundle-member-title-row">
-          <span class="bundle-member-title" id="title-${key}">Loading&hellip;</span>
+          <span class="bundle-member-title" id="title-${domKey}">Loading&hellip;</span>
         </div>
-        <img id="img-${key}" class="meter-rarity-img-large" style="display:none;" alt="Highest-rarity mint so far">
-        <div id="imgEmpty-${key}" class="meter-rarity-img-empty">No image captured yet</div>
+        <img id="img-${domKey}" class="meter-rarity-img-large" style="display:none;" alt="Highest-rarity mint so far">
+        <div id="imgEmpty-${domKey}" class="meter-rarity-img-empty">No image captured yet</div>
       </div>
       <div class="bundle-member-gauge-col">
         <div class="bundle-col-label">Optimal Chain for Minting</div>
@@ -547,16 +588,16 @@ function bundleMemberCardHtml(key){
           <text x="20" y="24" class="meter-chain-label left" fill="var(--ada-chain)">ADA</text>
           <text x="280" y="24" class="meter-chain-label right" fill="var(--base-chain)" text-anchor="end">BASE</text>
           <path d="M 30 150 A 120 120 0 0 1 270 150" fill="none" stroke="var(--line)" stroke-width="14" stroke-linecap="round"/>
-          <path id="arc-${key}" d="M 30 150 A 120 120 0 0 1 270 150" fill="none" stroke="var(--dimmer)" stroke-width="14" stroke-linecap="round" stroke-dasharray="377" stroke-dashoffset="377"/>
-          <line id="needle-${key}" x1="150" y1="150" x2="150" y2="45" stroke="var(--text)" stroke-width="3" stroke-linecap="round" transform="rotate(0 150 150)"/>
+          <path id="arc-${domKey}" d="M 30 150 A 120 120 0 0 1 270 150" fill="none" stroke="var(--dimmer)" stroke-width="14" stroke-linecap="round" stroke-dasharray="377" stroke-dashoffset="377"/>
+          <line id="needle-${domKey}" x1="150" y1="150" x2="150" y2="45" stroke="var(--text)" stroke-width="3" stroke-linecap="round" transform="rotate(0 150 150)"/>
           <circle cx="150" cy="150" r="7" fill="var(--text)"/>
         </svg>
-        <div class="meter-verdict" id="verdict-${key}">Loading&hellip;</div>
+        <div class="meter-verdict" id="verdict-${domKey}">Loading&hellip;</div>
       </div>
-      <div class="nft-stat-grid" id="statgrid-${key}"></div>
+      <div class="nft-stat-grid" id="statgrid-${domKey}"></div>
       <div class="bundle-member-odds-col">
         <div class="bundle-col-label">Odds Breakdown</div>
-        <div class="odds-breakdown-body" id="oddsbreak-${key}"></div>
+        <div class="odds-breakdown-body" id="oddsbreak-${domKey}"></div>
       </div>
     </div>
   </div>`;
@@ -566,7 +607,7 @@ function bundleCardHtml(bundleName, members){
   return `
   ${bundleSummaryHtml(bundleName)}
   <div class="bundle-group-box">
-    ${members.map(m => bundleMemberCardHtml(m.key)).join('')}
+    ${members.map(m => bundleMemberCardHtml(m.key, (m.bundle_exclusive === false && m.solo_sale) ? `${m.key}--bundle` : m.key)).join('')}
   </div>`;
 }
 
@@ -712,13 +753,13 @@ function ipfsToHttp(url, gatewayIndex){
   return url ? 'NFT_Data/' + url : url;
 }
 
-function renderNftCard(item){
-  const key = item.key;
+function renderNftCard(item, domKey){
+  const key = domKey;
   document.getElementById(`title-${key}`).textContent = item.name;
 
   const mintNowEl = document.getElementById(`mintnow-${key}`);
   if (mintNowEl){
-    const storeUrl = ITEM_URLS[key];
+    const storeUrl = ITEM_URLS[item.key];
     if (storeUrl){
       mintNowEl.href = affiliateUrl(storeUrl);
       mintNowEl.style.display = '';
@@ -748,11 +789,11 @@ function renderNftCard(item){
     imgEmptyEl.style.display = 'flex';
   }
 
-  renderNftMeter(item);
+  renderNftMeter(item, domKey);
 }
 
-function renderNftMeter(item){
-  const key = item.key;
+function renderNftMeter(item, domKey){
+  const key = domKey;
   const { score, angle, arc_pct } = item.needle;
 
   document.getElementById(`needle-${key}`).setAttribute('transform', `rotate(${angle} 150 150)`);
@@ -822,6 +863,7 @@ function escapeHtml(str){
 }
 
 function scrollToNftCard(target){
+  setNftMode(target.isBundle || target.inBundle ? 'bundles' : 'solo');
   const el = document.getElementById(target.isBundle ? `bundleblock-${target.bundleId}` : `cardblock-${target.key}`);
   if (!el) return;
   el.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -840,7 +882,7 @@ function initNftSearch(){
   function buildSearchCorpus(){
     // Individual items, plus one entry per unique bundle name (so typing
     // "founders" finds the bundle itself, not just its member items).
-    const items = NFT_ITEMS.map(it => ({ key: it.key, name: it.name, isBundle: false }));
+    const items = NFT_ITEMS.map(it => ({ key: it.key, name: it.name, isBundle: false, inBundle: !!it.bundle && !(it.bundle_exclusive === false && it.solo_sale) }));
     const seenBundles = new Set();
     const bundles = [];
     NFT_ITEMS.forEach(it => {
