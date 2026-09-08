@@ -24,6 +24,7 @@ Usage:
 
 import json
 import re
+import unicodedata
 from pathlib import Path
 
 import yt_dlp
@@ -45,7 +46,7 @@ RECENT_VIDEOS_BATCH = 50  # how many recent uploads to scan per run
 SERIES = [
     {
         "name": "Cafe Rise",
-        "folder": Path("Cafe Rise"),
+        "folder": Path("Cafe_Rise"),
         "filename_template": "Cafe Rise Episode {n}.json",
     },
     {
@@ -170,16 +171,23 @@ def get_next_expected_number(series: dict) -> int:
     return highest + 1
 
 
+def strip_accents(text: str) -> str:
+    """Fold accented characters to their plain ASCII equivalent (e.g. 'Café' -> 'Cafe'),
+    so title matching isn't broken by accent marks the channel adds/drops inconsistently."""
+    normalized = unicodedata.normalize("NFKD", text or "")
+    return "".join(c for c in normalized if not unicodedata.combining(c))
+
+
 def build_title_regex(series_name: str, number: int) -> re.Pattern:
     """Match series name followed by the exact number, as a whole number (not a substring of a larger one)."""
-    name_pattern = re.escape(series_name).replace(r"\ ", r"\s+")
+    name_pattern = re.escape(strip_accents(series_name)).replace(r"\ ", r"\s+")
     return re.compile(rf"\b{name_pattern}\D*\b0*{number}\b", re.IGNORECASE)
 
 
 def find_matching_video(recent_videos: list[dict], series_name: str, number: int) -> dict | None:
     pattern = build_title_regex(series_name, number)
     for entry in recent_videos:
-        title = entry.get("title") or ""
+        title = strip_accents(entry.get("title") or "")
         if pattern.search(title):
             return entry
     return None
