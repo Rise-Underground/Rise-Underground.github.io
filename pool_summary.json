@@ -35024,9 +35024,9 @@
       "lp_removes": 0,
       "lp_flow_unit": "LP_TOKEN",
       "buy_volume_usd": 0.0,
-      "sell_volume_usd": 222.31,
-      "closing_price_usd": 0.00148939,
-      "quote_usd_price": 2516.0272673347954
+      "sell_volume_usd": 222.01,
+      "closing_price_usd": 0.00148737,
+      "quote_usd_price": 2512.622761293466
     },
     {
       "chain": "Base",
@@ -35044,10 +35044,10 @@
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "LP_TOKEN",
-      "buy_volume_usd": 214.78,
-      "sell_volume_usd": 1658.99,
-      "closing_price_usd": 0.00148317,
-      "quote_usd_price": 2516.0272673347954
+      "buy_volume_usd": 214.49,
+      "sell_volume_usd": 1656.74,
+      "closing_price_usd": 0.00148117,
+      "quote_usd_price": 2512.622761293466
     },
     {
       "chain": "Cardano",
@@ -35066,9 +35066,9 @@
       "lp_removes": 0,
       "lp_flow_unit": "RISE",
       "buy_volume_usd": 0.0,
-      "sell_volume_usd": 2.25,
-      "closing_price_usd": 0.00149592,
-      "quote_usd_price": 0.2221579719949372
+      "sell_volume_usd": 2.24,
+      "closing_price_usd": 0.00148823,
+      "quote_usd_price": 0.2210160006655661
     },
     {
       "chain": "Cardano",
@@ -35087,9 +35087,9 @@
       "lp_removes": 1,
       "lp_flow_unit": "RISE",
       "buy_volume_usd": 0.0,
-      "sell_volume_usd": 228.46,
-      "closing_price_usd": 0.00149465,
-      "quote_usd_price": 0.2221579719949372
+      "sell_volume_usd": 227.29,
+      "closing_price_usd": 0.00148697,
+      "quote_usd_price": 0.2210160006655661
     },
     {
       "chain": "Cardano",
@@ -35110,7 +35110,7 @@
       "buy_volume_usd": null,
       "sell_volume_usd": null,
       "closing_price_usd": null,
-      "quote_usd_price": 0.2221579719949372
+      "quote_usd_price": 0.2210160006655661
     },
     {
       "chain": "Cardano",
@@ -35131,7 +35131,7 @@
       "buy_volume_usd": null,
       "sell_volume_usd": null,
       "closing_price_usd": null,
-      "quote_usd_price": 0.2221579719949372
+      "quote_usd_price": 0.2210160006655661
     }
   ],
   "reserve_daily_summary": [
@@ -44922,8 +44922,8 @@
       "chain": "Base",
       "pool_name": "Pool 1 (Uniswap V2 Clone)",
       "date": "2026-09-09",
-      "rise_balance": 20416999.664581,
-      "other_balance": 12.033791,
+      "rise_balance": 20415003.191497,
+      "other_balance": 12.034972,
       "other_asset": "WETH",
       "price": 1e-06
     },
