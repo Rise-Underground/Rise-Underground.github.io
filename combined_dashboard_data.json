@@ -1,18 +1,18 @@
 {
-  "generated_at_utc": "2026-09-03T03:00:12.748316+00:00",
-  "notes": "Cardano (COPI+RISE merged) and Base RISE combined into one stake/reward total. Breakdown is by CHAIN only (cardano vs base), never by token. Rewards combine staking/vault rewards AND node rewards into one total per chain. avg_age_days is BASE-ONLY -- Cardano vault stake age is not blended into it. LP staking is kept separate (own axis, LP token counts, not RISE-equivalent).",
+  "generated_at_utc": "2026-09-10T04:48:40.751093+00:00",
+  "notes": "Self-contained: computed directly from rise_ledger.db, no intermediate JSON files. Cardano (COPI+RISE merged) and Base RISE combined into one stake/reward total. Breakdown is by CHAIN only, never by token. Rewards combine staking/vault AND node rewards into one total per chain. avg_age_days is BASE-ONLY. LP staking kept separate. Migration totals from confirmed COPI-in/RISE-out event matching, both chains.",
   "summary": {
-    "final_date": "2026-09-03",
-    "final_cardano_staked": 130551461.28034,
-    "final_base_staked": 172807932.060919,
-    "final_total_staked": 303359393.341259,
-    "final_avg_age_days": 198.3146,
-    "final_cardano_rewards": 32142710.071707,
-    "final_base_rewards": 9292304.708217,
-    "final_total_rewards": 41435014.779924,
+    "final_date": "2026-09-09",
+    "final_cardano_staked": 133441505.39087,
+    "final_base_staked": 171848580.122851,
+    "final_total_staked": 305290085.513721,
+    "final_avg_age_days": 206.2806,
+    "final_cardano_rewards": 32194565.411379,
+    "final_base_rewards": 9467967.450897,
+    "final_total_rewards": 41662532.862276,
     "final_cardano_node_rewards": 25773402.196497,
-    "final_base_node_rewards": 3433301.48,
-    "final_total_node_rewards": 29206703.676497,
+    "final_base_node_rewards": 3544721.95,
+    "final_total_node_rewards": 29318124.146497,
     "lp_staking": {
       "lp_rise_weth_aero": {
         "token_symbol": "vAMM-WETH/RISE",
@@ -22,35 +22,12 @@
       "lp_rise_weth_univ2": {
         "token_symbol": "UNI-V2",
         "dex": "Uniswap V2",
-        "final_balance": 2495.3509166737526
+        "final_balance": 2500.554347459623
       }
     },
-    "estimated_circulating_supply": 1148111907.557261,
-    "migrated_total": 778872746.192547,
-    "migrated_last_7_days": 508743.199088,
-    "migrated_last_30_days": 4769731.080702
-  },
-  "migration": {
-    "base": {
-      "migration_contract": "0xd4ee9f0030e0687d54d4dc6d932f10b7aa8abd1d",
-      "event_count": 1143,
-      "migrated_all_time": 332320456.94341,
-      "migrated_last_7_days": 473988.536,
-      "migrated_last_30_days": 1931992.2294
-    },
-    "cardano": {
-      "migration_wallet": "addr1qy33d7r35yjxafn5hs5d7tx4nncppnuh2fhgpdyvz0yjjzelujvrnhlpvja54h2tsa0r5zvaqtfu8wx8lgeac2xpyd0qmxhz65",
-      "event_count": 2561,
-      "migrated_all_time": 446552289.249137,
-      "migrated_last_7_days": 34754.663088,
-      "migrated_last_30_days": 2837738.851302
-    },
-    "combined": {
-      "event_count": 3704,
-      "migrated_all_time": 778872746.192547,
-      "migrated_last_7_days": 508743.199088,
-      "migrated_last_30_days": 4769731.080702
-    }
+    "migrated_total": 781288726.197492,
+    "migrated_last_7_days": 2415980.004944,
+    "migrated_last_30_days": 4463483.636604
   },
   "stake_days": [
     {
@@ -7050,14 +7027,14 @@
       "date": "2025-11-26",
       "cardano_staked": 168982682.47337,
       "base_staked": 99481948.613436,
-      "total_staked": 268464631.086807,
+      "total_staked": 268464631.086806,
       "avg_age_days": 11.3652
     },
     {
       "date": "2025-11-27",
       "cardano_staked": 169383449.348867,
       "base_staked": 99617348.613436,
-      "total_staked": 269000797.962304,
+      "total_staked": 269000797.962303,
       "avg_age_days": 12.3486
     },
     {
@@ -7190,21 +7167,21 @@
       "date": "2025-12-16",
       "cardano_staked": 172245429.078752,
       "base_staked": 96438450.026021,
-      "total_staked": 268683879.104774,
+      "total_staked": 268683879.104773,
       "avg_age_days": 30.0396
     },
     {
       "date": "2025-12-17",
       "cardano_staked": 173291290.372695,
       "base_staked": 96438450.026021,
-      "total_staked": 269729740.398717,
+      "total_staked": 269729740.398716,
       "avg_age_days": 31.0396
     },
     {
       "date": "2025-12-18",
       "cardano_staked": 173616090.948719,
       "base_staked": 96438450.026021,
-      "total_staked": 270054540.974741,
+      "total_staked": 270054540.97474,
       "avg_age_days": 32.0396
     },
     {
@@ -8205,7 +8182,7 @@
       "date": "2026-05-10",
       "cardano_staked": 125148862.90178,
       "base_staked": 147173712.076513,
-      "total_staked": 272322574.978294,
+      "total_staked": 272322574.978293,
       "avg_age_days": 132.4948
     },
     {
@@ -9011,14 +8988,56 @@
       "cardano_staked": 130745538.939764,
       "base_staked": 172807932.060919,
       "total_staked": 303553471.000683,
-      "avg_age_days": 198.3146
+      "avg_age_days": 199.3146
     },
     {
       "date": "2026-09-03",
-      "cardano_staked": 130551461.28034,
+      "cardano_staked": 131360760.797651,
       "base_staked": 172807932.060919,
-      "total_staked": 303359393.341259,
-      "avg_age_days": 198.3146
+      "total_staked": 304168692.85857,
+      "avg_age_days": 200.3146
+    },
+    {
+      "date": "2026-09-04",
+      "cardano_staked": 131384136.109799,
+      "base_staked": 172807932.060919,
+      "total_staked": 304192068.170718,
+      "avg_age_days": 201.3146
+    },
+    {
+      "date": "2026-09-05",
+      "cardano_staked": 131611035.498497,
+      "base_staked": 172807932.060919,
+      "total_staked": 304418967.559416,
+      "avg_age_days": 202.3146
+    },
+    {
+      "date": "2026-09-06",
+      "cardano_staked": 130707183.246145,
+      "base_staked": 172900688.595733,
+      "total_staked": 303607871.841878,
+      "avg_age_days": 203.2058
+    },
+    {
+      "date": "2026-09-07",
+      "cardano_staked": 131158374.554297,
+      "base_staked": 172991071.430484,
+      "total_staked": 304149445.984781,
+      "avg_age_days": 204.0993
+    },
+    {
+      "date": "2026-09-08",
+      "cardano_staked": 131441537.336995,
+      "base_staked": 172991071.430484,
+      "total_staked": 304432608.767479,
+      "avg_age_days": 205.0993
+    },
+    {
+      "date": "2026-09-09",
+      "cardano_staked": 133441505.39087,
+      "base_staked": 171848580.122851,
+      "total_staked": 305290085.513721,
+      "avg_age_days": 206.2806
     }
   ],
   "reward_days": [
@@ -16946,7 +16965,7 @@
       "date": "2025-11-17",
       "cardano_cumulative": 22437978.158641,
       "base_cumulative": 64034.402648,
-      "daily_claimed": 887550.040924,
+      "daily_claimed": 887550.040925,
       "cumulative_claimed": 22502012.561289,
       "rolling_7day_avg": 511080.580253
     },
@@ -16962,7 +16981,7 @@
       "date": "2025-11-19",
       "cardano_cumulative": 22606458.558601,
       "base_cumulative": 74335.018202,
-      "daily_claimed": 50122.467178,
+      "daily_claimed": 50122.467177,
       "cumulative_claimed": 22680793.576803,
       "rolling_7day_avg": 415655.906064
     },
@@ -16994,8 +17013,8 @@
       "date": "2025-11-23",
       "cardano_cumulative": 23239845.206918,
       "base_cumulative": 87544.671819,
-      "daily_claimed": 105552.962977,
-      "cumulative_claimed": 23327389.878736,
+      "daily_claimed": 105552.962978,
+      "cumulative_claimed": 23327389.878737,
       "rolling_7day_avg": 244703.908339
     },
     {
@@ -17003,14 +17022,14 @@
       "cardano_cumulative": 23256464.877302,
       "base_cumulative": 87544.671819,
       "daily_claimed": 16619.670384,
-      "cumulative_claimed": 23344009.54912,
+      "cumulative_claimed": 23344009.549121,
       "rolling_7day_avg": 120285.283976
     },
     {
       "date": "2025-11-25",
       "cardano_cumulative": 23422594.351349,
       "base_cumulative": 102178.891935,
-      "daily_claimed": 180763.694164,
+      "daily_claimed": 180763.694163,
       "cumulative_claimed": 23524773.243284,
       "rolling_7day_avg": 127728.876237
     },
@@ -17050,7 +17069,7 @@
       "date": "2025-11-30",
       "cardano_cumulative": 23614017.046203,
       "base_cumulative": 115673.132511,
-      "daily_claimed": 36684.690688,
+      "daily_claimed": 36684.690687,
       "cumulative_claimed": 23729690.178714,
       "rolling_7day_avg": 57471.471425
     },
@@ -17058,7 +17077,7 @@
       "date": "2025-12-01",
       "cardano_cumulative": 23627308.142561,
       "base_cumulative": 118375.399407,
-      "daily_claimed": 15993.363253,
+      "daily_claimed": 15993.363254,
       "cumulative_claimed": 23745683.541968,
       "rolling_7day_avg": 57381.998978
     },
@@ -17116,7 +17135,7 @@
       "base_cumulative": 158509.25601,
       "daily_claimed": 22706.535356,
       "cumulative_claimed": 23917774.100611,
-      "rolling_7day_avg": 24584.365521
+      "rolling_7day_avg": 24584.36552
     },
     {
       "date": "2025-12-09",
@@ -17138,7 +17157,7 @@
       "date": "2025-12-11",
       "cardano_cumulative": 24049633.496526,
       "base_cumulative": 158916.751953,
-      "daily_claimed": 78969.40555,
+      "daily_claimed": 78969.405551,
       "cumulative_claimed": 24208550.248479,
       "rolling_7day_avg": 51663.695069
     },
@@ -17146,7 +17165,7 @@
       "date": "2025-12-12",
       "cardano_cumulative": 24111402.395248,
       "base_cumulative": 159300.571954,
-      "daily_claimed": 62152.718724,
+      "daily_claimed": 62152.718723,
       "cumulative_claimed": 24270702.967202,
       "rolling_7day_avg": 57130.868908
     },
@@ -17170,7 +17189,7 @@
       "date": "2025-12-15",
       "cardano_cumulative": 24336371.718731,
       "base_cumulative": 159567.437248,
-      "daily_claimed": 12194.246479,
+      "daily_claimed": 12194.24648,
       "cumulative_claimed": 24495939.155979,
       "rolling_7day_avg": 82595.00791
     },
@@ -17178,7 +17197,7 @@
       "date": "2025-12-16",
       "cardano_cumulative": 24351137.391254,
       "base_cumulative": 159633.698409,
-      "daily_claimed": 14831.933685,
+      "daily_claimed": 14831.933684,
       "cumulative_claimed": 24510771.089663,
       "rolling_7day_avg": 72223.617987
     },
@@ -17202,7 +17221,7 @@
       "date": "2025-12-19",
       "cardano_cumulative": 25515843.243814,
       "base_cumulative": 176480.123276,
-      "daily_claimed": 1117360.177877,
+      "daily_claimed": 1117360.177878,
       "cumulative_claimed": 25692323.36709,
       "rolling_7day_avg": 203088.628555
     },
@@ -17210,7 +17229,7 @@
       "date": "2025-12-20",
       "cardano_cumulative": 25520214.564,
       "base_cumulative": 177559.564924,
-      "daily_claimed": 5450.761835,
+      "daily_claimed": 5450.761834,
       "cumulative_claimed": 25697774.128924,
       "rolling_7day_avg": 173901.718489
     },
@@ -17250,7 +17269,7 @@
       "date": "2025-12-25",
       "cardano_cumulative": 25649624.39136,
       "base_cumulative": 504453.832847,
-      "daily_claimed": 24140.790617,
+      "daily_claimed": 24140.790616,
       "cumulative_claimed": 26154078.224207,
       "rolling_7day_avg": 225587.862142
     },
@@ -17266,7 +17285,7 @@
       "date": "2025-12-27",
       "cardano_cumulative": 25688760.962101,
       "base_cumulative": 522062.142034,
-      "daily_claimed": 26524.159926,
+      "daily_claimed": 26524.159927,
       "cumulative_claimed": 26210823.104135,
       "rolling_7day_avg": 73292.710744
     },
@@ -17338,7 +17357,7 @@
       "date": "2026-01-05",
       "cardano_cumulative": 26036665.270811,
       "base_cumulative": 810508.043232,
-      "daily_claimed": 27876.752608,
+      "daily_claimed": 27876.752607,
       "cumulative_claimed": 26847173.314043,
       "rolling_7day_avg": 82515.464455
     },
@@ -17346,7 +17365,7 @@
       "date": "2026-01-06",
       "cardano_cumulative": 26041778.993652,
       "base_cumulative": 888808.531817,
-      "daily_claimed": 83414.211425,
+      "daily_claimed": 83414.211426,
       "cumulative_claimed": 26930587.525469,
       "rolling_7day_avg": 71144.705936
     },
@@ -17410,7 +17429,7 @@
       "date": "2026-01-14",
       "cardano_cumulative": 26106177.951804,
       "base_cumulative": 1392193.043067,
-      "daily_claimed": 481414.455232,
+      "daily_claimed": 481414.455231,
       "cumulative_claimed": 27498370.994871,
       "rolling_7day_avg": 77593.386889
     },
@@ -17490,7 +17509,7 @@
       "date": "2026-01-24",
       "cardano_cumulative": 26279578.066371,
       "base_cumulative": 1624100.805775,
-      "daily_claimed": 30140.606707,
+      "daily_claimed": 30140.606708,
       "cumulative_claimed": 27903678.872146,
       "rolling_7day_avg": 56402.599131
     },
@@ -17499,14 +17518,14 @@
       "cardano_cumulative": 26308075.723157,
       "base_cumulative": 1635445.21243,
       "daily_claimed": 39842.063441,
-      "cumulative_claimed": 27943520.935586,
+      "cumulative_claimed": 27943520.935587,
       "rolling_7day_avg": 62072.974215
     },
     {
       "date": "2026-01-26",
       "cardano_cumulative": 26380531.68066,
       "base_cumulative": 1698783.803646,
-      "daily_claimed": 135794.54872,
+      "daily_claimed": 135794.548719,
       "cumulative_claimed": 28079315.484306,
       "rolling_7day_avg": 81216.925776
     },
@@ -17522,7 +17541,7 @@
       "date": "2026-01-28",
       "cardano_cumulative": 26449338.192288,
       "base_cumulative": 1720708.900059,
-      "daily_claimed": 28861.456973,
+      "daily_claimed": 28861.456974,
       "cumulative_claimed": 28170047.092347,
       "rolling_7day_avg": 62533.389256
     },
@@ -17562,7 +17581,7 @@
       "date": "2026-02-02",
       "cardano_cumulative": 26514548.376292,
       "base_cumulative": 2125396.7126,
-      "daily_claimed": 145022.897264,
+      "daily_claimed": 145022.897263,
       "cumulative_claimed": 28639945.088892,
       "rolling_7day_avg": 80089.943512
     },
@@ -17722,7 +17741,7 @@
       "date": "2026-02-22",
       "cardano_cumulative": 27366048.265021,
       "base_cumulative": 2584787.605922,
-      "daily_claimed": 67832.427575,
+      "daily_claimed": 67832.427576,
       "cumulative_claimed": 29950835.870943,
       "rolling_7day_avg": 35319.665672
     },
@@ -17763,8 +17782,8 @@
       "cardano_cumulative": 27398643.558039,
       "base_cumulative": 2724155.527174,
       "daily_claimed": 42519.41357,
-      "cumulative_claimed": 30122799.085212,
-      "rolling_7day_avg": 40421.192183
+      "cumulative_claimed": 30122799.085213,
+      "rolling_7day_avg": 40421.192184
     },
     {
       "date": "2026-02-28",
@@ -17850,7 +17869,7 @@
       "date": "2026-03-10",
       "cardano_cumulative": 27632278.132353,
       "base_cumulative": 3353160.893367,
-      "daily_claimed": 140385.751888,
+      "daily_claimed": 140385.751889,
       "cumulative_claimed": 30985439.02572,
       "rolling_7day_avg": 43837.422472
     },
@@ -17932,13 +17951,13 @@
       "base_cumulative": 3603297.989083,
       "daily_claimed": 2576.849236,
       "cumulative_claimed": 31523599.183097,
-      "rolling_7day_avg": 62483.975945
+      "rolling_7day_avg": 62483.975946
     },
     {
       "date": "2026-03-21",
       "cardano_cumulative": 27939901.194014,
       "base_cumulative": 3621355.789555,
-      "daily_claimed": 37657.800473,
+      "daily_claimed": 37657.800472,
       "cumulative_claimed": 31561256.983569,
       "rolling_7day_avg": 57550.773663
     },
@@ -18010,7 +18029,7 @@
       "date": "2026-03-30",
       "cardano_cumulative": 28432166.420371,
       "base_cumulative": 3923536.379953,
-      "daily_claimed": 99032.1968,
+      "daily_claimed": 99032.196799,
       "cumulative_claimed": 32355702.800324,
       "rolling_7day_avg": 78963.835927
     },
@@ -18098,7 +18117,7 @@
       "date": "2026-04-10",
       "cardano_cumulative": 28717867.421433,
       "base_cumulative": 4159500.429765,
-      "daily_claimed": 32492.429698,
+      "daily_claimed": 32492.429699,
       "cumulative_claimed": 32877367.851198,
       "rolling_7day_avg": 38336.811098
     },
@@ -18130,7 +18149,7 @@
       "date": "2026-04-14",
       "cardano_cumulative": 28802482.059754,
       "base_cumulative": 4258550.338951,
-      "daily_claimed": 84167.044356,
+      "daily_claimed": 84167.044355,
       "cumulative_claimed": 33061032.398705,
       "rolling_7day_avg": 37028.2499
     },
@@ -18356,7 +18375,7 @@
       "base_cumulative": 5287843.48168,
       "daily_claimed": 200477.551165,
       "cumulative_claimed": 35069505.865355,
-      "rolling_7day_avg": 59797.453897
+      "rolling_7day_avg": 59797.453896
     },
     {
       "date": "2026-05-13",
@@ -18442,7 +18461,7 @@
       "date": "2026-05-23",
       "cardano_cumulative": 29940953.272947,
       "base_cumulative": 5622544.998074,
-      "daily_claimed": 44850.380703,
+      "daily_claimed": 44850.380704,
       "cumulative_claimed": 35563498.271021,
       "rolling_7day_avg": 33442.921045
     },
@@ -18458,7 +18477,7 @@
       "date": "2026-05-25",
       "cardano_cumulative": 29951734.973281,
       "base_cumulative": 5881150.807846,
-      "daily_claimed": 217162.9425,
+      "daily_claimed": 217162.942501,
       "cumulative_claimed": 35832885.781127,
       "rolling_7day_avg": 68810.631722
     },
@@ -18466,7 +18485,7 @@
       "date": "2026-05-26",
       "cardano_cumulative": 30010047.756924,
       "base_cumulative": 5961355.874182,
-      "daily_claimed": 138517.84998,
+      "daily_claimed": 138517.849979,
       "cumulative_claimed": 35971403.631106,
       "rolling_7day_avg": 85392.656667
     },
@@ -18490,7 +18509,7 @@
       "date": "2026-05-29",
       "cardano_cumulative": 30176594.169053,
       "base_cumulative": 6006777.067634,
-      "daily_claimed": 169243.938241,
+      "daily_claimed": 169243.938242,
       "cumulative_claimed": 36183371.236687,
       "rolling_7day_avg": 94960.478053
     },
@@ -18498,7 +18517,7 @@
       "date": "2026-05-30",
       "cardano_cumulative": 30201662.439053,
       "base_cumulative": 6010522.113811,
-      "daily_claimed": 28813.316178,
+      "daily_claimed": 28813.316177,
       "cumulative_claimed": 36212184.552864,
       "rolling_7day_avg": 92669.468835
     },
@@ -18530,7 +18549,7 @@
       "date": "2026-06-03",
       "cardano_cumulative": 30359457.790902,
       "base_cumulative": 6190797.490965,
-      "daily_claimed": 44926.295904,
+      "daily_claimed": 44926.295905,
       "cumulative_claimed": 36550255.281867,
       "rolling_7day_avg": 82040.286328
     },
@@ -18546,7 +18565,7 @@
       "date": "2026-06-05",
       "cardano_cumulative": 30455126.984662,
       "base_cumulative": 6203938.702087,
-      "daily_claimed": 54482.733749,
+      "daily_claimed": 54482.733748,
       "cumulative_claimed": 36659065.686749,
       "rolling_7day_avg": 67956.350009
     },
@@ -18586,7 +18605,7 @@
       "date": "2026-06-10",
       "cardano_cumulative": 30482660.624973,
       "base_cumulative": 6307512.403091,
-      "daily_claimed": 77666.991157,
+      "daily_claimed": 77666.991158,
       "cumulative_claimed": 36790173.028064,
       "rolling_7day_avg": 34273.963742
     },
@@ -18602,7 +18621,7 @@
       "date": "2026-06-12",
       "cardano_cumulative": 30527805.124299,
       "base_cumulative": 6401951.530124,
-      "daily_claimed": 84814.471802,
+      "daily_claimed": 84814.471801,
       "cumulative_claimed": 36929756.654423,
       "rolling_7day_avg": 38670.138239
     },
@@ -18610,9 +18629,9 @@
       "date": "2026-06-13",
       "cardano_cumulative": 30529911.65545,
       "base_cumulative": 6407107.514245,
-      "daily_claimed": 7262.515271,
+      "daily_claimed": 7262.515272,
       "cumulative_claimed": 36937019.169695,
-      "rolling_7day_avg": 38654.05502
+      "rolling_7day_avg": 38654.055021
     },
     {
       "date": "2026-06-14",
@@ -18650,7 +18669,7 @@
       "date": "2026-06-18",
       "cardano_cumulative": 30546119.217925,
       "base_cumulative": 6519784.939623,
-      "daily_claimed": 8784.719944,
+      "daily_claimed": 8784.719945,
       "cumulative_claimed": 37065904.157548,
       "rolling_7day_avg": 31565.996418
     },
@@ -18658,7 +18677,7 @@
       "date": "2026-06-19",
       "cardano_cumulative": 30546119.217925,
       "base_cumulative": 6521777.688462,
-      "daily_claimed": 1992.74884,
+      "daily_claimed": 1992.748839,
       "cumulative_claimed": 37067896.906387,
       "rolling_7day_avg": 19734.321709
     },
@@ -18674,7 +18693,7 @@
       "date": "2026-06-21",
       "cardano_cumulative": 30632021.477925,
       "base_cumulative": 6558372.359619,
-      "daily_claimed": 26130.030031,
+      "daily_claimed": 26130.030032,
       "cumulative_claimed": 37190393.837544,
       "rolling_7day_avg": 29702.992778
     },
@@ -18692,7 +18711,7 @@
       "base_cumulative": 6564774.051589,
       "daily_claimed": 30384.925305,
       "cumulative_claimed": 37245542.129514,
-      "rolling_7day_avg": 27203.731701
+      "rolling_7day_avg": 27203.731702
     },
     {
       "date": "2026-06-24",
@@ -18714,7 +18733,7 @@
       "date": "2026-06-26",
       "cardano_cumulative": 30759883.193721,
       "base_cumulative": 6649752.254272,
-      "daily_claimed": 129710.702405,
+      "daily_claimed": 129710.702404,
       "cumulative_claimed": 37409635.447993,
       "rolling_7day_avg": 48819.791658
     },
@@ -18722,7 +18741,7 @@
       "date": "2026-06-27",
       "cardano_cumulative": 30850537.414566,
       "base_cumulative": 6841708.024312,
-      "daily_claimed": 282609.990884,
+      "daily_claimed": 282609.990885,
       "cumulative_claimed": 37692245.438878,
       "rolling_7day_avg": 75425.947338
     },
@@ -18778,7 +18797,7 @@
       "date": "2026-07-04",
       "cardano_cumulative": 31091632.090308,
       "base_cumulative": 7091907.539097,
-      "daily_claimed": 56231.794918,
+      "daily_claimed": 56231.794919,
       "cumulative_claimed": 38183539.629405,
       "rolling_7day_avg": 70184.884361
     },
@@ -18906,7 +18925,7 @@
       "date": "2026-07-20",
       "cardano_cumulative": 31533947.159779,
       "base_cumulative": 7548866.137934,
-      "daily_claimed": 162743.136141,
+      "daily_claimed": 162743.13614,
       "cumulative_claimed": 39082813.297713,
       "rolling_7day_avg": 43419.891905
     },
@@ -18938,7 +18957,7 @@
       "date": "2026-07-24",
       "cardano_cumulative": 31634154.981269,
       "base_cumulative": 7609895.087569,
-      "daily_claimed": 13403.837806,
+      "daily_claimed": 13403.837807,
       "cumulative_claimed": 39244050.068838,
       "rolling_7day_avg": 57168.477906
     },
@@ -18946,7 +18965,7 @@
       "date": "2026-07-25",
       "cardano_cumulative": 31635086.454451,
       "base_cumulative": 7707534.689748,
-      "daily_claimed": 98571.075362,
+      "daily_claimed": 98571.075361,
       "cumulative_claimed": 39342621.144199,
       "rolling_7day_avg": 66745.426652
     },
@@ -19010,7 +19029,7 @@
       "date": "2026-08-02",
       "cardano_cumulative": 31735291.611025,
       "base_cumulative": 8130805.233771,
-      "daily_claimed": 113762.654143,
+      "daily_claimed": 113762.654142,
       "cumulative_claimed": 39866096.844796,
       "rolling_7day_avg": 52892.969552
     },
@@ -19042,15 +19061,15 @@
       "date": "2026-08-06",
       "cardano_cumulative": 32105741.825352,
       "base_cumulative": 8188362.454455,
-      "daily_claimed": 46486.759763,
+      "daily_claimed": 46486.759764,
       "cumulative_claimed": 40294104.279807,
-      "rolling_7day_avg": 92631.338166
+      "rolling_7day_avg": 92631.338167
     },
     {
       "date": "2026-08-07",
       "cardano_cumulative": 32105741.825352,
       "base_cumulative": 8216143.37267,
-      "daily_claimed": 27780.918216,
+      "daily_claimed": 27780.918215,
       "cumulative_claimed": 40321885.198022,
       "rolling_7day_avg": 89385.997712
     },
@@ -19074,7 +19093,7 @@
       "date": "2026-08-10",
       "cardano_cumulative": 32110931.564866,
       "base_cumulative": 8269300.868255,
-      "daily_claimed": 52643.865098,
+      "daily_claimed": 52643.865099,
       "cumulative_claimed": 40380232.433121,
       "rolling_7day_avg": 71866.446772
     },
@@ -19098,7 +19117,7 @@
       "date": "2026-08-13",
       "cardano_cumulative": 32110931.564866,
       "base_cumulative": 8275895.736652,
-      "daily_claimed": 1601.318398,
+      "daily_claimed": 1601.318397,
       "cumulative_claimed": 40386827.301518,
       "rolling_7day_avg": 13246.145959
     },
@@ -19130,7 +19149,7 @@
       "date": "2026-08-17",
       "cardano_cumulative": 32115911.184657,
       "base_cumulative": 8460837.961553,
-      "daily_claimed": 122934.224776,
+      "daily_claimed": 122934.224777,
       "cumulative_claimed": 40576749.14621,
       "rolling_7day_avg": 28073.816156
     },
@@ -19154,7 +19173,7 @@
       "date": "2026-08-20",
       "cardano_cumulative": 32115911.184657,
       "base_cumulative": 8758207.223435,
-      "daily_claimed": 26435.49586,
+      "daily_claimed": 26435.495859,
       "cumulative_claimed": 40874118.408092,
       "rolling_7day_avg": 69613.015225
     },
@@ -19162,7 +19181,7 @@
       "date": "2026-08-21",
       "cardano_cumulative": 32115911.184657,
       "base_cumulative": 8760605.960978,
-      "daily_claimed": 2398.737542,
+      "daily_claimed": 2398.737543,
       "cumulative_claimed": 40876517.145635,
       "rolling_7day_avg": 69682.561268
     },
@@ -19196,7 +19215,7 @@
       "base_cumulative": 8915138.014124,
       "daily_claimed": 83314.03972,
       "cumulative_claimed": 41044311.392665,
-      "rolling_7day_avg": 66794.606637
+      "rolling_7day_avg": 66794.606636
     },
     {
       "date": "2026-08-26",
@@ -19226,7 +19245,7 @@
       "date": "2026-08-29",
       "cardano_cumulative": 32137616.762849,
       "base_cumulative": 9209011.200827,
-      "daily_claimed": 31082.145973,
+      "daily_claimed": 31082.145972,
       "cumulative_claimed": 41346627.963676,
       "rolling_7day_avg": 61985.072247
     },
@@ -19234,7 +19253,7 @@
       "date": "2026-08-30",
       "cardano_cumulative": 32137616.762849,
       "base_cumulative": 9214715.336493,
-      "daily_claimed": 5704.135665,
+      "daily_claimed": 5704.135666,
       "cumulative_claimed": 41352332.099342,
       "rolling_7day_avg": 62686.048623
     },
@@ -19265,10 +19284,66 @@
     {
       "date": "2026-09-03",
       "cardano_cumulative": 32142710.071707,
-      "base_cumulative": 9292304.708217,
-      "daily_claimed": 4558.15882,
-      "cumulative_claimed": 41435014.779924,
-      "rolling_7day_avg": 25532.534496
+      "base_cumulative": 9348041.100096,
+      "daily_claimed": 60294.550699,
+      "cumulative_claimed": 41490751.171803,
+      "rolling_7day_avg": 33494.876193
+    },
+    {
+      "date": "2026-09-04",
+      "cardano_cumulative": 32156085.383855,
+      "base_cumulative": 9348154.874917,
+      "daily_claimed": 13489.086969,
+      "cumulative_claimed": 41504240.258772,
+      "rolling_7day_avg": 26956.348724
+    },
+    {
+      "date": "2026-09-05",
+      "cardano_cumulative": 32156101.573726,
+      "base_cumulative": 9349376.747327,
+      "daily_claimed": 1238.062281,
+      "cumulative_claimed": 41505478.321053,
+      "rolling_7day_avg": 22692.908197
+    },
+    {
+      "date": "2026-09-06",
+      "cardano_cumulative": 32169720.972601,
+      "base_cumulative": 9449333.217471,
+      "daily_claimed": 113575.869019,
+      "cumulative_claimed": 41619054.190072,
+      "rolling_7day_avg": 38103.155819
+    },
+    {
+      "date": "2026-09-07",
+      "cardano_cumulative": 32169720.972601,
+      "base_cumulative": 9461364.936387,
+      "daily_claimed": 12031.718916,
+      "cumulative_claimed": 41631085.908988,
+      "rolling_7day_avg": 39564.388301
+    },
+    {
+      "date": "2026-09-08",
+      "cardano_cumulative": 32170599.309792,
+      "base_cumulative": 9461607.085159,
+      "daily_claimed": 1120.485963,
+      "cumulative_claimed": 41632206.394951,
+      "rolling_7day_avg": 30902.543765
+    },
+    {
+      "date": "2026-09-09",
+      "cardano_cumulative": 32194565.411379,
+      "base_cumulative": 9467724.371076,
+      "daily_claimed": 30083.387504,
+      "cumulative_claimed": 41662289.782455,
+      "rolling_7day_avg": 33119.02305
+    },
+    {
+      "date": "2026-09-10",
+      "cardano_cumulative": 32194565.411379,
+      "base_cumulative": 9467967.450897,
+      "daily_claimed": 243.079821,
+      "cumulative_claimed": 41662532.862276,
+      "rolling_7day_avg": 24540.241496
     }
   ],
   "lp_staking": {
@@ -21017,8 +21092,8 @@
       "dex": "Uniswap V2",
       "chain": "base",
       "first_day": "2026-03-02",
-      "last_day": "2026-09-01",
-      "final_cumulative_balance": 2495.3509166737526,
+      "last_day": "2026-09-09",
+      "final_cumulative_balance": 2500.554347459623,
       "days": [
         {
           "date": "2026-03-02",
@@ -22123,8 +22198,78 @@
           "daily_net_flow": 5.825176,
           "rolling_7day_avg": 0.832168,
           "cumulative_balance": 2495.350917
+        },
+        {
+          "date": "2026-09-02",
+          "daily_net_flow": 0.0,
+          "rolling_7day_avg": 0.832168,
+          "cumulative_balance": 2495.350917
+        },
+        {
+          "date": "2026-09-03",
+          "daily_net_flow": 0.0,
+          "rolling_7day_avg": 0.832168,
+          "cumulative_balance": 2495.350917
+        },
+        {
+          "date": "2026-09-04",
+          "daily_net_flow": 0.0,
+          "rolling_7day_avg": 0.832168,
+          "cumulative_balance": 2495.350917
+        },
+        {
+          "date": "2026-09-05",
+          "daily_net_flow": 2.620715,
+          "rolling_7day_avg": 1.206556,
+          "cumulative_balance": 2497.971632
+        },
+        {
+          "date": "2026-09-06",
+          "daily_net_flow": 0.0,
+          "rolling_7day_avg": 1.206556,
+          "cumulative_balance": 2497.971632
+        },
+        {
+          "date": "2026-09-07",
+          "daily_net_flow": 0.0,
+          "rolling_7day_avg": 1.206556,
+          "cumulative_balance": 2497.971632
+        },
+        {
+          "date": "2026-09-08",
+          "daily_net_flow": 0.0,
+          "rolling_7day_avg": 0.374388,
+          "cumulative_balance": 2497.971632
+        },
+        {
+          "date": "2026-09-09",
+          "daily_net_flow": 2.582716,
+          "rolling_7day_avg": 0.743347,
+          "cumulative_balance": 2500.554347
         }
       ]
+    }
+  },
+  "migration": {
+    "base": {
+      "contract": "0xd4ee9f0030e0687d54d4dc6d932f10b7aa8abd1d",
+      "event_count": 1147,
+      "migrated_all_time": 332599259.78971,
+      "migrated_last_7_days": 278802.846299,
+      "migrated_last_30_days": 2120595.0757
+    },
+    "cardano": {
+      "wallet": "addr1qy33d7r35yjxafn5hs5d7tx4nncppnuh2fhgpdyvz0yjjzelujvrnhlpvja54h2tsa0r5zvaqtfu8wx8lgeac2xpyd0qmxhz65",
+      "event_count": 2566,
+      "migrated_all_time": 448689466.407782,
+      "migrated_last_7_days": 2137177.158645,
+      "migrated_last_30_days": 2342888.560904
+    },
+    "combined": {
+      "event_count": 3713,
+      "migrated_all_time": 781288726.197492,
+      "migrated_last_7_days": 2415980.004944,
+      "migrated_last_30_days": 4463483.636604
     }
   }
 }
