@@ -27,7 +27,7 @@ def get_second_sunday_window(year, month):
     days_to_first_sunday = (6 - first_of_month.weekday()) % 7
     first_sunday = first_of_month + timedelta(days=days_to_first_sunday)
     start = first_sunday + timedelta(days=7)
-    start = start.replace(hour=0, minute=0, second=0, microsecond=0)
+    start = start.replace(hour=4, minute=0, second=0, microsecond=0)
     end = start + timedelta(days=6, hours=23, minutes=59, seconds=59, microseconds=999000)
     return start, end
 
