@@ -794,7 +794,7 @@ function getSecondSundayWindow(year, monthIndex){
   const daysToFirstSunday = (7 - firstOfMonth.getUTCDay()) % 7;
   const firstSunday = new Date(Date.UTC(year, monthIndex, 1 + daysToFirstSunday));
   const start = new Date(firstSunday);
-  start.setUTCDate(firstSunday.getUTCDate() + 7);
+  start.setUTCDate(firstSunday.getUTCDate() + 8);
   start.setUTCHours(0, 0, 0, 0);
   const end = new Date(start);
   end.setUTCDate(start.getUTCDate() + 6);
