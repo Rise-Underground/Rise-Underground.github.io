@@ -35233,52 +35233,52 @@
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "LP_TOKEN",
-      "buy_volume_usd": 5.07,
-      "sell_volume_usd": 318.01,
-      "closing_price_usd": 0.00146063,
-      "quote_usd_price": 2538.4259733247604
+      "buy_volume_usd": 5.05,
+      "sell_volume_usd": 317.17,
+      "closing_price_usd": 0.00145677,
+      "quote_usd_price": 2531.726169205485
     },
     {
       "chain": "Base",
       "pool_name": "Pool 2 (Aerodrome vAMM)",
       "date": "2026-09-11",
-      "buy_volume": 3684.1353,
+      "buy_volume": 20866.0755,
       "sell_volume": 1228045.086,
-      "buy_txns": 22,
+      "buy_txns": 23,
       "sell_txns": 22,
-      "net_volume": -1224360.9508,
+      "net_volume": -1207179.0105,
       "unique_makers": 9,
-      "closing_price": 5.766089240674448e-07,
+      "closing_price": 5.765525278064874e-07,
       "lp_add_volume": 0.0,
       "lp_adds": 0,
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "LP_TOKEN",
-      "buy_volume_usd": 5.39,
-      "sell_volume_usd": 1797.46,
-      "closing_price_usd": 0.00146368,
-      "quote_usd_price": 2538.4259733247604
+      "buy_volume_usd": 30.46,
+      "sell_volume_usd": 1792.54,
+      "closing_price_usd": 0.00145967,
+      "quote_usd_price": 2531.726169205485
     },
     {
       "chain": "Cardano",
       "pool_name": "Cardano RISE/ADA AMM Pool #2 (unconfirmed DEX identity)",
       "date": "2026-09-11",
-      "buy_volume": 169672.2684,
+      "buy_volume": 234718.3069,
       "sell_volume": 0.0,
-      "buy_txns": 1,
+      "buy_txns": 2,
       "sell_txns": 0,
-      "net_volume": 169672.2684,
+      "net_volume": 234718.3069,
       "unique_makers": null,
-      "closing_price": 0.00692959,
+      "closing_price": 0.0069542179956532816,
       "lp_add_volume": 0.0,
       "lp_adds": 0,
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "RISE",
-      "buy_volume_usd": 242.32,
+      "buy_volume_usd": 335.65,
       "sell_volume_usd": 0.0,
-      "closing_price_usd": 0.00142816,
-      "quote_usd_price": 0.20609587689024084
+      "closing_price_usd": 0.00143003,
+      "quote_usd_price": 0.2056349773941905
     },
     {
       "chain": "Cardano",
@@ -35296,10 +35296,10 @@
       "lp_remove_volume": 91293232.572927,
       "lp_removes": 1,
       "lp_flow_unit": "RISE",
-      "buy_volume_usd": 2784.35,
-      "sell_volume_usd": 566.95,
-      "closing_price_usd": 0.00141736,
-      "quote_usd_price": 0.20609587689024084
+      "buy_volume_usd": 2778.12,
+      "sell_volume_usd": 565.68,
+      "closing_price_usd": 0.00141419,
+      "quote_usd_price": 0.2056349773941905
     },
     {
       "chain": "Cardano",
@@ -35320,7 +35320,7 @@
       "buy_volume_usd": null,
       "sell_volume_usd": null,
       "closing_price_usd": null,
-      "quote_usd_price": 0.20609587689024084
+      "quote_usd_price": 0.2056349773941905
     },
     {
       "chain": "Cardano",
@@ -35328,7 +35328,7 @@
       "date": "2026-09-11",
       "buy_volume": 0.0,
       "sell_volume": 0.0,
-      "buy_txns": 1,
+      "buy_txns": 2,
       "sell_txns": 0,
       "net_volume": 0.0,
       "unique_makers": null,
@@ -35341,7 +35341,7 @@
       "buy_volume_usd": null,
       "sell_volume_usd": null,
       "closing_price_usd": null,
-      "quote_usd_price": 0.20609587689024084
+      "quote_usd_price": 0.2056349773941905
     }
   ],
   "reserve_daily_summary": [
@@ -45204,8 +45204,8 @@
       "chain": "Base",
       "pool_name": "Pool 2 (Aerodrome vAMM)",
       "date": "2026-09-11",
-      "rise_balance": 92810326.011708,
-      "other_balance": 52.966712,
+      "rise_balance": 92793144.071471,
+      "other_balance": 52.976519,
       "other_asset": "WETH",
       "price": 1e-06
     },
@@ -45213,10 +45213,10 @@
       "chain": "Cardano",
       "pool_name": "Cardano RISE/ADA AMM Pool #2 (unconfirmed DEX identity)",
       "date": "2026-09-11",
-      "rise_balance": 10256136.035753,
-      "other_balance": 71070.806406,
+      "rise_balance": 10191089.997242,
+      "other_balance": 71525.806406,
       "other_asset": "ADA",
-      "price": 0.00692959
+      "price": 0.00701846
     },
     {
       "chain": "Cardano",
