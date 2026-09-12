@@ -1,0 +1,332 @@
+[
+  {
+    "id": "1510902535576096889",
+    "timestamp": "2026-06-01T07:07:15.693Z",
+    "username": "ReconMonk",
+    "text": "Noob question... I got me a handfull of nodes just yesterday and happened to hear something on Cafe Rise that updates need to be made.\nIs that only for the pools or also individual nodes?"
+  },
+  {
+    "id": "1510918276132376596",
+    "timestamp": "2026-06-01T08:09:48.534Z",
+    "username": "EZ | Node Operator",
+    "text": "Its the pools that need to upgrade to 3.0.4"
+  },
+  {
+    "id": "1511075142275694764",
+    "timestamp": "2026-06-01T18:33:15.331Z",
+    "username": "Steve 'Corn Pops'",
+    "text": "If you are delegating your nodes to someone else's pool, then nothing is needed on your end. (edited)\nMonday, June 1, 2026 at 2:33 PM"
+  },
+  {
+    "id": "1511075315827478569",
+    "timestamp": "2026-06-01T18:33:49.715Z",
+    "username": "",
+    "text": "Of course you would not want to delegate to a not-updated pool...."
+  },
+  {
+    "id": "1511434978901229679",
+    "timestamp": "2026-06-02T18:23:00.074Z",
+    "username": "Tony the Brick 🌽Mafia Whisperer",
+    "text": "Hey peeps.  Is there a way to know if the node operator you delegated to upgraded to the most recent node upgrade?"
+  },
+  {
+    "id": "1511435685704368271",
+    "timestamp": "2026-06-02T18:25:48.589Z",
+    "username": "Krikke80",
+    "text": "Yes sure, just check if he’s on version 3.0.4"
+  },
+  {
+    "id": "1511435975447019662",
+    "timestamp": "2026-06-02T18:27:09.975Z",
+    "username": "Tony the Brick 🌽Mafia Whisperer",
+    "text": "TY @Krikke80 (edited)\nTuesday, June 2, 2026 at 2:27 PM"
+  },
+  {
+    "id": "1512380140590465155",
+    "timestamp": "2026-06-05T08:58:44.181Z",
+    "username": "tedan01",
+    "text": "pls any command line or code to update the node"
+  },
+  {
+    "id": "1512404386729689168",
+    "timestamp": "2026-06-05T10:35:04.911Z",
+    "username": "Krikke80",
+    "text": "sudo docker compose pull\nsudo docker compose up -d\n\nCommands for Linux Pools. it's important to keep track of updates and regularly follow the discussions in the Node Pool channels. New releases, fixes, and operational recommendations are shared there first. V3.0.4 isn't from yesterday"
+  },
+  {
+    "id": "1513477914643927090",
+    "timestamp": "2026-06-08T09:40:53.911Z",
+    "username": "tedan01",
+    "text": "Thanks"
+  },
+  {
+    "id": "1514188546162954281",
+    "timestamp": "2026-06-10T08:51:21.698Z",
+    "username": "oxenhouse",
+    "text": "462 nodes assigned to pools that served 0 data last cycle. I've got a home for 179 of them. My pools are heated and we have inflatables you can check out at the front desk. Poolside DJ starts at 3PM daily. (edited)\nWednesday, June 10, 2026 at 4:51 AM"
+  },
+  {
+    "id": "1514263868317241516",
+    "timestamp": "2026-06-10T16:04:38.292Z",
+    "username": "EggsAnyStyle [G4G] [INTP-A]",
+    "text": "Track Pool rewards daily!  pools.eggnition.io ... Join an Eggnition Pool!  ...  We also have a DJ ... Global  Coverage, Global Beats  -- 24/7 --    ...  mixes.eggnition.io  ... links in my profile. (edited)\nWednesday, June 10, 2026 at 12:04 PM"
+  },
+  {
+    "id": "1514297157413503248",
+    "timestamp": "2026-06-10T15:56:16.608Z",
+    "username": "Juri Lespor (🌽Mafia)",
+    "text": "Join my pools... \nBecause... \nDamn join my pool if their pools are full."
+  },
+  {
+    "id": "1514322254979141827",
+    "timestamp": "2026-06-10T17:36:00.334Z",
+    "username": "Lourde of Infinity🌽👑🌽",
+    "text": ""
+  },
+  {
+    "id": "1514322298621001850",
+    "timestamp": "2026-06-10T17:36:27.331Z",
+    "username": "",
+    "text": "We're allowed to Promote our pools Now? (edited)\nWednesday, June 10, 2026 at 1:36 PM"
+  },
+  {
+    "id": "1514354139545604247",
+    "timestamp": "2026-06-10T19:42:42.207Z",
+    "username": "Lourde of Infinity🌽👑🌽",
+    "text": "Sly Sheep"
+  },
+  {
+    "id": "1514878270074650768",
+    "timestamp": "2026-06-12T06:25:24.663Z",
+    "username": "Rob 🌽🦊",
+    "text": "I pushed a message on X in support"
+  },
+  {
+    "id": "1515070470720847943",
+    "timestamp": "2026-06-12T19:09:08.868Z",
+    "username": "SIMBA[NORTH👑] ¦ OG & Founder",
+    "text": "Easiest way after several tries to reach delegators and non responding nodeoperators, cut them off the hard way. Seen this so many times since mainnet started at Cardano"
+  },
+  {
+    "id": "1515071397255446610",
+    "timestamp": "2026-06-12T19:13:33.050Z",
+    "username": "EggsAnyStyle [G4G] [INTP-A]",
+    "text": "I agree in principle.  The challenge though: This has already been done with the Ops who have not upgraded.  Their pools are not receiving traffic. Delegators not delegated are earning 0 rewards and those delegated to the aforementioned dead pools are earning less that 1 RISE per day.  So, not much more if anything to lose for these groups. (edited)\nFriday, June 12, 2026 at 3:13 PM"
+  },
+  {
+    "id": "1515074312145473696",
+    "timestamp": "2026-06-12T19:24:24.735Z",
+    "username": "StR1kA7",
+    "text": "I think this should've also been shared in announcement.  Thats where everyone goes for new notifications."
+  },
+  {
+    "id": "1515892280790093906",
+    "timestamp": "2026-06-15T01:34:43.657Z",
+    "username": "JReady Midnight Ambassador",
+    "text": "Been busy the last couple of months. Are rewards just lower or was I supposed to do something?"
+  },
+  {
+    "id": "1515893362496901164",
+    "timestamp": "2026-06-15T01:39:01.556Z",
+    "username": "MSPDriver 🇺🇸",
+    "text": "If your a node pool operator make sure your pool is up to date 3.0.4"
+  },
+  {
+    "id": "1515893506986479736",
+    "timestamp": "2026-06-15T01:39:36.005Z",
+    "username": "",
+    "text": "If your a delegator make sure they're pool is up to date"
+  },
+  {
+    "id": "1515893565014933657",
+    "timestamp": "2026-06-15T01:39:49.840Z",
+    "username": "",
+    "text": "If it isnt. Move"
+  },
+  {
+    "id": "1517140699219492964",
+    "timestamp": "2026-06-18T12:15:29.805Z",
+    "username": "oxenhouse",
+    "text": "568 nodes delegated to pools that served 0 data last cycle. These pool operators are asleep at the wheel. Please redelegate to active pools, they could use your delegations."
+  },
+  {
+    "id": "1518039948983275571",
+    "timestamp": "2026-06-20T23:48:47.656Z",
+    "username": "Arrelulu [🌽 mafia]",
+    "text": "The rewards look really low"
+  },
+  {
+    "id": "1518386674000855181",
+    "timestamp": "2026-06-21T22:46:33.342Z",
+    "username": "MSPDriver 🇺🇸",
+    "text": "@Jupiter_Rising"
+  },
+  {
+    "id": "1519136126600872119",
+    "timestamp": "2026-06-24T00:24:36.766Z",
+    "username": "mininvictus",
+    "text": "Where do we check our pool operators node version?"
+  },
+  {
+    "id": "1519138515793875074",
+    "timestamp": "2026-06-24T00:34:06.394Z",
+    "username": "EggsAnyStyle [G4G] [INTP-A]",
+    "text": "On your Manage Pools page"
+  },
+  {
+    "id": "1519138536476119284",
+    "timestamp": "2026-06-24T00:34:11.325Z",
+    "username": "",
+    "text": ""
+  },
+  {
+    "id": "1519138911597891595",
+    "timestamp": "2026-06-24T00:36:12.612Z",
+    "username": "",
+    "text": "Oh wait, you mean the version the Operator you are delegated to is running.  From the Public Pools Dashboard you can click on the Pool and you should get the same view as above. (edited)\nTuesday, June 23, 2026 at 8:36 PM"
+  },
+  {
+    "id": "1519139261197189342",
+    "timestamp": "2026-06-24T00:37:04.112Z",
+    "username": "",
+    "text": ""
+  },
+  {
+    "id": "1519317837624250369",
+    "timestamp": "2026-06-24T12:26:40.050Z",
+    "username": "Ford96 🌽 Mafia",
+    "text": "Are pools down now because they took down the servers as in announcements or have I a problem with my pool"
+  },
+  {
+    "id": "1519325396724613231",
+    "timestamp": "2026-06-24T12:56:42.280Z",
+    "username": "Pho3nix",
+    "text": "Yeah had the same thing earlier, the are updating the servers"
+  },
+  {
+    "id": "1519383032300306595",
+    "timestamp": "2026-06-24T16:45:43.672Z",
+    "username": "Rob 🌽🦊",
+    "text": "Last chance to update your nodes to the latest version of you haven't.. all those lovely rewards will be shared with only the ones on the ball"
+  },
+  {
+    "id": "1519383138751610891",
+    "timestamp": "2026-06-24T16:46:09.052Z",
+    "username": "",
+    "text": "Good luck later everyone , you're doing us a great service"
+  },
+  {
+    "id": "1519481196399034490",
+    "timestamp": "2026-06-24T23:15:47.817Z",
+    "username": "Ford96 🌽 Mafia",
+    "text": "Thank you didn't get a chance to reply earlier"
+  },
+  {
+    "id": "1519660194622079088",
+    "timestamp": "2026-06-25T11:07:04.319Z",
+    "username": "Juri Lespor (🌽Mafia)",
+    "text": "Do you think we could do a mass email to node owners delegates to pools that haven't updated"
+  },
+  {
+    "id": "1520462958340083843",
+    "timestamp": "2026-06-27T16:18:41.218Z",
+    "username": "Zorro1966 | Knights ⚔",
+    "text": "Is sending the Claiming node Rise rewards to my wallet on base a manual thing or does it need more time? I claimed like 4 hours ago. (edited)\nSaturday, June 27, 2026 at 12:18 PM"
+  },
+  {
+    "id": "1520468104755413034",
+    "timestamp": "2026-06-27T16:39:47.099Z",
+    "username": "EggsAnyStyle [G4G] [INTP-A]",
+    "text": "Depends on how much you claim.  Less than 40 K and it should be automatic, a few minutes at most. Over that amount and it goes into a queue for the team to review manually.  That threshold changes now and then.  It's been around 40K for a while now.  They don't publish it, but trial and error plus some chat helps to figure it out. (edited)\nSaturday, June 27, 2026 at 12:39 PM"
+  },
+  {
+    "id": "1520471257194430606",
+    "timestamp": "2026-06-27T16:49:56.705Z",
+    "username": "Zorro1966 | Knights ⚔",
+    "text": "I did the daily max and that was all that was available to claim. I will wait until tomorrow as it was more than 40 K. Thanks Eggs"
+  },
+  {
+    "id": "1520475702527524956",
+    "timestamp": "2026-06-27T17:07:36.555Z",
+    "username": "Rene - QA",
+    "text": "Should be done now"
+  },
+  {
+    "id": "1520505377890766930",
+    "timestamp": "2026-06-27T19:05:31.713Z",
+    "username": "Zorro1966 | Knights ⚔",
+    "text": "Yes it was, thanks Rene"
+  },
+  {
+    "id": "1520580139136712785",
+    "timestamp": "2026-06-28T00:02:36.183Z",
+    "username": "Lourde of Infinity🌽👑🌽",
+    "text": "I just claimed 40k and it didn't work automatically"
+  },
+  {
+    "id": "1520642433938100235",
+    "timestamp": "2026-06-28T04:10:36.541Z",
+    "username": "Lourde of Infinity🌽👑🌽",
+    "text": "Im having a similar issue claiming 40k @Rene - QA (edited)\nSunday, June 28, 2026 at 12:10 AM"
+  },
+  {
+    "id": "1520744125757001869",
+    "timestamp": "2026-06-28T10:54:13.640Z",
+    "username": "Rene - QA",
+    "text": "This is done"
+  },
+  {
+    "id": "1521605520283144192",
+    "timestamp": "2026-06-30T19:57:06.099Z",
+    "username": "Lourde of Infinity🌽👑🌽",
+    "text": "Rene I just did another 49k to see if the auto claim works..."
+  },
+  {
+    "id": "1521605794213134480",
+    "timestamp": "2026-06-30T19:58:28.659Z",
+    "username": "Rene - QA",
+    "text": "No it doesn't, no need to test it lol. It has to be manually approved (edited)\nTuesday, June 30, 2026 at 3:58 PM"
+  },
+  {
+    "id": "1521606573519143094",
+    "timestamp": "2026-06-30T20:01:47.264Z",
+    "username": "Rene - QA",
+    "text": "Got it sorted (edited)\nTuesday, June 30, 2026 at 4:01 PM"
+  },
+  {
+    "id": "1521609153423081734",
+    "timestamp": "2026-06-30T20:11:43.539Z",
+    "username": "Lourde of Infinity🌽👑🌽",
+    "text": "oooohhhh... Now I feel dumb for that... Thank you for clarifying (edited)\nTuesday, June 30, 2026 at 4:11 PM"
+  },
+  {
+    "id": "1521609850159894588",
+    "timestamp": "2026-06-30T20:14:18.422Z",
+    "username": "Rene - QA",
+    "text": "All good. Larger amounts require manual approval for security."
+  },
+  {
+    "id": "1521609978585026774",
+    "timestamp": "2026-06-30T20:14:49.041Z",
+    "username": "Lourde of Infinity🌽👑🌽",
+    "text": "Is there an Auto claim amount at all?"
+  },
+  {
+    "id": "1521610227789861108",
+    "timestamp": "2026-06-30T20:15:48.456Z",
+    "username": "",
+    "text": "Ah now I see"
+  },
+  {
+    "id": "1521664245459058781",
+    "timestamp": "2026-06-30T23:50:27.272Z",
+    "username": "forbiddenADA",
+    "text": "I feel like a ."
+  },
+  {
+    "id": "1521665907540099163",
+    "timestamp": "2026-06-30T23:57:03.543Z",
+    "username": "Lourde of Infinity🌽👑🌽",
+    "text": "Just keep swimming... You'll become a"
+  }
+]

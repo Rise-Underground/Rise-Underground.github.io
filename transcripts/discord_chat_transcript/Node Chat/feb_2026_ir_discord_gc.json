@@ -1,0 +1,644 @@
+[
+  {
+    "id": "1467528667658850387",
+    "timestamp": "2026-02-01T14:34:59.734Z",
+    "username": "Dekoka",
+    "text": "Got it, then I'll try later. Thanks for the answer."
+  },
+  {
+    "id": "1467936101938237470",
+    "timestamp": "2026-02-02T17:33:59.636Z",
+    "username": "KC",
+    "text": "@RISE Shark [🌽 Mafia] \nhttps://wiki.infinityrising.com/file-nodes"
+  },
+  {
+    "id": "1467936321472561378",
+    "timestamp": "2026-02-02T17:34:51.977Z",
+    "username": "EZ | Node Operator",
+    "text": "@RISE Shark [🌽 Mafia]  its pretty easy to setup, with 3 licenses you would run a private pool."
+  },
+  {
+    "id": "1467946361277124834",
+    "timestamp": "2026-02-02T18:14:45.653Z",
+    "username": "RISE Shark [🌽 Mafia]",
+    "text": "Ok nice what equipment is needed?"
+  },
+  {
+    "id": "1467947126540468450",
+    "timestamp": "2026-02-02T18:17:48.106Z",
+    "username": "EZ | Node Operator",
+    "text": "if you got static ip you could run it from home...for 3 licenses i would recommend it.. as long as you arent on cgnat it should work... Equipment wise its not resource heavy. For example @KC  above run pools on a raspberry pi 5... So a single board computer with low power draw would be the sweet spot comsidering electricity bill and so forth."
+  },
+  {
+    "id": "1467947291821473986",
+    "timestamp": "2026-02-02T18:18:27.512Z",
+    "username": "RISE Shark [🌽 Mafia]",
+    "text": "Wow  awesome"
+  },
+  {
+    "id": "1467947676573372426",
+    "timestamp": "2026-02-02T18:22:11.955Z",
+    "username": "EZ | Node Operator",
+    "text": "pi4 works aswell or say an orange pi from aliexpress no problem... ssd or nvme ,4/6/8gb dram. For example Orange Pi 4 Pro 6GB RAM DDR5 looks like a solid choice, then just get an nvme from aliexpress. total cost around 100usd (edited)\nMonday, February 2, 2026 at 1:22 PM"
+  },
+  {
+    "id": "1467951234739863604",
+    "timestamp": "2026-02-02T18:34:07.577Z",
+    "username": "RISE Shark [🌽 Mafia]",
+    "text": "Ok looks like I need to aquire one of these options then. Thanks for the help"
+  },
+  {
+    "id": "1467951407234551872",
+    "timestamp": "2026-02-02T18:34:48.703Z",
+    "username": "",
+    "text": "I could use my laptop but it definitely sounds like a pi is a better route"
+  },
+  {
+    "id": "1467951630392758551",
+    "timestamp": "2026-02-02T18:35:41.908Z",
+    "username": "",
+    "text": "What's the link for the node setup?"
+  },
+  {
+    "id": "1467951657030652101",
+    "timestamp": "2026-02-02T18:36:44.505Z",
+    "username": "EZ | Node Operator",
+    "text": "before you buy any dedicated hardware for it , remember to check so that you are not behind cgnat , instructions is at the wiki above.  You could first run it on your laptop to see that everything works as it should. would be my recommendation. (edited)\nMonday, February 2, 2026 at 1:36 PM"
+  },
+  {
+    "id": "1467951704585666621",
+    "timestamp": "2026-02-02T18:35:59.597Z",
+    "username": "",
+    "text": "!node"
+  },
+  {
+    "id": "1467951710256238739",
+    "timestamp": "2026-02-02T18:36:00.949Z",
+    "username": "Dyno",
+    "text": ""
+  },
+  {
+    "id": "1467952016151285968",
+    "timestamp": "2026-02-02T18:37:13.880Z",
+    "username": "RISE Shark [🌽 Mafia]",
+    "text": "I don't think im behind a cgnat my ip starts with  192"
+  },
+  {
+    "id": "1467952248662524045",
+    "timestamp": "2026-02-02T18:38:09.315Z",
+    "username": "",
+    "text": "Pretty sure its staic I'll double check though"
+  },
+  {
+    "id": "1467952259986886904",
+    "timestamp": "2026-02-02T18:38:12.015Z",
+    "username": "EZ | Node Operator",
+    "text": "Most isps use cgnat.. CGNAT (Carrier-Grade Network Address Translation) is a large-scale technique Internet Service Providers (ISPs) use to share a limited pool of public IPv4 addresses among many customers, letting thousands of users share one public IP by assigning them private IPs and managing translations at the ISP level, extending IPv4's life but complicating direct connections like port forwarding."
+  },
+  {
+    "id": "1467952739232387103",
+    "timestamp": "2026-02-02T18:40:06.276Z",
+    "username": "RISE Shark [🌽 Mafia]",
+    "text": "Thank you for the links!"
+  },
+  {
+    "id": "1467952784505835788",
+    "timestamp": "2026-02-02T18:40:17.070Z",
+    "username": "EZ | Node Operator",
+    "text": "np man"
+  },
+  {
+    "id": "1467953192007368839",
+    "timestamp": "2026-02-02T18:41:54.226Z",
+    "username": "KC",
+    "text": "I happen to live in an area with ok fiber connection. So easy to run home for me"
+  },
+  {
+    "id": "1467953269526626577",
+    "timestamp": "2026-02-02T18:42:12.708Z",
+    "username": "RISE Shark [🌽 Mafia]",
+    "text": "I can't wait"
+  },
+  {
+    "id": "1467953372526284963",
+    "timestamp": "2026-02-02T18:42:37.265Z",
+    "username": "KC",
+    "text": "Raspi5 is perfect considering power draw like a cellphone charger"
+  },
+  {
+    "id": "1468708340698714142",
+    "timestamp": "2026-02-04T20:42:35.704Z",
+    "username": "SnuSnu | Knights ⚔",
+    "text": "i'm curious, are other US nodes also getting very little performance rewards in the last few days? like 2-4 RISE a day."
+  },
+  {
+    "id": "1468718666886418463",
+    "timestamp": "2026-02-04T21:23:37.659Z",
+    "username": "fiery",
+    "text": "Yes, can confirm same over here."
+  },
+  {
+    "id": "1468732396923785429",
+    "timestamp": "2026-02-04T22:18:11.155Z",
+    "username": "oxenhouse",
+    "text": "EU took all the traffic."
+  },
+  {
+    "id": "1468732474325471406",
+    "timestamp": "2026-02-04T22:18:29.609Z",
+    "username": "",
+    "text": "or should I say... had all the traffic."
+  },
+  {
+    "id": "1468738535631753238",
+    "timestamp": "2026-02-05T14:41:27.662Z",
+    "username": "Nx",
+    "text": "Is there any way I can create some publicity for my pool? My pool is now stable and fast. sit in EU  POOL PIPPE (edited)\nThursday, February 5, 2026 at 9:41 AM"
+  },
+  {
+    "id": "1468746669167218923",
+    "timestamp": "2026-02-04T23:14:53.923Z",
+    "username": "Mr. Pink",
+    "text": "Mostly likely a scammer."
+  },
+  {
+    "id": "1469049766473109575",
+    "timestamp": "2026-02-05T19:19:17.952Z",
+    "username": "Nx",
+    "text": "Quick question \nfrom one week i have build my pool  for first time \nRerwards are very different  day by day \nexample on \n5th February 2026 23.14 Rise/node + 0.96 Partecipation \n4th February 2026 14,42 Rise/node + 0.96 Partecipation \n3rd February 2026 11.17 Rise/node + 0.96 Partecipation \n\nWhy this up and down ?"
+  },
+  {
+    "id": "1469050217566306395",
+    "timestamp": "2026-02-05T19:21:05.501Z",
+    "username": "EggsAnyStyle [G4G] [INTP-A]",
+    "text": "It all depends on download traffic in your Pool's region and also globally.  That can be very different day to day."
+  },
+  {
+    "id": "1469050728596115486",
+    "timestamp": "2026-02-05T19:23:07.340Z",
+    "username": "Nx",
+    "text": "In case of someone share his node in my pool rewards become less ?"
+  },
+  {
+    "id": "1469051000785735700",
+    "timestamp": "2026-02-05T19:24:12.235Z",
+    "username": "EggsAnyStyle [G4G] [INTP-A]",
+    "text": "Yes, delegates earn the same as you per Node minus the operator fee they pay to you."
+  },
+  {
+    "id": "1469051233644974080",
+    "timestamp": "2026-02-05T19:25:14.033Z",
+    "username": "Nx",
+    "text": "so best is remain public pool i earn the same plus % of i have decided (edited)\nThursday, February 5, 2026 at 2:25 PM"
+  },
+  {
+    "id": "1469051722621128849",
+    "timestamp": "2026-02-05T19:27:04.334Z",
+    "username": "EggsAnyStyle [G4G] [INTP-A]",
+    "text": "Hypothetical ... 20% Operator fee ... Pool earns 10 RISE / Node .... Delegates claim 8 RISE / Node ... You claim 10 RISE / Node for yours plus 2 RISE per delegate Node"
+  },
+  {
+    "id": "1469051942683676732",
+    "timestamp": "2026-02-05T19:27:56.801Z",
+    "username": "Nx",
+    "text": "thx  for explain"
+  },
+  {
+    "id": "1469353264045621532",
+    "timestamp": "2026-02-06T15:25:17.412Z",
+    "username": "𝖀𝖓𝖎𝖛𝖊𝖗𝖘🅰𝖑𝖚𝖘",
+    "text": "Anyone willing to Delegate to low fee pool  there you go don't sleep"
+  },
+  {
+    "id": "1469742218226045072",
+    "timestamp": "2026-02-07T17:10:51.315Z",
+    "username": "KC",
+    "text": "hehe, why thank you sir"
+  },
+  {
+    "id": "1469742292729331946",
+    "timestamp": "2026-02-07T17:11:09.078Z",
+    "username": "",
+    "text": "i did not get notice on this"
+  },
+  {
+    "id": "1469742723362984070",
+    "timestamp": "2026-02-07T17:12:51.749Z",
+    "username": "𝖀𝖓𝖎𝖛𝖊𝖗𝖘🅰𝖑𝖚𝖘",
+    "text": ""
+  },
+  {
+    "id": "1469745173402751070",
+    "timestamp": "2026-02-07T17:22:35.884Z",
+    "username": "𝖀𝖓𝖎𝖛𝖊𝖗𝖘🅰𝖑𝖚𝖘",
+    "text": "sold my Nodes and they we're in your pool  thats why"
+  },
+  {
+    "id": "1469746144363020331",
+    "timestamp": "2026-02-07T17:26:27.379Z",
+    "username": "KC",
+    "text": "thank you for delegation this far then"
+  },
+  {
+    "id": "1469746174243115111",
+    "timestamp": "2026-02-07T17:26:34.503Z",
+    "username": "",
+    "text": ""
+  },
+  {
+    "id": "1469746290777915443",
+    "timestamp": "2026-02-07T17:27:02.287Z",
+    "username": "𝖀𝖓𝖎𝖛𝖊𝖗𝖘🅰𝖑𝖚𝖘",
+    "text": ""
+  },
+  {
+    "id": "1469761681906466840",
+    "timestamp": "2026-02-07T18:28:11.818Z",
+    "username": "Japper | Knights",
+    "text": "I'm finally having a fiber internet installed, so I'm playing with the idea to create my own pool. I'd need to invest in to Raspbery pie or something like that. Is there a video on what's needed and how to do it?  As far as networking goes I probably know same as 5 year old."
+  },
+  {
+    "id": "1469763650335019059",
+    "timestamp": "2026-02-07T18:36:01.128Z",
+    "username": "𝖀𝖓𝖎𝖛𝖊𝖗𝖘🅰𝖑𝖚𝖘",
+    "text": "like i said if you go to this channel they will help you on everything"
+  },
+  {
+    "id": "1469763659180933223",
+    "timestamp": "2026-02-07T18:36:03.237Z",
+    "username": "",
+    "text": ""
+  },
+  {
+    "id": "1469763809760641279",
+    "timestamp": "2026-02-07T18:36:39.138Z",
+    "username": "",
+    "text": "lol you are here"
+  },
+  {
+    "id": "1469763895261528325",
+    "timestamp": "2026-02-07T18:36:59.523Z",
+    "username": "",
+    "text": "i thought  im still in direct chat with you lool"
+  },
+  {
+    "id": "1469763986525393017",
+    "timestamp": "2026-02-07T18:37:21.282Z",
+    "username": "",
+    "text": "Funny"
+  },
+  {
+    "id": "1469765072573300971",
+    "timestamp": "2026-02-07T18:41:40.216Z",
+    "username": "EZ | Node Operator",
+    "text": "Orange pi 4 pro  i would say with a cheap nvme from aliexpress"
+  },
+  {
+    "id": "1469765656542056724",
+    "timestamp": "2026-02-07T18:43:59.445Z",
+    "username": "Japper | Knights",
+    "text": "Does it come with Windows? I understand I need some kind of Docker to run it."
+  },
+  {
+    "id": "1469768057395085423",
+    "timestamp": "2026-02-07T18:53:31.853Z",
+    "username": "Steve 'Corn Pops'",
+    "text": "Docker gets installed onto Linux"
+  },
+  {
+    "id": "1469768112298528779",
+    "timestamp": "2026-02-07T18:53:44.943Z",
+    "username": "",
+    "text": "you won't run Windows on a Pi"
+  },
+  {
+    "id": "1469769504685821954",
+    "timestamp": "2026-02-07T18:59:16.914Z",
+    "username": "EZ | Node Operator",
+    "text": "You will have to use Linux. Ubuntu is a good choice, either desktop or server version.. However its not complicated to setup and very stable."
+  },
+  {
+    "id": "1469772124980908163",
+    "timestamp": "2026-02-07T19:09:41.641Z",
+    "username": "Japper | Knights",
+    "text": "Thanks, I'll write all this down and start making research and parts list"
+  },
+  {
+    "id": "1469775398714871969",
+    "timestamp": "2026-02-07T19:22:42.160Z",
+    "username": "EZ | Node Operator",
+    "text": "Orange pi 4 pro is good because it has a nvme slot on the backside, no need for extension card or such..You said you have fiber installed now, do you know if you got a static ip with it?"
+  },
+  {
+    "id": "1469788537481330688",
+    "timestamp": "2026-02-07T20:14:54.686Z",
+    "username": "Japper | Knights",
+    "text": "My before and after. Not sure why Comcast 1 gig plan has a such a small upload speeds, the tech said maybe due to the old switch panel outside?\nDou you guys think I can still run 1 pool with such small numbers?"
+  },
+  {
+    "id": "1469789395346526330",
+    "timestamp": "2026-02-07T20:18:19.217Z",
+    "username": "Steve 'Corn Pops'",
+    "text": "ooooff, Leave it to comcast to not give you same up and down."
+  },
+  {
+    "id": "1469789470370037896",
+    "timestamp": "2026-02-07T20:18:37.104Z",
+    "username": "",
+    "text": "that's a very tiny pipe"
+  },
+  {
+    "id": "1469814905556439051",
+    "timestamp": "2026-02-07T21:59:41.325Z",
+    "username": "forbiddenADA",
+    "text": "not sure if you are wanting to run a public or private pool, I have been running a 4 license private pool on my mini PC with docker in windows for almost a year now...it's also my daily driver for my Plex server and iagon node...has been working flawless all year"
+  },
+  {
+    "id": "1469819049448837202",
+    "timestamp": "2026-02-07T22:16:09.306Z",
+    "username": "Japper | Knights",
+    "text": "So if I wanted to run my private pool with 5-6 nodes, would I need more then 40 Mbps upload speed? The download speed is not that important?"
+  },
+  {
+    "id": "1469819821976977590",
+    "timestamp": "2026-02-07T22:19:13.491Z",
+    "username": "forbiddenADA",
+    "text": "I have fiber that runs much faster than that but my uploads are not that fast...here is my upload dashboard from last 2 weeks which have been excellent for rewards"
+  },
+  {
+    "id": "1469820265662775400",
+    "timestamp": "2026-02-07T22:20:59.274Z",
+    "username": "",
+    "text": "my Internet is close to 300Mbps upload"
+  },
+  {
+    "id": "1469820748301336719",
+    "timestamp": "2026-02-07T22:22:54.344Z",
+    "username": "Japper | Knights",
+    "text": "If I have 5 nodes and run private pool vs. run a public pool, would public pool require more upload speed?"
+  },
+  {
+    "id": "1469820898503692330",
+    "timestamp": "2026-02-07T22:23:30.155Z",
+    "username": "forbiddenADA",
+    "text": "I assume so but I don't know cuz I've never run a public pool.. just wanted to share that it's possible to just run it on whatever you got at home"
+  },
+  {
+    "id": "1469821300100038821",
+    "timestamp": "2026-02-07T22:25:05.903Z",
+    "username": "",
+    "text": "like I said, I run that pool and I stream all of my video content from my Plex server and I run an iagon node all off that same mini PC, and I previously ran those things all on an old HP crappy desktop without really any problems at all. I only upgraded because I was running so many things on one PC"
+  },
+  {
+    "id": "1469827681460682805",
+    "timestamp": "2026-02-07T22:53:15.632Z",
+    "username": "EggsAnyStyle [G4G] [INTP-A]",
+    "text": "No. I think you would even be fine running a Public Pool with those speeds.  Your files would eventually be served and you would be credited with the traffic.  The threshold in that regard is actually very low it seems.  You may have difficulty achieving a high Strength metric, but that is more of a vanity measure.  No harm in giving it a try!  (unless you are currently delegated to one of my Pools. in that case, stay put!  ) (edited)\nSaturday, February 7, 2026 at 5:53 PM"
+  },
+  {
+    "id": "1469875061606584391",
+    "timestamp": "2026-02-08T01:58:43.645Z",
+    "username": "Juri Lespor (🌽Mafia)",
+    "text": "Call them"
+  },
+  {
+    "id": "1469875532857475306",
+    "timestamp": "2026-02-08T02:00:36.000Z",
+    "username": "",
+    "text": "But I'm pretty sure they won't be able to raise it by much"
+  },
+  {
+    "id": "1469875746867515433",
+    "timestamp": "2026-02-08T02:01:27.024Z",
+    "username": "",
+    "text": "It's the infrastructure it's really coaxial... They can't support the bandwidth in both directions"
+  },
+  {
+    "id": "1469883217833099426",
+    "timestamp": "2026-02-08T02:31:08.241Z",
+    "username": "captiancj",
+    "text": "They can, they choose not to. They have made many upgrades to neighborhood nodes and it’s fiber til it reaches the node. Their business clients just got symmetrical down and up speeds."
+  },
+  {
+    "id": "1470068050689655048",
+    "timestamp": "2026-02-08T14:45:35.828Z",
+    "username": "AlexL",
+    "text": "Hi folks,  I am looking for people to delegate their file nodes. Search for PlanZ-3"
+  },
+  {
+    "id": "1470433356050075713",
+    "timestamp": "2026-02-09T14:57:11.413Z",
+    "username": "oxenhouse",
+    "text": "Solid node sale volume on jpg store the past few days."
+  },
+  {
+    "id": "1470442409191280786",
+    "timestamp": "2026-02-09T15:33:09.850Z",
+    "username": "Juri Lespor (🌽Mafia)",
+    "text": "I got optimum to do it but like you said they didn't budge until I said I was willing to covert to a business service"
+  },
+  {
+    "id": "1470442567748423741",
+    "timestamp": "2026-02-09T15:33:47.653Z",
+    "username": "",
+    "text": "But it was the same cost as residential... (Residential just usually have promotions)."
+  },
+  {
+    "id": "1470442841858641981",
+    "timestamp": "2026-02-09T15:34:53.006Z",
+    "username": "",
+    "text": "The latest docsis I believe has the throughput"
+  },
+  {
+    "id": "1472724849024831670",
+    "timestamp": "2026-02-15T22:42:45.912Z",
+    "username": "Arrelulu [🌽 mafia]",
+    "text": "Did you buy any?"
+  },
+  {
+    "id": "1472726212496330924",
+    "timestamp": "2026-02-15T22:48:10.989Z",
+    "username": "Corny \"B\" | Knights⚔",
+    "text": "I did.  Spun up another public pool while prices looked good.  AOTE2, hosted with Clouvider."
+  },
+  {
+    "id": "1472755913164062833",
+    "timestamp": "2026-02-16T00:46:12.180Z",
+    "username": "oxenhouse",
+    "text": "No"
+  },
+  {
+    "id": "1472938956462231757",
+    "timestamp": "2026-02-16T12:53:33.103Z",
+    "username": "draniun",
+    "text": "its normal few days without rewards, after swap pool"
+  },
+  {
+    "id": "1472939011269070972",
+    "timestamp": "2026-02-16T12:53:46.170Z",
+    "username": "",
+    "text": "15% to 10%"
+  },
+  {
+    "id": "1473011551211487440",
+    "timestamp": "2026-02-16T17:42:01.040Z",
+    "username": "Rene - QA",
+    "text": "yes. It takes 2 full cycles to start earning rewards"
+  },
+  {
+    "id": "1475134711918760102",
+    "timestamp": "2026-02-22T14:18:41.999Z",
+    "username": "GeordieR",
+    "text": "Error parsing JWKS: error decoding response body"
+  },
+  {
+    "id": "1475134744738926784",
+    "timestamp": "2026-02-22T14:18:49.824Z",
+    "username": "",
+    "text": "oops sorry"
+  },
+  {
+    "id": "1475230103934865682",
+    "timestamp": "2026-02-22T20:37:45.228Z",
+    "username": "RaNa",
+    "text": "Same here and the website is down to"
+  },
+  {
+    "id": "1475230292242468975",
+    "timestamp": "2026-02-22T20:38:30.124Z",
+    "username": "",
+    "text": "Nice try"
+  },
+  {
+    "id": "1475393063580078150",
+    "timestamp": "2026-02-23T13:55:24.884Z",
+    "username": "Rene - QA",
+    "text": "@here\nThe node system is currently under maintenance. During the maintenance, all pools will be temporarily down. This does not affect either delegators or pool operators. No changes are required from your side. We are working to get the system back up and running as quickly as possible and make it even faster than it was. Thank you for your patience and understanding.\nUPDATE: All systems are back up and running (edited)\nMonday, February 23, 2026 at 8:55 AM"
+  },
+  {
+    "id": "1475577154489028658",
+    "timestamp": "2026-02-23T19:36:48.528Z",
+    "username": "DVet#1203  [🌽 Mafia]",
+    "text": "hey is there anyone will to jump in voice and help me setup a node? i have all that required i think"
+  },
+  {
+    "id": "1475577675430105088",
+    "timestamp": "2026-02-23T19:38:52.730Z",
+    "username": "Wick",
+    "text": ""
+  },
+  {
+    "id": "1475579040315474041",
+    "timestamp": "2026-02-23T19:44:18.144Z",
+    "username": "DVet#1203  [🌽 Mafia]",
+    "text": "why does it say you were paused"
+  },
+  {
+    "id": "1475579361686978610",
+    "timestamp": "2026-02-23T19:45:45.170Z",
+    "username": "SnuSnu | Knights ⚔",
+    "text": "be careful. dm and friend requests often come from scammers (edited)\nMonday, February 23, 2026 at 2:45 PM"
+  },
+  {
+    "id": "1475581652116705382",
+    "timestamp": "2026-02-23T19:54:40.846Z",
+    "username": "Rene - QA",
+    "text": "Did you check through video tutorial and docs how to setup a pool?"
+  },
+  {
+    "id": "1475581681162260622",
+    "timestamp": "2026-02-23T19:54:47.771Z",
+    "username": "",
+    "text": "!node"
+  },
+  {
+    "id": "1475581686397010152",
+    "timestamp": "2026-02-23T19:54:49.019Z",
+    "username": "Dyno",
+    "text": ""
+  },
+  {
+    "id": "1475581807264141506",
+    "timestamp": "2026-02-23T19:55:17.836Z",
+    "username": "DVet#1203  [🌽 Mafia]",
+    "text": "im trying. im trying to setup on raspberry pi"
+  },
+  {
+    "id": "1475581925581262910",
+    "timestamp": "2026-02-23T19:55:46.045Z",
+    "username": "Rene - QA",
+    "text": "https://wiki.infinityrising.com/guide-how-to-set-up-a-file-node-pool"
+  },
+  {
+    "id": "1475582143454253277",
+    "timestamp": "2026-02-23T19:56:37.990Z",
+    "username": "Rene - QA",
+    "text": "Do you have any experience with Linux and how to use the terminal?"
+  },
+  {
+    "id": "1475582534912835837",
+    "timestamp": "2026-02-23T19:58:11.321Z",
+    "username": "DVet#1203  [🌽 Mafia]",
+    "text": "no exp with linux but on my bitcoin i run umbrel"
+  },
+  {
+    "id": "1475582703322792060",
+    "timestamp": "2026-02-23T19:58:51.473Z",
+    "username": "Rene - QA",
+    "text": "There seems to be a lot of scammer activity today. Be careful and avoid DM's. Non of the stuff will ever DM you."
+  },
+  {
+    "id": "1475583898976124978",
+    "timestamp": "2026-02-23T20:03:36.539Z",
+    "username": "Rene - QA",
+    "text": "Did you tried to setup Docker there? I'm reading that is supporting Docker"
+  },
+  {
+    "id": "1475583987211567337",
+    "timestamp": "2026-02-23T20:03:57.576Z",
+    "username": "DVet#1203  [🌽 Mafia]",
+    "text": "im working on setting up linux now"
+  },
+  {
+    "id": "1475584800613204108",
+    "timestamp": "2026-02-23T20:07:30.179Z",
+    "username": "Rene - QA",
+    "text": "@KC is running his pool on Raspberry. Perhaps he could give you some tips. But in general, there is a lot of tutorials on Youtube how to install OS and Docker through the terminal (edited)\nMonday, February 23, 2026 at 3:07 PM"
+  },
+  {
+    "id": "1476017051939246141",
+    "timestamp": "2026-02-25T00:44:48.253Z",
+    "username": "DVet#1203  [🌽 Mafia]",
+    "text": "yall did not make the node process easy lol"
+  },
+  {
+    "id": "1476027049780052189",
+    "timestamp": "2026-02-25T01:24:31.924Z",
+    "username": "DVet#1203  [🌽 Mafia]",
+    "text": "@KCyou on"
+  },
+  {
+    "id": "1476027582238560368",
+    "timestamp": "2026-02-25T01:26:38.872Z",
+    "username": "KC",
+    "text": "hello"
+  },
+  {
+    "id": "1476027708172668999",
+    "timestamp": "2026-02-25T01:27:08.897Z",
+    "username": "DVet#1203  [🌽 Mafia]",
+    "text": "could you jump in voice channel to help me with pi node"
+  },
+  {
+    "id": "1477205168469839933",
+    "timestamp": "2026-02-28T07:25:57.308Z",
+    "username": "Bregolien | Knights ⚔",
+    "text": "!node"
+  },
+  {
+    "id": "1477205173771173998",
+    "timestamp": "2026-02-28T07:25:58.572Z",
+    "username": "Dyno",
+    "text": ""
+  }
+]
