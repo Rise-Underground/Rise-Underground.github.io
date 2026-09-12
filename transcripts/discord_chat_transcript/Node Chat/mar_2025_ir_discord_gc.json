@@ -1,0 +1,4616 @@
+[
+  {
+    "id": "1345216231174701096",
+    "timestamp": "2025-03-01T02:09:02.421Z",
+    "username": "GeordieR",
+    "text": "I have updated the CGNAT detection script at github dot com/Geordie-R/copi-misc/blob/main/CGNAT_README.md in case anyone needs to send anyone there for a windows powershell or ubuntu check if you suspect they might be behind CGNAT.  It now detects the number of hops like Bob suggested and what i saw in the copi wiki."
+  },
+  {
+    "id": "1345225091348430899",
+    "timestamp": "2025-03-01T02:44:14.851Z",
+    "username": "tooLateForTown",
+    "text": "Why does this happen?  I uninstalled and tried to re-install.   I've done it dozens of times, but I got this this morning and just now.  What's causing this?"
+  },
+  {
+    "id": "1345226312440217633",
+    "timestamp": "2025-03-01T02:49:05.982Z",
+    "username": "EZ | Node Operator",
+    "text": "DONT click his link scammer"
+  },
+  {
+    "id": "1345226343025086516",
+    "timestamp": "2025-03-01T02:49:13.274Z",
+    "username": "tooLateForTown",
+    "text": "I just got another scammer popup."
+  },
+  {
+    "id": "1345226426843922523",
+    "timestamp": "2025-03-01T02:49:33.258Z",
+    "username": "",
+    "text": "Yeah, I blocked him and reported him.  Took a screenshot of his message too if anyone interested"
+  },
+  {
+    "id": "1345227155428343840",
+    "timestamp": "2025-03-01T02:52:26.966Z",
+    "username": "EZ | Node Operator",
+    "text": "We had Node breaker event earlier, perhaps they are doing some tweakings behind the scenes.."
+  },
+  {
+    "id": "1345227398404116560",
+    "timestamp": "2025-03-01T02:53:24.896Z",
+    "username": "",
+    "text": "@Jupiter_Rising  ban hammer needed, scammer here."
+  },
+  {
+    "id": "1345228108072226908",
+    "timestamp": "2025-03-01T02:56:14.094Z",
+    "username": "EZ | Node Operator",
+    "text": "For sure there are some issues that needs to be resolved.. Legacy download works fine last  i checked atleast."
+  },
+  {
+    "id": "1345228503402020884",
+    "timestamp": "2025-03-01T02:57:48.348Z",
+    "username": "tooLateForTown",
+    "text": "Works pretty well most of the time.  Not bad for this early version.  been having fun testing it."
+  },
+  {
+    "id": "1345229727945850930",
+    "timestamp": "2025-03-01T03:02:40.302Z",
+    "username": "Gus T. Wind",
+    "text": "Nice. My nodes are up there on the leaderboard"
+  },
+  {
+    "id": "1345232797790371840",
+    "timestamp": "2025-03-01T03:15:12.789Z",
+    "username": "Greg H (TwoUtah) 🥔🧱",
+    "text": "What country are you in?  Yeah, we had an event earlier, but it should be ok now. (edited)\nFriday, February 28, 2025 at 10:15 PM"
+  },
+  {
+    "id": "1345236225442713682",
+    "timestamp": "2025-03-01T03:28:29.426Z",
+    "username": "Juri Lespor (🌽Mafia)",
+    "text": "Should we make a DappNode App"
+  },
+  {
+    "id": "1345236438911942739",
+    "timestamp": "2025-03-01T03:29:20.321Z",
+    "username": "",
+    "text": "I used to be into team Avado heavily"
+  },
+  {
+    "id": "1345258663224410154",
+    "timestamp": "2025-03-01T04:57:39.010Z",
+    "username": "tooLateForTown",
+    "text": "Canada.  I just tried it and it seems to be working."
+  },
+  {
+    "id": "1345295045460496465",
+    "timestamp": "2025-03-01T07:22:13.211Z",
+    "username": "Free [ 🌽 Mafia]",
+    "text": "Waiting for Linux setup guide myself"
+  },
+  {
+    "id": "1345307746890678364",
+    "timestamp": "2025-03-01T08:12:41.468Z",
+    "username": "Beach_bum",
+    "text": "where can I find the leaderboard?"
+  },
+  {
+    "id": "1345310739589500958",
+    "timestamp": "2025-03-01T08:24:34.983Z",
+    "username": "Krikke80",
+    "text": "9hrs ago post from Greg H"
+  },
+  {
+    "id": "1345313257795354625",
+    "timestamp": "2025-03-01T08:34:35.370Z",
+    "username": "Beach_bum",
+    "text": "Thank you"
+  },
+  {
+    "id": "1345316618221260820",
+    "timestamp": "2025-03-01T08:47:56.558Z",
+    "username": "Beach_bum",
+    "text": "I changed my VPN to Singapore, is anyone in that prt of the world downloading?"
+  },
+  {
+    "id": "1345318731894493194",
+    "timestamp": "2025-03-01T09:58:17.642Z",
+    "username": "GeordieR",
+    "text": "Mine was absent yesterday as it had an issue. Uptimerobot was happy and it was producing the \"Ok\" on the health but it had a cache error in the log and it wasn't green on the UI in my pool page. Lesson to self!\n\nDue to this I'll work on a copi node monitor which is a light weight simple check that runs every X minutes via cronjob and checks the docker logs for any errors on the node then telegram messages the findings to your telegram ID if there's anything that looks to be server side. Also checks current CPU, memory, hard disk space remaining and alerts if they exceed simple parameters at the same time as that code is already written from other projects. I'll shout when it's ready. Just need to record all the phrases I need to look out for in a list and look for them as it might get a bit useless if reporting on client errors. @Greg H (TwoUtah) 🥔🧱 sorry to bother you is there a complete error list anywhere by any chance as I hope to ignore errors caused by clients with poor connections etc. (edited)\nSaturday, March 1, 2025 at 4:58 AM"
+  },
+  {
+    "id": "1345321955464839178",
+    "timestamp": "2025-03-01T09:09:49.936Z",
+    "username": "GeordieR",
+    "text": "I have one do you want to test it? I could really do with some feedback on it. I'll help you every step if needed (edited)\nSaturday, March 1, 2025 at 4:09 AM"
+  },
+  {
+    "id": "1345378068398866523",
+    "timestamp": "2025-03-01T12:52:07.422Z",
+    "username": "Captain Sakura 🌸 [🌽 Mafia]",
+    "text": "Me lol the one and only"
+  },
+  {
+    "id": "1345381116701573164",
+    "timestamp": "2025-03-01T13:04:14.194Z",
+    "username": "EZ | Node Operator",
+    "text": "Would be intresting to see a metric with how many diffrent vps providers we are using."
+  },
+  {
+    "id": "1345393914621722704",
+    "timestamp": "2025-03-01T13:55:05.456Z",
+    "username": "oxenhouse",
+    "text": "@Greg H (TwoUtah) 🥔🧱 are there plans for another Breaking Nodes session?"
+  },
+  {
+    "id": "1345394778090639400",
+    "timestamp": "2025-03-01T13:58:31.323Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "During the watch party Greg said that they would love to do one again, but after doing some changes."
+  },
+  {
+    "id": "1345395074577600583",
+    "timestamp": "2025-03-01T13:59:42.011Z",
+    "username": "oxenhouse",
+    "text": "Nice, I'm asking because I want to make some changes as well before the next party. Learned a lot from this last session."
+  },
+  {
+    "id": "1345405721105272896",
+    "timestamp": "2025-03-01T14:42:00.341Z",
+    "username": "MSPDriver 🇺🇸",
+    "text": "Where do I find the node leaderboard?"
+  },
+  {
+    "id": "1345406840694898760",
+    "timestamp": "2025-03-01T14:46:51.314Z",
+    "username": "GeordieR",
+    "text": "I guess I'm right in saying that a latency leaderboard is going to be less latency from whereever the test is conducted from so it's not something to worry about too much for those who might be showing higher latency due to being hosted further away from the test like Singapore etc. (edited)\nSaturday, March 1, 2025 at 9:46 AM"
+  },
+  {
+    "id": "1345410647915237498",
+    "timestamp": "2025-03-01T15:01:34.984Z",
+    "username": "LtcBlade",
+    "text": "I do love the nodes and the speed. Just to be sure, there is no chance for any bad actors to compromise any of the files right?"
+  },
+  {
+    "id": "1345410863502327869",
+    "timestamp": "2025-03-01T15:02:26.384Z",
+    "username": "",
+    "text": "I guess this alread have been adressed"
+  },
+  {
+    "id": "1345415756992745472",
+    "timestamp": "2025-03-01T15:21:53.083Z",
+    "username": "LtcBlade",
+    "text": "Ok I see. I am no technical at all so just had to ask"
+  },
+  {
+    "id": "1345415806833659987",
+    "timestamp": "2025-03-01T15:22:04.966Z",
+    "username": "",
+    "text": "I guess it might be the same as running a Daedalus node?"
+  },
+  {
+    "id": "1345416502739865651",
+    "timestamp": "2025-03-01T15:24:50.883Z",
+    "username": "LtcBlade",
+    "text": "Ok great thank you for answer!"
+  },
+  {
+    "id": "1345460690785271859",
+    "timestamp": "2025-03-01T18:20:26.134Z",
+    "username": "Greg H (TwoUtah) 🥔🧱",
+    "text": "We are working on that.  I need to buy a database with that information."
+  },
+  {
+    "id": "1345460789556809778",
+    "timestamp": "2025-03-01T18:20:49.683Z",
+    "username": "Greg H (TwoUtah) 🥔🧱",
+    "text": "Week or two."
+  },
+  {
+    "id": "1345487022265077812",
+    "timestamp": "2025-03-01T20:05:04.048Z",
+    "username": "Sage | Knights ⚔",
+    "text": "I'll be upping my upload speed on Monday so hopefully the NUNK pool will move from the bottom of that latency chart. I hope 25G upload speeds are enough"
+  },
+  {
+    "id": "1345487930155597925",
+    "timestamp": "2025-03-01T20:08:40.506Z",
+    "username": "oxenhouse",
+    "text": "@Greg H (TwoUtah) 🥔🧱 what is the reason for not being able to use the same cache folder for multiple pools? Are there tests/data that show this problematic?"
+  },
+  {
+    "id": "1345490104591978588",
+    "timestamp": "2025-03-01T20:17:18.932Z",
+    "username": "ScoobyDooBopBop",
+    "text": "25Gbps?!"
+  },
+  {
+    "id": "1345490655069077535",
+    "timestamp": "2025-03-01T20:19:30.176Z",
+    "username": "Sage | Knights ⚔",
+    "text": "Yep, upload speed"
+  },
+  {
+    "id": "1345490749394780253",
+    "timestamp": "2025-03-01T20:19:52.665Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Where are you getting this?"
+  },
+  {
+    "id": "1345490812754202694",
+    "timestamp": "2025-03-01T20:20:07.771Z",
+    "username": "Sage | Knights ⚔",
+    "text": "I'm in the UK"
+  },
+  {
+    "id": "1345491208285454377",
+    "timestamp": "2025-03-01T20:21:42.073Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Is this a residential plan or you signed up for a business/commercial connection?"
+  },
+  {
+    "id": "1345491250123378792",
+    "timestamp": "2025-03-01T20:21:52.048Z",
+    "username": "",
+    "text": "That's amazing"
+  },
+  {
+    "id": "1345491280024830072",
+    "timestamp": "2025-03-01T20:21:59.177Z",
+    "username": "Sage | Knights ⚔",
+    "text": "Oh, sorry, of course it's 25MB"
+  },
+  {
+    "id": "1345491353072697416",
+    "timestamp": "2025-03-01T20:22:16.593Z",
+    "username": "",
+    "text": "Have a bit of brain fog today lol"
+  },
+  {
+    "id": "1345491488917950516",
+    "timestamp": "2025-03-01T20:22:48.981Z",
+    "username": "",
+    "text": "It's 1GB download and 25MB upload"
+  },
+  {
+    "id": "1345491596585472031",
+    "timestamp": "2025-03-01T20:23:14.651Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Ah ok lmao. Man you really had me on the floor just now"
+  },
+  {
+    "id": "1345491720518893678",
+    "timestamp": "2025-03-01T20:23:44.199Z",
+    "username": "Sage | Knights ⚔",
+    "text": "Sorry to have caused panic"
+  },
+  {
+    "id": "1345491884667043963",
+    "timestamp": "2025-03-01T20:24:23.335Z",
+    "username": "ScoobyDooBopBop",
+    "text": "I started googling immediately to see where in the US i would have to move to get this plan lol"
+  },
+  {
+    "id": "1345492196819730483",
+    "timestamp": "2025-03-01T20:25:37.758Z",
+    "username": "Sage | Knights ⚔",
+    "text": "The best possible residential deal in the UK is community fibre, but it's not available for most people"
+  },
+  {
+    "id": "1345492206009454733",
+    "timestamp": "2025-03-01T20:25:39.949Z",
+    "username": "",
+    "text": ""
+  },
+  {
+    "id": "1345492265753247866",
+    "timestamp": "2025-03-01T20:25:54.193Z",
+    "username": "",
+    "text": "That's 3GB up and down"
+  },
+  {
+    "id": "1345513062026711071",
+    "timestamp": "2025-03-01T21:48:32.411Z",
+    "username": "Gus T. Wind",
+    "text": "Need help?"
+  },
+  {
+    "id": "1345513968067809411",
+    "timestamp": "2025-03-01T21:52:08.428Z",
+    "username": "",
+    "text": "Setting it up on Debian is a breeze."
+  },
+  {
+    "id": "1345516328429158410",
+    "timestamp": "2025-03-01T22:01:31.182Z",
+    "username": "Krikke80",
+    "text": "Anyone experience with leaseweb VPS? Apparently very cheap and a 10Gbps virtual port.. looks intersting.."
+  },
+  {
+    "id": "1345519672216522824",
+    "timestamp": "2025-03-01T22:15:08.965Z",
+    "username": "EZ | Node Operator",
+    "text": "If im not mistaken i believe @GeordieR  got a VDS over there.. \nThe only thing im thinking is they charge per GB over your plan.. Contabo just throttle down to 100mbit. (edited)\nSaturday, March 1, 2025 at 5:15 PM"
+  },
+  {
+    "id": "1345521269759672443",
+    "timestamp": "2025-03-01T22:21:09.287Z",
+    "username": "Free [ 🌽 Mafia]",
+    "text": "I dont have the knowledge to help ya, Im bad with tech stuff. Hopefully someone else will take you up on it. Otherwise I will wait for the Corn team guide on it."
+  },
+  {
+    "id": "1345522810545508472",
+    "timestamp": "2025-03-01T22:27:16.639Z",
+    "username": "Krikke80",
+    "text": "Thx need to look into that, thx for highlighting! have Contabo now.. The cheapest plan from leaseweb could host the nodes without any problem.. worth to look into."
+  },
+  {
+    "id": "1345524163514990663",
+    "timestamp": "2025-03-01T22:32:39.212Z",
+    "username": "Free [ 🌽 Mafia]",
+    "text": "Whats the cheapest plan cost?"
+  },
+  {
+    "id": "1345526344443756544",
+    "timestamp": "2025-03-01T22:41:19.186Z",
+    "username": "Krikke80",
+    "text": "With 200gb (standard is 100gb) you will pay €6,99/month\n30TB bandw."
+  },
+  {
+    "id": "1345598380612784148",
+    "timestamp": "2025-03-02T03:27:33.947Z",
+    "username": "EZ | Node Operator",
+    "text": "Have anyone tested setting up the pool on a arm64 ampere cpu?"
+  },
+  {
+    "id": "1345598583180886090",
+    "timestamp": "2025-03-02T03:28:22.243Z",
+    "username": "",
+    "text": "figure price is 25% less the x86 architecture"
+  },
+  {
+    "id": "1345598635626201194",
+    "timestamp": "2025-03-02T03:28:34.747Z",
+    "username": "",
+    "text": "over at hetzner"
+  },
+  {
+    "id": "1345607590964367390",
+    "timestamp": "2025-03-02T04:04:09.866Z",
+    "username": "Greg H (TwoUtah) 🥔🧱",
+    "text": "The docker image is being built for arm64, so it should work.  It work on RPI 4 and 5, which is arm64"
+  },
+  {
+    "id": "1345607754642886706",
+    "timestamp": "2025-03-02T04:04:48.890Z",
+    "username": "",
+    "text": "The task is not CPU limiting, you don't need much."
+  },
+  {
+    "id": "1345607884112924775",
+    "timestamp": "2025-03-02T04:05:19.758Z",
+    "username": "EZ | Node Operator",
+    "text": "Cheers. Will see how it goes on the ampere architecture"
+  },
+  {
+    "id": "1345608141810831401",
+    "timestamp": "2025-03-02T04:06:21.198Z",
+    "username": "",
+    "text": "Always fun testing something new."
+  },
+  {
+    "id": "1345613310225154179",
+    "timestamp": "2025-03-02T04:26:53.444Z",
+    "username": "Gus T. Wind",
+    "text": "Don't tell this to your gf, thought"
+  },
+  {
+    "id": "1345949336164499507",
+    "timestamp": "2025-03-03T02:42:08.271Z",
+    "username": "Zana",
+    "text": "Hey guys, Is there a help for getting this node running on linux and not windows?"
+  },
+  {
+    "id": "1345949509913673801",
+    "timestamp": "2025-03-03T02:54:59.766Z",
+    "username": "",
+    "text": "where can pull files for linux? (edited)\nSunday, March 2, 2025 at 9:54 PM"
+  },
+  {
+    "id": "1345953668356116583",
+    "timestamp": "2025-03-03T02:59:21.146Z",
+    "username": "Zana",
+    "text": "tried using the public.ecr.aws/ blah blah blah.   got a 401 unauthorized"
+  },
+  {
+    "id": "1345953707422122160",
+    "timestamp": "2025-03-03T02:59:30.460Z",
+    "username": "EZ | Node Operator",
+    "text": "@GeordieR  got a script for Linux on GitHub i believe. \nIm sure he can help you out, hes looking for testers."
+  },
+  {
+    "id": "1345953818487160892",
+    "timestamp": "2025-03-03T02:59:56.940Z",
+    "username": "Zana",
+    "text": "Sweet!"
+  },
+  {
+    "id": "1345953867728293978",
+    "timestamp": "2025-03-03T03:00:08.680Z",
+    "username": "EZ | Node Operator",
+    "text": "DONT click his link above scammer"
+  },
+  {
+    "id": "1345953927157252117",
+    "timestamp": "2025-03-03T03:00:22.849Z",
+    "username": "Zana",
+    "text": "yup"
+  },
+  {
+    "id": "1345954348768956567",
+    "timestamp": "2025-03-03T03:02:24.495Z",
+    "username": "",
+    "text": "@GeordieR Hit me up when you have time. Linux how I run a few of my nodes. Happy to help you, help me,help you help me....help you  (edited)\nSunday, March 2, 2025 at 10:02 PM"
+  },
+  {
+    "id": "1345958409266008065",
+    "timestamp": "2025-03-03T03:18:11.467Z",
+    "username": "GeordieR",
+    "text": "hey dude, sure!"
+  },
+  {
+    "id": "1345958479399223316",
+    "timestamp": "2025-03-03T03:18:28.188Z",
+    "username": "Zana",
+    "text": "Hey kinda woking on making it work"
+  },
+  {
+    "id": "1345958547862720534",
+    "timestamp": "2025-03-03T03:18:44.511Z",
+    "username": "",
+    "text": "you got something?"
+  },
+  {
+    "id": "1345958565562679306",
+    "timestamp": "2025-03-03T03:18:48.731Z",
+    "username": "GeordieR",
+    "text": "Im just about to hit my bed its like 3am here but ill send you the link"
+  },
+  {
+    "id": "1345958598819184640",
+    "timestamp": "2025-03-03T03:18:56.660Z",
+    "username": "",
+    "text": "yup for sure"
+  },
+  {
+    "id": "1345958638333722665",
+    "timestamp": "2025-03-03T03:19:06.081Z",
+    "username": "Zana",
+    "text": "Sweet. thanks for hitting me up before bedtime"
+  },
+  {
+    "id": "1346233323466264576",
+    "timestamp": "2025-03-03T21:30:36.120Z",
+    "username": "EZ | Node Operator",
+    "text": "Hows it going with the setup?"
+  },
+  {
+    "id": "1346233709552074824",
+    "timestamp": "2025-03-03T21:32:08.170Z",
+    "username": "Zana",
+    "text": "I’m not logged in as root is an issue now. Play with that when I get home. He might have me a fix for it. We’ll see."
+  },
+  {
+    "id": "1346282080220352644",
+    "timestamp": "2025-03-04T00:45:52.610Z",
+    "username": "Beach_bum",
+    "text": "The windows video from scruffy will get you most of the way through linux. Sorry,  i do not have the link handy. Documentaion on Dockers website can get though installing docker on linux (edited)\nMonday, March 3, 2025 at 7:45 PM"
+  },
+  {
+    "id": "1346288994022854687",
+    "timestamp": "2025-03-04T01:11:49.015Z",
+    "username": "EZ | Node Operator",
+    "text": "There are more of us that can help aswell, just thinking if you are stuck somewhere."
+  },
+  {
+    "id": "1346335466668163192",
+    "timestamp": "2025-03-04T04:16:28.957Z",
+    "username": "Gus T. Wind",
+    "text": "Ask ChatGPT: \"walk me through  your-system-here Docker installation with root access\"\n\nThen create a node on Corn website to get node key.\n\nEdit .yml file and start it."
+  },
+  {
+    "id": "1346481917960261655",
+    "timestamp": "2025-03-04T13:58:25.666Z",
+    "username": "Zana",
+    "text": "Yeah, thanks guys.   Think I got it working. need to just do set up after work. Running late."
+  },
+  {
+    "id": "1346487240792211466",
+    "timestamp": "2025-03-04T14:19:34.728Z",
+    "username": "Zana",
+    "text": "BTW if anyone is trying to run on Linux hit up @GeordieR"
+  },
+  {
+    "id": "1346489556710457365",
+    "timestamp": "2025-03-04T14:28:46.886Z",
+    "username": "GeordieR",
+    "text": "Yeah just to recap for everyone here it's been really good for me to have Zana to try this out for me as he was installing it as a non root user so I hadn't thought of that stupidly so I added a bunch of sudo commands so it's looking much better now if you're running as a non root user."
+  },
+  {
+    "id": "1346498721810092074",
+    "timestamp": "2025-03-04T15:05:12.016Z",
+    "username": "tooLateForTown",
+    "text": "These are weird errors.  Why it it trying to get favicon.ico?\n\npool-server-1  | [2025-03-04T14:59:53Z DEBUG pool_server::cache] Next registration in 3296 seconds\npool-server-1  | [2025-03-04T14:59:53Z DEBUG pool_server::cache] Sleeping for 60 seconds\npool-server-1  | [2025-03-04T15:00:49Z WARN  pool_server::server] GET / 404 Not Found\npool-server-1  | [2025-03-04T15:00:53Z DEBUG pool_server::cache] Starting with 36806945280 bytes of cache in 1405 files.\npool-server-1  | [2025-03-04T15:00:53Z DEBUG pool_server::cache] Finishing with 36806945280 bytes of cache in 1405 files.\npool-server-1  | [2025-03-04T15:00:53Z INFO  pool_server::cache] Verified 131072000 bytes of cache in 5 files. Took 0 seconds.\npool-server-1  | [2025-03-04T15:00:53Z DEBUG pool_server::cache] Next registration in 3235 seconds\npool-server-1  | [2025-03-04T15:00:53Z DEBUG pool_server::cache] Sleeping for 60 seconds\npool-server-1  | [2025-03-04T15:01:00Z WARN  pool_server::server] GET /favicon.ico 404 Not Found\npool-server-1  | [2025-03-04T15:01:03Z WARN  pool_server::server] GET / 404 Not Found\npool-server-1  | [2025-03-04T15:01:05Z WARN  pool_server::server] CONNECT  404 Not Found\npool-server-1  | [2025-03-04T15:01:25Z INFO  pool_server::server] GET /cache/a2f2bb7d-3b19-40b3-95e3-6e10a02a8a73.bin 200 OK"
+  },
+  {
+    "id": "1346499498964156477",
+    "timestamp": "2025-03-04T15:08:17.304Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Bots and web scrappers scanning open ports. Its typical."
+  },
+  {
+    "id": "1346499585958350860",
+    "timestamp": "2025-03-04T15:08:38.045Z",
+    "username": "tooLateForTown",
+    "text": "Ah!  Makes sense.  Thanks"
+  },
+  {
+    "id": "1346573188964024342",
+    "timestamp": "2025-03-04T20:01:06.369Z",
+    "username": "Tony the Brick 🌽Mafia Whisperer",
+    "text": "to anyone running a Node Pool, what \"lifetime activity\" are you showing?  mine has been active since last friday.  have 17.36 gb so far."
+  },
+  {
+    "id": "1346573416659947631",
+    "timestamp": "2025-03-04T20:02:00.656Z",
+    "username": "Steve 'Corn Pops'",
+    "text": "Last time I looked it was 80gb+-"
+  },
+  {
+    "id": "1346573481956868108",
+    "timestamp": "2025-03-04T20:02:16.224Z",
+    "username": "MSPDriver 🇺🇸",
+    "text": "I just have 1 node. I'm at 5gb been online roughly 2 weeks"
+  },
+  {
+    "id": "1346574647654879343",
+    "timestamp": "2025-03-04T20:06:54.148Z",
+    "username": "Tony the Brick 🌽Mafia Whisperer",
+    "text": "cool.  thanks for the info.  I have 8 nodes running for prob 5 days now."
+  },
+  {
+    "id": "1346622194268114965",
+    "timestamp": "2025-03-04T23:15:50.144Z",
+    "username": "tooLateForTown",
+    "text": "I’ve got 10 nodes and running for about a week.  I got about 45gb lifetime"
+  },
+  {
+    "id": "1346682761108390001",
+    "timestamp": "2025-03-05T03:16:30.404Z",
+    "username": "Gus T. Wind",
+    "text": "5 nodes with something around 60GB in total"
+  },
+  {
+    "id": "1346682952041365525",
+    "timestamp": "2025-03-05T03:17:15.926Z",
+    "username": "",
+    "text": "My nephew uses more bandwidth browsing hub"
+  },
+  {
+    "id": "1346795988521848833",
+    "timestamp": "2025-03-05T10:46:25.923Z",
+    "username": "taswid",
+    "text": "I not"
+  },
+  {
+    "id": "1346798944247877692",
+    "timestamp": "2025-03-05T10:58:10.623Z",
+    "username": "Beach_bum",
+    "text": "hello all"
+  },
+  {
+    "id": "1346831625971040276",
+    "timestamp": "2025-03-05T13:08:02.553Z",
+    "username": "Moonscaper | Knights ⚔",
+    "text": "Just to add to the chat. I have 10 nodes and about 60gb lifetime activity. Running about a week."
+  },
+  {
+    "id": "1346870854885048322",
+    "timestamp": "2025-03-05T15:43:55.455Z",
+    "username": "Beach_bum",
+    "text": "WHat kind of computer do you have your nodes on?  What's the electric bill like?"
+  },
+  {
+    "id": "1346938552528670741",
+    "timestamp": "2025-03-05T20:12:55.831Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "Fysical hardware or cloud?"
+  },
+  {
+    "id": "1346938895409090590",
+    "timestamp": "2025-03-05T20:14:17.580Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "Messaged you"
+  },
+  {
+    "id": "1347115174460395571",
+    "timestamp": "2025-03-06T07:54:45.781Z",
+    "username": "SiegeWulf (Kiwi Crypto)[🌽Mafia]",
+    "text": "OK - Got to Validating stage - Health check fails - but tested the internal docker status and it is coming up OK...\nDo I need to wait any length of time at the Validate stage?\nOr do I have a port blockage somewhere!?"
+  },
+  {
+    "id": "1347115689537699874",
+    "timestamp": "2025-03-06T07:56:48.585Z",
+    "username": "",
+    "text": "Container is operating, cache files D/L fine and Docker reporting everything is good.\n\nThe internal Docker test I did was a Curl test in Powershell to my external IP and it came up OK.\nWhen I try from my phones browser on Data (not wifi) it fails to some back (times out)"
+  },
+  {
+    "id": "1347116510300209223",
+    "timestamp": "2025-03-06T08:00:04.270Z",
+    "username": "",
+    "text": "On the Copi site in pool Management I am getting 2 errors\nA {ERR#001} (can't scroll back far enough to see the explanation)\nand \n[ERR#009] client skipped download because of previous errors"
+  },
+  {
+    "id": "1347120625587589173",
+    "timestamp": "2025-03-06T08:18:20.098Z",
+    "username": "Montresor",
+    "text": "Sounds like port forwarding on your router is not working or port is not otherwise accessible (from outside). Did you configure these separately already? (edited)\nThursday, March 6, 2025 at 3:18 AM"
+  },
+  {
+    "id": "1347122243385294971",
+    "timestamp": "2025-03-06T08:22:51.144Z",
+    "username": "",
+    "text": "well ok, since local test to external IP did work, the port forwarding should be fine. So it's probably the latter. Maybe the ISP is dropping incoming connections?"
+  },
+  {
+    "id": "1347124912938291251",
+    "timestamp": "2025-03-06T08:33:27.615Z",
+    "username": "SiegeWulf (Kiwi Crypto)[🌽Mafia]",
+    "text": "hmmmm\nHave to give up tonight - will try again tomorrow"
+  },
+  {
+    "id": "1347125925967302718",
+    "timestamp": "2025-03-06T08:37:29.140Z",
+    "username": "SiegeWulf (Kiwi Crypto)[🌽Mafia]",
+    "text": "ty for the idea.  may contact them"
+  },
+  {
+    "id": "1347197413705781250",
+    "timestamp": "2025-03-06T13:21:33.145Z",
+    "username": "Montresor",
+    "text": "It's doing a port forward to whatever target's been set in the internal network. I don't get what distinction you're trying to make."
+  },
+  {
+    "id": "1347197781093384322",
+    "timestamp": "2025-03-06T13:23:00.737Z",
+    "username": "",
+    "text": "Well that's what we established already"
+  },
+  {
+    "id": "1347198267238125641",
+    "timestamp": "2025-03-06T13:26:10.785Z",
+    "username": "",
+    "text": "Yes which behaves as expected, so port forwarding is there (edited)\nThursday, March 6, 2025 at 8:26 AM"
+  },
+  {
+    "id": "1347198485937520721",
+    "timestamp": "2025-03-06T13:25:48.785Z",
+    "username": "",
+    "text": "Access from WAN side does not"
+  },
+  {
+    "id": "1347198727999193198",
+    "timestamp": "2025-03-06T13:26:46.497Z",
+    "username": "",
+    "text": "Precisely"
+  },
+  {
+    "id": "1347198920396378113",
+    "timestamp": "2025-03-06T13:27:32.368Z",
+    "username": "",
+    "text": "You're trying to say to me something as if I had not understood it"
+  },
+  {
+    "id": "1347198967414263911",
+    "timestamp": "2025-03-06T13:27:43.578Z",
+    "username": "",
+    "text": "There is no confusion to me here"
+  },
+  {
+    "id": "1347199238647582843",
+    "timestamp": "2025-03-06T13:28:48.245Z",
+    "username": "Montresor",
+    "text": "I'm not using it as a test. Our friend there was. And it was an indication that port forwarding has been set up correctly, and that's all it indicates."
+  },
+  {
+    "id": "1347199577119522817",
+    "timestamp": "2025-03-06T13:30:08.943Z",
+    "username": "",
+    "text": ""
+  },
+  {
+    "id": "1347205994131750954",
+    "timestamp": "2025-03-06T13:55:38.878Z",
+    "username": "Montresor",
+    "text": "Would need more info to narrow it down. Not likely a container config issue, yeah."
+  },
+  {
+    "id": "1347206274865037374",
+    "timestamp": "2025-03-06T13:56:45.810Z",
+    "username": "",
+    "text": "Since the local test does go through, even routed with the external IP as target, problem's certainly more likely to be on the WAN side"
+  },
+  {
+    "id": "1347206465663926283",
+    "timestamp": "2025-03-06T13:57:31.300Z",
+    "username": "",
+    "text": "I've had ISPs plain drop incoming packets from unestablished connections even with a public IP"
+  },
+  {
+    "id": "1347206810578325555",
+    "timestamp": "2025-03-06T13:58:53.534Z",
+    "username": "",
+    "text": "Ooh good finds. I haven't really used windows since the nineties so I'm totally cold on its workings these days"
+  },
+  {
+    "id": "1347222676254494782",
+    "timestamp": "2025-03-06T15:01:56.206Z",
+    "username": "Leandro",
+    "text": "How can I increase to 3000 my copi balance on node?"
+  },
+  {
+    "id": "1347223820704022549",
+    "timestamp": "2025-03-06T15:06:29.064Z",
+    "username": "Montresor",
+    "text": "Do you mean, how do you buy COPI?"
+  },
+  {
+    "id": "1347224266688434349",
+    "timestamp": "2025-03-06T15:08:15.395Z",
+    "username": "Leandro",
+    "text": "No. I need to put copi on cornucopias node website or just keep then on my wallet?"
+  },
+  {
+    "id": "1347224439749873706",
+    "timestamp": "2025-03-06T15:08:56.656Z",
+    "username": "Montresor",
+    "text": "You keep them on your wallet, but you register the wallet on Cornucopias website. In your account settings."
+  },
+  {
+    "id": "1347224497769549826",
+    "timestamp": "2025-03-06T15:09:10.489Z",
+    "username": "Leandro",
+    "text": "Copi Balance 2119\nCopi requerer 3000"
+  },
+  {
+    "id": "1347224832257036288",
+    "timestamp": "2025-03-06T15:11:23.899Z",
+    "username": "Rene - QA",
+    "text": "Make sure you have enough copi in your wallet. The copi will sync automatically but it takes from 15min up to few hours to fully sync (edited)\nThursday, March 6, 2025 at 10:11 AM"
+  },
+  {
+    "id": "1347224836518314025",
+    "timestamp": "2025-03-06T15:10:42.681Z",
+    "username": "Montresor",
+    "text": "Ok I see. You just don't have enough, need to get 881 more. (edited)\nThursday, March 6, 2025 at 10:10 AM"
+  },
+  {
+    "id": "1347226727595905136",
+    "timestamp": "2025-03-06T15:18:02.121Z",
+    "username": "Leandro",
+    "text": "Thank. I will do this"
+  },
+  {
+    "id": "1347232121651204128",
+    "timestamp": "2025-03-06T15:39:28.164Z",
+    "username": "SnuSnu | Knights ⚔",
+    "text": "Following in on the 3000 requirement, how come the EVM staked COPI do not count for this balance?"
+  },
+  {
+    "id": "1347232751853768714",
+    "timestamp": "2025-03-06T15:41:58.416Z",
+    "username": "Mr. Pink",
+    "text": "It should. I have a very small amount that does count."
+  },
+  {
+    "id": "1347233205652164649",
+    "timestamp": "2025-03-06T15:43:46.610Z",
+    "username": "SnuSnu | Knights ⚔",
+    "text": "Mine doesn‘t. Base chain. Only the coins i claimed as rewards and are just sitting in the wallet count."
+  },
+  {
+    "id": "1347236352663486476",
+    "timestamp": "2025-03-06T15:56:16.916Z",
+    "username": "Mr. Pink",
+    "text": "Sorry.. I completely misread  Staked COPI is removed from the wallet therefore it can't be seen."
+  },
+  {
+    "id": "1347242948651384915",
+    "timestamp": "2025-03-06T16:22:29.522Z",
+    "username": "SnuSnu | Knights ⚔",
+    "text": "I guess i need to open a feature request then?\nYou guys will anyway need to implement a solution to look up staked coins, for when ever the government votes will be implemented."
+  },
+  {
+    "id": "1347270281328332810",
+    "timestamp": "2025-03-06T18:11:06.140Z",
+    "username": "SiegeWulf (Kiwi Crypto)[🌽Mafia]",
+    "text": "Thank you - figured it out just after I said I had to give ip last night  \nSpent another 30 mins and yes - CGNAT - so we are requesting a Static IP today   TY!"
+  },
+  {
+    "id": "1347270636564906128",
+    "timestamp": "2025-03-06T18:12:30.835Z",
+    "username": "",
+    "text": "Found this out as the Modem WAN IP and the whatsmyip site IP did not match - BINGO CGNAT!"
+  },
+  {
+    "id": "1347286031904276561",
+    "timestamp": "2025-03-06T19:15:47.715Z",
+    "username": "Moonscaper | Knights ⚔",
+    "text": "A little late in my response.  I'm running on Contabo VPS but will might change down the road or at least compare another one with a few nodes. I couldnt run on my computer at home because of the static ip thing. (edited)\nThursday, March 6, 2025 at 2:15 PM"
+  },
+  {
+    "id": "1347298006495531081",
+    "timestamp": "2025-03-06T20:01:16.335Z",
+    "username": "oxenhouse",
+    "text": "What kind of up/down network speeds are you getting?"
+  },
+  {
+    "id": "1347298050770473133",
+    "timestamp": "2025-03-06T20:01:26.891Z",
+    "username": "",
+    "text": "with Contabo"
+  },
+  {
+    "id": "1347299956469399624",
+    "timestamp": "2025-03-06T20:09:01.245Z",
+    "username": "ScoobyDooBopBop",
+    "text": "400Mbps Upload on mine"
+  },
+  {
+    "id": "1347308416674299957",
+    "timestamp": "2025-03-06T20:42:38.315Z",
+    "username": "oxenhouse",
+    "text": "Advertized or real?"
+  },
+  {
+    "id": "1347309443640987698",
+    "timestamp": "2025-03-06T20:46:43.163Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Real, i ran a test."
+  },
+  {
+    "id": "1347309560326783026",
+    "timestamp": "2025-03-06T20:47:10.983Z",
+    "username": "",
+    "text": "There are different plans that you can upgrade to once you have the VPS"
+  },
+  {
+    "id": "1347351405492441148",
+    "timestamp": "2025-03-06T23:33:27.648Z",
+    "username": "Steve 'Corn Pops'",
+    "text": "Glad your persistence and these helpful folks paid off!!!\nWelcome to the Node Pool running  crew!!!"
+  },
+  {
+    "id": "1347362947718058027",
+    "timestamp": "2025-03-07T00:19:19.529Z",
+    "username": "Tony the Brick 🌽Mafia Whisperer",
+    "text": "Let's get them Nodes Rollin!  @Steve 'Corn Pops'"
+  },
+  {
+    "id": "1347362954911154247",
+    "timestamp": "2025-03-07T00:19:21.244Z",
+    "username": "",
+    "text": "Woot woot"
+  },
+  {
+    "id": "1347419838141960264",
+    "timestamp": "2025-03-07T04:05:23.263Z",
+    "username": "Gus T. Wind",
+    "text": "When is the overload test?"
+  },
+  {
+    "id": "1347437309758541824",
+    "timestamp": "2025-03-07T05:14:48.821Z",
+    "username": "SiegeWulf (Kiwi Crypto)[🌽Mafia]",
+    "text": "WOOOOOOOOOOOOOT - ONLINE BABY!!!!!!!!!!!!\nUploading Perfectly!"
+  },
+  {
+    "id": "1347437601153486880",
+    "timestamp": "2025-03-07T05:15:58.295Z",
+    "username": "",
+    "text": "TY for the help people -  Not bad at all - Vid guide is straight forward and brilliantly spoken @Scruffy - QA Manager/Marketing \nAppreciate the hard work to make it all easy team - \nLETS GOOOOOOOOOOO!"
+  },
+  {
+    "id": "1347438348158894153",
+    "timestamp": "2025-03-07T05:18:56.395Z",
+    "username": "",
+    "text": "So - It handles pulling down files to share as it goes?  It doesn't pull down the whole 35Gb in one hit to be able to share from!?"
+  },
+  {
+    "id": "1347446684665249802",
+    "timestamp": "2025-03-07T05:52:03.973Z",
+    "username": "Montresor",
+    "text": "The latter. It caches all files to your server first."
+  },
+  {
+    "id": "1347451521822101586",
+    "timestamp": "2025-03-07T06:11:17.241Z",
+    "username": "dbear [ 🌽Mafia ]",
+    "text": "hey guys i see people getting linux working , what distro r u all using"
+  },
+  {
+    "id": "1347518244709470278",
+    "timestamp": "2025-03-07T10:36:25.217Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Ubuntu for me"
+  },
+  {
+    "id": "1347524783004192800",
+    "timestamp": "2025-03-07T11:02:24.068Z",
+    "username": "Steve 'Corn Pops'",
+    "text": "Debian here"
+  },
+  {
+    "id": "1347530265408569454",
+    "timestamp": "2025-03-07T11:24:11.175Z",
+    "username": "Montresor",
+    "text": "Gentoo"
+  },
+  {
+    "id": "1347530982760124558",
+    "timestamp": "2025-03-07T11:27:02.205Z",
+    "username": "EZ | Node Operator",
+    "text": "Ubuntu 24.04"
+  },
+  {
+    "id": "1347541276416933908",
+    "timestamp": "2025-03-07T12:07:56.404Z",
+    "username": "oxenhouse",
+    "text": "Ubuntu 24"
+  },
+  {
+    "id": "1347549946202816602",
+    "timestamp": "2025-03-07T12:42:23.442Z",
+    "username": "Krikke80",
+    "text": "Ubuntu 24.04"
+  },
+  {
+    "id": "1347567226018074825",
+    "timestamp": "2025-03-07T13:51:03.271Z",
+    "username": "Beach_bum",
+    "text": "Oh, OK. How much does a VPS cost?   I was thinking about NOT running my linux computer 24 x 7 . I only have 2 nodes and may buy one or two more. Thanks"
+  },
+  {
+    "id": "1347572012192894998",
+    "timestamp": "2025-03-07T14:10:04.384Z",
+    "username": "Rene - QA",
+    "text": "Cheapest plan is around $5/month. You will also have the option to delegate your licenses to a public pool"
+  },
+  {
+    "id": "1347577895819804713",
+    "timestamp": "2025-03-07T14:33:27.150Z",
+    "username": "Scruffy - QA Manager/Marketing",
+    "text": "Fantastic!  Glad you got it working.  Also glad the video helped.  Thanks for the feedback."
+  },
+  {
+    "id": "1347618181329584258",
+    "timestamp": "2025-03-07T17:13:31.964Z",
+    "username": "Moonscaper | Knights ⚔",
+    "text": "@Beach_bum yeah cheapest plans are under $10."
+  },
+  {
+    "id": "1347661908655734795",
+    "timestamp": "2025-03-07T20:07:17.371Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "For the private notes and the discription of the pool can this still be updated later?"
+  },
+  {
+    "id": "1347663456085479577",
+    "timestamp": "2025-03-07T20:13:26.307Z",
+    "username": "Rene - QA",
+    "text": "Yes, you can edit your pool description at any time"
+  },
+  {
+    "id": "1347733218039959654",
+    "timestamp": "2025-03-08T00:52:22.912Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "Do people use Linux with UI or without?  Sorry for the beginners questions.. (edited)\nFriday, March 7, 2025 at 7:52 PM"
+  },
+  {
+    "id": "1347755292598734920",
+    "timestamp": "2025-03-08T02:18:21.838Z",
+    "username": "EZ | Node Operator",
+    "text": "No UI here just server version."
+  },
+  {
+    "id": "1347811834308067328",
+    "timestamp": "2025-03-08T06:03:02.432Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "Should it give better performance without UI?"
+  },
+  {
+    "id": "1347812129243136042",
+    "timestamp": "2025-03-08T06:04:12.750Z",
+    "username": "Montresor",
+    "text": "For running the pool? Should make no difference whatsoever"
+  },
+  {
+    "id": "1347812555535417465",
+    "timestamp": "2025-03-08T06:05:54.386Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "Can i use the script of GeordieR, legit?"
+  },
+  {
+    "id": "1347813254604394497",
+    "timestamp": "2025-03-08T06:08:41.057Z",
+    "username": "Montresor",
+    "text": "I can not say. I have not seen what they have done."
+  },
+  {
+    "id": "1347839477455912970",
+    "timestamp": "2025-03-08T07:52:53.072Z",
+    "username": "Lourde of Infinity🌽👑🌽",
+    "text": "testing"
+  },
+  {
+    "id": "1347842621405528185",
+    "timestamp": "2025-03-08T08:05:30.797Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "Testing incomplete. Please add more parameters. (edited)\nSaturday, March 8, 2025 at 3:05 AM"
+  },
+  {
+    "id": "1347873690519343234",
+    "timestamp": "2025-03-08T10:08:50.102Z",
+    "username": "dbear [ 🌽Mafia ]",
+    "text": "had this a couple of times looks like its timing out?(detached cache task) . i just restart ,Also its taking ages to validate ,i must have very slow internet"
+  },
+  {
+    "id": "1347909024493862932",
+    "timestamp": "2025-03-08T12:29:28.374Z",
+    "username": "GeordieR",
+    "text": "For anyone unfamiliar with the Ubuntu script I offer a script which asks questions, then configures a node with that answers. Haven't had a lot of time to deliver a video yet but it will come. Not many have used it yet due to no accompanying video\n\ngithub dot com/Geordie-R/copi-file-node\n\nI can't post links so have to just ask to to replace the dot com words. (edited)\nSaturday, March 8, 2025 at 7:29 AM"
+  },
+  {
+    "id": "1347909969651040326",
+    "timestamp": "2025-03-08T12:32:59.721Z",
+    "username": "Sage | Knights ⚔",
+    "text": "Thanks for this, next week I'm planning to move to a leaseweb VPS running Ubuntu so this is very helpful"
+  },
+  {
+    "id": "1347913024585076788",
+    "timestamp": "2025-03-08T12:45:08.074Z",
+    "username": "oxenhouse",
+    "text": "No UI here."
+  },
+  {
+    "id": "1347917918192799765",
+    "timestamp": "2025-03-08T13:10:44.197Z",
+    "username": "GeordieR",
+    "text": "I'm on leaseweb dedicated bare metal and contabo vps for testing the script , both non UI (edited)\nSaturday, March 8, 2025 at 8:10 AM"
+  },
+  {
+    "id": "1347940807159713873",
+    "timestamp": "2025-03-08T14:35:31.956Z",
+    "username": "Lourde of Infinity🌽👑🌽",
+    "text": "1..2.."
+  },
+  {
+    "id": "1347941168448540725",
+    "timestamp": "2025-03-08T14:37:11.695Z",
+    "username": "Lourde of Infinity🌽👑🌽",
+    "text": "Are the EU Nodes still pulling from US Regional or is Amsterdam live? (edited)\nSaturday, March 8, 2025 at 9:37 AM"
+  },
+  {
+    "id": "1347945064281673779",
+    "timestamp": "2025-03-08T14:52:26.933Z",
+    "username": "Lourde of Infinity🌽👑🌽",
+    "text": "How many EU Nodes are live I wonder if a regional stress test would ping him from that end. I’d try one but I’m US"
+  },
+  {
+    "id": "1347945362832228364",
+    "timestamp": "2025-03-08T14:53:38.113Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "All good. Testing passed."
+  },
+  {
+    "id": "1347945602419265546",
+    "timestamp": "2025-03-08T14:54:35.235Z",
+    "username": "Lourde of Infinity🌽👑🌽",
+    "text": "Where’s @ScoobyDooBopBop when you need him"
+  },
+  {
+    "id": "1347945728705560646",
+    "timestamp": "2025-03-08T14:55:05.344Z",
+    "username": "ScoobyDooBopBop",
+    "text": "I'm in 'Murica"
+  },
+  {
+    "id": "1347945773672698018",
+    "timestamp": "2025-03-08T14:55:16.065Z",
+    "username": "Lourde of Infinity🌽👑🌽",
+    "text": "Oh shoot morning"
+  },
+  {
+    "id": "1347945992061714454",
+    "timestamp": "2025-03-08T14:56:08.133Z",
+    "username": "ScoobyDooBopBop",
+    "text": ""
+  },
+  {
+    "id": "1347946052635987980",
+    "timestamp": "2025-03-08T14:56:22.575Z",
+    "username": "Lourde of Infinity🌽👑🌽",
+    "text": "Ahhh wakka wakka wakka"
+  },
+  {
+    "id": "1347951790607302657",
+    "timestamp": "2025-03-08T15:19:10.614Z",
+    "username": "EZ | Node Operator",
+    "text": "Simply not necessary, less  diskspace/resources and so forth... \nI know you can contact Contabo support for UI if you want, its just basic hence its not via graphicscard.. \nPersonally i prefer the minimalistic of the non UI for tasks like these."
+  },
+  {
+    "id": "1347999472680173608",
+    "timestamp": "2025-03-08T18:28:38.906Z",
+    "username": "SunnyIndianna70[🌽Mafia]",
+    "text": "Finally having a chance to set up the pool thanks team and @Scruffy - QA Manager/Marketing for the video!"
+  },
+  {
+    "id": "1347999831007957002",
+    "timestamp": "2025-03-08T18:30:04.338Z",
+    "username": "",
+    "text": "!register"
+  },
+  {
+    "id": "1347999835919220756",
+    "timestamp": "2025-03-08T18:30:05.509Z",
+    "username": "Dyno",
+    "text": ""
+  },
+  {
+    "id": "1347999875479896114",
+    "timestamp": "2025-03-08T18:30:14.941Z",
+    "username": "SunnyIndianna70[🌽Mafia]",
+    "text": "!phase"
+  },
+  {
+    "id": "1347999939585769563",
+    "timestamp": "2025-03-08T18:30:30.225Z",
+    "username": "",
+    "text": "!phases"
+  },
+  {
+    "id": "1347999940315582536",
+    "timestamp": "2025-03-08T18:30:30.399Z",
+    "username": "Dyno",
+    "text": ""
+  },
+  {
+    "id": "1347999987103170590",
+    "timestamp": "2025-03-08T18:30:41.554Z",
+    "username": "SunnyIndianna70[🌽Mafia]",
+    "text": "!phase1"
+  },
+  {
+    "id": "1347999987237392396",
+    "timestamp": "2025-03-08T18:30:41.586Z",
+    "username": "Dyno",
+    "text": ""
+  },
+  {
+    "id": "1348013202390388797",
+    "timestamp": "2025-03-08T19:23:12.324Z",
+    "username": "Smecol [🌽Mafia]",
+    "text": "Did anyone had downloads on the EU server last days?"
+  },
+  {
+    "id": "1348018118513000540",
+    "timestamp": "2025-03-08T19:42:44.419Z",
+    "username": "Rene - QA",
+    "text": "No"
+  },
+  {
+    "id": "1348020381822226473",
+    "timestamp": "2025-03-08T19:51:44.034Z",
+    "username": "Montresor",
+    "text": "Me neither"
+  },
+  {
+    "id": "1348024216041160795",
+    "timestamp": "2025-03-08T20:06:58.183Z",
+    "username": "Kreier",
+    "text": "i close my pool until the next test.."
+  },
+  {
+    "id": "1348122532464689204",
+    "timestamp": "2025-03-09T02:37:38.645Z",
+    "username": "Gus T. Wind",
+    "text": "No downloads on EU"
+  },
+  {
+    "id": "1348357772898730107",
+    "timestamp": "2025-03-09T18:12:24.335Z",
+    "username": "Damion | TDSP",
+    "text": "Hi guys where can I find the info for running a file node. Thx"
+  },
+  {
+    "id": "1348358067720290344",
+    "timestamp": "2025-03-09T18:13:34.626Z",
+    "username": "ScoobyDooBopBop",
+    "text": "!pool"
+  },
+  {
+    "id": "1348358069272187014",
+    "timestamp": "2025-03-09T18:13:34.996Z",
+    "username": "Dyno",
+    "text": ""
+  },
+  {
+    "id": "1348375018190405642",
+    "timestamp": "2025-03-09T19:20:55.933Z",
+    "username": "Arrelulu [🌽 mafia]",
+    "text": ""
+  },
+  {
+    "id": "1348416718363557978",
+    "timestamp": "2025-03-09T22:06:38.029Z",
+    "username": "f4n1us",
+    "text": "Do you guys know the date when we should be finished with node setup?"
+  },
+  {
+    "id": "1348417281058672691",
+    "timestamp": "2025-03-09T22:08:52.186Z",
+    "username": "ScoobyDooBopBop",
+    "text": "There's no expiration date."
+  },
+  {
+    "id": "1348417453037977772",
+    "timestamp": "2025-03-09T22:09:33.189Z",
+    "username": "f4n1us",
+    "text": "I mean the start date by which we need to setup it up. At the moment we getting rewards without actually doing the work. When this switches?"
+  },
+  {
+    "id": "1348417801886634046",
+    "timestamp": "2025-03-09T22:10:56.361Z",
+    "username": "ScoobyDooBopBop",
+    "text": "The new reward structure has not been announced yet. There is no date. You can run your nodes now if you want to help improve the network."
+  },
+  {
+    "id": "1348418008854564914",
+    "timestamp": "2025-03-09T22:11:45.706Z",
+    "username": "f4n1us",
+    "text": "Got it thanks!\nActually looking for some public pool to delegate. Hopefully this becomes functional along with new reward structure."
+  },
+  {
+    "id": "1348418016034947203",
+    "timestamp": "2025-03-09T22:11:47.418Z",
+    "username": "",
+    "text": "Thank you!"
+  },
+  {
+    "id": "1348418427529724015",
+    "timestamp": "2025-03-09T22:13:25.526Z",
+    "username": "ScoobyDooBopBop",
+    "text": "No problem. . Hopefully everything will be ready for when the new build comes out."
+  },
+  {
+    "id": "1348436265124761610",
+    "timestamp": "2025-03-09T23:24:57.905Z",
+    "username": "CoyBacon | Knights ⚔",
+    "text": "So you don’t want (or unable to) do it yourself? it’s ok if you can’t. But you can run private nodes now. (edited)\nSunday, March 9, 2025 at 7:24 PM"
+  },
+  {
+    "id": "1348436316462776400",
+    "timestamp": "2025-03-09T23:24:30.580Z",
+    "username": "EZ | Node Operator",
+    "text": "For sure it will be implemented same time"
+  },
+  {
+    "id": "1348492422505828402",
+    "timestamp": "2025-03-10T03:07:27.303Z",
+    "username": "SiegeWulf (Kiwi Crypto)[🌽Mafia]",
+    "text": "It would definitely be worth mentioning to new people setting up nodes that a Static IP is highly recommended.\nEspecially now that ISPs are using CGNAT a lot more to cost cut.\nEasy fixed IF you know what you are looking for..."
+  },
+  {
+    "id": "1348492899876081695",
+    "timestamp": "2025-03-10T03:09:21.117Z",
+    "username": "",
+    "text": "Is there a way to tell how our performance compares to the network average yet?\nWill there be tools to see comparative performance etc?"
+  },
+  {
+    "id": "1348612462471155762",
+    "timestamp": "2025-03-10T11:04:27.061Z",
+    "username": "Rene - QA",
+    "text": "!pool"
+  },
+  {
+    "id": "1348612462886387736",
+    "timestamp": "2025-03-10T11:04:27.160Z",
+    "username": "Dyno",
+    "text": ""
+  },
+  {
+    "id": "1348612510399598592",
+    "timestamp": "2025-03-10T11:04:38.488Z",
+    "username": "Rene - QA",
+    "text": "@panblake"
+  },
+  {
+    "id": "1348646027460218932",
+    "timestamp": "2025-03-10T13:17:49.578Z",
+    "username": "darkshad3",
+    "text": "after a number of false positives. node is finally live! Let's go! and a good morning."
+  },
+  {
+    "id": "1348651782468931645",
+    "timestamp": "2025-03-10T13:40:41.679Z",
+    "username": "Rene - QA",
+    "text": "Congratulations"
+  },
+  {
+    "id": "1348656044791959562",
+    "timestamp": "2025-03-10T13:57:37.896Z",
+    "username": "f4n1us",
+    "text": "I don’t want to run it in my machine. I would rather delegate to someone for a fee."
+  },
+  {
+    "id": "1348656366226636810",
+    "timestamp": "2025-03-10T13:58:54.532Z",
+    "username": "Rene - QA",
+    "text": "You will have that option soon"
+  },
+  {
+    "id": "1348670542756188283",
+    "timestamp": "2025-03-10T14:55:14.480Z",
+    "username": "CoyBacon | Knights ⚔",
+    "text": "Sounds good! I just wanted to make sure I understood your question. I’m planning on being one of those individuals who will setup a public pool."
+  },
+  {
+    "id": "1348789773371703381",
+    "timestamp": "2025-03-10T22:49:01.274Z",
+    "username": "Beach_bum",
+    "text": "hi all"
+  },
+  {
+    "id": "1348802370829811828",
+    "timestamp": "2025-03-10T23:39:04.742Z",
+    "username": "EZ | Node Operator",
+    "text": "Evenin"
+  },
+  {
+    "id": "1348823572918960159",
+    "timestamp": "2025-03-11T01:03:19.714Z",
+    "username": "Lourde of Infinity🌽👑🌽",
+    "text": "Well do not hesitate to delegate to Lourde of the Corn Pool \nTicker: LOTC"
+  },
+  {
+    "id": "1348823579877310516",
+    "timestamp": "2025-03-11T01:03:43.456Z",
+    "username": "",
+    "text": "(edited)\nMonday, March 10, 2025 at 9:03 PM"
+  },
+  {
+    "id": "1348823780121645139",
+    "timestamp": "2025-03-11T01:04:09.115Z",
+    "username": "",
+    "text": "We will RUN your pool for you"
+  },
+  {
+    "id": "1348925618128945227",
+    "timestamp": "2025-03-11T07:48:49.188Z",
+    "username": "ThaiTheo",
+    "text": "what is the current cpu and ram requirement to run a file node on arm64?"
+  },
+  {
+    "id": "1348929224756428800",
+    "timestamp": "2025-03-11T08:03:09.075Z",
+    "username": "SiegeWulf (Kiwi Crypto)[🌽Mafia]",
+    "text": "Hey team - Is there a way to force my node to D/L all chunks so that my node will have full availability - I don't mind the extra D/L qty - I want the speed that goes with having all chunks available...\nAnd are we having any more tests soon?\n\nPS - Any NZ people able to initiate a Node D/L please do - I am testing..."
+  },
+  {
+    "id": "1348930892638326855",
+    "timestamp": "2025-03-11T08:10:48.011Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "Isn't it better for the pool to start serving chucks as these become available from the regional servers on the Pool device? Then waiting for all chuck to be on the pool device?\n\nYou can trigger a DL yourself if you're in that area by removing the game. In the launcher's settings set the download to occur using the node network. And install the game again.\n\nA new mass test will be held. Some more tinkering needs to occur before a new test's date can be made public. (edited)\nTuesday, March 11, 2025 at 4:10 AM"
+  },
+  {
+    "id": "1348936522467905558",
+    "timestamp": "2025-03-11T08:32:08.985Z",
+    "username": "Montresor",
+    "text": "The pool already downloads and caches all the chunks as is. There's no way nor need to force it separately. You should find that the cache directory of the pool contains 35 gigabytes of data."
+  },
+  {
+    "id": "1348940196221292554",
+    "timestamp": "2025-03-11T08:46:44.876Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "Pools can run on a raspberry pi 4 for a few nodes. We'll know the final details when the network is hit with constant work from requests."
+  },
+  {
+    "id": "1348953127256330321",
+    "timestamp": "2025-03-11T09:38:07.875Z",
+    "username": "ThaiTheo",
+    "text": "The pi 4 comes with 1 to 8GB of RAM. I only want to run a single private node (I have 4 file node keys). How much RAM  do you suggest in this particular case?"
+  },
+  {
+    "id": "1348953954368880650",
+    "timestamp": "2025-03-11T09:41:25.074Z",
+    "username": "Rene - QA",
+    "text": "8GB of RAM would be enough"
+  },
+  {
+    "id": "1348954520436211785",
+    "timestamp": "2025-03-11T09:43:40.035Z",
+    "username": "ThaiTheo",
+    "text": "That's a lot of ram to run 1 docker container. I will try several RAM configurations to see how much is actually needed."
+  },
+  {
+    "id": "1348954864155103294",
+    "timestamp": "2025-03-11T09:47:17.963Z",
+    "username": "Rene - QA",
+    "text": "Less would work as well, but keep in mind that OS needs some as well. (edited)\nTuesday, March 11, 2025 at 5:47 AM"
+  },
+  {
+    "id": "1348956164855042079",
+    "timestamp": "2025-03-11T09:50:12.095Z",
+    "username": "Rene - QA",
+    "text": "Around 4-5gb is used for my Ubuntu and Docker with 5 containers. Doesn't really make a big difference if you have one container or several"
+  },
+  {
+    "id": "1348956455595806822",
+    "timestamp": "2025-03-11T09:51:21.413Z",
+    "username": "ThaiTheo",
+    "text": "Thank you"
+  },
+  {
+    "id": "1348970252129665070",
+    "timestamp": "2025-03-11T10:46:10.763Z",
+    "username": "Beach_bum",
+    "text": "I suppose i will get one more node for a total of 3"
+  },
+  {
+    "id": "1348975951584821344",
+    "timestamp": "2025-03-11T11:08:49.619Z",
+    "username": "FishingForCardano[🌽Mafia]",
+    "text": "Just bought 6 off of opensea, finally have enough to run a node. You will see my face around here more."
+  },
+  {
+    "id": "1348976364983685161",
+    "timestamp": "2025-03-11T11:10:45.617Z",
+    "username": "Rene - QA",
+    "text": "You can run a private pool with just one licence key as well. 8 will be needed if you plan to run a public pool (edited)\nTuesday, March 11, 2025 at 7:10 AM"
+  },
+  {
+    "id": "1348976447167004672",
+    "timestamp": "2025-03-11T11:10:47.775Z",
+    "username": "FishingForCardano[🌽Mafia]",
+    "text": "I have 8"
+  },
+  {
+    "id": "1348976480134234165",
+    "timestamp": "2025-03-11T11:10:55.635Z",
+    "username": "",
+    "text": "2 cardano 6 base"
+  },
+  {
+    "id": "1348986040987418645",
+    "timestamp": "2025-03-11T11:48:55.120Z",
+    "username": "Beach_bum",
+    "text": "Thanks, I did not realize i can buy  nodes on Opensea. As a matter of fact I have not visited my Opensea account in a long, long time.  Node price now is .094 eth"
+  },
+  {
+    "id": "1348989268609073229",
+    "timestamp": "2025-03-11T12:01:44.645Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Wow, that's is a very tempting price"
+  },
+  {
+    "id": "1349069314006843484",
+    "timestamp": "2025-03-11T17:19:48.955Z",
+    "username": "FishingForCardano[🌽Mafia]",
+    "text": "If your buying off opensea there are a bunch of fakes. Make sure your buying the right one, in the copi wiki there is the link and address to confirm."
+  },
+  {
+    "id": "1349070503515521139",
+    "timestamp": "2025-03-11T17:28:10.313Z",
+    "username": "EZ | Node Operator",
+    "text": "you can also see the contract adress here on discord  in the ⁠🔗│official-info (edited)\nTuesday, March 11, 2025 at 1:28 PM"
+  },
+  {
+    "id": "1349692588931682365",
+    "timestamp": "2025-03-13T10:37:04.541Z",
+    "username": "SiegeWulf (Kiwi Crypto)[🌽Mafia]",
+    "text": "I'm seeing my docker running an average of 10% CPU when active, up to 15% occasionally and a maximum of 7.4GB RAM with 2 containers running a Cornucopias Private Node with 5 nodes in the pack AND a Xerberus Node which is much more demanding than the Corn node unless it goes fully active.  (Brief burst activity)\nDisk storage after a few days at 20GB, figure that will get as high as 50GB or so with both nodes operating in the immediate future - maybe more,  but have 350GB available for the 2 nodes, so plenty of space and time to worry about upgrades (edited)\nThursday, March 13, 2025 at 6:37 AM"
+  },
+  {
+    "id": "1349693725831336018",
+    "timestamp": "2025-03-13T10:41:00.335Z",
+    "username": "Beach_bum",
+    "text": "Thanks!"
+  },
+  {
+    "id": "1349704531562467338",
+    "timestamp": "2025-03-13T11:23:56.622Z",
+    "username": "Beach_bum",
+    "text": "my dashboard says my pool is online, but it's not online"
+  },
+  {
+    "id": "1349711190955397120",
+    "timestamp": "2025-03-13T11:50:24.345Z",
+    "username": "Rene - QA",
+    "text": "It takes around an hour to update any changes on your dashboard"
+  },
+  {
+    "id": "1349711650021834765",
+    "timestamp": "2025-03-13T11:52:13.795Z",
+    "username": "",
+    "text": "Monitoring the pool directly on the Dockers logs or via third party apps like Uptimerobot is the best practice"
+  },
+  {
+    "id": "1349721721690919047",
+    "timestamp": "2025-03-13T12:32:15.068Z",
+    "username": "CoyBacon | Knights ⚔",
+    "text": "Let me know how it goes for you. Some decent prices there, but I'm paranoid it's a scam. I don't know how to confirm the contract address is correct. lol."
+  },
+  {
+    "id": "1349733133012045946",
+    "timestamp": "2025-03-13T13:19:54.840Z",
+    "username": "Rene - QA",
+    "text": "Easiest way is to copy contract address from ⁠🔗│official-info and paste in the OpenSea search bar. Collections under that contract address that show up are the right ones. Works with every collection search (edited)\nThursday, March 13, 2025 at 9:19 AM"
+  },
+  {
+    "id": "1349734940131983371",
+    "timestamp": "2025-03-13T13:24:46.590Z",
+    "username": "CoyBacon | Knights ⚔",
+    "text": "Awesome, thanks @Rene - QA !"
+  },
+  {
+    "id": "1349740465020469360",
+    "timestamp": "2025-03-13T13:46:43.826Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "Yep. Just don't try it with the new OpenSea beta, that searche method didn't work a few week ago.."
+  },
+  {
+    "id": "1349740501229899861",
+    "timestamp": "2025-03-13T13:46:52.459Z",
+    "username": "ScoobyDooBopBop",
+    "text": "The nodes haven't received the verification mark on Base yet?"
+  },
+  {
+    "id": "1349740935881166909",
+    "timestamp": "2025-03-13T13:48:52.517Z",
+    "username": "Rene - QA",
+    "text": "They won't for some time. They have a stupid policy that a collection needs a minimum of 75ETH worth in volume to be able to verify. (edited)\nThursday, March 13, 2025 at 9:48 AM"
+  },
+  {
+    "id": "1349741113816125511",
+    "timestamp": "2025-03-13T13:49:18.511Z",
+    "username": "ScoobyDooBopBop",
+    "text": "woooow thats ridiculous"
+  },
+  {
+    "id": "1349744719302758430",
+    "timestamp": "2025-03-13T14:03:38.126Z",
+    "username": "Krikke80",
+    "text": "Do not click on this link - its a Scam!!"
+  },
+  {
+    "id": "1349845561595138059",
+    "timestamp": "2025-03-13T20:44:20.802Z",
+    "username": "SiegeWulf (Kiwi Crypto)[🌽Mafia]",
+    "text": "So - In Node D/L mode I am seeing an average D/L speed of 70 Mbps (8MBps) with bursts to between 98 and 112 Mbps... (around 12 to 15MBps)\nThis is pretty slow - is this to do with the number of local nodes being so low?\n(I get faster without Node Mode on - around 30MBps at a guess by times)...\nI have a 1000Mbps conx - so it's not limiting - and yes - everything else is D/Ling just fine at max speeds (Steam games at 800Mbps avg)\nAny feedback?"
+  },
+  {
+    "id": "1349846155298734231",
+    "timestamp": "2025-03-13T20:46:42.352Z",
+    "username": "ScoobyDooBopBop",
+    "text": "we really need to lock this channel down smh"
+  },
+  {
+    "id": "1349846257933488249",
+    "timestamp": "2025-03-13T20:47:06.822Z",
+    "username": "",
+    "text": "or find a way to keep the scammers isolated to 1 channel only"
+  },
+  {
+    "id": "1349847251832537230",
+    "timestamp": "2025-03-13T20:51:03.786Z",
+    "username": "Rene - QA",
+    "text": "Yeah, they should fill the onboarding form when they join our server"
+  },
+  {
+    "id": "1349911952570454079",
+    "timestamp": "2025-03-14T01:08:09.644Z",
+    "username": "EZ | Node Operator",
+    "text": "Should be faster right.... Are you outside north america or eu?"
+  },
+  {
+    "id": "1349952915736891464",
+    "timestamp": "2025-03-14T03:50:56.024Z",
+    "username": "Montresor",
+    "text": "Interesting results. Although not surprising. In \"node mode\" the speed will be capped by the nodes serving you (varying over time) from the node network. In traditional mode it's capped by the connection from you to a single point, probably some cloud hosted file serving location. \n\nSo either there is not enough capacity available in the node network to serve you fast, or you are not being assigned to download from the nodes that would serve you fastest.\n\nTBH, getting your 1 Gbit line saturated would be very hard"
+  },
+  {
+    "id": "1350019489605091391",
+    "timestamp": "2025-03-14T08:15:28.471Z",
+    "username": "Chilled Blue| Knights",
+    "text": "Is anyone running node on Ubuntu instead of Windows"
+  },
+  {
+    "id": "1350022172659290247",
+    "timestamp": "2025-03-14T08:26:08.161Z",
+    "username": "Rene - QA",
+    "text": "Yes"
+  },
+  {
+    "id": "1350024082321833984",
+    "timestamp": "2025-03-14T08:33:43.460Z",
+    "username": "LEVIATHANUK",
+    "text": "is any one using docker on contarbo remote vps?"
+  },
+  {
+    "id": "1350027748864819283",
+    "timestamp": "2025-03-14T08:48:17.632Z",
+    "username": "EZ | Node Operator",
+    "text": "Yep"
+  },
+  {
+    "id": "1350028481441959986",
+    "timestamp": "2025-03-14T08:51:12.292Z",
+    "username": "Chilled Blue| Knights",
+    "text": "will be setting up today, did you use docker?"
+  },
+  {
+    "id": "1350029893190025249",
+    "timestamp": "2025-03-14T08:56:48.879Z",
+    "username": "EZ | Node Operator",
+    "text": "Yeah its pretty strait forward,  if you have used Linux before shouldnt be much problem.. \nYou could also try @GeordieR  got a GitHub where he has made a script for installation on    Ubuntu..\n\nIf you got any questions during setup , just give a shout, lots of folks here to assist."
+  },
+  {
+    "id": "1350031195173425213",
+    "timestamp": "2025-03-14T09:01:59.296Z",
+    "username": "tedan01",
+    "text": "Please any instruction on how to create a pool ?"
+  },
+  {
+    "id": "1350031285703409694",
+    "timestamp": "2025-03-14T09:02:20.880Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "!pool"
+  },
+  {
+    "id": "1350031286550401055",
+    "timestamp": "2025-03-14T09:02:21.082Z",
+    "username": "Dyno",
+    "text": ""
+  },
+  {
+    "id": "1350048817080434754",
+    "timestamp": "2025-03-14T10:12:00.686Z",
+    "username": "Chilled Blue| Knights",
+    "text": "quick question: I have taken my Docker down on my pc for cornucopias, but the site still tells me I am still online. I have not seen that before normally, as soon as I take my Docker down, the pool goes down."
+  },
+  {
+    "id": "1350049574961549322",
+    "timestamp": "2025-03-14T10:15:01.379Z",
+    "username": "EZ | Node Operator",
+    "text": "Hmmm from my experience it takes a while until it says the pool is offline."
+  },
+  {
+    "id": "1350051441997516882",
+    "timestamp": "2025-03-14T10:22:26.515Z",
+    "username": "Chilled Blue| Knights",
+    "text": "down might be timing"
+  },
+  {
+    "id": "1350065061200138350",
+    "timestamp": "2025-03-14T11:16:33.586Z",
+    "username": "Rene - QA",
+    "text": "It takes about an hour to sync to your dashboard"
+  },
+  {
+    "id": "1350085277216935947",
+    "timestamp": "2025-03-14T12:36:53.460Z",
+    "username": "Chilled Blue| Knights",
+    "text": "one more getting this error I have updated the acess key:                                                                                                                          2025-03-14 12:34:10 pool-server-1  | [2025-03-14T12:34:10Z INFO  pool_server::cache] Cache Limit: 100.00GB // Current cache: 0.00GB // Cache capacity: 100.00GB\n2025-03-14 12:34:10 pool-server-1  | [2025-03-14T12:34:10Z WARN  pool_server::cache] Failed to run latency tests: Invalid access key: Check or regenerate your access key: 401 Unauthorized\n2025-03-14 12:34:10 pool-server-1  | [2025-03-14T12:34:10Z ERROR filenodes_pool_server] Cache task exited"
+  },
+  {
+    "id": "1350085608449642526",
+    "timestamp": "2025-03-14T12:38:12.432Z",
+    "username": "",
+    "text": "coffee guess I am hitting  the server as I get the response back (error401 )"
+  },
+  {
+    "id": "1350086165029720084",
+    "timestamp": "2025-03-14T12:40:25.131Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Make sure you entered your access key correctly in the yml file"
+  },
+  {
+    "id": "1350086221556219966",
+    "timestamp": "2025-03-14T12:40:38.608Z",
+    "username": "",
+    "text": "Syntax is extremely sensitive"
+  },
+  {
+    "id": "1350088613211406356",
+    "timestamp": "2025-03-14T12:50:08.823Z",
+    "username": "EZ | Node Operator",
+    "text": "Just remove the  <> from the key."
+  },
+  {
+    "id": "1350101938871603291",
+    "timestamp": "2025-03-14T13:43:05.908Z",
+    "username": "Chilled Blue| Knights",
+    "text": "this was my config. I just updated the key again but this was the old key"
+  },
+  {
+    "id": "1350101948283490387",
+    "timestamp": "2025-03-14T13:43:08.152Z",
+    "username": "",
+    "text": "Chilled Blue  docker-compose.yml\n,\nname: cornucopias\nservices:\n  pool-server:\n    image: public.ecr.aws/p1f6k9a6/glh_lcqcwcxcr:latest\n    ports:\n      \n\"8001:8001\"\n  restart: no # if you want to manually start the pool server replace “unless-stopped” with “no”\n  environment:\n    FILENODES_POOL_ACCESS_KEY: OcjdIe3+GEHG64egl0AnNFgXz5JwsRMFQoNXw0zDAhMyqlHl\n    FILENODES_POOL_PUBLIC_PORT: 8001\n  volumes:\n.\\home\\john\\Cornv2\\Cache:/cache\n,\n,"
+  },
+  {
+    "id": "1350104878860599377",
+    "timestamp": "2025-03-14T13:54:46.856Z",
+    "username": "EZ | Node Operator",
+    "text": "Did you get it working now?"
+  },
+  {
+    "id": "1350114387725385848",
+    "timestamp": "2025-03-14T14:32:33.946Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Is this on Linux?"
+  },
+  {
+    "id": "1350150515253837834",
+    "timestamp": "2025-03-14T16:56:07.420Z",
+    "username": "Booradley1230",
+    "text": "I've setup a private pool but the status is stuck on \"validating\" ?, my ISP has been upgraded to setup port forwarding. I was using the video on the pool guide on wiki but its been taken down. Help! Cheers"
+  },
+  {
+    "id": "1350152304933732362",
+    "timestamp": "2025-03-14T17:04:59.630Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "It will be in the validating status until your pool serves its first cache chunks. Then an hour later, the dashboard will update for your pool. You can trigger a download by removing your game, setting in the launcher for the download to use the node system and install the game (if you are in the same region as your pool).\n\nTo check if your pool is ready to serve, just use the check in the \"Health Check\" field in a browser on your phone set to mobile. If you get an OK, you are good to go. (edited)\nFriday, March 14, 2025 at 1:04 PM"
+  },
+  {
+    "id": "1350186330008850494",
+    "timestamp": "2025-03-14T19:18:26.323Z",
+    "username": "GeordieR",
+    "text": ""
+  },
+  {
+    "id": "1350186530643247115",
+    "timestamp": "2025-03-14T19:19:14.158Z",
+    "username": "",
+    "text": "That usually works for me on Ubuntu anyway having the path like that"
+  },
+  {
+    "id": "1350187681803665519",
+    "timestamp": "2025-03-14T19:23:48.616Z",
+    "username": "ScoobyDooBopBop",
+    "text": "yeah if its Linux, he has the path incorrect. Linux and Mac use forward slashes, Windows uses back slashes"
+  },
+  {
+    "id": "1350203009870598224",
+    "timestamp": "2025-03-14T20:24:43.112Z",
+    "username": "EZ | Node Operator",
+    "text": "I told him you got a script for the pool setup for Ubuntu.. \nIf he wanted to test it out"
+  },
+  {
+    "id": "1350214636988923965",
+    "timestamp": "2025-03-14T21:10:55.233Z",
+    "username": "CoyBacon | Knights ⚔",
+    "text": "So i was able to pick up a few nodes from OpenSea. But my questions now are:\n\nHow do we know that all nodes are working? Is the status an All or Nothing status? Meaning if one isn’t added correctly (like my new ones) or set up correctly, then will the whole status be offline?\n,"
+  },
+  {
+    "id": "1350214800591949896",
+    "timestamp": "2025-03-14T21:11:34.239Z",
+    "username": "",
+    "text": "To run a public pool, do all the nodes have to be on the same chain? or are different chains in the pool ok?\n,"
+  },
+  {
+    "id": "1350215905191133270",
+    "timestamp": "2025-03-14T21:22:13.575Z",
+    "username": "Rene - QA",
+    "text": "Node pool and node licences are two seperate things. When you successfully create a node pool you can add or remove node licenses as you prefer. If you see your licenses, register them and added them to your pool, then they are connected. The more licences you add to your pool (up to 50/per pool), the more requests you will get\n,\n (edited)\nFriday, March 14, 2025 at 5:22 PM"
+  },
+  {
+    "id": "1350216103120605234",
+    "timestamp": "2025-03-14T21:16:44.786Z",
+    "username": "",
+    "text": "It doesn't matter which chain are the licences coming from.\n,"
+  },
+  {
+    "id": "1350217568258097182",
+    "timestamp": "2025-03-14T21:22:34.102Z",
+    "username": "CoyBacon | Knights ⚔",
+    "text": "ah got it! thanks again @Rene - QA"
+  },
+  {
+    "id": "1350230330786844745",
+    "timestamp": "2025-03-14T22:13:16.926Z",
+    "username": "EZ | Node Operator",
+    "text": "Remember to register your nodes so that you get your daily"
+  },
+  {
+    "id": "1350406209831964813",
+    "timestamp": "2025-03-15T09:52:09.758Z",
+    "username": "Chilled Blue| Knights",
+    "text": "changed cheers @GeordieR  rebuilt the yml file from scratch and syncing"
+  },
+  {
+    "id": "1350423636342997042",
+    "timestamp": "2025-03-15T11:01:24.562Z",
+    "username": "GeordieR",
+    "text": "No worries how's it going?"
+  },
+  {
+    "id": "1350426713645125754",
+    "timestamp": "2025-03-15T11:13:38.248Z",
+    "username": "GeordieR",
+    "text": "If anyone finds the Ubuntu instructions a struggle I've got an installer which works best on a cloud vps. Confirmed working on contabo nodes.\n\ngithub (dot) com/Geordie-R/copi-file-node \n\nsorry I don't have any rights to post links here."
+  },
+  {
+    "id": "1350430431312347176",
+    "timestamp": "2025-03-15T11:28:24.609Z",
+    "username": "Chilled Blue| Knights",
+    "text": "all good. I must have corrupted my file in some way, but it is all working .   Sunny in the uk time to take the kids up the mountains"
+  },
+  {
+    "id": "1350670367563448371",
+    "timestamp": "2025-03-16T03:21:49.869Z",
+    "username": "SiegeWulf (Kiwi Crypto)[🌽Mafia]",
+    "text": "New Zealand - so Yep...  lol\nI am seeing the core of nodes are EU and USA as expected ..."
+  },
+  {
+    "id": "1350670769809657936",
+    "timestamp": "2025-03-16T03:23:25.772Z",
+    "username": "SiegeWulf (Kiwi Crypto)[🌽Mafia]",
+    "text": "Yeah - fair call I suppose - looks to be that we just need more Aus/NZ nodes to improve that!"
+  },
+  {
+    "id": "1350672914877382686",
+    "timestamp": "2025-03-16T03:31:57.196Z",
+    "username": "EZ | Node Operator",
+    "text": "Always wanted to visit NZ... Lotr scenery and all...\nI believe the copi team spinned up 1 region Node in Singapore pretty recently.. \nBut i doubt theres alot of pools in the Asia district yet, if any. \n\nI could spin up a pool in Singapore on Monday if you want to test DL speeds."
+  },
+  {
+    "id": "1350678203248676958",
+    "timestamp": "2025-03-16T03:52:58.042Z",
+    "username": "SiegeWulf (Kiwi Crypto)[🌽Mafia]",
+    "text": "I was just curious - i figure only closer nodes will help - so it should be fine - will see how it all develops!"
+  },
+  {
+    "id": "1350693969821962351",
+    "timestamp": "2025-03-16T04:55:37.086Z",
+    "username": "tedan01",
+    "text": "is there any way to get the video on discord without using youtube pls ?"
+  },
+  {
+    "id": "1350748417407586345",
+    "timestamp": "2025-03-16T08:31:58.402Z",
+    "username": "EZ | Node Operator",
+    "text": "You can always just follow the written instructions aswell...\nThe team is working on getting the YouTube channel up again."
+  },
+  {
+    "id": "1350754272895176835",
+    "timestamp": "2025-03-16T08:55:14.459Z",
+    "username": "ThaiTheo",
+    "text": "I will be setting one up in Thailand, but waiting for the hardware to arrive. VPS is too expensive if you only hold 4 file node nft's."
+  },
+  {
+    "id": "1350793587293687851",
+    "timestamp": "2025-03-16T11:32:23.473Z",
+    "username": "Montresor",
+    "text": "Does the system assign your pool to Europe or to North America? (edited)\nSunday, March 16, 2025 at 7:32 AM"
+  },
+  {
+    "id": "1350800327116455968",
+    "timestamp": "2025-03-16T11:58:14.641Z",
+    "username": "Moonscaper | Knights ⚔",
+    "text": "Ok, I'm getting absolutely no activity in my Contabo pool. It suddenly has gone blank but still online and running. Any ideas?"
+  },
+  {
+    "id": "1350802181162274907",
+    "timestamp": "2025-03-16T12:05:36.680Z",
+    "username": "Montresor",
+    "text": "There's just nobody downloading. I don't think this is very surprising at this point."
+  },
+  {
+    "id": "1350802409580134400",
+    "timestamp": "2025-03-16T12:06:31.139Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Just means no one's downloading.\nYou can test yourself by reinstalling the game, if you're in the same region as your pool."
+  },
+  {
+    "id": "1350811108939923599",
+    "timestamp": "2025-03-16T12:41:05.228Z",
+    "username": "Moonscaper | Knights ⚔",
+    "text": "Ok. I thought there would at least be the little green line along the bottom. lol"
+  },
+  {
+    "id": "1350832207991934986",
+    "timestamp": "2025-03-16T14:04:55.634Z",
+    "username": "ScoobyDooBopBop",
+    "text": "you have a point there lol. i just checked mine and although I have some activity today, these past few days were nothing but still have a green line \n\nHave you checked your Docker logs to see if there's anything unusual?"
+  },
+  {
+    "id": "1350910343697662073",
+    "timestamp": "2025-03-16T19:15:24.638Z",
+    "username": "tedan01",
+    "text": "pls where is the written instruction?"
+  },
+  {
+    "id": "1350911084139380927",
+    "timestamp": "2025-03-16T19:18:21.173Z",
+    "username": "ScoobyDooBopBop",
+    "text": "!pool"
+  },
+  {
+    "id": "1350911085787480095",
+    "timestamp": "2025-03-16T19:18:21.566Z",
+    "username": "Dyno",
+    "text": ""
+  },
+  {
+    "id": "1350961026899906601",
+    "timestamp": "2025-03-16T22:36:48.455Z",
+    "username": "Beach_bum",
+    "text": "We can always make some green lines happen."
+  },
+  {
+    "id": "1350963377417097228",
+    "timestamp": "2025-03-16T23:06:42.080Z",
+    "username": "chump365",
+    "text": "I remember there being cpu / RAM recommendations based on file n0de count. Are there any current hardware specs other than storage? (edited)\nSunday, March 16, 2025 at 7:06 PM"
+  },
+  {
+    "id": "1350977799229280296",
+    "timestamp": "2025-03-16T23:45:02.539Z",
+    "username": "EZ | Node Operator",
+    "text": "Whats important is bandwith, cpu wise, you can run it on a celeron or a pi if you so choose..16gigs ram should be enough if you wish to run a pool. (edited)\nSunday, March 16, 2025 at 7:45 PM"
+  },
+  {
+    "id": "1350980964008067175",
+    "timestamp": "2025-03-16T23:56:01.832Z",
+    "username": "chump365",
+    "text": "Awesome. thanks"
+  },
+  {
+    "id": "1351371138034438185",
+    "timestamp": "2025-03-18T01:46:26.569Z",
+    "username": "chump365",
+    "text": "up and running. if i decide i want to move to vps later on, i'd have to delete the current pool and start new?"
+  },
+  {
+    "id": "1351380850067116062",
+    "timestamp": "2025-03-18T02:25:02.098Z",
+    "username": "chump365",
+    "text": "yeah. only problem i see would be if i'm running a public pool and people delegating. would think delegators wouldnt transfer with new key"
+  },
+  {
+    "id": "1351383361872068608",
+    "timestamp": "2025-03-18T02:35:00.959Z",
+    "username": "chump365",
+    "text": "makes sense. thanks for the info.  just running one pool at home so ideally wouldnt want to get a vps.  i'll see how stable the node is and how many disconnects i get over time."
+  },
+  {
+    "id": "1351531165248655422",
+    "timestamp": "2025-03-18T12:22:20.030Z",
+    "username": "EZ | Node Operator",
+    "text": "Thats sweet.. Its good we get some decentralization on the nodes for sure."
+  },
+  {
+    "id": "1351552255030988861",
+    "timestamp": "2025-03-18T13:56:14.092Z",
+    "username": "elias1963",
+    "text": "Hello every one just set up my node \neasy and straight forward the team has created both great documentation and an awesomely nice video, both helpful (edited)\nTuesday, March 18, 2025 at 9:56 AM"
+  },
+  {
+    "id": "1351656641573027951",
+    "timestamp": "2025-03-18T20:40:55.917Z",
+    "username": "Free [ 🌽 Mafia]",
+    "text": "How do I find my Node API?"
+  },
+  {
+    "id": "1351662882688991314",
+    "timestamp": "2025-03-18T21:05:43.915Z",
+    "username": "Rene - QA",
+    "text": "Node api? You mean node dashboard or software that runs the nodes? Either way, you find all you need in the setup instructions"
+  },
+  {
+    "id": "1351662903526428682",
+    "timestamp": "2025-03-18T21:05:48.883Z",
+    "username": "",
+    "text": "!pool"
+  },
+  {
+    "id": "1351662904335798374",
+    "timestamp": "2025-03-18T21:05:49.076Z",
+    "username": "Dyno",
+    "text": ""
+  },
+  {
+    "id": "1351666080028033044",
+    "timestamp": "2025-03-18T21:18:26.220Z",
+    "username": "Free [ 🌽 Mafia]",
+    "text": "@Rene - QA is there any security risk if I give out my Node pool api access key to a friend who is doing testing for NerdNode?"
+  },
+  {
+    "id": "1351667206773014558",
+    "timestamp": "2025-03-18T21:23:14.660Z",
+    "username": "",
+    "text": "Nerd Node is a Node hosting service provider, they are trying to get setup to have the ability to host Copi nodes (edited)\nTuesday, March 18, 2025 at 5:23 PM"
+  },
+  {
+    "id": "1351669064509948088",
+    "timestamp": "2025-03-18T21:30:17.776Z",
+    "username": "Free [ 🌽 Mafia]",
+    "text": "Does Cornucopias have a Test API Pool Key my friend can use to do testing for NerdNode?"
+  },
+  {
+    "id": "1351675856925233223",
+    "timestamp": "2025-03-18T21:57:31.062Z",
+    "username": "Rene - QA",
+    "text": "Don't they have their own copi node licenses? (edited)\nTuesday, March 18, 2025 at 5:57 PM"
+  },
+  {
+    "id": "1351676158890213427",
+    "timestamp": "2025-03-18T21:58:29.208Z",
+    "username": "Rene - QA",
+    "text": "We had, but we switched everything to production"
+  },
+  {
+    "id": "1351676824165548032",
+    "timestamp": "2025-03-18T22:01:07.822Z",
+    "username": "Rene - QA",
+    "text": "No, there is no security risk doing that. Until we start rewarding performance you can create a test pool and send him the access key.  Their actual pool performance will show up on your dashboard."
+  },
+  {
+    "id": "1351677305302417570",
+    "timestamp": "2025-03-18T22:03:02.534Z",
+    "username": "Free [ 🌽 Mafia]",
+    "text": "Dpnt think he does no"
+  },
+  {
+    "id": "1351677455945171055",
+    "timestamp": "2025-03-18T22:03:38.450Z",
+    "username": "Rene - QA",
+    "text": "How are they going to run then copi nodes without licences?"
+  },
+  {
+    "id": "1351677647641641091",
+    "timestamp": "2025-03-18T22:04:24.154Z",
+    "username": "Free [ 🌽 Mafia]",
+    "text": "He works for a Company thats called NerdNode and it does Node Hosting, he is trying to get their hosting service up to speed to run Copi Nodes"
+  },
+  {
+    "id": "1351678000101457980",
+    "timestamp": "2025-03-18T22:05:48.187Z",
+    "username": "Rene - QA",
+    "text": "I get that part but without node licences he won't run any copi nodes"
+  },
+  {
+    "id": "1351678375848050689",
+    "timestamp": "2025-03-18T22:07:17.772Z",
+    "username": "Rene - QA",
+    "text": "Or are you planning that they run your licenses for you on their machines in the future?"
+  },
+  {
+    "id": "1351678491195867167",
+    "timestamp": "2025-03-18T22:07:45.273Z",
+    "username": "Free [ 🌽 Mafia]",
+    "text": "I would use their hosting service for VPS and run them via NerdNode"
+  },
+  {
+    "id": "1351678995510595715",
+    "timestamp": "2025-03-18T22:09:45.511Z",
+    "username": "Rene - QA",
+    "text": "And they would setup pool and run for you, or what? Not sure im understanding all of that."
+  },
+  {
+    "id": "1351679057867309177",
+    "timestamp": "2025-03-18T22:10:00.378Z",
+    "username": "Free [ 🌽 Mafia]",
+    "text": "They are a VPS provider"
+  },
+  {
+    "id": "1351679247919484988",
+    "timestamp": "2025-03-18T22:10:45.690Z",
+    "username": "",
+    "text": "They have a decentralized device network that NerdNode runs on called DeEEP"
+  },
+  {
+    "id": "1351679289816256544",
+    "timestamp": "2025-03-18T22:10:55.679Z",
+    "username": "Rene - QA",
+    "text": "Ok"
+  },
+  {
+    "id": "1351679393398788229",
+    "timestamp": "2025-03-18T22:11:20.375Z",
+    "username": "Free [ 🌽 Mafia]",
+    "text": "I can hook you up with a discord invite if you want to know more, great team, good people"
+  },
+  {
+    "id": "1351679844471279696",
+    "timestamp": "2025-03-18T22:13:07.919Z",
+    "username": "Rene - QA",
+    "text": "So they want to test the pool if their vps is good enough?"
+  },
+  {
+    "id": "1351680447070867566",
+    "timestamp": "2025-03-18T22:15:31.590Z",
+    "username": "Free [ 🌽 Mafia]",
+    "text": "Im not sure on the specifics, I've known @Rusty Spork and been talking about getting Cornucopias Nodes onto NerdNode for months, now they are ready to test it out. Perhaps Rusty can share the details"
+  },
+  {
+    "id": "1351680745654980652",
+    "timestamp": "2025-03-18T22:17:04.734Z",
+    "username": "Rusty Spork",
+    "text": "Our devs are testing a multitude of things, I dont know the exact specifics (edited)\nTuesday, March 18, 2025 at 6:17 PM"
+  },
+  {
+    "id": "1351680922256412672",
+    "timestamp": "2025-03-18T22:17:24.883Z",
+    "username": "",
+    "text": "But our hardware can handle it no issue from what is documented"
+  },
+  {
+    "id": "1351681357318983793",
+    "timestamp": "2025-03-18T22:19:08.610Z",
+    "username": "Rene - QA",
+    "text": "Yes, hardware shouldn't be problem. We tested even on Pi with 8gb of RAM and passeed. Bandwidth is the priority"
+  },
+  {
+    "id": "1351681481923104910",
+    "timestamp": "2025-03-18T22:19:38.318Z",
+    "username": "Rusty Spork",
+    "text": "we have just under 2,000 servers with 32gb ram so they a powerhouse"
+  },
+  {
+    "id": "1351682017187729512",
+    "timestamp": "2025-03-18T22:21:45.935Z",
+    "username": "Rene - QA",
+    "text": "If you have enough upload speed and enough bandwidth, you shouldn't have a problem running several fully saturated pools"
+  },
+  {
+    "id": "1351682728197619777",
+    "timestamp": "2025-03-18T22:24:35.453Z",
+    "username": "Rusty Spork",
+    "text": "bandwidth shouldn't be a problem"
+  },
+  {
+    "id": "1351683184546549780",
+    "timestamp": "2025-03-18T22:26:24.255Z",
+    "username": "Rene - QA",
+    "text": "Then you have nothing to worry about."
+  },
+  {
+    "id": "1351683380659490966",
+    "timestamp": "2025-03-18T22:27:11.012Z",
+    "username": "Rusty Spork",
+    "text": "We have load switching as its a depin VPS so if the host doesent meet the requirements it gets moved over to the next server right away"
+  },
+  {
+    "id": "1351683648146903161",
+    "timestamp": "2025-03-18T22:28:14.786Z",
+    "username": "Free [ 🌽 Mafia]",
+    "text": "Those devices are the DeEEP machines right?"
+  },
+  {
+    "id": "1351683748944543745",
+    "timestamp": "2025-03-18T22:28:38.818Z",
+    "username": "Rusty Spork",
+    "text": "That is correct, it is our DeEEP devices that we sold yall"
+  },
+  {
+    "id": "1351685477010247681",
+    "timestamp": "2025-03-18T22:35:30.821Z",
+    "username": "Free [ 🌽 Mafia]",
+    "text": "Thanks for the help appriciate it"
+  },
+  {
+    "id": "1351686340030234634",
+    "timestamp": "2025-03-18T22:39:07.070Z",
+    "username": "Rene - QA",
+    "text": "Can we close both of your tickets? @Rusty Spork (edited)\nTuesday, March 18, 2025 at 6:39 PM"
+  },
+  {
+    "id": "1351719023385247876",
+    "timestamp": "2025-03-19T00:48:48.900Z",
+    "username": "Free [ 🌽 Mafia]",
+    "text": "Absolutely, pardon me I had stepped away to make dinner"
+  },
+  {
+    "id": "1351923284035244032",
+    "timestamp": "2025-03-19T14:20:28.434Z",
+    "username": "oxenhouse",
+    "text": "just making sure... there has been minimal game download action in the past week or so, right? Especially in EU?"
+  },
+  {
+    "id": "1351944434580852838",
+    "timestamp": "2025-03-19T15:55:02.090Z",
+    "username": "RahMega",
+    "text": "How many nodes can you host on a single private or public node pool? (edited)\nWednesday, March 19, 2025 at 11:55 AM"
+  },
+  {
+    "id": "1351948286160011385",
+    "timestamp": "2025-03-19T15:59:49.405Z",
+    "username": "Rene - QA",
+    "text": "up to 50 node licences"
+  },
+  {
+    "id": "1351948569304629268",
+    "timestamp": "2025-03-19T16:00:56.912Z",
+    "username": "EggsAnyStyle [G4G] [INTP-A]",
+    "text": "50 Nodes max per pool.  Public pool minimum is 8 Nodes and you can attract up to 4X the amount of your Nodes in delegates, staying under the 50 Node max for the pool."
+  },
+  {
+    "id": "1351951483897254051",
+    "timestamp": "2025-03-19T16:12:31.805Z",
+    "username": "RahMega",
+    "text": "Ok Great, thank you!"
+  },
+  {
+    "id": "1351977735689601197",
+    "timestamp": "2025-03-19T17:56:50.720Z",
+    "username": "MSPDriver 🇺🇸",
+    "text": "Well after two days of no activity I think im going to turn my node off until at the very least when rewards are given to just the people running nodes. Seems pointless to keep running otherwise"
+  },
+  {
+    "id": "1351980228209278987",
+    "timestamp": "2025-03-19T18:06:44.983Z",
+    "username": "Steve 'Corn Pops'",
+    "text": "To us individually, I agree, it seems pointless. \nHOWEVER, this is what testers do. The testing and modifications defined in the testing phases are critical to success."
+  },
+  {
+    "id": "1351980455540424755",
+    "timestamp": "2025-03-19T18:07:39.183Z",
+    "username": "",
+    "text": "Not gonna blame anyone that chooses to shut theirs off. But it is def not pointless to have them running."
+  },
+  {
+    "id": "1352049198765310012",
+    "timestamp": "2025-03-19T22:40:48.845Z",
+    "username": "Chilled Blue| Knights",
+    "text": "Will we be informed in advance of next build update to make sure everything is running ready for the  load test"
+  },
+  {
+    "id": "1352093341147467797",
+    "timestamp": "2025-03-20T01:36:13.209Z",
+    "username": "elias1963",
+    "text": "hello everyone \nDo we happen to know how many private pools are currently running ?"
+  },
+  {
+    "id": "1352094352247099395",
+    "timestamp": "2025-03-20T01:40:14.274Z",
+    "username": "",
+    "text": "My pool is in \"validating\" status more more than two days now with my container memory increasing slowly every day"
+  },
+  {
+    "id": "1352219837710995537",
+    "timestamp": "2025-03-20T09:58:52.340Z",
+    "username": "tedan01",
+    "text": "This has been like this for more than 1hr is this working fine ?"
+  },
+  {
+    "id": "1352220913361223690",
+    "timestamp": "2025-03-20T10:03:08.795Z",
+    "username": "EZ | Node Operator",
+    "text": "100+ i believe."
+  },
+  {
+    "id": "1352221341293740042",
+    "timestamp": "2025-03-20T10:04:50.822Z",
+    "username": "tedan01",
+    "text": "@EZ | Node Operator i am doing the right thing ?"
+  },
+  {
+    "id": "1352221571976265780",
+    "timestamp": "2025-03-20T10:05:45.821Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "Should be good. Pool needs to download the cache files."
+  },
+  {
+    "id": "1352223066452791316",
+    "timestamp": "2025-03-20T10:11:42.132Z",
+    "username": "tedan01",
+    "text": "ok. Thanks"
+  },
+  {
+    "id": "1352225774056378420",
+    "timestamp": "2025-03-20T10:22:27.675Z",
+    "username": "tedan01",
+    "text": "@Beowulf Cornelius: Infinity Sage Thank you. it's has change. But i try check if i have configured the port forwarding very well; but it show this, hope i did the forwarding very well ?"
+  },
+  {
+    "id": "1352226143842996275",
+    "timestamp": "2025-03-20T10:23:55.839Z",
+    "username": "Rene - QA",
+    "text": "This signs that your port is not open"
+  },
+  {
+    "id": "1352226380204474451",
+    "timestamp": "2025-03-20T10:24:52.192Z",
+    "username": "tedan01",
+    "text": "is it from me or my provider ?"
+  },
+  {
+    "id": "1352226459271299125",
+    "timestamp": "2025-03-20T10:25:11.043Z",
+    "username": "tedan01",
+    "text": "is it from me or my provider ?"
+  },
+  {
+    "id": "1352227064652103680",
+    "timestamp": "2025-03-20T10:27:35.377Z",
+    "username": "Rene - QA",
+    "text": "I can't tell from here. You will need to check by yourself. Did you check if you are behind a CGNAT? In the Scruffys video tutorial there is a guide at the begining of the video how to check that"
+  },
+  {
+    "id": "1352229699908014150",
+    "timestamp": "2025-03-20T10:38:03.671Z",
+    "username": "tedan01",
+    "text": "pls any link to the video pls ?"
+  },
+  {
+    "id": "1352229782728736820",
+    "timestamp": "2025-03-20T10:38:23.417Z",
+    "username": "Rene - QA",
+    "text": "!pool"
+  },
+  {
+    "id": "1352229783831842828",
+    "timestamp": "2025-03-20T10:38:23.680Z",
+    "username": "Dyno",
+    "text": ""
+  },
+  {
+    "id": "1352229840459141172",
+    "timestamp": "2025-03-20T10:38:37.181Z",
+    "username": "tedan01",
+    "text": "ok. thanks"
+  },
+  {
+    "id": "1352235299916484668",
+    "timestamp": "2025-03-20T11:04:56.009Z",
+    "username": "elias1963",
+    "text": "Yes it was like that for some time and then went (and stayed) in validating mode (edited)\nThursday, March 20, 2025 at 7:04 AM"
+  },
+  {
+    "id": "1352237082927562823",
+    "timestamp": "2025-03-20T11:07:23.920Z",
+    "username": "elias1963",
+    "text": "The team has a great support video, everything is nicely explained and in detail!!!!"
+  },
+  {
+    "id": "1352245151489331281",
+    "timestamp": "2025-03-20T11:41:40.772Z",
+    "username": "tedan01",
+    "text": "is it working now ? (edited)\nThursday, March 20, 2025 at 7:41 AM"
+  },
+  {
+    "id": "1352247962499027086",
+    "timestamp": "2025-03-20T11:50:37.812Z",
+    "username": "EZ | Node Operator",
+    "text": "you can check your docker logs for any errors"
+  },
+  {
+    "id": "1352248357510185032",
+    "timestamp": "2025-03-20T11:52:11.990Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "Needs to be from a browser outside your local area network. Something like a browser on your phone that's not on wifi, but on mobile data."
+  },
+  {
+    "id": "1352267840597524544",
+    "timestamp": "2025-03-20T13:09:37.120Z",
+    "username": "tedan01",
+    "text": "try it on my phone without wifi, it's works"
+  },
+  {
+    "id": "1352269071521021992",
+    "timestamp": "2025-03-20T13:14:30.595Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "Awesome. That's the quickest test you can do that things work."
+  },
+  {
+    "id": "1352269150654828574",
+    "timestamp": "2025-03-20T13:14:49.462Z",
+    "username": "",
+    "text": "You can also delete the game and set it to download from the node network in the laucher."
+  },
+  {
+    "id": "1352269242485178442",
+    "timestamp": "2025-03-20T13:15:11.356Z",
+    "username": "",
+    "text": "(if you are in the same region as your pool.,)"
+  },
+  {
+    "id": "1352269362178035743",
+    "timestamp": "2025-03-20T13:15:39.893Z",
+    "username": "",
+    "text": "In the launcher's settings."
+  },
+  {
+    "id": "1352286787401420840",
+    "timestamp": "2025-03-20T14:24:54.390Z",
+    "username": "tedan01",
+    "text": "Ok.Thansk. I will do that"
+  },
+  {
+    "id": "1352290113224446022",
+    "timestamp": "2025-03-20T14:38:07.328Z",
+    "username": "tedan01",
+    "text": "Pls  been trying to locate this launch from the web site where i am running the pool, but i cannot found it. Any link or direction will help"
+  },
+  {
+    "id": "1352290586442465362",
+    "timestamp": "2025-03-20T14:40:00.152Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "That's the game launcher. You can get it from there. You'll need eligible NFTs to be able to install the game tho'"
+  },
+  {
+    "id": "1352290731011870772",
+    "timestamp": "2025-03-20T14:40:34.620Z",
+    "username": "ScoobyDooBopBop",
+    "text": "or buy the early access pass for $10"
+  },
+  {
+    "id": "1352290946590703710",
+    "timestamp": "2025-03-20T14:41:26.018Z",
+    "username": "tedan01",
+    "text": "oh. Thanks"
+  },
+  {
+    "id": "1352291006430711861",
+    "timestamp": "2025-03-20T14:41:40.285Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "Or that."
+  },
+  {
+    "id": "1352291089574400000",
+    "timestamp": "2025-03-20T14:42:00.108Z",
+    "username": "",
+    "text": "@tedan01 The \"Play\" page will detail things."
+  },
+  {
+    "id": "1352292101064495256",
+    "timestamp": "2025-03-20T14:46:01.266Z",
+    "username": "tedan01",
+    "text": "can't i use crypto to pay for the game, or it's has be only credit or debt card ?"
+  },
+  {
+    "id": "1352292668432191498",
+    "timestamp": "2025-03-20T14:48:16.537Z",
+    "username": "EZ | Node Operator",
+    "text": "You can use your crypto.. For example over at jpg dot store  you can buy an gti javelin for 13 ADA which gives you game access."
+  },
+  {
+    "id": "1352293283405234309",
+    "timestamp": "2025-03-20T14:50:43.158Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "Or if you don't want to buy stuff to get in the game. State what area you are in and maybe there's someone that can delete their game so it triggers the pools in that area."
+  },
+  {
+    "id": "1352293554268934226",
+    "timestamp": "2025-03-20T14:51:47.737Z",
+    "username": "tedan01",
+    "text": "ok. cool"
+  },
+  {
+    "id": "1352293642412490857",
+    "timestamp": "2025-03-20T14:52:08.752Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "Aka, US or EU."
+  },
+  {
+    "id": "1352293673215463466",
+    "timestamp": "2025-03-20T14:52:16.096Z",
+    "username": "tedan01",
+    "text": "i am uk though"
+  },
+  {
+    "id": "1352293720678076557",
+    "timestamp": "2025-03-20T14:52:27.412Z",
+    "username": "",
+    "text": "U.K"
+  },
+  {
+    "id": "1352293836440993854",
+    "timestamp": "2025-03-20T14:52:55.012Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "So EU (I know I sounds weird  )"
+  },
+  {
+    "id": "1352293888035131412",
+    "timestamp": "2025-03-20T14:53:07.313Z",
+    "username": "tedan01",
+    "text": "LOOL"
+  },
+  {
+    "id": "1352293932569989201",
+    "timestamp": "2025-03-20T14:53:17.931Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "Ok, I'll delete my game and see if it reaches your pool as well."
+  },
+  {
+    "id": "1352294052149858345",
+    "timestamp": "2025-03-20T14:53:46.441Z",
+    "username": "tedan01",
+    "text": "Oh. Thanks A lot"
+  },
+  {
+    "id": "1352294126468726877",
+    "timestamp": "2025-03-20T14:54:04.160Z",
+    "username": "",
+    "text": "I bought the early acess as well"
+  },
+  {
+    "id": "1352294284883398716",
+    "timestamp": "2025-03-20T14:54:41.929Z",
+    "username": "",
+    "text": "do i need to download the launcher ?"
+  },
+  {
+    "id": "1352294576630792215",
+    "timestamp": "2025-03-20T14:55:51.487Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "Yes, in the launcher settings set to node network like above and then, download the game."
+  },
+  {
+    "id": "1352294647984296040",
+    "timestamp": "2025-03-20T14:56:08.499Z",
+    "username": "tedan01",
+    "text": "ok"
+  },
+  {
+    "id": "1352294720231178281",
+    "timestamp": "2025-03-20T14:56:25.724Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "Ok, I'm downloading the game, hopefully some requests reach your pool as well."
+  },
+  {
+    "id": "1352294720310743061",
+    "timestamp": "2025-03-20T14:56:25.743Z",
+    "username": "oxenhouse",
+    "text": "I'm seeing EU GETs now."
+  },
+  {
+    "id": "1352294765907021944",
+    "timestamp": "2025-03-20T14:56:36.614Z",
+    "username": "ScoobyDooBopBop",
+    "text": "i started a download as well"
+  },
+  {
+    "id": "1352294783057399930",
+    "timestamp": "2025-03-20T14:56:40.703Z",
+    "username": "",
+    "text": "just for fun"
+  },
+  {
+    "id": "1352295259295449152",
+    "timestamp": "2025-03-20T14:58:34.247Z",
+    "username": "tedan01",
+    "text": "what next to do pls ?"
+  },
+  {
+    "id": "1352295912701034637",
+    "timestamp": "2025-03-20T15:01:10.031Z",
+    "username": "",
+    "text": "the node is showing online though"
+  },
+  {
+    "id": "1352296374213021826",
+    "timestamp": "2025-03-20T15:03:00.064Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "Go to settings."
+  },
+  {
+    "id": "1352296452038332446",
+    "timestamp": "2025-03-20T15:03:18.619Z",
+    "username": "",
+    "text": "In settings. Check mark the bellow box."
+  },
+  {
+    "id": "1352296462385549343",
+    "timestamp": "2025-03-20T15:03:21.086Z",
+    "username": "",
+    "text": ""
+  },
+  {
+    "id": "1352296515564994560",
+    "timestamp": "2025-03-20T15:03:33.765Z",
+    "username": "",
+    "text": "Once done. Hit \"Install\""
+  },
+  {
+    "id": "1352296680699199520",
+    "timestamp": "2025-03-20T15:04:13.136Z",
+    "username": "",
+    "text": "In the meantime go to your Docker (not the website dashboard, that has a lag of one-ish hours) and see if you are getting requests,"
+  },
+  {
+    "id": "1352297200075407414",
+    "timestamp": "2025-03-20T15:06:16.965Z",
+    "username": "",
+    "text": "Aka, sweet-sweet \"GET\"s in the docker logs."
+  },
+  {
+    "id": "1352297277892460725",
+    "timestamp": "2025-03-20T15:06:35.518Z",
+    "username": "",
+    "text": "Like the above screenshot from BobZilla."
+  },
+  {
+    "id": "1352297647779741798",
+    "timestamp": "2025-03-20T15:08:03.706Z",
+    "username": "tedan01",
+    "text": "is this you are talking about or you want me to got to command line"
+  },
+  {
+    "id": "1352300439080538195",
+    "timestamp": "2025-03-20T15:19:09.204Z",
+    "username": "tedan01",
+    "text": "is this from my window cmd and what command can i use pls ?"
+  },
+  {
+    "id": "1352301121648984105",
+    "timestamp": "2025-03-20T15:21:51.941Z",
+    "username": "tedan01",
+    "text": "Thanks alot"
+  },
+  {
+    "id": "1352302230732013710",
+    "timestamp": "2025-03-20T15:26:16.367Z",
+    "username": "",
+    "text": ""
+  },
+  {
+    "id": "1352304444926201926",
+    "timestamp": "2025-03-20T15:35:04.272Z",
+    "username": "oxenhouse",
+    "text": "Love seeing the node graphs light up."
+  },
+  {
+    "id": "1352306505864708106",
+    "timestamp": "2025-03-20T15:43:15.638Z",
+    "username": "oxenhouse",
+    "text": "Don't kill those beautiful GETs!"
+  },
+  {
+    "id": "1352307160054370415",
+    "timestamp": "2025-03-20T15:45:51.609Z",
+    "username": "",
+    "text": "will be interesting to see if any DST time will be incorporated into the performance metrics. Like if you're patching and you  miss some GETs, will there be some forgiveness. Like you have a padding of missing 2% of the requests to maintain \"high performance\"."
+  },
+  {
+    "id": "1352320316034121858",
+    "timestamp": "2025-03-20T16:38:08.239Z",
+    "username": "tedan01",
+    "text": "this is what i get of the log"
+  },
+  {
+    "id": "1352322971741458513",
+    "timestamp": "2025-03-20T16:49:05.080Z",
+    "username": "Rene - QA",
+    "text": "You got requests from the dashboard screenshot you posted above so everything is ok (edited)\nThursday, March 20, 2025 at 12:49 PM"
+  },
+  {
+    "id": "1352328147886149703",
+    "timestamp": "2025-03-20T17:09:15.498Z",
+    "username": "tedan01",
+    "text": "ok. Thanks"
+  },
+  {
+    "id": "1352358539733106688",
+    "timestamp": "2025-03-20T19:10:01.479Z",
+    "username": "Winston [🌽 Mafia]",
+    "text": "Haven't checked in for a bit, is it needed to commit our nodes to a pool yet ? Or is it still just staking on the cornucopia website?"
+  },
+  {
+    "id": "1352363122622595183",
+    "timestamp": "2025-03-20T19:28:14.125Z",
+    "username": "Not-A-Bot",
+    "text": "For rewards? Just staking. But to get prepped for the upcoming requirement to run pools, you can see instructions below"
+  },
+  {
+    "id": "1352363133452288000",
+    "timestamp": "2025-03-20T19:28:16.707Z",
+    "username": "",
+    "text": "!pool"
+  },
+  {
+    "id": "1352363138292650005",
+    "timestamp": "2025-03-20T19:28:17.861Z",
+    "username": "Dyno",
+    "text": ""
+  },
+  {
+    "id": "1352367151406911632",
+    "timestamp": "2025-03-20T19:44:14.662Z",
+    "username": "Winston [🌽 Mafia]",
+    "text": "Thank you, will keep an eye on it"
+  },
+  {
+    "id": "1352367333682708560",
+    "timestamp": "2025-03-20T19:44:58.120Z",
+    "username": "",
+    "text": "I don't know much about the technical side so looking forward to delegate my nodes"
+  },
+  {
+    "id": "1352419852299665408",
+    "timestamp": "2025-03-20T23:13:39.534Z",
+    "username": "captiancj",
+    "text": "is there and app or extension to monitor the status of your nodes remotely?"
+  },
+  {
+    "id": "1352422360786927648",
+    "timestamp": "2025-03-20T23:23:37.604Z",
+    "username": "captiancj",
+    "text": "thank you"
+  },
+  {
+    "id": "1352492500501401630",
+    "timestamp": "2025-03-21T04:02:20.215Z",
+    "username": "playlikeheath",
+    "text": "Is there currently no benefit to me having a node run on my pc?"
+  },
+  {
+    "id": "1352529867899404338",
+    "timestamp": "2025-03-21T06:30:49.297Z",
+    "username": "Danni  🌽 Mafia",
+    "text": "$copi"
+  },
+  {
+    "id": "1352529948279312444",
+    "timestamp": "2025-03-21T06:31:08.461Z",
+    "username": "",
+    "text": "!node"
+  },
+  {
+    "id": "1352529950078664764",
+    "timestamp": "2025-03-21T06:31:08.890Z",
+    "username": "Dyno",
+    "text": ""
+  },
+  {
+    "id": "1352544615986761764",
+    "timestamp": "2025-03-21T07:29:25.515Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "We're still in a testing phase with them. Still no reward for running them, other than getting acquainted with the system.\n\nRewards are still in the phase where you only need to register the nodes on the corn account."
+  },
+  {
+    "id": "1352590848788926535",
+    "timestamp": "2025-03-21T10:33:08.274Z",
+    "username": "playlikeheath",
+    "text": "Cool just wanted to make sure I didn’t need to do something extra"
+  },
+  {
+    "id": "1352667310820954143",
+    "timestamp": "2025-03-21T15:36:58.243Z",
+    "username": "tedan01",
+    "text": "Good afternoon. If i buy the gun, can i rent it out or stake ot it's just for me to own it ?"
+  },
+  {
+    "id": "1352667364650520577",
+    "timestamp": "2025-03-21T15:37:11.077Z",
+    "username": "7even 'The CornFather'",
+    "text": "you can use it"
+  },
+  {
+    "id": "1352667450537410621",
+    "timestamp": "2025-03-21T15:37:31.554Z",
+    "username": "tedan01",
+    "text": "what about staking it on rent it ?"
+  },
+  {
+    "id": "1352667464810496176",
+    "timestamp": "2025-03-21T15:37:34.957Z",
+    "username": "7even 'The CornFather'",
+    "text": "and no renting or staking has been spoken about regarding this"
+  },
+  {
+    "id": "1352667522951938120",
+    "timestamp": "2025-03-21T15:37:48.819Z",
+    "username": "tedan01",
+    "text": "ok. Thanks"
+  },
+  {
+    "id": "1352919729454583849",
+    "timestamp": "2025-03-22T08:19:59.535Z",
+    "username": "TheLaw",
+    "text": "Hello, are file nodes able to be purchased or sold? Where can this be done? Thank you"
+  },
+  {
+    "id": "1352919933041901629",
+    "timestamp": "2025-03-22T08:20:48.074Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "Yes they can. No lock ups."
+  },
+  {
+    "id": "1352920013119422486",
+    "timestamp": "2025-03-22T08:21:07.166Z",
+    "username": "",
+    "text": "You can do it on secondary markets."
+  },
+  {
+    "id": "1352920123987595314",
+    "timestamp": "2025-03-22T08:21:33.599Z",
+    "username": "",
+    "text": "Cardano - jpg store\nBase - opensea"
+  },
+  {
+    "id": "1352920165343559701",
+    "timestamp": "2025-03-22T08:21:43.459Z",
+    "username": "",
+    "text": "Links in ⁠🔗│official-info"
+  },
+  {
+    "id": "1352920188411969548",
+    "timestamp": "2025-03-22T08:21:48.959Z",
+    "username": "TheLaw",
+    "text": "Thank you"
+  },
+  {
+    "id": "1352920273682300950",
+    "timestamp": "2025-03-22T08:22:09.289Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "Also in the above channel you have the policy IDs and contract addresses."
+  },
+  {
+    "id": "1352921817546887190",
+    "timestamp": "2025-03-22T08:28:17.375Z",
+    "username": "TheLaw",
+    "text": "Is there any halving events for the rewards?"
+  },
+  {
+    "id": "1352922434918944769",
+    "timestamp": "2025-03-22T08:30:44.568Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "Nothing stated as a feature of the rewards system."
+  },
+  {
+    "id": "1352925638213767231",
+    "timestamp": "2025-03-22T08:43:28.293Z",
+    "username": "TheLaw",
+    "text": "Great"
+  },
+  {
+    "id": "1353332155337670737",
+    "timestamp": "2025-03-23T11:38:49.528Z",
+    "username": "pol",
+    "text": "Guys will the node install on Linux? For some reason WSL2 will not install on my window system"
+  },
+  {
+    "id": "1353333533464330240",
+    "timestamp": "2025-03-23T11:44:18.099Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "You can install Docker on Linux as well."
+  },
+  {
+    "id": "1353333977171099648",
+    "timestamp": "2025-03-23T11:46:03.887Z",
+    "username": "pol",
+    "text": "Right but back end supports it righ"
+  },
+  {
+    "id": "1353334242523873331",
+    "timestamp": "2025-03-23T11:47:07.152Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "What do you mean by backend?"
+  },
+  {
+    "id": "1353339418605391962",
+    "timestamp": "2025-03-23T12:07:41.226Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Yes, the nodes run on Linux by using Docker"
+  },
+  {
+    "id": "1353339440226893835",
+    "timestamp": "2025-03-23T12:07:46.381Z",
+    "username": "",
+    "text": "!pool"
+  },
+  {
+    "id": "1353339441090924635",
+    "timestamp": "2025-03-23T12:07:46.587Z",
+    "username": "Dyno",
+    "text": ""
+  },
+  {
+    "id": "1353356066905264148",
+    "timestamp": "2025-03-23T13:15:22.880Z",
+    "username": "Ray.Racer | Knights ⚔",
+    "text": "So, i think i might have fried my mini computer for my nodes. Considering that and the unstable connection from my home router, i think ill go with a VPS.  Any specific recommendation for the VPS ? (10 nodes, 1 pool). (edited)\nSunday, March 23, 2025 at 9:15 AM"
+  },
+  {
+    "id": "1353356651809345657",
+    "timestamp": "2025-03-23T13:16:09.942Z",
+    "username": "ScoobyDooBopBop",
+    "text": "I use Contabo and OneProvider. What exactly is wrong with the mini pc?"
+  },
+  {
+    "id": "1353357167318663289",
+    "timestamp": "2025-03-23T13:18:12.849Z",
+    "username": "Ray.Racer | Knights ⚔",
+    "text": "Got the blue screen of death, no matter what i do to troubleshoot it nothing works sadly. Either way, might just be better to go with a vps even if i can boot it back tbh."
+  },
+  {
+    "id": "1353357242170343444",
+    "timestamp": "2025-03-23T13:18:45.502Z",
+    "username": "Ray.Racer | Knights ⚔",
+    "text": "Thx Scooby ill have a look (edited)\nSunday, March 23, 2025 at 9:18 AM"
+  },
+  {
+    "id": "1353357372696957000",
+    "timestamp": "2025-03-23T13:19:01.815Z",
+    "username": "ScoobyDooBopBop",
+    "text": "good time to install Linux lol"
+  },
+  {
+    "id": "1353357483569319936",
+    "timestamp": "2025-03-23T13:19:28.249Z",
+    "username": "Ray.Racer | Knights ⚔",
+    "text": "Hmm yeah that could be it"
+  },
+  {
+    "id": "1353359518310076456",
+    "timestamp": "2025-03-23T13:27:33.369Z",
+    "username": "Ray.Racer | Knights ⚔",
+    "text": "Sorry to ask im a bit noob for this stuff. I should go with a storage VPS or a virtual private servers one ?"
+  },
+  {
+    "id": "1353361521970778122",
+    "timestamp": "2025-03-23T13:35:31.079Z",
+    "username": "ScoobyDooBopBop",
+    "text": "storage VPS would provide you more space, less CPU/RAM resources, which should be fine for our usecase. I went with the regular VPS but forgot they had storage ones too. Might change it later."
+  },
+  {
+    "id": "1353362186235412571",
+    "timestamp": "2025-03-23T13:38:09.452Z",
+    "username": "",
+    "text": "my cloud vps has 400mbps upload, but they dont tell you that upfront. if you go with their storage one, you have easier access to that info"
+  },
+  {
+    "id": "1353362362773799073",
+    "timestamp": "2025-03-23T13:38:54.049Z",
+    "username": "Ray.Racer | Knights ⚔",
+    "text": "Big thx again ! (edited)\nSunday, March 23, 2025 at 9:38 AM"
+  },
+  {
+    "id": "1353363148869992561",
+    "timestamp": "2025-03-23T13:41:58.962Z",
+    "username": "ScoobyDooBopBop",
+    "text": "No problem. Glad you asked cause now im re-evaluating my choice haha. I think i'll change to the 6C plan."
+  },
+  {
+    "id": "1353363421126594570",
+    "timestamp": "2025-03-23T13:43:03.873Z",
+    "username": "Steve 'Corn Pops'",
+    "text": "ALWAYS is a good time to install Linux!"
+  },
+  {
+    "id": "1353363492333420625",
+    "timestamp": "2025-03-23T13:43:20.850Z",
+    "username": "ScoobyDooBopBop",
+    "text": "big facts"
+  },
+  {
+    "id": "1353363591448891520",
+    "timestamp": "2025-03-23T13:43:44.481Z",
+    "username": "Steve 'Corn Pops'",
+    "text": "I am really enjoying Debian..... For years all I ran was Ubuntu"
+  },
+  {
+    "id": "1353363592610582601",
+    "timestamp": "2025-03-23T13:43:44.758Z",
+    "username": "Ray.Racer | Knights ⚔",
+    "text": "Learned the hard way ahah"
+  },
+  {
+    "id": "1353364036212756560",
+    "timestamp": "2025-03-23T13:45:30.521Z",
+    "username": "ScoobyDooBopBop",
+    "text": "I've tried out a few flavors before settling with Ubuntu. CentOS was great choice. I liked using \"yum\" instead of \"apt\" lol"
+  },
+  {
+    "id": "1353382510377042071",
+    "timestamp": "2025-03-23T14:58:55.105Z",
+    "username": "EZ | Node Operator",
+    "text": "Probably a bad stick of ram..\nAtleast it would be my first thing to check out."
+  },
+  {
+    "id": "1353383022409289748",
+    "timestamp": "2025-03-23T15:00:57.183Z",
+    "username": "EZ | Node Operator",
+    "text": "Ubuntu is smooth, have also used Mint over the years.\nNow we only need copi to work with wine/proton and i can ditch w11 completely."
+  },
+  {
+    "id": "1353383663190151209",
+    "timestamp": "2025-03-23T15:03:29.957Z",
+    "username": "EZ | Node Operator",
+    "text": "You can also check out Leaseweb.. \nThey got some outstanding prices for 2-3 year terms."
+  },
+  {
+    "id": "1353383836158787604",
+    "timestamp": "2025-03-23T15:04:11.196Z",
+    "username": "Ray.Racer | Knights ⚔",
+    "text": "Thx Ez im gonna have a good check when i have the head for it"
+  },
+  {
+    "id": "1353464739291730091",
+    "timestamp": "2025-03-23T20:25:40.006Z",
+    "username": "LEVIATHANUK",
+    "text": "i use contabo for my other nodes there not bad i may be forced into this"
+  },
+  {
+    "id": "1354240266629808309",
+    "timestamp": "2025-03-25T23:47:20.132Z",
+    "username": "CryptoHash",
+    "text": "got my private pool running with my 2 NFTs...  been 24 hours.  Still waiting for some usage.  Logs are successful with upload speeds shown."
+  },
+  {
+    "id": "1354241373686988960",
+    "timestamp": "2025-03-25T23:51:44.075Z",
+    "username": "",
+    "text": "well health says OK, I'll check the logs"
+  },
+  {
+    "id": "1354242330248478864",
+    "timestamp": "2025-03-25T23:55:32.137Z",
+    "username": "CryptoHash",
+    "text": "I'm using a VPS so it's not a box at home"
+  },
+  {
+    "id": "1354242568442876024",
+    "timestamp": "2025-03-25T23:56:28.927Z",
+    "username": "",
+    "text": "EU"
+  },
+  {
+    "id": "1354242713729499218",
+    "timestamp": "2025-03-25T23:57:19.833Z",
+    "username": "",
+    "text": "I'll check the logs when I get home...  stepped out for a bit (edited)\nTuesday, March 25, 2025 at 7:57 PM"
+  },
+  {
+    "id": "1354244099334602834",
+    "timestamp": "2025-03-26T00:02:33.920Z",
+    "username": "CryptoHash",
+    "text": "thanks @BobZilla"
+  },
+  {
+    "id": "1354321495018442906",
+    "timestamp": "2025-03-26T05:10:06.489Z",
+    "username": "SiegeWulf (Kiwi Crypto)[🌽Mafia]",
+    "text": "Sorry - missed this until now - My region is AP (Asia Pacific)...  Yeah - they have that sorted!"
+  },
+  {
+    "id": "1354328898095157380",
+    "timestamp": "2025-03-26T05:39:31.520Z",
+    "username": "Montresor",
+    "text": "Ah. Nice to hear they expanded"
+  },
+  {
+    "id": "1354488510647636119",
+    "timestamp": "2025-03-26T16:13:46.118Z",
+    "username": "Beach_bum",
+    "text": "im downloading again"
+  },
+  {
+    "id": "1354630303880188054",
+    "timestamp": "2025-03-27T01:37:12.259Z",
+    "username": "yveakp",
+    "text": "!phases"
+  },
+  {
+    "id": "1354630308653301871",
+    "timestamp": "2025-03-27T01:37:13.397Z",
+    "username": "Dyno",
+    "text": ""
+  },
+  {
+    "id": "1354727382602481765",
+    "timestamp": "2025-03-27T08:02:57.630Z",
+    "username": "Andreynpa|Knights⚔",
+    "text": "Hello can who help answer, can you tell me if I can configure it if I have such hops? without vpn"
+  },
+  {
+    "id": "1354729194109665371",
+    "timestamp": "2025-03-27T08:10:09.527Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "Heya,  Andrey!\n\nDo you mean: How can I configure a Node pool server if I'm connected through a VPN?"
+  },
+  {
+    "id": "1354729669097816064",
+    "timestamp": "2025-03-27T08:12:02.773Z",
+    "username": "Andreynpa|Knights⚔",
+    "text": ""
+  },
+  {
+    "id": "1354730336592072757",
+    "timestamp": "2025-03-27T08:14:41.916Z",
+    "username": "Andreynpa|Knights⚔",
+    "text": "Hello  Beowulf Cornelius - Corn Savant\nThe thing is that if you don't use the VPN, you may not be able to configure and run the node."
+  },
+  {
+    "id": "1354730846854053928",
+    "timestamp": "2025-03-27T08:16:43.572Z",
+    "username": "",
+    "text": "If i use vpn i think its normal for node"
+  },
+  {
+    "id": "1354731245807865986",
+    "timestamp": "2025-03-27T08:18:18.690Z",
+    "username": "",
+    "text": "Without vpn i think it’s not possible to compete set up"
+  },
+  {
+    "id": "1354731759945777172",
+    "timestamp": "2025-03-27T09:10:57.064Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "The problem with VPN is that the pool will have such a poor performance that it won't be selected by the system to server game chunks. (edited)\nThursday, March 27, 2025 at 5:10 AM"
+  },
+  {
+    "id": "1354732255645270139",
+    "timestamp": "2025-03-27T08:22:19.454Z",
+    "username": "Andreynpa|Knights⚔",
+    "text": "of course, I thought about this because when I use a VPN, my Internet speed becomes incredibly slow, although it's not high anyway, I would say low"
+  },
+  {
+    "id": "1354732326755500092",
+    "timestamp": "2025-03-27T08:22:36.408Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "@Andreynpa|Knights⚔ Let's ⁠open-support-ticket and see what can be done for your area."
+  },
+  {
+    "id": "1354732721347367082",
+    "timestamp": "2025-03-27T08:24:10.486Z",
+    "username": "Andreynpa|Knights⚔",
+    "text": "Download Mbps\n49.79\n Upload Mbps\n49.26"
+  },
+  {
+    "id": "1354733125430677657",
+    "timestamp": "2025-03-27T08:25:46.827Z",
+    "username": "Andreynpa|Knights⚔",
+    "text": "Thank you Sir"
+  },
+  {
+    "id": "1354738225876308079",
+    "timestamp": "2025-03-27T08:46:02.868Z",
+    "username": "Andreynpa|Knights⚔",
+    "text": "Vpn has speed so low"
+  },
+  {
+    "id": "1354738278565416990",
+    "timestamp": "2025-03-27T08:46:15.430Z",
+    "username": "",
+    "text": ""
+  },
+  {
+    "id": "1354738492336509061",
+    "timestamp": "2025-03-27T08:47:06.397Z",
+    "username": "",
+    "text": "On pc same"
+  },
+  {
+    "id": "1354787483862175786",
+    "timestamp": "2025-03-27T12:01:46.887Z",
+    "username": "Cryptui",
+    "text": "I tried the setup with docker at home but it's not working. \nIs there a guideline for cloud setup if you're based in Europe?"
+  },
+  {
+    "id": "1354789630469341244",
+    "timestamp": "2025-03-27T12:10:18.678Z",
+    "username": "Cryptui",
+    "text": "what are the basic requirements \nsomething like \n6 vCPU cores\n8 GB RAM\n1.8 TB SSD (plenty if 100-150GB requirement)\n600 Mbit/s port speed\n32 TB traffic with unlimited incoming"
+  },
+  {
+    "id": "1354792370876452905",
+    "timestamp": "2025-03-27T12:21:34.436Z",
+    "username": "oxenhouse",
+    "text": "@Cryptui  official requirements are still being worked out but the specs you listed are likely overkill depending on how many pools you plan on running on one system. (edited)\nThursday, March 27, 2025 at 8:21 AM"
+  },
+  {
+    "id": "1354792595607519243",
+    "timestamp": "2025-03-27T12:22:05.622Z",
+    "username": "",
+    "text": "most important things seem to be port speed."
+  },
+  {
+    "id": "1354793103504183488",
+    "timestamp": "2025-03-27T12:24:06.714Z",
+    "username": "",
+    "text": "we also don't know what factors will determine if a pool is \"high performing\" so that it earns the highest rewards. So until then, it's a guessing game."
+  },
+  {
+    "id": "1354802036549619732",
+    "timestamp": "2025-03-27T12:59:36.518Z",
+    "username": "EZ | Node Operator",
+    "text": "Its not to hard, you can just follow the written guides.. \nEssentially the commands for docker install  you get from docker and then you just create the .yml file as in the written instructions.. @GeordieR  also got a install script if you want to test that out."
+  },
+  {
+    "id": "1354888464222388354",
+    "timestamp": "2025-03-27T18:43:02.481Z",
+    "username": "Beach_bum",
+    "text": "hi all"
+  },
+  {
+    "id": "1354888846789185797",
+    "timestamp": "2025-03-27T18:44:48.009Z",
+    "username": "",
+    "text": "i have 2 nodes and will buy one more soon. I hope to reach 8 nodes eventually  (edited)\nThursday, March 27, 2025 at 2:44 PM"
+  },
+  {
+    "id": "1354889260553080895",
+    "timestamp": "2025-03-27T18:46:12.341Z",
+    "username": "",
+    "text": "but for now, im not sure there is enough downloads for me to support 8 nodes."
+  },
+  {
+    "id": "1354906422168522965",
+    "timestamp": "2025-03-27T19:54:23.989Z",
+    "username": "EZ | Node Operator",
+    "text": "Evenin"
+  },
+  {
+    "id": "1354909340028375221",
+    "timestamp": "2025-03-27T20:05:59.661Z",
+    "username": "Kreier",
+    "text": "o/"
+  },
+  {
+    "id": "1354945069303726151",
+    "timestamp": "2025-03-27T22:27:58.184Z",
+    "username": "Bugsy",
+    "text": "Anyone knows if a dedicated IP through a VPN works to run nodes? ISP is not static IP, but my VPN service offers this service so I guess it should work? \n\nAnyone tried it?"
+  },
+  {
+    "id": "1354947100315750400",
+    "timestamp": "2025-03-27T22:36:02.415Z",
+    "username": "Cryptui",
+    "text": "maybe need to wait 24 or longer for the key, or it's my \ninternet connection"
+  },
+  {
+    "id": "1354951549071265903",
+    "timestamp": "2025-03-27T22:53:43.081Z",
+    "username": "EZ | Node Operator",
+    "text": "Did you remove the <  >  from the accesskey in the yml config file?"
+  },
+  {
+    "id": "1354952073543680061",
+    "timestamp": "2025-03-27T22:55:48.125Z",
+    "username": "Cryptui",
+    "text": ""
+  },
+  {
+    "id": "1354952306688262304",
+    "timestamp": "2025-03-27T22:56:43.711Z",
+    "username": "",
+    "text": "so how much space needed? 40GB"
+  },
+  {
+    "id": "1354952351655526552",
+    "timestamp": "2025-03-27T22:56:54.432Z",
+    "username": "EZ | Node Operator",
+    "text": "Look at that  its downloading"
+  },
+  {
+    "id": "1354952667750727831",
+    "timestamp": "2025-03-27T22:58:09.795Z",
+    "username": "",
+    "text": "Yeah currently around that amount , but ofc will increase more and more as more things added."
+  },
+  {
+    "id": "1354952798915137751",
+    "timestamp": "2025-03-27T22:58:41.067Z",
+    "username": "Cryptui",
+    "text": "well it's now just a test, cause it's not public pool"
+  },
+  {
+    "id": "1354952856372772894",
+    "timestamp": "2025-03-27T22:58:54.766Z",
+    "username": "",
+    "text": "I'll run it in the cloud anyway"
+  },
+  {
+    "id": "1354966583344107601",
+    "timestamp": "2025-03-27T23:53:27.531Z",
+    "username": "Cryptui",
+    "text": ""
+  },
+  {
+    "id": "1354980772624203787",
+    "timestamp": "2025-03-28T00:49:50.519Z",
+    "username": "EZ | Node Operator",
+    "text": "Yeah its just there is no one downloading the game so therefore its in the validating phase"
+  },
+  {
+    "id": "1354981759476957295",
+    "timestamp": "2025-03-28T00:53:45.803Z",
+    "username": "",
+    "text": "You can uninstalll cornucopias game on your pc then move to settings in the launcher, then at the bottom there should be a box where it says \"download with file nodes\" or similar... Just check the box and reinstall.."
+  },
+  {
+    "id": "1355052090514473091",
+    "timestamp": "2025-03-28T05:33:14.029Z",
+    "username": "Crypted | 🌽 | BIG >10K",
+    "text": "Probs shouldn't be setting the node from a work pc, right?\nGot stuck when it asked for modem details.."
+  },
+  {
+    "id": "1355095610885279806",
+    "timestamp": "2025-03-28T08:26:10.094Z",
+    "username": "Cryptui",
+    "text": "what do you mean, modem you can test if it works or not"
+  },
+  {
+    "id": "1355102256571093022",
+    "timestamp": "2025-03-28T08:52:47.469Z",
+    "username": "Rene - QA",
+    "text": "I think he meant he would need credentials to access modem settings for port forwarding (edited)\nFriday, March 28, 2025 at 4:52 AM"
+  },
+  {
+    "id": "1355126239928516618",
+    "timestamp": "2025-03-28T10:27:52.627Z",
+    "username": "Crypted | 🌽 | BIG >10K",
+    "text": "Yeah, can't access the credentials, will need to look at it from home.\nIf I didn't need the pc on all the time it would be okay from home.. we'll see"
+  },
+  {
+    "id": "1355129822585815130",
+    "timestamp": "2025-03-28T10:42:06.799Z",
+    "username": "Cryptui",
+    "text": "It depends on your provider, I think when you've the credentials you can do it from anywhere.\nIt's all in the video, IPv4 and port forwarding"
+  },
+  {
+    "id": "1355131946627367022",
+    "timestamp": "2025-03-28T10:50:33.210Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "Alternatives are a VPS or delegating your licenses to another pool that's set to public."
+  },
+  {
+    "id": "1355141149358161970",
+    "timestamp": "2025-03-28T11:27:07.312Z",
+    "username": "Cryptui",
+    "text": "How long does Validating take?"
+  },
+  {
+    "id": "1355146902689288287",
+    "timestamp": "2025-03-28T11:49:59.013Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "Until someone downloads something from the pool."
+  },
+  {
+    "id": "1355147056238432370",
+    "timestamp": "2025-03-28T11:50:35.622Z",
+    "username": "",
+    "text": "If you're in the same region as the pool you can trigger it by removing the game, setting your game launcher to use the node network and install the game again."
+  },
+  {
+    "id": "1355163418969116813",
+    "timestamp": "2025-03-28T12:55:36.801Z",
+    "username": "Cryptui",
+    "text": "it's working thanks"
+  },
+  {
+    "id": "1355168595163877566",
+    "timestamp": "2025-03-28T13:16:10.902Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "Awesome ! Welcome to the club!"
+  },
+  {
+    "id": "1355227326513938482",
+    "timestamp": "2025-03-28T17:09:33.547Z",
+    "username": "Yab 2  | Knights ⚔",
+    "text": "is anybody else having issues with their nodes? my pool node dashboard state I need to complete a setup, but when I go to my dockers, I see my nodes there and they seem to be running.. I have to admit my knowledge of dockers is very limited for now.. if anybody has some patients adn is willing to elp I would appreciate it very much"
+  },
+  {
+    "id": "1355227498065035277",
+    "timestamp": "2025-03-28T17:10:14.448Z",
+    "username": "",
+    "text": "btw everything was fine last night at 11 when Ichecked them before bed."
+  },
+  {
+    "id": "1355228763788414987",
+    "timestamp": "2025-03-28T17:15:16.220Z",
+    "username": "ScoobyDooBopBop",
+    "text": "No issue for me. Can you post a screenshot of the dashboard?"
+  },
+  {
+    "id": "1355228790124450023",
+    "timestamp": "2025-03-28T17:15:39.546Z",
+    "username": "EggsAnyStyle [G4G] [INTP-A]",
+    "text": "Just checked mine. All looks good for me.  Stepping out, so I can't help, but can confirm I am not seeing what you describe. (edited)\nFriday, March 28, 2025 at 1:15 PM"
+  },
+  {
+    "id": "1355228820340342865",
+    "timestamp": "2025-03-28T17:15:29.703Z",
+    "username": "Yab 2  | Knights ⚔",
+    "text": ""
+  },
+  {
+    "id": "1355228937273475313",
+    "timestamp": "2025-03-28T17:15:57.582Z",
+    "username": "",
+    "text": "and I entered the command \"docker ps\" in the terminal and I do see my corn server"
+  },
+  {
+    "id": "1355229013446103344",
+    "timestamp": "2025-03-28T17:16:15.743Z",
+    "username": "ScoobyDooBopBop",
+    "text": "click to view the pool and see if there is any addition notes"
+  },
+  {
+    "id": "1355229185899106525",
+    "timestamp": "2025-03-28T17:16:56.859Z",
+    "username": "Yab 2  | Knights ⚔",
+    "text": "if you want we can go in voice chat and I can share my screen if you want.."
+  },
+  {
+    "id": "1355229448433307678",
+    "timestamp": "2025-03-28T17:17:59.452Z",
+    "username": "",
+    "text": ""
+  },
+  {
+    "id": "1355229486576041984",
+    "timestamp": "2025-03-28T17:18:08.546Z",
+    "username": "",
+    "text": ""
+  },
+  {
+    "id": "1355229531610288241",
+    "timestamp": "2025-03-28T17:18:19.283Z",
+    "username": "",
+    "text": "this is what I see when I click on my pool"
+  },
+  {
+    "id": "1355229640398078085",
+    "timestamp": "2025-03-28T17:18:45.220Z",
+    "username": "",
+    "text": "my dockers is runnig on another PC btw.."
+  },
+  {
+    "id": "1355229648740548789",
+    "timestamp": "2025-03-28T17:18:47.209Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Yeah your not set up. You need to get your access key. Did you retrieve one yesterday?"
+  },
+  {
+    "id": "1355229689391742976",
+    "timestamp": "2025-03-28T17:18:56.901Z",
+    "username": "Yab 2  | Knights ⚔",
+    "text": "nope.."
+  },
+  {
+    "id": "1355229748531302541",
+    "timestamp": "2025-03-28T17:19:11.001Z",
+    "username": "",
+    "text": "like 13 hours ago everything was fine and working."
+  },
+  {
+    "id": "1355229971114885343",
+    "timestamp": "2025-03-28T17:20:04.069Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Ok so to confirm, you never got an access key when you first setup your pool?"
+  },
+  {
+    "id": "1355230206712873150",
+    "timestamp": "2025-03-28T17:21:00.240Z",
+    "username": "Yab 2  | Knights ⚔",
+    "text": "I did get my access key and I still have it somewhere.. I did setup to pool about 3 weeks ago and it has been running since without any issues. I was up to almost 5gig life time activity"
+  },
+  {
+    "id": "1355230548334739466",
+    "timestamp": "2025-03-28T17:22:21.689Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Double check your docker.yml file to make sure its still present. Also try doing a /health check."
+  },
+  {
+    "id": "1355230823678214154",
+    "timestamp": "2025-03-28T17:23:27.336Z",
+    "username": "",
+    "text": "That is odd though. Maybe try opening a ticket to see if they can check why it reverted back to Setup."
+  },
+  {
+    "id": "1355231539159367711",
+    "timestamp": "2025-03-28T17:26:17.920Z",
+    "username": "Yab 2  | Knights ⚔",
+    "text": "where shold I do the health check?"
+  },
+  {
+    "id": "1355231632591814757",
+    "timestamp": "2025-03-28T17:26:40.196Z",
+    "username": "",
+    "text": "I only found docker-compose.yml"
+  },
+  {
+    "id": "1355231797964968006",
+    "timestamp": "2025-03-28T17:27:19.624Z",
+    "username": "",
+    "text": "I just emptied the cache in case that was the issue, but it does not look like it fixed anything..LOL"
+  },
+  {
+    "id": "1355231977074200647",
+    "timestamp": "2025-03-28T17:28:02.327Z",
+    "username": "ScoobyDooBopBop",
+    "text": ""
+  },
+  {
+    "id": "1355232101850681475",
+    "timestamp": "2025-03-28T17:28:32.076Z",
+    "username": "",
+    "text": "you dont have the url in your dashboard so you will need to grab the public IP from your machine"
+  },
+  {
+    "id": "1355232576192774204",
+    "timestamp": "2025-03-28T17:30:25.168Z",
+    "username": "",
+    "text": "from your machine you can open a browser and use whatsmyip[.]org"
+  },
+  {
+    "id": "1355232900496232488",
+    "timestamp": "2025-03-28T17:31:42.488Z",
+    "username": "Yab 2  | Knights ⚔",
+    "text": "health comes back as ok"
+  },
+  {
+    "id": "1355233077588394064",
+    "timestamp": "2025-03-28T17:32:24.710Z",
+    "username": "",
+    "text": ""
+  },
+  {
+    "id": "1355233100925239627",
+    "timestamp": "2025-03-28T17:32:30.274Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Ok, now try it from a browser on your phone"
+  },
+  {
+    "id": "1355233148111159348",
+    "timestamp": "2025-03-28T17:32:41.524Z",
+    "username": "",
+    "text": "not connected to wifi"
+  },
+  {
+    "id": "1355233170542297380",
+    "timestamp": "2025-03-28T17:32:46.872Z",
+    "username": "",
+    "text": "has to be from a different network"
+  },
+  {
+    "id": "1355233512298516681",
+    "timestamp": "2025-03-28T17:34:08.353Z",
+    "username": "Yab 2  | Knights ⚔",
+    "text": "got off wifi, got on 5g network, did the same command and the status is also OK.."
+  },
+  {
+    "id": "1355233611552395479",
+    "timestamp": "2025-03-28T17:34:32.017Z",
+    "username": "",
+    "text": "this is what I do not understand..LOL"
+  },
+  {
+    "id": "1355233679873544253",
+    "timestamp": "2025-03-28T17:34:48.306Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Ok good, so network setup is fine then. Try refreshing your dashboard lets see if anything changes"
+  },
+  {
+    "id": "1355233756834693412",
+    "timestamp": "2025-03-28T17:35:06.655Z",
+    "username": "Yab 2  | Knights ⚔",
+    "text": "can you try it and see?? 70.30.193.135:8001/health"
+  },
+  {
+    "id": "1355233868227281172",
+    "timestamp": "2025-03-28T17:35:33.213Z",
+    "username": "ScoobyDooBopBop",
+    "text": "yeah, i was able to get the Ok"
+  },
+  {
+    "id": "1355233921331363972",
+    "timestamp": "2025-03-28T17:35:45.874Z",
+    "username": "",
+    "text": "you should see the entries in your docker log"
+  },
+  {
+    "id": "1355234175619170386",
+    "timestamp": "2025-03-28T17:36:46.501Z",
+    "username": "Yab 2  | Knights ⚔",
+    "text": "about that, is goes really fast and everytime it restarts I dont have the time to read the last couple of lines..LOL"
+  },
+  {
+    "id": "1355234334587748384",
+    "timestamp": "2025-03-28T17:37:24.402Z",
+    "username": "ScoobyDooBopBop",
+    "text": "restarts?"
+  },
+  {
+    "id": "1355234388572373172",
+    "timestamp": "2025-03-28T17:37:37.273Z",
+    "username": "",
+    "text": "your container keeps restarting?"
+  },
+  {
+    "id": "1355234409556607057",
+    "timestamp": "2025-03-28T17:37:42.276Z",
+    "username": "Yab 2  | Knights ⚔",
+    "text": "yes I did a restart of the PC just before asking in chat"
+  },
+  {
+    "id": "1355234460815065331",
+    "timestamp": "2025-03-28T17:37:54.497Z",
+    "username": "",
+    "text": "not sure but it seems to be.."
+  },
+  {
+    "id": "1355234583842525214",
+    "timestamp": "2025-03-28T17:38:23.829Z",
+    "username": "ScoobyDooBopBop",
+    "text": "is your docker installed on Windows or Linux?"
+  },
+  {
+    "id": "1355234771571052624",
+    "timestamp": "2025-03-28T17:39:08.587Z",
+    "username": "Yab 2  | Knights ⚔",
+    "text": "windows"
+  },
+  {
+    "id": "1355235026937053226",
+    "timestamp": "2025-03-28T17:40:09.471Z",
+    "username": "",
+    "text": "when I open my dockers I click on terminal at the bottom and put in the command docker ps. it shows my corn server and it says status: restarting less than a second ago"
+  },
+  {
+    "id": "1355235135716458567",
+    "timestamp": "2025-03-28T17:40:35.406Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Open terminal and type the following \ndocker compose logs --follow | grep \"200 OK\""
+  },
+  {
+    "id": "1355236222502699069",
+    "timestamp": "2025-03-28T17:44:54.516Z",
+    "username": "Yab 2  | Knights ⚔",
+    "text": "it says GREP is not recognized ...."
+  },
+  {
+    "id": "1355236458016801020",
+    "timestamp": "2025-03-28T17:45:50.667Z",
+    "username": "",
+    "text": ""
+  },
+  {
+    "id": "1355236993109463281",
+    "timestamp": "2025-03-28T17:47:58.243Z",
+    "username": "ScoobyDooBopBop",
+    "text": "sorry, replace grep with findstr"
+  },
+  {
+    "id": "1355238452186320946",
+    "timestamp": "2025-03-28T17:53:46.114Z",
+    "username": "Yab 2  | Knights ⚔",
+    "text": "I am going to do a restart again and come back in discord."
+  },
+  {
+    "id": "1355239602419536166",
+    "timestamp": "2025-03-28T17:58:20.351Z",
+    "username": "",
+    "text": ""
+  },
+  {
+    "id": "1355240064191561902",
+    "timestamp": "2025-03-28T18:00:10.446Z",
+    "username": "",
+    "text": "unless you have other suggestions, I guess I will open a ticket to get additional help.. thank you very much for you time"
+  },
+  {
+    "id": "1355240438520610926",
+    "timestamp": "2025-03-28T18:01:39.693Z",
+    "username": "ScoobyDooBopBop",
+    "text": "you have to do it from the same folder where your docker-compose.yml is saved in"
+  },
+  {
+    "id": "1355241557627764917",
+    "timestamp": "2025-03-28T18:06:06.509Z",
+    "username": "ScoobyDooBopBop",
+    "text": "aaaah, glad to hear lol. no worries then."
+  },
+  {
+    "id": "1355242334799008005",
+    "timestamp": "2025-03-28T18:09:11.801Z",
+    "username": "Yab 2  | Knights ⚔",
+    "text": "ok great.. I was going around like a chicken with no head.. at least its not me and its a bug.. good thing for me.. hope the bug is fixed soon.."
+  },
+  {
+    "id": "1355242440013119508",
+    "timestamp": "2025-03-28T18:09:36.886Z",
+    "username": "",
+    "text": "also I wish some announcement would of been done to that regard.. but we know now."
+  },
+  {
+    "id": "1355245673326448640",
+    "timestamp": "2025-03-28T18:22:27.768Z",
+    "username": "Yab 2  | Knights ⚔",
+    "text": "no worries, I just got into the habit of checking my servers twice a day"
+  },
+  {
+    "id": "1355285172890767581",
+    "timestamp": "2025-03-28T20:59:25.198Z",
+    "username": "Cryptui",
+    "text": "1.64GB on one day, node is running nice"
+  },
+  {
+    "id": "1355293249601798336",
+    "timestamp": "2025-03-28T21:31:30.836Z",
+    "username": "Mr. Pink",
+    "text": "!pool"
+  },
+  {
+    "id": "1355293256203767860",
+    "timestamp": "2025-03-28T21:31:32.410Z",
+    "username": "Dyno",
+    "text": ""
+  },
+  {
+    "id": "1355314243356065997",
+    "timestamp": "2025-03-28T22:57:57.350Z",
+    "username": "Rene - QA",
+    "text": "Was your node ONLINE before? If yes, you don't need to do anything. Its a known bug that is being resolved on staging but might not yet be in production. If that is the case, leave it as it is and it will resolve on its own. Your pool is fully active during this time. (edited)\nFriday, March 28, 2025 at 6:57 PM"
+  },
+  {
+    "id": "1355326967041491077",
+    "timestamp": "2025-03-28T23:45:29.700Z",
+    "username": "Yab 2  | Knights ⚔",
+    "text": "Yes it was and after ch3ck about 30 minutes ago it now says synch"
+  },
+  {
+    "id": "1355327403773136928",
+    "timestamp": "2025-03-28T23:47:21.079Z",
+    "username": "Rene - QA",
+    "text": "If you didn't do any changes,\nleave it. (edited)\nFriday, March 28, 2025 at 7:47 PM"
+  },
+  {
+    "id": "1355327752630308956",
+    "timestamp": "2025-03-28T23:48:36.999Z",
+    "username": "Yab 2  | Knights ⚔",
+    "text": "That is what i am doing.. goimg to leave it.. i was just surprised aboit not seeing up.."
+  },
+  {
+    "id": "1355488574463807559",
+    "timestamp": "2025-03-29T10:27:39.912Z",
+    "username": "Smecol [🌽Mafia]",
+    "text": ""
+  },
+  {
+    "id": "1355490358724788347",
+    "timestamp": "2025-03-29T10:34:45.313Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "Cool, right?"
+  },
+  {
+    "id": "1355490652946956298",
+    "timestamp": "2025-03-29T10:35:55.461Z",
+    "username": "Smecol [🌽Mafia]",
+    "text": "Yes. What are the strength points? Is that also the 30 day GB for example?"
+  },
+  {
+    "id": "1355491544655990987",
+    "timestamp": "2025-03-29T10:39:37.993Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "I still need to rewatch that section of copi cafe where rob describes the screenshot. (edited)\nSaturday, March 29, 2025 at 6:39 AM"
+  },
+  {
+    "id": "1355491759576186880",
+    "timestamp": "2025-03-29T10:40:19.302Z",
+    "username": "Smecol [🌽Mafia]",
+    "text": "Yeah okay. I think with the age is when you start your pool, not when you have restarted/update docker it will go back to 1 day for example."
+  },
+  {
+    "id": "1355492132181377075",
+    "timestamp": "2025-03-29T10:41:48.138Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "When you've set up the pool in the corn account."
+  },
+  {
+    "id": "1355492210073800727",
+    "timestamp": "2025-03-29T10:42:06.709Z",
+    "username": "Ang1331",
+    "text": "Hello\nI have 2 cardano file nodes. They are registered on the website and I am constantly receiving daily rewards for them. Is there anything else I need to do?"
+  },
+  {
+    "id": "1355492540874363021",
+    "timestamp": "2025-03-29T10:43:45.794Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "Are you planning on running your own node pool or do you want to just delegate them to a public node pool? (edited)\nSaturday, March 29, 2025 at 6:43 AM"
+  },
+  {
+    "id": "1355493211891568700",
+    "timestamp": "2025-03-29T10:46:05.561Z",
+    "username": "Ang1331",
+    "text": "Does delegation mean someone else will run it for me?"
+  },
+  {
+    "id": "1355493464774803556",
+    "timestamp": "2025-03-29T10:47:05.853Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "That is correct."
+  },
+  {
+    "id": "1355493598094954616",
+    "timestamp": "2025-03-29T10:47:37.639Z",
+    "username": "",
+    "text": "Something like delegating your ada to a public pool instead of running your own cardano pool."
+  },
+  {
+    "id": "1355493764822597642",
+    "timestamp": "2025-03-29T10:48:17.390Z",
+    "username": "",
+    "text": "Here, you will be able to delegate your nodes to a public pool if you don't want/can't run your own pool."
+  },
+  {
+    "id": "1355493892996206612",
+    "timestamp": "2025-03-29T10:48:47.949Z",
+    "username": "Mr. Pink",
+    "text": "There is a formula, this can be found in the tooltip beside the strength filter when released."
+  },
+  {
+    "id": "1355494865156440155",
+    "timestamp": "2025-03-29T10:52:39.730Z",
+    "username": "Ang1331",
+    "text": "I don't see an option where I can delegate my nodes. Am I doing something wrong? (I'm a bit of a beginner)"
+  },
+  {
+    "id": "1355495323660714034",
+    "timestamp": "2025-03-29T10:54:29.046Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "Delegation is not available at this time.\n\nRegistering your nodes is all you need to do at this time."
+  },
+  {
+    "id": "1355495598131908789",
+    "timestamp": "2025-03-29T10:55:34.485Z",
+    "username": "",
+    "text": "I asked about what you want to do with your nodes because you can spin up a node pool now. But since you will go on the delegation path, registering is all you need to do at this time."
+  },
+  {
+    "id": "1355495810107965542",
+    "timestamp": "2025-03-29T10:56:25.024Z",
+    "username": "Ang1331",
+    "text": "Thank you for your answer!"
+  },
+  {
+    "id": "1355495950637863003",
+    "timestamp": "2025-03-29T10:56:58.529Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "Sure thing. Happy to help.\n\nKeep an eye on the announcement channels for new when you need to delegate."
+  },
+  {
+    "id": "1355629663044505680",
+    "timestamp": "2025-03-29T19:48:18.051Z",
+    "username": "Cryptui",
+    "text": "I hope more info about running nodes in cloud before we move to public pools."
+  },
+  {
+    "id": "1355633292862427249",
+    "timestamp": "2025-03-29T20:02:43.467Z",
+    "username": "ScoobyDooBopBop",
+    "text": "What info do you need exactly? The steps are the same."
+  },
+  {
+    "id": "1355638312710311957",
+    "timestamp": "2025-03-29T20:22:40.292Z",
+    "username": "EZ | Node Operator",
+    "text": "I suppose maintenance,  UI for stopping  pool without getting lower performance/payout... \nWould also be sweet with a watchdog that covers the basics."
+  },
+  {
+    "id": "1355638601446068326",
+    "timestamp": "2025-03-29T20:23:49.132Z",
+    "username": "",
+    "text": "I know @GeordieR  was spinning an idea about building a pool watchdog."
+  },
+  {
+    "id": "1355641507465400582",
+    "timestamp": "2025-03-29T20:35:21.981Z",
+    "username": "Cryptui",
+    "text": "I'm not a cloud guy, I know it can be very complicated to choose the correct setup and not pay too much. \nwhat are the basic requirements \nsomething like \n6 vCPU cores\n8 GB RAM\n1.8 TB SSD (plenty if 100-150GB requirement)\n600 Mbit/s port speed\n32 TB traffic with unlimited incoming\n\nAt this point we are getting staking rewards, but I want to be ready before we go live and even help others if they want to delegate"
+  },
+  {
+    "id": "1355644470879719585",
+    "timestamp": "2025-03-29T20:48:40.446Z",
+    "username": "ScoobyDooBopBop",
+    "text": "That is plenty to run 1 or 2 pools. Resource usage is extremely low if running on Linux. What really matters is the bandwidth and upload speeds. (edited)\nSaturday, March 29, 2025 at 4:48 PM"
+  },
+  {
+    "id": "1355647482738249768",
+    "timestamp": "2025-03-29T20:59:06.597Z",
+    "username": "Bugsy",
+    "text": "!phase1"
+  },
+  {
+    "id": "1355647483463733480",
+    "timestamp": "2025-03-29T20:59:06.770Z",
+    "username": "Dyno",
+    "text": ""
+  },
+  {
+    "id": "1355656249491980299",
+    "timestamp": "2025-03-29T21:33:56.754Z",
+    "username": "Cryptui",
+    "text": "will it be 50 nodes per pool? \nHow much bandwidth and upload speeds needed"
+  },
+  {
+    "id": "1355657930610966730",
+    "timestamp": "2025-03-29T21:40:37.564Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Yes 50 is the max per pool. Bandwidth needs for a max pool Still to be determined. We don't have those numbers yet, as far as I'm aware of."
+  },
+  {
+    "id": "1355658361235837142",
+    "timestamp": "2025-03-29T21:42:20.233Z",
+    "username": "",
+    "text": "I have 1 pool right now with 20 licenses on a VPS that does 400Mbps Upload and another that does 1Gbps. More is more at the end of the day lol"
+  },
+  {
+    "id": "1355663641336348884",
+    "timestamp": "2025-03-29T22:03:19.107Z",
+    "username": "ScoobyDooBopBop",
+    "text": "That's true. Hope it's soon. The suspense is starting to get to me lol."
+  },
+  {
+    "id": "1355697121516454023",
+    "timestamp": "2025-03-30T00:16:21.404Z",
+    "username": "elias1963",
+    "text": "hi there are all the pools private only ?\nWhen I set up mine that was the only option\nIs there any way to have your pool public ?"
+  },
+  {
+    "id": "1355697564086829269",
+    "timestamp": "2025-03-30T00:18:06.921Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Public is not available yet."
+  },
+  {
+    "id": "1355704667023347933",
+    "timestamp": "2025-03-30T00:47:36.226Z",
+    "username": "Rene - QA",
+    "text": "One was planned for last friday but got cancelled due to last minute bugs. We hope for one for the next friday (edited)\nSaturday, March 29, 2025 at 8:47 PM"
+  },
+  {
+    "id": "1355778656785661993",
+    "timestamp": "2025-03-30T05:40:20.927Z",
+    "username": "elias1963",
+    "text": "thanks"
+  },
+  {
+    "id": "1355909708229382324",
+    "timestamp": "2025-03-30T14:21:06.026Z",
+    "username": "tedan01",
+    "text": "is the public pool out ?"
+  },
+  {
+    "id": "1355909967697412177",
+    "timestamp": "2025-03-30T14:22:07.888Z",
+    "username": "Smecol [🌽Mafia]",
+    "text": "Nope. Not yet"
+  },
+  {
+    "id": "1355910024261537943",
+    "timestamp": "2025-03-30T14:22:21.374Z",
+    "username": "tedan01",
+    "text": "ok. Thanks"
+  },
+  {
+    "id": "1355913517835878471",
+    "timestamp": "2025-03-30T14:36:14.307Z",
+    "username": "PlanetStake (Midnight Validator)",
+    "text": "hi what are the networking bandwidth requirements for the node?"
+  },
+  {
+    "id": "1355913875584843937",
+    "timestamp": "2025-03-30T14:37:39.601Z",
+    "username": "",
+    "text": "and where in the world are servers needed?"
+  },
+  {
+    "id": "1355914606115029092",
+    "timestamp": "2025-03-30T14:40:54.164Z",
+    "username": "",
+    "text": "Is there a non-docker binary available to download and build? (for linux) (edited)\nSunday, March 30, 2025 at 10:40 AM"
+  },
+  {
+    "id": "1355916119621374185",
+    "timestamp": "2025-03-30T14:46:34.621Z",
+    "username": "PlanetStake (Midnight Validator)",
+    "text": "960,000 COPI tokens available per season to be split amond all node operators yeh?"
+  },
+  {
+    "id": "1355916863787368470",
+    "timestamp": "2025-03-30T14:49:32.044Z",
+    "username": "",
+    "text": "[Game Rewards (30.7%) + Staking & Farming (15%)] * Max Supply (3,840,000,000) * (0.025/100) = 960,000"
+  },
+  {
+    "id": "1355917518245728416",
+    "timestamp": "2025-03-30T14:52:08.079Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Requirements have been posted yet, but as an example, 1 license will need about 20-30Mbps Upload to be effective.\n\nNo telemetry map is available yet to determine what areas pools are currently needed.\n\nThe pools run on docker image only.  You can run it on Linux easily with Docker Engine."
+  },
+  {
+    "id": "1355917684629569546",
+    "timestamp": "2025-03-30T14:52:47.748Z",
+    "username": "PlanetStake (Midnight Validator)",
+    "text": "so about $4800 per month in the pot to essentially compensate node operators to run nodes.\nHow many node ops are there?"
+  },
+  {
+    "id": "1355917787650064524",
+    "timestamp": "2025-03-30T14:53:12.310Z",
+    "username": "",
+    "text": "Better question is probably how many nodes are there running?"
+  },
+  {
+    "id": "1355917979153338570",
+    "timestamp": "2025-03-30T14:53:57.968Z",
+    "username": "",
+    "text": "Some approximate calcs shows there would be just about enough to support 400 nodes at current COPI prices"
+  },
+  {
+    "id": "1355918145591971950",
+    "timestamp": "2025-03-30T14:54:37.650Z",
+    "username": "",
+    "text": "that would be cost neutral for node ops who go for the bare minimum and cheapest nodes to fulfil what seems like reasonable requirements"
+  },
+  {
+    "id": "1355918352668819676",
+    "timestamp": "2025-03-30T14:55:27.021Z",
+    "username": "",
+    "text": "4c/8t 3.7GHz CPU, 32GB ECC RAM, 120GB SSD, 300Mbps network speed"
+  },
+  {
+    "id": "1355918555660419103",
+    "timestamp": "2025-03-30T14:56:15.418Z",
+    "username": "ScoobyDooBopBop",
+    "text": "The earnings has not been calculated yet. We are still waiting for the revised reward structure for pool operators so this estimate is inaccurate"
+  },
+  {
+    "id": "1355918619954905180",
+    "timestamp": "2025-03-30T14:56:30.747Z",
+    "username": "PlanetStake (Midnight Validator)",
+    "text": "ok"
+  },
+  {
+    "id": "1355918664330903632",
+    "timestamp": "2025-03-30T14:56:41.327Z",
+    "username": "",
+    "text": "how many nodes are running currently?"
+  },
+  {
+    "id": "1355918709377470564",
+    "timestamp": "2025-03-30T14:56:52.067Z",
+    "username": "ScoobyDooBopBop",
+    "text": "You won't need that much RAM. In Linux, a docker container consumes about 1-2% RAM."
+  },
+  {
+    "id": "1355918753380171947",
+    "timestamp": "2025-03-30T14:57:02.558Z",
+    "username": "PlanetStake (Midnight Validator)",
+    "text": "is there a telemetry website showing the size of the network?"
+  },
+  {
+    "id": "1355918921869561950",
+    "timestamp": "2025-03-30T14:57:42.729Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Currently not sure. This was discussed in a past Copi Cafe, I recommend reviewing them."
+  },
+  {
+    "id": "1355919008146129157",
+    "timestamp": "2025-03-30T14:58:03.299Z",
+    "username": "ScoobyDooBopBop",
+    "text": "No telemetry available yet as I mentioned"
+  },
+  {
+    "id": "1355919287990227125",
+    "timestamp": "2025-03-30T14:59:10.019Z",
+    "username": "PlanetStake (Midnight Validator)",
+    "text": "and some people seem to be talig about public and private. So just making sure once a node is setup it is immediately available to be active on the network and will begin sharing in data delivery in a n/N fashion, where:\nn = node licences atatched to node\nN = Total node licences runnign on the global network\n?"
+  },
+  {
+    "id": "1355919522196099243",
+    "timestamp": "2025-03-30T15:00:10.521Z",
+    "username": "",
+    "text": "any ballpark figures on number of active node licences running? (edited)\nSunday, March 30, 2025 at 11:00 AM"
+  },
+  {
+    "id": "1355919669311181010",
+    "timestamp": "2025-03-30T15:00:40.933Z",
+    "username": "",
+    "text": "like 50... 100... 200... 300.. etc, just ballpark"
+  },
+  {
+    "id": "1355919777125629962",
+    "timestamp": "2025-03-30T15:01:06.638Z",
+    "username": "ScoobyDooBopBop",
+    "text": "If I recall correctly, it was  approximately 200 when last mentioned a month ago."
+  },
+  {
+    "id": "1355919903949062369",
+    "timestamp": "2025-03-30T15:01:36.875Z",
+    "username": "PlanetStake (Midnight Validator)",
+    "text": "ok so about $20 per node per month"
+  },
+  {
+    "id": "1355920085373550924",
+    "timestamp": "2025-03-30T15:02:20.130Z",
+    "username": "ScoobyDooBopBop",
+    "text": "How are you calculating this?"
+  },
+  {
+    "id": "1355920149869494393",
+    "timestamp": "2025-03-30T15:02:35.507Z",
+    "username": "PlanetStake (Midnight Validator)",
+    "text": "you menetioend a revised compensation structure. Was this asked for because people thought the $20 per month per node license was too much or too little?"
+  },
+  {
+    "id": "1355920530028363998",
+    "timestamp": "2025-03-30T15:04:06.144Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Revised reward structure is required because performance and uptime metrics need to be accounted for."
+  },
+  {
+    "id": "1355920785440505877",
+    "timestamp": "2025-03-30T15:06:32.248Z",
+    "username": "PlanetStake (Midnight Validator)",
+    "text": "[Game Rewards (30.7%) + Staking & Farming (15%)] * Max Supply (3,840,000,000) * (0.025/100) = 960,000\n\n960,000 * $0.015 / 200 = $72 per node license per Season\nEach Season is 13 weeks long\n4.333 weeks in every month\n72 / 13 * 4.3333 = $24 per month per node license if 200 nodes active (edited)\nSunday, March 30, 2025 at 11:06 AM"
+  },
+  {
+    "id": "1355921210164252843",
+    "timestamp": "2025-03-30T15:07:54.652Z",
+    "username": "",
+    "text": "minus about 30% tax  (edited)\nSunday, March 30, 2025 at 11:07 AM"
+  },
+  {
+    "id": "1355921314489172029",
+    "timestamp": "2025-03-30T15:08:23.075Z",
+    "username": "",
+    "text": "leaves about $16.80 per node license per month ($24 * (1 - 0.3)) (edited)\nSunday, March 30, 2025 at 11:08 AM"
+  },
+  {
+    "id": "1355921608640041121",
+    "timestamp": "2025-03-30T15:08:23.305Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Not accurate. Right now everyone who has registered their license is getting paid equally from the rewards pool. Its about 9 COPI/day per license.  That's about $4/mo per license."
+  },
+  {
+    "id": "1355921856389189775",
+    "timestamp": "2025-03-30T15:09:22.373Z",
+    "username": "PlanetStake (Midnight Validator)",
+    "text": "oh ok. thought I'd read the website guide correct but maybe not"
+  },
+  {
+    "id": "1355922430958502018",
+    "timestamp": "2025-03-30T15:11:39.361Z",
+    "username": "",
+    "text": "So the Contabo nodes seem like they come out about cost neutral but nothing else close to cost neutral atm"
+  },
+  {
+    "id": "1355922483584172122",
+    "timestamp": "2025-03-30T15:11:51.908Z",
+    "username": "",
+    "text": ""
+  },
+  {
+    "id": "1355922522616627391",
+    "timestamp": "2025-03-30T15:12:01.214Z",
+    "username": "",
+    "text": "not much RAM but guess it's not really needed"
+  },
+  {
+    "id": "1355924266121429216",
+    "timestamp": "2025-03-30T15:18:56.898Z",
+    "username": "ScoobyDooBopBop",
+    "text": "If you're doing Linux, this should be enough. Better to look at their Storage VPS offers.\n\nCloud VPS will give you less Upload speeds compared to Storage VPS."
+  },
+  {
+    "id": "1355927914495082556",
+    "timestamp": "2025-03-30T15:33:26.738Z",
+    "username": "Japper | Knights",
+    "text": "Any idea what is the estimated cost for electricity to run the PC 24/7?"
+  },
+  {
+    "id": "1355928076038701136",
+    "timestamp": "2025-03-30T15:34:05.253Z",
+    "username": "ScoobyDooBopBop",
+    "text": "nope, but better get a mini PC if youre planning to run at home."
+  },
+  {
+    "id": "1355928175288385536",
+    "timestamp": "2025-03-30T15:34:28.916Z",
+    "username": "",
+    "text": "we got some RaspPi users here that can provide insight"
+  },
+  {
+    "id": "1355928295228833872",
+    "timestamp": "2025-03-30T15:34:57.512Z",
+    "username": "Japper | Knights",
+    "text": "But can you run 5 nodes on the mini PC?"
+  },
+  {
+    "id": "1355928395065590061",
+    "timestamp": "2025-03-30T15:35:21.315Z",
+    "username": "ScoobyDooBopBop",
+    "text": "hardware is not a problem, its your bandwidth you need to be concerned about."
+  },
+  {
+    "id": "1355928501584138280",
+    "timestamp": "2025-03-30T15:35:46.711Z",
+    "username": "Japper | Knights",
+    "text": ""
+  },
+  {
+    "id": "1355928572979712221",
+    "timestamp": "2025-03-30T15:36:03.733Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Only 1 license will be enough with that Upload speed"
+  },
+  {
+    "id": "1355928672204357842",
+    "timestamp": "2025-03-30T15:36:27.390Z",
+    "username": "",
+    "text": "Honestly, VPS is the best solution at this point"
+  },
+  {
+    "id": "1355929200812363961",
+    "timestamp": "2025-03-30T15:38:33.420Z",
+    "username": "Japper | Knights",
+    "text": "Thanks, I'll wait for more info on that then. I was playing with the idea to buy a gaming PC and have it on 24/7 in the garage. I guess that idea is out the window, unless I find a company that can provide the needed internet speed."
+  },
+  {
+    "id": "1355929373202579630",
+    "timestamp": "2025-03-30T15:39:14.521Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Yeah gaming PC will be overkill"
+  },
+  {
+    "id": "1355929625943085258",
+    "timestamp": "2025-03-30T15:40:14.779Z",
+    "username": "Japper | Knights",
+    "text": "So I'd need 100Mbs upload speed right, and no the gaming PC would not be overkill, as I'd use it to play Corn. My laptop is very behind."
+  },
+  {
+    "id": "1355930053053251684",
+    "timestamp": "2025-03-30T15:41:56.610Z",
+    "username": "ScoobyDooBopBop",
+    "text": "5 licenses, yea i would estimate between 100-200Mbps uploads.\n\nOverkill in the sense that if the gaming PC was only going to be for the nodes, yes. I wouldn't run it 24/7 for these pools."
+  },
+  {
+    "id": "1355930997480230943",
+    "timestamp": "2025-03-30T15:45:41.779Z",
+    "username": "Japper | Knights",
+    "text": "Oh BTW, average cost to run an average gaming PC 24/7 is estimated between $20 - $50 per month"
+  },
+  {
+    "id": "1355931289940922509",
+    "timestamp": "2025-03-30T15:46:51.507Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Would be breaking even or in the red in that case"
+  },
+  {
+    "id": "1355931507297882305",
+    "timestamp": "2025-03-30T15:47:43.329Z",
+    "username": "Japper | Knights",
+    "text": "Especially with the upgraded internet costs"
+  },
+  {
+    "id": "1355931696675033188",
+    "timestamp": "2025-03-30T15:48:28.480Z",
+    "username": "ScoobyDooBopBop",
+    "text": "oh yeah, that too for sure lol"
+  },
+  {
+    "id": "1355942934662615121",
+    "timestamp": "2025-03-30T16:33:07.825Z",
+    "username": "Cryptui",
+    "text": "At this point I've done the test with my private pool, it runs well and active, but is it useful to keep it running? \nCan i just stop it till the public pool is ready?"
+  },
+  {
+    "id": "1355945191265276078",
+    "timestamp": "2025-03-30T16:42:05.841Z",
+    "username": "PlanetStake (Midnight Validator)",
+    "text": "Running a Gaming PC would cost you about 30kWHr per month to have it turned on 24/7 if you can create a switch to physically cut the power to your GPU when you're not using the machine."
+  },
+  {
+    "id": "1355945253194174626",
+    "timestamp": "2025-03-30T16:42:20.606Z",
+    "username": "",
+    "text": "it's called running it in headless mode"
+  },
+  {
+    "id": "1355945388598628504",
+    "timestamp": "2025-03-30T16:42:52.889Z",
+    "username": "",
+    "text": "the GPU is typically what eats the most electric, so having a switch to turn the GPU off will save lots of money"
+  },
+  {
+    "id": "1355945820083589232",
+    "timestamp": "2025-03-30T16:44:35.763Z",
+    "username": "",
+    "text": "Next best option to a physical switch is manually unplugging the cable from the power supply but not sure how many times you can do that before the connector in the power supply stats to become too worn out to create a solid conenction"
+  },
+  {
+    "id": "1355956929310228551",
+    "timestamp": "2025-03-30T17:33:23.825Z",
+    "username": "oxenhouse",
+    "text": "I'm running 4 pools with 10 licenses each (40 total licenses) on a 2 core, 4 GB RAM ubuntu system. CPU and RAM usage are minimal even when the pools are getting hit to serve game files. How this holds up long term when each pool is maxed out at 50 licenses is TBD. The most important thing by far us upload bandwidth. Attached image shows system stats while transferring data files. The other capture with the circles shows system usage at idle (not transferring game data files). For reference @PlanetStake (Midnight Validator) (edited)\nSunday, March 30, 2025 at 1:33 PM"
+  },
+  {
+    "id": "1355957510489641232",
+    "timestamp": "2025-03-30T17:31:02.973Z",
+    "username": "",
+    "text": "I'm waiting to see how this system bottlenecks when delegation is turned on and each pool has 50 licenses."
+  },
+  {
+    "id": "1355969749594542080",
+    "timestamp": "2025-03-30T18:19:41.003Z",
+    "username": "Rene - QA",
+    "text": "Of course it's useful to keep it running. Those are live pools serving chunks to production downloads."
+  },
+  {
+    "id": "1355978081709326397",
+    "timestamp": "2025-03-30T18:52:47.534Z",
+    "username": "oxenhouse",
+    "text": "I'm also really curious how \"strength\" will be calculated."
+  },
+  {
+    "id": "1355984619807440948",
+    "timestamp": "2025-03-30T19:18:46.338Z",
+    "username": "Dyno",
+    "text": ""
+  },
+  {
+    "id": "1356016779813453865",
+    "timestamp": "2025-03-30T21:26:33.881Z",
+    "username": "Ray.Racer | Knights ⚔",
+    "text": "I figured out how to install Linux on my mini computer and how to use it. My pool is back online. Thx @ScoobyDooBopBop for the recommendation"
+  },
+  {
+    "id": "1356018896427155518",
+    "timestamp": "2025-03-30T21:35:10.230Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Nice, glad to hear man. (edited)\nSunday, March 30, 2025 at 5:35 PM"
+  },
+  {
+    "id": "1356103003337265272",
+    "timestamp": "2025-03-31T03:09:11.171Z",
+    "username": "Crypted | 🌽 | BIG >10K",
+    "text": "Would the 9 Copi a day change as the user base grows?\nI think I'm going to have to delegate my node as probably running 1 is not feasible..."
+  },
+  {
+    "id": "1356108898792247326",
+    "timestamp": "2025-03-31T03:32:36.757Z",
+    "username": "Gus T. Wind",
+    "text": "It is not feasible. Unless you already have VPS or dedicated server doing something else. Then it's just along for a ride."
+  },
+  {
+    "id": "1356112739654832189",
+    "timestamp": "2025-03-31T03:47:52.490Z",
+    "username": "Crypted | 🌽 | BIG >10K",
+    "text": "True, was thinking the same.\nHow do we find who we can delegate to? I suppose it doesn't matter right now, but later..."
+  },
+  {
+    "id": "1356218521553473626",
+    "timestamp": "2025-03-31T10:48:12.860Z",
+    "username": "Juri Lespor (🌽Mafia)",
+    "text": "Why are you doing 10 instead of 8; why not create BZRW1..(Rest of World)"
+  },
+  {
+    "id": "1356237107185848454",
+    "timestamp": "2025-03-31T12:02:04.020Z",
+    "username": "EggsAnyStyle [G4G] [INTP-A]",
+    "text": "How do you get to that webpage?  I've never seen that view before."
+  },
+  {
+    "id": "1356237614079934607",
+    "timestamp": "2025-03-31T12:04:04.873Z",
+    "username": "Rene - QA",
+    "text": "Its a screenshot from CC where it was shown"
+  },
+  {
+    "id": "1356237872792993894",
+    "timestamp": "2025-03-31T12:05:06.555Z",
+    "username": "EggsAnyStyle [G4G] [INTP-A]",
+    "text": "Thanks Rene!  Looking forward to when we have tools/info like that we can access."
+  },
+  {
+    "id": "1356238099612700713",
+    "timestamp": "2025-03-31T12:06:00.633Z",
+    "username": "Rene - QA",
+    "text": "It will come soon"
+  },
+  {
+    "id": "1356329851354746920",
+    "timestamp": "2025-03-31T18:10:35.953Z",
+    "username": "padraicmcgross [🌽 Mafia]",
+    "text": "Hi. I see people setting up their nodes and choosing VPS subscriptions. Any advice on good VPS servers in Europe?\n(I have 5 licenses - yet unsure if going for VPS or just public)\nAccording to @ScoobyDooBopBop storage VPS should be a better choice than cloud storage."
+  },
+  {
+    "id": "1356330386702991460",
+    "timestamp": "2025-03-31T18:12:43.590Z",
+    "username": "",
+    "text": "IONOS"
+  },
+  {
+    "id": "1356330398069686393",
+    "timestamp": "2025-03-31T18:12:46.300Z",
+    "username": "",
+    "text": ""
+  },
+  {
+    "id": "1356331512446058497",
+    "timestamp": "2025-03-31T18:17:11.988Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Storage VPS for Contabo, yes."
+  },
+  {
+    "id": "1356333154700623932",
+    "timestamp": "2025-03-31T18:23:43.532Z",
+    "username": "padraicmcgross [🌽 Mafia]",
+    "text": "Thanks, this should do then, right? (Just the question if I can make up the EUR 4.- / USD 4.32 /month fees)"
+  },
+  {
+    "id": "1356334345962651821",
+    "timestamp": "2025-03-31T18:28:27.551Z",
+    "username": "EZ | Node Operator",
+    "text": "Not sure why you would go with the storage vps vs the standard vps. \nFrom my view its just less ram and excess of storage on those."
+  },
+  {
+    "id": "1356334615492825088",
+    "timestamp": "2025-03-31T18:29:31.812Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Nah i would say atleast 4GB RAM and that's if you're running Linux"
+  },
+  {
+    "id": "1356334912944476170",
+    "timestamp": "2025-03-31T18:30:42.730Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Because storage offers more Upload speed compared to Cloud VPS for the same price."
+  },
+  {
+    "id": "1356335150019117118",
+    "timestamp": "2025-03-31T18:31:48.783Z",
+    "username": "padraicmcgross [🌽 Mafia]",
+    "text": "thanks. I guess the OS you choose is the just related to the server. if i chose Ubuntu i wouldn't need Ubuntu on my PC  to upload it, would i? (edited)\nMonday, March 31, 2025 at 2:31 PM"
+  },
+  {
+    "id": "1356335387181711481",
+    "timestamp": "2025-03-31T18:32:35.797Z",
+    "username": "ScoobyDooBopBop",
+    "text": "No you wont need ubuntu on your PC"
+  },
+  {
+    "id": "1356335415656845635",
+    "timestamp": "2025-03-31T18:32:42.586Z",
+    "username": "EZ | Node Operator",
+    "text": "Doubt he needs more then 200Mbit for 5 nodes"
+  },
+  {
+    "id": "1356335766686662706",
+    "timestamp": "2025-03-31T18:34:06.278Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Maybe, maybe not. We won't actually know until an official release is made on what recommended speeds are per license. This atleast is future proofing incase he does end up buying more licenses though"
+  },
+  {
+    "id": "1356336478849859694",
+    "timestamp": "2025-03-31T18:36:56.071Z",
+    "username": "padraicmcgross [🌽 Mafia]",
+    "text": "Thanks, Scooby. So everything is not yet clear.\nWould be good to have official recommendation specs which might follow...\n\nI will go through the official info and might calculate my cost/return for 5 nodes..."
+  },
+  {
+    "id": "1356337015959851209",
+    "timestamp": "2025-03-31T18:39:04.128Z",
+    "username": "",
+    "text": "no alcohol, pls, I'm a degen"
+  },
+  {
+    "id": "1356337452117393629",
+    "timestamp": "2025-03-31T18:40:48.116Z",
+    "username": "ScoobyDooBopBop",
+    "text": "From what has been tested, its been confirmed that if a person were to run a pool from home with a ISP plan of 20-30Mbps Upload, that would only be good enough for 1 license.\n\nSo from that, I had made my own personal estimate on what my bandwidth requirement would be."
+  },
+  {
+    "id": "1356338150959743067",
+    "timestamp": "2025-03-31T18:43:34.733Z",
+    "username": "EZ | Node Operator",
+    "text": "Hmm.. Its only the first storage vps that has higher speed if im not mistaken and that one only 2gigs ram..\nConclusion: more bang for the buck with cloud vps."
+  },
+  {
+    "id": "1356338472155087059",
+    "timestamp": "2025-03-31T18:44:51.312Z",
+    "username": "",
+    "text": "At the same price range."
+  },
+  {
+    "id": "1356340978541133997",
+    "timestamp": "2025-03-31T18:54:48.881Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Here you go.\n\nI rather have more speed and storage (since future builds will keep growing)."
+  },
+  {
+    "id": "1356341090520793281",
+    "timestamp": "2025-03-31T18:55:15.579Z",
+    "username": "",
+    "text": "$10/mo and you're solid."
+  },
+  {
+    "id": "1356342852698902557",
+    "timestamp": "2025-03-31T19:02:15.715Z",
+    "username": "EZ | Node Operator",
+    "text": "I hear ya.. with future builds etc. \nAnother thing to consider would be performance loss with ssd vs nvme."
+  },
+  {
+    "id": "1356344628852424750",
+    "timestamp": "2025-03-31T19:09:19.183Z",
+    "username": "ScoobyDooBopBop",
+    "text": "yea we'll need to wait and see those metrics."
+  },
+  {
+    "id": "1356344850928111898",
+    "timestamp": "2025-03-31T19:10:12.130Z",
+    "username": "Gus T. Wind",
+    "text": "Does Contabo accept payment in BTC?"
+  },
+  {
+    "id": "1356345451481141419",
+    "timestamp": "2025-03-31T19:12:35.313Z",
+    "username": "Corny \"B\" | Knights⚔",
+    "text": "not that I know of"
+  },
+  {
+    "id": "1356346514909167717",
+    "timestamp": "2025-03-31T19:16:48.854Z",
+    "username": "Corny \"B\" | Knights⚔",
+    "text": "just checked...they do not"
+  },
+  {
+    "id": "1356349199867838576",
+    "timestamp": "2025-03-31T19:27:28.998Z",
+    "username": "EZ | Node Operator",
+    "text": "Suppose thats why we have the crypto debit/credit cards"
+  },
+  {
+    "id": "1356357000526692623",
+    "timestamp": "2025-03-31T19:58:28.820Z",
+    "username": "Juri Lespor (🌽Mafia)",
+    "text": "if i too g could go back and buy the coin instead of the hardware"
+  },
+  {
+    "id": "1356363941659410663",
+    "timestamp": "2025-03-31T20:26:03.715Z",
+    "username": "Juri Lespor (🌽Mafia)",
+    "text": "it's behavior/ psychology... the HODL mindset is one of discipline... Creating a plan and sticking to it ... Any excuse used to touch bag opens room for more excuses."
+  },
+  {
+    "id": "1356365946805026997",
+    "timestamp": "2025-03-31T20:34:01.779Z",
+    "username": "Gus T. Wind",
+    "text": "Bitrefill?"
+  },
+  {
+    "id": "1356369425120362618",
+    "timestamp": "2025-03-31T20:47:51.074Z",
+    "username": "EZ | Node Operator",
+    "text": "I have heard of it but never tried it.. \nI was thinking of cards like Nexo card, cryptodotcom card and so forth . Alot of options out there..\nThe pros of Nexo i would say is that you can switch between credit/debit mode on the card."
+  },
+  {
+    "id": "1356389196176297984",
+    "timestamp": "2025-03-31T22:06:24.861Z",
+    "username": "Gus T. Wind",
+    "text": "Bitrefill is my place to go for gift cards and such. For years.\nWhat's Nexo?"
+  },
+  {
+    "id": "1356394144007717156",
+    "timestamp": "2025-03-31T22:26:04.516Z",
+    "username": "EZ | Node Operator",
+    "text": "Exchange, borrow/lending. Yield and so forth."
+  }
+]
