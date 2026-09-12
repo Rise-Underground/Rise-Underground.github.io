@@ -1798,5 +1798,3461 @@
     "timestamp": "2025-04-13T14:15:53.651Z",
     "username": "Steve 'Corn Pops'",
     "text": "Stick around this channel, and absorb what is discussed... You'll find yourself feeling much more comfortable in tech issues"
+  },
+  {
+    "id": "1360981910373007407",
+    "timestamp": "2025-04-13T14:16:13.254Z",
+    "username": "",
+    "text": "There are some very sharp folks in here!"
+  },
+  {
+    "id": "1360982106708377624",
+    "timestamp": "2025-04-13T14:17:00.064Z",
+    "username": "",
+    "text": "One thing that amazes me about this community is their willingness to hold out a hand and pull  others up with them along the way."
+  },
+  {
+    "id": "1360986365214593044",
+    "timestamp": "2025-04-13T14:33:55.371Z",
+    "username": "FishingForCardano[🌽Mafia]",
+    "text": "@I sent you a PM"
+  },
+  {
+    "id": "1360986533812895804",
+    "timestamp": "2025-04-13T14:34:35.568Z",
+    "username": "FishingForCardano[🌽Mafia]",
+    "text": "Same here. The struggle bus is real."
+  },
+  {
+    "id": "1360987808361087189",
+    "timestamp": "2025-04-13T14:41:30.874Z",
+    "username": "elias1963",
+    "text": "Hello everyone,\n\nUntil two days ago, the pool was functioning without issues. However, since then, I’ve been encountering the error message below.\n\nTroubleshooting steps I’ve tried (Windows PC):\n\nRestarted Docker → No resolution.\n\nRestarted the PC → No change.\n\nUpdated both Docker and the PC → Issue persists.\n\nBefore proceeding with a full reinstallation, I’d greatly appreciate your advice or support. Thank you in advance! (edited)\nSunday, April 13, 2025 at 10:41 AM"
+  },
+  {
+    "id": "1360987996442202253",
+    "timestamp": "2025-04-13T14:40:24.286Z",
+    "username": "elias1963",
+    "text": "and we really need the error codes explanation !!!"
+  },
+  {
+    "id": "1360989119379148881",
+    "timestamp": "2025-04-13T14:44:52.015Z",
+    "username": "elias1963",
+    "text": "Hello,\n\nFor the first few days, everything ran smoothly with all successes (green). However, three days ago, I began encountering a mix of successes (green) and failures (red). Over the last couple of days, it has shifted to all failures (red) with the same repeated error:\n\n\"Client skipped download because of previous errors\"\n\nHas anyone encountered this before or have suggestions for troubleshooting? Any help would be appreciated!"
+  },
+  {
+    "id": "1360989366041973078",
+    "timestamp": "2025-04-13T14:45:50.824Z",
+    "username": "EZ | Node Operator",
+    "text": "I got 4G internet at my place and if i were to dl the game via the nodes it wouldnt work... \nPartially until it just quits.\nAnd from checking my pool (vps)  i get those errors when trying to dl."
+  },
+  {
+    "id": "1360990862888145098",
+    "timestamp": "2025-04-13T14:51:47.700Z",
+    "username": "elias1963",
+    "text": "the problem is that I receive only these errors"
+  },
+  {
+    "id": "1360990949513101446",
+    "timestamp": "2025-04-13T14:52:08.353Z",
+    "username": "elias1963",
+    "text": "thanks for sharing"
+  },
+  {
+    "id": "1360991037442752553",
+    "timestamp": "2025-04-13T14:52:29.317Z",
+    "username": "EZ | Node Operator",
+    "text": "Hmmm thats strange"
+  },
+  {
+    "id": "1360991580915372093",
+    "timestamp": "2025-04-13T14:54:38.891Z",
+    "username": "elias1963",
+    "text": "At this point, I’ve exhausted all troubleshooting steps I can think of. If anyone has additional suggestions or insights, I’d greatly appreciate your input.\n\nThank you in advance for any ideas people!!!"
+  },
+  {
+    "id": "1360992441393483949",
+    "timestamp": "2025-04-13T14:58:04.045Z",
+    "username": "EZ | Node Operator",
+    "text": "have you checked the docker debug logs for any intresting errors... I assume that you got the pool running at home and not at a vps provider."
+  },
+  {
+    "id": "1360992557420511533",
+    "timestamp": "2025-04-13T14:58:31.708Z",
+    "username": "Steve 'Corn Pops'",
+    "text": "I know that we've seen thjis before, but I can not recall what the solve was. \nKeep in mind that it is Sunday... and be patient. Someone will remember and give you assistance"
+  },
+  {
+    "id": "1360993170707710004",
+    "timestamp": "2025-04-13T15:00:57.927Z",
+    "username": "elias1963",
+    "text": "Correct \nNothing that i could figure out....   but will try to Google the Docker error logs\nThanks"
+  },
+  {
+    "id": "1360994137977131078",
+    "timestamp": "2025-04-13T15:04:48.542Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Its not a server error, its client"
+  },
+  {
+    "id": "1360994296563761435",
+    "timestamp": "2025-04-13T15:05:26.352Z",
+    "username": "Rene - QA",
+    "text": "Did you had only errors or successes too?"
+  },
+  {
+    "id": "1360994585706365039",
+    "timestamp": "2025-04-13T15:06:35.289Z",
+    "username": "EZ | Node Operator",
+    "text": "you can try the command in the cornpoolserver folder : docker compose logs -f"
+  },
+  {
+    "id": "1360994710734508233",
+    "timestamp": "2025-04-13T15:07:05.098Z",
+    "username": "elias1963",
+    "text": "The last two days errors only. I thought it might be the port which was the first thing I recycled, but aftera day errors only"
+  },
+  {
+    "id": "1360994850409021582",
+    "timestamp": "2025-04-13T15:07:38.399Z",
+    "username": "Rene - QA",
+    "text": "Health check was ok?"
+  },
+  {
+    "id": "1360994995024298035",
+    "timestamp": "2025-04-13T15:08:12.878Z",
+    "username": "elias1963",
+    "text": "Yes got my small  ok on the top left corner"
+  },
+  {
+    "id": "1360995895369404617",
+    "timestamp": "2025-04-13T15:11:47.537Z",
+    "username": "EZ | Node Operator",
+    "text": "if you are on same network it would say ok even if not ok.. you can for example use your phone shout off wifi on it and do it from the phone to test aswell."
+  },
+  {
+    "id": "1360996181819260999",
+    "timestamp": "2025-04-13T15:12:55.832Z",
+    "username": "elias1963",
+    "text": "I had friends checking from another country!"
+  },
+  {
+    "id": "1360996353919946762",
+    "timestamp": "2025-04-13T15:13:36.864Z",
+    "username": "EZ | Node Operator",
+    "text": "then definitely another wifi huh"
+  },
+  {
+    "id": "1361020467359645756",
+    "timestamp": "2025-04-13T16:49:25.956Z",
+    "username": "EZ | Node Operator",
+    "text": "you can just run the sudo command before the commands. Can also run this command so you wont have to sudo for permissions. sudo usermod -aG docker $USER\nnewgrp docker"
+  },
+  {
+    "id": "1361022942133223684",
+    "timestamp": "2025-04-13T16:59:15.988Z",
+    "username": "Steve 'Corn Pops'",
+    "text": "Seems like this is very close to root privs...  the OP is wanting to avoid root (and I assume root-like) access.  Enforcing the need for sudo and a pwd is closer to their stated goal.\nSecurity note: Giving a user access to the docker group is akin to giving them indirect root-like capabilities on the host system, as Docker containers can be used to perform privileged operations. It's not the same as being the system root user, but it's a powerful privilege."
+  },
+  {
+    "id": "1361026355457687562",
+    "timestamp": "2025-04-13T17:12:49.788Z",
+    "username": "EZ | Node Operator",
+    "text": "Then i guess its either sudo thats on the ballpark or trying to set it up in root less mode."
+  },
+  {
+    "id": "1361029483015962715",
+    "timestamp": "2025-04-13T17:25:15.456Z",
+    "username": "Steve 'Corn Pops'",
+    "text": "I understand the desire to avoid root, but frankly there is no actual way to do root stuff (install packages and start and stop services) w/o root capabilities. At least not that I am aware of."
+  },
+  {
+    "id": "1361041242221187092",
+    "timestamp": "2025-04-13T18:11:59.069Z",
+    "username": "FishingForCardano[🌽Mafia]",
+    "text": "Hats off to @GeordieR and @EP / EARTHPATH Nodes for helping me get my VPS up and running."
+  },
+  {
+    "id": "1361042970606043399",
+    "timestamp": "2025-04-13T18:18:51.148Z",
+    "username": "GeordieR",
+    "text": "I like the pool name"
+  },
+  {
+    "id": "1361043831541334057",
+    "timestamp": "2025-04-13T18:22:16.411Z",
+    "username": "EZ | Node Operator",
+    "text": "Yeah cant wait for the fly fishing in-game."
+  },
+  {
+    "id": "1361052373791015123",
+    "timestamp": "2025-04-13T18:56:13.042Z",
+    "username": "FishingForCardano[🌽Mafia]",
+    "text": "If anyone has questions please reach out. I bought the VPS this morning on Contabo.  (it was roughly 192 usd for a year)  Used @GeordieR github. He coached me through the process."
+  },
+  {
+    "id": "1361057878680666235",
+    "timestamp": "2025-04-13T19:18:05.510Z",
+    "username": "EZ | Node Operator",
+    "text": "Anyone tested uptime Kuma  with pushover for the phone"
+  },
+  {
+    "id": "1361059278550732811",
+    "timestamp": "2025-04-13T19:23:39.265Z",
+    "username": "FishingForCardano[🌽Mafia]",
+    "text": "I’m using uptime robot"
+  },
+  {
+    "id": "1361063573735870505",
+    "timestamp": "2025-04-13T19:40:43.317Z",
+    "username": "EZ | Node Operator",
+    "text": "Yeah i guess there are some alternatives."
+  },
+  {
+    "id": "1361065779487047870",
+    "timestamp": "2025-04-13T19:49:29.209Z",
+    "username": "FishingForCardano[🌽Mafia]",
+    "text": "Would love to hear about the others."
+  },
+  {
+    "id": "1361065961419178187",
+    "timestamp": "2025-04-13T19:50:22.146Z",
+    "username": "GeordieR",
+    "text": "I've heard of another: betterstack (edited)\nSunday, April 13, 2025 at 3:50 PM"
+  },
+  {
+    "id": "1361067287100133546",
+    "timestamp": "2025-04-13T19:55:39.832Z",
+    "username": "GeordieR",
+    "text": "No but sounds good if that's in the free tier (edited)\nSunday, April 13, 2025 at 3:55 PM"
+  },
+  {
+    "id": "1361067345031729355",
+    "timestamp": "2025-04-13T19:55:42.464Z",
+    "username": "EZ | Node Operator",
+    "text": "Yeah i was looking at that one aswell"
+  },
+  {
+    "id": "1361068329825206493",
+    "timestamp": "2025-04-13T19:59:37.257Z",
+    "username": "GeordieR",
+    "text": "Really we need a docker logs reader, as the \"Ok\" health check is only part of the story needed to know if your node is ok to be fair would you guys agree? You could have Ok and still be down right?"
+  },
+  {
+    "id": "1361069933030801470",
+    "timestamp": "2025-04-13T20:05:59.491Z",
+    "username": "",
+    "text": "The plan would be to write a script which runs a cronjob every say 15 mins. It would check the docker logs and grep (filter) them for error. Then any errors send them via telegram DM or some other push notification service. \n\nAll youd need is to store the last 10 errors in a file, then compare that file to the last 10 errors on docker logs and send it if it's different. Doesn't have to be crazy. That was my rough plan anyway. It's very basic but would do the job. I've been meaning to write it but I have an over running project at the moment."
+  },
+  {
+    "id": "1361070864371552327",
+    "timestamp": "2025-04-13T20:10:58.601Z",
+    "username": "EZ | Node Operator",
+    "text": "Yeah the \"ok health\" has its uses but like you say its only part of what we would like to have. (edited)\nSunday, April 13, 2025 at 4:10 PM"
+  },
+  {
+    "id": "1361095940294836396",
+    "timestamp": "2025-04-13T21:49:20.106Z",
+    "username": "padraicmcgross [🌽 Mafia]",
+    "text": "@EP / EARTHPATH Nodes Sure, I will think about it. Setting up a delegation (once it's possible) shouldn't be so difficult.\nJust wanted to see whether someone was interested in buying my 5 nodes."
+  },
+  {
+    "id": "1361126644760449106",
+    "timestamp": "2025-04-13T23:51:20.621Z",
+    "username": "Braz | Knights ⚔ 🇦🇺",
+    "text": "Meanwhile I’m just"
+  },
+  {
+    "id": "1361142204197900431",
+    "timestamp": "2025-04-14T00:53:18.015Z",
+    "username": "elias1963",
+    "text": "kudos (edited)\nSunday, April 13, 2025 at 8:53 PM"
+  },
+  {
+    "id": "1361143576230101042",
+    "timestamp": "2025-04-14T00:58:37.398Z",
+    "username": "Braz | Knights ⚔ 🇦🇺",
+    "text": "Yeah no, will defiantly look to DYOR and try and understand - and yes, thanks for the offer as well, I will likely be asking you a few questions\n\nThe meme was in light of a light joke opportunity"
+  },
+  {
+    "id": "1361163951408414830",
+    "timestamp": "2025-04-14T02:19:35.219Z",
+    "username": "FishingForCardano[🌽Mafia]",
+    "text": ""
+  },
+  {
+    "id": "1361173886359572560",
+    "timestamp": "2025-04-14T02:59:03.896Z",
+    "username": "Braz | Knights ⚔ 🇦🇺",
+    "text": "Cool"
+  },
+  {
+    "id": "1361227763541082255",
+    "timestamp": "2025-04-14T06:33:09.217Z",
+    "username": "SiegeWulf (Kiwi Crypto)[🌽Mafia]",
+    "text": "Do we have stats and info coming for the Private Pools also please team??\nMy 5 node pack seems to be working well - but with no breakdown and the Log window clearing itself after a time - I have very little idea how it is ACTUALLY performing in comparison with other Private nodes...\nThanks"
+  },
+  {
+    "id": "1361227942348197969",
+    "timestamp": "2025-04-14T06:33:51.848Z",
+    "username": "",
+    "text": "I figure a Private Pool Dashboard will be on it's way too??"
+  },
+  {
+    "id": "1361228729728368640",
+    "timestamp": "2025-04-14T06:36:59.574Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "Yep, in the works. Public one was priority."
+  },
+  {
+    "id": "1361231527379210270",
+    "timestamp": "2025-04-14T06:48:06.586Z",
+    "username": "SiegeWulf (Kiwi Crypto)[🌽Mafia]",
+    "text": "Awesome news - TY Beo!"
+  },
+  {
+    "id": "1361297649520611511",
+    "timestamp": "2025-04-14T11:11:10.052Z",
+    "username": "Steve 'Corn Pops'",
+    "text": "If someone has a private pool (one that does not accept delegations), what info should be shown about those \"private\" pools?\nI mean we call them private/public, but is there an expectation that a private pool would not show the name, ticker, or ????. (edited)\nMonday, April 14, 2025 at 7:11 AM"
+  },
+  {
+    "id": "1361319388069761237",
+    "timestamp": "2025-04-14T12:37:14.207Z",
+    "username": "vk",
+    "text": "If I plan to run a pool in Asia pacific region, which vps should I go for, (with configuration , I have 10 nodes ) thanks"
+  },
+  {
+    "id": "1361319974613946439",
+    "timestamp": "2025-04-14T12:39:34.050Z",
+    "username": "Copi.ph [ 🌽 Mafia ]",
+    "text": "Is running a public pool earning additional rewards now?"
+  },
+  {
+    "id": "1361323278815334410",
+    "timestamp": "2025-04-14T12:52:41.833Z",
+    "username": "Rene - QA",
+    "text": "Not yet. But soon it will be, so if you are planning to run a pool, now is the time to setup"
+  },
+  {
+    "id": "1361349116642332845",
+    "timestamp": "2025-04-14T14:35:22.051Z",
+    "username": "EZ | Node Operator",
+    "text": "Leaseweb i would say.. Contabo got a plan in Singapore thats not to bad either."
+  },
+  {
+    "id": "1361391693701583092",
+    "timestamp": "2025-04-14T17:24:33.213Z",
+    "username": "Krikke80",
+    "text": "Leaseweb only when you have a business.. not for a normal consumers"
+  },
+  {
+    "id": "1361408396720607303",
+    "timestamp": "2025-04-14T18:30:55.523Z",
+    "username": "GeordieR",
+    "text": "In surprised by that they have been happy servicing me for years"
+  },
+  {
+    "id": "1361415836556067027",
+    "timestamp": "2025-04-14T19:00:29.318Z",
+    "username": "Sage | Knights ⚔",
+    "text": "I guess it's all new customers in the past two years or so need to be business customers. I also tried with leaseweb and they wouldn't accept me as a personal customer"
+  },
+  {
+    "id": "1361416133390897172",
+    "timestamp": "2025-04-14T19:01:40.089Z",
+    "username": "",
+    "text": "I'll probably use Ionos as I've heard some complaints in the past about contabo"
+  },
+  {
+    "id": "1361423018005368874",
+    "timestamp": "2025-04-14T19:29:01.509Z",
+    "username": "Corny \"B\" | Knights⚔",
+    "text": "Cheers for helping some others in here"
+  },
+  {
+    "id": "1361426723438071948",
+    "timestamp": "2025-04-14T19:43:44.953Z",
+    "username": "EZ | Node Operator",
+    "text": "Would you look at that.....\nI figured they would serve both, now that you mention it i took a closer look and i see that you are spot on..\nLearn something new everyday..Cheers"
+  },
+  {
+    "id": "1361449455525564507",
+    "timestamp": "2025-04-14T21:16:30.880Z",
+    "username": "SiegeWulf (Kiwi Crypto)[🌽Mafia]",
+    "text": "I have no real personal opinion either way on whether or not a 'Private Pools Dashboard ' would show other pools names or not.\nI was more asking for a Dash that gives your pools total uptime, performance stats like conx speed, availability and % of successful deliveries vs failures against the average performance of other pools (public and private? or just private?  or an option for both?)\nAs it stands we have no idea with the private pools how our performance stacks up against the average.\nHaving tier graphs with low, avg, high and Top tier performance - and where yours falls marked on it-  for everyone to see against each of the stats I mentioned could be useful too in the future... (edited)\nMonday, April 14, 2025 at 5:16 PM"
+  },
+  {
+    "id": "1361454636350836959",
+    "timestamp": "2025-04-14T21:34:39.910Z",
+    "username": "Steve 'Corn Pops'",
+    "text": "Cool.\nI understood the reason, just for me I get triggered a bit when something called private becomes part of a dashboard or leaderboard. \nAnd frankly the name “Private” is just a name not a promise of anonymity.  But still.  Someone might get all crabby if they see their private pool on a public dashboard"
+  },
+  {
+    "id": "1361454741460353074",
+    "timestamp": "2025-04-14T21:35:04.970Z",
+    "username": "EggsAnyStyle [G4G] [INTP-A]",
+    "text": "I agree. Spot on.  I flipped mine to Public so I could see them on the dashboard.  That was my only reason for doing so."
+  },
+  {
+    "id": "1361455542463234110",
+    "timestamp": "2025-04-14T21:38:15.944Z",
+    "username": "Juri Lespor (🌽Mafia)",
+    "text": "I just don't think there's much private information to hide... It doesn't state IP addresses... name is really up to the user... and everything else is performance data"
+  },
+  {
+    "id": "1361455932470595804",
+    "timestamp": "2025-04-14T21:39:48.929Z",
+    "username": "",
+    "text": "I see the privacy as just an obfuscation of the extent of the node network which I believe is needed"
+  },
+  {
+    "id": "1361456495258107974",
+    "timestamp": "2025-04-14T21:43:34.009Z",
+    "username": "EggsAnyStyle [G4G] [INTP-A]",
+    "text": "Why not list them all?  Simply make the \"Public\" pools selectable when delegating and the \"Private\" pools not selectable.  Why two different dashboards? (edited)\nMonday, April 14, 2025 at 5:43 PM"
+  },
+  {
+    "id": "1361456721016393989",
+    "timestamp": "2025-04-14T21:42:56.933Z",
+    "username": "Juri Lespor (🌽Mafia)",
+    "text": "You don't want the extent of network visible... that should only be known by the team"
+  },
+  {
+    "id": "1361456797336080504",
+    "timestamp": "2025-04-14T21:43:15.129Z",
+    "username": "EggsAnyStyle [G4G] [INTP-A]",
+    "text": "Why?"
+  },
+  {
+    "id": "1361457043852230868",
+    "timestamp": "2025-04-14T21:44:13.903Z",
+    "username": "Juri Lespor (🌽Mafia)",
+    "text": "If someone wants to attack a network, first thing they'll probably want is the extent of the network"
+  },
+  {
+    "id": "1361457582858043574",
+    "timestamp": "2025-04-14T21:46:22.412Z",
+    "username": "",
+    "text": "When you go to market the the node system... much better to do it by numbner of nodes licenses as opposed to number of pools (i.e. actual number of unique IPs"
+  },
+  {
+    "id": "1361457618673205418",
+    "timestamp": "2025-04-14T21:47:39.223Z",
+    "username": "EggsAnyStyle [G4G] [INTP-A]",
+    "text": "Pretty easy math.  You know the number of Nodes.  You know the number of Public pools and the size of each.  The rest can be deduced within a fair margin.  Anyone motivated to attack and who needs that info for their plan (for some reason?), can get it from the Public dashboard. (edited)\nMonday, April 14, 2025 at 5:47 PM"
+  },
+  {
+    "id": "1361458052686942238",
+    "timestamp": "2025-04-14T21:48:14.428Z",
+    "username": "Juri Lespor (🌽Mafia)",
+    "text": "Don't forget you don't need 8 node licenses to run a pool... only 8 node licenses to run a public pool"
+  },
+  {
+    "id": "1361458122807316571",
+    "timestamp": "2025-04-14T21:48:31.146Z",
+    "username": "EggsAnyStyle [G4G] [INTP-A]",
+    "text": "So?"
+  },
+  {
+    "id": "1361459572958822631",
+    "timestamp": "2025-04-14T21:54:36.256Z",
+    "username": "Juri Lespor (🌽Mafia)",
+    "text": "10K Node Licenses, 7,500 nodes actually regiistered, 500 public pools,   but imagine we have 2,500 private pools. (edited)\nMonday, April 14, 2025 at 5:54 PM"
+  },
+  {
+    "id": "1361462691004289246",
+    "timestamp": "2025-04-14T22:09:29.408Z",
+    "username": "EggsAnyStyle [G4G] [INTP-A]",
+    "text": "I don't think these numbers have much meaning to an attacker.  I think that premise is flawed, but even if they do matter, you have narrowed down the possibilities considerably by simply looking at the publicly available information.  I would think that sort of analysis for an attacker would be to find the ballpark size of the underlying network (again, if that even matters).  But, I am not in that business so I can only make a logical assumption as to what they find important.  They either need to attack the 3 regional servers  (most likely targets maybe?) that distribute the requests to the network or somehow find the individual servers and attack them.  I don't see anything on the dashboard page that would help them find the individual pool IP addresses.  Keeping those IP addresses hidden makes perfect sense, but that's not what we are talking about here. (edited)\nMonday, April 14, 2025 at 6:09 PM"
+  },
+  {
+    "id": "1361522431012901016",
+    "timestamp": "2025-04-15T02:04:03.417Z",
+    "username": "vk",
+    "text": "Which configuration to subscribe over contabo"
+  },
+  {
+    "id": "1361559883618582639",
+    "timestamp": "2025-04-15T04:32:52.814Z",
+    "username": "Montresor",
+    "text": "About the private/public division, the way I see it, it concerns only whether they can be delegated to. Should have no bearing towards any statistics or performance information about the network. So yeah, \"private\" should be included in the dashboard"
+  },
+  {
+    "id": "1361560319897505864",
+    "timestamp": "2025-04-15T04:34:36.831Z",
+    "username": "",
+    "text": "And this from someone who is going to run it \"private\""
+  },
+  {
+    "id": "1361560822752477395",
+    "timestamp": "2025-04-15T04:36:36.721Z",
+    "username": "Zsolesz",
+    "text": "Hi. I have a question relating to port forwarding. What port number should I write to the Docker’s script? Or how to set it? I’m using Contabo’s VPS."
+  },
+  {
+    "id": "1361561259174264855",
+    "timestamp": "2025-04-15T04:38:20.772Z",
+    "username": "Montresor",
+    "text": "Just go with the default 8001 unless you know you have a reason not to."
+  },
+  {
+    "id": "1361564819437912195",
+    "timestamp": "2025-04-15T04:52:29.605Z",
+    "username": "vk",
+    "text": "Thanks, the cost seems to be same but will running a pool or even Pvt node in, Asia pacific, be at disadvantage because fewer downloads from that region? \nOr the difference in rewards won’t be much ?"
+  },
+  {
+    "id": "1361593136228470824",
+    "timestamp": "2025-04-15T06:45:00.854Z",
+    "username": "Rene - QA",
+    "text": "As i understood the private pools will have the same metrics view as now have public ones. This will be on their \"manage node\" dashboard page. Implementation is on to-do list."
+  },
+  {
+    "id": "1361654822331355348",
+    "timestamp": "2025-04-15T10:50:07.967Z",
+    "username": "SiegeWulf (Kiwi Crypto)[🌽Mafia]",
+    "text": "I feel it would be fairly close if the Node has good uptime and performance metrics - it has availability to the network - and that's primarily what they want...  Useage may play into it by a smaller degree - That's my take on it anyhow...  I would go that route  - but it's a guess..."
+  },
+  {
+    "id": "1361655130222760016",
+    "timestamp": "2025-04-15T10:51:21.374Z",
+    "username": "vk",
+    "text": "That’s reassuring, I think someone from the team will further clarify this"
+  },
+  {
+    "id": "1361712381536768010",
+    "timestamp": "2025-04-15T14:38:51.151Z",
+    "username": "TWILL77",
+    "text": "Can I delegate my file node?"
+  },
+  {
+    "id": "1361713365453373692",
+    "timestamp": "2025-04-15T14:42:45.735Z",
+    "username": "Rene - QA",
+    "text": "Not yet"
+  },
+  {
+    "id": "1361719782801408020",
+    "timestamp": "2025-04-15T15:08:15.750Z",
+    "username": "TWILL77",
+    "text": ""
+  },
+  {
+    "id": "1361897523068797118",
+    "timestamp": "2025-04-16T02:54:32.332Z",
+    "username": "Yab 2  | Knights ⚔",
+    "text": "I cant wait to be able to see how my 2 nodes perform..unless I miss one step to make it public.. that too is very possible."
+  },
+  {
+    "id": "1361980978590908518",
+    "timestamp": "2025-04-16T08:26:40.437Z",
+    "username": "Braz | Knights ⚔ 🇦🇺",
+    "text": "Not yet, but can register it and earn COPI, until nodes are eligible to be delegated to. (edited)\nWednesday, April 16, 2025 at 4:26 AM"
+  },
+  {
+    "id": "1362022194439258344",
+    "timestamp": "2025-04-16T11:09:56.303Z",
+    "username": "Steve 'Corn Pops'",
+    "text": "With  2 node licenses, you can not make your pool public. You personally need 8 licenses, which you have delegated to the pool for public to be selectable in the pool edit screen."
+  },
+  {
+    "id": "1362022404993585364",
+    "timestamp": "2025-04-16T11:10:46.503Z",
+    "username": "PkRip",
+    "text": "What effects the speed? When I do a speed test on my computer I'm getting 300+ MBPS up and down but the node is showing 4 -5 MB?"
+  },
+  {
+    "id": "1362022613152694443",
+    "timestamp": "2025-04-16T11:11:36.132Z",
+    "username": "Steve 'Corn Pops'",
+    "text": "The speed is determined by the client that is downloading the chuncks"
+  },
+  {
+    "id": "1362022810146308177",
+    "timestamp": "2025-04-16T11:12:23.099Z",
+    "username": "Steve 'Corn Pops'",
+    "text": "If the machine downloading has a terrible connection you will see terrible speeds"
+  },
+  {
+    "id": "1362022832162472107",
+    "timestamp": "2025-04-16T11:12:28.348Z",
+    "username": "PkRip",
+    "text": "So we're rated by the clients speed?  something we have no control over?"
+  },
+  {
+    "id": "1362023027310592091",
+    "timestamp": "2025-04-16T11:13:14.875Z",
+    "username": "Steve 'Corn Pops'",
+    "text": "The speed is not a heavily weighted \"rating\"."
+  },
+  {
+    "id": "1362023169698824452",
+    "timestamp": "2025-04-16T11:13:48.823Z",
+    "username": "",
+    "text": "It is a data point, and you should consider  it as just that."
+  },
+  {
+    "id": "1362023538906890341",
+    "timestamp": "2025-04-16T11:15:16.849Z",
+    "username": "",
+    "text": "From the viewpoint of the decentralized service as  a whole, the speeds that the gamer is downloading chunks is an important thing to know so that you can average it and plan the network"
+  },
+  {
+    "id": "1362023841966325874",
+    "timestamp": "2025-04-16T11:17:06.169Z",
+    "username": "",
+    "text": "Your ability to serve multiple downloaders simultaneously is evident.... (edited)\nWednesday, April 16, 2025 at 7:17 AM"
+  },
+  {
+    "id": "1362037311411327100",
+    "timestamp": "2025-04-16T12:10:00.470Z",
+    "username": "Yab 2  | Knights ⚔",
+    "text": "That is what i taught.. but i am not as much in discord as i would like to be and taught i amy of missed something.."
+  },
+  {
+    "id": "1362039696548565165",
+    "timestamp": "2025-04-16T12:19:29.131Z",
+    "username": "PkRip",
+    "text": "So what metrics do we look at to make improvements, are you going to publish something?"
+  },
+  {
+    "id": "1362040410964492371",
+    "timestamp": "2025-04-16T12:22:19.461Z",
+    "username": "Steve 'Corn Pops'",
+    "text": "As we move toward higher loads on the network, these metrics will be more refined and discussed. For now the primary metric is your upload capacity, and your I/O speed (SSD not HHD for storage)."
+  },
+  {
+    "id": "1362040759922065418",
+    "timestamp": "2025-04-16T12:23:42.659Z",
+    "username": "Steve 'Corn Pops'",
+    "text": "We've had two Breaking Node events, which are nice simulations of network load."
+  },
+  {
+    "id": "1362040884643758130",
+    "timestamp": "2025-04-16T12:24:12.395Z",
+    "username": "PkRip",
+    "text": "Ok, is there a sweet spot for the number of delegates per node? Is it better to max out a single node or spread them out?"
+  },
+  {
+    "id": "1362041767205142690",
+    "timestamp": "2025-04-16T12:27:42.814Z",
+    "username": "Steve 'Corn Pops'",
+    "text": "As you can imagine, the answer to this question is highly subjective and dependent on, not only your specific setup, but also total count of node pools in your region and network loads...\n\nThis is my way of saying that we are very much in the learning phase of dialing in the Node Pool Network and what optimal settings/capacities will be under load."
+  },
+  {
+    "id": "1362041972453281803",
+    "timestamp": "2025-04-16T12:28:31.749Z",
+    "username": "",
+    "text": "I have no more internal contact about these things than you do, btw...."
+  },
+  {
+    "id": "1362042106834718790",
+    "timestamp": "2025-04-16T12:29:03.788Z",
+    "username": "PkRip",
+    "text": "Ok, sounds good, it was pretty easy to setup, so that's good, thanks."
+  },
+  {
+    "id": "1362042205895921846",
+    "timestamp": "2025-04-16T12:29:27.406Z",
+    "username": "Steve 'Corn Pops'",
+    "text": "My daily involvement has been severely constrained due to family illnesses"
+  },
+  {
+    "id": "1362042298191319122",
+    "timestamp": "2025-04-16T12:29:49.411Z",
+    "username": "Steve 'Corn Pops'",
+    "text": "YES, set up is a breeze."
+  },
+  {
+    "id": "1362042488566579460",
+    "timestamp": "2025-04-16T12:30:34.800Z",
+    "username": "PkRip",
+    "text": "Sorry to hear that, hope it all works out well for you."
+  },
+  {
+    "id": "1362042496154210497",
+    "timestamp": "2025-04-16T12:30:36.609Z",
+    "username": "Steve 'Corn Pops'",
+    "text": "I have been playing around with some CLI scripts to see what my pool's metrics are"
+  },
+  {
+    "id": "1362042643986776266",
+    "timestamp": "2025-04-16T12:31:11.855Z",
+    "username": "",
+    "text": "this is mine:\nDate      Chunks Served\n04-15   108\n04-14   71\n04-13   524\n04-12   210\n04-11   1195\n04-10   615\n04-09   547"
+  },
+  {
+    "id": "1362042693835821077",
+    "timestamp": "2025-04-16T12:31:23.740Z",
+    "username": "PkRip",
+    "text": "I have good speed, I have a feeling my low rating might be because I have HDD, not SSD."
+  },
+  {
+    "id": "1362042766170918973",
+    "timestamp": "2025-04-16T12:31:40.986Z",
+    "username": "Steve 'Corn Pops'",
+    "text": "oh.... dang, get you an SSD"
+  },
+  {
+    "id": "1362042847720898692",
+    "timestamp": "2025-04-16T12:32:00.429Z",
+    "username": "",
+    "text": "better yet, get an M.2 SSD"
+  },
+  {
+    "id": "1362042998245953606",
+    "timestamp": "2025-04-16T12:32:36.317Z",
+    "username": "",
+    "text": "the faster the I/O the quicker you can respond with chunk uploads."
+  },
+  {
+    "id": "1362043258007715851",
+    "timestamp": "2025-04-16T12:33:38.249Z",
+    "username": "PkRip",
+    "text": "Yes, I'm going to look into that. I want this to work out. If this is the future I'll build a little data center in the woods with solar panels."
+  },
+  {
+    "id": "1362043308586827817",
+    "timestamp": "2025-04-16T12:33:50.308Z",
+    "username": "Steve 'Corn Pops'",
+    "text": "NICE"
+  },
+  {
+    "id": "1362043613319663777",
+    "timestamp": "2025-04-16T12:35:02.962Z",
+    "username": "",
+    "text": "I wonder how a starlink connection would fair once we are attracting gamers, and drop a new release.  That day is gonna be amazing to watch"
+  },
+  {
+    "id": "1362046107877638375",
+    "timestamp": "2025-04-16T12:44:57.711Z",
+    "username": "Montresor",
+    "text": "While solid state drives are performant in different order of magnitude than magnetic HDDs, I'm somehow skeptical that it would make a measureable performance hit for our case of HTTP transfers. Latency from network will be higher than seek time wasted with a modern HDD, given sane conditions like unfragmented data on disk and not being under heavy load."
+  },
+  {
+    "id": "1362071058303418509",
+    "timestamp": "2025-04-16T14:24:06.356Z",
+    "username": "Free [ 🌽 Mafia]",
+    "text": "Where do I connect my account?"
+  },
+  {
+    "id": "1362071288033706097",
+    "timestamp": "2025-04-16T14:25:01.128Z",
+    "username": "",
+    "text": "@Jupiter_Rising ^"
+  },
+  {
+    "id": "1362071534499266752",
+    "timestamp": "2025-04-16T14:25:59.890Z",
+    "username": "Free [ 🌽 Mafia]",
+    "text": "Hey"
+  },
+  {
+    "id": "1362071835696431257",
+    "timestamp": "2025-04-16T14:27:11.701Z",
+    "username": "ScoobyDooBopBop",
+    "text": ""
+  },
+  {
+    "id": "1362072058275692746",
+    "timestamp": "2025-04-16T14:28:04.768Z",
+    "username": "",
+    "text": "This guy banned yet? Or they self deleted?"
+  },
+  {
+    "id": "1362072358147588226",
+    "timestamp": "2025-04-16T14:29:16.263Z",
+    "username": "Free [ 🌽 Mafia]",
+    "text": "We fishing today for scams"
+  },
+  {
+    "id": "1362072457065791721",
+    "timestamp": "2025-04-16T14:29:39.847Z",
+    "username": "",
+    "text": "Already got 2 one got away but we set a FR trap out there..."
+  },
+  {
+    "id": "1362072551169331451",
+    "timestamp": "2025-04-16T14:30:02.283Z",
+    "username": "Black Knight ⚔🌽⚔",
+    "text": "I think Beo take care of him"
+  },
+  {
+    "id": "1362072568420503573",
+    "timestamp": "2025-04-16T14:30:06.396Z",
+    "username": "Free [ 🌽 Mafia]",
+    "text": "Lets try triggering them, most use key words"
+  },
+  {
+    "id": "1362072653997019286",
+    "timestamp": "2025-04-16T14:30:26.799Z",
+    "username": "",
+    "text": "Help Wallet Connect Support Please!"
+  },
+  {
+    "id": "1362072657339613439",
+    "timestamp": "2025-04-16T14:30:27.596Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "Act like antilopes on the Serengeti. I'm in the bushes with the elephant gun."
+  },
+  {
+    "id": "1362073056587022347",
+    "timestamp": "2025-04-16T14:32:02.784Z",
+    "username": "ScoobyDooBopBop",
+    "text": "I'm getting the tack box ready with some good bait"
+  },
+  {
+    "id": "1362073202561384611",
+    "timestamp": "2025-04-16T14:32:37.587Z",
+    "username": "Free [ 🌽 Mafia]",
+    "text": "This should be a morning routine, goin fishing for scammers"
+  },
+  {
+    "id": "1362073942566637668",
+    "timestamp": "2025-04-16T14:35:34.018Z",
+    "username": "Black Knight ⚔🌽⚔",
+    "text": "We should have a fish in CC named Scammer XD"
+  },
+  {
+    "id": "1362074092546556066",
+    "timestamp": "2025-04-16T14:36:09.776Z",
+    "username": "ScoobyDooBopBop",
+    "text": "We need a channel designated as a Honeypot"
+  },
+  {
+    "id": "1362074924302209316",
+    "timestamp": "2025-04-16T14:39:28.082Z",
+    "username": "Free [ 🌽 Mafia]",
+    "text": "Create a bot channel that asks trigger questions every 5 min"
+  },
+  {
+    "id": "1362075247838367974",
+    "timestamp": "2025-04-16T14:40:45.219Z",
+    "username": "ScoobyDooBopBop",
+    "text": "\"help me support, where do i put in my seed phrase?\""
+  },
+  {
+    "id": "1362075375882211360",
+    "timestamp": "2025-04-16T14:41:15.747Z",
+    "username": "Free [ 🌽 Mafia]",
+    "text": "A loooong time ago I wanted to set up trap wallets, where if a scammer tried taking your nfts some of them would be those nfts that if you mess with them it opens access to your wallet. A reverse scam"
+  },
+  {
+    "id": "1362075508120092815",
+    "timestamp": "2025-04-16T14:41:47.275Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Oooooh i like this! Reverse wallet drain"
+  },
+  {
+    "id": "1362075538654629980",
+    "timestamp": "2025-04-16T14:41:54.555Z",
+    "username": "Free [ 🌽 Mafia]",
+    "text": "Exactly"
+  },
+  {
+    "id": "1362075672998187008",
+    "timestamp": "2025-04-16T14:42:26.585Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Man I wish I was good at programming"
+  },
+  {
+    "id": "1362075936354341025",
+    "timestamp": "2025-04-16T14:43:29.374Z",
+    "username": "Free [ 🌽 Mafia]",
+    "text": "I use to think that too, then I realized theres millions of programmers and not as many people with Creative Vision, Ideas that work"
+  },
+  {
+    "id": "1362076133369188373",
+    "timestamp": "2025-04-16T14:44:16.346Z",
+    "username": "",
+    "text": "Still gota know about programming but you dont really need to know code, just what code can do"
+  },
+  {
+    "id": "1362076176637759619",
+    "timestamp": "2025-04-16T14:44:26.662Z",
+    "username": "ScoobyDooBopBop",
+    "text": "I watch software engineers that mess with scammers on YT.\n\nThis was my fav one"
+  },
+  {
+    "id": "1362076319076188211",
+    "timestamp": "2025-04-16T14:45:00.622Z",
+    "username": "Free [ 🌽 Mafia]",
+    "text": "Nice I will watch that!"
+  },
+  {
+    "id": "1362077684917866758",
+    "timestamp": "2025-04-16T14:50:26.264Z",
+    "username": "",
+    "text": "How to file support ticket for wallet verification?"
+  },
+  {
+    "id": "1362077759853039786",
+    "timestamp": "2025-04-16T14:50:44.130Z",
+    "username": "",
+    "text": "Wheres the fish?"
+  },
+  {
+    "id": "1362081081146216508",
+    "timestamp": "2025-04-16T15:03:55.988Z",
+    "username": "Free [ 🌽 Mafia]",
+    "text": "Reverse hack and send the wallet to the feds shrug or back to the people they stole it from."
+  },
+  {
+    "id": "1362081724238135386",
+    "timestamp": "2025-04-16T15:06:29.313Z",
+    "username": "",
+    "text": "A noble cause my good Sir"
+  },
+  {
+    "id": "1362114971709865994",
+    "timestamp": "2025-04-16T17:18:36.128Z",
+    "username": "Steve 'Corn Pops'",
+    "text": "He's a serious counterfactual source, to be sure.  We all wanna punish the scammers, but gotta be more stealthy about it."
+  },
+  {
+    "id": "1362178576262238299",
+    "timestamp": "2025-04-16T21:31:20.635Z",
+    "username": "SiegeWulf (Kiwi Crypto)[🌽Mafia]",
+    "text": "What is generally the cause of the Error #009"
+  },
+  {
+    "id": "1362186047165042861",
+    "timestamp": "2025-04-16T22:01:01.837Z",
+    "username": "SiegeWulf (Kiwi Crypto)[🌽Mafia]",
+    "text": "Never mind - had Windows Updates waiting to install - always seems to cause headaches...  sigh"
+  },
+  {
+    "id": "1362319435125227672",
+    "timestamp": "2025-04-17T06:51:04.005Z",
+    "username": "Sandergutt",
+    "text": "Nodes are live? I can setup a node with my NFTs?"
+  },
+  {
+    "id": "1362320146902814850",
+    "timestamp": "2025-04-17T06:53:53.706Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "Yep, you can set up a pool for your nodes.\n\nDelegation of NFT nodes to public pools not available yet \n\nRewards are still given for just registering the nodes and not running the pool."
+  },
+  {
+    "id": "1362320174249672775",
+    "timestamp": "2025-04-17T06:54:00.226Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "!pool"
+  },
+  {
+    "id": "1362320175130476765",
+    "timestamp": "2025-04-17T06:54:00.436Z",
+    "username": "Dyno",
+    "text": ""
+  },
+  {
+    "id": "1362321239686910012",
+    "timestamp": "2025-04-17T06:58:14.246Z",
+    "username": "Sandergutt",
+    "text": "Thanks, I will set them up this weekend then. Love to support, earnings are not my main concern"
+  },
+  {
+    "id": "1362382785225949316",
+    "timestamp": "2025-04-17T11:02:47.846Z",
+    "username": "Brax in Tokyo",
+    "text": "Does anyone know what Error #009 is?"
+  },
+  {
+    "id": "1362383197618569367",
+    "timestamp": "2025-04-17T11:04:26.168Z",
+    "username": "",
+    "text": "Do we have a list of error codes and what they refer to?"
+  },
+  {
+    "id": "1362384921980571800",
+    "timestamp": "2025-04-17T11:11:17.288Z",
+    "username": "Brax in Tokyo",
+    "text": "There are no previous errors listed. Just #009. Kind of annoying."
+  },
+  {
+    "id": "1362385088335056948",
+    "timestamp": "2025-04-17T11:11:56.950Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "No current list. \n\nCan you check your docker logs and your pool health?"
+  },
+  {
+    "id": "1362385311463637264",
+    "timestamp": "2025-04-17T11:12:50.148Z",
+    "username": "Brax in Tokyo",
+    "text": "Pool health is \"OK\". I'll have to look into the docker logs."
+  },
+  {
+    "id": "1362385715018731591",
+    "timestamp": "2025-04-17T11:14:26.363Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "You've checked from a device that's not on the local network with your pool, yes?"
+  },
+  {
+    "id": "1362385864356925470",
+    "timestamp": "2025-04-17T11:15:01.968Z",
+    "username": "Brax in Tokyo",
+    "text": "I'll try from my phone and see if it's different."
+  },
+  {
+    "id": "1362386002416500816",
+    "timestamp": "2025-04-17T11:15:34.884Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "Make sure it's set to mobile data and WiFi turned off."
+  },
+  {
+    "id": "1362387092444938311",
+    "timestamp": "2025-04-17T11:20:02.442Z",
+    "username": "Brax in Tokyo",
+    "text": "It's OK on mobile data. I'll see if there is something in the docker logs. I just wish that when I see an error that points to another error, that it tells me the other error. It's kind of confusing. (edited)\nThursday, April 17, 2025 at 7:20 AM"
+  },
+  {
+    "id": "1362387316840333466",
+    "timestamp": "2025-04-17T11:20:48.267Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "Understandable. Early days with that dashboard."
+  },
+  {
+    "id": "1362387687344177303",
+    "timestamp": "2025-04-17T11:22:16.602Z",
+    "username": "",
+    "text": "If you see in your logs GETs without errors then it's ok with your pool and the errors come from the client side."
+  },
+  {
+    "id": "1362406415825768689",
+    "timestamp": "2025-04-17T12:36:41.820Z",
+    "username": "Sage | Knights ⚔",
+    "text": "I've just created a new pool and set it up using @GeordieR script (thank you so much for making it so simple). Currently the pool status is 'Validating' but I am worried that it will not become an active pool as the health URL is not 'OK' at the moment. Is there anything I can do or do I need to wait until the pool is 'Active' before the health URL is 'OK'?"
+  },
+  {
+    "id": "1362407310542245971",
+    "timestamp": "2025-04-17T12:40:15.137Z",
+    "username": "Sage | Knights ⚔",
+    "text": "I am using a VPS but have just found the firewall settings area, so will look at the port forwarding now, thanks!"
+  },
+  {
+    "id": "1362407600989278411",
+    "timestamp": "2025-04-17T12:41:24.385Z",
+    "username": "",
+    "text": "Yep thanks! I guess I forgot about that step until after I sent my original message"
+  },
+  {
+    "id": "1362413201769234454",
+    "timestamp": "2025-04-17T13:03:39.715Z",
+    "username": "EZ | Node Operator",
+    "text": "Docker circumvent the ufw Firewall rules,  so its probably not that."
+  },
+  {
+    "id": "1362464782715850892",
+    "timestamp": "2025-04-17T16:28:37.571Z",
+    "username": "Rene - QA",
+    "text": "I don't think it's about the providers but the settings. Some tutorials on how to setup Ubuntu includes commands to lock everything down, and open only required ports. I'm not 100% sure, but i assume that's the case"
+  },
+  {
+    "id": "1362467341526499569",
+    "timestamp": "2025-04-17T16:38:47.639Z",
+    "username": "Rene - QA",
+    "text": "Well yeah, but i also went through the setup tutorial. So thinking it afterwards settings that i changed  could also be the case."
+  },
+  {
+    "id": "1362474370429354306",
+    "timestamp": "2025-04-17T17:06:43.460Z",
+    "username": "Cameron",
+    "text": "I've got  a Node, do we now deregister to relocate to the new public Nodes of choice?"
+  },
+  {
+    "id": "1362475620096802917",
+    "timestamp": "2025-04-17T17:11:41.404Z",
+    "username": "EggsAnyStyle [G4G] [INTP-A]",
+    "text": "You can't delegate to a public pool yet.  Stay your course for now unless you plan to setup your own pool."
+  },
+  {
+    "id": "1362482159268397236",
+    "timestamp": "2025-04-17T17:37:40.464Z",
+    "username": "Not-A-Bot",
+    "text": "You do not have to deregister. Reward structure has not changed yet"
+  },
+  {
+    "id": "1362507224433299678",
+    "timestamp": "2025-04-17T19:17:16.465Z",
+    "username": "Cameron",
+    "text": "I think I was getting scammed asking about my nodes?"
+  },
+  {
+    "id": "1362507286467182835",
+    "timestamp": "2025-04-17T19:17:31.255Z",
+    "username": "",
+    "text": "keep asking me for an EVM wallet?"
+  },
+  {
+    "id": "1362507582492905592",
+    "timestamp": "2025-04-17T19:18:41.833Z",
+    "username": "Black Knight ⚔🌽⚔",
+    "text": "Scam"
+  },
+  {
+    "id": "1362507755671523471",
+    "timestamp": "2025-04-17T19:19:23.122Z",
+    "username": "Cameron",
+    "text": "got me to copy and paste into my CMD"
+  },
+  {
+    "id": "1362507945266643206",
+    "timestamp": "2025-04-17T19:20:08.325Z",
+    "username": "Black Knight ⚔🌽⚔",
+    "text": "cmd? In your PC?"
+  },
+  {
+    "id": "1362508007916834907",
+    "timestamp": "2025-04-17T19:20:23.262Z",
+    "username": "Cameron",
+    "text": "yup"
+  },
+  {
+    "id": "1362508122501021819",
+    "timestamp": "2025-04-17T19:20:50.581Z",
+    "username": "",
+    "text": ""
+  },
+  {
+    "id": "1362508272375955546",
+    "timestamp": "2025-04-17T19:21:26.314Z",
+    "username": "Black Knight ⚔🌽⚔",
+    "text": "did you just paste the code, or did you actually execute it?"
+  },
+  {
+    "id": "1362508427854745894",
+    "timestamp": "2025-04-17T19:22:03.383Z",
+    "username": "Cameron",
+    "text": "it tried but it keep getting blocked"
+  },
+  {
+    "id": "1362508618645110904",
+    "timestamp": "2025-04-17T19:22:48.871Z",
+    "username": "",
+    "text": ""
+  },
+  {
+    "id": "1362508660600996171",
+    "timestamp": "2025-04-17T19:22:58.874Z",
+    "username": "Black Knight ⚔🌽⚔",
+    "text": "What do u mean for blocked?"
+  },
+  {
+    "id": "1362509012880589074",
+    "timestamp": "2025-04-17T19:24:22.864Z",
+    "username": "Cameron",
+    "text": "does this look like a scam or is there a EVM wallet to link to your COPI Node?"
+  },
+  {
+    "id": "1362509047940513983",
+    "timestamp": "2025-04-17T19:24:39.023Z",
+    "username": "Black Knight ⚔🌽⚔",
+    "text": "Nope, is a Scam (edited)\nThursday, April 17, 2025 at 3:24 PM"
+  },
+  {
+    "id": "1362509059474980947",
+    "timestamp": "2025-04-17T19:24:33.973Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Its a Scam bro"
+  },
+  {
+    "id": "1362509163304976584",
+    "timestamp": "2025-04-17T19:24:58.728Z",
+    "username": "Cameron",
+    "text": "think I'm safe?"
+  },
+  {
+    "id": "1362509246834675854",
+    "timestamp": "2025-04-17T19:25:18.643Z",
+    "username": "",
+    "text": "doing a full computer scan now"
+  },
+  {
+    "id": "1362509386093695007",
+    "timestamp": "2025-04-17T19:25:51.845Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Sounds like your OS blocked the execution attempt. Definitely run malware scan"
+  },
+  {
+    "id": "1362509405047881738",
+    "timestamp": "2025-04-17T19:25:56.364Z",
+    "username": "Mr. Pink",
+    "text": "If you ended up in another Discord server, I would change your password as well. Doing that will invalidate all other sessions."
+  },
+  {
+    "id": "1362509786947781049",
+    "timestamp": "2025-04-17T19:27:27.416Z",
+    "username": "ScoobyDooBopBop",
+    "text": "I keep saying we need to limit access to this channel. These scammers are relentless."
+  },
+  {
+    "id": "1362509859886731507",
+    "timestamp": "2025-04-17T19:27:44.806Z",
+    "username": "Mr. Pink",
+    "text": "AHAHAHAHAHA"
+  },
+  {
+    "id": "1362509885123858762",
+    "timestamp": "2025-04-17T19:27:50.823Z",
+    "username": "oxenhouse",
+    "text": "Case in point"
+  },
+  {
+    "id": "1362509886360916221",
+    "timestamp": "2025-04-17T19:27:51.118Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Lol like this clown"
+  },
+  {
+    "id": "1362510193933684847",
+    "timestamp": "2025-04-17T19:29:04.449Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "i just wanted to chime in, asking some tech stuff about running the nodes"
+  },
+  {
+    "id": "1362510315241210056",
+    "timestamp": "2025-04-17T19:29:33.371Z",
+    "username": "",
+    "text": "first focus on the scam stuff if needed.. think thats more important"
+  },
+  {
+    "id": "1362510406769311866",
+    "timestamp": "2025-04-17T19:29:55.193Z",
+    "username": "oxenhouse",
+    "text": "This channel needs to be locked down."
+  },
+  {
+    "id": "1362510589846491136",
+    "timestamp": "2025-04-17T19:30:38.842Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Can devs do something?......"
+  },
+  {
+    "id": "1362510745345982535",
+    "timestamp": "2025-04-17T19:31:15.916Z",
+    "username": "Cameron",
+    "text": "I'm in full panic mode, that's why for years I've never came in discord"
+  },
+  {
+    "id": "1362510831417298984",
+    "timestamp": "2025-04-17T19:31:36.437Z",
+    "username": "oxenhouse",
+    "text": "we tend to ask for help and talk more technical stuff in here, that's a scammers dream."
+  },
+  {
+    "id": "1362511067707736075",
+    "timestamp": "2025-04-17T19:32:58.139Z",
+    "username": "",
+    "text": "if there are node licenses in your wallet, role added, access granted, if not... hit the bricks. (edited)\nThursday, April 17, 2025 at 3:32 PM"
+  },
+  {
+    "id": "1362511106366640279",
+    "timestamp": "2025-04-17T19:32:41.990Z",
+    "username": "Cameron",
+    "text": "been in crypto for 4 years and avoided scams so far because I stayed away from discord"
+  },
+  {
+    "id": "1362511157281292420",
+    "timestamp": "2025-04-17T19:32:54.129Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "maybe there could be a help chat from the official Cornucopias website, section Node Operators, once you're logged in with your 2FA"
+  },
+  {
+    "id": "1362511229653881045",
+    "timestamp": "2025-04-17T19:33:11.384Z",
+    "username": "Cameron",
+    "text": "I've got a NODE"
+  },
+  {
+    "id": "1362511297077317682",
+    "timestamp": "2025-04-17T19:33:27.459Z",
+    "username": "ScoobyDooBopBop",
+    "text": "General rules of the interwebs, never click on funny looking links.\n\nBe wary of people who pose as support staff."
+  },
+  {
+    "id": "1362511362529693798",
+    "timestamp": "2025-04-17T19:33:43.064Z",
+    "username": "oxenhouse",
+    "text": "I got scammed in discord years ago... rookie."
+  },
+  {
+    "id": "1362511426392031272",
+    "timestamp": "2025-04-17T19:33:58.290Z",
+    "username": "",
+    "text": "different project."
+  },
+  {
+    "id": "1362511650208616590",
+    "timestamp": "2025-04-17T19:34:51.652Z",
+    "username": "Cameron",
+    "text": "came in here to ask about my node, only got one and was wondering if 9 rewards a day sounds right,"
+  },
+  {
+    "id": "1362511748942266409",
+    "timestamp": "2025-04-17T19:35:15.192Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "the answer is yes."
+  },
+  {
+    "id": "1362511910523764958",
+    "timestamp": "2025-04-17T19:35:53.716Z",
+    "username": "Cameron",
+    "text": "thanks,"
+  },
+  {
+    "id": "1362511961660588303",
+    "timestamp": "2025-04-17T19:36:05.908Z",
+    "username": "oxenhouse",
+    "text": "8.91 per node as of the latest data."
+  },
+  {
+    "id": "1362511965057974422",
+    "timestamp": "2025-04-17T19:36:06.718Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Yup. Its a shared reward pool, split evenly amonst all registered node licenses."
+  },
+  {
+    "id": "1362512954272125030",
+    "timestamp": "2025-04-17T19:40:02.565Z",
+    "username": "Cameron",
+    "text": "k thanks, I just saw the new Public pools dashboard and thought maybe we move our nodes to one of them"
+  },
+  {
+    "id": "1362513029362618579",
+    "timestamp": "2025-04-17T19:40:20.468Z",
+    "username": "",
+    "text": "yup 8.91"
+  },
+  {
+    "id": "1362513353775386765",
+    "timestamp": "2025-04-17T19:41:37.814Z",
+    "username": "Mr. Pink",
+    "text": "Although that would be nice, it also blocks those that have node, need help but don't want to connect a wallet or those that are just curious before buying. It also requires research to be done into new Discord plugins that support EVM and Cardano, or 2 plugins that will happily work together or dev time to do it ourselves.\n\nI do not know why the plugins that block links can't do it. It's a little baffling. The bot on my server immediately removes all links, but I've made it a little too strong."
+  },
+  {
+    "id": "1362513372360347649",
+    "timestamp": "2025-04-17T19:41:42.245Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "can i ask quickly what is better ssd or NVMe?"
+  },
+  {
+    "id": "1362513502329114714",
+    "timestamp": "2025-04-17T19:42:13.232Z",
+    "username": "Cameron",
+    "text": "k so it sounds all good with my node, thanks, I hope I didn't get any shit on my computer, it seemed like nothing was working"
+  },
+  {
+    "id": "1362513650639831112",
+    "timestamp": "2025-04-17T19:42:48.592Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "do you have VPN as well?"
+  },
+  {
+    "id": "1362513683770511752",
+    "timestamp": "2025-04-17T19:42:56.491Z",
+    "username": "Cameron",
+    "text": "yup"
+  },
+  {
+    "id": "1362513696538103879",
+    "timestamp": "2025-04-17T19:42:59.535Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "super"
+  },
+  {
+    "id": "1362513723872383378",
+    "timestamp": "2025-04-17T19:43:06.052Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Nvme"
+  },
+  {
+    "id": "1362513795037004068",
+    "timestamp": "2025-04-17T19:43:23.019Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "thanks"
+  },
+  {
+    "id": "1362513844483789002",
+    "timestamp": "2025-04-17T19:43:34.808Z",
+    "username": "",
+    "text": "for one pool of 10 nodes what kind of GB ram is overkill?"
+  },
+  {
+    "id": "1362513903782854829",
+    "timestamp": "2025-04-17T19:43:48.946Z",
+    "username": "Cameron",
+    "text": "I knew something was up once he starting asking about my EVM wallet"
+  },
+  {
+    "id": "1362514073681400153",
+    "timestamp": "2025-04-17T19:44:29.453Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Hardware won't be an issue. If running Linux, you can get away with as low as 4GB RAM"
+  },
+  {
+    "id": "1362514174864785653",
+    "timestamp": "2025-04-17T19:44:53.577Z",
+    "username": "Cameron",
+    "text": "K thanks everyone, wish me luck a full scan and changing passwords"
+  },
+  {
+    "id": "1362514216837320806",
+    "timestamp": "2025-04-17T19:45:03.584Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "ya, yo need to be careful! Never be wreckless in private chats, scammers everywhere"
+  },
+  {
+    "id": "1362514298601078944",
+    "timestamp": "2025-04-17T19:45:23.078Z",
+    "username": "Cameron",
+    "text": "sickening eh"
+  },
+  {
+    "id": "1362514360374923386",
+    "timestamp": "2025-04-17T19:45:37.806Z",
+    "username": "",
+    "text": "scum"
+  },
+  {
+    "id": "1362514492990427256",
+    "timestamp": "2025-04-17T19:46:09.424Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "for sure.. well, sometimes I just dont want to talk on general discord servers just not to put eyeballs on me"
+  },
+  {
+    "id": "1362514605892436240",
+    "timestamp": "2025-04-17T19:46:36.342Z",
+    "username": "Cameron",
+    "text": "I'm a GenX that would love to meet scammer on the streets."
+  },
+  {
+    "id": "1362514846616129556",
+    "timestamp": "2025-04-17T19:48:26.708Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "so all above 4 GB isn't necessary? and the bandwith Mbit/s? What are the hardware parts that make a difference, if any? thanks (edited)\nThursday, April 17, 2025 at 3:48 PM"
+  },
+  {
+    "id": "1362515622558175494",
+    "timestamp": "2025-04-17T19:50:38.734Z",
+    "username": "",
+    "text": "also Contabo has an easter deal now going"
+  },
+  {
+    "id": "1362515701486719097",
+    "timestamp": "2025-04-17T19:50:57.552Z",
+    "username": "ScoobyDooBopBop",
+    "text": "I think 8GB will be more than enough for 1 pool.\n\nNo official details yet on minimal bandwidth requirements. The more, the better. I have one server with 1Gbps upload and another with 400Mbps.\n\nStorage is the only hardware you should be concerned with. Minimum an SSD."
+  },
+  {
+    "id": "1362515877286646011",
+    "timestamp": "2025-04-17T19:51:39.466Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "VPS 8 Cores NVMe    8 cores    20 GB    200 GB (100% NVMe)    600 Mbit/s"
+  },
+  {
+    "id": "1362516019473809629",
+    "timestamp": "2025-04-17T19:52:13.366Z",
+    "username": "",
+    "text": "VPS 8 Cores SSD    8 cores    20 GB    400 GB (100% SSD)    600 Mbit/s"
+  },
+  {
+    "id": "1362516123899265245",
+    "timestamp": "2025-04-17T19:52:38.263Z",
+    "username": "",
+    "text": "so the SSD will be good, just the speed isn't 1Gbps"
+  },
+  {
+    "id": "1362516172507054232",
+    "timestamp": "2025-04-17T19:52:49.852Z",
+    "username": "",
+    "text": "will that make a lot of difference?"
+  },
+  {
+    "id": "1362516355152347387",
+    "timestamp": "2025-04-17T19:53:33.398Z",
+    "username": "Black Knight ⚔🌽⚔",
+    "text": "How many people do you estimate would find this channel relevant? Would it be possible to restrict the channel to a specific role and assign it manually, or would that be too much work? At the very least, it would help eliminate the auto-bots"
+  },
+  {
+    "id": "1362517352163577896",
+    "timestamp": "2025-04-17T19:57:31.104Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "VPS 6 Cores Storage    6 cores    8 GB    1,800 GB (100% SSD)    600 Mbit/s    is this a good one for a pool with 10 nodes, maybe better then the previous ones.."
+  },
+  {
+    "id": "1362517359897608244",
+    "timestamp": "2025-04-17T19:57:32.948Z",
+    "username": "Mr. Pink",
+    "text": "The issue is server wide, we could fix it here but it will happen in any channel where a question can be asked. Doing it via role assignment lessens the experience if someone has to open a ticket, wait for mod and request a role."
+  },
+  {
+    "id": "1362517678530494685",
+    "timestamp": "2025-04-17T19:58:48.916Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "do i need storage VPS or cloud VPS?"
+  },
+  {
+    "id": "1362517852049113318",
+    "timestamp": "2025-04-17T19:59:38.117Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Contabo storage VPS plans offer more bandwidth (edited)\nThursday, April 17, 2025 at 3:59 PM"
+  },
+  {
+    "id": "1362517914703499345",
+    "timestamp": "2025-04-17T19:59:45.224Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "yep ive saw that"
+  },
+  {
+    "id": "1362517991354531858",
+    "timestamp": "2025-04-17T20:00:03.499Z",
+    "username": "",
+    "text": "thats why i ask , maybe storage VPS with the advantege of better bandwith is better?"
+  },
+  {
+    "id": "1362518074636632498",
+    "timestamp": "2025-04-17T20:00:23.355Z",
+    "username": "ScoobyDooBopBop",
+    "text": "This is more than enough for now"
+  },
+  {
+    "id": "1362518130500305178",
+    "timestamp": "2025-04-17T20:00:36.674Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "ok if needed we can upgrade"
+  },
+  {
+    "id": "1362518158140899470",
+    "timestamp": "2025-04-17T20:00:43.264Z",
+    "username": "",
+    "text": "thanks"
+  },
+  {
+    "id": "1362522727877054564",
+    "timestamp": "2025-04-17T20:18:52.774Z",
+    "username": "Black Knight ⚔🌽⚔",
+    "text": "Yeah, these bots are everywhere"
+  },
+  {
+    "id": "1362526861837467808",
+    "timestamp": "2025-04-17T20:35:18.387Z",
+    "username": "Beach_bum",
+    "text": "whar's new"
+  },
+  {
+    "id": "1362528043628892384",
+    "timestamp": "2025-04-17T20:40:00.148Z",
+    "username": "",
+    "text": "node floor on jpg store  is 400 ada, i want one more"
+  },
+  {
+    "id": "1362625912310595625",
+    "timestamp": "2025-04-18T03:08:53.860Z",
+    "username": "Arrelulu [🌽 mafia]",
+    "text": "Scammers everywhere"
+  },
+  {
+    "id": "1362626139012468758",
+    "timestamp": "2025-04-18T03:09:47.910Z",
+    "username": "Arrelulu [🌽 mafia]",
+    "text": "How many pools are you currently running"
+  },
+  {
+    "id": "1362735074847625354",
+    "timestamp": "2025-04-18T10:22:40.237Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "whats the best now to choose as location to run the pool on VPS, USA, UK, Europe?"
+  },
+  {
+    "id": "1362737676574261320",
+    "timestamp": "2025-04-18T10:33:00.537Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Two for now"
+  },
+  {
+    "id": "1362737856446992545",
+    "timestamp": "2025-04-18T10:33:43.422Z",
+    "username": "ScoobyDooBopBop",
+    "text": "TBD"
+  },
+  {
+    "id": "1362745083505410048",
+    "timestamp": "2025-04-18T11:02:26.487Z",
+    "username": "EZ | Node Operator",
+    "text": "AP could be a choice.. Not many pools over there."
+  },
+  {
+    "id": "1362804267265687812",
+    "timestamp": "2025-04-18T14:57:36.995Z",
+    "username": "NortonS24",
+    "text": "So is my pool offline because I only have two nodes instead of eight? Or maybe I have something set up wrong?"
+  },
+  {
+    "id": "1362804816803270997",
+    "timestamp": "2025-04-18T15:00:33.216Z",
+    "username": "Rene - QA",
+    "text": "Try refreshing the web page. If the offline turns green again, let me know to report it. (edited)\nFriday, April 18, 2025 at 11:00 AM"
+  },
+  {
+    "id": "1362805380073394559",
+    "timestamp": "2025-04-18T15:02:02.309Z",
+    "username": "NortonS24",
+    "text": "Refreshing doesnt do anything. I did just have to turn the port forwarding back on as I got a new router. Both nodes say they are registered."
+  },
+  {
+    "id": "1362805984665276627",
+    "timestamp": "2025-04-18T15:04:26.455Z",
+    "username": "Rene - QA",
+    "text": "Yeah, your pool doesn't affect your node registration. If you got a new router, it make sense to port forward again"
+  },
+  {
+    "id": "1362806155478565074",
+    "timestamp": "2025-04-18T15:05:07.180Z",
+    "username": "Rene - QA",
+    "text": "Does health check says ok now?"
+  },
+  {
+    "id": "1362806333123989875",
+    "timestamp": "2025-04-18T15:05:49.534Z",
+    "username": "NortonS24",
+    "text": "where do I see that?"
+  },
+  {
+    "id": "1362806865779753030",
+    "timestamp": "2025-04-18T15:07:56.529Z",
+    "username": "Rene - QA",
+    "text": "health check url in your dashboard. Copy paste that url to your phone browser, test it from cellular network  and see if you get OK"
+  },
+  {
+    "id": "1362807494594003185",
+    "timestamp": "2025-04-18T15:10:26.450Z",
+    "username": "Rene - QA",
+    "text": "I tried. Your port is not open correctly"
+  },
+  {
+    "id": "1362807747405676585",
+    "timestamp": "2025-04-18T15:11:26.725Z",
+    "username": "NortonS24",
+    "text": "So should I go through and redo the pool setup?"
+  },
+  {
+    "id": "1362808017233514697",
+    "timestamp": "2025-04-18T15:12:31.057Z",
+    "username": "Rene - QA",
+    "text": "Type in google \"Whats my ip\". Compare your ip to the one written on your dashboard"
+  },
+  {
+    "id": "1362808424080867329",
+    "timestamp": "2025-04-18T15:14:08.057Z",
+    "username": "NortonS24",
+    "text": "Yeah its different."
+  },
+  {
+    "id": "1362808609620103200",
+    "timestamp": "2025-04-18T15:14:52.293Z",
+    "username": "Rene - QA",
+    "text": "Ok. Then delete the Docker container and create a new one. You don't need to change access key."
+  },
+  {
+    "id": "1362809119974756612",
+    "timestamp": "2025-04-18T15:16:53.971Z",
+    "username": "",
+    "text": "Docker is paired to your old local ip therefore it needs a new container"
+  },
+  {
+    "id": "1362809463358230690",
+    "timestamp": "2025-04-18T15:18:15.840Z",
+    "username": "NortonS24",
+    "text": "makes sense, thank you"
+  },
+  {
+    "id": "1362809768644710473",
+    "timestamp": "2025-04-18T15:20:02.007Z",
+    "username": "Rene - QA",
+    "text": "In some rare cases Docker didn't unbind the port when i created a new container on same port. If that happens and you get an error saying port is already in use when creating new container, then just restart Docker (edited)\nFriday, April 18, 2025 at 11:20 AM"
+  },
+  {
+    "id": "1362819749448257598",
+    "timestamp": "2025-04-18T15:59:08.235Z",
+    "username": "Pedro",
+    "text": "How many nodes can you run off a Raspberry Pi 5 16GB"
+  },
+  {
+    "id": "1362825213208956979",
+    "timestamp": "2025-04-18T16:20:50.897Z",
+    "username": "Montresor",
+    "text": "As many as you'd like and have the upload bandwith for"
+  },
+  {
+    "id": "1362827073973911743",
+    "timestamp": "2025-04-18T16:28:14.538Z",
+    "username": "Pedro",
+    "text": "So it’s official that Raspberries will work well?"
+  },
+  {
+    "id": "1362827241213657300",
+    "timestamp": "2025-04-18T16:28:54.411Z",
+    "username": "Pedro",
+    "text": "How do you know or work out if you have the upload bandwidth"
+  },
+  {
+    "id": "1362827262910533903",
+    "timestamp": "2025-04-18T16:28:59.584Z",
+    "username": "Montresor",
+    "text": "I don't know what kind of official are you looking for. People are using them to run the pools fine."
+  },
+  {
+    "id": "1362827347920818277",
+    "timestamp": "2025-04-18T16:29:19.852Z",
+    "username": "",
+    "text": "You would have to know it yourself from what kind of plan you have with your internet service provider"
+  },
+  {
+    "id": "1362827536538533960",
+    "timestamp": "2025-04-18T16:30:04.822Z",
+    "username": "Pedro",
+    "text": "That works for me.  ahhh ok, that sounds technical"
+  },
+  {
+    "id": "1362827711047012352",
+    "timestamp": "2025-04-18T16:30:46.428Z",
+    "username": "Montresor",
+    "text": "Check out the info sheets for estimated about how much bandwith you need for what kind of amount of nodes. They are very old figures tho and in reality we just won't know before measuring after going live"
+  },
+  {
+    "id": "1362828417338183710",
+    "timestamp": "2025-04-18T16:33:34.821Z",
+    "username": "Pedro",
+    "text": "I wouldn’t even know where to start. Is there a way of finding this info or a website"
+  },
+  {
+    "id": "1362828657789239387",
+    "timestamp": "2025-04-18T16:34:32.149Z",
+    "username": "Montresor",
+    "text": "!node"
+  },
+  {
+    "id": "1362828659961892865",
+    "timestamp": "2025-04-18T16:34:32.667Z",
+    "username": "Dyno",
+    "text": ""
+  },
+  {
+    "id": "1362828776530120935",
+    "timestamp": "2025-04-18T16:35:00.459Z",
+    "username": "Montresor",
+    "text": "!pool"
+  },
+  {
+    "id": "1362828777314451484",
+    "timestamp": "2025-04-18T16:35:00.646Z",
+    "username": "Dyno",
+    "text": ""
+  },
+  {
+    "id": "1362828852858195968",
+    "timestamp": "2025-04-18T16:35:18.657Z",
+    "username": "Pedro",
+    "text": "Thanks for your help"
+  },
+  {
+    "id": "1362912635573633165",
+    "timestamp": "2025-04-18T22:08:14.013Z",
+    "username": "Ray.Racer | Knights ⚔",
+    "text": "Some days ago ive notice there's always a ''Toredo'' port appearing  in my router port other then the one i created for the nodes. Any idea what it is and if it's something i need to block ?"
+  },
+  {
+    "id": "1362920166719098912",
+    "timestamp": "2025-04-18T22:38:09.578Z",
+    "username": "Ray.Racer | Knights ⚔",
+    "text": "I see that would explain thx"
+  },
+  {
+    "id": "1362940095191056635",
+    "timestamp": "2025-04-18T23:57:20.896Z",
+    "username": "Arrelulu [🌽 mafia]",
+    "text": "Congratulations your an OG node runner"
+  },
+  {
+    "id": "1363320843282808882",
+    "timestamp": "2025-04-20T01:10:18.315Z",
+    "username": "Gus T. Wind",
+    "text": "OG node runner?"
+  },
+  {
+    "id": "1363359035637760121",
+    "timestamp": "2025-04-20T03:42:04.082Z",
+    "username": "Corny \"B\" | Knights⚔",
+    "text": "someone who runs a node pool"
+  },
+  {
+    "id": "1363451967753687040",
+    "timestamp": "2025-04-20T09:51:20.825Z",
+    "username": "Sandergutt",
+    "text": "Node up and running"
+  },
+  {
+    "id": "1363452241163456673",
+    "timestamp": "2025-04-20T09:52:26.011Z",
+    "username": "",
+    "text": "Can someone explain to me what it means that my pool is not public until I have 8 nodes in my pool? It will not work for public use? Or will just not be listed?"
+  },
+  {
+    "id": "1363452611226894416",
+    "timestamp": "2025-04-20T09:53:54.241Z",
+    "username": "",
+    "text": "Isn't it more informative for people to read and learn in this channel?"
+  },
+  {
+    "id": "1363453001808871614",
+    "timestamp": "2025-04-20T09:55:27.363Z",
+    "username": "",
+    "text": "Notice: This pool is configured to be public but it does not have the minimum number of owned node delegations. Currently, only 2 of the necessary 8 owned nodes have been delegated. It will not be displayed on the public pool dashboard.\n\nJust to be displayed? I would rather not be displayed at all  Just quitly run my nodes in the background"
+  },
+  {
+    "id": "1363453069974835210",
+    "timestamp": "2025-04-20T09:55:55.724Z",
+    "username": "Mr. Pink",
+    "text": "It won’t be listed for public delegation. It will still work. (edited)\nSunday, April 20, 2025 at 5:55 AM"
+  },
+  {
+    "id": "1363453097799848097",
+    "timestamp": "2025-04-20T09:55:50.249Z",
+    "username": "EZ | Node Operator",
+    "text": "You need minimum 8 nodes for a public pool."
+  },
+  {
+    "id": "1363453230306164816",
+    "timestamp": "2025-04-20T09:56:21.841Z",
+    "username": "Sandergutt",
+    "text": "But a private node pool will still deliver files and work?"
+  },
+  {
+    "id": "1363453259108585535",
+    "timestamp": "2025-04-20T09:56:28.708Z",
+    "username": "",
+    "text": "I should change to private mode?"
+  },
+  {
+    "id": "1363453521550377111",
+    "timestamp": "2025-04-20T09:57:51.873Z",
+    "username": "Mr. Pink",
+    "text": "Whether it’s set to private or public it will still serve files. Setting it to public merely allows people to delegate to your pool (once that functionality is available) (edited)\nSunday, April 20, 2025 at 5:57 AM"
+  },
+  {
+    "id": "1363453555507204106",
+    "timestamp": "2025-04-20T09:57:39.375Z",
+    "username": "EZ | Node Operator",
+    "text": "Yeah you could run 1 or 5 or whatever to help out the network,..\nIdeal for running a Node from home for example."
+  },
+  {
+    "id": "1363454004528545823",
+    "timestamp": "2025-04-20T09:59:26.430Z",
+    "username": "",
+    "text": "(less bandwidth needed)"
+  },
+  {
+    "id": "1363454232681910353",
+    "timestamp": "2025-04-20T10:00:20.826Z",
+    "username": "Sandergutt",
+    "text": "Ok thanks guys  \nI think I get it now. You want people to have skin in the game if they are going to have others delegate to their pool. Makes sense so we don't get people popping up unreliable pools"
+  },
+  {
+    "id": "1363454780545962005",
+    "timestamp": "2025-04-20T10:02:31.447Z",
+    "username": "EZ | Node Operator",
+    "text": "A Raspberry Pi 4/5 is prob the best choice if you are going to run a few nodes from home.\nLow power draw and all."
+  },
+  {
+    "id": "1363484590102155514",
+    "timestamp": "2025-04-20T12:00:58.599Z",
+    "username": "Brax in Tokyo",
+    "text": "I have a single node, I know it can't be delegated to, and that it won't show up in the public pools dashboard. However, it would still be nice to see it's performance strength like the people who have eight nodes."
+  },
+  {
+    "id": "1363486313881407571",
+    "timestamp": "2025-04-20T12:07:49.580Z",
+    "username": "Smecol [🌽Mafia]",
+    "text": "Spam above"
+  },
+  {
+    "id": "1363499488416764105",
+    "timestamp": "2025-04-20T13:00:10.634Z",
+    "username": "Brax in Tokyo",
+    "text": "I'm getting the pictured error. The health check is \"OK\" when checked on mobile. It's happening when I download the game via nodes. \nMy question is: When I download the game utilizing nodes, does it cause my node to act differently?"
+  },
+  {
+    "id": "1363500004664283207",
+    "timestamp": "2025-04-20T13:02:13.717Z",
+    "username": "EZ | Node Operator",
+    "text": "Myself, i got 4G internet. I have noticed i get them aswell when i try with the nodes for download.  Do you have mobile internet or fibre or similar."
+  },
+  {
+    "id": "1363500584279343246",
+    "timestamp": "2025-04-20T13:04:31.908Z",
+    "username": "Brax in Tokyo",
+    "text": "I have 2G fiber. I was wondering since there are only a few APAC nodes if it was something that was intended so you don't download from your own node. People could pump their nodes numbers by doing repeat downloads."
+  },
+  {
+    "id": "1363501239412854804",
+    "timestamp": "2025-04-20T13:07:08.104Z",
+    "username": "EZ | Node Operator",
+    "text": "naah.. that i cant see being the reason, downloading from your own node shouldnt be the issue. If you have fiber im not sure what could be the issue. Do you have the nodse hosted at home or on a vps or such?"
+  },
+  {
+    "id": "1363501865043492945",
+    "timestamp": "2025-04-20T13:09:37.266Z",
+    "username": "Brax in Tokyo",
+    "text": "It's hosted at home.  It had a bunch of successes earlier. It was just happening when I download. I'm not too worried about it, just thought it was a weird coincidence."
+  },
+  {
+    "id": "1363502997484605562",
+    "timestamp": "2025-04-20T13:14:07.261Z",
+    "username": "EZ | Node Operator",
+    "text": "i see i see....  Considering you got successfull downloads from it and all i  cant see the ip/port beeing an issue , you got static ip adress or dynamic?"
+  },
+  {
+    "id": "1363503561195131041",
+    "timestamp": "2025-04-20T13:16:35.178Z",
+    "username": "Brax in Tokyo",
+    "text": "Static and port forwarded as well. It's also an Iagon node, which shouldn't interfere. It'd be nice to have a test button. (edited)\nSunday, April 20, 2025 at 9:16 AM"
+  },
+  {
+    "id": "1363503891056164924",
+    "timestamp": "2025-04-20T13:17:40.305Z",
+    "username": "EZ | Node Operator",
+    "text": "mmm.. hard to troubleshoot when the error codes dont say very much huh."
+  },
+  {
+    "id": "1363504159873306908",
+    "timestamp": "2025-04-20T13:18:44.396Z",
+    "username": "Brax in Tokyo",
+    "text": "Yeah, I'll start worrying when it affects the payouts"
+  },
+  {
+    "id": "1363508998577324102",
+    "timestamp": "2025-04-20T13:37:58.033Z",
+    "username": "Mr. Pink",
+    "text": "The same metrics will be available from your account, next week maybe, work is done, with QA."
+  },
+  {
+    "id": "1363533417568010290",
+    "timestamp": "2025-04-20T15:14:59.974Z",
+    "username": "Steve 'Corn Pops'",
+    "text": "It would be really cool if we collected device details on connection, so that we could see if the connection is to a potato or not.\nMy sense is that there are a lot of low end/ mobile users in that region."
+  },
+  {
+    "id": "1363538517619249272",
+    "timestamp": "2025-04-20T15:39:52.682Z",
+    "username": "EggsAnyStyle [G4G] [INTP-A]",
+    "text": "I've been trying to make sense of this graph.  I watched intently on 4/11 when we did the breaking corn event and my server (nload) was telling me I was sending at a much higher rate than this graph shows.  It was closer to the data point on 4/19.  I believe I heard that these numbers are reported by the client, but I don't think I can send any faster than the client can receive, so wondering why my server is telling me a different story. ... It looks like a lot of folks in all regions had a spike yesterday.   What do you make of it?  Does this graph match what your server is telling you?  Maybe I am not using an adequate tool (nload) to monitor my server side activity? (edited)\nSunday, April 20, 2025 at 11:39 AM"
+  },
+  {
+    "id": "1363543119899000934",
+    "timestamp": "2025-04-20T15:53:33.190Z",
+    "username": "EggsAnyStyle [G4G] [INTP-A]",
+    "text": "Thanks for the tip! I'll have a look."
+  },
+  {
+    "id": "1363598680673747206",
+    "timestamp": "2025-04-20T19:34:19.911Z",
+    "username": "FishingForCardano[🌽Mafia]",
+    "text": "My spike yesterday was massive. Also moved me to 4 bar strength in 7 days of being up and running."
+  },
+  {
+    "id": "1363599072862404728",
+    "timestamp": "2025-04-20T19:35:53.416Z",
+    "username": "FishingForCardano[🌽Mafia]",
+    "text": "Can I use this on a VPS. Sorry for my stupid questions. I’m still learning."
+  },
+  {
+    "id": "1363599966605414570",
+    "timestamp": "2025-04-20T19:39:26.501Z",
+    "username": "EggsAnyStyle [G4G] [INTP-A]",
+    "text": "I looked into it.  You should be able to.  It's open source and you can install it via a script that is provided.  The netdata.cloud website looks to be the resource site.   I haven't tried it out yet, so can't comment further."
+  },
+  {
+    "id": "1363600185577439313",
+    "timestamp": "2025-04-20T19:40:18.708Z",
+    "username": "FishingForCardano[🌽Mafia]",
+    "text": "Thanks. I’ll look into it."
+  },
+  {
+    "id": "1363702097039851681",
+    "timestamp": "2025-04-21T02:25:16.294Z",
+    "username": "Corny \"B\" | Knights⚔",
+    "text": "I have a Mac Mini M2 with the same setup. One Corn pool and an Iagon Node"
+  },
+  {
+    "id": "1363709574770720839",
+    "timestamp": "2025-04-21T02:54:59.124Z",
+    "username": "Corny \"B\" | Knights⚔",
+    "text": "Welcome home good sir"
+  },
+  {
+    "id": "1363739775126736906",
+    "timestamp": "2025-04-21T05:13:22.862Z",
+    "username": "sym",
+    "text": "hi all- question for anyone that might know- how is \"speed\" calculated in the charts? my internal numbers are showing vastly higher upload speeds than being reported in charts on the site... just curious... also seems to be a seriously important metric for \"strength\" (edited)\nMonday, April 21, 2025 at 1:13 AM"
+  },
+  {
+    "id": "1363748335428702400",
+    "timestamp": "2025-04-21T05:29:22.643Z",
+    "username": "Rene - QA",
+    "text": "Daily speed on the chart is average of all your daily upload speeds (edited)\nMonday, April 21, 2025 at 1:29 AM"
+  },
+  {
+    "id": "1363867255418388490",
+    "timestamp": "2025-04-21T13:21:33.120Z",
+    "username": "sym",
+    "text": "Yeah- just seems off is what i'm saying- skimming through even what is reported in logs- let alone upload speeds I am seeing on my network for the burst that send the chunks"
+  },
+  {
+    "id": "1363879184929263626",
+    "timestamp": "2025-04-21T14:08:57.337Z",
+    "username": "Rene - QA",
+    "text": "Report as a bug via launcher with as much data as possible and i will pass to the devs"
+  },
+  {
+    "id": "1363880034355642489",
+    "timestamp": "2025-04-21T14:12:19.856Z",
+    "username": "sym",
+    "text": "I don't know if it is a bug- and i'm not complaining. . . just seems to be a feature that considers client and more variables than simple \"speed\"- appreciate the advice though rene."
+  },
+  {
+    "id": "1363880998852624576",
+    "timestamp": "2025-04-21T14:16:09.810Z",
+    "username": "",
+    "text": "would be cool to know exactly how this number is being computed. . ."
+  },
+  {
+    "id": "1363883028975456469",
+    "timestamp": "2025-04-21T14:24:13.829Z",
+    "username": "EZ | Node Operator",
+    "text": "I got a 25Gbps  vps and the speeds dont look to charming yet, granted not many downloads from my region yet.."
+  },
+  {
+    "id": "1363889991972946131",
+    "timestamp": "2025-04-21T14:51:53.937Z",
+    "username": "ScoobyDooBopBop",
+    "text": "How much is that service?"
+  },
+  {
+    "id": "1363893034332324144",
+    "timestamp": "2025-04-21T15:03:59.292Z",
+    "username": "FishingForCardano[🌽Mafia]",
+    "text": "Curious as well"
+  },
+  {
+    "id": "1363902376385445908",
+    "timestamp": "2025-04-21T15:41:06.611Z",
+    "username": "EZ | Node Operator",
+    "text": "I believe it was 340 euro for 12 months. \nSo Yeah could get a couple pools on Contabo for that price."
+  },
+  {
+    "id": "1363903817636118759",
+    "timestamp": "2025-04-21T15:46:50.232Z",
+    "username": "",
+    "text": "Divide by ten for usd"
+  },
+  {
+    "id": "1363906306007629885",
+    "timestamp": "2025-04-21T15:56:43.506Z",
+    "username": "Rene - QA",
+    "text": "Couldn't find it on Google. Is it from LG or what?"
+  },
+  {
+    "id": "1363906525596488002",
+    "timestamp": "2025-04-21T15:57:35.860Z",
+    "username": "EZ | Node Operator",
+    "text": "Naah . Hostup dot se"
+  },
+  {
+    "id": "1363906691086680266",
+    "timestamp": "2025-04-21T15:58:15.316Z",
+    "username": "",
+    "text": "Swedish vps provider."
+  },
+  {
+    "id": "1363906938068537456",
+    "timestamp": "2025-04-21T15:59:14.201Z",
+    "username": "",
+    "text": ""
+  },
+  {
+    "id": "1363911881961640157",
+    "timestamp": "2025-04-21T16:18:52.917Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Where does it tell you port speed? 25 Gbps is insane for that price. Did you mean 2.5Gbps?"
+  },
+  {
+    "id": "1363915593639788664",
+    "timestamp": "2025-04-21T16:33:37.850Z",
+    "username": "EZ | Node Operator",
+    "text": "I believe they upgraded from 10gbit to 25 last year if im not mistaken. \nScrolling thru the information it says 25Gbps \nAlthough the one i choosed. 20tb a month bandwidth"
+  },
+  {
+    "id": "1363916192368038071",
+    "timestamp": "2025-04-21T16:36:00.598Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Have you tried running a speed test?"
+  },
+  {
+    "id": "1363916493263474868",
+    "timestamp": "2025-04-21T16:37:12.337Z",
+    "username": "EZ | Node Operator",
+    "text": "I have not.  Was thinking of that speedtest cli when i got the time."
+  },
+  {
+    "id": "1363916717390172361",
+    "timestamp": "2025-04-21T16:38:05.773Z",
+    "username": "ScoobyDooBopBop",
+    "text": "it might already be installed. just type \"speedtest\" in terminal. i found that both of my servers came with it, which was pretty cool."
+  },
+  {
+    "id": "1363917109482098908",
+    "timestamp": "2025-04-21T16:39:39.255Z",
+    "username": "EZ | Node Operator",
+    "text": "Ubuntu 24.04?"
+  },
+  {
+    "id": "1363917171201147030",
+    "timestamp": "2025-04-21T16:39:53.970Z",
+    "username": "",
+    "text": "Gonna check it out"
+  },
+  {
+    "id": "1363917265606545670",
+    "timestamp": "2025-04-21T16:40:16.478Z",
+    "username": "ScoobyDooBopBop",
+    "text": "yup"
+  },
+  {
+    "id": "1363918840458645706",
+    "timestamp": "2025-04-21T16:46:31.952Z",
+    "username": "EZ | Node Operator",
+    "text": "had to install it, but got"
+  },
+  {
+    "id": "1363919678023532764",
+    "timestamp": "2025-04-21T16:49:51.643Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Nice, good speed. So looks like the 25Gbps is shared between everyone then."
+  },
+  {
+    "id": "1363919776920899695",
+    "timestamp": "2025-04-21T16:50:15.222Z",
+    "username": "EZ | Node Operator",
+    "text": "yeah. Will contact support for some clarification."
+  },
+  {
+    "id": "1363970838952411217",
+    "timestamp": "2025-04-21T20:13:09.359Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "Just looked a little around at Hostup.se at the plan you mentioned (LG), for 27 euro that is a pretty good deal! I think its better then the Contabo I have now around the same price"
+  },
+  {
+    "id": "1363973383082999929",
+    "timestamp": "2025-04-21T20:23:15.927Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "what is a good ms latency to run nodes?"
+  },
+  {
+    "id": "1364046086951669860",
+    "timestamp": "2025-04-22T01:12:09.880Z",
+    "username": "Gus T. Wind",
+    "text": "Check out smartape.net"
+  },
+  {
+    "id": "1364046162172186687",
+    "timestamp": "2025-04-22T01:12:27.814Z",
+    "username": "",
+    "text": "For dedicated and VPS"
+  },
+  {
+    "id": "1364061793630289931",
+    "timestamp": "2025-04-22T02:14:34.644Z",
+    "username": "Black Knight ⚔🌽⚔",
+    "text": "@copiboar @Rene - QA"
+  },
+  {
+    "id": "1364061996273897492",
+    "timestamp": "2025-04-22T02:15:22.958Z",
+    "username": "",
+    "text": "Also in ⁠game-chat and ⁠💸│technical-analysis-price"
+  },
+  {
+    "id": "1364063027258724463",
+    "timestamp": "2025-04-22T02:19:28.764Z",
+    "username": "",
+    "text": "@Jupiter_Rising"
+  },
+  {
+    "id": "1364154958022180965",
+    "timestamp": "2025-04-22T08:24:46.766Z",
+    "username": "Stem ⚔",
+    "text": "Morning ,am i supposed to put my nodes in a pool ? im just running mine as they have been since the start ,am i losing out by doing that ? thx"
+  },
+  {
+    "id": "1364156940405706824",
+    "timestamp": "2025-04-22T08:32:39.403Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "You can add your node licences to your pool. But currently all the rewards are given only for regestering them."
+  },
+  {
+    "id": "1364157101705789542",
+    "timestamp": "2025-04-22T08:33:17.860Z",
+    "username": "",
+    "text": "Keep an eye on the announcements when the reward phase shifts to pool operation."
+  },
+  {
+    "id": "1364157340630253578",
+    "timestamp": "2025-04-22T08:34:14.824Z",
+    "username": "Stem ⚔",
+    "text": "so im good for now"
+  },
+  {
+    "id": "1364157542678401024",
+    "timestamp": "2025-04-22T08:35:02.996Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "If you want to test out what the strain is on your setup with all your nodes added to your pool, you can do that.\n\nRewards-wise, nothing lost."
+  },
+  {
+    "id": "1364168729029644399",
+    "timestamp": "2025-04-22T09:19:30.030Z",
+    "username": "Beach_bum",
+    "text": "hi"
+  },
+  {
+    "id": "1364169801320103976",
+    "timestamp": "2025-04-22T09:23:45.684Z",
+    "username": "",
+    "text": "node floor price on jpeg store  505 ada  current ada price $0.64"
+  },
+  {
+    "id": "1364246510044319774",
+    "timestamp": "2025-04-22T14:28:34.469Z",
+    "username": "EZ | Node Operator",
+    "text": "Its not too bad of a  deal..\nThe minus is if your bandwidth exceeds the monthly then have to buy more or you are throttled  to 10mb/s.. \nContabo atleast just throttles to 100mb."
+  },
+  {
+    "id": "1364255798821130372",
+    "timestamp": "2025-04-22T15:05:29.086Z",
+    "username": "EZ | Node Operator",
+    "text": "have you tested iperf3 instead of speedtest i read its recommended over speedtest"
+  },
+  {
+    "id": "1364256201264595044",
+    "timestamp": "2025-04-22T15:07:05.036Z",
+    "username": "Rene - QA",
+    "text": ""
+  },
+  {
+    "id": "1364256300069814366",
+    "timestamp": "2025-04-22T15:07:28.593Z",
+    "username": "ScoobyDooBopBop",
+    "text": "first time im hearing about it. will def check it out, ty"
+  },
+  {
+    "id": "1364256310748647474",
+    "timestamp": "2025-04-22T15:07:31.139Z",
+    "username": "Rene - QA",
+    "text": "This one gotta be good"
+  },
+  {
+    "id": "1364256573613936661",
+    "timestamp": "2025-04-22T15:08:33.811Z",
+    "username": "Mr. Pink",
+    "text": "Good day node enthusiasts!\n,\nMinor update today but an important one. \n\nWe have pushed an update to the website that adds pool metrics to the private dashboard. We have also added avg. values to the relevant charts to provide a little more information at your finger tips."
+  },
+  {
+    "id": "1364256821996425298",
+    "timestamp": "2025-04-22T15:09:33.030Z",
+    "username": "EZ | Node Operator",
+    "text": "yeah i just read that speedtest servers usually capped at around 1gbit so unreliable for checking ur vps speed. if its accurate or not, not sure-"
+  },
+  {
+    "id": "1364257270212460615",
+    "timestamp": "2025-04-22T15:11:19.893Z",
+    "username": "ScoobyDooBopBop",
+    "text": ""
+  },
+  {
+    "id": "1364257295395196978",
+    "timestamp": "2025-04-22T15:11:25.897Z",
+    "username": "ScoobyDooBopBop",
+    "text": ""
+  },
+  {
+    "id": "1364257446822023239",
+    "timestamp": "2025-04-22T15:12:02.000Z",
+    "username": "EZ | Node Operator",
+    "text": ""
+  },
+  {
+    "id": "1364257532125773825",
+    "timestamp": "2025-04-22T15:12:22.338Z",
+    "username": "ScoobyDooBopBop",
+    "text": "oh wow, good catch"
+  },
+  {
+    "id": "1364257841732522155",
+    "timestamp": "2025-04-22T15:13:36.154Z",
+    "username": "EZ | Node Operator",
+    "text": "i got these with the example config above:"
+  },
+  {
+    "id": "1364264826385469511",
+    "timestamp": "2025-04-22T15:41:21.425Z",
+    "username": "Rene - QA",
+    "text": "Insane"
+  },
+  {
+    "id": "1364274567006261370",
+    "timestamp": "2025-04-22T16:20:03.770Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "what is ERR#009?"
+  },
+  {
+    "id": "1364278752992952400",
+    "timestamp": "2025-04-22T16:37:42.160Z",
+    "username": "Rene - QA",
+    "text": "Client side. We all got errors during this client download. (edited)\nTuesday, April 22, 2025 at 12:37 PM"
+  },
+  {
+    "id": "1364278799734411404",
+    "timestamp": "2025-04-22T16:37:08.646Z",
+    "username": "SIMBA[NORTH👑] ¦ OG & Founder",
+    "text": "I've tested this provider because i don't live that far from them. Much more bang for the buck than contabo if you live in EU and wanna have anything else than Contabo. Have also tested their claimed bandwidth different times on the day and is all seems good. Also done some hardware test to see that it outperforms contabo and obviously it does  (edited)\nTuesday, April 22, 2025 at 12:37 PM"
+  },
+  {
+    "id": "1364278981892771851",
+    "timestamp": "2025-04-22T16:37:36.361Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "i went for first time on dashboard, red one bar  anything should be proactively be done here to get green quality?"
+  },
+  {
+    "id": "1364279300278190220",
+    "timestamp": "2025-04-22T16:38:52.270Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "agree, ill switch as well as im in EU region as well, saw what they offer and its pretty awesome for what you pay for it!"
+  },
+  {
+    "id": "1364279321086132265",
+    "timestamp": "2025-04-22T16:38:57.231Z",
+    "username": "Rene - QA",
+    "text": "Nothing you can do. This was a client with very very super bad internet. In the future when there will be more requests it will average out"
+  },
+  {
+    "id": "1364279529723527199",
+    "timestamp": "2025-04-22T16:39:46.974Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "so maybe this is a good time to switch provider from Contabo?  Will the bars turn green over time?"
+  },
+  {
+    "id": "1364279572643844199",
+    "timestamp": "2025-04-22T16:43:04.516Z",
+    "username": "SIMBA[NORTH👑] ¦ OG & Founder",
+    "text": "As soon corn-nodes get more activity i will probably have at least one there also  my other nodes ive got at home with 1gbit line (edited)\nTuesday, April 22, 2025 at 12:43 PM"
+  },
+  {
+    "id": "1364279736704176199",
+    "timestamp": "2025-04-22T16:40:43.128Z",
+    "username": "Rene - QA",
+    "text": "It has nothing to do with your VPS. This is client side error. From the user that downloaded the game (edited)\nTuesday, April 22, 2025 at 12:40 PM"
+  },
+  {
+    "id": "1364280039515885598",
+    "timestamp": "2025-04-22T16:41:48.518Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "ah ok, the long time running FileNodes could carry this red one, as this was my first, it went red all the way"
+  },
+  {
+    "id": "1364280112287186975",
+    "timestamp": "2025-04-22T16:42:05.868Z",
+    "username": "",
+    "text": "thanks"
+  },
+  {
+    "id": "1364280250799886366",
+    "timestamp": "2025-04-22T16:42:38.892Z",
+    "username": "Rene - QA",
+    "text": "Yeah i know, this one was pretty bad. We all have noticed."
+  },
+  {
+    "id": "1364280376419418192",
+    "timestamp": "2025-04-22T16:43:08.842Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "is there a list with errors and procedures to follow to do maintenance if needed?"
+  },
+  {
+    "id": "1364280809636364298",
+    "timestamp": "2025-04-22T16:44:52.129Z",
+    "username": "Rene - QA",
+    "text": "We don't have it yet. I'm sure there will be something in the future"
+  },
+  {
+    "id": "1364280991912562699",
+    "timestamp": "2025-04-22T16:45:35.587Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "thanks"
+  },
+  {
+    "id": "1364308697442029639",
+    "timestamp": "2025-04-22T18:35:41.100Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "On VPS LG plan, what's the Avg. Speed (xxxxx MB / Sec) you get?"
+  },
+  {
+    "id": "1364346537588822026",
+    "timestamp": "2025-04-22T21:06:02.894Z",
+    "username": "Juri Lespor (🌽Mafia)",
+    "text": "I recommend create a channel; FORUM format for Node FAQ & Troubleshoot and letting the community write it up"
+  },
+  {
+    "id": "1364366649456594986",
+    "timestamp": "2025-04-22T22:25:57.937Z",
+    "username": "beyourown",
+    "text": "Hello fellow node holders! I originally bought my nodes because I was living in a city and had a few machines I could run the nodes from. I now am in the country with bad wifi and don’t have the time / money to rent out a server and set up a cloud based solution. So, is there a secondary market where I can sell my nodes to others who will actually use them for the betterment of COPI?"
+  },
+  {
+    "id": "1364367324366377000",
+    "timestamp": "2025-04-22T22:28:38.848Z",
+    "username": "Black Knight ⚔🌽⚔",
+    "text": "Becareful it's a scam"
+  },
+  {
+    "id": "1364367416036954233",
+    "timestamp": "2025-04-22T22:29:00.704Z",
+    "username": "Black Knight ⚔🌽⚔",
+    "text": "You don't need to sell it—if you're not in a position to keep it on your machine, you can always delegate it"
+  },
+  {
+    "id": "1364367428850548766",
+    "timestamp": "2025-04-22T22:29:03.759Z",
+    "username": "",
+    "text": "If you still want to sell it, there's JPG Store for Cardano and OpenSea for Base"
+  },
+  {
+    "id": "1364399341514657904",
+    "timestamp": "2025-04-23T00:35:52.331Z",
+    "username": "beyourown",
+    "text": "Got it. This sounds like a better path forward. I can do this on the node operator site, yeah?"
+  },
+  {
+    "id": "1364405045780811837",
+    "timestamp": "2025-04-23T00:58:32.334Z",
+    "username": "beyourown",
+    "text": "Got it. So I’ll keep my eyes out for the delegation option. If had them registered since last summer so all good there."
+  },
+  {
+    "id": "1364413252699684976",
+    "timestamp": "2025-04-23T01:31:09.016Z",
+    "username": "vk",
+    "text": "Any suggestions for south East Asian region’s vps provider,"
+  },
+  {
+    "id": "1364414362529300592",
+    "timestamp": "2025-04-23T01:35:33.620Z",
+    "username": "vk",
+    "text": "There is no issue , I am just asking which would be the best vps provider for SE region… like ppl talking about contabo for EU etc"
+  },
+  {
+    "id": "1364414514795253781",
+    "timestamp": "2025-04-23T01:36:09.923Z",
+    "username": "",
+    "text": "lol… that was a scammer imo"
+  },
+  {
+    "id": "1364421875341721630",
+    "timestamp": "2025-04-23T02:05:24.814Z",
+    "username": "CornVision",
+    "text": "Are we going to be notified when rewards for registered only will stop?"
+  },
+  {
+    "id": "1364421986474000405",
+    "timestamp": "2025-04-23T02:05:51.310Z",
+    "username": "",
+    "text": "Staap it"
+  },
+  {
+    "id": "1364422460119973949",
+    "timestamp": "2025-04-23T02:07:44.236Z",
+    "username": "",
+    "text": "Must be a good project. High ratio of scammers"
+  },
+  {
+    "id": "1364423038992646298",
+    "timestamp": "2025-04-23T02:10:02.250Z",
+    "username": "CornVision",
+    "text": "There was a scammer again posting a discord invite"
+  },
+  {
+    "id": "1364423178213916753",
+    "timestamp": "2025-04-23T02:10:35.443Z",
+    "username": "CornVision",
+    "text": "Ok I hope I won't miss it. And I hope we will.be noticed early enough to be able to catch up with all the details how it works"
+  },
+  {
+    "id": "1364497227136892939",
+    "timestamp": "2025-04-23T07:04:50.082Z",
+    "username": "CornBredDude",
+    "text": "!node"
+  },
+  {
+    "id": "1364497232098758677",
+    "timestamp": "2025-04-23T07:04:51.265Z",
+    "username": "Dyno",
+    "text": ""
+  },
+  {
+    "id": "1364558513904422942",
+    "timestamp": "2025-04-23T11:08:21.986Z",
+    "username": "Beach_bum",
+    "text": "Hi"
+  },
+  {
+    "id": "1364558783287656559",
+    "timestamp": "2025-04-23T11:10:22.699Z",
+    "username": "",
+    "text": "ada is at $0.70 now, node floor on Jpeg store is  495 ada. (edited)\nWednesday, April 23, 2025 at 7:10 AM"
+  },
+  {
+    "id": "1364629124949213284",
+    "timestamp": "2025-04-23T15:48:56.971Z",
+    "username": "AlexL",
+    "text": "I buy nodes at opensea for under $200"
+  },
+  {
+    "id": "1364669129549676555",
+    "timestamp": "2025-04-23T18:27:54.811Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "Hey!"
+  },
+  {
+    "id": "1364669167633956987",
+    "timestamp": "2025-04-23T18:28:03.891Z",
+    "username": "",
+    "text": "how to get a red pool to green?"
+  },
+  {
+    "id": "1364671705167167639",
+    "timestamp": "2025-04-23T18:38:08.886Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "interesting is this better then restart from scratch, take a fresh start? I think I figured it out.. I was early on curious to get it activated with the keys but not connected to go online on VPS, but all of that time it counted, so 1,5 month without activity, just recently, less then a week, its up and running by VPS"
+  },
+  {
+    "id": "1364671897853493308",
+    "timestamp": "2025-04-23T18:38:54.826Z",
+    "username": "",
+    "text": "I would be tainted to redo it, day 1 reset (if possible)"
+  },
+  {
+    "id": "1364672063025188885",
+    "timestamp": "2025-04-23T18:39:34.206Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "ok, see you in twee weeks!   I can't do anything more now, its up"
+  },
+  {
+    "id": "1364672184672456704",
+    "timestamp": "2025-04-23T18:40:10.422Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "thanks for the insights! (edited)\nWednesday, April 23, 2025 at 2:40 PM"
+  },
+  {
+    "id": "1364672788472004608",
+    "timestamp": "2025-04-23T18:42:27.166Z",
+    "username": "EZ | Node Operator",
+    "text": "I noticed drop in success rate across eu pools 04-22.  Atleast some of us."
+  },
+  {
+    "id": "1364673288554676275",
+    "timestamp": "2025-04-23T18:44:26.395Z",
+    "username": "",
+    "text": "I see i see... Cool with these new features we can toggle"
+  },
+  {
+    "id": "1364674133677576343",
+    "timestamp": "2025-04-23T18:47:47.888Z",
+    "username": "EZ | Node Operator",
+    "text": "Yeah sounds logical.. I mean, the  current traffic is not much."
+  },
+  {
+    "id": "1364675028209242192",
+    "timestamp": "2025-04-23T18:51:21.161Z",
+    "username": "",
+    "text": "Kinda same thing with bandwidth for us, if just 1 client downloads vs 30 in parallell"
+  },
+  {
+    "id": "1364681512796295210",
+    "timestamp": "2025-04-23T19:17:07.207Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "So I'm not the only one"
+  },
+  {
+    "id": "1364847550108008459",
+    "timestamp": "2025-04-24T06:16:53.587Z",
+    "username": "SiegeWulf (Kiwi Crypto)[🌽Mafia]",
+    "text": "Anyone over Aus/NZ way that is able to start a Client D/L to test this region please?  I want to see if someone outside my immediate zone triggers my uploads - mine has been there but seeing lots of errors recently -  just checked and changed a few network param's and want to test it - but no-one is d/l'ing anything, hah"
+  },
+  {
+    "id": "1364886902251061300",
+    "timestamp": "2025-04-24T08:53:15.869Z",
+    "username": "Beach_bum",
+    "text": "hi"
+  },
+  {
+    "id": "1365121178762481674",
+    "timestamp": "2025-04-25T00:24:11.742Z",
+    "username": "Tracer | Knights ⚔",
+    "text": "Does it take 15 cycles for a pool to show up in the public pools dashboard?"
+  },
+  {
+    "id": "1365121339735675050",
+    "timestamp": "2025-04-25T00:24:50.121Z",
+    "username": "FishingForCardano[🌽Mafia]",
+    "text": "No it shows up almost right away"
+  },
+  {
+    "id": "1365121498557186148",
+    "timestamp": "2025-04-25T00:25:27.987Z",
+    "username": "Tracer | Knights ⚔",
+    "text": "Strange, I don't see mine in the public pool but it shows Im green and online in my node profile"
+  },
+  {
+    "id": "1365121532308881459",
+    "timestamp": "2025-04-25T00:25:36.034Z",
+    "username": "FishingForCardano[🌽Mafia]",
+    "text": "dont click that"
+  },
+  {
+    "id": "1365121657639010324",
+    "timestamp": "2025-04-25T00:26:05.915Z",
+    "username": "Tracer | Knights ⚔",
+    "text": "No Sir"
+  },
+  {
+    "id": "1365121686449553580",
+    "timestamp": "2025-04-25T00:26:12.784Z",
+    "username": "FishingForCardano[🌽Mafia]",
+    "text": "Ok just making sure"
+  },
+  {
+    "id": "1365121800425701386",
+    "timestamp": "2025-04-25T00:26:39.958Z",
+    "username": "",
+    "text": "Is it set to public?"
+  },
+  {
+    "id": "1365121814627352607",
+    "timestamp": "2025-04-25T00:26:43.344Z",
+    "username": "",
+    "text": "Or private?"
+  },
+  {
+    "id": "1365121828133146694",
+    "timestamp": "2025-04-25T00:26:46.564Z",
+    "username": "Tracer | Knights ⚔",
+    "text": "Thank you!"
+  },
+  {
+    "id": "1365121873842671616",
+    "timestamp": "2025-04-25T00:26:57.462Z",
+    "username": "FishingForCardano[🌽Mafia]",
+    "text": "We all have to look out for each other"
+  },
+  {
+    "id": "1365121897221718066",
+    "timestamp": "2025-04-25T00:27:03.036Z",
+    "username": "Tracer | Knights ⚔",
+    "text": "That might be why, its set to private"
+  },
+  {
+    "id": "1365121931774525440",
+    "timestamp": "2025-04-25T00:27:11.274Z",
+    "username": "FishingForCardano[🌽Mafia]",
+    "text": "Yeah thats the problem"
+  },
+  {
+    "id": "1365121961755414528",
+    "timestamp": "2025-04-25T00:27:18.422Z",
+    "username": "",
+    "text": "Move it to public and you will see it"
+  },
+  {
+    "id": "1365122163329208360",
+    "timestamp": "2025-04-25T00:28:06.481Z",
+    "username": "Tracer | Knights ⚔",
+    "text": "Just made the change, thanks!"
+  },
+  {
+    "id": "1365122210074853377",
+    "timestamp": "2025-04-25T00:28:17.626Z",
+    "username": "FishingForCardano[🌽Mafia]",
+    "text": "Awesome. Ill keep an eye out for it"
+  },
+  {
+    "id": "1365122306476740618",
+    "timestamp": "2025-04-25T00:28:40.610Z",
+    "username": "Tracer | Knights ⚔",
+    "text": "I will have to wait for the next refresh"
+  },
+  {
+    "id": "1365127408633774081",
+    "timestamp": "2025-04-25T00:48:57.059Z",
+    "username": "Corny \"B\" | Knights⚔",
+    "text": "Sweet. Finally made it to four bars of strength"
+  },
+  {
+    "id": "1365131465846820946",
+    "timestamp": "2025-04-25T01:05:04.374Z",
+    "username": "FishingForCardano[🌽Mafia]",
+    "text": "Awesome!!"
+  },
+  {
+    "id": "1365202566488657970",
+    "timestamp": "2025-04-25T05:47:36.088Z",
+    "username": "Rene - QA",
+    "text": "It takes 24-48 hours to show up"
+  },
+  {
+    "id": "1365228983741972490",
+    "timestamp": "2025-04-25T07:32:34.452Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "Shhhh! That's how you invoke potato clients."
+  },
+  {
+    "id": "1365342345477750835",
+    "timestamp": "2025-04-25T15:03:01.996Z",
+    "username": "en4ble",
+    "text": "Hello, where can we find guides for node deployment? Thank you in advance"
+  },
+  {
+    "id": "1365342744918102097",
+    "timestamp": "2025-04-25T15:04:37.230Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "!node"
+  },
+  {
+    "id": "1365342750492590150",
+    "timestamp": "2025-04-25T15:04:38.559Z",
+    "username": "Dyno",
+    "text": ""
+  },
+  {
+    "id": "1365342767152103424",
+    "timestamp": "2025-04-25T15:04:42.531Z",
+    "username": "Beowulf Cornelius: Infinity Sage",
+    "text": "!pool"
+  },
+  {
+    "id": "1365342776731897927",
+    "timestamp": "2025-04-25T15:04:44.815Z",
+    "username": "Dyno",
+    "text": ""
+  },
+  {
+    "id": "1365349595105857578",
+    "timestamp": "2025-04-25T15:31:50.442Z",
+    "username": "Beach_bum",
+    "text": "hi smooth operators"
+  },
+  {
+    "id": "1365352181653569586",
+    "timestamp": "2025-04-25T15:43:48.481Z",
+    "username": "Beach_bum",
+    "text": "I found visual studio to be usefull when working with .yml files.  I did not make the connection when i was troulbleshooting my yml file and getting help from the group here. (edited)\nFriday, April 25, 2025 at 11:43 AM"
+  },
+  {
+    "id": "1365352365632389162",
+    "timestamp": "2025-04-25T15:42:50.987Z",
+    "username": "",
+    "text": ""
+  },
+  {
+    "id": "1365352501209071716",
+    "timestamp": "2025-04-25T15:43:23.311Z",
+    "username": "",
+    "text": "see how nicely it looks? and remeber, not tabs"
+  },
+  {
+    "id": "1365366807552196658",
+    "timestamp": "2025-04-25T16:40:14.209Z",
+    "username": "oxenhouse",
+    "text": "How many hours ago what this?"
+  },
+  {
+    "id": "1365367769062969474",
+    "timestamp": "2025-04-25T16:44:03.451Z",
+    "username": "",
+    "text": "None of my US servers got hit with a potato today."
+  },
+  {
+    "id": "1365367850004512920",
+    "timestamp": "2025-04-25T16:44:22.749Z",
+    "username": "",
+    "text": "and I have east and west locations."
+  },
+  {
+    "id": "1365374063039479951",
+    "timestamp": "2025-04-25T17:09:04.052Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Yup, VS is good too. I use Notepad++. More lightweight than VS for simple files."
+  },
+  {
+    "id": "1365374397774303269",
+    "timestamp": "2025-04-25T17:10:23.859Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "That's a lot of red!"
+  },
+  {
+    "id": "1365382437131128865",
+    "timestamp": "2025-04-25T17:42:20.591Z",
+    "username": "Steve 'Corn Pops'",
+    "text": "Your Cache Path is not indented the same amount as the others. \nActually you should have only one indent , but as long as they are the same for each level, it will work fine."
+  },
+  {
+    "id": "1365387430819004458",
+    "timestamp": "2025-04-25T18:02:11.179Z",
+    "username": "FishingForCardano[🌽Mafia]",
+    "text": ""
+  },
+  {
+    "id": "1365387482560069705",
+    "timestamp": "2025-04-25T18:02:23.515Z",
+    "username": "",
+    "text": "@BobZilla same time in us no errors here"
+  },
+  {
+    "id": "1365391691422502993",
+    "timestamp": "2025-04-25T18:19:06.986Z",
+    "username": "FishingForCardano[🌽Mafia]",
+    "text": "I have 32 GB ram / nvme 300/ 1gb line /central US."
+  },
+  {
+    "id": "1365395038330159115",
+    "timestamp": "2025-04-25T18:32:24.951Z",
+    "username": "sym",
+    "text": "can i ask where you are downloading from?"
+  },
+  {
+    "id": "1365395277720191008",
+    "timestamp": "2025-04-25T18:33:22.026Z",
+    "username": "",
+    "text": "thanks- looking at speed issues-"
+  },
+  {
+    "id": "1365395643979399331",
+    "timestamp": "2025-04-25T18:34:49.349Z",
+    "username": "",
+    "text": "eventually i would think they would want to separate out east vs west us"
+  },
+  {
+    "id": "1365396251138457610",
+    "timestamp": "2025-04-25T18:37:14.107Z",
+    "username": "Rene - QA",
+    "text": ""
+  },
+  {
+    "id": "1365397493738901534",
+    "timestamp": "2025-04-25T18:42:10.366Z",
+    "username": "Rene - QA",
+    "text": "I feel your pain man"
+  },
+  {
+    "id": "1365397828330852482",
+    "timestamp": "2025-04-25T18:43:30.139Z",
+    "username": "Rene - QA",
+    "text": "Now we even have to deal with Hit & Run guys"
+  },
+  {
+    "id": "1365398222553747558",
+    "timestamp": "2025-04-25T18:45:04.129Z",
+    "username": "",
+    "text": "The client....."
+  },
+  {
+    "id": "1365398918581583992",
+    "timestamp": "2025-04-25T18:47:50.075Z",
+    "username": "sym",
+    "text": "that metric could use some work"
+  },
+  {
+    "id": "1365399142871990332",
+    "timestamp": "2025-04-25T18:48:43.550Z",
+    "username": "EP / EARTHPATH Nodes",
+    "text": "agree"
+  },
+  {
+    "id": "1365399813335678977",
+    "timestamp": "2025-04-25T18:51:23.401Z",
+    "username": "Rene - QA",
+    "text": "True. We are still in development stage. I have no doubt that all this will get better through the development and time. But yeah, all those things need to be addressed"
+  },
+  {
+    "id": "1365408011014897683",
+    "timestamp": "2025-04-25T19:23:57.880Z",
+    "username": "Krikke80",
+    "text": "indeed, knowing this happens a lot, clients with a good bandwidth,.. looks OK.. good for your stats"
+  },
+  {
+    "id": "1365408203168550933",
+    "timestamp": "2025-04-25T19:24:43.693Z",
+    "username": "",
+    "text": "But a lot of clients with a bad bandwidth or maybe located far away happens as well.. which influence a lot the performance of your pool."
+  },
+  {
+    "id": "1365410046795841687",
+    "timestamp": "2025-04-25T19:32:03.248Z",
+    "username": "Krikke80",
+    "text": "That's right, I had a pool with 2 nodes at home as a test, when I downloaded the game myself, it went against the maximum speed of my switch, which was 1gbs. In the meantime I have stopped this pool, due to a restriction of my providers upload speed/bandwidth."
+  },
+  {
+    "id": "1365412660505481337",
+    "timestamp": "2025-04-25T19:42:26.405Z",
+    "username": "Krikke80",
+    "text": "yup, needs to be taken into account somehow"
+  },
+  {
+    "id": "1365414300906160299",
+    "timestamp": "2025-04-25T19:48:57.507Z",
+    "username": "sym",
+    "text": "up time and availability seem like they are under-represented while uncontrollable factors like clients bandwidth of location are over-represented currently"
+  },
+  {
+    "id": "1365414980496920587",
+    "timestamp": "2025-04-25T19:51:39.534Z",
+    "username": "",
+    "text": "amused and hungry now"
+  },
+  {
+    "id": "1365423544011587644",
+    "timestamp": "2025-04-25T20:25:41.235Z",
+    "username": "EggsAnyStyle [G4G] [INTP-A]",
+    "text": "The potatoes impact everyone equally over time don't they?  Everything is distributed.  Adjusting to compensate for them in the metric would just move everyone's metric up or down. I don't see how it would help any one Pool over another.  So, why worry about them?"
+  },
+  {
+    "id": "1365437607575683152",
+    "timestamp": "2025-04-25T21:21:34.250Z",
+    "username": "Corny \"B\" | Knights⚔",
+    "text": "No joke I listened to that song three times today"
+  },
+  {
+    "id": "1365450455542661193",
+    "timestamp": "2025-04-25T22:12:37.444Z",
+    "username": "GeordieR",
+    "text": "If a metric on a well performing server is able to be skewed by a poor client or by poor matching or what I'm trying to say is through no fault of their own, then that metric should not be used as what purpose does it serve if it makes us look bad....I'm sure the team will think like this too, they will want the best representation for the best nodes too.  I fear the metrics may have been over engineered a little.... My thoughts are... Is the server up every 5 mins or less whatever is practical? Is it serving chunks on request, and does it have all of the chunks, ok then great. Maybe a random chunk could be requested at random times to check speed or so too.maybe there could be some sort of multiplier for simply the amount of chunks served in a a specific time period. If your serving lots of people, and serving them fast, you'll be able to serve more....that's a worthwhile thing and should be rewarded more etc. but it just needs to be simple, I wonder what other node systems like iagon do there is tons of examples in web3 where ideas could be shared etc. I love the whole system just wanted to share my thoughts about the node health metrics. Cheers. Love the team, please take everything constructively it's typed with  and"
+  },
+  {
+    "id": "1366343786753691670",
+    "timestamp": "2025-04-28T09:22:24.202Z",
+    "username": "Beach_bum",
+    "text": "Good morning"
+  },
+  {
+    "id": "1366344340544421979",
+    "timestamp": "2025-04-28T09:24:36.236Z",
+    "username": "",
+    "text": "nodes are 377 ada today on jpgstore  current ada price 72 cents"
+  },
+  {
+    "id": "1366344542063689808",
+    "timestamp": "2025-04-28T13:24:43.553Z",
+    "username": "",
+    "text": "i only need 370 more ada to buy another one  (edited)\nMonday, April 28, 2025 at 9:24 AM"
+  },
+  {
+    "id": "1366439506768826428",
+    "timestamp": "2025-04-28T15:42:45.632Z",
+    "username": "Black Knight ⚔🌽⚔",
+    "text": "They're on sale in Base"
+  },
+  {
+    "id": "1366462854433341600",
+    "timestamp": "2025-04-28T17:15:32.149Z",
+    "username": "Juri Lespor (🌽Mafia)",
+    "text": "I keep messaging the jpg.store people that they need auction capability... they wasted time with that meme token launch platform..."
+  },
+  {
+    "id": "1366464495869759530",
+    "timestamp": "2025-04-28T17:22:03.498Z",
+    "username": "Greg H (TwoUtah) 🥔🧱",
+    "text": "I like hearing this.  It is constructive and helpful.  There are several perspectives that need to be represented: pool operator, delegator, client, and Cornucopias.\n\nI know we are not going to make everyone happy, but we are going to try to evolve with what make the most sense for everyone."
+  },
+  {
+    "id": "1366465030157107250",
+    "timestamp": "2025-04-28T17:24:10.882Z",
+    "username": "",
+    "text": "We are not done."
+  },
+  {
+    "id": "1366798376125071451",
+    "timestamp": "2025-04-29T15:39:31.226Z",
+    "username": "Scruffy - QA Manager/Marketing",
+    "text": "@here \n\n Pool Server Update Notice \n\nWe discovered a low-risk issue involving access keys being unintentionally sent in some unencrypted network traffic. There is no known imminent threat, and no rewards are at risk. However, in the spirit of transparency, we wanted to make you aware.\n\nA fix is coming in Pool Server version 1.1.0. We’ll provide more detailed information soon, but for now, please refresh your access key/keys, and update your servers as soon as possible. \n\n\nYou can refresh your key by going to the “manage pools” page, clicking on the desired pool, clicking edit pool, scrolling to the bottom and clicking on the “refresh” button in the “Pool Access Key” section.\n,\n\n\nYou can update your pool server by opening a command prompt / power shell and typing the following command\n,\ndocker compose pull \n\n\nFollowed by\n,\ndocker compose up -d \n\n\nThank you for your understanding and continued support! (edited)\nTuesday, April 29, 2025 at 11:39 AM"
+  },
+  {
+    "id": "1366823463486099608",
+    "timestamp": "2025-04-29T17:08:28.047Z",
+    "username": "Rene - QA",
+    "text": "Rene - QA\nRene - QA\n pinned a message to this channel. See all pinned messages.\n — \n4/29/25, 1:08 PM\nTuesday, April 29, 2025 at 1:08 PM"
+  },
+  {
+    "id": "1366836020678623373",
+    "timestamp": "2025-04-29T17:58:36.313Z",
+    "username": "GeordieR",
+    "text": "Tell me if I'm wrong and I'm happy to be wrong, but wouldn't there need to be instruction to put the access key you generated into the docker-compose.yml file at the correct section before bringing the docker up? (edited)\nTuesday, April 29, 2025 at 1:58 PM"
+  },
+  {
+    "id": "1366838358243934339",
+    "timestamp": "2025-04-29T18:07:39.234Z",
+    "username": "GeordieR",
+    "text": "When you Refresh the key on the website, will the docker commands provided automatically pull the key in? As there's no instructions in the update to do this.\n\nI personally know I need to do this, but our newbies may not."
+  },
+  {
+    "id": "1366838835048218674",
+    "timestamp": "2025-04-29T18:09:32.913Z",
+    "username": "GeordieR",
+    "text": "Ok cool just a suggestion for admin to explain the key replacement in the yml on the update or point to the original install instructions where it tells you how"
+  },
+  {
+    "id": "1366838995664896000",
+    "timestamp": "2025-04-29T18:10:11.207Z",
+    "username": "FishingForCardano[🌽Mafia]",
+    "text": "Newbie"
+  },
+  {
+    "id": "1366839164972044349",
+    "timestamp": "2025-04-29T18:10:51.573Z",
+    "username": "",
+    "text": "I know how to get the new key."
+  },
+  {
+    "id": "1366839471286390895",
+    "timestamp": "2025-04-29T18:12:14.948Z",
+    "username": "GeordieR",
+    "text": "I get where they are coming from too, fair point (edited)\nTuesday, April 29, 2025 at 2:12 PM"
+  },
+  {
+    "id": "1366840406683287675",
+    "timestamp": "2025-04-29T18:15:47.620Z",
+    "username": "Rene - QA",
+    "text": "Do we feel that the instructions on the key replacement are not clear enough?"
+  },
+  {
+    "id": "1366840657150214254",
+    "timestamp": "2025-04-29T18:16:47.336Z",
+    "username": "GeordieR",
+    "text": "You're right I'm just laser focussed on Linux I forgot even about the windows side"
+  },
+  {
+    "id": "1366840839921340527",
+    "timestamp": "2025-04-29T18:17:30.912Z",
+    "username": "ScoobyDooBopBop",
+    "text": "needs more pictures. stick figures would be nice."
+  },
+  {
+    "id": "1366840932766318664",
+    "timestamp": "2025-04-29T18:18:09.906Z",
+    "username": "GeordieR",
+    "text": "I just feel a hint for anyone that might have a slip of the mind to remember to change the compose file to have their new refreshed access  key in, before bringing the node up, but I might be being a little pedantic (edited)\nTuesday, April 29, 2025 at 2:18 PM"
+  },
+  {
+    "id": "1366841393967923302",
+    "timestamp": "2025-04-29T18:19:43.007Z",
+    "username": "GeordieR",
+    "text": "Lol you're not wrong"
+  },
+  {
+    "id": "1366841527258578974",
+    "timestamp": "2025-04-29T18:20:39.206Z",
+    "username": "Rene - QA",
+    "text": "Normally the key storage is a one time thing. In this case it what's an exception because of the key leakage. In the normal updates only the new image will be updated and not the keys as well (edited)\nTuesday, April 29, 2025 at 2:20 PM"
+  },
+  {
+    "id": "1366842309546868881",
+    "timestamp": "2025-04-29T18:23:21.298Z",
+    "username": "GeordieR",
+    "text": "Agreed. It's a rare thing for sure. Im sure most of the node ops will remember where to put the key once they refresh it."
+  },
+  {
+    "id": "1366842548336984207",
+    "timestamp": "2025-04-29T18:24:18.230Z",
+    "username": "Montresor",
+    "text": "I think it could use a sentence in the end to remind the less technically inclined  that the new key needs to go to the docker container initialization like when first setting up."
+  },
+  {
+    "id": "1366843236592648342",
+    "timestamp": "2025-04-29T18:41:51.773Z",
+    "username": "Rene - QA",
+    "text": "@Rob 🌽🦊 could you please add in the copiwiki instructions in the \"Refresh Access key\" section that the new keys needs to be replaced on the docker yml configuration file?\nhttps://copiwiki.cornucopias.io/documentation/nodes/guide-how-to-set-up-a-file-node-pool/pool-server-setup#refreshing-pool-server-access-key (edited)\nTuesday, April 29, 2025 at 2:41 PM"
+  },
+  {
+    "id": "1366856624395780096",
+    "timestamp": "2025-04-29T19:20:14.224Z",
+    "username": "Greg H (TwoUtah) 🥔🧱",
+    "text": "I created a change request for @Rob 🌽🦊 --- Should be on it's way."
+  },
+  {
+    "id": "1366856781401423913",
+    "timestamp": "2025-04-29T19:20:51.657Z",
+    "username": "Rene - QA",
+    "text": "Thanks"
+  },
+  {
+    "id": "1366890186893561957",
+    "timestamp": "2025-04-29T21:33:36.147Z",
+    "username": "Rene - QA",
+    "text": ""
+  },
+  {
+    "id": "1366892189535441020",
+    "timestamp": "2025-04-29T21:41:33.614Z",
+    "username": "GeordieR",
+    "text": "That's great."
+  },
+  {
+    "id": "1366990635672014849",
+    "timestamp": "2025-04-30T04:12:45.002Z",
+    "username": "Corny \"B\" | Knights⚔",
+    "text": "Its a busy week for me. Will try to get this done by weeks end"
+  },
+  {
+    "id": "1366998668938579978",
+    "timestamp": "2025-04-30T04:44:40.282Z",
+    "username": "Bjoerndalen",
+    "text": "Hi, have a short question. I have 2 nodes in my wallet... So I need to have 6000 Copi in my wallet. Now my question is, can i stake this copis e.g. with the VyFinance COPI stake pool or do these 6000 needs to be \"untouched\" on the wallet?"
+  },
+  {
+    "id": "1367005995993137164",
+    "timestamp": "2025-04-30T05:13:47.188Z",
+    "username": "EZ | Node Operator",
+    "text": "You cant stake because the copi no longer in your wallet."
+  },
+  {
+    "id": "1367137239611474000",
+    "timestamp": "2025-04-30T13:55:18.105Z",
+    "username": "GeordieR",
+    "text": "I released an upgrade script yesterday for any guys that had used my Linux install script. It asks the user if they want to replace the pool access key, then they paste it in and it automatically replaces it. Gotta love AI, ive never turned around a script on the same day before."
+  },
+  {
+    "id": "1367150778933837905",
+    "timestamp": "2025-04-30T14:49:06.131Z",
+    "username": "Greg H (TwoUtah) 🥔🧱",
+    "text": "FYI"
+  },
+  {
+    "id": "1367154222369476670",
+    "timestamp": "2025-04-30T15:05:07.587Z",
+    "username": "EggsAnyStyle [G4G] [INTP-A]",
+    "text": "How do you change pool versions?  Are we supposed to be moving to a new version?  Both of mine are 1.0.2 (edited)\nWednesday, April 30, 2025 at 11:05 AM"
+  },
+  {
+    "id": "1367155026736447500",
+    "timestamp": "2025-04-30T15:05:58.886Z",
+    "username": "ScoobyDooBopBop",
+    "text": "@EggsAnyStyle [G4G] [INTP-A]"
+  },
+  {
+    "id": "1367155135590957067",
+    "timestamp": "2025-04-30T15:07:00.220Z",
+    "username": "EggsAnyStyle [G4G] [INTP-A]",
+    "text": "That talks about changing keys.  I did that yesterday.  That didn't change the Pool version though.  Perhaps I didn't do something in the process? (edited)\nWednesday, April 30, 2025 at 11:07 AM"
+  },
+  {
+    "id": "1367155295067050025",
+    "timestamp": "2025-04-30T15:07:02.861Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Interesting. It was supposed to update after pulling new image."
+  },
+  {
+    "id": "1367155398859296858",
+    "timestamp": "2025-04-30T15:07:27.607Z",
+    "username": "Scruffy - QA Manager/Marketing",
+    "text": "You can update your pool server by opening a command prompt / power shell and typing the following command\ndocker compose pull \n\nFollowed by\ndocker compose up -d"
+  },
+  {
+    "id": "1367155417414893750",
+    "timestamp": "2025-04-30T15:07:32.031Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Oh maybe cause that dashboard updates 24hrs"
+  },
+  {
+    "id": "1367155519558520933",
+    "timestamp": "2025-04-30T15:08:11.398Z",
+    "username": "EggsAnyStyle [G4G] [INTP-A]",
+    "text": "I did that Scruffy, when I changed the key yesterday.  I can do it again. (edited)\nWednesday, April 30, 2025 at 11:08 AM"
+  },
+  {
+    "id": "1367155805299937301",
+    "timestamp": "2025-04-30T15:09:04.510Z",
+    "username": "EggsAnyStyle [G4G] [INTP-A]",
+    "text": "Could be. How can I tell the version directly on my server?"
+  },
+  {
+    "id": "1367156291365113917",
+    "timestamp": "2025-04-30T15:11:00.397Z",
+    "username": "ScoobyDooBopBop",
+    "text": "Good question. I'll have to check once im home."
+  },
+  {
+    "id": "1367156536476176396",
+    "timestamp": "2025-04-30T15:11:58.836Z",
+    "username": "EggsAnyStyle [G4G] [INTP-A]",
+    "text": "Just did the pull again and the -d, so we'll see if it works this time."
+  },
+  {
+    "id": "1367156602880131224",
+    "timestamp": "2025-04-30T15:12:22.410Z",
+    "username": "",
+    "text": "Thanks for the help guys! (edited)\nWednesday, April 30, 2025 at 11:12 AM"
+  },
+  {
+    "id": "1367156886696235014",
+    "timestamp": "2025-04-30T15:13:22.335Z",
+    "username": "",
+    "text": "Yes, that worked.  I see 1.1.0 now on the Manage Pools page"
+  },
+  {
+    "id": "1367157243803467950",
+    "timestamp": "2025-04-30T15:14:47.476Z",
+    "username": "",
+    "text": "Must have crossed some wires somehow yesterday, even though it was only two steps."
+  },
+  {
+    "id": "1367158338109833389",
+    "timestamp": "2025-04-30T15:19:08.379Z",
+    "username": "Ray.Racer | Knights ⚔",
+    "text": "Did the same as you @EggsAnyStyle [G4G] [INTP-A] ...Me trying to figure this out late yesterday (as a newb on linux).... Ended up with simply shutting down my pool  I'll try again tonight ."
+  },
+  {
+    "id": "1367182852504027258",
+    "timestamp": "2025-04-30T16:56:33.066Z",
+    "username": "Greg H (TwoUtah) 🥔🧱",
+    "text": "FWIW - changing the key is not easy.  I hope we never have to request you do this again."
+  },
+  {
+    "id": "1367182994011455520",
+    "timestamp": "2025-04-30T16:57:06.804Z",
+    "username": "",
+    "text": "docker compose pull && docker compose up -d -- should be in muscle memory at some point."
+  },
+  {
+    "id": "1367184274276614375",
+    "timestamp": "2025-04-30T17:02:12.043Z",
+    "username": "Steve 'Corn Pops'",
+    "text": "My assumption is that the backend heavy lifting to facilitate this key rotation was much more work than what we pool operators have to do."
+  },
+  {
+    "id": "1367201207252287549",
+    "timestamp": "2025-04-30T18:09:29.179Z",
+    "username": "tedan01",
+    "text": "what is the purpose of this ?"
+  },
+  {
+    "id": "1367202101704527922",
+    "timestamp": "2025-04-30T18:13:02.433Z",
+    "username": "Rene - QA",
+    "text": "The purpose is to update the pool image to latest version"
+  },
+  {
+    "id": "1367203301317148694",
+    "timestamp": "2025-04-30T18:17:48.443Z",
+    "username": "Scruffy - QA Manager/Marketing",
+    "text": "⁠📡│node-owner⁠"
+  },
+  {
+    "id": "1367206614272053359",
+    "timestamp": "2025-04-30T18:30:58.313Z",
+    "username": "EggsAnyStyle [G4G] [INTP-A]",
+    "text": "Some constructive feedback.  When I read this yesterday:  \"A fix is coming in Pool Server version 1.1.0. We’ll provide more detailed information soon, but for now, please refresh your access key/keys, and update your servers as soon as possible. \"  -- I read the message as \"At some point in the future there will be a Version 1.1.0 that will fix some issues.  For now, refresh your keys and update your servers with those keys.\"   I thought the pull flag pulled the new info into the container from the yml file without shutting it down.  I now understand what the pull flag does and that the compose up -d is what rereads the yml file.   ...  If I were writing the message yesterday, I would have started with an announcement that a new server version was being released and then I would have mentioned the bit about also refreshing the keys.  Stating what each command does would also help with the understanding.  -- Could be a me thing, but sharing in case it helps."
+  },
+  {
+    "id": "1367210270325477466",
+    "timestamp": "2025-04-30T18:46:12.525Z",
+    "username": "Sage | Knights ⚔",
+    "text": "Since I've updated my pool to version 1.1.0., Docker compose up has been stuck loading for over 2 hours. Is this expected behaviour? (edited)\nWednesday, April 30, 2025 at 2:46 PM"
+  },
+  {
+    "id": "1367210280966422548",
+    "timestamp": "2025-04-30T18:45:32.521Z",
+    "username": "",
+    "text": ""
+  },
+  {
+    "id": "1367210642313969705",
+    "timestamp": "2025-04-30T18:46:58.673Z",
+    "username": "Rene - QA",
+    "text": "No, its not. Can you confirm you have a connection?"
+  },
+  {
+    "id": "1367210830046822474",
+    "timestamp": "2025-04-30T18:47:43.432Z",
+    "username": "Sage | Knights ⚔",
+    "text": "My health URL check gives me an OK"
+  },
+  {
+    "id": "1367210944697995357",
+    "timestamp": "2025-04-30T18:48:10.767Z",
+    "username": "Rene - QA",
+    "text": "Try restarting containers\ndocker compose restart"
+  },
+  {
+    "id": "1367211345782767667",
+    "timestamp": "2025-04-30T18:49:46.393Z",
+    "username": "Rene - QA",
+    "text": "If that won't help, clear the cache folder to initiate a fresh build download"
+  },
+  {
+    "id": "1367211651610447994",
+    "timestamp": "2025-04-30T18:50:59.308Z",
+    "username": "Sage | Knights ⚔",
+    "text": "I'm using GeordieR's script for Linux and am not so familiar with Linux, so these instructions are difficult for me to carry out"
+  },
+  {
+    "id": "1367213735814496317",
+    "timestamp": "2025-04-30T18:59:34.899Z",
+    "username": "Rene - QA",
+    "text": "Yeah, that's the downside of those scripts. While i love that a script does everything for you, when a problem occurs people won't know how to solve it.\nNo worries, i'll guide you through. In the terminal navigate to your node path. Then type command:\ndocker compose restart\nwhich will trigger docker to restart (edited)\nWednesday, April 30, 2025 at 2:59 PM"
+  },
+  {
+    "id": "1367213849488392324",
+    "timestamp": "2025-04-30T18:59:43.323Z",
+    "username": "Sage | Knights ⚔",
+    "text": "I've cleared the cache using \"sudo apt-get autoclean\""
+  },
+  {
+    "id": "1367214053533028493",
+    "timestamp": "2025-04-30T19:00:31.971Z",
+    "username": "Sage | Knights ⚔",
+    "text": "I've tried this and get the response: \nno configuration file provided: not found"
+  },
+  {
+    "id": "1367214245854314648",
+    "timestamp": "2025-04-30T19:01:17.824Z",
+    "username": "Rene - QA",
+    "text": "You are most likely not in the directory where your yml is located"
+  },
+  {
+    "id": "1367214512532492348",
+    "timestamp": "2025-04-30T19:02:21.405Z",
+    "username": "Sage | Knights ⚔",
+    "text": "Restarting now. Thanks!"
+  },
+  {
+    "id": "1367214762307489913",
+    "timestamp": "2025-04-30T19:03:20.956Z",
+    "username": "",
+    "text": "My container has started. Is there a way I can check if it's working fine now?"
+  },
+  {
+    "id": "1367214911364661331",
+    "timestamp": "2025-04-30T19:03:56.494Z",
+    "username": "Rene - QA",
+    "text": "If you cleared the cache folder, a fresh download will trigger"
+  },
+  {
+    "id": "1367214958701449327",
+    "timestamp": "2025-04-30T19:04:40.179Z",
+    "username": "Ray.Racer | Knights ⚔",
+    "text": "I've had the same problem yesterday ? What did you do different for it to work on Linux ? How did you changed the \"directory\" (edited)\nWednesday, April 30, 2025 at 3:04 PM"
+  },
+  {
+    "id": "1367215411053199531",
+    "timestamp": "2025-04-30T19:05:55.629Z",
+    "username": "Sage | Knights ⚔",
+    "text": "I used the command below to get to the correct folder:\ncd filenode"
+  },
+  {
+    "id": "1367215529441497192",
+    "timestamp": "2025-04-30T19:06:23.855Z",
+    "username": "Ray.Racer | Knights ⚔",
+    "text": "Big thx @Sage | Knights ⚔ , I'll try it tonight"
+  },
+  {
+    "id": "1367215706348851281",
+    "timestamp": "2025-04-30T19:07:06.033Z",
+    "username": "Sage | Knights ⚔",
+    "text": "It's still not working for me though even after I did \"docker compose restart\""
+  },
+  {
+    "id": "1367216247044968580",
+    "timestamp": "2025-04-30T19:09:14.945Z",
+    "username": "Rene - QA",
+    "text": "I think this command doesn't delete files in a specific folder."
+  },
+  {
+    "id": "1367216787044827156",
+    "timestamp": "2025-04-30T19:11:23.691Z",
+    "username": "Sage | Knights ⚔",
+    "text": "Shall I delete \"cache docker-compose.yml\" or do you have a recommendation on how to clear the cache?"
+  },
+  {
+    "id": "1367218167381758023",
+    "timestamp": "2025-04-30T19:16:52.789Z",
+    "username": "Sage | Knights ⚔",
+    "text": "I've just tried this and can see nothing in the file"
+  },
+  {
+    "id": "1367218453622296658",
+    "timestamp": "2025-04-30T19:18:01.034Z",
+    "username": "",
+    "text": "I only have two directories to look in"
+  },
+  {
+    "id": "1367218552242704526",
+    "timestamp": "2025-04-30T19:18:24.547Z",
+    "username": "",
+    "text": "It's in that directory but it is labelled as cache"
+  },
+  {
+    "id": "1367218596870226093",
+    "timestamp": "2025-04-30T19:18:35.187Z",
+    "username": "",
+    "text": "I'll give you a screenshot"
+  },
+  {
+    "id": "1367218738159681537",
+    "timestamp": "2025-04-30T19:19:08.873Z",
+    "username": "",
+    "text": ""
+  },
+  {
+    "id": "1367220013190090915",
+    "timestamp": "2025-04-30T19:24:12.864Z",
+    "username": "Sage | Knights ⚔",
+    "text": "I've found the cache folder and deleted all the files in it"
+  },
+  {
+    "id": "1367220983055777816",
+    "timestamp": "2025-04-30T19:28:04.098Z",
+    "username": "",
+    "text": "Thanks for the instructions. It shows that my container has started but there's no sign of anything being downloaded"
+  },
+  {
+    "id": "1367221519947923547",
+    "timestamp": "2025-04-30T19:30:12.103Z",
+    "username": "Sage | Knights ⚔",
+    "text": "Yes, I think it's working now. Thank you so much"
+  },
+  {
+    "id": "1367221602043039764",
+    "timestamp": "2025-04-30T19:30:31.676Z",
+    "username": "",
+    "text": "There are some failures though"
+  },
+  {
+    "id": "1367221774030471208",
+    "timestamp": "2025-04-30T19:31:12.681Z",
+    "username": "Sage | Knights ⚔",
+    "text": "Cheers. Much appreciated"
+  },
+  {
+    "id": "1367223348202963014",
+    "timestamp": "2025-04-30T19:37:27.993Z",
+    "username": "Sage | Knights ⚔",
+    "text": "With the help of @BobZilla, I got this working. The instructions are below:\n\nNavigate to the correct folder by using this command:\ncd filenode\n\nThen stop the docker container:\ndocker compose down\n\nThen clear the cache folder:\nrm -rf ~/filenode/cache/*\n\nThen start the docker container:\ndocker compose up -d\n\nThen to check if the chunks are being downloaded:\ndocker compose logs -f\n\nThere will be some failures, but you should get to 100% of the chunks downloaded eventually"
   }
 ]
