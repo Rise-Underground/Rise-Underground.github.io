@@ -35360,9 +35360,9 @@
       "lp_removes": 0,
       "lp_flow_unit": "LP_TOKEN",
       "buy_volume_usd": 19.95,
-      "sell_volume_usd": 18.7,
-      "closing_price_usd": 0.00143557,
-      "quote_usd_price": 2512.404900998407
+      "sell_volume_usd": 18.69,
+      "closing_price_usd": 0.00143502,
+      "quote_usd_price": 2511.442581640329
     },
     {
       "chain": "Base",
@@ -35380,31 +35380,31 @@
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "LP_TOKEN",
-      "buy_volume_usd": 89.83,
-      "sell_volume_usd": 180.2,
-      "closing_price_usd": 0.00143395,
-      "quote_usd_price": 2512.404900998407
+      "buy_volume_usd": 89.79,
+      "sell_volume_usd": 180.14,
+      "closing_price_usd": 0.0014334,
+      "quote_usd_price": 2511.442581640329
     },
     {
       "chain": "Cardano",
       "pool_name": "Minswap RISE/ADA",
       "date": "2026-09-12",
-      "buy_volume": 0.0,
+      "buy_volume": 119997.5412,
       "sell_volume": 50800.0,
-      "buy_txns": 0,
+      "buy_txns": 2,
       "sell_txns": 1,
-      "net_volume": -50800.0,
+      "net_volume": 69197.5412,
       "unique_makers": null,
-      "closing_price": 0.00698234,
+      "closing_price": 0.006992172232243915,
       "lp_add_volume": 0.0,
       "lp_adds": 0,
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "RISE",
-      "buy_volume_usd": 0.0,
-      "sell_volume_usd": 73.72,
-      "closing_price_usd": 0.00145128,
-      "quote_usd_price": 0.20784949872582872
+      "buy_volume_usd": 174.29,
+      "sell_volume_usd": 73.78,
+      "closing_price_usd": 0.00145244,
+      "quote_usd_price": 0.20772329766402203
     },
     {
       "chain": "Cardano",
@@ -35425,7 +35425,7 @@
       "buy_volume_usd": null,
       "sell_volume_usd": null,
       "closing_price_usd": null,
-      "quote_usd_price": 0.20784949872582872
+      "quote_usd_price": 0.20772329766402203
     }
   ],
   "reserve_daily_summary": [
@@ -45333,10 +45333,10 @@
       "chain": "Cardano",
       "pool_name": "Minswap RISE/ADA",
       "date": "2026-09-12",
-      "rise_balance": 90970099.446044,
-      "other_balance": 635184.485694,
+      "rise_balance": 90850101.904816,
+      "other_balance": 636025.999779,
       "other_asset": "ADA",
-      "price": 0.00698234
+      "price": 0.00700083
     }
   ]
 }
