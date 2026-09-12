@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-09-12T07:03:29.640025+00:00",
+  "generated_at_utc": "2026-09-12T08:02:43.154464+00:00",
   "notes": "Self-contained: computed directly from rise_ledger.db, no intermediate JSON files. Cardano (COPI+RISE merged) and Base RISE combined into one stake/reward total. Breakdown is by CHAIN only, never by token. Rewards combine staking/vault AND node rewards into one total per chain. avg_age_days is BASE-ONLY. LP staking kept separate. Migration totals from confirmed COPI-in/RISE-out event matching, both chains.",
   "summary": {
-    "final_date": "2026-09-11",
+    "final_date": "2026-09-12",
     "final_cardano_staked": 133712226.625294,
-    "final_base_staked": 171915105.184961,
-    "final_total_staked": 305627331.810255,
-    "final_avg_age_days": 208.2004,
+    "final_base_staked": 171984258.184961,
+    "final_total_staked": 305696484.810255,
+    "final_avg_age_days": 209.1165,
     "final_cardano_rewards": 32922796.811379,
     "final_base_rewards": 9568585.97716,
     "final_total_rewards": 42491382.788539,
@@ -26,7 +26,7 @@
       }
     },
     "migrated_total": 781294726.197492,
-    "migrated_last_7_days": 2158522.169332,
+    "migrated_last_7_days": 2143177.158645,
     "migrated_last_30_days": 4466483.636604
   },
   "stake_days": [
@@ -9052,6 +9052,13 @@
       "base_staked": 171915105.184961,
       "total_staked": 305627331.810255,
       "avg_age_days": 208.2004
+    },
+    {
+      "date": "2026-09-12",
+      "cardano_staked": 133712226.625294,
+      "base_staked": 171984258.184961,
+      "total_staked": 305696484.810255,
+      "avg_age_days": 209.1165
     }
   ],
   "reward_days": [
@@ -22285,7 +22292,7 @@
       "contract": "0xd4ee9f0030e0687d54d4dc6d932f10b7aa8abd1d",
       "event_count": 1147,
       "migrated_all_time": 332599259.78971,
-      "migrated_last_7_days": 15345.010687,
+      "migrated_last_7_days": 0,
       "migrated_last_30_days": 2117595.0757
     },
     "cardano": {
@@ -22298,7 +22305,7 @@
     "combined": {
       "event_count": 3714,
       "migrated_all_time": 781294726.197492,
-      "migrated_last_7_days": 2158522.169332,
+      "migrated_last_7_days": 2143177.158645,
       "migrated_last_30_days": 4466483.636604
     }
   }
