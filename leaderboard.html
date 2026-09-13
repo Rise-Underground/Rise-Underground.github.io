@@ -238,6 +238,30 @@
     background: rgba(212,165,55,0.08);
   }
 
+  /* ---------- prize wheel link ---------- */
+  .prize-wheel-link{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    flex-shrink:0;
+    font-family:'Rajdhani', sans-serif;
+    font-weight:700;
+    font-size:15px;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color: var(--gold);
+    text-decoration:none;
+    border:1px solid var(--gold);
+    padding:9px 18px;
+    border-radius: var(--radius);
+    transition: background 0.2s ease, transform 0.15s ease;
+  }
+  .prize-wheel-link:hover,
+  .prize-wheel-link:focus-visible{
+    background: rgba(212,165,55,0.1);
+    transform: translateY(-1px);
+  }
+
   /* ---------- hero ---------- */
   .hero{ padding: 56px 0 40px; position:relative; overflow:hidden; }
   .hero-watermark{
@@ -282,6 +306,11 @@
     margin-top: 30px;
     padding-top: 22px;
     border-top: 1px dashed var(--hairline);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:16px;
   }
   .countdown-label{
     font-family:'Rajdhani', sans-serif;
@@ -707,8 +736,11 @@
       track/vehicle combo, every Aero Trails course, and Holocache.
     </p>
     <div class="countdown-strip" id="countdownStrip">
-      <div class="countdown-label" id="countdownLabel">COMPETITION STARTS IN</div>
-      <div class="countdown-clock" id="countdownClock">—</div>
+      <div class="countdown-main">
+        <div class="countdown-label" id="countdownLabel">COMPETITION STARTS IN</div>
+        <div class="countdown-clock" id="countdownClock">—</div>
+      </div>
+      <a class="prize-wheel-link" href="prize_wheel.html">Prize Wheel &rarr;</a>
     </div>
     <div class="ended-banner" id="endedBanner" style="display:none;">
       🏆 Congrats to the winners! Practice and get ready for next month's Leader of the Leaderboards.

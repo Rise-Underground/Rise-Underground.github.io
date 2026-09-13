@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Infinity Rising Prize Wheel</title>
+<style>
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #14151a;
+    color: #f2f2f0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 2rem 1rem;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 1.5rem;
+    letter-spacing: 0.02em;
+  }
+  #wheelWrap {
+    position: relative;
+    width: 440px;
+    height: 440px;
+  }
+  #pointer {
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 26px solid #f2f2f0;
+    z-index: 3;
+    filter: drop-shadow(0 2px 3px rgba(0,0,0,0.4));
+  }
+  #wheelCanvas {
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+  }
+  #riseImg {
+    position: absolute;
+    width: 60px;
+    height: 75px;
+    border-radius: 8px;
+    top: 8px;
+    left: 50%;
+    transform: translate(-50%, 0) scale(0.3);
+    opacity: 0;
+    object-fit: cover;
+    transition: transform 950ms cubic-bezier(.2,.8,.2,1), opacity 200ms;
+    z-index: 4;
+    pointer-events: none;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  }
+  #spinBtn {
+    margin-top: 2rem;
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #14151a;
+    background: #f2f2f0;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: transform 120ms, opacity 120ms;
+  }
+  #spinBtn:hover { opacity: 0.88; }
+  #spinBtn:active { transform: scale(0.97); }
+  #spinBtn:disabled { opacity: 0.4; cursor: default; }
+  #loadStatus {
+    margin-top: 1rem;
+    font-size: 13px;
+    color: #9a9ba3;
+  }
+  #revealOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(8, 8, 10, 0.82);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    overflow: hidden;
+  }
+  #revealOverlay.visible { display: flex; }
+  #confettiLayer {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .confetti-piece {
+    position: absolute;
+    top: -20px;
+    width: 9px;
+    height: 14px;
+    opacity: 0.95;
+    animation-name: confettiFall;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  @keyframes confettiFall {
+    0%   { transform: translateY(0) translateX(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(110vh) translateX(var(--drift)) rotate(var(--spin)); opacity: 0.9; }
+  }
+  .balloon {
+    position: absolute;
+    bottom: -140px;
+    width: 46px;
+    height: 58px;
+    border-radius: 50% 50% 50% 50% / 58% 58% 42% 42%;
+    animation-name: balloonRise;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+  }
+  .balloon::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: 1px;
+    height: 46px;
+    background: rgba(255,255,255,0.35);
+    transform: translateX(-50%);
+  }
+  @keyframes balloonRise {
+    0%   { transform: translateY(0) translateX(0); }
+    50%  { transform: translateY(-60vh) translateX(var(--sway)); }
+    100% { transform: translateY(-125vh) translateX(0); }
+  }
+  #revealCard {
+    position: relative;
+    width: 340px;
+    opacity: 0;
+    transform: scale(0.85) translateY(14px);
+    transition: opacity 500ms, transform 500ms;
+    background: #1e1f26;
+    border: 1px solid #33343d;
+    border-radius: 20px;
+    padding: 2rem 1.75rem 1.75rem;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  }
+  #revealCard.visible {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+  #revealLabel {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #9a9ba3;
+    margin: 0 0 16px;
+  }
+  #revealImg {
+    width: 170px;
+    height: 213px;
+    border-radius: 12px;
+    object-fit: cover;
+    margin: 0 auto 18px;
+    display: block;
+    box-shadow: 0 8px 26px rgba(0,0,0,0.5);
+  }
+  #revealName {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 10px;
+  }
+  #revealTier {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 5px 16px;
+    border-radius: 999px;
+    letter-spacing: 0.03em;
+  }
+  #spinAgainBtn {
+    display: block;
+    margin: 22px auto 0;
+    padding: 12px 28px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #14151a;
+    background: #f2f2f0;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: transform 120ms, opacity 120ms;
+  }
+  #spinAgainBtn:hover { opacity: 0.88; }
+  #spinAgainBtn:active { transform: scale(0.97); }
+</style>
+</head>
+<body>
+  <h1>Infinity Rising &mdash; Prize Wheel</h1>
+  <div id="wheelWrap">
+    <div id="pointer"></div>
+    <canvas id="wheelCanvas" width="440" height="440" style="transform: rotate(0deg);"></canvas>
+    <img id="riseImg" alt="" />
+  </div>
+  <button id="spinBtn" disabled>Loading prizes&hellip;</button>
+  <div id="loadStatus"></div>
+
+  <div id="revealOverlay">
+    <div id="confettiLayer"></div>
+    <div id="revealCard">
+      <p id="revealLabel">Your prize</p>
+      <img id="revealImg" alt="" />
+      <p id="revealName"></p>
+      <span id="revealTier"></span>
+      <button id="spinAgainBtn">Spin again</button>
+    </div>
+  </div>
+
+<script>
+(function () {
+  // ---------------------------------------------------------------
+  // Data-driven setup: this wheel reads its prize list and odds from
+  // ir_prize_pool.csv, and loads each item's card art from the
+  // prize_wheel_images/ folder -- nothing prize-related is hardcoded
+  // into this file. To change items, odds, or tiers, edit the CSV;
+  // to swap art, replace the file in prize_wheel_images/ (keeping the
+  // same filename) or update IMAGE_FILENAME_MAP below.
+  // ---------------------------------------------------------------
+
+  var CSV_PATH = 'ir_prize_pool.csv';
+  var IMAGES_DIR = 'prize_wheel_images/';
+
+  // Stable filename per item -- kept separate from the CSV because a
+  // file's *actual* rarity (baked into its filename) can differ from
+  // its current wheel_tier bucket, and renaming files every time odds
+  // change would be fragile. Add a line here whenever a brand-new item
+  // (never seen before) is added to the CSV.
+  var IMAGE_FILENAME_MAP = {
+    "Bubblejett Sprinter OG Custom": "bubblejett_sprinter_og_custom_common.png",
+    "Corn Cuties Monkey Jet": "corn_cuties_monkey_jet_legendary.png",
+    "GTI Rampage 2XS OG Custom": "gti_rampage_2xs_og_custom_mythic.jpg",
+    "Hub City Apartment": "hub_city_apartment_legendary.png",
+    "Kargo Outfitters Titan XL": "kargo_outfitters_titan_xl_rare.png",
+    "Komaru Defense Outlaw": "komaru_defense_outlaw_uncommon.png",
+    "Luna Di Lusso Bloom Backpack": "luna_di_lusso_bloom_backpack_common.png",
+    "Nova Pop BubbleCore": "nova_pop_bubblecore_mythic.png",
+    "Old World Provisions Trench 12": "old_world_provisions_trench_12_rare.png",
+    "RavenX SkyAngel": "ravenx_skyangel_common.png",
+    "Rando's Metalworks Meat Grinder": "rando_s_metalworks_meat_grinder_common.jpg",
+    "Summer Art Building Kit": "summer_art_building_kit_rare.png"
+  };
+
+  // Pixel crop box [x1, y1, x2, y2] cutting out just each card's own
+  // holographic-bordered content (excluding the outer gray slab
+  // casing). All the graded-slab-style cards share one template, so
+  // one box covers 11 of 12; Bubblejett Sprinter OG Custom uses the
+  // different poster-style template and needs its own box.
+  var DEFAULT_CROP = [195, 200, 605, 715];
+  var CROP_OVERRIDES = {
+    "Bubblejett Sprinter OG Custom": [225, 60, 580, 750]
+  };
+
+  var TIER_STYLE = {
+    Mythic:    { color: "#993C1D", bg: "#FAECE7", textOn: "#4A1B0C", glow: "#FF6B3D" },
+    Legendary: { color: "#7F77DD", bg: "#EEEDFE", textOn: "#26215C", glow: "#9B8CFF" },
+    Rare:      { color: "#185FA5", bg: "#E6F1FB", textOn: "#042C53", glow: "#4FC3FF" },
+    Uncommon:  { color: "#0F6E56", bg: "#E1F5EE", textOn: "#04342C", glow: "#2EE6B8" },
+    Common:    { color: "#5F5E5A", bg: "#F1EFE8", textOn: "#2C2C2A", glow: "#E8E8E5" }
+  };
+
+  function parseCSV(text) {
+    var rows = [];
+    var lines = text.split(/\r\n|\n/).filter(function (l) { return l.length > 0; });
+    for (var i = 0; i < lines.length; i++) {
+      var line = lines[i];
+      var fields = [];
+      var cur = '';
+      var inQuotes = false;
+      for (var j = 0; j < line.length; j++) {
+        var ch = line[j];
+        if (inQuotes) {
+          if (ch === '"') {
+            if (line[j + 1] === '"') { cur += '"'; j++; }
+            else inQuotes = false;
+          } else cur += ch;
+        } else {
+          if (ch === '"') inQuotes = true;
+          else if (ch === ',') { fields.push(cur); cur = ''; }
+          else cur += ch;
+        }
+      }
+      fields.push(cur);
+      rows.push(fields);
+    }
+    var header = rows[0];
+    return rows.slice(1).map(function (r) {
+      var obj = {};
+      header.forEach(function (h, idx) { obj[h] = r[idx]; });
+      return obj;
+    });
+  }
+
+  function loadPrizePool() {
+    return fetch(CSV_PATH)
+      .then(function (res) {
+        if (!res.ok) throw new Error('Could not load ' + CSV_PATH + ' (HTTP ' + res.status + ')');
+        return res.text();
+      })
+      .then(function (text) {
+        var rows = parseCSV(text);
+        return rows.map(function (r) {
+          var name = (r.name || '').trim();
+          var tier = (r.wheel_tier || '').trim();
+          var odds = parseFloat(r.wheel_odds_pct);
+          var style = TIER_STYLE[tier];
+          if (!style) throw new Error('Unknown wheel_tier "' + tier + '" for "' + name + '"');
+          var filename = IMAGE_FILENAME_MAP[name];
+          if (!filename) throw new Error('No image filename mapped for "' + name + '" -- add it to IMAGE_FILENAME_MAP');
+          var crop = CROP_OVERRIDES[name] || DEFAULT_CROP;
+          return {
+            name: name,
+            tier: tier,
+            odds: odds,
+            img: IMAGES_DIR + filename,
+            crop: crop,
+            color: style.color,
+            bg: style.bg,
+            textOn: style.textOn,
+            glow: style.glow
+          };
+        });
+      });
+  }
+
+  // ---------------------------------------------------------------
+  // Everything below is unchanged wheel/animation/audio logic.
+  // ---------------------------------------------------------------
+
+  var items = [];
+  var total = 0;
+  var canvas = document.getElementById('wheelCanvas');
+  var ctx = canvas.getContext('2d');
+  var cx = 220, cy = 220, r = 214;
+  var loaded = 0;
+  var imgs = [];
+  var cum = [];
+
+  function drawWheel(highlightIdx) {
+    ctx.clearRect(0, 0, 440, 440);
+
+    items.forEach(function (it, i) {
+      var startRad = (cum[i].start - 90) * Math.PI / 180;
+      var endRad = (cum[i].end - 90) * Math.PI / 180;
+      var midAngleRad = cum[i].mid * Math.PI / 180;
+      var wedgeRad = (cum[i].end - cum[i].start) * Math.PI / 180;
+
+      ctx.beginPath();
+      ctx.moveTo(cx, cy);
+      ctx.arc(cx, cy, r, startRad, endRad);
+      ctx.closePath();
+      ctx.fillStyle = it.bg;
+      ctx.fill();
+
+      var crop = it.crop;
+      var cropW = crop[2] - crop[0];
+      var cropH = crop[3] - crop[1];
+
+      var wedgeWidth = 2 * r * Math.sin(wedgeRad / 2);
+      var wedgeHeight = r;
+      var scaleW = wedgeWidth / cropW;
+      var scaleH = wedgeHeight / cropH;
+      var scaleFactor = Math.max(scaleW, scaleH) * 1.35;
+
+      var destW = cropW * scaleFactor;
+      var destH = cropH * scaleFactor;
+      var shiftUp = r * 0.55;
+
+      ctx.save();
+      ctx.beginPath();
+      ctx.moveTo(cx, cy);
+      ctx.arc(cx, cy, r, startRad, endRad);
+      ctx.closePath();
+      ctx.clip();
+
+      ctx.translate(cx, cy);
+      ctx.rotate(midAngleRad);
+      ctx.drawImage(
+        imgs[i],
+        crop[0], crop[1], cropW, cropH,
+        -destW / 2, -shiftUp - destH / 2, destW, destH
+      );
+      ctx.restore();
+
+      ctx.beginPath();
+      ctx.moveTo(cx, cy);
+      ctx.arc(cx, cy, r, startRad, endRad);
+      ctx.closePath();
+      ctx.lineWidth = 2;
+      ctx.strokeStyle = it.color;
+      ctx.stroke();
+
+      if (i === highlightIdx) {
+        var glow = it.glow || it.color;
+        ctx.save();
+        ctx.shadowColor = glow;
+        ctx.shadowBlur = 32;
+        ctx.lineWidth = 10;
+        ctx.strokeStyle = glow;
+        ctx.stroke();
+        ctx.stroke();
+        ctx.shadowBlur = 0;
+        ctx.lineWidth = 3;
+        ctx.strokeStyle = '#ffffff';
+        ctx.stroke();
+        ctx.restore();
+      }
+    });
+
+    ctx.beginPath();
+    ctx.arc(cx, cy, r, 0, Math.PI * 2);
+    ctx.lineWidth = 4;
+    ctx.strokeStyle = '#14151a';
+    ctx.stroke();
+  }
+
+  function weightedPick() {
+    var roll = Math.random() * total;
+    var acc2 = 0;
+    for (var i = 0; i < items.length; i++) {
+      acc2 += items[i].odds;
+      if (roll <= acc2) return i;
+    }
+    return items.length - 1;
+  }
+
+  function croppedDataURL(it) {
+    var crop = it.crop;
+    var cropW = crop[2] - crop[0];
+    var cropH = crop[3] - crop[1];
+    var tmp = document.createElement('canvas');
+    tmp.width = cropW;
+    tmp.height = cropH;
+    var tctx = tmp.getContext('2d');
+    var idx = items.indexOf(it);
+    tctx.drawImage(imgs[idx], crop[0], crop[1], cropW, cropH, 0, 0, cropW, cropH);
+    return tmp.toDataURL('image/jpeg', 0.9);
+  }
+
+  // --- click sound: synthesized, no audio file needed ---
+  var audioCtx = null;
+  function getAudioCtx() {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    return audioCtx;
+  }
+  var noiseBuffer = null;
+  function getNoiseBuffer(ctxA) {
+    if (noiseBuffer) return noiseBuffer;
+    var len = Math.ceil(ctxA.sampleRate * 0.05);
+    noiseBuffer = ctxA.createBuffer(1, len, ctxA.sampleRate);
+    var data = noiseBuffer.getChannelData(0);
+    for (var i = 0; i < len; i++) data[i] = Math.random() * 2 - 1;
+    return noiseBuffer;
+  }
+  function playClick() {
+    var ctxA = getAudioCtx();
+    var t = ctxA.currentTime;
+
+    var noiseSrc = ctxA.createBufferSource();
+    noiseSrc.buffer = getNoiseBuffer(ctxA);
+    var bandpass = ctxA.createBiquadFilter();
+    bandpass.type = 'bandpass';
+    bandpass.frequency.setValueAtTime(2800, t);
+    bandpass.Q.setValueAtTime(4, t);
+    var noiseGain = ctxA.createGain();
+    noiseGain.gain.setValueAtTime(0.5, t);
+    noiseGain.gain.exponentialRampToValueAtTime(0.001, t + 0.02);
+    noiseSrc.connect(bandpass);
+    bandpass.connect(noiseGain);
+    noiseGain.connect(ctxA.destination);
+    noiseSrc.start(t);
+    noiseSrc.stop(t + 0.025);
+
+    var thunk = ctxA.createOscillator();
+    var thunkGain = ctxA.createGain();
+    thunk.type = 'triangle';
+    thunk.frequency.setValueAtTime(180, t);
+    thunk.frequency.exponentialRampToValueAtTime(90, t + 0.03);
+    thunkGain.gain.setValueAtTime(0.22, t);
+    thunkGain.gain.exponentialRampToValueAtTime(0.001, t + 0.045);
+    thunk.connect(thunkGain);
+    thunkGain.connect(ctxA.destination);
+    thunk.start(t);
+    thunk.stop(t + 0.05);
+  }
+
+  function playRiseSound() {
+    // placeholder hook kept for parity with the original build; no
+    // embedded rise sound in this data-driven version
+  }
+
+  function makeCubicBezier(p1x, p1y, p2x, p2y) {
+    function bezier(t, a, b) {
+      var it = 1 - t;
+      return 3 * it * it * t * a + 3 * it * t * t * b + t * t * t;
+    }
+    return function (x) {
+      var t0 = 0, t1 = 1, t = x;
+      for (var i = 0; i < 20; i++) {
+        var xEst = bezier(t, p1x, p2x);
+        if (Math.abs(xEst - x) < 1e-5) break;
+        if (xEst < x) t0 = t; else t1 = t;
+        t = (t0 + t1) / 2;
+      }
+      return bezier(t, p1y, p2y);
+    };
+  }
+  var easeFn = makeCubicBezier(0.13, 0.44, 0.16, 1);
+
+  var CONFETTI_COLORS = ['#993C1D', '#7F77DD', '#185FA5', '#0F6E56', '#f2f2f0', '#EF9F27'];
+
+  function clearCelebration() {
+    document.getElementById('confettiLayer').innerHTML = '';
+  }
+
+  function launchConfetti() {
+    var confettiLayer = document.getElementById('confettiLayer');
+    clearCelebration();
+    var count = 90;
+    for (var i = 0; i < count; i++) {
+      var piece = document.createElement('div');
+      piece.className = 'confetti-piece';
+      piece.style.left = (Math.random() * 100) + 'vw';
+      piece.style.background = CONFETTI_COLORS[Math.floor(Math.random() * CONFETTI_COLORS.length)];
+      piece.style.setProperty('--drift', (Math.random() * 160 - 80) + 'px');
+      piece.style.setProperty('--spin', (Math.random() * 720 - 360) + 'deg');
+      var duration = 2600 + Math.random() * 1800;
+      piece.style.animationDuration = duration + 'ms';
+      piece.style.animationDelay = (Math.random() * 400) + 'ms';
+      confettiLayer.appendChild(piece);
+    }
+    var balloonColors = ['#993C1D', '#7F77DD', '#185FA5', '#0F6E56', '#D4537E'];
+    for (var b = 0; b < 7; b++) {
+      var balloon = document.createElement('div');
+      balloon.className = 'balloon';
+      balloon.style.left = (10 + Math.random() * 80) + 'vw';
+      balloon.style.background = balloonColors[b % balloonColors.length];
+      balloon.style.setProperty('--sway', (Math.random() * 60 - 30) + 'px');
+      var bDuration = 5200 + Math.random() * 1800;
+      balloon.style.animationDuration = bDuration + 'ms';
+      balloon.style.animationDelay = (Math.random() * 500) + 'ms';
+      confettiLayer.appendChild(balloon);
+    }
+  }
+
+  var spinning = false;
+  var currentRotation = 0;
+  var spinBtn = document.getElementById('spinBtn');
+  var spinAgainBtn = document.getElementById('spinAgainBtn');
+  var revealOverlay = document.getElementById('revealOverlay');
+  var SPIN_MS = 45000;
+
+  function spinWheel() {
+    if (spinning || items.length === 0) return;
+    spinning = true;
+    spinBtn.disabled = true;
+    revealOverlay.classList.remove('visible');
+    document.getElementById('revealCard').classList.remove('visible');
+    clearCelebration();
+    var ctxA = getAudioCtx();
+    if (ctxA.state === 'suspended') ctxA.resume();
+
+    var riseImg = document.getElementById('riseImg');
+    riseImg.style.transition = 'none';
+    riseImg.style.opacity = 0;
+    riseImg.style.transform = 'translate(-50%,0) scale(0.3)';
+
+    var winIdx = weightedPick();
+    var mid = cum[winIdx].mid;
+    var wedgeWidth = cum[winIdx].end - cum[winIdx].start;
+    var jitter = (Math.random() - 0.5) * Math.max(wedgeWidth - 6, 0);
+    var targetMid = mid + jitter;
+    var spins = 24;
+    var finalMod = ((360 - targetMid) % 360 + 360) % 360;
+    var startRotation = currentRotation;
+    var newRotation = startRotation - (startRotation % 360) + spins * 360 + finalMod;
+    if (newRotation <= startRotation) newRotation += 360;
+
+    var boundaries = cum.map(function (c) { return c.start; });
+    var crossings = [];
+    var kStart = Math.floor(startRotation / 360);
+    var kEnd = Math.ceil(newRotation / 360) + 1;
+    for (var k = kStart; k <= kEnd; k++) {
+      for (var bIdx = 0; bIdx < boundaries.length; bIdx++) {
+        var angle = k * 360 + boundaries[bIdx];
+        if (angle > startRotation && angle <= newRotation) crossings.push(angle);
+      }
+    }
+    crossings.sort(function (a, b) { return a - b; });
+    var crossingPtr = 0;
+
+    canvas.style.transition = 'none';
+    var t0 = null;
+
+    function wedgeAtPointer(angleDeg) {
+      var localAngle = ((-angleDeg % 360) + 360) % 360;
+      for (var i = 0; i < cum.length; i++) {
+        if (localAngle >= cum[i].start && localAngle < cum[i].end) return i;
+      }
+      return cum.length - 1;
+    }
+
+    function frame(ts) {
+      if (t0 === null) t0 = ts;
+      var elapsed = ts - t0;
+      var progress = Math.min(elapsed / SPIN_MS, 1);
+      var eased = easeFn(progress);
+      var angleNow = startRotation + (newRotation - startRotation) * eased;
+
+      drawWheel(wedgeAtPointer(angleNow));
+      canvas.style.transform = 'rotate(' + angleNow + 'deg)';
+
+      while (crossingPtr < crossings.length && crossings[crossingPtr] <= angleNow) {
+        playClick();
+        crossingPtr++;
+      }
+
+      if (progress < 1) {
+        requestAnimationFrame(frame);
+      } else {
+        currentRotation = newRotation;
+        drawWheel(winIdx);
+        onSpinComplete();
+      }
+    }
+    requestAnimationFrame(frame);
+
+    function onSpinComplete() {
+      var winner = items[winIdx];
+      var croppedUrl = croppedDataURL(winner);
+      riseImg.src = croppedUrl;
+      riseImg.style.transition = 'none';
+      riseImg.style.opacity = 1;
+      riseImg.style.transform = 'translate(-50%,0) scale(0.3)';
+      void riseImg.offsetWidth;
+      riseImg.style.transition = 'transform 950ms cubic-bezier(.2,.8,.2,1), opacity 200ms';
+      riseImg.style.transform = 'translate(-50%,300px) scale(2.7)';
+      playRiseSound();
+
+      setTimeout(function () {
+        riseImg.style.opacity = 0;
+        document.getElementById('revealImg').src = croppedUrl;
+        document.getElementById('revealName').textContent = winner.name;
+        var tierEl = document.getElementById('revealTier');
+        tierEl.textContent = winner.tier;
+        tierEl.style.background = winner.bg;
+        tierEl.style.color = winner.textOn;
+        revealOverlay.classList.add('visible');
+        document.getElementById('revealCard').classList.add('visible');
+        launchConfetti();
+        spinning = false;
+        spinBtn.disabled = false;
+      }, 800);
+    }
+  }
+
+  spinBtn.addEventListener('click', spinWheel);
+  spinAgainBtn.addEventListener('click', spinWheel);
+
+  // --- boot: fetch the CSV, load each item's image, then draw ---
+  var statusEl = document.getElementById('loadStatus');
+
+  loadPrizePool()
+    .then(function (loadedItems) {
+      items = loadedItems;
+      total = items.reduce(function (a, i) { return a + i.odds; }, 0);
+
+      var acc = 0;
+      items.forEach(function (it) {
+        var start = (acc / total) * 360;
+        acc += it.odds;
+        var end = (acc / total) * 360;
+        cum.push({ start: start, end: end, mid: (start + end) / 2 });
+      });
+
+      imgs = items.map(function (it) {
+        var im = new Image();
+        im.src = it.img;
+        im.onload = function () {
+          loaded++;
+          if (loaded === items.length) {
+            drawWheel(-1);
+            spinBtn.disabled = false;
+            spinBtn.textContent = 'Spin the wheel';
+            statusEl.textContent = '';
+          }
+        };
+        im.onerror = function () {
+          statusEl.textContent = 'Could not load image: ' + it.img;
+        };
+        return im;
+      });
+    })
+    .catch(function (err) {
+      statusEl.textContent = 'Error loading prize pool: ' + err.message;
+      spinBtn.textContent = 'Failed to load';
+    });
+})();
+</script>
+</body>
+</html>
