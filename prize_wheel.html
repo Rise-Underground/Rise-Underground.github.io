@@ -5,19 +5,104 @@
 <title>Leaders of the Leaderboards Prize Wheel</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
+  :root{
+    --asphalt: #0a0a0b;
+    --asphalt-2: #131315;
+    --panel: #18181b;
+    --hairline: #29292c;
+    --paper: #f0ede6;
+    --steel: #8f8d8a;
+    --crimson: #e0202b;
+    --gold: #d4a537;
+    --radius: 3px;
+  }
+  * { box-sizing: border-box; }
   body {
     margin: 0;
     min-height: 100vh;
+    background:
+      radial-gradient(1200px 600px at 15% -10%, rgba(224,32,43,0.10), transparent 60%),
+      radial-gradient(900px 500px at 100% 0%, rgba(212,165,55,0.06), transparent 55%),
+      var(--asphalt);
+    color: #f2f2f0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding: 18px 24px;
+    border-bottom: 1px solid var(--hairline);
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .brand-block{ display:flex; align-items:center; gap:16px; }
+  .brand-logo{
+    height:56px;
+    width:auto;
+    display:block;
+    filter: drop-shadow(0 0 14px rgba(224,32,43,0.5));
+  }
+  .brand-fallback{
+    font-family:'Rajdhani', sans-serif;
+    font-weight:700;
+    letter-spacing:0.1em;
+    font-size:18px;
+    text-transform:uppercase;
+    color: var(--paper);
+  }
+  .tagline{
+    font-family:'JetBrains Mono', monospace;
+    font-size:12px;
+    letter-spacing:0.1em;
+    color: var(--steel);
+    text-transform:uppercase;
+  }
+  .header-right{
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+  .top-nav{
+    display:flex;
+    gap:10px;
+    flex-wrap: wrap;
+  }
+  .nav-link{
+    font-family:'Rajdhani', sans-serif;
+    font-weight:600;
+    font-size:13px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color: var(--paper);
+    text-decoration:none;
+    border:1px solid var(--hairline);
+    padding:6px 14px;
+    border-radius: var(--radius);
+    transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+    display:inline-flex;
+    align-items:center;
+  }
+  .nav-link:hover,
+  .nav-link:focus-visible{
+    color: var(--gold);
+    border-color: var(--gold);
+    background: rgba(212,165,55,0.08);
+  }
+  .nav-link.current{
+    color: var(--gold);
+    border-color: var(--gold);
+    background: rgba(212,165,55,0.08);
+  }
+  #pageBody {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
     gap: 2.5rem;
-    background: #14151a;
-    color: #f2f2f0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     padding: 2rem 1rem;
     flex-wrap: wrap;
   }
@@ -262,6 +347,26 @@
 </style>
 </head>
 <body>
+  <header>
+    <div class="brand-block">
+      <img src="RISE_UG_LOGO_Transparent.png" alt="Rise Underground" class="brand-logo"
+           onerror="this.style.display='none'; document.getElementById('brandFallback').style.display='block';">
+      <div class="brand-fallback" id="brandFallback" style="display:none;">Rise Underground</div>
+      <div class="tagline">Operating in the shadows</div>
+    </div>
+    <div class="header-right">
+      <nav class="top-nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="poa_tracker.html">POA Tracker</a>
+        <a class="nav-link" href="ir_almanac.html">IR Almanac</a>
+        <a class="nav-link" href="leaderboard.html">Leaderboards</a>
+        <a class="nav-link current" href="prize_wheel.html">Prize Wheel</a>
+        <a class="nav-link" href="rise_tracker.html">Rise Tracker</a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="pageBody">
   <div id="prizeListLeft" class="prize-list">
     <p id="prizeListTitle">Prizes</p>
   </div>
@@ -278,6 +383,7 @@
   </div>
 
   <div id="prizeListRight" class="prize-list"></div>
+  </div>
 
   <div id="revealOverlay">
     <div id="confettiLayer"></div>
@@ -763,6 +869,16 @@
 
   spinBtn.addEventListener('click', spinWheel);
   spinAgainBtn.addEventListener('click', spinWheel);
+
+  // clicking the dark backdrop (not the card itself) dismisses the
+  // reveal and returns to the wheel, without starting a new spin
+  revealOverlay.addEventListener('click', function (e) {
+    if (e.target === revealOverlay) {
+      revealOverlay.classList.remove('visible');
+      document.getElementById('revealCard').classList.remove('visible');
+      clearCelebration();
+    }
+  });
 
   // --- boot: fetch the CSV, load each item's image, then draw ---
   var statusEl = document.getElementById('loadStatus');
