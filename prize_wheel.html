@@ -695,7 +695,10 @@
     var ctxA = getAudioCtx();
     var src = ctxA.createBufferSource();
     src.buffer = riseBuffer;
-    src.connect(ctxA.destination);
+    var gainNode = ctxA.createGain();
+    gainNode.gain.value = 0.7; // 30% quieter than the original clip
+    src.connect(gainNode);
+    gainNode.connect(ctxA.destination);
     src.start(ctxA.currentTime);
   }
   loadRiseBuffer(); // start decoding on page load, well before the
