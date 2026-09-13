@@ -99,21 +99,21 @@
   }
   #pageBody {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    gap: 2.5rem;
+    gap: 1.5rem;
     padding: 2rem 1rem;
-    flex-wrap: wrap;
   }
   .prize-list {
-    width: 240px;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    max-width: 920px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 10px;
   }
   #prizeListTitle {
+    grid-column: 1 / -1;
     font-family: 'Rajdhani', sans-serif;
     font-weight: 700;
     font-size: 15px;
@@ -153,6 +153,14 @@
     padding: 2px 9px;
     border-radius: 999px;
     margin-top: 3px;
+  }
+  .prize-row-odds {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: #9a9ba3;
+    margin-top: 3px;
+    margin-left: 8px;
   }
   #mainContent {
     display: flex;
@@ -367,7 +375,7 @@
   </header>
 
   <div id="pageBody">
-  <div id="prizeListLeft" class="prize-list">
+  <div id="prizeList" class="prize-list">
     <p id="prizeListTitle">Prizes</p>
   </div>
 
@@ -381,8 +389,6 @@
   <button id="spinBtn" disabled>Loading prizes&hellip;</button>
   <div id="loadStatus"></div>
   </div>
-
-  <div id="prizeListRight" class="prize-list"></div>
   </div>
 
   <div id="revealOverlay">
@@ -935,9 +941,14 @@
     tierEl.style.background = it.bg;
     tierEl.style.color = it.textOn;
 
+    var oddsEl = document.createElement('span');
+    oddsEl.className = 'prize-row-odds';
+    oddsEl.textContent = it.odds + '%';
+
     textWrap.appendChild(nameEl);
     textWrap.appendChild(document.createElement('br'));
     textWrap.appendChild(tierEl);
+    textWrap.appendChild(oddsEl);
 
     row.appendChild(img);
     row.appendChild(textWrap);
@@ -945,12 +956,9 @@
   }
 
   function populatePrizeList() {
-    var leftList = document.getElementById('prizeListLeft');
-    var rightList = document.getElementById('prizeListRight');
-    var half = Math.ceil(items.length / 2);
-    items.forEach(function (it, i) {
-      var target = i < half ? leftList : rightList;
-      target.appendChild(buildPrizeRow(it));
+    var list = document.getElementById('prizeList');
+    items.forEach(function (it) {
+      list.appendChild(buildPrizeRow(it));
     });
   }
 
