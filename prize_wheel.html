@@ -21,8 +21,8 @@
     padding: 2rem 1rem;
     flex-wrap: wrap;
   }
-  #prizeList {
-    width: 260px;
+  .prize-list {
+    width: 240px;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
@@ -262,8 +262,8 @@
 </style>
 </head>
 <body>
-  <div id="prizeList">
-    <p id="prizeListTitle">All 12 prizes</p>
+  <div id="prizeListLeft" class="prize-list">
+    <p id="prizeListTitle">Prizes</p>
   </div>
 
   <div id="mainContent">
@@ -276,6 +276,8 @@
   <button id="spinBtn" disabled>Loading prizes&hellip;</button>
   <div id="loadStatus"></div>
   </div>
+
+  <div id="prizeListRight" class="prize-list"></div>
 
   <div id="revealOverlay">
     <div id="confettiLayer"></div>
@@ -765,36 +767,43 @@
   // --- boot: fetch the CSV, load each item's image, then draw ---
   var statusEl = document.getElementById('loadStatus');
 
+  function buildPrizeRow(it) {
+    var row = document.createElement('div');
+    row.className = 'prize-row';
+
+    var img = document.createElement('img');
+    img.src = it.img; // full, uncropped card image -- not the wedge crop
+    img.alt = it.name;
+
+    var textWrap = document.createElement('div');
+    textWrap.className = 'prize-row-text';
+
+    var nameEl = document.createElement('div');
+    nameEl.className = 'prize-row-name';
+    nameEl.textContent = it.name;
+
+    var tierEl = document.createElement('span');
+    tierEl.className = 'prize-row-tier';
+    tierEl.textContent = it.tier;
+    tierEl.style.background = it.bg;
+    tierEl.style.color = it.textOn;
+
+    textWrap.appendChild(nameEl);
+    textWrap.appendChild(document.createElement('br'));
+    textWrap.appendChild(tierEl);
+
+    row.appendChild(img);
+    row.appendChild(textWrap);
+    return row;
+  }
+
   function populatePrizeList() {
-    var list = document.getElementById('prizeList');
-    items.forEach(function (it) {
-      var row = document.createElement('div');
-      row.className = 'prize-row';
-
-      var img = document.createElement('img');
-      img.src = it.img; // full, uncropped card image -- not the wedge crop
-      img.alt = it.name;
-
-      var textWrap = document.createElement('div');
-      textWrap.className = 'prize-row-text';
-
-      var nameEl = document.createElement('div');
-      nameEl.className = 'prize-row-name';
-      nameEl.textContent = it.name;
-
-      var tierEl = document.createElement('span');
-      tierEl.className = 'prize-row-tier';
-      tierEl.textContent = it.tier;
-      tierEl.style.background = it.bg;
-      tierEl.style.color = it.textOn;
-
-      textWrap.appendChild(nameEl);
-      textWrap.appendChild(document.createElement('br'));
-      textWrap.appendChild(tierEl);
-
-      row.appendChild(img);
-      row.appendChild(textWrap);
-      list.appendChild(row);
+    var leftList = document.getElementById('prizeListLeft');
+    var rightList = document.getElementById('prizeListRight');
+    var half = Math.ceil(items.length / 2);
+    items.forEach(function (it, i) {
+      var target = i < half ? leftList : rightList;
+      target.appendChild(buildPrizeRow(it));
     });
   }
 
