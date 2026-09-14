@@ -810,7 +810,7 @@ function buildStandings(placements){
 // Competition window + countdown clock.
 //
 // TEST_MODE hardcodes the window to Sun Aug 16 - Sat Aug 22 for testing.
-// Currently OFF -- using the real "2nd Sunday of month" rule below.
+// Currently OFF -- using the real "2nd Monday of month" rule below.
 //
 // Clock visibility:
 //   - more than 7 days before start: hidden
@@ -823,12 +823,12 @@ const TEST_MODE = false;
 const TEST_WINDOW_START = new Date(Date.UTC(2026, 7, 16, 0, 0, 0, 0));   // Aug is month index 7
 const TEST_WINDOW_END = new Date(Date.UTC(2026, 7, 22, 23, 59, 59, 999));
 
-function getSecondSundayWindow(year, monthIndex){
+function getSecondMondayWindow(year, monthIndex){
   const firstOfMonth = new Date(Date.UTC(year, monthIndex, 1));
-  const daysToFirstSunday = (7 - firstOfMonth.getUTCDay()) % 7;
-  const firstSunday = new Date(Date.UTC(year, monthIndex, 1 + daysToFirstSunday));
-  const start = new Date(firstSunday);
-  start.setUTCDate(firstSunday.getUTCDate() + 8);
+  const daysToFirstMonday = (1 - firstOfMonth.getUTCDay() + 7) % 7;
+  const firstMonday = new Date(Date.UTC(year, monthIndex, 1 + daysToFirstMonday));
+  const start = new Date(firstMonday);
+  start.setUTCDate(firstMonday.getUTCDate() + 7);
   start.setUTCHours(0, 0, 0, 0);
   const end = new Date(start);
   end.setUTCDate(start.getUTCDate() + 6);
@@ -838,11 +838,11 @@ function getSecondSundayWindow(year, monthIndex){
 
 function computeCompetitionWindow(now){
   if (TEST_MODE) return { start: TEST_WINDOW_START, end: TEST_WINDOW_END };
-  let { start, end } = getSecondSundayWindow(now.getUTCFullYear(), now.getUTCMonth());
+  let { start, end } = getSecondMondayWindow(now.getUTCFullYear(), now.getUTCMonth());
   if (now > end){
     let nextMonth = now.getUTCMonth() + 1, nextYear = now.getUTCFullYear();
     if (nextMonth > 11){ nextMonth = 0; nextYear += 1; }
-    ({ start, end } = getSecondSundayWindow(nextYear, nextMonth));
+    ({ start, end } = getSecondMondayWindow(nextYear, nextMonth));
   }
   return { start, end };
 }
@@ -910,7 +910,7 @@ function tickEndedBanner(){
     return;
   }
 
-  const currentWindow = getSecondSundayWindow(now.getUTCFullYear(), now.getUTCMonth());
+  const currentWindow = getSecondMondayWindow(now.getUTCFullYear(), now.getUTCMonth());
   if (now <= currentWindow.end){
     banner.style.display = 'none';
     return;
