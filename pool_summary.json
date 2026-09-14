@@ -35611,10 +35611,10 @@
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "LP_TOKEN",
-      "buy_volume_usd": 165.86,
-      "sell_volume_usd": 200.29,
-      "closing_price_usd": 0.00143852,
-      "quote_usd_price": 2538.4771143641747
+      "buy_volume_usd": 165.98,
+      "sell_volume_usd": 200.42,
+      "closing_price_usd": 0.00143951,
+      "quote_usd_price": 2540.231552341252
     },
     {
       "chain": "Base",
@@ -35632,10 +35632,10 @@
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "LP_TOKEN",
-      "buy_volume_usd": 441.04,
-      "sell_volume_usd": 592.16,
-      "closing_price_usd": 0.00143746,
-      "quote_usd_price": 2538.4771143641747
+      "buy_volume_usd": 441.35,
+      "sell_volume_usd": 592.57,
+      "closing_price_usd": 0.00143845,
+      "quote_usd_price": 2540.231552341252
     },
     {
       "chain": "Cardano",
@@ -35654,40 +35654,40 @@
       "lp_removes": 0,
       "lp_flow_unit": "RISE",
       "buy_volume_usd": 0.0,
-      "sell_volume_usd": 35.33,
-      "closing_price_usd": 0.00145174,
-      "quote_usd_price": 0.2138565524807654
+      "sell_volume_usd": 35.1,
+      "closing_price_usd": 0.00144204,
+      "quote_usd_price": 0.21242643687530283
     },
     {
       "chain": "Cardano",
       "pool_name": "Minswap RISE/ADA",
       "date": "2026-09-14",
       "buy_volume": 25000.0,
-      "sell_volume": 220164.0,
+      "sell_volume": 257947.0,
       "buy_txns": 1,
-      "sell_txns": 10,
-      "net_volume": -195164.0,
+      "sell_txns": 12,
+      "net_volume": -232947.0,
       "unique_makers": null,
-      "closing_price": 0.006813288078633078,
+      "closing_price": 0.0068106625394508515,
       "lp_add_volume": 0.0,
       "lp_adds": 0,
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "RISE",
-      "buy_volume_usd": 36.43,
-      "sell_volume_usd": 320.79,
-      "closing_price_usd": 0.00145707,
-      "quote_usd_price": 0.2138565524807654
+      "buy_volume_usd": 36.17,
+      "sell_volume_usd": 373.19,
+      "closing_price_usd": 0.00144676,
+      "quote_usd_price": 0.21242643687530283
     },
     {
       "chain": "Cardano",
       "pool_name": "Minswap V2 Order Contract",
       "date": "2026-09-14",
       "buy_volume": 0.0,
-      "sell_volume": 220164.0,
+      "sell_volume": 257947.0,
       "buy_txns": 0,
-      "sell_txns": 10,
-      "net_volume": -220164.0,
+      "sell_txns": 12,
+      "net_volume": -257947.0,
       "unique_makers": null,
       "closing_price": null,
       "lp_add_volume": 0.0,
@@ -35698,7 +35698,7 @@
       "buy_volume_usd": null,
       "sell_volume_usd": null,
       "closing_price_usd": null,
-      "quote_usd_price": 0.2138565524807654
+      "quote_usd_price": 0.21242643687530283
     },
     {
       "chain": "Cardano",
@@ -35719,7 +35719,7 @@
       "buy_volume_usd": null,
       "sell_volume_usd": null,
       "closing_price_usd": null,
-      "quote_usd_price": 0.2138565524807654
+      "quote_usd_price": 0.21242643687530283
     }
   ],
   "reserve_daily_summary": [
@@ -45708,10 +45708,10 @@
       "chain": "Cardano",
       "pool_name": "Minswap RISE/ADA",
       "date": "2026-09-14",
-      "rise_balance": 91615942.115152,
-      "other_balance": 622789.307381,
+      "rise_balance": 91653725.115152,
+      "other_balance": 622533.334204,
       "other_asset": "ADA",
-      "price": 0.00679783
+      "price": 0.00679223
     }
   ]
 }
