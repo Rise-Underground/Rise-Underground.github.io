@@ -1188,7 +1188,7 @@ function computeOpportunities(placements, boards){
   // empty they are -- e.g. a track currently broken/inaccessible in
   // the game, so it'd be misleading to tell people to go score there.
   // Matches on board-name prefix, case-insensitive.
-  const EXCLUDED_BOARD_PREFIXES = ['Calido Purple'];
+  const EXCLUDED_BOARD_PREFIXES = [];
   const isExcluded = (boardName) => EXCLUDED_BOARD_PREFIXES.some(
     prefix => boardName.toLowerCase().startsWith(prefix.toLowerCase())
   );
