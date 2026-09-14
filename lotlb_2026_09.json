@@ -116,6 +116,88 @@
           }
         ]
       }
+    },
+    {
+      "timestamp": "2026-09-14T01:05:14.390067+00:00",
+      "standings": [
+        {
+          "player": "Ford96#9395",
+          "points": 20,
+          "boards": 2
+        },
+        {
+          "player": "SnuSnu#3236",
+          "points": 19,
+          "boards": 2
+        },
+        {
+          "player": "LindaKnights#9411",
+          "points": 18,
+          "boards": 2
+        },
+        {
+          "player": "Japper#4409",
+          "points": 10,
+          "boards": 1
+        },
+        {
+          "player": "Faux_Hubris#3960",
+          "points": 10,
+          "boards": 1
+        }
+      ],
+      "by_board": {
+        "Aero Trails \u2014 Calido": [
+          {
+            "player": "Ford96#9395",
+            "rank": 1,
+            "points": 10
+          },
+          {
+            "player": "LindaKnights#9411",
+            "rank": 2,
+            "points": 9
+          }
+        ],
+        "Aero Trails \u2014 Solace 1": [
+          {
+            "player": "Japper#4409",
+            "rank": 1,
+            "points": 10
+          }
+        ],
+        "Aero Trails \u2014 Pavilion": [
+          {
+            "player": "Ford96#9395",
+            "rank": 1,
+            "points": 10
+          },
+          {
+            "player": "SnuSnu#3236",
+            "rank": 2,
+            "points": 9
+          }
+        ],
+        "Calido Yellow \u2014 Bubblejett Sprinter 2022": [
+          {
+            "player": "SnuSnu#3236",
+            "rank": 1,
+            "points": 10
+          },
+          {
+            "player": "LindaKnights#9411",
+            "rank": 2,
+            "points": 9
+          }
+        ],
+        "Calido Yellow \u2014 Valkyrie F9-R": [
+          {
+            "player": "Faux_Hubris#3960",
+            "rank": 1,
+            "points": 10
+          }
+        ]
+      }
     }
   ],
   "movements": [
@@ -134,6 +216,33 @@
       "old_rank": 2,
       "new_rank": 5,
       "timestamp": "2026-09-14T00:54:33.666565+00:00"
+    },
+    {
+      "type": "aggregate_move",
+      "player": "Faux_Hubris#3960",
+      "direction": "down",
+      "positions": 1,
+      "old_rank": 4,
+      "new_rank": 5,
+      "timestamp": "2026-09-14T01:05:14.390067+00:00"
+    },
+    {
+      "type": "aggregate_move",
+      "player": "LindaKnights#9411",
+      "direction": "up",
+      "positions": 2,
+      "old_rank": 5,
+      "new_rank": 3,
+      "timestamp": "2026-09-14T01:05:14.390067+00:00"
+    },
+    {
+      "type": "aggregate_move",
+      "player": "Japper#4409",
+      "direction": "down",
+      "positions": 1,
+      "old_rank": 3,
+      "new_rank": 4,
+      "timestamp": "2026-09-14T01:05:14.390067+00:00"
     }
   ]
 }
