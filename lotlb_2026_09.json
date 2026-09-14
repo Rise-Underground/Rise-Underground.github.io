@@ -198,6 +198,117 @@
           }
         ]
       }
+    },
+    {
+      "timestamp": "2026-09-14T01:24:20.451946+00:00",
+      "standings": [
+        {
+          "player": "SnuSnu#3236",
+          "points": 39,
+          "boards": 4
+        },
+        {
+          "player": "LindaKnights#9411",
+          "points": 28,
+          "boards": 3
+        },
+        {
+          "player": "Ford96#9395",
+          "points": 20,
+          "boards": 2
+        },
+        {
+          "player": "Japper#4409",
+          "points": 10,
+          "boards": 1
+        },
+        {
+          "player": "Faux_Hubris#3960",
+          "points": 9,
+          "boards": 1
+        },
+        {
+          "player": "Crystaline#3100",
+          "points": 8,
+          "boards": 1
+        }
+      ],
+      "by_board": {
+        "Holocache": [
+          {
+            "player": "LindaKnights#9411",
+            "rank": 1,
+            "points": 10
+          }
+        ],
+        "Aero Trails \u2014 Calido": [
+          {
+            "player": "Ford96#9395",
+            "rank": 1,
+            "points": 10
+          },
+          {
+            "player": "LindaKnights#9411",
+            "rank": 2,
+            "points": 9
+          }
+        ],
+        "Aero Trails \u2014 Solace 1": [
+          {
+            "player": "Japper#4409",
+            "rank": 1,
+            "points": 10
+          }
+        ],
+        "Aero Trails \u2014 Pavilion": [
+          {
+            "player": "Ford96#9395",
+            "rank": 1,
+            "points": 10
+          },
+          {
+            "player": "SnuSnu#3236",
+            "rank": 2,
+            "points": 9
+          },
+          {
+            "player": "Crystaline#3100",
+            "rank": 3,
+            "points": 8
+          }
+        ],
+        "Calido Yellow \u2014 Bubblejett Sprinter 2022": [
+          {
+            "player": "SnuSnu#3236",
+            "rank": 1,
+            "points": 10
+          },
+          {
+            "player": "LindaKnights#9411",
+            "rank": 2,
+            "points": 9
+          }
+        ],
+        "Calido Yellow \u2014 Valkyrie F9-R": [
+          {
+            "player": "SnuSnu#3236",
+            "rank": 1,
+            "points": 10
+          },
+          {
+            "player": "Faux_Hubris#3960",
+            "rank": 2,
+            "points": 9
+          }
+        ],
+        "Calido Red \u2014 Bubblejett Sprinter 2022": [
+          {
+            "player": "SnuSnu#3236",
+            "rank": 1,
+            "points": 10
+          }
+        ]
+      }
     }
   ],
   "movements": [
@@ -243,6 +354,40 @@
       "old_rank": 3,
       "new_rank": 4,
       "timestamp": "2026-09-14T01:05:14.390067+00:00"
+    },
+    {
+      "type": "board_takeover",
+      "board": "Calido Yellow \u2014 Valkyrie F9-R",
+      "loser": "Faux_Hubris#3960",
+      "winner": "SnuSnu#3236",
+      "timestamp": "2026-09-14T01:24:20.451946+00:00"
+    },
+    {
+      "type": "aggregate_move",
+      "player": "LindaKnights#9411",
+      "direction": "up",
+      "positions": 1,
+      "old_rank": 3,
+      "new_rank": 2,
+      "timestamp": "2026-09-14T01:24:20.451946+00:00"
+    },
+    {
+      "type": "aggregate_move",
+      "player": "SnuSnu#3236",
+      "direction": "up",
+      "positions": 1,
+      "old_rank": 2,
+      "new_rank": 1,
+      "timestamp": "2026-09-14T01:24:20.451946+00:00"
+    },
+    {
+      "type": "aggregate_move",
+      "player": "Ford96#9395",
+      "direction": "down",
+      "positions": 2,
+      "old_rank": 1,
+      "new_rank": 3,
+      "timestamp": "2026-09-14T01:24:20.451946+00:00"
     }
   ]
 }
