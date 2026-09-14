@@ -1184,6 +1184,15 @@ function renderLastUpdatedClock(){
 //      place time means it's easy to leapfrog in).
 // ------------------------------------------------------------------
 function computeOpportunities(placements, boards){
+  // Boards to always exclude from opportunities, regardless of how
+  // empty they are -- e.g. a track currently broken/inaccessible in
+  // the game, so it'd be misleading to tell people to go score there.
+  // Matches on board-name prefix, case-insensitive.
+  const EXCLUDED_BOARD_PREFIXES = ['Calido Purple'];
+  const isExcluded = (boardName) => EXCLUDED_BOARD_PREFIXES.some(
+    prefix => boardName.toLowerCase().startsWith(prefix.toLowerCase())
+  );
+
   // Board list: prefer the full catalog from boards.csv (includes
   // 0-placement boards); fall back to deriving from placements alone
   // if boards.csv didn't load.
@@ -1201,6 +1210,8 @@ function computeOpportunities(placements, boards){
     });
     boardCounts = Object.keys(rankSets).map(board => ({ board, count: rankSets[board].size }));
   }
+
+  boardCounts = boardCounts.filter(b => !isExcluded(b.board));
 
   if (boardCounts.length === 0) return { tier: null, items: [] };
 
@@ -1224,6 +1235,7 @@ function computeOpportunities(placements, boards){
   // All boards full — rank by % gap between 1st and 10th place time.
   const byBoard = {};
   placements.forEach(p => {
+    if (isExcluded(p.board)) return;
     if (!byBoard[p.board]) byBoard[p.board] = {};
     if (p.rank === 1 || p.rank === 10) byBoard[p.board][p.rank] = p.rawTime;
   });
