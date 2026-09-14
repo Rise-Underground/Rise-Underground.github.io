@@ -2,14 +2,14 @@
 Infinity Rising — Competition Orchestrator
 =============================================
 
-Meant to be run on a schedule (every hour, via GitHub Actions). Each
+Meant to be run on a schedule (every 15 minutes, via GitHub Actions). Each
 run decides what to do based on where "now" falls relative to the
 current/next competition window:
 
   - Before the competition starts: do nothing.
   - Right at/after start (first run since start): run discover_catalog.py
     once.
-  - Every hour after start, until the competition ends: run
+  - Every 15 minutes after start, until the competition ends: run
     fast_scraper.py.
   - After the competition ends: do nothing — the last scrape's data
     stays as-is until the next competition's start triggers a fresh
@@ -29,7 +29,7 @@ from movement_tracker import update_movement_log
 
 STATE_PATH = "competition_state.json"
 LOG_PATH = "orchestrator_run_log.csv"
-SCRAPE_INTERVAL_SECONDS = 1 * 3600
+SCRAPE_INTERVAL_SECONDS = 15 * 60
 
 
 def log_run(action, detail=""):
@@ -71,7 +71,7 @@ def reset_leaderboard_csvs():
     """Wipes ir_leaderboard_placements.csv back to just its header the
     moment a new competition window is detected — so the site shows a
     cleared board immediately at start, instead of showing the previous
-    period's scores until the first hourly scrape overwrites them."""
+    period's scores until the first scrape overwrites them."""
     print("New competition period — clearing leaderboard placements immediately...")
     with open("ir_leaderboard_placements.csv", "w", newline="", encoding="utf-8") as f:
         f.write("player,board,rank,points,raw_time\n")
@@ -111,11 +111,11 @@ def main():
             log_run("catalog_discovery_failed", f"for window starting {start_key} -- will retry next run")
             return
 
-    # --- Fast scrape: every hour after start, until end ---
+    # --- Fast scrape: every 15 minutes after start, until end ---
     elapsed_seconds = (now - start).total_seconds()
     if elapsed_seconds < SCRAPE_INTERVAL_SECONDS:
         print(f"Competition started {elapsed_seconds/3600:.1f}h ago — "
-              f"waiting for the first hourly scrape window.")
+              f"waiting for the first scrape window.")
         log_run("waiting_first_scrape", f"competition started {elapsed_seconds/3600:.1f}h ago")
         return
 
@@ -125,7 +125,7 @@ def main():
 
     target_slot = int(elapsed_seconds // SCRAPE_INTERVAL_SECONDS)
     if target_slot > state.get("last_scrape_slot_index", -1):
-        print(f"New hourly slot reached (#{target_slot}) — running fast scrape...")
+        print(f"New scrape slot reached (#{target_slot}) — running fast scrape...")
         if run("python fast_scraper.py"):
             state["last_scrape_slot_index"] = target_slot
             save_state(state)

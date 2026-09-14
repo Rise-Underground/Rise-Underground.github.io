@@ -2,7 +2,7 @@ name: Competition Orchestrator
 
 on:
   schedule:
-    - cron: '13 * * * *'   # every hour, at :13 UTC -- offset from :00 since GitHub's scheduler deprioritizes on-the-hour cron jobs under load
+    - cron: '*/15 * * * *'   # every 15 minutes
   workflow_dispatch: {}     # lets you manually trigger a run from the Actions tab too
 
 permissions:
