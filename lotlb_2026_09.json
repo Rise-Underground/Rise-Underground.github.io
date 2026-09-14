@@ -1456,6 +1456,193 @@
           }
         ]
       }
+    },
+    {
+      "timestamp": "2026-09-14T03:39:27.698453+00:00",
+      "standings": [
+        {
+          "player": "LindaKnights#9411",
+          "points": 87,
+          "boards": 9
+        },
+        {
+          "player": "SnuSnu_Knights#3236",
+          "points": 57,
+          "boards": 6
+        },
+        {
+          "player": "Ford96#9395",
+          "points": 20,
+          "boards": 2
+        },
+        {
+          "player": "Lourde#2361",
+          "points": 20,
+          "boards": 2
+        },
+        {
+          "player": "Faux_Hubris#3960",
+          "points": 18,
+          "boards": 2
+        },
+        {
+          "player": "Japper#4409",
+          "points": 9,
+          "boards": 1
+        },
+        {
+          "player": "Crystaline#3100",
+          "points": 8,
+          "boards": 1
+        }
+      ],
+      "by_board": {
+        "Holocache": [
+          {
+            "player": "LindaKnights#9411",
+            "rank": 1,
+            "points": 10
+          }
+        ],
+        "Aero Trails \u2014 Calido": [
+          {
+            "player": "Ford96#9395",
+            "rank": 1,
+            "points": 10
+          },
+          {
+            "player": "LindaKnights#9411",
+            "rank": 2,
+            "points": 9
+          }
+        ],
+        "Aero Trails \u2014 Solace 3": [
+          {
+            "player": "LindaKnights#9411",
+            "rank": 1,
+            "points": 10
+          }
+        ],
+        "Aero Trails \u2014 Solace 2": [
+          {
+            "player": "LindaKnights#9411",
+            "rank": 1,
+            "points": 10
+          }
+        ],
+        "Aero Trails \u2014 Solace 1": [
+          {
+            "player": "LindaKnights#9411",
+            "rank": 1,
+            "points": 10
+          },
+          {
+            "player": "Japper#4409",
+            "rank": 2,
+            "points": 9
+          }
+        ],
+        "Aero Trails \u2014 Pavilion": [
+          {
+            "player": "Ford96#9395",
+            "rank": 1,
+            "points": 10
+          },
+          {
+            "player": "LindaKnights#9411",
+            "rank": 2,
+            "points": 9
+          },
+          {
+            "player": "Crystaline#3100",
+            "rank": 3,
+            "points": 8
+          },
+          {
+            "player": "SnuSnu_Knights#3236",
+            "rank": 4,
+            "points": 7
+          }
+        ],
+        "Aero Trails \u2014 Hub City": [
+          {
+            "player": "LindaKnights#9411",
+            "rank": 1,
+            "points": 10
+          }
+        ],
+        "Calido Yellow \u2014 Bubblejett Bonanza OG Custom 2023": [
+          {
+            "player": "LindaKnights#9411",
+            "rank": 1,
+            "points": 10
+          }
+        ],
+        "Calido Yellow \u2014 Bubblejett Sprinter 2022": [
+          {
+            "player": "SnuSnu_Knights#3236",
+            "rank": 1,
+            "points": 10
+          },
+          {
+            "player": "LindaKnights#9411",
+            "rank": 2,
+            "points": 9
+          }
+        ],
+        "Calido Yellow \u2014 Kazekura Shinobi-X": [
+          {
+            "player": "Lourde#2361",
+            "rank": 1,
+            "points": 10
+          }
+        ],
+        "Calido Yellow \u2014 Rando's Metalworks Sunset Speeder": [
+          {
+            "player": "SnuSnu_Knights#3236",
+            "rank": 1,
+            "points": 10
+          }
+        ],
+        "Calido Yellow \u2014 Valkyrie F9-R": [
+          {
+            "player": "SnuSnu_Knights#3236",
+            "rank": 1,
+            "points": 10
+          },
+          {
+            "player": "Faux_Hubris#3960",
+            "rank": 2,
+            "points": 9
+          }
+        ],
+        "Calido Red \u2014 Bubblejett Sprinter 2022": [
+          {
+            "player": "SnuSnu_Knights#3236",
+            "rank": 1,
+            "points": 10
+          }
+        ],
+        "Calido Red \u2014 Kazekura Shinobi-X": [
+          {
+            "player": "Lourde#2361",
+            "rank": 1,
+            "points": 10
+          },
+          {
+            "player": "Faux_Hubris#3960",
+            "rank": 2,
+            "points": 9
+          }
+        ],
+        "Calido Red \u2014 Rando's Metalworks Sunset Speeder": [
+          {
+            "player": "SnuSnu_Knights#3236",
+            "rank": 1,
+            "points": 10
+          }
+        ]
+      }
     }
   ],
   "movements": [
@@ -1651,6 +1838,31 @@
       "old_rank": 5,
       "new_rank": 6,
       "timestamp": "2026-09-14T03:25:35.843690+00:00"
+    },
+    {
+      "type": "board_takeover",
+      "board": "Calido Red \u2014 Kazekura Shinobi-X",
+      "loser": "Faux_Hubris#3960",
+      "winner": "Lourde#2361",
+      "timestamp": "2026-09-14T03:39:27.698453+00:00"
+    },
+    {
+      "type": "aggregate_move",
+      "player": "Lourde#2361",
+      "direction": "up",
+      "positions": 1,
+      "old_rank": 5,
+      "new_rank": 4,
+      "timestamp": "2026-09-14T03:39:27.698453+00:00"
+    },
+    {
+      "type": "aggregate_move",
+      "player": "Faux_Hubris#3960",
+      "direction": "down",
+      "positions": 1,
+      "old_rank": 4,
+      "new_rank": 5,
+      "timestamp": "2026-09-14T03:39:27.698453+00:00"
     }
   ]
 }
