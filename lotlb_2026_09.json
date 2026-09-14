@@ -1,0 +1,45 @@
+{
+  "competition_start": "2026-09-14T00:00:00+00:00",
+  "competition_end": "2026-09-20T23:59:59.999000+00:00",
+  "snapshots": [
+    {
+      "timestamp": "2026-09-14T00:31:25.371232+00:00",
+      "standings": [
+        {
+          "player": "Ford96#9395",
+          "points": 20,
+          "boards": 2
+        },
+        {
+          "player": "LindaKnights#9411",
+          "points": 10,
+          "boards": 1
+        }
+      ],
+      "by_board": {
+        "Aero Trails \u2014 Calido": [
+          {
+            "player": "Ford96#9395",
+            "rank": 1,
+            "points": 10
+          }
+        ],
+        "Aero Trails \u2014 Pavilion": [
+          {
+            "player": "Ford96#9395",
+            "rank": 1,
+            "points": 10
+          }
+        ],
+        "Calido Yellow \u2014 Bubblejett Sprinter 2022": [
+          {
+            "player": "LindaKnights#9411",
+            "rank": 1,
+            "points": 10
+          }
+        ]
+      }
+    }
+  ],
+  "movements": []
+}
