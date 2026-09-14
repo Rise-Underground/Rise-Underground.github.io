@@ -1,15 +1,15 @@
 {
-  "generated_at_utc": "2026-09-14T02:03:07.738825+00:00",
+  "generated_at_utc": "2026-09-14T03:02:59.792310+00:00",
   "notes": "Self-contained: computed directly from rise_ledger.db, no intermediate JSON files. Cardano (COPI+RISE merged) and Base RISE combined into one stake/reward total. Breakdown is by CHAIN only, never by token. Rewards combine staking/vault AND node rewards into one total per chain. avg_age_days is BASE-ONLY. LP staking kept separate. Migration totals from confirmed COPI-in/RISE-out event matching, both chains.",
   "summary": {
-    "final_date": "2026-09-13",
+    "final_date": "2026-09-14",
     "final_cardano_staked": 134694156.415829,
-    "final_base_staked": 171997550.665556,
-    "final_total_staked": 306691707.081385,
-    "final_avg_age_days": 210.1004,
+    "final_base_staked": 172595993.922092,
+    "final_total_staked": 307290150.337921,
+    "final_avg_age_days": 210.3715,
     "final_cardano_rewards": 32954502.776929,
-    "final_base_rewards": 9593620.606471,
-    "final_total_rewards": 42548123.3834,
+    "final_base_rewards": 9611107.894309,
+    "final_total_rewards": 42565610.671238,
     "final_cardano_node_rewards": 26521014.556497,
     "final_base_node_rewards": 3577545.64,
     "final_total_node_rewards": 30098560.196497,
@@ -9066,6 +9066,13 @@
       "base_staked": 171997550.665556,
       "total_staked": 306691707.081385,
       "avg_age_days": 210.1004
+    },
+    {
+      "date": "2026-09-14",
+      "cardano_staked": 134694156.415829,
+      "base_staked": 172595993.922092,
+      "total_staked": 307290150.337921,
+      "avg_age_days": 210.3715
     }
   ],
   "reward_days": [
@@ -19396,6 +19403,14 @@
       "daily_claimed": 44219.574861,
       "cumulative_claimed": 42548123.3834,
       "rolling_7day_avg": 35397.504761
+    },
+    {
+      "date": "2026-09-14",
+      "cardano_cumulative": 32954502.776929,
+      "base_cumulative": 9611107.894309,
+      "daily_claimed": 17487.287838,
+      "cumulative_claimed": 42565610.671238,
+      "rolling_7day_avg": 31973.314607
     }
   ],
   "lp_staking": {
