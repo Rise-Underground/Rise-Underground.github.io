@@ -418,8 +418,14 @@
     gap:10px;
     padding: 9px 12px;
     border-top: 1px solid var(--hairline);
+    cursor:pointer;
+    transition: background 0.15s ease;
   }
   .search-row:first-child{ border-top:none; }
+  .search-row:hover, .search-row:focus-visible{
+    background: rgba(212,165,55,0.07);
+    outline:none;
+  }
   .search-rank{
     font-family:'JetBrains Mono', monospace;
     font-size:11px;
@@ -533,7 +539,7 @@
     position:fixed;
     top:50%; left:50%;
     transform: translate(-50%, -50%) scale(0.96);
-    width: 480px;
+    width: 720px;
     max-width: 90vw;
     max-height: 82vh;
     background: linear-gradient(180deg, var(--asphalt-2), var(--panel));
@@ -599,10 +605,43 @@
     border-top: 1px dashed var(--hairline);
   }
 
+  .drawer-columns{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 28px;
+  }
+  .drawer-col{ display:flex; flex-direction:column; min-width:0; }
+
   .drawer-gauges{
     display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 20px 12px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 20px 10px;
+  }
+
+  .unranked-list{ display:flex; flex-direction:column; gap:8px; }
+  .unranked-item{
+    display:flex;
+    align-items:center;
+    padding: 9px 12px;
+    border: 1px dashed var(--hairline);
+    border-radius: var(--radius);
+    font-family:'Rajdhani', sans-serif;
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:0.03em;
+    color: var(--steel);
+    text-decoration:none;
+    transition: color 0.15s ease, border-color 0.15s ease;
+  }
+  a.unranked-item:hover, a.unranked-item:focus-visible{
+    color: var(--gold);
+    border-color: var(--gold);
+    outline:none;
+  }
+  .unranked-empty{
+    font-family:'JetBrains Mono', monospace;
+    font-size:12px;
+    color: var(--steel);
   }
   .gauge{
     display:flex;
@@ -686,6 +725,7 @@
     .who .name{ font-size:16px; }
     .board-drawer{ width:92vw; max-width:92vw; max-height: 85vh; padding: 24px 20px 32px; }
     .drawer-name{ font-size:26px; }
+    .drawer-columns{ grid-template-columns: 1fr; gap: 28px 0; }
     .drawer-gauges{ grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 16px 10px; }
     .gauge svg{ width:72px; height:72px; }
   }
@@ -778,8 +818,16 @@
     <div class="drawer-name" id="drawerName">—</div>
     <div class="drawer-points" id="drawerPoints">—</div>
   </div>
-  <p class="drawer-subhead" id="drawerSubhead">Boards</p>
-  <div class="drawer-gauges" id="drawerGauges"></div>
+  <div class="drawer-columns">
+    <div class="drawer-col">
+      <p class="drawer-subhead" id="drawerSubheadRanked">Ranked</p>
+      <div class="drawer-gauges" id="drawerGauges"></div>
+    </div>
+    <div class="drawer-col">
+      <p class="drawer-subhead" id="drawerSubheadUnranked">Unranked</p>
+      <div class="unranked-list" id="drawerUnrankedList"></div>
+    </div>
+  </div>
 </div>
 
 <script>
@@ -972,27 +1020,52 @@ const drawerBackdrop = document.getElementById('drawerBackdrop');
 const drawerRank = document.getElementById('drawerRank');
 const drawerName = document.getElementById('drawerName');
 const drawerPoints = document.getElementById('drawerPoints');
-const drawerSubhead = document.getElementById('drawerSubhead');
+const drawerSubheadRanked = document.getElementById('drawerSubheadRanked');
+const drawerSubheadUnranked = document.getElementById('drawerSubheadUnranked');
 const drawerGauges = document.getElementById('drawerGauges');
+const drawerUnrankedList = document.getElementById('drawerUnrankedList');
 let lastFocusedRow = null;
+
+// Full board catalog (names only) -- populated once ir_leaderboard_boards.csv
+// loads, so the drawer can show what a racer HASN'T scored on yet, not just
+// what they have. Stays empty (unranked column shows nothing) if that file
+// didn't load, same fallback posture as the opportunities box.
+let allBoardNames = [];
 
 function openDrawer(racer, rank, rowEl){
   document.querySelectorAll('.row.open').forEach(r => { r.classList.remove('open'); r.setAttribute('aria-expanded','false'); });
-  rowEl.classList.add('open');
-  rowEl.setAttribute('aria-expanded', 'true');
-  lastFocusedRow = rowEl;
+  if (rowEl){
+    rowEl.classList.add('open');
+    rowEl.setAttribute('aria-expanded', 'true');
+    lastFocusedRow = rowEl;
+  } else {
+    lastFocusedRow = null;
+  }
 
   drawerRank.textContent = `RANK #${rank}`;
   drawerName.textContent = racer.name;
   drawerPoints.textContent = `${racer.points} PTS TOTAL`;
+
+  const rankedBoards = new Set(racer.placements.map(p => p.board));
   const n = racer.placements.length;
-  drawerSubhead.textContent = `${n} board${n === 1 ? '' : 's'}`;
+  drawerSubheadRanked.textContent = `Ranked — ${n} board${n === 1 ? '' : 's'}`;
   drawerGauges.innerHTML = racer.placements.map(p => {
     const href = boardUrl(p.board);
     const tag = href ? 'a' : 'div';
     const linkAttrs = href ? `href="${href}" target="_blank" rel="noopener noreferrer" aria-label="Open ${p.board} leaderboard"` : '';
     return `<${tag} class="gauge" ${linkAttrs}>${gaugeSVG(p.rank)}<div class="board-name">${p.board}</div></${tag}>`;
   }).join('');
+
+  const unranked = allBoardNames.filter(b => !rankedBoards.has(b));
+  drawerSubheadUnranked.textContent = `Unranked — ${unranked.length} board${unranked.length === 1 ? '' : 's'}`;
+  drawerUnrankedList.innerHTML = unranked.length
+    ? unranked.map(b => {
+        const href = boardUrl(b);
+        const tag = href ? 'a' : 'div';
+        const linkAttrs = href ? `href="${href}" target="_blank" rel="noopener noreferrer" aria-label="Open ${b} leaderboard"` : '';
+        return `<${tag} class="unranked-item" ${linkAttrs}>${b}</${tag}>`;
+      }).join('')
+    : `<div class="unranked-empty">Ranked on every board!</div>`;
 
   drawer.classList.add('open');
   drawer.setAttribute('aria-hidden', 'false');
@@ -1079,14 +1152,25 @@ function renderSearchResults(query){
     return;
   }
 
-  searchResults.innerHTML = matches.map(m => `
-    <div class="search-row">
+  searchResults.innerHTML = matches.map((m, i) => `
+    <div class="search-row" tabindex="0" role="button" data-idx="${i}">
       <span class="search-rank">#${m.rank}</span>
       <span class="search-name">${escapeHtml(m.name)}</span>
       <span class="search-pts">${m.points} PTS</span>
     </div>
   `).join('');
   searchResults.classList.add('open');
+
+  const openMatch = (idx) => {
+    const m = matches[idx];
+    openDrawer(m, m.rank, null);
+    searchResults.classList.remove('open');
+  };
+  searchResults.querySelectorAll('.search-row').forEach(row => {
+    const idx = Number(row.dataset.idx);
+    row.addEventListener('click', () => openMatch(idx));
+    row.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' '){ e.preventDefault(); openMatch(idx); } });
+  });
 }
 
 searchInput.addEventListener('input', (e) => renderSearchResults(e.target.value));
@@ -1120,6 +1204,7 @@ if (location.protocol !== 'file:'){
       renderStandings(fullStandings.slice(0, 10));
 
       const boards = boardsText ? csvToBoards(boardsText) : null;
+      allBoardNames = boards ? boards.map(b => b.board) : [];
       renderOpportunities(placements, boards);
       renderLastUpdatedClock();
       setInterval(renderLastUpdatedClock, 1000);
