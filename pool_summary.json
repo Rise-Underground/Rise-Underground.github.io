@@ -96920,10 +96920,10 @@
       "pool_name": "Minswap V2 Order Contract",
       "date": "2026-09-15",
       "buy_volume": 0.0,
-      "sell_volume": 50762.753,
+      "sell_volume": 14437428.1378,
       "buy_txns": 0,
-      "sell_txns": 3,
-      "net_volume": -50762.753,
+      "sell_txns": 48,
+      "net_volume": -14437428.1378,
       "unique_makers": null,
       "closing_price": null,
       "lp_add_volume": 0.0,
@@ -96956,6 +96956,48 @@
       "sell_volume_usd": null,
       "closing_price_usd": null,
       "quote_usd_price": 0.19521551114544045
+    },
+    {
+      "chain": "Cardano",
+      "pool_name": "Minswap RISE/ADA",
+      "date": "2026-09-16",
+      "buy_volume": 0.0,
+      "sell_volume": 25559.0,
+      "buy_txns": 0,
+      "sell_txns": 1,
+      "net_volume": -25559.0,
+      "unique_makers": null,
+      "closing_price": 0.00690011,
+      "lp_add_volume": 0.0,
+      "lp_adds": 0,
+      "lp_remove_volume": 0.0,
+      "lp_removes": 0,
+      "lp_flow_unit": "RISE",
+      "buy_volume_usd": 0.0,
+      "sell_volume_usd": 34.43,
+      "closing_price_usd": 0.00134708,
+      "quote_usd_price": 0.19522620746085717
+    },
+    {
+      "chain": "Cardano",
+      "pool_name": "Minswap V2 Order Contract",
+      "date": "2026-09-16",
+      "buy_volume": 0.0,
+      "sell_volume": 25559.0,
+      "buy_txns": 0,
+      "sell_txns": 1,
+      "net_volume": -25559.0,
+      "unique_makers": null,
+      "closing_price": null,
+      "lp_add_volume": 0.0,
+      "lp_adds": 0,
+      "lp_remove_volume": 0.0,
+      "lp_removes": 0,
+      "lp_flow_unit": "RISE",
+      "buy_volume_usd": null,
+      "sell_volume_usd": null,
+      "closing_price_usd": null,
+      "quote_usd_price": 0.19522620746085717
     }
   ],
   "reserve_daily_summary": [
@@ -146458,6 +146500,15 @@
       "other_balance": 627511.874101,
       "other_asset": "ADA",
       "price": 0.00690399
+    },
+    {
+      "chain": "Cardano",
+      "pool_name": "Minswap RISE/ADA",
+      "date": "2026-09-16",
+      "rise_balance": 90916786.021547,
+      "other_balance": 627336.00496,
+      "other_asset": "ADA",
+      "price": 0.00690011
     }
   ]
 }
