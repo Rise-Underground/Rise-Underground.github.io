@@ -133145,21 +133145,21 @@
       "pool_name": "Pool 1 (Uniswap V2 Clone)",
       "date": "2026-09-16",
       "buy_volume": 363351.8332,
-      "sell_volume": 47544.0,
+      "sell_volume": 91314.0,
       "buy_txns": 2,
-      "sell_txns": 1,
-      "net_volume": 315807.8332,
+      "sell_txns": 2,
+      "net_volume": 272037.8332,
       "unique_makers": 3,
-      "closing_price": 5.460578993077469e-07,
+      "closing_price": 5.462437533205352e-07,
       "lp_add_volume": 0.0,
       "lp_adds": 0,
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "LP_TOKEN",
-      "buy_volume_usd": 475.24,
-      "sell_volume_usd": 62.18,
-      "closing_price_usd": 0.00130794,
-      "quote_usd_price": 2395.242188218426
+      "buy_volume_usd": 473.95,
+      "sell_volume_usd": 119.11,
+      "closing_price_usd": 0.00130439,
+      "quote_usd_price": 2387.926242281679
     },
     {
       "chain": "Base",
@@ -133177,10 +133177,10 @@
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "LP_TOKEN",
-      "buy_volume_usd": 2256.07,
-      "sell_volume_usd": 591.16,
-      "closing_price_usd": 0.00130986,
-      "quote_usd_price": 2395.242188218426
+      "buy_volume_usd": 2249.18,
+      "sell_volume_usd": 589.35,
+      "closing_price_usd": 0.00130586,
+      "quote_usd_price": 2387.926242281679
     },
     {
       "chain": "Cardano",
@@ -133199,9 +133199,9 @@
       "lp_removes": 0,
       "lp_flow_unit": "RISE",
       "buy_volume_usd": 0.0,
-      "sell_volume_usd": 28.44,
-      "closing_price_usd": 0.00132429,
-      "quote_usd_price": 0.1925000087288686
+      "sell_volume_usd": 28.22,
+      "closing_price_usd": 0.0013142,
+      "quote_usd_price": 0.19103264169637713
     },
     {
       "chain": "Cardano",
@@ -133219,10 +133219,10 @@
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "RISE",
-      "buy_volume_usd": 95.12,
-      "sell_volume_usd": 378.8,
-      "closing_price_usd": 0.0013247,
-      "quote_usd_price": 0.1925000087288686
+      "buy_volume_usd": 94.39,
+      "sell_volume_usd": 375.91,
+      "closing_price_usd": 0.00131461,
+      "quote_usd_price": 0.19103264169637713
     },
     {
       "chain": "Cardano",
@@ -133243,7 +133243,7 @@
       "buy_volume_usd": null,
       "sell_volume_usd": null,
       "closing_price_usd": null,
-      "quote_usd_price": 0.1925000087288686
+      "quote_usd_price": 0.19103264169637713
     },
     {
       "chain": "Cardano",
@@ -133264,7 +133264,7 @@
       "buy_volume_usd": null,
       "sell_volume_usd": null,
       "closing_price_usd": null,
-      "quote_usd_price": 0.1925000087288686
+      "quote_usd_price": 0.19103264169637713
     }
   ],
   "reserve_daily_summary": [
@@ -182772,8 +182772,8 @@
       "chain": "Base",
       "pool_name": "Pool 1 (Uniswap V2 Clone)",
       "date": "2026-09-16",
-      "rise_balance": 21125572.737049,
-      "other_balance": 11.63539,
+      "rise_balance": 21169342.737049,
+      "other_balance": 11.611405,
       "other_asset": "WETH",
       "price": 1e-06
     },
