@@ -1,15 +1,15 @@
 {
-  "generated_at_utc": "2026-09-17T03:02:35.306870+00:00",
+  "generated_at_utc": "2026-09-17T04:02:39.949961+00:00",
   "notes": "Self-contained: computed directly from rise_ledger.db, no intermediate JSON files. Cardano (COPI+RISE merged) and Base RISE combined into one stake/reward total. Breakdown is by CHAIN only, never by token. Rewards combine staking/vault AND node rewards into one total per chain. avg_age_days is BASE-ONLY. LP staking kept separate. Migration totals from confirmed COPI-in/RISE-out event matching, both chains.",
   "summary": {
-    "final_date": "2026-09-16",
+    "final_date": "2026-09-17",
     "final_cardano_staked": 131557495.5443,
-    "final_base_staked": 175403476.391247,
-    "final_total_staked": 306960971.935547,
-    "final_avg_age_days": 209.009,
+    "final_base_staked": 175417946.739041,
+    "final_total_staked": 306975442.283341,
+    "final_avg_age_days": 209.9918,
     "final_cardano_rewards": 33035338.220474,
-    "final_base_rewards": 9643512.76711,
-    "final_total_rewards": 42678850.987584,
+    "final_base_rewards": 9657983.114903,
+    "final_total_rewards": 42693321.335377,
     "final_cardano_node_rewards": 26549726.496497,
     "final_base_node_rewards": 3608602.83,
     "final_total_node_rewards": 30158329.326497,
@@ -27,7 +27,7 @@
     },
     "migrated_total": 781329788.589734,
     "migrated_last_7_days": 41062.392242,
-    "migrated_last_30_days": 4483883.006885
+    "migrated_last_30_days": 4481825.535301
   },
   "stake_days": [
     {
@@ -9087,6 +9087,13 @@
       "base_staked": 175403476.391247,
       "total_staked": 306960971.935547,
       "avg_age_days": 209.009
+    },
+    {
+      "date": "2026-09-17",
+      "cardano_staked": 131557495.5443,
+      "base_staked": 175417946.739041,
+      "total_staked": 306975442.283341,
+      "avg_age_days": 209.9918
     }
   ],
   "reward_days": [
@@ -19445,10 +19452,10 @@
     {
       "date": "2026-09-17",
       "cardano_cumulative": 33035338.220474,
-      "base_cumulative": 9643512.76711,
-      "daily_claimed": 3561.32,
-      "cumulative_claimed": 42678850.987584,
-      "rolling_7day_avg": 28249.608031
+      "base_cumulative": 9657983.114903,
+      "daily_claimed": 18031.667793,
+      "cumulative_claimed": 42693321.335377,
+      "rolling_7day_avg": 30316.800573
     }
   ],
   "lp_staking": {
@@ -22368,13 +22375,13 @@
       "event_count": 2571,
       "migrated_all_time": 448724324.583183,
       "migrated_last_7_days": 34858.175401,
-      "migrated_last_30_days": 2360205.894345
+      "migrated_last_30_days": 2358148.422761
     },
     "combined": {
       "event_count": 3721,
       "migrated_all_time": 781329788.589734,
       "migrated_last_7_days": 41062.392242,
-      "migrated_last_30_days": 4483883.006885
+      "migrated_last_30_days": 4481825.535301
     }
   }
 }
