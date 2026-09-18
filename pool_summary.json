@@ -133492,31 +133492,31 @@
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "LP_TOKEN",
-      "buy_volume_usd": 339.99,
-      "sell_volume_usd": 218.22,
-      "closing_price_usd": 0.00142331,
-      "quote_usd_price": 2604.6321865619725
+      "buy_volume_usd": 340.96,
+      "sell_volume_usd": 218.84,
+      "closing_price_usd": 0.00142739,
+      "quote_usd_price": 2612.086130633375
     },
     {
       "chain": "Base",
       "pool_name": "Pool 2 (Aerodrome vAMM)",
       "date": "2026-09-18",
-      "buy_volume": 1219803.5536,
-      "sell_volume": 592444.5999,
-      "buy_txns": 25,
-      "sell_txns": 18,
-      "net_volume": 627358.9537,
-      "unique_makers": 13,
-      "closing_price": 5.473561138516714e-07,
+      "buy_volume": 1219946.5186,
+      "sell_volume": 640099.5999,
+      "buy_txns": 26,
+      "sell_txns": 19,
+      "net_volume": 579846.9187,
+      "unique_makers": 14,
+      "closing_price": 5.473078148584602e-07,
       "lp_add_volume": 0.0,
       "lp_adds": 0,
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "LP_TOKEN",
-      "buy_volume_usd": 1739.03,
-      "sell_volume_usd": 844.63,
-      "closing_price_usd": 0.00142566,
-      "quote_usd_price": 2604.6321865619725
+      "buy_volume_usd": 1744.05,
+      "sell_volume_usd": 915.1,
+      "closing_price_usd": 0.00142962,
+      "quote_usd_price": 2612.086130633375
     },
     {
       "chain": "Cardano",
@@ -133534,10 +133534,10 @@
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "RISE",
-      "buy_volume_usd": 101.84,
-      "sell_volume_usd": 28.05,
-      "closing_price_usd": 0.0015036,
-      "quote_usd_price": 0.22064005172161338
+      "buy_volume_usd": 101.89,
+      "sell_volume_usd": 28.07,
+      "closing_price_usd": 0.00150438,
+      "quote_usd_price": 0.2207545247109072
     },
     {
       "chain": "Cardano",
@@ -133555,10 +133555,10 @@
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "RISE",
-      "buy_volume_usd": 779.86,
-      "sell_volume_usd": 199.57,
-      "closing_price_usd": 0.00149662,
-      "quote_usd_price": 0.22064005172161338
+      "buy_volume_usd": 780.26,
+      "sell_volume_usd": 199.67,
+      "closing_price_usd": 0.0014974,
+      "quote_usd_price": 0.2207545247109072
     },
     {
       "chain": "Cardano",
@@ -133579,7 +133579,7 @@
       "buy_volume_usd": null,
       "sell_volume_usd": null,
       "closing_price_usd": null,
-      "quote_usd_price": 0.22064005172161338
+      "quote_usd_price": 0.2207545247109072
     },
     {
       "chain": "Cardano",
@@ -133600,7 +133600,7 @@
       "buy_volume_usd": null,
       "sell_volume_usd": null,
       "closing_price_usd": null,
-      "quote_usd_price": 0.22064005172161338
+      "quote_usd_price": 0.2207545247109072
     }
   ],
   "reserve_daily_summary": [
@@ -183189,8 +183189,8 @@
       "chain": "Base",
       "pool_name": "Pool 2 (Aerodrome vAMM)",
       "date": "2026-09-18",
-      "rise_balance": 94765839.014682,
-      "other_balance": 51.873733,
+      "rise_balance": 94813351.049682,
+      "other_balance": 51.847738,
       "other_asset": "WETH",
       "price": 1e-06
     },
