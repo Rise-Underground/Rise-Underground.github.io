@@ -133471,31 +133471,31 @@
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "LP_TOKEN",
-      "buy_volume_usd": 180.52,
-      "sell_volume_usd": 66.2,
-      "closing_price_usd": 0.00136071,
-      "quote_usd_price": 2502.4808173669785
+      "buy_volume_usd": 180.81,
+      "sell_volume_usd": 66.3,
+      "closing_price_usd": 0.00136286,
+      "quote_usd_price": 2506.435945606414
     },
     {
       "chain": "Base",
       "pool_name": "Pool 2 (Aerodrome vAMM)",
       "date": "2026-09-18",
-      "buy_volume": 626372.702,
-      "sell_volume": 50840.725,
-      "buy_txns": 7,
-      "sell_txns": 4,
-      "net_volume": 575531.977,
-      "unique_makers": 5,
-      "closing_price": 5.447210275456128e-07,
+      "buy_volume": 681068.8857,
+      "sell_volume": 65579.725,
+      "buy_txns": 9,
+      "sell_txns": 5,
+      "net_volume": 615489.1607,
+      "unique_makers": 6,
+      "closing_price": 5.450426440966231e-07,
       "lp_add_volume": 0.0,
       "lp_adds": 0,
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "LP_TOKEN",
-      "buy_volume_usd": 853.84,
-      "sell_volume_usd": 69.3,
-      "closing_price_usd": 0.00136315,
-      "quote_usd_price": 2502.4808173669785
+      "buy_volume_usd": 930.42,
+      "sell_volume_usd": 89.59,
+      "closing_price_usd": 0.00136611,
+      "quote_usd_price": 2506.435945606414
     },
     {
       "chain": "Cardano",
@@ -133514,30 +133514,30 @@
       "lp_removes": 0,
       "lp_flow_unit": "RISE",
       "buy_volume_usd": 0.0,
-      "sell_volume_usd": 27.05,
-      "closing_price_usd": 0.00144991,
-      "quote_usd_price": 0.21480799224691344
+      "sell_volume_usd": 27.23,
+      "closing_price_usd": 0.00145946,
+      "quote_usd_price": 0.21622312313792727
     },
     {
       "chain": "Cardano",
       "pool_name": "Minswap RISE/ADA",
       "date": "2026-09-18",
-      "buy_volume": 237466.6566,
+      "buy_volume": 407471.5175,
       "sell_volume": 133347.0,
-      "buy_txns": 1,
+      "buy_txns": 4,
       "sell_txns": 5,
-      "net_volume": 104119.6566,
+      "net_volume": 274124.5175,
       "unique_makers": null,
-      "closing_price": 0.0067677113797083,
+      "closing_price": 0.006776565095407965,
       "lp_add_volume": 0.0,
       "lp_adds": 0,
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "RISE",
-      "buy_volume_usd": 345.22,
-      "sell_volume_usd": 193.85,
-      "closing_price_usd": 0.00145376,
-      "quote_usd_price": 0.21480799224691344
+      "buy_volume_usd": 597.05,
+      "sell_volume_usd": 195.39,
+      "closing_price_usd": 0.00146525,
+      "quote_usd_price": 0.21622312313792727
     },
     {
       "chain": "Cardano",
@@ -133558,7 +133558,7 @@
       "buy_volume_usd": null,
       "sell_volume_usd": null,
       "closing_price_usd": null,
-      "quote_usd_price": 0.21480799224691344
+      "quote_usd_price": 0.21622312313792727
     },
     {
       "chain": "Cardano",
@@ -133579,7 +133579,7 @@
       "buy_volume_usd": null,
       "sell_volume_usd": null,
       "closing_price_usd": null,
-      "quote_usd_price": 0.21480799224691344
+      "quote_usd_price": 0.21622312313792727
     }
   ],
   "reserve_daily_summary": [
@@ -183168,8 +183168,8 @@
       "chain": "Base",
       "pool_name": "Pool 2 (Aerodrome vAMM)",
       "date": "2026-09-18",
-      "rise_balance": 94787755.991316,
-      "other_balance": 51.861738,
+      "rise_balance": 94747798.807589,
+      "other_balance": 51.88361,
       "other_asset": "WETH",
       "price": 1e-06
     },
@@ -183186,10 +183186,10 @@
       "chain": "Cardano",
       "pool_name": "Minswap RISE/ADA",
       "date": "2026-09-18",
-      "rise_balance": 91741470.387428,
-      "other_balance": 621778.335294,
+      "rise_balance": 91571465.526544,
+      "other_balance": 622936.089052,
       "other_asset": "ADA",
-      "price": 0.00677751
+      "price": 0.00680273
     }
   ]
 }
