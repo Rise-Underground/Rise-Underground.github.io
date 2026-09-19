@@ -492,6 +492,44 @@
   .chart-title { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 17px; }
   .chart-note { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--ember); max-width: 420px; line-height: 1.4; }
   .chart-desc { color: var(--muted); font-size: 12.5px; margin-top: 4px; }
+
+  /* Custom tooltip: some browsers/extensions suppress the native title=""
+     box even though hover and cursor:help still work (confirmed via a
+     test page -- question-mark cursor appeared, no box). This renders our
+     own tooltip via CSS, driven by data-tooltip, so nothing outside this
+     page's own code can block it. title="" is left in place alongside it
+     purely for accessibility (screen readers), not for the visual box. */
+  [data-tooltip] {
+    position: relative;
+    cursor: help;
+  }
+  [data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 0;
+    z-index: 50;
+    width: max-content;
+    max-width: 260px;
+    background: #171B24;
+    color: #F2EFE9;
+    border: 1px solid #232838;
+    border-radius: 8px;
+    padding: 8px 10px;
+    font-size: 11.5px;
+    line-height: 1.4;
+    font-family: 'JetBrains Mono', monospace;
+    text-transform: none;
+    letter-spacing: normal;
+    white-space: normal;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.12s ease;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  }
+  [data-tooltip]:hover::after {
+    opacity: 1;
+  }
   .legend { display: flex; gap: 16px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--muted); }
   .legend span { display: inline-flex; align-items: center; gap: 6px; }
   .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
@@ -547,20 +585,20 @@
   <div class="card" style="padding: 32px;">
     <div class="top-tier-grid">
       <div>
-        <div class="stat-label" title="Cardano vault deposits + Base staking contract deposits, combined. Snapshot as of the latest data pull.">Total Currently Staked</div>
+        <div class="stat-label" title="Cardano vault deposits + Base staking contract deposits, combined. Snapshot as of the latest data pull." data-tooltip="Cardano vault deposits + Base staking contract deposits, combined. Snapshot as of the latest data pull.">Total Currently Staked</div>
         <div class="stat-value" id="heroValue" style="font-size: 44px;">0</div>
         <div class="stat-unit">RISE</div>
       </div>
       <div>
-        <div class="stat-label" title="Change in total staked over the last 7 days (deposits minus withdrawals, both chains combined).">Net Flow &mdash; 7D</div>
+        <div class="stat-label" title="Change in total staked over the last 7 days (deposits minus withdrawals, both chains combined)." data-tooltip="Change in total staked over the last 7 days (deposits minus withdrawals, both chains combined).">Net Flow &mdash; 7D</div>
         <div class="stat-value" id="chipFlow7" style="font-size: 44px;">&mdash;</div>
       </div>
       <div>
-        <div class="stat-label" title="Change in total staked over the last 30 days (deposits minus withdrawals, both chains combined).">Net Flow &mdash; 30D</div>
+        <div class="stat-label" title="Change in total staked over the last 30 days (deposits minus withdrawals, both chains combined)." data-tooltip="Change in total staked over the last 30 days (deposits minus withdrawals, both chains combined).">Net Flow &mdash; 30D</div>
         <div class="stat-value" id="chipFlow30" style="font-size: 44px;">&mdash;</div>
       </div>
       <div>
-        <div class="stat-label" title="All staking + node rewards claimed to date, Cardano and Base combined, in RISE since migration.">Total Rewards (RISE)</div>
+        <div class="stat-label" title="All staking + node rewards claimed to date, Cardano and Base combined, in RISE since migration." data-tooltip="All staking + node rewards claimed to date, Cardano and Base combined, in RISE since migration.">Total Rewards (RISE)</div>
         <div class="stat-value" id="heroRewardsValue" style="font-size: 44px;">0</div>
       </div>
     </div>
@@ -569,42 +607,42 @@
       <div class="chain-group">
         <div class="chain-group-title" style="color: var(--red);">Cardano</div>
         <div class="chain-group-stats">
-          <div><div class="term-label" title="RISE + COPI currently deposited in the Cardano staking vault. (There is still some COPI sitting in closed vaults.)">Staked</div><div class="term-value" id="chipCardanoStaked">0</div></div>
-          <div><div class="term-label" title="Net change in Cardano staked amount over the last 7 days.">7D Flow</div><div class="term-value" id="chipCardanoFlow7">&mdash;</div></div>
-          <div><div class="term-label" title="Net change in Cardano staked amount over the last 30 days.">30D Flow</div><div class="term-value" id="chipCardanoFlow30">&mdash;</div></div>
+          <div><div class="term-label" title="RISE + COPI currently deposited in the Cardano staking vault. (There is still some COPI sitting in closed vaults.)" data-tooltip="RISE + COPI currently deposited in the Cardano staking vault. (There is still some COPI sitting in closed vaults.)">Staked</div><div class="term-value" id="chipCardanoStaked">0</div></div>
+          <div><div class="term-label" title="Net change in Cardano staked amount over the last 7 days." data-tooltip="Net change in Cardano staked amount over the last 7 days.">7D Flow</div><div class="term-value" id="chipCardanoFlow7">&mdash;</div></div>
+          <div><div class="term-label" title="Net change in Cardano staked amount over the last 30 days." data-tooltip="Net change in Cardano staked amount over the last 30 days.">30D Flow</div><div class="term-value" id="chipCardanoFlow30">&mdash;</div></div>
         </div>
       </div>
       <div class="chain-group">
         <div class="chain-group-title" style="color: var(--ice);">Base</div>
         <div class="chain-group-stats" style="grid-template-columns: 1fr 1fr 1fr 1fr;">
-          <div><div class="term-label" title="RISE currently deposited in the Base staking contract.">Staked</div><div class="term-value" id="chipBaseStaked">0</div></div>
-          <div><div class="term-label" title="Net change in Base staked amount over the last 7 days.">7D Flow</div><div class="term-value" id="chipBaseFlow7">&mdash;</div></div>
-          <div><div class="term-label" title="Net change in Base staked amount over the last 30 days.">30D Flow</div><div class="term-value" id="chipBaseFlow30">&mdash;</div></div>
-          <div><div class="term-label" title="Deposit-weighted average number of days currently-staked RISE has been sitting in the Base contract. Base only -- not blended with Cardano.">Avg. Age Staked</div><div class="term-value" id="heroAvgAge">0</div></div>
+          <div><div class="term-label" title="RISE currently deposited in the Base staking contract." data-tooltip="RISE currently deposited in the Base staking contract.">Staked</div><div class="term-value" id="chipBaseStaked">0</div></div>
+          <div><div class="term-label" title="Net change in Base staked amount over the last 7 days." data-tooltip="Net change in Base staked amount over the last 7 days.">7D Flow</div><div class="term-value" id="chipBaseFlow7">&mdash;</div></div>
+          <div><div class="term-label" title="Net change in Base staked amount over the last 30 days." data-tooltip="Net change in Base staked amount over the last 30 days.">30D Flow</div><div class="term-value" id="chipBaseFlow30">&mdash;</div></div>
+          <div><div class="term-label" title="Deposit-weighted average number of days currently-staked RISE has been sitting in the Base contract. Base only -- not blended with Cardano." data-tooltip="Deposit-weighted average number of days currently-staked RISE has been sitting in the Base contract. Base only -- not blended with Cardano.">Avg. Age Staked</div><div class="term-value" id="heroAvgAge">0</div></div>
         </div>
       </div>
     </div>
 
     <div class="expansion-row">
       <div class="chain-group">
-        <div class="chain-group-title" style="color: var(--gold);" title="Total node-operator rewards claimed to date, RISE and COPI combined, both chains.">Node Rewards</div>
+        <div class="chain-group-title" style="color: var(--gold);" title="Total node-operator rewards claimed to date, RISE and COPI combined, both chains." data-tooltip="Total node-operator rewards claimed to date, RISE and COPI combined, both chains.">Node Rewards</div>
         <div class="chain-group-stats" style="grid-template-columns: 1fr;">
           <div><div class="term-label"></div><div class="term-value" id="chipNodeRewardsTotal">0</div></div>
         </div>
       </div>
       <div class="chain-group">
-        <div class="chain-group-title" style="color: var(--ice);" title="Buy volume minus sell volume across all tracked pools -- net flow, not gross trading volume.">Net Flows (RISE) &mdash; All Venues</div>
+        <div class="chain-group-title" style="color: var(--ice);" title="Buy volume minus sell volume across all tracked pools -- net flow, not gross trading volume." data-tooltip="Buy volume minus sell volume across all tracked pools -- net flow, not gross trading volume.">Net Flows (RISE) &mdash; All Venues</div>
         <div class="chain-group-stats" style="grid-template-columns: 1fr 1fr 1fr;">
           <div>
-            <div class="term-label" id="volLabel24h" title="Only one day of granularity is available per data point, so this is the most recent day's totals, not a true rolling 24h window.">24H Net Flow</div>
+            <div class="term-label" id="volLabel24h" title="Only one day of granularity is available per data point, so this is the most recent day's totals, not a true rolling 24h window." data-tooltip="Only one day of granularity is available per data point, so this is the most recent day's totals, not a true rolling 24h window.">24H Net Flow</div>
             <div class="term-value" id="chipVolNet24h">&mdash;</div>
           </div>
           <div>
-            <div class="term-label" title="Net buy volume minus sell volume across all tracked pools over the last 7 days.">7D Net Flow</div>
+            <div class="term-label" title="Net buy volume minus sell volume across all tracked pools over the last 7 days." data-tooltip="Net buy volume minus sell volume across all tracked pools over the last 7 days.">7D Net Flow</div>
             <div class="term-value" id="chipVolNet7d">&mdash;</div>
           </div>
           <div>
-            <div class="term-label" title="Net buy volume minus sell volume across all tracked pools over the last 30 days.">30D Net Flow</div>
+            <div class="term-label" title="Net buy volume minus sell volume across all tracked pools over the last 30 days." data-tooltip="Net buy volume minus sell volume across all tracked pools over the last 30 days.">30D Net Flow</div>
             <div class="term-value" id="chipVolNet30d">&mdash;</div>
           </div>
         </div>
@@ -612,17 +650,17 @@
       <div class="chain-group">
         <div class="chain-group-title" style="color: var(--gold);">Migration COPI to RISE</div>
         <div class="chain-group-stats" style="grid-template-columns: 1fr 1fr 1fr 1fr 1fr;">
-          <div><div class="term-label" title="COPI-in matched to equal RISE-out, both chains combined.">Total</div><div class="term-value" id="chipUnmigratedTotal">&mdash;</div></div>
-          <div><div class="term-label" title="COPI migrated to RISE in the last 7 days, same matching rule.">7D Migrated</div><div class="term-value" id="chipMigrated7d">&mdash;</div></div>
-          <div><div class="term-label" title="COPI migrated to RISE in the last 30 days, same matching rule.">30D Migrated</div><div class="term-value" id="chipMigrated30d">&mdash;</div></div>
-          <div><div class="term-label" title="Distinct wallets that migrated at least once in the last 7 days, both chains combined. Deduped by wallet, not by transaction. Cardano-side wallet attribution is a best-effort read, not yet spot-checked.">7D Wallets</div><div class="term-value" id="chipMigratedWallets7d">&mdash;</div></div>
-          <div><div class="term-label" title="Distinct wallets that migrated at least once in the last 30 days, both chains combined. Deduped by wallet, not by transaction. Cardano-side wallet attribution is a best-effort read, not yet spot-checked.">30D Wallets</div><div class="term-value" id="chipMigratedWallets30d">&mdash;</div></div>
+          <div><div class="term-label" title="COPI-in matched to equal RISE-out, both chains combined." data-tooltip="COPI-in matched to equal RISE-out, both chains combined.">Total</div><div class="term-value" id="chipUnmigratedTotal">&mdash;</div></div>
+          <div><div class="term-label" title="COPI migrated to RISE in the last 7 days, same matching rule." data-tooltip="COPI migrated to RISE in the last 7 days, same matching rule.">7D Migrated</div><div class="term-value" id="chipMigrated7d">&mdash;</div></div>
+          <div><div class="term-label" title="COPI migrated to RISE in the last 30 days, same matching rule." data-tooltip="COPI migrated to RISE in the last 30 days, same matching rule.">30D Migrated</div><div class="term-value" id="chipMigrated30d">&mdash;</div></div>
+          <div><div class="term-label" title="Distinct wallets that migrated at least once in the last 7 days, both chains combined. Deduped by wallet, not by transaction. Cardano-side wallet attribution is a best-effort read, not yet spot-checked." data-tooltip="Distinct wallets that migrated at least once in the last 7 days, both chains combined. Deduped by wallet, not by transaction. Cardano-side wallet attribution is a best-effort read, not yet spot-checked.">7D Wallets</div><div class="term-value" id="chipMigratedWallets7d">&mdash;</div></div>
+          <div><div class="term-label" title="Distinct wallets that migrated at least once in the last 30 days, both chains combined. Deduped by wallet, not by transaction. Cardano-side wallet attribution is a best-effort read, not yet spot-checked." data-tooltip="Distinct wallets that migrated at least once in the last 30 days, both chains combined. Deduped by wallet, not by transaction. Cardano-side wallet attribution is a best-effort read, not yet spot-checked.">30D Wallets</div><div class="term-value" id="chipMigratedWallets30d">&mdash;</div></div>
         </div>
       </div>
       <div class="chain-group">
         <div class="chain-group-title" style="color: var(--gold);">Circulating Supply</div>
         <div class="chain-group-stats" style="grid-template-columns: 1fr;">
-          <div><div class="term-label" title="3,000,000,000 minus every wallet flagged non-circulating in copi_wallet_labels.csv, as of today.">Circulating Supply est.</div><div class="term-value" id="chipCirculatingSupply">&mdash;</div></div>
+          <div><div class="term-label" title="3,000,000,000 minus every wallet flagged non-circulating in copi_wallet_labels.csv, as of today." data-tooltip="3,000,000,000 minus every wallet flagged non-circulating in copi_wallet_labels.csv, as of today.">Circulating Supply est.</div><div class="term-value" id="chipCirculatingSupply">&mdash;</div></div>
         </div>
       </div>
     </div>
@@ -645,7 +683,7 @@
       <div class="chart-head">
         <div>
           <div class="chart-title">Weekly Net Flow &mdash; Short vs. Long EMA</div>
-          <div class="chart-desc" title="Weekly-bucketed net flow, smoothed with a 3-week and a 10-week exponential moving average. A short-EMA crossover above the long EMA is the early signal; below is the early warning.">Cardano + Base combined &middot; bars = weekly total, lines = EMA crossover</div>
+          <div class="chart-desc" title="Weekly-bucketed net flow, smoothed with a 3-week and a 10-week exponential moving average. A short-EMA crossover above the long EMA is the early signal; below is the early warning." data-tooltip="Weekly-bucketed net flow, smoothed with a 3-week and a 10-week exponential moving average. A short-EMA crossover above the long EMA is the early signal; below is the early warning.">Cardano + Base combined &middot; bars = weekly total, lines = EMA crossover</div>
         </div>
         <div class="legend">
           <span><i class="dot" style="background:#35D07F"></i>Inflow</span>
