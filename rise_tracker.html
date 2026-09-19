@@ -547,20 +547,20 @@
   <div class="card" style="padding: 32px;">
     <div class="top-tier-grid">
       <div>
-        <div class="stat-label">Total Currently Staked</div>
+        <div class="stat-label" title="Cardano vault deposits + Base staking contract deposits, combined. Snapshot as of the latest data pull.">Total Currently Staked</div>
         <div class="stat-value" id="heroValue" style="font-size: 44px;">0</div>
         <div class="stat-unit">RISE</div>
       </div>
       <div>
-        <div class="stat-label">Net Flow &mdash; 7D</div>
+        <div class="stat-label" title="Change in total staked over the last 7 days (deposits minus withdrawals, both chains combined).">Net Flow &mdash; 7D</div>
         <div class="stat-value" id="chipFlow7" style="font-size: 44px;">&mdash;</div>
       </div>
       <div>
-        <div class="stat-label">Net Flow &mdash; 30D</div>
+        <div class="stat-label" title="Change in total staked over the last 30 days (deposits minus withdrawals, both chains combined).">Net Flow &mdash; 30D</div>
         <div class="stat-value" id="chipFlow30" style="font-size: 44px;">&mdash;</div>
       </div>
       <div>
-        <div class="stat-label">Total Rewards (RISE)</div>
+        <div class="stat-label" title="All staking + node rewards claimed to date, Cardano and Base combined, in RISE since migration.">Total Rewards (RISE)</div>
         <div class="stat-value" id="heroRewardsValue" style="font-size: 44px;">0</div>
       </div>
     </div>
@@ -569,52 +569,54 @@
       <div class="chain-group">
         <div class="chain-group-title" style="color: var(--red);">Cardano</div>
         <div class="chain-group-stats">
-          <div><div class="term-label">Staked</div><div class="term-value" id="chipCardanoStaked">0</div></div>
-          <div><div class="term-label">7D Flow</div><div class="term-value" id="chipCardanoFlow7">&mdash;</div></div>
-          <div><div class="term-label">30D Flow</div><div class="term-value" id="chipCardanoFlow30">&mdash;</div></div>
+          <div><div class="term-label" title="RISE + COPI currently deposited in the Cardano staking vault. (There is still some COPI sitting in closed vaults.)">Staked</div><div class="term-value" id="chipCardanoStaked">0</div></div>
+          <div><div class="term-label" title="Net change in Cardano staked amount over the last 7 days.">7D Flow</div><div class="term-value" id="chipCardanoFlow7">&mdash;</div></div>
+          <div><div class="term-label" title="Net change in Cardano staked amount over the last 30 days.">30D Flow</div><div class="term-value" id="chipCardanoFlow30">&mdash;</div></div>
         </div>
       </div>
       <div class="chain-group">
         <div class="chain-group-title" style="color: var(--ice);">Base</div>
         <div class="chain-group-stats" style="grid-template-columns: 1fr 1fr 1fr 1fr;">
-          <div><div class="term-label">Staked</div><div class="term-value" id="chipBaseStaked">0</div></div>
-          <div><div class="term-label">7D Flow</div><div class="term-value" id="chipBaseFlow7">&mdash;</div></div>
-          <div><div class="term-label">30D Flow</div><div class="term-value" id="chipBaseFlow30">&mdash;</div></div>
-          <div><div class="term-label">Avg. Age Staked</div><div class="term-value" id="heroAvgAge">0</div></div>
+          <div><div class="term-label" title="RISE currently deposited in the Base staking contract.">Staked</div><div class="term-value" id="chipBaseStaked">0</div></div>
+          <div><div class="term-label" title="Net change in Base staked amount over the last 7 days.">7D Flow</div><div class="term-value" id="chipBaseFlow7">&mdash;</div></div>
+          <div><div class="term-label" title="Net change in Base staked amount over the last 30 days.">30D Flow</div><div class="term-value" id="chipBaseFlow30">&mdash;</div></div>
+          <div><div class="term-label" title="Deposit-weighted average number of days currently-staked RISE has been sitting in the Base contract. Base only -- not blended with Cardano.">Avg. Age Staked</div><div class="term-value" id="heroAvgAge">0</div></div>
         </div>
       </div>
     </div>
 
     <div class="expansion-row">
       <div class="chain-group">
-        <div class="chain-group-title" style="color: var(--gold);">Node Rewards</div>
+        <div class="chain-group-title" style="color: var(--gold);" title="Total node-operator rewards claimed to date, RISE and COPI combined, both chains.">Node Rewards</div>
         <div class="chain-group-stats" style="grid-template-columns: 1fr;">
           <div><div class="term-label"></div><div class="term-value" id="chipNodeRewardsTotal">0</div></div>
         </div>
       </div>
       <div class="chain-group">
-        <div class="chain-group-title" style="color: var(--ice);">Trading Volume (RISE) &mdash; All Venues</div>
+        <div class="chain-group-title" style="color: var(--ice);" title="Buy volume minus sell volume across all tracked pools -- net flow, not gross trading volume.">Net Flows (RISE) &mdash; All Venues</div>
         <div class="chain-group-stats" style="grid-template-columns: 1fr 1fr 1fr;">
           <div>
             <div class="term-label" id="volLabel24h" title="Only one day of granularity is available per data point, so this is the most recent day's totals, not a true rolling 24h window.">24H Net Flow</div>
             <div class="term-value" id="chipVolNet24h">&mdash;</div>
           </div>
           <div>
-            <div class="term-label">7D Net Flow</div>
+            <div class="term-label" title="Net buy volume minus sell volume across all tracked pools over the last 7 days.">7D Net Flow</div>
             <div class="term-value" id="chipVolNet7d">&mdash;</div>
           </div>
           <div>
-            <div class="term-label">30D Net Flow</div>
+            <div class="term-label" title="Net buy volume minus sell volume across all tracked pools over the last 30 days.">30D Net Flow</div>
             <div class="term-value" id="chipVolNet30d">&mdash;</div>
           </div>
         </div>
       </div>
       <div class="chain-group">
         <div class="chain-group-title" style="color: var(--gold);">Migration COPI to RISE</div>
-        <div class="chain-group-stats" style="grid-template-columns: 1fr 1fr 1fr;">
+        <div class="chain-group-stats" style="grid-template-columns: 1fr 1fr 1fr 1fr 1fr;">
           <div><div class="term-label" title="COPI-in matched to equal RISE-out, both chains combined.">Total</div><div class="term-value" id="chipUnmigratedTotal">&mdash;</div></div>
-          <div><div class="term-label">7D Migrated</div><div class="term-value" id="chipMigrated7d">&mdash;</div></div>
-          <div><div class="term-label">30D Migrated</div><div class="term-value" id="chipMigrated30d">&mdash;</div></div>
+          <div><div class="term-label" title="COPI migrated to RISE in the last 7 days, same matching rule.">7D Migrated</div><div class="term-value" id="chipMigrated7d">&mdash;</div></div>
+          <div><div class="term-label" title="COPI migrated to RISE in the last 30 days, same matching rule.">30D Migrated</div><div class="term-value" id="chipMigrated30d">&mdash;</div></div>
+          <div><div class="term-label" title="Distinct wallets that migrated at least once in the last 7 days, both chains combined. Deduped by wallet, not by transaction. Cardano-side wallet attribution is a best-effort read, not yet spot-checked.">7D Wallets</div><div class="term-value" id="chipMigratedWallets7d">&mdash;</div></div>
+          <div><div class="term-label" title="Distinct wallets that migrated at least once in the last 30 days, both chains combined. Deduped by wallet, not by transaction. Cardano-side wallet attribution is a best-effort read, not yet spot-checked.">30D Wallets</div><div class="term-value" id="chipMigratedWallets30d">&mdash;</div></div>
         </div>
       </div>
       <div class="chain-group">
@@ -642,13 +644,14 @@
     <div class="card chart-card">
       <div class="chart-head">
         <div>
-          <div class="chart-title">Daily Net Flow &amp; 7-Day Rolling Average</div>
-          <div class="chart-desc">Cardano + Base combined &middot; axis clipped, arrows mark days off-scale</div>
+          <div class="chart-title">Weekly Net Flow &mdash; Short vs. Long EMA</div>
+          <div class="chart-desc" title="Weekly-bucketed net flow, smoothed with a 3-week and a 10-week exponential moving average. A short-EMA crossover above the long EMA is the early signal; below is the early warning.">Cardano + Base combined &middot; bars = weekly total, lines = EMA crossover</div>
         </div>
         <div class="legend">
           <span><i class="dot" style="background:#35D07F"></i>Inflow</span>
           <span><i class="dot" style="background:#FF5468"></i>Outflow</span>
-          <span><i class="dot" style="background:#FF7A29"></i>7-day avg</span>
+          <span><i class="dot" style="background:#FF7A29"></i>3-week EMA</span>
+          <span><i class="dot" style="background:#7C8494"></i>10-week EMA</span>
         </div>
       </div>
       <div class="chart-canvas-wrap">
@@ -756,7 +759,7 @@ async function loadDashboard() {
   const nodeRewardsEl = document.getElementById('chipNodeRewardsTotal');
   if (nodeRewardsEl) {
     nodeRewardsEl.textContent = (NODE_REWARDS_TOTAL !== undefined)
-      ? formatCompact(NODE_REWARDS_TOTAL) + ' RISE/COPI'
+      ? formatCompact(NODE_REWARDS_TOTAL) + ' RISE & COPI'
       : 'N/A';
   }
   document.getElementById('chipBaseStaked').textContent = formatCompact(BASE_STAKED_FINAL) + ' RISE';
@@ -815,6 +818,16 @@ async function loadDashboard() {
   if (migrated30dEl) {
     const m30 = data.summary.migrated_last_30_days;
     migrated30dEl.textContent = (m30 !== undefined && m30 !== null) ? formatCompact(m30) : 'N/A';
+  }
+  const migratedWallets7dEl = document.getElementById('chipMigratedWallets7d');
+  if (migratedWallets7dEl) {
+    const w7 = data.summary.migrated_wallets_last_7_days;
+    migratedWallets7dEl.textContent = (w7 !== undefined && w7 !== null) ? w7 : 'N/A';
+  }
+  const migratedWallets30dEl = document.getElementById('chipMigratedWallets30d');
+  if (migratedWallets30dEl) {
+    const w30 = data.summary.migrated_wallets_last_30_days;
+    migratedWallets30dEl.textContent = (w30 !== undefined && w30 !== null) ? w30 : 'N/A';
   }
 
   // Avg. Age Staked -- Base only (data.summary.final_avg_age_days).
@@ -926,70 +939,69 @@ async function loadDashboard() {
     }
   });
 
-  // ---------- Chart 2: daily net flow + rolling avg (clipped) ----------
-  const netFlow = flowDays.map(d => d.n);
-  const rollingAvg = flowDays.map(d => d.r);
-  const flowColors = netFlow.map(v => v >= 0 ? 'rgba(53,208,127,0.85)' : 'rgba(255,84,104,0.85)');
-  const Y_MIN = -6000000;
-  const Y_MAX = 7000000;
+  // ---------- Chart 2: weekly net flow + short(3wk)/long(10wk) EMA crossover ----------
+  // Bucketing by week (Monday-start) instead of plotting daily deltas smooths
+  // out single-day spikes before they ever hit the chart, since one busy day
+  // just nudges its week's total instead of stabbing straight to the top of
+  // the axis. The EMA pair on top is the standard fast/slow crossover read:
+  // short EMA crossing above the long EMA is the early "picking up" signal,
+  // crossing below is the early "cooling off" signal -- both react faster
+  // than the 3/10-week bars alone but without the whiplash of a raw daily
+  // rolling average.
+  function isoWeekStart(dateStr) {
+    const dt = new Date(dateStr + 'T00:00:00Z');
+    const day = dt.getUTCDay();
+    const diff = (day === 0 ? 6 : day - 1); // days since Monday
+    dt.setUTCDate(dt.getUTCDate() - diff);
+    return dt.toISOString().slice(0, 10);
+  }
 
-  const clippedDayPlugin = {
-    id: 'clippedDayCallouts',
-    afterDatasetsDraw(chart) {
-      const { ctx, chartArea, scales } = chart;
-      ctx.save();
-      ctx.font = "500 10px 'JetBrains Mono', monospace";
-      ctx.textAlign = 'center';
-
-      const above = [];
-      const below = [];
-      flowDays.forEach((d, i) => {
-        if (d.n > Y_MAX) above.push({ x: scales.x.getPixelForValue(i), d });
-        else if (d.n < Y_MIN) below.push({ x: scales.x.getPixelForValue(i), d });
-      });
-
-      const CLUSTER_PX = 46;
-      const STEP = 15;
-      function draw(list, isAbove) {
-        list.sort((a, b) => a.x - b.x);
-        let lastX = -Infinity;
-        let stack = 0;
-        list.forEach(({ x, d }) => {
-          stack = (x - lastX < CLUSTER_PX) ? stack + 1 : 0;
-          lastX = x;
-          const extra = stack * STEP;
-          const y = isAbove ? chartArea.top - extra : chartArea.bottom + extra;
-          const label = (d.n >= 0 ? '+' : '') + (d.n / 1e6).toFixed(1) + 'M';
-          ctx.fillStyle = d.n >= 0 ? '#35D07F' : '#FF5468';
-          ctx.beginPath();
-          if (isAbove) { ctx.moveTo(x, y - 2); ctx.lineTo(x - 4, y + 6); ctx.lineTo(x + 4, y + 6); }
-          else { ctx.moveTo(x, y + 2); ctx.lineTo(x - 4, y - 6); ctx.lineTo(x + 4, y - 6); }
-          ctx.closePath();
-          ctx.fill();
-          ctx.fillStyle = '#F2EFE9';
-          ctx.fillText(label, x, isAbove ? y - 6 : y + 16);
-        });
-      }
-      draw(above, true);
-      draw(below, false);
-
-      ctx.restore();
+  function emaSeries(values, span) {
+    const alpha = 2 / (span + 1);
+    const out = [];
+    let prev = null;
+    for (const v of values) {
+      prev = (prev === null) ? v : alpha * v + (1 - alpha) * prev;
+      out.push(prev);
     }
-  };
+    return out;
+  }
+
+  function buildWeeklyFlow(days, valueKey, shortSpan, longSpan) {
+    const weekTotals = new Map();
+    let prevValue = null;
+    for (const row of days) {
+      const value = row[valueKey];
+      const delta = (prevValue === null) ? 0 : value - prevValue;
+      prevValue = value;
+      const wk = isoWeekStart(row.date);
+      weekTotals.set(wk, (weekTotals.get(wk) || 0) + delta);
+    }
+    const weeks = Array.from(weekTotals.keys()).sort();
+    const values = weeks.map(w => weekTotals.get(w));
+    return {
+      weeks,
+      values,
+      shortEma: emaSeries(values, shortSpan),
+      longEma: emaSeries(values, longSpan),
+    };
+  }
+
+  const weeklyFlow = buildWeeklyFlow(data.stake_days, 'total_staked', 3, 10);
+  const weeklyColors = weeklyFlow.values.map(v => v >= 0 ? 'rgba(53,208,127,0.85)' : 'rgba(255,84,104,0.85)');
 
   new Chart(document.getElementById('flowChart'), {
-    plugins: [clippedDayPlugin],
     data: {
-      labels: flowDays.map(d => d.d),
+      labels: weeklyFlow.weeks,
       datasets: [
-        { type: 'bar', data: netFlow, backgroundColor: flowColors, borderWidth: 0, barPercentage: 1.0, categoryPercentage: 0.9, order: 2, clip: 4 },
-        { type: 'line', data: rollingAvg, borderColor: '#FF7A29', borderWidth: 2, pointRadius: 0, tension: 0.3, order: 1 }
+        { type: 'bar', data: weeklyFlow.values, backgroundColor: weeklyColors, borderWidth: 0, barPercentage: 1.0, categoryPercentage: 0.9, order: 3 },
+        { type: 'line', data: weeklyFlow.shortEma, borderColor: '#FF7A29', borderWidth: 2, pointRadius: 0, tension: 0.3, order: 1 },
+        { type: 'line', data: weeklyFlow.longEma, borderColor: '#7C8494', borderWidth: 2, pointRadius: 0, tension: 0.3, order: 2 }
       ]
     },
     options: {
       responsive: true,
       maintainAspectRatio: false,
-      layout: { padding: { top: 34, bottom: 34 } },
       interaction: { mode: 'index', intersect: false },
       plugins: {
         legend: { display: false },
@@ -999,16 +1011,18 @@ async function loadDashboard() {
           bodyFont: { family: "'JetBrains Mono', monospace", size: 12 },
           callbacks: {
             label: (ctx) => {
-              const raw = ctx.dataset.type === 'line' ? ctx.parsed.y : netFlow[ctx.dataIndex];
-              const name = ctx.dataset.type === 'line' ? '7-day avg: ' : 'Net flow: ';
-              return name + (raw >= 0 ? '+' : '') + formatNum(raw) + ' RISE';
+              const v = ctx.parsed.y;
+              const sign = v >= 0 ? '+' : '';
+              if (ctx.dataset.type === 'bar') return 'Weekly net flow: ' + sign + formatNum(v) + ' RISE';
+              const name = ctx.datasetIndex === 1 ? '3-week EMA: ' : '10-week EMA: ';
+              return name + sign + formatNum(v) + ' RISE';
             }
           }
         }
       },
       scales: {
         x: { grid: { display: false }, ticks: { maxTicksLimit: 8, font: { size: 10 } } },
-        y: { min: Y_MIN, max: Y_MAX, grid: { color: 'rgba(255,255,255,0.04)' }, ticks: { font: { size: 10 }, callback: (v) => (v/1e6).toFixed(1) + 'M' } }
+        y: { grid: { color: 'rgba(255,255,255,0.04)' }, ticks: { font: { size: 10 }, callback: (v) => (v/1e6).toFixed(1) + 'M' } }
       }
     }
   });
