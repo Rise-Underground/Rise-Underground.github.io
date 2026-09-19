@@ -133460,12 +133460,12 @@
       "pool_name": "COPI/BNB Pool 1 (PancakePair)",
       "date": "2026-09-18",
       "buy_volume": 0.0,
-      "sell_volume": 76890.5433,
+      "sell_volume": 80460.278,
       "buy_txns": 0,
-      "sell_txns": 1,
-      "net_volume": -76890.5433,
+      "sell_txns": 2,
+      "net_volume": -80460.278,
       "unique_makers": null,
-      "closing_price": 1.8481587663089981e-06,
+      "closing_price": 1.8471312050243444e-06,
       "lp_add_volume": 0.0,
       "lp_adds": 0,
       "lp_remove_volume": 0.0,
@@ -183141,6 +183141,15 @@
       "price": 0.001282
     },
     {
+      "chain": "BNB",
+      "pool_name": "COPI/BNB Pool 6 (PancakePair)",
+      "date": "2026-09-16",
+      "rise_balance": 75.679303,
+      "other_balance": 150248631538.97778,
+      "other_asset": "WBNB",
+      "price": 1985333170.503716
+    },
+    {
       "chain": "Base",
       "pool_name": "Pool 1 (Uniswap V2 Clone)",
       "date": "2026-09-16",
@@ -183216,8 +183225,8 @@
       "chain": "BNB",
       "pool_name": "COPI/BNB Pool 1 (PancakePair)",
       "date": "2026-09-18",
-      "rise_balance": 6416206.781778,
-      "other_balance": 11.745426,
+      "rise_balance": 6419776.516433,
+      "other_balance": 11.738912,
       "other_asset": "WBNB",
       "price": 2e-06
     },

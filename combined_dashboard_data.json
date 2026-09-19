@@ -1,15 +1,15 @@
 {
-  "generated_at_utc": "2026-09-19T01:05:15.722646+00:00",
+  "generated_at_utc": "2026-09-19T02:05:46.067479+00:00",
   "notes": "Self-contained: computed directly from rise_ledger.db, no intermediate JSON files. Cardano (COPI+RISE merged) and Base RISE combined into one stake/reward total. Breakdown is by CHAIN only, never by token. Rewards combine staking/vault AND node rewards into one total per chain. avg_age_days is BASE-ONLY. LP staking kept separate. Migration totals from confirmed COPI-in/RISE-out event matching, both chains.",
   "summary": {
-    "final_date": "2026-09-18",
-    "final_cardano_staked": 132486773.72796,
+    "final_date": "2026-09-19",
+    "final_cardano_staked": 132179040.72796,
     "final_base_staked": 176059795.709159,
-    "final_total_staked": 308546569.437119,
+    "final_total_staked": 308238836.437119,
     "final_avg_age_days": 210.2253,
-    "final_cardano_rewards": 33077288.915681,
+    "final_cardano_rewards": 33086056.695199,
     "final_base_rewards": 9696755.600266,
-    "final_total_rewards": 42774044.515947,
+    "final_total_rewards": 42782812.295465,
     "final_cardano_node_rewards": 26555238.496497,
     "final_base_node_rewards": 3646647.3,
     "final_total_node_rewards": 30201885.796497,
@@ -9100,6 +9100,13 @@
       "cardano_staked": 132486773.72796,
       "base_staked": 176059795.709159,
       "total_staked": 308546569.437119,
+      "avg_age_days": 210.2253
+    },
+    {
+      "date": "2026-09-19",
+      "cardano_staked": 132179040.72796,
+      "base_staked": 176059795.709159,
+      "total_staked": 308238836.437119,
       "avg_age_days": 210.2253
     }
   ],
@@ -19471,6 +19478,14 @@
       "daily_claimed": 56025.299197,
       "cumulative_claimed": 42774044.515947,
       "rolling_7day_avg": 40476.818201
+    },
+    {
+      "date": "2026-09-19",
+      "cardano_cumulative": 33086056.695199,
+      "base_cumulative": 9696755.600266,
+      "daily_claimed": 8767.779518,
+      "cumulative_claimed": 42782812.295465,
+      "rolling_7day_avg": 39844.069561
     }
   ],
   "lp_staking": {
