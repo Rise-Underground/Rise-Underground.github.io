@@ -29635,17 +29635,17 @@
       "chain": "Cardano",
       "pool_name": "Minswap V1 COPI/ADA",
       "date": "2023-12-02",
-      "buy_volume": 5256763.776,
-      "sell_volume": 5194297.3384,
-      "buy_txns": 295,
-      "sell_txns": 260,
-      "net_volume": 62466.4376,
+      "buy_volume": 6486558.9429,
+      "sell_volume": 6431713.458,
+      "buy_txns": 393,
+      "sell_txns": 323,
+      "net_volume": 54845.4849,
       "unique_makers": null,
-      "closing_price": 0.17793298058753704,
-      "lp_add_volume": 380749908.455206,
-      "lp_adds": 45,
-      "lp_remove_volume": 371622399.29979,
-      "lp_removes": 46,
+      "closing_price": 0.17952630762851585,
+      "lp_add_volume": 453999520.073996,
+      "lp_adds": 53,
+      "lp_remove_volume": 444948632.368944,
+      "lp_removes": 54,
       "lp_flow_unit": "RISE",
       "buy_volume_usd": null,
       "sell_volume_usd": null,
@@ -29695,6 +29695,27 @@
       "quote_usd_price": null
     },
     {
+      "chain": "Cardano",
+      "pool_name": "Minswap V1 COPI/ADA",
+      "date": "2023-12-03",
+      "buy_volume": 2094064.3938,
+      "sell_volume": 2657870.2832,
+      "buy_txns": 197,
+      "sell_txns": 157,
+      "net_volume": -563805.8894,
+      "unique_makers": null,
+      "closing_price": 0.18404501830100484,
+      "lp_add_volume": 260859578.451062,
+      "lp_adds": 34,
+      "lp_remove_volume": 270419426.560648,
+      "lp_removes": 37,
+      "lp_flow_unit": "RISE",
+      "buy_volume_usd": null,
+      "sell_volume_usd": null,
+      "closing_price_usd": null,
+      "quote_usd_price": null
+    },
+    {
       "chain": "ETH",
       "pool_name": "COPI/ETH Pool (Uniswap V2)",
       "date": "2023-12-03",
@@ -29737,6 +29758,27 @@
       "quote_usd_price": null
     },
     {
+      "chain": "Cardano",
+      "pool_name": "Minswap V1 COPI/ADA",
+      "date": "2023-12-04",
+      "buy_volume": 2024985.3742,
+      "sell_volume": 1771501.0325,
+      "buy_txns": 159,
+      "sell_txns": 107,
+      "net_volume": 253484.3418,
+      "unique_makers": null,
+      "closing_price": 0.18994606906002534,
+      "lp_add_volume": 182339675.70288,
+      "lp_adds": 22,
+      "lp_remove_volume": 182086191.361114,
+      "lp_removes": 24,
+      "lp_flow_unit": "RISE",
+      "buy_volume_usd": null,
+      "sell_volume_usd": null,
+      "closing_price_usd": null,
+      "quote_usd_price": null
+    },
+    {
       "chain": "ETH",
       "pool_name": "COPI/ETH Pool (Uniswap V2)",
       "date": "2023-12-04",
@@ -29772,6 +29814,27 @@
       "lp_adds": 2,
       "lp_remove_volume": 0.0,
       "lp_removes": 1,
+      "lp_flow_unit": "RISE",
+      "buy_volume_usd": null,
+      "sell_volume_usd": null,
+      "closing_price_usd": null,
+      "quote_usd_price": null
+    },
+    {
+      "chain": "Cardano",
+      "pool_name": "Minswap V1 COPI/ADA",
+      "date": "2023-12-05",
+      "buy_volume": 366069.2123,
+      "sell_volume": 380138.6636,
+      "buy_txns": 39,
+      "sell_txns": 24,
+      "net_volume": -14069.4513,
+      "unique_makers": null,
+      "closing_price": 0.20587311962809637,
+      "lp_add_volume": 74796489.138139,
+      "lp_adds": 10,
+      "lp_remove_volume": 66481853.404403,
+      "lp_removes": 13,
       "lp_flow_unit": "RISE",
       "buy_volume_usd": null,
       "sell_volume_usd": null,
@@ -146560,6 +146623,27 @@
       "quote_usd_price": 0.22661920280876624
     },
     {
+      "chain": "BNB",
+      "pool_name": "COPI/BNB Pool 1 (PancakePair)",
+      "date": "2026-09-19",
+      "buy_volume": 139579.1761,
+      "sell_volume": 104980.8219,
+      "buy_txns": 1,
+      "sell_txns": 3,
+      "net_volume": 34598.3542,
+      "unique_makers": null,
+      "closing_price": 1.8742523746962319e-06,
+      "lp_add_volume": 0.0,
+      "lp_adds": 0,
+      "lp_remove_volume": 0.0,
+      "lp_removes": 0,
+      "lp_flow_unit": "RISE",
+      "buy_volume_usd": null,
+      "sell_volume_usd": null,
+      "closing_price_usd": null,
+      "quote_usd_price": null
+    },
+    {
       "chain": "Base",
       "pool_name": "Pool 1 (Uniswap V2 Clone)",
       "date": "2026-09-19",
@@ -146663,6 +146747,27 @@
       "sell_volume_usd": null,
       "closing_price_usd": null,
       "quote_usd_price": 0.22793118355121053
+    },
+    {
+      "chain": "Cardano",
+      "pool_name": "Minswap RISE/ADA",
+      "date": "2026-09-20",
+      "buy_volume": 323182.5209,
+      "sell_volume": 0.0,
+      "buy_txns": 1,
+      "sell_txns": 0,
+      "net_volume": 323182.5209,
+      "unique_makers": null,
+      "closing_price": 0.006966430000000001,
+      "lp_add_volume": 0.0,
+      "lp_adds": 0,
+      "lp_remove_volume": 0.0,
+      "lp_removes": 0,
+      "lp_flow_unit": "RISE",
+      "buy_volume_usd": 514.61,
+      "sell_volume_usd": 0.0,
+      "closing_price_usd": 0.00159233,
+      "quote_usd_price": 0.2285715231322227
     }
   ],
   "reserve_daily_summary": [
@@ -159378,10 +159483,10 @@
       "chain": "Cardano",
       "pool_name": "Minswap V1 COPI/ADA",
       "date": "2023-12-02",
-      "rise_balance": 9065042.717846,
-      "other_balance": 1710278.043608,
+      "rise_balance": 8996042.220143,
+      "other_balance": 1724669.220572,
       "other_asset": "ADA",
-      "price": 0.1886674
+      "price": 0.19171422
     },
     {
       "chain": "ETH",
@@ -159402,6 +159507,15 @@
       "price": 0.000304
     },
     {
+      "chain": "Cardano",
+      "pool_name": "Minswap V1 COPI/ADA",
+      "date": "2023-12-03",
+      "rise_balance": 0.0,
+      "other_balance": 4.0,
+      "other_asset": "ADA",
+      "price": 0.0
+    },
+    {
       "chain": "ETH",
       "pool_name": "COPI/ETH Pool (Uniswap V2)",
       "date": "2023-12-03",
@@ -159420,6 +159534,15 @@
       "price": 0.00033
     },
     {
+      "chain": "Cardano",
+      "pool_name": "Minswap V1 COPI/ADA",
+      "date": "2023-12-04",
+      "rise_balance": 0.0,
+      "other_balance": 1.94812,
+      "other_asset": "ADA",
+      "price": 0.0
+    },
+    {
       "chain": "ETH",
       "pool_name": "COPI/ETH Pool (Uniswap V2)",
       "date": "2023-12-04",
@@ -159436,6 +159559,15 @@
       "other_balance": 4453.207752,
       "other_asset": "WBNB",
       "price": 0.000384
+    },
+    {
+      "chain": "Cardano",
+      "pool_name": "Minswap V1 COPI/ADA",
+      "date": "2023-12-05",
+      "rise_balance": 8328705.185061,
+      "other_balance": 1714037.672019,
+      "other_asset": "ADA",
+      "price": 0.20579882
     },
     {
       "chain": "ETH",
@@ -201891,6 +202023,15 @@
       "price": 0.00683824
     },
     {
+      "chain": "BNB",
+      "pool_name": "COPI/BNB Pool 1 (PancakePair)",
+      "date": "2026-09-19",
+      "rise_balance": 6385178.162201,
+      "other_balance": 11.803648,
+      "other_asset": "WBNB",
+      "price": 2e-06
+    },
+    {
       "chain": "Base",
       "pool_name": "Pool 1 (Uniswap V2 Clone)",
       "date": "2026-09-19",
@@ -201925,6 +202066,15 @@
       "other_balance": 628148.273636,
       "other_asset": "ADA",
       "price": 0.00691686
+    },
+    {
+      "chain": "Cardano",
+      "pool_name": "Minswap RISE/ADA",
+      "date": "2026-09-20",
+      "rise_balance": 90490850.675632,
+      "other_balance": 630398.273636,
+      "other_asset": "ADA",
+      "price": 0.00696643
     }
   ]
 }
