@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-21T06:01:04.096519+00:00",
+  "generated_at_utc": "2026-09-21T07:01:03.513131+00:00",
   "notes": "Self-contained: computed directly from rise_ledger.db, no intermediate JSON files. Cardano (COPI+RISE merged) and Base RISE combined into one stake/reward total. Breakdown is by CHAIN only, never by token. Rewards combine staking/vault AND node rewards into one total per chain. avg_age_days is BASE-ONLY. LP staking kept separate. Migration totals from confirmed COPI-in/RISE-out event matching, both chains.",
   "summary": {
     "final_date": "2026-09-21",
@@ -8,8 +8,8 @@
     "final_total_staked": 310780082.076996,
     "final_avg_age_days": 212.9756,
     "final_cardano_rewards": 33091201.803946,
-    "final_base_rewards": 9863116.246893,
-    "final_total_rewards": 42954318.050839,
+    "final_base_rewards": 9869656.574423,
+    "final_total_rewards": 42960858.378369,
     "final_cardano_node_rewards": 26555238.496497,
     "final_base_node_rewards": 3812273.26,
     "final_total_node_rewards": 30367511.756497,
@@ -27,7 +27,7 @@
     },
     "migrated_total": 781487808.529234,
     "migrated_last_7_days": 170871.359424,
-    "migrated_last_30_days": 4336869.86028,
+    "migrated_last_30_days": 4164430.63828,
     "migrated_wallets_last_7_days": 6,
     "migrated_wallets_last_30_days": 28
   },
@@ -19514,10 +19514,10 @@
     {
       "date": "2026-09-21",
       "cardano_cumulative": 33091201.803946,
-      "base_cumulative": 9863116.246893,
-      "daily_claimed": 244.757387,
-      "cumulative_claimed": 42954318.050839,
-      "rolling_7day_avg": 51238.584338
+      "base_cumulative": 9869656.574423,
+      "daily_claimed": 6785.084917,
+      "cumulative_claimed": 42960858.378369,
+      "rolling_7day_avg": 52172.916842
     }
   ],
   "lp_staking": {
@@ -22430,7 +22430,7 @@
       "event_count": 1151,
       "migrated_all_time": 332745043.182551,
       "migrated_last_7_days": 145783.392841,
-      "migrated_last_30_days": 2082000.529055
+      "migrated_last_30_days": 1909561.307055
     },
     "cardano": {
       "wallet": "addr1qy33d7r35yjxafn5hs5d7tx4nncppnuh2fhgpdyvz0yjjzelujvrnhlpvja54h2tsa0r5zvaqtfu8wx8lgeac2xpyd0qmxhz65",
@@ -22443,7 +22443,7 @@
       "event_count": 3723,
       "migrated_all_time": 781487808.529234,
       "migrated_last_7_days": 170871.359424,
-      "migrated_last_30_days": 4336869.86028
+      "migrated_last_30_days": 4164430.63828
     }
   },
   "migration_wallets": {
