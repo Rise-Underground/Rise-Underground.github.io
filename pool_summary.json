@@ -208315,31 +208315,31 @@
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "LP_TOKEN",
-      "buy_volume_usd": 182.78,
-      "sell_volume_usd": 11.36,
-      "closing_price_usd": 0.0015121,
-      "quote_usd_price": 2685.2221268737367
+      "buy_volume_usd": 183.65,
+      "sell_volume_usd": 11.42,
+      "closing_price_usd": 0.00151935,
+      "quote_usd_price": 2698.0979445012226
     },
     {
       "chain": "Base",
       "pool_name": "Pool 2 (Aerodrome vAMM)",
       "date": "2026-09-24",
-      "buy_volume": 451850.5233,
+      "buy_volume": 465068.8834,
       "sell_volume": 30055.0,
-      "buy_txns": 5,
+      "buy_txns": 6,
       "sell_txns": 2,
-      "net_volume": 421795.5233,
-      "unique_makers": 5,
-      "closing_price": 5.634859702888385e-07,
+      "net_volume": 435013.8834,
+      "unique_makers": 6,
+      "closing_price": 5.635552801246768e-07,
       "lp_add_volume": 0.0,
       "lp_adds": 0,
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "LP_TOKEN",
-      "buy_volume_usd": 683.69,
-      "sell_volume_usd": 45.48,
-      "closing_price_usd": 0.00151308,
-      "quote_usd_price": 2685.2221268737367
+      "buy_volume_usd": 707.15,
+      "sell_volume_usd": 45.7,
+      "closing_price_usd": 0.00152053,
+      "quote_usd_price": 2698.0979445012226
     },
     {
       "chain": "Cardano",
@@ -208357,10 +208357,10 @@
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "RISE",
-      "buy_volume_usd": 114.09,
+      "buy_volume_usd": 114.76,
       "sell_volume_usd": 0.0,
-      "closing_price_usd": 0.00150535,
-      "quote_usd_price": 0.2410326211776366
+      "closing_price_usd": 0.00151412,
+      "quote_usd_price": 0.24243648775156992
     }
   ],
   "reserve_daily_summary": [
@@ -289980,8 +289980,8 @@
       "chain": "Base",
       "pool_name": "Pool 2 (Aerodrome vAMM)",
       "date": "2026-09-24",
-      "rise_balance": 93334733.355678,
-      "other_balance": 52.669115,
+      "rise_balance": 93321514.995592,
+      "other_balance": 52.676575,
       "other_asset": "WETH",
       "price": 1e-06
     },
