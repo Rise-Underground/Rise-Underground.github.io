@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-24T14:02:03.828531+00:00",
+  "generated_at_utc": "2026-09-24T15:01:54.499284+00:00",
   "notes": "Self-contained: computed directly from rise_ledger.db, no intermediate JSON files. Cardano (COPI+RISE merged) and Base RISE combined into one stake/reward total. Breakdown is by CHAIN only, never by token. Rewards combine staking/vault AND node rewards into one total per chain. avg_age_days is BASE-ONLY. LP staking kept separate. Migration totals from confirmed COPI-in/RISE-out event matching, both chains.",
   "summary": {
     "final_date": "2026-09-24",
@@ -27,7 +27,7 @@
     },
     "migrated_total": 781829919.111159,
     "migrated_last_7_days": 500130.521425,
-    "migrated_last_30_days": 3588522.285308,
+    "migrated_last_30_days": 3518253.505308,
     "migrated_wallets_last_7_days": 8,
     "migrated_wallets_last_30_days": 30
   },
@@ -22467,7 +22467,7 @@
       "event_count": 1151,
       "migrated_all_time": 332745043.182551,
       "migrated_last_7_days": 139579.176,
-      "migrated_last_30_days": 1017788.44274
+      "migrated_last_30_days": 947519.66274
     },
     "cardano": {
       "wallet": "addr1qy33d7r35yjxafn5hs5d7tx4nncppnuh2fhgpdyvz0yjjzelujvrnhlpvja54h2tsa0r5zvaqtfu8wx8lgeac2xpyd0qmxhz65",
@@ -22480,7 +22480,7 @@
       "event_count": 3729,
       "migrated_all_time": 781829919.111159,
       "migrated_last_7_days": 500130.521425,
-      "migrated_last_30_days": 3588522.285308
+      "migrated_last_30_days": 3518253.505308
     }
   },
   "migration_wallets": {
