@@ -244561,10 +244561,10 @@
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "LP_TOKEN",
-      "buy_volume_usd": 231.34,
-      "sell_volume_usd": 26.42,
-      "closing_price_usd": 0.00151789,
-      "quote_usd_price": 2716.501932727357
+      "buy_volume_usd": 229.56,
+      "sell_volume_usd": 26.21,
+      "closing_price_usd": 0.00150622,
+      "quote_usd_price": 2695.6140171910392
     },
     {
       "chain": "Base",
@@ -244582,10 +244582,10 @@
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "LP_TOKEN",
-      "buy_volume_usd": 830.49,
-      "sell_volume_usd": 182.45,
-      "closing_price_usd": 0.00151687,
-      "quote_usd_price": 2716.501932727357
+      "buy_volume_usd": 824.1,
+      "sell_volume_usd": 181.04,
+      "closing_price_usd": 0.0015052,
+      "quote_usd_price": 2695.6140171910392
     },
     {
       "chain": "Cardano",
@@ -244603,10 +244603,10 @@
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "RISE",
-      "buy_volume_usd": 664.0,
-      "sell_volume_usd": 306.99,
-      "closing_price_usd": 0.00156556,
-      "quote_usd_price": 0.2572981190629167
+      "buy_volume_usd": 658.82,
+      "sell_volume_usd": 304.59,
+      "closing_price_usd": 0.00155333,
+      "quote_usd_price": 0.2552882831769511
     },
     {
       "chain": "Cardano",
@@ -244627,7 +244627,7 @@
       "buy_volume_usd": null,
       "sell_volume_usd": null,
       "closing_price_usd": null,
-      "quote_usd_price": 0.2572981190629167
+      "quote_usd_price": 0.2552882831769511
     }
   ],
   "reserve_daily_summary": [
@@ -341763,8 +341763,8 @@
       "chain": "Base",
       "pool_name": "Pool 1 (Uniswap V2 Clone)",
       "date": "2026-09-25",
-      "rise_balance": 20934736.145926,
-      "other_balance": 11.770701,
+      "rise_balance": 20951724.015003,
+      "other_balance": 11.761186,
       "other_asset": "WETH",
       "price": 1e-06
     },
@@ -341772,8 +341772,8 @@
       "chain": "Base",
       "pool_name": "Pool 2 (Aerodrome vAMM)",
       "date": "2026-09-25",
-      "rise_balance": 93497302.757251,
-      "other_balance": 52.577536,
+      "rise_balance": 93580065.85178,
+      "other_balance": 52.531036,
       "other_asset": "WETH",
       "price": 1e-06
     },
