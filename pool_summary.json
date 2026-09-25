@@ -208424,6 +208424,27 @@
       "sell_volume_usd": null,
       "closing_price_usd": null,
       "quote_usd_price": 0.24750098171983673
+    },
+    {
+      "chain": "Base",
+      "pool_name": "Pool 2 (Aerodrome vAMM)",
+      "date": "2026-09-25",
+      "buy_volume": 63.4053,
+      "sell_volume": 21135.1149,
+      "buy_txns": 1,
+      "sell_txns": 1,
+      "net_volume": -21071.7095,
+      "unique_makers": 2,
+      "closing_price": 5.526121149305199e-07,
+      "lp_add_volume": 0.0,
+      "lp_adds": 0,
+      "lp_remove_volume": 0.0,
+      "lp_removes": 0,
+      "lp_flow_unit": "LP_TOKEN",
+      "buy_volume_usd": 0.09,
+      "sell_volume_usd": 31.48,
+      "closing_price_usd": 0.00148953,
+      "quote_usd_price": 2695.4298594618363
     }
   ],
   "reserve_daily_summary": [
@@ -290065,6 +290086,15 @@
       "other_balance": 586416.349364,
       "other_asset": "ADA",
       "price": 0.00604587
+    },
+    {
+      "chain": "Base",
+      "pool_name": "Pool 2 (Aerodrome vAMM)",
+      "date": "2026-09-25",
+      "rise_balance": 94185841.152782,
+      "other_balance": 52.193172,
+      "other_asset": "WETH",
+      "price": 1e-06
     }
   ]
 }
