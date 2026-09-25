@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-09-25T09:12:27.474083+00:00",
+  "generated_at_utc": "2026-09-25T10:13:45.793564+00:00",
   "notes": "Self-contained: computed directly from rise_ledger.db, no intermediate JSON files. Cardano (COPI+RISE merged) and Base RISE combined into one stake/reward total. Breakdown is by CHAIN only, never by token. Rewards combine staking/vault AND node rewards into one total per chain. avg_age_days is BASE-ONLY. LP staking kept separate. Migration totals from confirmed COPI-in/RISE-out event matching, both chains.",
   "summary": {
-    "final_date": "2026-09-24",
-    "final_cardano_staked": 134526904.766587,
+    "final_date": "2026-09-25",
+    "final_cardano_staked": 135340114.426285,
     "final_base_staked": 176745944.933865,
-    "final_total_staked": 311272849.700452,
+    "final_total_staked": 312086059.36015,
     "final_avg_age_days": 215.3954,
     "final_cardano_rewards": 33227968.864804,
     "final_base_rewards": 9975098.395456,
@@ -9144,6 +9144,13 @@
       "cardano_staked": 134526904.766587,
       "base_staked": 176745944.933865,
       "total_staked": 311272849.700452,
+      "avg_age_days": 215.3954
+    },
+    {
+      "date": "2026-09-25",
+      "cardano_staked": 135340114.426285,
+      "base_staked": 176745944.933865,
+      "total_staked": 312086059.36015,
       "avg_age_days": 215.3954
     }
   ],
