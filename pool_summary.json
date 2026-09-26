@@ -244688,9 +244688,9 @@
       "lp_removes": 0,
       "lp_flow_unit": "RISE",
       "buy_volume_usd": 0.0,
-      "sell_volume_usd": 53.3,
-      "closing_price_usd": 0.00153768,
-      "quote_usd_price": 0.2565601384896931
+      "sell_volume_usd": 53.29,
+      "closing_price_usd": 0.00153741,
+      "quote_usd_price": 0.2565152630348532
     },
     {
       "chain": "Cardano",
@@ -244708,20 +244708,20 @@
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "RISE",
-      "buy_volume_usd": 255.73,
-      "sell_volume_usd": 751.98,
-      "closing_price_usd": 0.00153134,
-      "quote_usd_price": 0.2565601384896931
+      "buy_volume_usd": 255.69,
+      "sell_volume_usd": 751.85,
+      "closing_price_usd": 0.00153107,
+      "quote_usd_price": 0.2565152630348532
     },
     {
       "chain": "Cardano",
       "pool_name": "Minswap V2 Order Contract",
       "date": "2026-09-26",
       "buy_volume": 0.0,
-      "sell_volume": 474329.1059,
+      "sell_volume": 491058.1059,
       "buy_txns": 0,
-      "sell_txns": 3,
-      "net_volume": -474329.1059,
+      "sell_txns": 4,
+      "net_volume": -491058.1059,
       "unique_makers": null,
       "closing_price": null,
       "lp_add_volume": 0.0,
@@ -244732,7 +244732,7 @@
       "buy_volume_usd": null,
       "sell_volume_usd": null,
       "closing_price_usd": null,
-      "quote_usd_price": 0.2565601384896931
+      "quote_usd_price": 0.2565152630348532
     },
     {
       "chain": "Cardano",
@@ -244753,7 +244753,7 @@
       "buy_volume_usd": null,
       "sell_volume_usd": null,
       "closing_price_usd": null,
-      "quote_usd_price": 0.2565601384896931
+      "quote_usd_price": 0.2565152630348532
     }
   ],
   "reserve_daily_summary": [
@@ -341925,8 +341925,8 @@
       "chain": "Base",
       "pool_name": "Pool 1 (Uniswap V2 Clone)",
       "date": "2026-09-26",
-      "rise_balance": 20793090.870515,
-      "other_balance": 11.851203,
+      "rise_balance": 20814145.720554,
+      "other_balance": 11.839251,
       "other_asset": "WETH",
       "price": 1e-06
     },
