@@ -1,15 +1,15 @@
 {
-  "generated_at_utc": "2026-09-28T10:04:48.500420+00:00",
+  "generated_at_utc": "2026-09-28T11:04:18.206037+00:00",
   "notes": "Self-contained: computed directly from rise_ledger.db, no intermediate JSON files. Cardano (COPI+RISE merged) and Base RISE combined into one stake/reward total. Breakdown is by CHAIN only, never by token. Rewards combine staking/vault AND node rewards into one total per chain. avg_age_days is BASE-ONLY. LP staking kept separate. Migration totals from confirmed COPI-in/RISE-out event matching, both chains.",
   "summary": {
-    "final_date": "2026-09-27",
+    "final_date": "2026-09-28",
     "final_cardano_staked": 134436352.075796,
-    "final_base_staked": 176841340.159991,
-    "final_total_staked": 311277692.235787,
-    "final_avg_age_days": 217.2788,
+    "final_base_staked": 180128161.922732,
+    "final_total_staked": 314564513.998528,
+    "final_avg_age_days": 215.2876,
     "final_cardano_rewards": 33474092.554365,
-    "final_base_rewards": 10008589.487529,
-    "final_total_rewards": 43482682.041894,
+    "final_base_rewards": 10157917.698216,
+    "final_total_rewards": 43632010.252581,
     "final_cardano_node_rewards": 26878580.956497,
     "final_base_node_rewards": 3903782.47,
     "final_total_node_rewards": 30782363.426497,
@@ -9165,7 +9165,14 @@
       "cardano_staked": 134436352.075796,
       "base_staked": 176841340.159991,
       "total_staked": 311277692.235787,
-      "avg_age_days": 217.2788
+      "avg_age_days": 218.2788
+    },
+    {
+      "date": "2026-09-28",
+      "cardano_staked": 134436352.075796,
+      "base_staked": 180128161.922732,
+      "total_staked": 314564513.998528,
+      "avg_age_days": 215.2876
     }
   ],
   "reward_days": [
@@ -19612,10 +19619,10 @@
     {
       "date": "2026-09-28",
       "cardano_cumulative": 33474092.554365,
-      "base_cumulative": 10008589.487529,
-      "daily_claimed": 16559.15,
-      "cumulative_claimed": 43482682.041894,
-      "rolling_7day_avg": 47315.284789
+      "base_cumulative": 10157917.698216,
+      "daily_claimed": 165887.360687,
+      "cumulative_claimed": 43632010.252581,
+      "rolling_7day_avg": 68647.886316
     }
   ],
   "lp_staking": {
