@@ -244939,10 +244939,10 @@
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "LP_TOKEN",
-      "buy_volume_usd": 611.47,
-      "sell_volume_usd": 481.47,
-      "closing_price_usd": 0.0016349,
-      "quote_usd_price": 2685.1479353952795
+      "buy_volume_usd": 611.8,
+      "sell_volume_usd": 481.74,
+      "closing_price_usd": 0.00163579,
+      "quote_usd_price": 2686.6100296420855
     },
     {
       "chain": "Base",
@@ -244960,10 +244960,10 @@
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "LP_TOKEN",
-      "buy_volume_usd": 2870.69,
-      "sell_volume_usd": 2533.7,
-      "closing_price_usd": 0.00163498,
-      "quote_usd_price": 2685.1479353952795
+      "buy_volume_usd": 2872.25,
+      "sell_volume_usd": 2535.08,
+      "closing_price_usd": 0.00163587,
+      "quote_usd_price": 2686.6100296420855
     },
     {
       "chain": "Cardano",
@@ -244981,41 +244981,41 @@
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "RISE",
-      "buy_volume_usd": 158.32,
+      "buy_volume_usd": 158.31,
       "sell_volume_usd": 0.0,
-      "closing_price_usd": 0.00159302,
-      "quote_usd_price": 0.24540935566923588
+      "closing_price_usd": 0.00159283,
+      "quote_usd_price": 0.24538038797942027
     },
     {
       "chain": "Cardano",
       "pool_name": "Minswap RISE/ADA",
       "date": "2026-09-28",
       "buy_volume": 1572017.1124,
-      "sell_volume": 465393.4775,
+      "sell_volume": 511018.4775,
       "buy_txns": 9,
-      "sell_txns": 17,
-      "net_volume": 1106623.6349,
+      "sell_txns": 19,
+      "net_volume": 1060998.6349,
       "unique_makers": null,
-      "closing_price": 0.006514894057152287,
+      "closing_price": 0.0065156094299234895,
       "lp_add_volume": 0.0,
       "lp_adds": 0,
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "RISE",
-      "buy_volume_usd": 2513.37,
-      "sell_volume_usd": 744.08,
-      "closing_price_usd": 0.00159882,
-      "quote_usd_price": 0.24540935566923588
+      "buy_volume_usd": 2513.35,
+      "sell_volume_usd": 817.02,
+      "closing_price_usd": 0.0015988,
+      "quote_usd_price": 0.24538038797942027
     },
     {
       "chain": "Cardano",
       "pool_name": "Minswap V2 Order Contract",
       "date": "2026-09-28",
       "buy_volume": 0.0,
-      "sell_volume": 549104.2907,
+      "sell_volume": 594729.2907,
       "buy_txns": 0,
-      "sell_txns": 18,
-      "net_volume": -549104.2907,
+      "sell_txns": 20,
+      "net_volume": -594729.2907,
       "unique_makers": null,
       "closing_price": null,
       "lp_add_volume": 0.0,
@@ -245026,7 +245026,7 @@
       "buy_volume_usd": null,
       "sell_volume_usd": null,
       "closing_price_usd": null,
-      "quote_usd_price": 0.24540935566923588
+      "quote_usd_price": 0.24538038797942027
     },
     {
       "chain": "Cardano",
@@ -245047,7 +245047,7 @@
       "buy_volume_usd": null,
       "sell_volume_usd": null,
       "closing_price_usd": null,
-      "quote_usd_price": 0.24540935566923588
+      "quote_usd_price": 0.24538038797942027
     }
   ],
   "reserve_daily_summary": [
@@ -342291,8 +342291,8 @@
       "chain": "Base",
       "pool_name": "Pool 1 (Uniswap V2 Clone)",
       "date": "2026-09-28",
-      "rise_balance": 20146436.28961,
-      "other_balance": 12.23459,
+      "rise_balance": 20162161.28961,
+      "other_balance": 12.225076,
       "other_asset": "WETH",
       "price": 1e-06
     },
@@ -342318,10 +342318,19 @@
       "chain": "Cardano",
       "pool_name": "Minswap RISE/ADA",
       "date": "2026-09-28",
-      "rise_balance": 93064219.963617,
-      "other_balance": 609793.046273,
+      "rise_balance": 93109844.963617,
+      "other_balance": 609495.141156,
       "other_asset": "ADA",
-      "price": 0.00655239
+      "price": 0.00654598
+    },
+    {
+      "chain": "Base",
+      "pool_name": "Pool 2 (Aerodrome vAMM)",
+      "date": "2026-09-29",
+      "rise_balance": 90101179.477708,
+      "other_balance": 54.559306,
+      "other_asset": "WETH",
+      "price": 1e-06
     }
   ]
 }
