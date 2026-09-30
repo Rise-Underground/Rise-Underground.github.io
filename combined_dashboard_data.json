@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-30T21:02:41.531238+00:00",
+  "generated_at_utc": "2026-09-30T22:00:28.770246+00:00",
   "notes": "Self-contained: computed directly from rise_ledger.db, no intermediate JSON files. Cardano (COPI+RISE merged) and Base RISE combined into one stake/reward total. Breakdown is by CHAIN only, never by token. Rewards combine staking/vault AND node rewards into one total per chain. avg_age_days is BASE-ONLY. LP staking kept separate. Migration totals from confirmed COPI-in/RISE-out event matching, both chains.",
   "summary": {
     "final_date": "2026-09-30",
@@ -7,12 +7,12 @@
     "final_base_staked": 180769586.555489,
     "final_total_staked": 317240114.810297,
     "final_avg_age_days": 216.0804,
-    "final_cardano_rewards": 33551780.144365,
+    "final_cardano_rewards": 33563598.404365,
     "final_base_rewards": 10171488.308249,
-    "final_total_rewards": 43723268.452614,
-    "final_cardano_node_rewards": 26956268.546497,
+    "final_total_rewards": 43735086.712614,
+    "final_cardano_node_rewards": 26968086.806497,
     "final_base_node_rewards": 3911347.47,
-    "final_total_node_rewards": 30867616.016497,
+    "final_total_node_rewards": 30879434.276497,
     "lp_staking": {
       "lp_rise_weth_aero": {
         "token_symbol": "vAMM-WETH/RISE",
@@ -19648,11 +19648,11 @@
     },
     {
       "date": "2026-09-30",
-      "cardano_cumulative": 33551780.144365,
+      "cardano_cumulative": 33563598.404365,
       "base_cumulative": 10171488.308249,
-      "daily_claimed": 74295.162429,
-      "cumulative_claimed": 43723268.452614,
-      "rolling_7day_avg": 74355.203193
+      "daily_claimed": 86113.422429,
+      "cumulative_claimed": 43735086.712614,
+      "rolling_7day_avg": 76043.526051
     }
   ],
   "lp_staking": {
