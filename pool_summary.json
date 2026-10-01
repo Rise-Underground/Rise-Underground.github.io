@@ -245263,43 +245263,43 @@
       "chain": "Base",
       "pool_name": "Pool 1 (Uniswap V2 Clone)",
       "date": "2026-10-01",
-      "buy_volume": 121170.8794,
-      "sell_volume": 247212.0566,
-      "buy_txns": 4,
-      "sell_txns": 18,
-      "net_volume": -126041.1772,
-      "unique_makers": 11,
-      "closing_price": 5.895344402452379e-07,
+      "buy_volume": 133852.8116,
+      "sell_volume": 267212.0566,
+      "buy_txns": 5,
+      "sell_txns": 19,
+      "net_volume": -133359.2449,
+      "unique_makers": 13,
+      "closing_price": 5.891704899664443e-07,
       "lp_add_volume": 0.0,
       "lp_adds": 0,
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "LP_TOKEN",
-      "buy_volume_usd": 191.85,
-      "sell_volume_usd": 391.41,
-      "closing_price_usd": 0.00158331,
-      "quote_usd_price": 2685.695120979105
+      "buy_volume_usd": 212.31,
+      "sell_volume_usd": 423.83,
+      "closing_price_usd": 0.00158611,
+      "quote_usd_price": 2692.107760100121
     },
     {
       "chain": "Base",
       "pool_name": "Pool 2 (Aerodrome vAMM)",
       "date": "2026-10-01",
-      "buy_volume": 749354.3034,
-      "sell_volume": 1144682.2308,
-      "buy_txns": 40,
-      "sell_txns": 28,
-      "net_volume": -395327.9275,
-      "unique_makers": 14,
-      "closing_price": 5.893474507683718e-07,
+      "buy_volume": 768411.2882,
+      "sell_volume": 1161653.2308,
+      "buy_txns": 42,
+      "sell_txns": 29,
+      "net_volume": -393241.9426,
+      "unique_makers": 15,
+      "closing_price": 5.89282785887565e-07,
       "lp_add_volume": 0.0,
       "lp_adds": 0,
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "LP_TOKEN",
-      "buy_volume_usd": 1186.08,
-      "sell_volume_usd": 1811.81,
-      "closing_price_usd": 0.00158281,
-      "quote_usd_price": 2685.695120979105
+      "buy_volume_usd": 1219.02,
+      "sell_volume_usd": 1842.86,
+      "closing_price_usd": 0.00158641,
+      "quote_usd_price": 2692.107760100121
     },
     {
       "chain": "Cardano",
@@ -245318,9 +245318,9 @@
       "lp_removes": 0,
       "lp_flow_unit": "RISE",
       "buy_volume_usd": 0.0,
-      "sell_volume_usd": 95.07,
-      "closing_price_usd": 0.00155221,
-      "quote_usd_price": 0.24735446184042678
+      "sell_volume_usd": 94.46,
+      "closing_price_usd": 0.00154212,
+      "quote_usd_price": 0.24574740307271684
     },
     {
       "chain": "Cardano",
@@ -245338,10 +245338,10 @@
       "lp_remove_volume": 263260.182133,
       "lp_removes": 1,
       "lp_flow_unit": "RISE",
-      "buy_volume_usd": 1409.33,
-      "sell_volume_usd": 938.94,
-      "closing_price_usd": 0.00157174,
-      "quote_usd_price": 0.24735446184042678
+      "buy_volume_usd": 1400.17,
+      "sell_volume_usd": 932.84,
+      "closing_price_usd": 0.00156153,
+      "quote_usd_price": 0.24574740307271684
     },
     {
       "chain": "Cardano",
@@ -245362,7 +245362,7 @@
       "buy_volume_usd": null,
       "sell_volume_usd": null,
       "closing_price_usd": null,
-      "quote_usd_price": 0.24735446184042678
+      "quote_usd_price": 0.24574740307271684
     },
     {
       "chain": "Cardano",
@@ -245383,7 +245383,7 @@
       "buy_volume_usd": null,
       "sell_volume_usd": null,
       "closing_price_usd": null,
-      "quote_usd_price": 0.24735446184042678
+      "quote_usd_price": 0.24574740307271684
     }
   ],
   "reserve_daily_summary": [
@@ -342726,8 +342726,8 @@
       "chain": "Base",
       "pool_name": "Pool 1 (Uniswap V2 Clone)",
       "date": "2026-10-01",
-      "rise_balance": 20528763.618817,
-      "other_balance": 12.013911,
+      "rise_balance": 20536081.686599,
+      "other_balance": 12.009687,
       "other_asset": "WETH",
       "price": 1e-06
     },
@@ -342735,8 +342735,8 @@
       "chain": "Base",
       "pool_name": "Pool 2 (Aerodrome vAMM)",
       "date": "2026-10-01",
-      "rise_balance": 91617592.296259,
-      "other_balance": 53.656268,
+      "rise_balance": 91615506.311404,
+      "other_balance": 53.65749,
       "other_asset": "WETH",
       "price": 1e-06
     },
