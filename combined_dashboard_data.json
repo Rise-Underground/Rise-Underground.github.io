@@ -1,18 +1,18 @@
 {
-  "generated_at_utc": "2026-10-02T00:01:31.647302+00:00",
+  "generated_at_utc": "2026-10-02T01:01:59.542851+00:00",
   "notes": "Self-contained: computed directly from rise_ledger.db, no intermediate JSON files. Cardano (COPI+RISE merged) and Base RISE combined into one stake/reward total. Breakdown is by CHAIN only, never by token. Rewards combine staking/vault AND node rewards into one total per chain. avg_age_days is BASE-ONLY. LP staking kept separate. Migration totals from confirmed COPI-in/RISE-out event matching, both chains.",
   "summary": {
-    "final_date": "2026-10-01",
-    "final_cardano_staked": 136441636.277766,
+    "final_date": "2026-10-02",
+    "final_cardano_staked": 136641637.22099,
     "final_base_staked": 181002196.555489,
-    "final_total_staked": 317443832.833255,
+    "final_total_staked": 317643833.776479,
     "final_avg_age_days": 216.8021,
-    "final_cardano_rewards": 33569111.110423,
+    "final_cardano_rewards": 33585659.480423,
     "final_base_rewards": 10267530.366639,
-    "final_total_rewards": 43836641.477062,
-    "final_cardano_node_rewards": 26973559.016497,
+    "final_total_rewards": 43853189.847062,
+    "final_cardano_node_rewards": 26990107.386497,
     "final_base_node_rewards": 3961866.51,
-    "final_total_node_rewards": 30935425.526497,
+    "final_total_node_rewards": 30951973.896497,
     "lp_staking": {
       "lp_rise_weth_aero": {
         "token_symbol": "vAMM-WETH/RISE",
@@ -9193,6 +9193,13 @@
       "cardano_staked": 136441636.277766,
       "base_staked": 181002196.555489,
       "total_staked": 317443832.833255,
+      "avg_age_days": 216.8021
+    },
+    {
+      "date": "2026-10-02",
+      "cardano_staked": 136641637.22099,
+      "base_staked": 181002196.555489,
+      "total_staked": 317643833.776479,
       "avg_age_days": 216.8021
     }
   ],
@@ -19668,6 +19675,14 @@
       "daily_claimed": 101554.764448,
       "cumulative_claimed": 43836641.477062,
       "rolling_7day_avg": 90510.6024
+    },
+    {
+      "date": "2026-10-02",
+      "cardano_cumulative": 33585659.480423,
+      "base_cumulative": 10267530.366639,
+      "daily_claimed": 16548.37,
+      "cumulative_claimed": 43853189.847062,
+      "rolling_7day_avg": 87205.373829
     }
   ],
   "lp_staking": {
