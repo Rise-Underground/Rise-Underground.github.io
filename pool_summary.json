@@ -245401,31 +245401,31 @@
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "LP_TOKEN",
-      "buy_volume_usd": 64.3,
-      "sell_volume_usd": 281.1,
-      "closing_price_usd": 0.00155926,
-      "quote_usd_price": 2689.9163610117503
+      "buy_volume_usd": 64.16,
+      "sell_volume_usd": 280.5,
+      "closing_price_usd": 0.00155592,
+      "quote_usd_price": 2684.153621642785
     },
     {
       "chain": "Base",
       "pool_name": "Pool 2 (Aerodrome vAMM)",
       "date": "2026-10-02",
-      "buy_volume": 607008.7001,
-      "sell_volume": 1122483.5663,
-      "buy_txns": 26,
-      "sell_txns": 16,
-      "net_volume": -515474.8662,
+      "buy_volume": 607215.398,
+      "sell_volume": 1191382.8658,
+      "buy_txns": 29,
+      "sell_txns": 19,
+      "net_volume": -584167.4678,
       "unique_makers": 15,
-      "closing_price": 5.789377105977626e-07,
+      "closing_price": 5.788640927649664e-07,
       "lp_add_volume": 0.0,
       "lp_adds": 0,
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "LP_TOKEN",
-      "buy_volume_usd": 945.29,
-      "sell_volume_usd": 1748.04,
-      "closing_price_usd": 0.00155729,
-      "quote_usd_price": 2689.9163610117503
+      "buy_volume_usd": 943.47,
+      "sell_volume_usd": 1851.12,
+      "closing_price_usd": 0.00155376,
+      "quote_usd_price": 2684.153621642785
     },
     {
       "chain": "Cardano",
@@ -245443,31 +245443,31 @@
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "RISE",
-      "buy_volume_usd": 5.07,
-      "sell_volume_usd": 193.34,
-      "closing_price_usd": 0.00159249,
-      "quote_usd_price": 0.2524383369060938
+      "buy_volume_usd": 5.03,
+      "sell_volume_usd": 191.61,
+      "closing_price_usd": 0.00157828,
+      "quote_usd_price": 0.25018489981515873
     },
     {
       "chain": "Cardano",
       "pool_name": "Minswap RISE/ADA",
       "date": "2026-10-02",
-      "buy_volume": 634376.9976,
-      "sell_volume": 1596683.68,
-      "buy_txns": 8,
-      "sell_txns": 46,
-      "net_volume": -962306.6824,
+      "buy_volume": 785355.9769,
+      "sell_volume": 1653018.68,
+      "buy_txns": 10,
+      "sell_txns": 48,
+      "net_volume": -867662.7031,
       "unique_makers": null,
-      "closing_price": 0.006337072875819148,
+      "closing_price": 0.006331893543202436,
       "lp_add_volume": 0.0,
       "lp_adds": 0,
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "RISE",
-      "buy_volume_usd": 1014.83,
-      "sell_volume_usd": 2554.25,
-      "closing_price_usd": 0.00159972,
-      "quote_usd_price": 0.2524383369060938
+      "buy_volume_usd": 1244.12,
+      "sell_volume_usd": 2618.62,
+      "closing_price_usd": 0.00158414,
+      "quote_usd_price": 0.25018489981515873
     },
     {
       "chain": "Cardano",
@@ -245488,7 +245488,7 @@
       "buy_volume_usd": null,
       "sell_volume_usd": null,
       "closing_price_usd": null,
-      "quote_usd_price": 0.2524383369060938
+      "quote_usd_price": 0.25018489981515873
     },
     {
       "chain": "Cardano",
@@ -245509,7 +245509,7 @@
       "buy_volume_usd": null,
       "sell_volume_usd": null,
       "closing_price_usd": null,
-      "quote_usd_price": 0.2524383369060938
+      "quote_usd_price": 0.25018489981515873
     }
   ],
   "reserve_daily_summary": [
@@ -342897,8 +342897,8 @@
       "chain": "Base",
       "pool_name": "Pool 2 (Aerodrome vAMM)",
       "date": "2026-10-02",
-      "rise_balance": 92127664.150436,
-      "other_balance": 53.359197,
+      "rise_balance": 92196356.751997,
+      "other_balance": 53.319441,
       "other_asset": "WETH",
       "price": 1e-06
     },
@@ -342915,10 +342915,10 @@
       "chain": "Cardano",
       "pool_name": "Minswap RISE/ADA",
       "date": "2026-10-02",
-      "rise_balance": 95035396.737503,
-      "other_balance": 595688.582692,
+      "rise_balance": 94940752.758257,
+      "other_balance": 596286.315267,
       "other_asset": "ADA",
-      "price": 0.00626807
+      "price": 0.00628061
     }
   ]
 }
