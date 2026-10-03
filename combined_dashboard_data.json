@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-03T20:09:14.106548+00:00",
+  "generated_at_utc": "2026-10-03T21:07:25.352451+00:00",
   "notes": "Self-contained: computed directly from rise_ledger.db, no intermediate JSON files. Cardano (COPI+RISE merged) and Base RISE combined into one stake/reward total. Breakdown is by CHAIN only, never by token. Rewards combine staking/vault AND node rewards into one total per chain. avg_age_days is BASE-ONLY. LP staking kept separate. Migration totals from confirmed COPI-in/RISE-out event matching, both chains.",
   "summary": {
     "final_date": "2026-10-02",
@@ -25,11 +25,11 @@
         "final_balance": 2500.554347459622
       }
     },
-    "migrated_total": 783172179.400831,
-    "migrated_last_7_days": 995811.079136,
-    "migrated_last_30_days": 4299433.208284,
-    "migrated_wallets_last_7_days": 17,
-    "migrated_wallets_last_30_days": 44
+    "migrated_total": 784179853.4193,
+    "migrated_last_7_days": 2003485.097605,
+    "migrated_last_30_days": 5306086.18114,
+    "migrated_wallets_last_7_days": 18,
+    "migrated_wallets_last_30_days": 45
   },
   "stake_days": [
     {
@@ -22603,20 +22603,20 @@
       "event_count": 1156,
       "migrated_all_time": 333293983.808434,
       "migrated_last_7_days": 421101.786883,
-      "migrated_last_30_days": 973526.865024
+      "migrated_last_30_days": 972505.819411
     },
     "cardano": {
       "wallet": "addr1qy33d7r35yjxafn5hs5d7tx4nncppnuh2fhgpdyvz0yjjzelujvrnhlpvja54h2tsa0r5zvaqtfu8wx8lgeac2xpyd0qmxhz65",
-      "event_count": 2596,
-      "migrated_all_time": 449878195.592397,
-      "migrated_last_7_days": 574709.292253,
-      "migrated_last_30_days": 3325906.34326
+      "event_count": 2597,
+      "migrated_all_time": 450885869.610866,
+      "migrated_last_7_days": 1582383.310722,
+      "migrated_last_30_days": 4333580.361729
     },
     "combined": {
-      "event_count": 3752,
-      "migrated_all_time": 783172179.400831,
-      "migrated_last_7_days": 995811.079136,
-      "migrated_last_30_days": 4299433.208284
+      "event_count": 3753,
+      "migrated_all_time": 784179853.4193,
+      "migrated_last_7_days": 2003485.097605,
+      "migrated_last_30_days": 5306086.18114
     }
   },
   "migration_wallets": {
@@ -22858,11 +22858,11 @@
       },
       {
         "week_start": "2026-09-28",
-        "wallet_count": 17,
-        "total_migrated": 868917.722136
+        "wallet_count": 18,
+        "total_migrated": 1876591.740605
       }
     ],
-    "wallets_last_7_days": 17,
-    "wallets_last_30_days": 44
+    "wallets_last_7_days": 18,
+    "wallets_last_30_days": 45
   }
 }
