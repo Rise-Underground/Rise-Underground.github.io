@@ -245516,42 +245516,42 @@
       "pool_name": "Pool 1 (Uniswap V2 Clone)",
       "date": "2026-10-03",
       "buy_volume": 90369.9635,
-      "sell_volume": 105028.5474,
+      "sell_volume": 132731.5731,
       "buy_txns": 23,
-      "sell_txns": 10,
-      "net_volume": -14658.5839,
-      "unique_makers": 8,
-      "closing_price": 6.174771323645541e-07,
+      "sell_txns": 12,
+      "net_volume": -42361.6096,
+      "unique_makers": 9,
+      "closing_price": 6.169919238132534e-07,
       "lp_add_volume": 12.900836,
       "lp_adds": 2,
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "LP_TOKEN",
-      "buy_volume_usd": 149.79,
-      "sell_volume_usd": 174.08,
-      "closing_price_usd": 0.00165748,
-      "quote_usd_price": 2684.285162681021
+      "buy_volume_usd": 149.57,
+      "sell_volume_usd": 219.68,
+      "closing_price_usd": 0.00165506,
+      "quote_usd_price": 2682.460687476062
     },
     {
       "chain": "Base",
       "pool_name": "Pool 2 (Aerodrome vAMM)",
       "date": "2026-10-03",
-      "buy_volume": 200818.944,
-      "sell_volume": 390856.8797,
-      "buy_txns": 17,
-      "sell_txns": 14,
-      "net_volume": -190037.9357,
-      "unique_makers": 6,
-      "closing_price": 6.169676299773858e-07,
+      "buy_volume": 201069.1142,
+      "sell_volume": 474246.9568,
+      "buy_txns": 19,
+      "sell_txns": 16,
+      "net_volume": -273177.8426,
+      "unique_makers": 7,
+      "closing_price": 6.16552116796047e-07,
       "lp_add_volume": 0.0,
       "lp_adds": 0,
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "LP_TOKEN",
-      "buy_volume_usd": 332.58,
-      "sell_volume_usd": 647.3,
-      "closing_price_usd": 0.00165612,
-      "quote_usd_price": 2684.285162681021
+      "buy_volume_usd": 332.54,
+      "sell_volume_usd": 784.35,
+      "closing_price_usd": 0.00165388,
+      "quote_usd_price": 2682.460687476062
     },
     {
       "chain": "Cardano",
@@ -245569,10 +245569,10 @@
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "RISE",
-      "buy_volume_usd": 4.59,
-      "sell_volume_usd": 134.74,
-      "closing_price_usd": 0.00166469,
-      "quote_usd_price": 0.24542312599100036
+      "buy_volume_usd": 4.58,
+      "sell_volume_usd": 134.43,
+      "closing_price_usd": 0.00166085,
+      "quote_usd_price": 0.2448567525580916
     },
     {
       "chain": "Cardano",
@@ -245590,10 +245590,10 @@
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "RISE",
-      "buy_volume_usd": 581.91,
-      "sell_volume_usd": 984.25,
-      "closing_price_usd": 0.00166672,
-      "quote_usd_price": 0.24542312599100036
+      "buy_volume_usd": 580.57,
+      "sell_volume_usd": 981.98,
+      "closing_price_usd": 0.00166288,
+      "quote_usd_price": 0.2448567525580916
     },
     {
       "chain": "Cardano",
@@ -245614,7 +245614,7 @@
       "buy_volume_usd": null,
       "sell_volume_usd": null,
       "closing_price_usd": null,
-      "quote_usd_price": 0.24542312599100036
+      "quote_usd_price": 0.2448567525580916
     },
     {
       "chain": "Cardano",
@@ -245635,7 +245635,7 @@
       "buy_volume_usd": null,
       "sell_volume_usd": null,
       "closing_price_usd": null,
-      "quote_usd_price": 0.24542312599100036
+      "quote_usd_price": 0.2448567525580916
     }
   ],
   "reserve_daily_summary": [
@@ -343050,8 +343050,8 @@
       "chain": "Base",
       "pool_name": "Pool 1 (Uniswap V2 Clone)",
       "date": "2026-10-03",
-      "rise_balance": 20054143.167879,
-      "other_balance": 12.344963,
+      "rise_balance": 20070716.167879,
+      "other_balance": 12.3348,
       "other_asset": "WETH",
       "price": 1e-06
     },
@@ -343059,8 +343059,8 @@
       "chain": "Base",
       "pool_name": "Pool 2 (Aerodrome vAMM)",
       "date": "2026-10-03",
-      "rise_balance": 89363655.212833,
-      "other_balance": 55.009591,
+      "rise_balance": 89413505.212833,
+      "other_balance": 54.978922,
       "other_asset": "WETH",
       "price": 1e-06
     },
