@@ -233185,6 +233185,27 @@
       "quote_usd_price": null
     },
     {
+      "chain": "BNB",
+      "pool_name": "COPI/BNB Pool 1 (PancakePair)",
+      "date": "2026-10-09",
+      "buy_volume": 0.0,
+      "sell_volume": 2033.3709,
+      "buy_txns": 0,
+      "sell_txns": 1,
+      "net_volume": -2033.3709,
+      "unique_makers": null,
+      "closing_price": 2.0627894505954307e-06,
+      "lp_add_volume": 0.0,
+      "lp_adds": 0,
+      "lp_remove_volume": 0.0,
+      "lp_removes": 0,
+      "lp_flow_unit": "RISE",
+      "buy_volume_usd": null,
+      "sell_volume_usd": null,
+      "closing_price_usd": null,
+      "quote_usd_price": null
+    },
+    {
       "chain": "Cardano",
       "pool_name": "Cardano RISE/ADA AMM Pool #2 (unconfirmed DEX identity)",
       "date": "2026-10-09",
@@ -233249,24 +233270,66 @@
     },
     {
       "chain": "Cardano",
-      "pool_name": "Minswap RISE/ADA",
+      "pool_name": "Cardano RISE/ADA AMM Pool #2 (unconfirmed DEX identity)",
       "date": "2026-10-10",
-      "buy_volume": 543498.3377,
-      "sell_volume": 1259542.1439,
-      "buy_txns": 3,
-      "sell_txns": 6,
-      "net_volume": -716043.8062,
+      "buy_volume": 0.0,
+      "sell_volume": 132246.0497,
+      "buy_txns": 0,
+      "sell_txns": 2,
+      "net_volume": -132246.0497,
       "unique_makers": null,
-      "closing_price": 0.0063864865773951346,
+      "closing_price": 0.00637626051806401,
       "lp_add_volume": 0.0,
       "lp_adds": 0,
       "lp_remove_volume": 0.0,
       "lp_removes": 0,
       "lp_flow_unit": "RISE",
-      "buy_volume_usd": 889.81,
-      "sell_volume_usd": 2062.1,
-      "closing_price_usd": 0.00163719,
-      "quote_usd_price": 0.2563516016271289
+      "buy_volume_usd": 0.0,
+      "sell_volume_usd": 211.45,
+      "closing_price_usd": 0.00159894,
+      "quote_usd_price": 0.2507642787477363
+    },
+    {
+      "chain": "Cardano",
+      "pool_name": "Minswap RISE/ADA",
+      "date": "2026-10-10",
+      "buy_volume": 602414.1089,
+      "sell_volume": 1786139.2943,
+      "buy_txns": 6,
+      "sell_txns": 9,
+      "net_volume": -1183725.1854,
+      "unique_makers": null,
+      "closing_price": 0.006369899997524604,
+      "lp_add_volume": 0.0,
+      "lp_adds": 0,
+      "lp_remove_volume": 0.0,
+      "lp_removes": 0,
+      "lp_flow_unit": "RISE",
+      "buy_volume_usd": 962.26,
+      "sell_volume_usd": 2853.08,
+      "closing_price_usd": 0.00159734,
+      "quote_usd_price": 0.2507642787477363
+    },
+    {
+      "chain": "Cardano",
+      "pool_name": "Minswap RISE/ADA",
+      "date": "2026-10-11",
+      "buy_volume": 531489.593,
+      "sell_volume": 23000.0,
+      "buy_txns": 2,
+      "sell_txns": 1,
+      "net_volume": 508489.593,
+      "unique_makers": null,
+      "closing_price": 0.006363695008771046,
+      "lp_add_volume": 0.0,
+      "lp_adds": 0,
+      "lp_remove_volume": 0.0,
+      "lp_removes": 0,
+      "lp_flow_unit": "RISE",
+      "buy_volume_usd": 837.05,
+      "sell_volume_usd": 36.22,
+      "closing_price_usd": 0.00157492,
+      "quote_usd_price": 0.2474852179811232
     }
   ],
   "reserve_daily_summary": [
@@ -331389,6 +331452,15 @@
       "price": 2.4916419335261276e-08
     },
     {
+      "chain": "BNB",
+      "pool_name": "COPI/BNB Pool 1 (PancakePair)",
+      "date": "2026-10-09",
+      "rise_balance": 6035560.53353,
+      "other_balance": 12.477089,
+      "other_asset": "WBNB",
+      "price": 2.0672626567107578e-06
+    },
+    {
       "chain": "Cardano",
       "pool_name": "Cardano RISE/ADA AMM Pool #2 (unconfirmed DEX identity)",
       "date": "2026-10-09",
@@ -331417,12 +331489,30 @@
     },
     {
       "chain": "Cardano",
+      "pool_name": "Cardano RISE/ADA AMM Pool #2 (unconfirmed DEX identity)",
+      "date": "2026-10-10",
+      "rise_balance": 10537361.059054,
+      "other_balance": 66548.04945,
+      "other_asset": "ADA",
+      "price": 0.00631544
+    },
+    {
+      "chain": "Cardano",
       "pool_name": "Minswap RISE/ADA",
       "date": "2026-10-10",
-      "rise_balance": 94284871.110758,
-      "other_balance": 600761.285714,
+      "rise_balance": 94752552.490025,
+      "other_balance": 597810.211255,
       "other_asset": "ADA",
-      "price": 0.00637177
+      "price": 0.00630917
+    },
+    {
+      "chain": "Cardano",
+      "pool_name": "Minswap RISE/ADA",
+      "date": "2026-10-11",
+      "rise_balance": 94244062.897006,
+      "other_balance": 601046.255594,
+      "other_asset": "ADA",
+      "price": 0.00637755
     }
   ]
 }
