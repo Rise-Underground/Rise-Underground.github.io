@@ -811,7 +811,7 @@
     <p class="eyebrow">Rise Underground presents</p>
     <h1>Leaders<span>of the Leaderboards</span></h1>
     <p class="dek">
-      Points stack across 10 leaderboards drawn at random for this week's
+      Points stack across 12 leaderboards drawn at random for this week's
       competition from Calido Valley Raceway, Aero Trails, and Holocache.
     </p>
     <div class="countdown-strip" id="countdownStrip">
@@ -941,11 +941,39 @@ function computeCompetitionWindow(now){
 }
 
 // ------------------------------------------------------------------
-// Weekly board draw: 10 boards picked at random, seeded by the
-// competition window's start date, so every visitor sees the same 10
+// Weekly board draw: 12 boards picked at random, seeded by the
+// competition window's start date, so every visitor sees the same 12
 // for the whole week and a new set is drawn for the next window.
+//
+// getDrawWindow decides WHICH competition the page is about:
+//   - from the "starts in" countdown (7 days before start) through the
+//     end of the competition: that competition, boards shown
+//   - after it ends, until the next countdown begins: still the
+//     competition that just finished (so final standings stay put),
+//     boards hidden
 // ------------------------------------------------------------------
-const BOARDS_PER_WEEK = 10;
+const BOARDS_PER_WEEK = 12;
+const COUNTDOWN_LEAD_MS = 7 * 24 * 60 * 60 * 1000;
+
+function getDrawWindow(now){
+  let win;
+  if (TEST_MODE){
+    win = { start: TEST_WINDOW_START, end: TEST_WINDOW_END };
+  } else {
+    const y = now.getUTCFullYear(), m = now.getUTCMonth();
+    const cur = getSecondMondayWindow(y, m);
+    if (now <= cur.end){
+      win = (now >= cur.start.getTime() - COUNTDOWN_LEAD_MS)
+        ? cur
+        : getSecondMondayWindow(m === 0 ? y - 1 : y, m === 0 ? 11 : m - 1);
+    } else {
+      const next = getSecondMondayWindow(m === 11 ? y + 1 : y, m === 11 ? 0 : m + 1);
+      win = (now >= next.start.getTime() - COUNTDOWN_LEAD_MS) ? next : cur;
+    }
+  }
+  const showBoards = now >= win.start.getTime() - COUNTDOWN_LEAD_MS && now <= win.end;
+  return { start: win.start, end: win.end, showBoards };
+}
 
 function mulberry32(seed){
   return function(){
@@ -1289,16 +1317,14 @@ if (location.protocol !== 'file:'){
       const allPlacements = csvToPlacements(placementsText);
       const allBoards = boardsText ? csvToBoards(boardsText) : null;
 
-      // Draw this week's 10 boards from the full catalog (fall back to
+      // Draw this week's 12 boards from the full catalog (fall back to
       // boards seen in placements if boards.csv didn't load), then count
       // only those boards everywhere on the page.
       const catalog = allBoards ? allBoards.map(b => b.board) : allPlacements.map(p => p.board);
-      const { start: weekStart, end: weekEnd } = TEST_MODE
-        ? { start: TEST_WINDOW_START, end: TEST_WINDOW_END }
-        : computeCompetitionWindow(new Date());
+      const { start: weekStart, end: weekEnd, showBoards } = getDrawWindow(new Date());
       const weekBoards = pickWeeklyBoards(catalog, weekStart);
       const weekSet = new Set(weekBoards);
-      renderWeekBoards(weekBoards, weekStart, weekEnd);
+      renderWeekBoards(showBoards ? weekBoards : [], weekStart, weekEnd);
 
       const placements = allPlacements.filter(p => weekSet.has(p.board));
       fullStandings = buildStandings(placements);
