@@ -358,6 +358,11 @@
     letter-spacing:0.02em;
   }
 
+  .notice-banner{
+    border-color: var(--crimson);
+    background: linear-gradient(180deg, rgba(224,32,43,0.12), rgba(224,32,43,0.03));
+  }
+
   /* ---------- this week's boards ---------- */
   .week-boards{ margin: 0 0 32px; }
   .week-boards-grid{
@@ -821,6 +826,9 @@
       </div>
     </div>
     <a class="prize-wheel-link" href="prize_wheel.html">Prize Wheel &rarr;</a>
+    <div class="ended-banner notice-banner" id="noticeBanner" style="display:none;">
+      ⚠️ This month's contest is canceled while we wait for some bugs to get fixed. What you see here is a test run of the randomly selected leaderboards.
+    </div>
     <div class="ended-banner" id="endedBanner" style="display:none;">
       🏆 Congrats to the winners! Practice and get ready for next month's Leader of the Leaderboards.
     </div>
@@ -1086,6 +1094,22 @@ function tickEndedBanner(){
 
 tickEndedBanner();
 setInterval(tickEndedBanner, 1000);
+
+// ------------------------------------------------------------------
+// One-off notice: October 2026 contest canceled (test run). Turns itself
+// off at Nov 1, 2026 00:00 UTC.
+// ------------------------------------------------------------------
+const NOTICE_START = new Date(Date.UTC(2026, 9, 1));   // Oct 1, 2026
+const NOTICE_END = new Date(Date.UTC(2026, 10, 1));   // Nov 1, 2026
+
+function tickNoticeBanner(){
+  const now = new Date();
+  document.getElementById('noticeBanner').style.display =
+    (now >= NOTICE_START && now < NOTICE_END) ? '' : 'none';
+}
+
+tickNoticeBanner();
+setInterval(tickNoticeBanner, 60000);
 
 // ------------------------------------------------------------------
 // Build a small SVG rank gauge. rank 1 = near-full arc, rank 10 = sliver.
