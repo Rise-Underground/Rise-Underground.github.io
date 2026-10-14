@@ -8222,6 +8222,64 @@
           }
         ]
       }
+    },
+    {
+      "timestamp": "2026-10-14T14:46:05.058828+00:00",
+      "standings": [
+        {
+          "player": "DOUBLE-0-SEVEN#3139",
+          "points": 18,
+          "boards": 2
+        },
+        {
+          "player": "pprgaming#9695",
+          "points": 10,
+          "boards": 1
+        },
+        {
+          "player": "MSPDriver#3454",
+          "points": 10,
+          "boards": 1
+        },
+        {
+          "player": "SunnyvaleKid#0926",
+          "points": 10,
+          "boards": 1
+        }
+      ],
+      "by_board": {
+        "Holocache": [
+          {
+            "player": "pprgaming#9695",
+            "rank": 1,
+            "points": 10
+          }
+        ],
+        "Aero Trails \u2014 Hub City": [
+          {
+            "player": "MSPDriver#3454",
+            "rank": 1,
+            "points": 10
+          },
+          {
+            "player": "DOUBLE-0-SEVEN#3139",
+            "rank": 2,
+            "points": 9
+          }
+        ],
+        "Calido Yellow \u2014 Bubblejett Sprinter 2022": [
+          {
+            "player": "SunnyvaleKid#0926",
+            "rank": 1,
+            "points": 10
+          },
+          {
+            "player": "DOUBLE-0-SEVEN#3139",
+            "rank": 2,
+            "points": 9
+          }
+        ]
+      }
     }
   ],
   "movements": [
@@ -8251,6 +8309,42 @@
       "old_rank": 2,
       "new_rank": 3,
       "timestamp": "2026-10-13T23:30:58.750162+00:00"
+    },
+    {
+      "type": "aggregate_move",
+      "player": "SunnyvaleKid#0926",
+      "direction": "down",
+      "positions": 1,
+      "old_rank": 3,
+      "new_rank": 4,
+      "timestamp": "2026-10-14T14:46:05.058828+00:00"
+    },
+    {
+      "type": "aggregate_move",
+      "player": "pprgaming#9695",
+      "direction": "down",
+      "positions": 1,
+      "old_rank": 1,
+      "new_rank": 2,
+      "timestamp": "2026-10-14T14:46:05.058828+00:00"
+    },
+    {
+      "type": "aggregate_move",
+      "player": "MSPDriver#3454",
+      "direction": "down",
+      "positions": 1,
+      "old_rank": 2,
+      "new_rank": 3,
+      "timestamp": "2026-10-14T14:46:05.058828+00:00"
+    },
+    {
+      "type": "aggregate_move",
+      "player": "DOUBLE-0-SEVEN#3139",
+      "direction": "up",
+      "positions": 3,
+      "old_rank": 4,
+      "new_rank": 1,
+      "timestamp": "2026-10-14T14:46:05.058828+00:00"
     }
   ]
 }
