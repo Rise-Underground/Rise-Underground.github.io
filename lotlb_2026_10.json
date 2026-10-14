@@ -9382,6 +9382,64 @@
           }
         ]
       }
+    },
+    {
+      "timestamp": "2026-10-14T19:46:03.640965+00:00",
+      "standings": [
+        {
+          "player": "DOUBLE-0-SEVEN#3139",
+          "points": 18,
+          "boards": 2
+        },
+        {
+          "player": "pprgaming#9695",
+          "points": 10,
+          "boards": 1
+        },
+        {
+          "player": "MSPDriver#3454",
+          "points": 10,
+          "boards": 1
+        },
+        {
+          "player": "SunnyvaleKid#0926",
+          "points": 10,
+          "boards": 1
+        }
+      ],
+      "by_board": {
+        "Holocache": [
+          {
+            "player": "pprgaming#9695",
+            "rank": 1,
+            "points": 10
+          }
+        ],
+        "Aero Trails \u2014 Hub City": [
+          {
+            "player": "MSPDriver#3454",
+            "rank": 1,
+            "points": 10
+          },
+          {
+            "player": "DOUBLE-0-SEVEN#3139",
+            "rank": 2,
+            "points": 9
+          }
+        ],
+        "Calido Yellow \u2014 Bubblejett Sprinter 2022": [
+          {
+            "player": "SunnyvaleKid#0926",
+            "rank": 1,
+            "points": 10
+          },
+          {
+            "player": "DOUBLE-0-SEVEN#3139",
+            "rank": 2,
+            "points": 9
+          }
+        ]
+      }
     }
   ],
   "movements": [
