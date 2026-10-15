@@ -10716,6 +10716,74 @@
           }
         ]
       }
+    },
+    {
+      "timestamp": "2026-10-15T01:31:15.750263+00:00",
+      "standings": [
+        {
+          "player": "DOUBLE-0-SEVEN#3139",
+          "points": 18,
+          "boards": 2
+        },
+        {
+          "player": "Coleman#4564",
+          "points": 10,
+          "boards": 1
+        },
+        {
+          "player": "MSPDriver#3454",
+          "points": 10,
+          "boards": 1
+        },
+        {
+          "player": "SunnyvaleKid#0926",
+          "points": 10,
+          "boards": 1
+        },
+        {
+          "player": "pprgaming#9695",
+          "points": 9,
+          "boards": 1
+        }
+      ],
+      "by_board": {
+        "Holocache": [
+          {
+            "player": "Coleman#4564",
+            "rank": 1,
+            "points": 10
+          },
+          {
+            "player": "pprgaming#9695",
+            "rank": 2,
+            "points": 9
+          }
+        ],
+        "Aero Trails \u2014 Hub City": [
+          {
+            "player": "MSPDriver#3454",
+            "rank": 1,
+            "points": 10
+          },
+          {
+            "player": "DOUBLE-0-SEVEN#3139",
+            "rank": 2,
+            "points": 9
+          }
+        ],
+        "Calido Yellow \u2014 Bubblejett Sprinter 2022": [
+          {
+            "player": "SunnyvaleKid#0926",
+            "rank": 1,
+            "points": 10
+          },
+          {
+            "player": "DOUBLE-0-SEVEN#3139",
+            "rank": 2,
+            "points": 9
+          }
+        ]
+      }
     }
   ],
   "movements": [
@@ -10781,6 +10849,22 @@
       "old_rank": 4,
       "new_rank": 1,
       "timestamp": "2026-10-14T14:46:05.058828+00:00"
+    },
+    {
+      "type": "board_takeover",
+      "board": "Holocache",
+      "loser": "pprgaming#9695",
+      "winner": "Coleman#4564",
+      "timestamp": "2026-10-15T01:31:15.750263+00:00"
+    },
+    {
+      "type": "aggregate_move",
+      "player": "pprgaming#9695",
+      "direction": "down",
+      "positions": 3,
+      "old_rank": 2,
+      "new_rank": 5,
+      "timestamp": "2026-10-15T01:31:15.750263+00:00"
     }
   ]
 }
