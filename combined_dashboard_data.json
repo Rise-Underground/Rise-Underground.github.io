@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-15T09:04:06.679836+00:00",
+  "generated_at_utc": "2026-10-15T17:49:35.472318+00:00",
   "notes": "Self-contained: computed directly from rise_ledger.db, no intermediate JSON files. Cardano (COPI+RISE merged) and Base RISE combined into one stake/reward total. Breakdown is by CHAIN only, never by token. Rewards combine staking/vault AND node rewards into one total per chain. avg_age_days is BASE-ONLY. LP staking kept separate. Migration totals from confirmed COPI-in/RISE-out event matching, both chains.",
   "summary": {
     "final_date": "2026-10-12",
@@ -7,12 +7,12 @@
     "final_base_staked": 183542660.018841,
     "final_total_staked": 326176001.633401,
     "final_avg_age_days": 224.7762,
-    "final_cardano_rewards": 33819580.540574,
-    "final_base_rewards": 10927028.428537,
-    "final_total_rewards": 44746608.969111,
-    "final_cardano_node_rewards": 27203849.086497,
-    "final_base_node_rewards": 4365476.71,
-    "final_total_node_rewards": 31569325.796497,
+    "final_cardano_rewards": 33825152.860574,
+    "final_base_rewards": 10935320.430754,
+    "final_total_rewards": 44760473.291328,
+    "final_cardano_node_rewards": 27209421.406497,
+    "final_base_node_rewards": 4372600.92,
+    "final_total_node_rewards": 31582022.326497,
     "lp_staking": {
       "lp_rise_weth_aero": {
         "token_symbol": "vAMM-WETH/RISE",
@@ -25,11 +25,44 @@
         "final_balance": 2500.554347459622
       }
     },
-    "migrated_total": 785668380.031201,
-    "migrated_last_7_days": 1125402.521895,
-    "migrated_last_30_days": 4349279.111731,
-    "migrated_wallets_last_7_days": 13,
-    "migrated_wallets_last_30_days": 51
+    "migrated_total": 785869775.633537,
+    "migrated_last_7_days": 1326798.124231,
+    "migrated_last_30_days": 4550674.714067,
+    "migrated_wallets_last_7_days": 16,
+    "migrated_wallets_last_30_days": 54,
+    "estimated_circulating_supply": 938191209.44
+  },
+  "circulating_supply": {
+    "circulating": 938191209.44,
+    "pct_of_supply": 0.31273,
+    "total_supply": 3000000000,
+    "by_chain": {
+      "base": {
+        "wallets": 170504299.46,
+        "staked": 183542660.02,
+        "lp_share": 22466645.57,
+        "total": 376513605.05
+      },
+      "cardano": {
+        "wallets": 415675027.07,
+        "staked": 138887501.24,
+        "lp_share": 7115076.08,
+        "total": 561677604.39
+      }
+    },
+    "wallets": 586179326.53,
+    "staked": 322430161.26,
+    "lp_share": 29581721.65,
+    "on_exchanges": 8496859.49,
+    "unlabeled_cardano_scripts": 201046.07,
+    "not_circulating": 4883183454.68,
+    "date": "2026-10-15",
+    "history": [
+      {
+        "date": "2026-10-15",
+        "circulating": 938191209.44
+      }
+    ]
   },
   "stake_days": [
     {
@@ -19837,10 +19870,18 @@
     {
       "date": "2026-10-13",
       "cardano_cumulative": 33819580.540574,
-      "base_cumulative": 10927028.428537,
-      "daily_claimed": 12807.0,
-      "cumulative_claimed": 44746608.969111,
-      "rolling_7day_avg": 72565.640392
+      "base_cumulative": 10927863.638537,
+      "daily_claimed": 13642.21,
+      "cumulative_claimed": 44747444.179111,
+      "rolling_7day_avg": 72684.956106
+    },
+    {
+      "date": "2026-10-14",
+      "cardano_cumulative": 33825152.860574,
+      "base_cumulative": 10935320.430754,
+      "daily_claimed": 13029.112217,
+      "cumulative_claimed": 44760473.291328,
+      "rolling_7day_avg": 72842.716423
     }
   ],
   "lp_staking": {
@@ -22750,23 +22791,23 @@
   "migration": {
     "base": {
       "contract": "0xd4ee9f0030e0687d54d4dc6d932f10b7aa8abd1d",
-      "event_count": 1173,
-      "migrated_all_time": 334642338.654871,
-      "migrated_last_7_days": 969729.187831,
-      "migrated_last_30_days": 2041065.45832
+      "event_count": 1174,
+      "migrated_all_time": 334777700.027871,
+      "migrated_last_7_days": 1105090.560831,
+      "migrated_last_30_days": 2176426.83132
     },
     "cardano": {
       "wallet": "addr1qy33d7r35yjxafn5hs5d7tx4nncppnuh2fhgpdyvz0yjjzelujvrnhlpvja54h2tsa0r5zvaqtfu8wx8lgeac2xpyd0qmxhz65",
-      "event_count": 2609,
-      "migrated_all_time": 451026041.37633,
-      "migrated_last_7_days": 155673.334064,
-      "migrated_last_30_days": 2308213.653411
+      "event_count": 2612,
+      "migrated_all_time": 451092075.605666,
+      "migrated_last_7_days": 221707.5634,
+      "migrated_last_30_days": 2374247.882747
     },
     "combined": {
-      "event_count": 3782,
-      "migrated_all_time": 785668380.031201,
-      "migrated_last_7_days": 1125402.521895,
-      "migrated_last_30_days": 4349279.111731
+      "event_count": 3786,
+      "migrated_all_time": 785869775.633537,
+      "migrated_last_7_days": 1326798.124231,
+      "migrated_last_30_days": 4550674.714067
     }
   },
   "migration_wallets": {
@@ -23018,11 +23059,11 @@
       },
       {
         "week_start": "2026-10-12",
-        "wallet_count": 1,
-        "total_migrated": 742292.809
+        "wallet_count": 4,
+        "total_migrated": 943688.411336
       }
     ],
-    "wallets_last_7_days": 13,
-    "wallets_last_30_days": 51
+    "wallets_last_7_days": 16,
+    "wallets_last_30_days": 54
   }
 }
