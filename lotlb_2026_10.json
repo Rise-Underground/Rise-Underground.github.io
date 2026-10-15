@@ -18073,6 +18073,99 @@
           }
         ]
       }
+    },
+    {
+      "timestamp": "2026-10-15T23:46:06.363294+00:00",
+      "standings": [
+        {
+          "player": "Coleman#4564",
+          "points": 18,
+          "boards": 2
+        },
+        {
+          "player": "DOUBLE-0-SEVEN#3139",
+          "points": 17,
+          "boards": 2
+        },
+        {
+          "player": "Rollmewankenobi#0001",
+          "points": 10,
+          "boards": 1
+        },
+        {
+          "player": "MSPDriver#3454",
+          "points": 10,
+          "boards": 1
+        },
+        {
+          "player": "Z_E_K_E#3425",
+          "points": 9,
+          "boards": 1
+        },
+        {
+          "player": "SunnyvaleKid#0926",
+          "points": 9,
+          "boards": 1
+        },
+        {
+          "player": "pprgaming#9695",
+          "points": 7,
+          "boards": 1
+        }
+      ],
+      "by_board": {
+        "Holocache": [
+          {
+            "player": "Rollmewankenobi#0001",
+            "rank": 1,
+            "points": 10
+          },
+          {
+            "player": "Z_E_K_E#3425",
+            "rank": 2,
+            "points": 9
+          },
+          {
+            "player": "Coleman#4564",
+            "rank": 3,
+            "points": 8
+          },
+          {
+            "player": "pprgaming#9695",
+            "rank": 4,
+            "points": 7
+          }
+        ],
+        "Aero Trails \u2014 Hub City": [
+          {
+            "player": "MSPDriver#3454",
+            "rank": 1,
+            "points": 10
+          },
+          {
+            "player": "DOUBLE-0-SEVEN#3139",
+            "rank": 2,
+            "points": 9
+          }
+        ],
+        "Calido Yellow \u2014 Bubblejett Sprinter 2022": [
+          {
+            "player": "Coleman#4564",
+            "rank": 1,
+            "points": 10
+          },
+          {
+            "player": "SunnyvaleKid#0926",
+            "rank": 2,
+            "points": 9
+          },
+          {
+            "player": "DOUBLE-0-SEVEN#3139",
+            "rank": 3,
+            "points": 8
+          }
+        ]
+      }
     }
   ],
   "movements": [
@@ -18213,6 +18306,40 @@
       "old_rank": 4,
       "new_rank": 5,
       "timestamp": "2026-10-15T02:01:07.330946+00:00"
+    },
+    {
+      "type": "board_takeover",
+      "board": "Holocache",
+      "loser": "Z_E_K_E#3425",
+      "winner": "Rollmewankenobi#0001",
+      "timestamp": "2026-10-15T23:46:06.363294+00:00"
+    },
+    {
+      "type": "aggregate_move",
+      "player": "pprgaming#9695",
+      "direction": "down",
+      "positions": 1,
+      "old_rank": 6,
+      "new_rank": 7,
+      "timestamp": "2026-10-15T23:46:06.363294+00:00"
+    },
+    {
+      "type": "aggregate_move",
+      "player": "SunnyvaleKid#0926",
+      "direction": "down",
+      "positions": 1,
+      "old_rank": 5,
+      "new_rank": 6,
+      "timestamp": "2026-10-15T23:46:06.363294+00:00"
+    },
+    {
+      "type": "aggregate_move",
+      "player": "Z_E_K_E#3425",
+      "direction": "down",
+      "positions": 2,
+      "old_rank": 3,
+      "new_rank": 5,
+      "timestamp": "2026-10-15T23:46:06.363294+00:00"
     }
   ]
 }
