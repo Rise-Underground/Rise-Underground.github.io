@@ -535,6 +535,10 @@
   .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
   .chart-canvas-wrap { height: 320px; position: relative; }
   .chart-canvas-wrap.short { height: 210px; }
+  /* price chart: TradingView-like proportions (about 3:2), centered, not full width */
+  .price-card { max-width: 1150px; margin-left: auto; margin-right: auto; }
+  .chart-canvas-wrap.price-wrap { height: auto; aspect-ratio: 3 / 2; max-height: 760px; }
+  @media (max-width: 700px) { .chart-canvas-wrap.price-wrap { aspect-ratio: 4 / 5; } }
 
   footer {
     margin-top: 48px;
@@ -666,14 +670,14 @@
     </div>
   </div>
 
-  <div class="card chart-card" style="margin-top: 40px;">
+  <div class="card chart-card price-card" style="margin-top: 40px;">
     <div class="chart-head">
       <div>
         <div class="chart-title">COPI / RISE Price (USD)</div>
         <div class="chart-desc">Daily close, log scale &middot; full history</div>
       </div>
     </div>
-    <div class="chart-canvas-wrap">
+    <div class="chart-canvas-wrap price-wrap">
       <canvas id="priceChart"></canvas>
       <div id="priceChartNA" style="display:none; position:absolute; inset:0; align-items:center; justify-content:center; color:var(--muted); font-family:'JetBrains Mono', monospace; font-size:13px;">N/A</div>
     </div>
@@ -954,7 +958,7 @@ async function loadDashboard() {
     if (!ph.length) throw new Error('no price_history');
     const fmtPrice = (v) => '$' + (v >= 1 ? v.toFixed(2) : v >= 0.01 ? v.toFixed(4) : v.toPrecision(3));
     const pCtx = document.getElementById('priceChart').getContext('2d');
-    const pGrad = pCtx.createLinearGradient(0, 0, 0, 320);
+    const pGrad = pCtx.createLinearGradient(0, 0, 0, pCtx.canvas.parentNode.clientHeight || 700);
     pGrad.addColorStop(0, 'rgba(255,122,41,0.30)');
     pGrad.addColorStop(1, 'rgba(255,122,41,0.0)');
     new Chart(pCtx, {
