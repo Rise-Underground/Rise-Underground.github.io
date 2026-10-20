@@ -666,7 +666,20 @@
     </div>
   </div>
 
-  <div class="twin-chart-row" style="margin-top: 40px;">
+  <div class="card chart-card" style="margin-top: 40px;">
+    <div class="chart-head">
+      <div>
+        <div class="chart-title">COPI / RISE Price (USD)</div>
+        <div class="chart-desc">Daily close, log scale &middot; full history</div>
+      </div>
+    </div>
+    <div class="chart-canvas-wrap">
+      <canvas id="priceChart"></canvas>
+      <div id="priceChartNA" style="display:none; position:absolute; inset:0; align-items:center; justify-content:center; color:var(--muted); font-family:'JetBrains Mono', monospace; font-size:13px;">N/A</div>
+    </div>
+  </div>
+
+  <div class="twin-chart-row" style="margin-top: 20px;">
     <div class="card chart-card">
       <div class="chart-head">
         <div>
@@ -934,6 +947,60 @@ async function loadDashboard() {
 
   Chart.defaults.font.family = "'JetBrains Mono', monospace";
   Chart.defaults.color = '#7C8494';
+
+  // ---------- Chart 0: COPI / RISE price, one continuous series ----------
+  try {
+    const ph = (data.price_history || []).filter(r => r.price > 0);
+    if (!ph.length) throw new Error('no price_history');
+    const fmtPrice = (v) => '$' + (v >= 1 ? v.toFixed(2) : v >= 0.01 ? v.toFixed(4) : v.toPrecision(3));
+    const pCtx = document.getElementById('priceChart').getContext('2d');
+    const pGrad = pCtx.createLinearGradient(0, 0, 0, 320);
+    pGrad.addColorStop(0, 'rgba(255,122,41,0.30)');
+    pGrad.addColorStop(1, 'rgba(255,122,41,0.0)');
+    new Chart(pCtx, {
+      type: 'line',
+      data: {
+        labels: ph.map(r => r.date),
+        datasets: [{
+          data: ph.map(r => r.price),
+          borderColor: '#FF7A29',
+          backgroundColor: pGrad,
+          borderWidth: 2,
+          pointRadius: 0,
+          pointHoverRadius: 4,
+          pointHoverBackgroundColor: '#FF7A29',
+          fill: true,
+          tension: 0.15,
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: { mode: 'index', intersect: false },
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            backgroundColor: '#171B24', borderColor: '#232838', borderWidth: 1,
+            titleFont: { family: "'JetBrains Mono', monospace", size: 11 },
+            bodyFont: { family: "'JetBrains Mono', monospace", size: 12 },
+            callbacks: { label: (ctx) => 'Price: ' + fmtPrice(ctx.parsed.y) }
+          }
+        },
+        scales: {
+          x: { grid: { display: false }, ticks: { maxTicksLimit: 10, font: { size: 10 } } },
+          y: { type: 'logarithmic', grid: { color: 'rgba(255,255,255,0.04)' },
+               ticks: { font: { size: 10 }, callback: (v) => {
+                 const m = v / Math.pow(10, Math.floor(Math.log10(v)));
+                 return (Math.abs(m - 1) < 1e-6 || Math.abs(m - 2) < 1e-6 || Math.abs(m - 5) < 1e-6) ? fmtPrice(v) : '';
+               } } }
+        }
+      }
+    });
+  } catch (err) {
+    console.error('Price chart skipped (non-fatal):', err);
+    document.getElementById('priceChart').style.display = 'none';
+    document.getElementById('priceChartNA').style.display = 'flex';
+  }
 
   // ---------- Chart 1: cumulative balance ----------
   const balCtx = document.getElementById('balanceChart').getContext('2d');
