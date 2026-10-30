@@ -475,7 +475,7 @@
       },
       {
         "name": "Custom cloud system & sky view",
-        "desc": "A custom, programmatically-moving cloud system has been built giving a panoramic 500km in-game view over Earth from Calido Valley, tied into upcoming lore. (CC51)",
+        "desc": "A custom, programmatically-moving cloud system has been built giving a panoramic 500km in-game view over Earth from Calido Valley, tied into upcoming lore. (CC51); a new proprietary volumetric cloud system and updated sky visuals shipped (CR159, PN0.4.5); cloud quality settings added across Ultra/High/Medium/Low (PN0.4.6)",
         "status": "Complete"
       },
       {
@@ -547,7 +547,7 @@
       },
       {
         "name": "World Travel System",
-        "desc": "Public transport pads, cloud gates, and central hubs link sector clusters across Calido and Solace, with vehicles stored in central hangars to skip loading screens. Built as required land-rush infrastructure (Calido → Hub → Solace walkways), then demoed as a multi-stage flow (Calido → cloud gate → sector hub → monorail choice of Solace 1/2/3 → free-roam), targeted for Rare Evo (Aug 15-17, 2024). Shipped as a working Solace 1/2/3--Calido travel loop, later upgraded to support player-owned POA vehicles (including the Juggernaut) for dome-to-dome travel and cross-region goods hauling (Calido → Solace → Esperanza), targeted for summer, with full POA-vehicle flight support following in a near-term build. (CC75, CC79, CC82, CC85, CC94, CC99, CC111, CC115, CC148)",
+        "desc": "Public transport pads, cloud gates, and central hubs link sector clusters across Calido and Solace, with vehicles stored in central hangars to skip loading screens. Built as required land-rush infrastructure (Calido → Hub → Solace walkways), then demoed as a multi-stage flow (Calido → cloud gate → sector hub → monorail choice of Solace 1/2/3 → free-roam), targeted for Rare Evo (Aug 15-17, 2024). Shipped as a working Solace 1/2/3--Calido travel loop, later upgraded to support player-owned POA vehicles (including the Juggernaut) for dome-to-dome travel and cross-region goods hauling (Calido → Solace → Esperanza), targeted for summer, with full POA-vehicle flight support following in a near-term build. (CC75, CC79, CC82, CC85, CC94, CC99, CC111, CC115, CC148); travel between Kid Toledo and the Global Map via cloud gates not yet possible; planned for the near future, requiring the full player state (including any party members) to carry between server instances (CR159)",
         "status": "WIP"
       },
       {
@@ -577,8 +577,8 @@
       },
       {
         "name": "Nexus Arrow / Dome Docking System",
-        "desc": "players park or summon their ship/vehicle via Nexus terminals, with each dome/megadome getting separate docking bays for public transport, private vehicles, and larger ships; the flow (park vehicle → travel through lobby → onward into the zone) was first built for the Bubble Jet, designed to replicate across future zones (Esperanza, etc.) with adjusted branding, then staged into a full flight rollout --- showing off ships, flying within Calido airspace, then cloudgate teleport to Solace --- tested with community feedback along the way. (CC1, CC36, CC39, CC107, CC121)",
-        "status": "WIP"
+        "desc": "players park or summon their ship/vehicle via Nexus terminals, with each dome/megadome getting separate docking bays for public transport, private vehicles, and larger ships; the flow (park vehicle → travel through lobby → onward into the zone) was first built for the Bubble Jet, designed to replicate across future zones (Esperanza, etc.) with adjusted branding, then staged into a full flight rollout --- showing off ships, flying within Calido airspace, then cloudgate teleport to Solace --- tested with community feedback along the way. (CC1, CC36, CC39, CC107, CC121); players retrieve and store ships through Nexus Aero terminals (PN0.4.5)",
+        "status": "Partial Completion"
       },
       {
         "name": "Aero Trails",
@@ -609,6 +609,16 @@
         "name": "Hoverboard travel item",
         "desc": "A new leaked image reveals a hoverboard (with matching boots) intended to increase player travel speed, powered by a replaceable nuclear-type core, tied into the game's lore. (CC31)",
         "status": "WIP"
+      },
+      {
+        "name": "Free Flight & Nexus Aero",
+        "desc": "a Free Flight system for supported ships, retrieved and stored through Nexus Aero terminals, launched with the Atmos Juggernaut, Bubblejett Prima and the new Core Dynamics Cirrus LX as flyable non-racing ships, and described as the first part of world travel (CR159, PN0.4.5); extended to the Global Map with the new Solace Hub City Hangars. (PN0.4.6)",
+        "status": "Complete"
+      },
+      {
+        "name": "Flight Academy / Air Guard (Concept)",
+        "desc": "an idea floated for a flight academy: signing up with a squad/flight crew, training to fly in formation, a logistics academy for shipping and hauling goods between worlds, and combat training; tied to the Cornucopias Air Guard lore; explicitly not promised and not coming soon. (CR159)",
+        "status": "WIP"
       }
     ]
   },
@@ -629,8 +639,8 @@
       },
       {
         "name": "Lumber & Logging Areas",
-        "desc": "dedicated (not free-for-all) tree-chopping zones for environmental reasons, later expanded into more complex gathering mechanics with extra animations, hit points, and processing steps. (CC1, CC48, CC140)",
-        "status": "Partial Completion"
+        "desc": "dedicated (not free-for-all) tree-chopping zones for environmental reasons, later expanded into more complex gathering mechanics with extra animations, hit points, and processing steps. (CC1, CC48, CC140); nearly every tree across Solace 1, 2 and 3 is now fellable instead of dedicated zones (CR159)",
+        "status": "Pivoted"
       },
       {
         "name": "Rare Minerals",
@@ -700,14 +710,19 @@
       },
       {
         "name": "Rando's Plasma Saw & Pneumatic Drill",
-        "desc": "Two new IGC-purchasable tools: Rando's Plasma Saw (Rando Metal Works), a short-range weapon effective for chopping trees, and a pneumatic drill for the new rock-mining loop. (CR158)",
-        "status": "WIP",
+        "desc": "Two new IGC-purchasable tools: Rando's Plasma Saw (Rando Metal Works), a short-range weapon effective for chopping trees, and a pneumatic drill for the new rock-mining loop. (CR158); shipped as Rando's Timber Beast and the Mine Hound, both free with IGC at General Stores (PN0.4.5, CR159)",
+        "status": "Complete",
         "citationLinks": {
           "CR158": {
             "url": null,
             "verified": false
           }
         }
+      },
+      {
+        "name": "Surface Mining",
+        "desc": "a surface mining activity with three locations in each Solace, using the Mine Hound pneumatic drill (free, picked up at General Stores); a larger mining update did not make the build due to time. (CR159, PN0.4.5)",
+        "status": "Complete"
       }
     ]
   },
@@ -770,7 +785,7 @@
       },
       {
         "name": "Farming System Build Status",
-        "desc": "planned for a build after the upcoming one, building on the gathering/inventory/crafting systems, with work starting next year; a working internal loop (plant/grow/nurture/water/harvest) already exists but still needs data-saving integration before it can ship. (CC63, CC64, CC107, CC140, CC157)",
+        "desc": "planned for a build after the upcoming one, building on the gathering/inventory/crafting systems, with work starting next year; a working internal loop (plant/grow/nurture/water/harvest) already exists but still needs data-saving integration before it can ship. (CC63, CC64, CC107, CC140, CC157); almost ready to test with a large art backlog; custom planters with 1 to 100+ slots that can be restricted to fruit, vegetables or flowers; crop diseases; crops growing while the player is offline; possible mobile check-ins; farming possible in apartments; expected sometime this year (CR159)",
         "status": "WIP"
       },
       {
@@ -847,8 +862,8 @@
       },
       {
         "name": "Gathering Mechanics (Tree Chopping, Logging & Tools)",
-        "desc": "a raw-material processing pipeline (trees → lumber, corn → food/biofuel) feeding building and vehicle systems, including a dedicated logging area where players chop regrowing trees and feed logs through a machine into lumber planks; tools like axes require parts gathered from different zones; a custom chaos-physics tree-chopping mechanic (beyond Unreal's built-in physics) adds realistic breakage based on hit strength/angle and a falling-tree risk, with power-bar mechanics planned to scale to mining and fishing too. (CC3, CC4, CC48, CC100, CC102)",
-        "status": "WIP"
+        "desc": "a raw-material processing pipeline (trees → lumber, corn → food/biofuel) feeding building and vehicle systems, including a dedicated logging area where players chop regrowing trees and feed logs through a machine into lumber planks; tools like axes require parts gathered from different zones; a custom chaos-physics tree-chopping mechanic (beyond Unreal's built-in physics) adds realistic breakage based on hit strength/angle and a falling-tree risk, with power-bar mechanics planned to scale to mining and fishing too. (CC3, CC4, CC48, CC100, CC102); logging shipped across Solace 1, 2 and 3 with over a million fellable trees (nearly 99% of trees), cut with the plasma saw (CR159, PN0.4.5)",
+        "status": "Partial Completion"
       },
       {
         "name": "Secret Recipe Fix / Hotfix",
@@ -941,6 +956,11 @@
         "name": "Cargo Hauling (Holage) Missions",
         "desc": "career-based hauling quests starting at the voyage terminal in Kid Toledo Valley, expanding cross-world to Solace and hubs as players level up their hauling skill. (CC155)",
         "status": "Complete"
+      },
+      {
+        "name": "Maintenance / Repair Jobs",
+        "desc": "repair jobs where players find and interact with satellite dishes, with more complex crafting built in. (CR159)",
+        "status": "Complete"
       }
     ]
   },
@@ -951,12 +971,12 @@
     "items": [
       {
         "name": "Rift Mechanics",
-        "desc": "Core System --- rifts open across the world (treated like weather-alert world events), spawning creatures that must be fought off and shut down using Anchor Stones and Time Stones, with a final 'heart of the rift' loot box on closing; creatures escalate in difficulty the longer a rift is left unchecked; rewards (IGC/XP/Infinity) are distributed based on each player's contribution to prevent late 'kill stealing.' (CC1, CC123, CC138, CC148, CC157)",
+        "desc": "Core System --- rifts open across the world (treated like weather-alert world events), spawning creatures that must be fought off and shut down using Anchor Stones and Time Stones, with a final 'heart of the rift' loot box on closing; creatures escalate in difficulty the longer a rift is left unchecked; rewards (IGC/XP/Infinity) are distributed based on each player's contribution to prevent late 'kill stealing.' (CC1, CC123, CC138, CC148, CC157); rifts left open now expand, tearing up the landscape, blocking roads and creating shard/hazard areas that can kill nearby players; rifts will also affect the economy; team roles planned (heavy-armor suppression, mobile attackers, healers, supply haulers) with healing coming soon; may get another taste in the next release (CR159)",
         "status": "WIP"
       },
       {
         "name": "Rift Enemies & Creatures",
-        "desc": "the enemy roster: Quantum Monsters generally, light/medium/heavy armored Terra Drone variants, a Heavy Enforcer (part robot/organic), a small poison-needle 'Mer/Jab' variant, light/medium/heavy mechs, and a giant elephant-like 'Dread Frame' boss appearing at the end of battles. (CC1, CC125, CC137, CC142, CC145, CC146, CC147, CC148)",
+        "desc": "the enemy roster: Quantum Monsters generally, light/medium/heavy armored Terra Drone variants, a Heavy Enforcer (part robot/organic), a small poison-needle 'Mer/Jab' variant, light/medium/heavy mechs, and a giant elephant-like 'Dread Frame' boss appearing at the end of battles. (CC1, CC125, CC137, CC142, CC145, CC146, CC147, CC148); Enforcers from the rifts now roam Solace as an early look at hostile rift creatures (PN0.4.5)",
         "status": "WIP"
       },
       {
@@ -1028,6 +1048,11 @@
         "name": "PvP/PvE Battle Functionality (Pets)",
         "desc": "battling functionality in active development in response to community interest in pet battles. (CC51)",
         "status": "WIP"
+      },
+      {
+        "name": "First Melee Weapons",
+        "desc": "the plasma saw and pneumatic drill gathering tools double as the game's first melee weapons, killing in one hit at close range. (CR159)",
+        "status": "Complete"
       }
     ]
   },
@@ -1143,7 +1168,7 @@
       },
       {
         "name": "Blue Track",
-        "desc": "A new racetrack built specifically for X-Class vehicles -- wider with looser corners than the existing Yellow/Red/Purple tracks to suit the faster class. (CR158)",
+        "desc": "A new racetrack built specifically for X-Class vehicles -- wider with looser corners than the existing Yellow/Red/Purple tracks to suit the faster class. (CR158); Cleo Blue racing with tournaments across classes, run outside the game, building toward special vehicle prizes; targeted for the next major release (CR159)",
         "status": "WIP",
         "citationLinks": {
           "CR158": {
@@ -1151,6 +1176,16 @@
             "verified": false
           }
         }
+      },
+      {
+        "name": "HOVA Hoverbikes",
+        "desc": "hoverbikes (described as the game's mounts) with free test drives in various levels, letting players try hover-bike travel without owning one. (CR159, PN0.4.5)",
+        "status": "Complete"
+      },
+      {
+        "name": "GTI Tempest",
+        "desc": "a medium-sized 'sporty hauler' from GTI, sitting between small craft and large ships like the Juggernaut for fuel cost and ease of play: multiple seats plus two jump seats, side doors, a cargo grid, glass roof, and working landing gear and flaps; other players will be able to ride along in first-person view (CR159); released for purchase. (PN0.4.6)",
+        "status": "Complete"
       }
     ]
   },
@@ -1301,6 +1336,18 @@
         "desc": "a random arcade machine introduced alongside the fur babies reveal. (CC32)",
         "status": "Complete"
       },
+      {
+        "name": "Collections",
+        "desc": "a new style of gameplay introduced in the To the Clouds release, to be built on in the future. (CR159)",
+        "status": "Partial Completion"
+      }
+    ]
+  },
+  {
+    "id": "animals-creatures",
+    "label": "Animals & Creatures",
+    "ready": true,
+    "items": [
       {
         "name": "Wildlife System",
         "desc": "passive animals (bears, foxes, deer, wolves, mountain lions, coyotes) roaming Solace and Esperanza, with hundreds of creature types planned and thousands roaming per zone, differing by region (whitetail deer/bear/mountain lion for Esperanza; deer/brown bear/coyote/fox for Solace), usable in crafting; includes water creatures hinted for aquatic/coastal zones and early animal capture/harvesting mechanics. Development included statue-style hub models per sector's signature animal, a dedicated creatures artist hire, cows tied to Burger Barn lore, a completed wildlife roster (bear, white-tailed deer, mountain lion, gray wolf, coyote, two fox variants, trout) built with procedural micro-detail materials and efficient poly budgets, and working AI behavior (e.g. a bear showing hunger/interest before chasing deer). (CC1, CC13, CC17, CC20, CC76, CC83, CC85, CC92, CC102, CC106, CC116, CC118, CC119, CC121)",
@@ -1472,7 +1519,7 @@
       },
       {
         "name": "Land Plot Building System Status",
-        "desc": "building on land uses the same core system as apartments, but with prefab-style pieces rather than apartments' granular items; expected to open in the build following apartment release, timing dependent on rift combat progress and full apartment-bug resolution first. The 'Coming Home' release lets players build on paid apartments/plots with a storage chest system, expecting heavy IGC costs at the highest tiers. (CC124, CC140, CC145, CC148, CC151, CC156)",
+        "desc": "building on land uses the same core system as apartments, but with prefab-style pieces rather than apartments' granular items; expected to open in the build following apartment release, timing dependent on rift combat progress and full apartment-bug resolution first. The 'Coming Home' release lets players build on paid apartments/plots with a storage chest system, expecting heavy IGC costs at the highest tiers. (CC124, CC140, CC145, CC148, CC151, CC156); plot building being tested, expected 'probably pretty soon' toward the end of the year (CR159)",
         "status": "WIP"
       },
       {
@@ -1612,7 +1659,14 @@
         "name": "World Map Placement",
         "desc": "domes appear as a distinct element on the world map alongside home bubbles and megadomes. (CC32)",
         "status": "WIP"
-      },
+      }
+    ]
+  },
+  {
+    "id": "social-multiplayer",
+    "label": "Social & Multiplayer",
+    "ready": true,
+    "items": [
       {
         "name": "Core Multiplayer Foundation",
         "desc": "the underlying replication/syncing/saving systems; core multiplayer confirmed working six months ahead of schedule (initially locally-hosted), with the team then shifting from building the foundation itself to building features on top of it. (CC22, CC136)",
@@ -1797,7 +1851,14 @@
         "name": "Vehicle Social Hangar",
         "desc": "a Star Wars-style social space to display/flex vehicle garages, with autopilot landing to avoid collisions and a vehicle-swap animation; may appear before becoming fully playable. (CC106)",
         "status": "WIP"
-      },
+      }
+    ]
+  },
+  {
+    "id": "racing-esports",
+    "label": "Racing & Esports",
+    "ready": true,
+    "items": [
       {
         "name": "Cornucopias Racing League (CRL)",
         "desc": "Core Structure --- a formal esports racing league with structured seasons, time attack/time trials, weekly events, and skill-tier matchmaking; racing confirmed as location-specific; three vehicle classes (A, B, C) running weekly qualifying heats → quarterfinals → semifinals → finals. (CC1, CC33, CC34, CC59)",
@@ -2082,6 +2143,11 @@
         "name": "Custom Dome Racing",
         "desc": "a distinct, smaller-scale racing experience specific to Custom Domes, separate from the main Racing League; format not yet revealed. (CC1, CC21, CC29)",
         "status": "WIP"
+      },
+      {
+        "name": "HOVA SPORT",
+        "desc": "a hover-bike stunt track in Solace Hub City built around jumps, timing and boosts, designed as a traveling series bringing new tracks, configurations and challenges to locations across the world; leaderboards 'coming soon.' (PN0.4.6)",
+        "status": "Partial Completion"
       }
     ]
   },
@@ -2172,8 +2238,8 @@
       },
       {
         "name": "Infinity Reward Points",
-        "desc": "an off-chain reward-point currency earned by completing gameplay milestones/events across all modes (farming, racing, gathering, quests, crafting, exploration, building, mining, combat, fishing, and more); redeemable for marketplace discounts and determines a player's proportional share of the daily RISE reward pool. (T-Doc)",
-        "status": "Complete"
+        "desc": "an off-chain reward-point currency earned by completing gameplay milestones/events across all modes (farming, racing, gathering, quests, crafting, exploration, building, mining, combat, fishing, and more); redeemable for marketplace discounts and determines a player's proportional share of the daily RISE reward pool. (T-Doc); the team is still working to get Infinity points into play (CR159)",
+        "status": "WIP"
       },
       {
         "name": "RISE Token",
@@ -2259,6 +2325,11 @@
         "name": "Liquidity Allocation Increase",
         "desc": "increased by 49.6M to 164.6M, reserved exclusively for securing top-tier exchange listings (Bybit, OKX, Binance, Coinbase, Bitget, Upbit). (T-Doc)",
         "status": "Complete"
+      },
+      {
+        "name": "RISE Holding Requirement for RISE Rewards",
+        "desc": "to participate in RISE rewards, players hold RISE in their account, similar to the node-holder requirement, with the required amount re-weighted for the current price; getting Infinity points into the next build discussed but not definitive, alongside store currency and RISE changes. (CR159)",
+        "status": "WIP"
       }
     ]
   },
@@ -2551,7 +2622,7 @@
       },
       {
         "name": "Secondary Marketplace (Anvil/WayUp Integration)",
-        "desc": "API integration with Anvil's WayUp marketplace tech for buying/selling assets and land, branded seamlessly in-game; land holders prioritized first via the land app. (CC149, CC152, CC154)",
+        "desc": "API integration with Anvil's WayUp marketplace tech for buying/selling assets and land, branded seamlessly in-game; land holders prioritized first via the land app. (CC149, CC152, CC154); reported nearly ready pending small items from the Anvil team, then to staging for QA; land first, then Base chain, then other assets; may arrive before the next major release (CR159)",
         "status": "Partial Completion"
       },
       {
@@ -2701,12 +2772,12 @@
       },
       {
         "name": "In-Game Player Economy & AI Company Entities",
-        "desc": "planned full in-game markets with AI-driven company entities (e.g. Bubble Jet) trading alongside players to help stabilize prices. (CC148)",
+        "desc": "planned full in-game markets with AI-driven company entities (e.g. Bubble Jet) trading alongside players to help stabilize prices. (CC148); the economy simulation runs 20 million NPCs and hundreds of companies and utilities across all 12 zones in real time, with regional differences in goods; local market terminals give the cheapest prices, while cross-world orders ship through simulated cargo/freight with taxes and fees; delivery jobs tie in; wanted for the next release but not definite (CR159)",
         "status": "WIP"
       },
       {
         "name": "In-Game Stock Trading",
-        "desc": "planned feature letting players trade company stocks, tied to the broader dynamic economy system. (CC153)",
+        "desc": "planned feature letting players trade company stocks, tied to the broader dynamic economy system. (CC153); working internally: players can invest in in-game company stocks with IGC, with prices moving based on the economy and world events (CR159)",
         "status": "WIP"
       },
       {
@@ -2927,7 +2998,14 @@
         "name": "RISE Tokenomics Doc",
         "desc": "Community Q&A --- community questions from the released tokenomics doc to be answered, pending scheduling. (CC145)",
         "status": "Complete"
-      },
+      }
+    ]
+  },
+  {
+    "id": "avatars-customisation",
+    "label": "Avatars & Customisation",
+    "ready": true,
+    "items": [
       {
         "name": "Avatar Builder",
         "desc": "Technical Foundation & UE4→UE5 Rebuild --- the character system was fully rebuilt from an early UE4 pass into UE5 with heavy Nanite integration; Jim rebuilt the bone/mesh technical foundation while David handled the art pass (skin shaders, look, clothing behavior); A-pose used instead of T-pose to reduce animation deformation; faces made more human-like (closer to, but not, meta-scans); described by the team as the final generation of the character system ahead of launch. (CC1, CC10, CC15, CC17, CC20, CC23, CC29, CC52, CC58)",
@@ -3020,8 +3098,8 @@
       },
       {
         "name": "Armor Tiers (Light/Medium/Heavy)",
-        "desc": "heavier armor slows movement, letting players choose a rogue/light vs. tank/heavy playstyle. (CC1)",
-        "status": "WIP"
+        "desc": "heavier armor slows movement, letting players choose a rogue/light vs. tank/heavy playstyle. (CC1); a gear load and armor rating system shipped, with equipment affecting protection and movement (PN0.4.5)",
+        "status": "Partial Completion"
       },
       {
         "name": "Material/Texture Card (Mat Card) System",
@@ -3110,8 +3188,8 @@
       },
       {
         "name": "First-Person View",
-        "desc": "planned for vehicle interiors and potentially free-roam. (CC1)",
-        "status": "WIP"
+        "desc": "planned for vehicle interiors and potentially free-roam. (CC1); full-body True First Person experience shipped (PN0.4.5, CR159)",
+        "status": "Complete"
       },
       {
         "name": "Emote / Gesture System",
@@ -3152,7 +3230,14 @@
         "name": "Character Creator in Racing Entrance",
         "desc": "Character Creator made available in the Racing League entrance area with default options, giving early hands-on access before full Solace launch. (CC43)",
         "status": "WIP"
-      },
+      }
+    ]
+  },
+  {
+    "id": "ai-npcs",
+    "label": "AI & NPCs",
+    "ready": true,
+    "items": [
       {
         "name": "Core NPC Vision (Founding Statement)",
         "desc": "AI-powered NPCs trained on their specific in-game role via AI agents; conversational NPCs players can walk up to and talk with, responding based on role/knowledge; a future vision where AI-powered NPCs can themselves be owned as POAs; NPC farm helpers players can own to assist with farming tasks; NPC quest givers stationed in towns and areas, with Civic Works terminals serving as quest interaction points. (CC1, CC13)",
@@ -3250,7 +3335,7 @@
       },
       {
         "name": "AI Companion Drones (Alita, Aeron, Kiko, Clanker)",
-        "desc": "named companion drones with emotional-matrix systems reacting to player interaction; sale launched, core tech mostly complete with individual features still being implemented. (CC157)",
+        "desc": "named companion drones with emotional-matrix systems reacting to player interaction; sale launched, core tech mostly complete with individual features still being implemented. (CC157); all four companions confirmed for the next full release, rolled out in batches of 25 buyers to monitor infrastructure (CR159)",
         "status": "WIP"
       },
       {
@@ -3277,6 +3362,11 @@
         "name": "Copi Wiki AI ('Lens') Integration",
         "desc": "an AI search feature integrated into the Wiki via GitBook, letting users ask questions and get answers plus source links, trained only on wiki data; described as a major Q2 addition. (CC56, CC57)",
         "status": "Complete"
+      },
+      {
+        "name": "Three-Tier NPC System",
+        "desc": "NPCs rebuilt on a baked-down, more performant version of the avatar system, in three tiers: 'foliage' NPCs (ambient crowds that just exist), dynamic NPCs that navigate the world doing things (e.g. going to Burger Barn), and 'hero' NPCs with dialogue like Emma; first tested in the Eclipse Club, aiming for crowds in Kid Toledo and the hub city; in focus for the next major release. (CR159)",
+        "status": "WIP"
       }
     ]
   },
@@ -3475,50 +3565,10 @@
     ]
   },
   {
-    "id": "copious-academy",
-    "label": "Copious Academy",
+    "id": "seasonal-content-events",
+    "label": "Seasonal Content & Events",
     "ready": true,
     "items": [
-      {
-        "name": "Educational Section in Launcher (Original Vision)",
-        "desc": "an onboarding/learning-resources section originally planned inside the desktop launcher itself for new players. (CC1, CC10, CC12, CC27, CC30, CC34, CC37, CC43)",
-        "status": "WIP"
-      },
-      {
-        "name": "Gamified Education / Badge System",
-        "desc": "Core Concept & Evolution --- a gamified education system teaching community members about Cornucopias, crypto, and security topics; began as a Discord command-triggered quiz bot before moving to a full web app; built by a Ukraine-based dev team; specific badge categories confirmed (security, crypto onboarding, custom domes, theme zone, Copi Wiki); badges tied to Discord roles and potential future POA sale perks; eventually planned to be hosted on the same domain as the redesigned website, developed in parallel with the launcher/website foundation. (CC23, CC24, CC26, CC27, CC29, CC30, CC33, CC36)",
-        "status": "WIP"
-      },
-      {
-        "name": "White-Label Education Program",
-        "desc": "a white-labeled version of the badge/education system planned for other projects to license and use for their own community education. (CC27)",
-        "status": "WIP"
-      },
-      {
-        "name": "Learn & Earn Platform / Copious Academy Naming",
-        "desc": "the platform tentatively named 'Copious Academy,' where users complete quizzes on published content to earn badges (syncable to Discord, granting whitelist perks); planned to launch as an MVP and iterate from feedback. (CC37)",
-        "status": "WIP"
-      },
-      {
-        "name": "Copious Academy",
-        "desc": "Development Status & Tabling --- reached roughly 90% complete (content and user-side UI remaining) before being temporarily tabled to prioritize the racing game launch; repeatedly described as launching 'shortly after the website' or 'fairly soon,' with relaunch planned before major paid marketing begins. (CC39, CC40, CC42, CC49, CC54)",
-        "status": "Partial Completion"
-      },
-      {
-        "name": "Copious Academy Module (Website Integration)",
-        "desc": "built as one of the modules within the new website's admin management console. (CC44)",
-        "status": "WIP"
-      },
-      {
-        "name": "Copious Academy Badge System (OG Retention Requirement)",
-        "desc": "a plan requiring OG holders to earn and maintain a minimum number of course-based badges to retain their OG role. (CC47)",
-        "status": "WIP"
-      },
-      {
-        "name": "Cornucopias University Episode",
-        "desc": "an upcoming video/AMA content episode featuring Carlos from DEGA, distinct from the Academy platform itself. (CC55)",
-        "status": "WIP"
-      },
       {
         "name": "Halloween Season (Recurring)",
         "desc": "the Quantum Jack pumpkin helmet was the first Halloween POA drop, with the tradition confirmed to grow each year; later builds added pumpkins, candy, a 'Horn of Plenty' cornucopia easter egg, and seasonally reskinned backpacks, plus a full Cedo Valley area transformation and Autumn/Halloween decorations added throughout the world to coincide with seasonal sales. (CC1, CC107, CC108, CC109)",
@@ -3619,6 +3669,18 @@
         "desc": "a moonshot/rocket-themed meme contest with POA prizes, plus additional contests/giveaways tied to the Copi Cafe one-year anniversary (March 26th). (CC47)",
         "status": "WIP"
       },
+      {
+        "name": "Season of the Shadows (Halloween 2026)",
+        "desc": "a seasonal questline where players use photographs to identify hidden locations, track down boss encounters, and follow a clue chain to a final reward, built as systems working together like a season pass to build on (CR159, PN0.4.5); Part 3 released and existing Halloween quests simplified. (PN0.4.6)",
+        "status": "Complete"
+      }
+    ]
+  },
+  {
+    "id": "nodes-infrastructure",
+    "label": "Nodes & Infrastructure",
+    "ready": true,
+    "items": [
       {
         "name": "File Nodes",
         "desc": "Core Concept --- already live, handling game data distribution to reduce AWS server costs; node rewards pay Copi to operators over time; cross-chain node sales confirmed live on both Ethereum and Cardano. (CC1)",
@@ -3836,6 +3898,24 @@
         "status": "Complete"
       },
       {
+        "name": "UE5.9 Upgrade Target",
+        "desc": "Confirmed currently on Unreal Engine 5.6, targeting UE5.9 within roughly 7-8 months -- the version Epic has indicated will be the final UE5 release before UE6, meaning all of Epic's building tools will have graduated out of experimental/beta by then. (CR158); Epic is pivoting Unreal Engine aggressively toward AI, with tastes expected in 5.8, which the team wants for performance; DLSS 5 requires an engine move, being planned now (CR159)",
+        "status": "WIP",
+        "citationLinks": {
+          "CR158": {
+            "url": null,
+            "verified": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "lore-story",
+    "label": "Lore & Story",
+    "ready": true,
+    "items": [
+      {
         "name": "Full Lore Bible",
         "desc": "Core Vision & Rollout Plan --- a full origin story planned and written in outline form (~50 lore shots), developed by a dedicated writing team (plus Rob and Josh) over about nine months; revealed gradually through cinematics built using existing game art/programming (no resource diversion needed), each paired with accompanying literature, with the complete story eventually posted to the Wiki and other unannounced mediums; designed to evolve over 2-4 years tied to game seasons, strong enough to stand alone as a cinematic or movie short. (CC1, CC21, CC45, CC49, CC55)",
         "status": "WIP"
@@ -3989,17 +4069,6 @@
         "name": "Hidden Lore Poem (Observation Tower)",
         "desc": "a poem revealed while riding the megadome observation tower down, containing hints of hidden world lore, shown during a live demo. (CC52)",
         "status": "Complete"
-      },
-      {
-        "name": "UE5.9 Upgrade Target",
-        "desc": "Confirmed currently on Unreal Engine 5.6, targeting UE5.9 within roughly 7-8 months -- the version Epic has indicated will be the final UE5 release before UE6, meaning all of Epic's building tools will have graduated out of experimental/beta by then. (CR158)",
-        "status": "WIP",
-        "citationLinks": {
-          "CR158": {
-            "url": null,
-            "verified": false
-          }
-        }
       }
     ]
   }
