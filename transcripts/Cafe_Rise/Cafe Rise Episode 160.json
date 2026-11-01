@@ -1,0 +1,5144 @@
+{
+  "video_id": "jha6T85piMc",
+  "title": "Café Rise 160 - The Halloween Episode",
+  "upload_date": "20261031",
+  "duration_seconds": 2456,
+  "description": "Cafe Rise 160: the Halloween episode! 🎃 Josh (as Bob Rosalanturn) and Rob (as the original Robert from England, Freddy Krueger himself) recap Free Flight 2 and what's coming in Free Flight 3, then dig into why small studios stand to gain the most from AI. Rob explains how he rebuilt the old SkyCars.\n\nThen a first look at the Black Friday release plans: AI companions, the economy, below-surface mining, farming, low-level NPCs, the blue track and building on land. This week's leak, and we finish with your questions and a land marketplace update.\n\n🔥 IN THIS EPISODE\n• Free Flight 2: racing quests, Solace shooting range quests, performance fixes and enhanced volumetric clouds\n• The surprise Hover Sport release, which took a good eight hours of coding from a 5:30 a.m. message\n• Free Flight 3 on the way: Hover Sport course expansion, faster hover bikes, new Burger Barn quests\n• Acceleration: why a small studio with solid systems, processes and tools benefits the most from AI\n• Small studios vs AAA: Josh and Rob don't fully agree\n• Black Friday targets: AI companions, economy, below-surface mining, farming (16 meshes per crop, 147 crops planned), NPCs, blue track, building on land\n• LEAK: complete the Halloween Shadows quest and you'll be able to mint the bunny hat as a POA (optional)\n• New Aerotrails and hover bike quests, plus a lore-driven quest system v2 next year\n• Q&A: how we handle your questions, and when the Founders Bundle air racer arrives\n\nLinktree: https://linktr.ee/infinityrisinggame\n\nInfinity Rising is an open-world sandbox MMO and multiverse simulator set between Cornucopias, the nation in the sky, the fractured Earth below, and the unknown worlds beyond. Born from the aftermath of the Calamity—a quantum storm that shattered reality—players rebuild civilization under vast domes powered by advanced quantum tech. \n\nGuided by “The Messenger,” you’ll explore, gather, craft, trade, and defend in a player-driven economy across land, sky, and beyond. Quantum Rifts, mysterious anomalies tied to The Prophet and The Terra, challenge survival and progress as players rise into infinite possibilities. Whether you craft, farm, fight, or build empires, every choice shapes the future of the Cornucopias Republic—humanity’s last beacon of hope. \n\nInfinity Rising is a call to ascend without end—world, player, and technology together.\n\n0:00 Intro\n0:42 Welcome to Cafe Rise 160: the Halloween episode\n2:05 What are you drinking today?\n2:31 Free Flight 3 is on the way\n3:51 Free Flight 2 recap: new quests\n4:59 Performance fixes and volumetric clouds\n5:55 The surprise Hover Sport release\n7:24 What's next: Hover Sport expansion and Burger Barn quests\n8:49 Acceleration: why small studios gain the most from AI\n13:10 Rewriting the SkyCars with Claude: 1,400 nodes down to 110\n15:57 Is gaming dead? AI, solo devs and new studios\n17:53 Small studios vs AAA: who accelerates the most?\n22:44 Black Friday release: AI companions, economy and mining\n24:15 Farming: 16 meshes per crop\n26:55 Low-level NPCs, the blue track and building on land\n28:24 Leak: the Halloween bunny hat becomes a POA\n31:13 New quests: Aerotrails and hover bike challenges\n32:40 Q&A: Is there a better way to ask questions?\n35:09 Q&A: When will the Founders Bundle air racer arrive?\n36:58 Land marketplace update\n37:52 Outro",
+  "view_count": 224,
+  "url": "https://www.youtube.com/watch?v=jha6T85piMc",
+  "slug": "café-rise-160-the-halloween-episode",
+  "transcript": [
+    {
+      "start": 0.65,
+      "duration": 2.02,
+      "text": "[music]"
+    },
+    {
+      "start": 10.48,
+      "duration": 3.16,
+      "text": "[music] Heat up"
+    },
+    {
+      "start": 14.64,
+      "duration": 3.0,
+      "text": "here."
+    },
+    {
+      "start": 18.34,
+      "duration": 2.02,
+      "text": "[music]"
+    },
+    {
+      "start": 26.2,
+      "duration": 2.02,
+      "text": ">> [music]"
+    },
+    {
+      "start": 33.41,
+      "duration": 2.02,
+      "text": "[music]"
+    },
+    {
+      "start": 38.65,
+      "duration": 2.02,
+      "text": "[music]"
+    },
+    {
+      "start": 45.84,
+      "duration": 6.8,
+      "text": ">> Hey everybody, welcome to Cafe Rise."
+    },
+    {
+      "start": 49.52,
+      "duration": 7.76,
+      "text": "This is Josh Jones and Rob Greg. This is"
+    },
+    {
+      "start": 52.64,
+      "duration": 5.92,
+      "text": "episode 160, a Halloween episode. Rob,"
+    },
+    {
+      "start": 57.28,
+      "duration": 2.88,
+      "text": "who are you?"
+    },
+    {
+      "start": 58.56,
+      "duration": 4.32,
+      "text": ">> Well, normally I'd be covered in makeup,"
+    },
+    {
+      "start": 60.16,
+      "duration": 6.72,
+      "text": "but my makeup artist is having the day"
+    },
+    {
+      "start": 62.88,
+      "duration": 7.36,
+      "text": "off. So, I am I'm the original Robert"
+    },
+    {
+      "start": 66.88,
+      "duration": 7.76,
+      "text": "from England. Robert Freddy Krueger."
+    },
+    {
+      "start": 70.24,
+      "duration": 6.48,
+      "text": ">> Yeah. Very nice. Very nice. And I am a"
+    },
+    {
+      "start": 74.64,
+      "duration": 3.76,
+      "text": "Bob Rossellantern."
+    },
+    {
+      "start": 76.72,
+      "duration": 4.0,
+      "text": "Can you hear me? Okay. because it's"
+    },
+    {
+      "start": 78.4,
+      "duration": 3.84,
+      "text": "really loud in my mask, but I'm not sure"
+    },
+    {
+      "start": 80.72,
+      "duration": 3.28,
+      "text": "what it is for you."
+    },
+    {
+      "start": 82.24,
+      "duration": 3.84,
+      "text": ">> Okay. Well, we've got an exciting"
+    },
+    {
+      "start": 84.0,
+      "duration": 3.92,
+      "text": "episode ahead. We're gonna be covering"
+    },
+    {
+      "start": 86.08,
+      "duration": 5.12,
+      "text": "Freeflight"
+    },
+    {
+      "start": 87.92,
+      "duration": 6.0,
+      "text": "uh Freeflight 2, which is our second"
+    },
+    {
+      "start": 91.2,
+      "duration": 5.52,
+      "text": "release in the last month. We're also"
+    },
+    {
+      "start": 93.92,
+      "duration": 5.12,
+      "text": "going to be covering Freeflight 3. We're"
+    },
+    {
+      "start": 96.72,
+      "duration": 4.8,
+      "text": "going to be covering Acceleration"
+    },
+    {
+      "start": 99.04,
+      "duration": 5.68,
+      "text": "and the Black Friday release. So, two"
+    },
+    {
+      "start": 101.52,
+      "duration": 5.6,
+      "text": "more releases coming in the next month."
+    },
+    {
+      "start": 104.72,
+      "duration": 4.32,
+      "text": "Uh we'll cover the topics on that. a few"
+    },
+    {
+      "start": 107.12,
+      "duration": 4.16,
+      "text": "questions and answers and a leak as"
+    },
+    {
+      "start": 109.04,
+      "duration": 7.12,
+      "text": "always. So, thank you very much for"
+    },
+    {
+      "start": 111.28,
+      "duration": 7.84,
+      "text": "tuning in and let's get started. So,"
+    },
+    {
+      "start": 116.16,
+      "duration": 5.28,
+      "text": "Rob, before we go too much further, I"
+    },
+    {
+      "start": 119.12,
+      "duration": 4.96,
+      "text": "almost forgot something"
+    },
+    {
+      "start": 121.44,
+      "duration": 4.24,
+      "text": "that's very traditional that we do every"
+    },
+    {
+      "start": 124.08,
+      "duration": 4.0,
+      "text": "episode."
+    },
+    {
+      "start": 125.68,
+      "duration": 4.16,
+      "text": "Okay. So, Rob, what are you drinking"
+    },
+    {
+      "start": 128.08,
+      "duration": 5.96,
+      "text": "today, sir?"
+    },
+    {
+      "start": 129.84,
+      "duration": 4.2,
+      "text": ">> Um, the standard today."
+    },
+    {
+      "start": 134.48,
+      "duration": 3.2,
+      "text": "Look, both"
+    },
+    {
+      "start": 136.08,
+      "duration": 4.8,
+      "text": ">> both of us drinking the unhealthy"
+    },
+    {
+      "start": 137.68,
+      "duration": 5.28,
+      "text": "beverages today. I've got a diet Dr."
+    },
+    {
+      "start": 140.88,
+      "duration": 5.68,
+      "text": "Pepper."
+    },
+    {
+      "start": 142.96,
+      "duration": 5.52,
+      "text": "Um, but cheers. Honestly, it would have"
+    },
+    {
+      "start": 146.56,
+      "duration": 3.44,
+      "text": "been a beer again, but I didn't want to"
+    },
+    {
+      "start": 148.48,
+      "duration": 4.72,
+      "text": "do it two weeks in a row. But [snorts]"
+    },
+    {
+      "start": 150.0,
+      "duration": 5.12,
+      "text": "the reality is I'm pretty excited once"
+    },
+    {
+      "start": 153.2,
+      "duration": 3.36,
+      "text": "again about what we have going on. I had"
+    },
+    {
+      "start": 155.12,
+      "duration": 7.36,
+      "text": "no idea that we're going to have two"
+    },
+    {
+      "start": 156.56,
+      "duration": 9.92,
+      "text": "releases ideally before um Thanksgiving,"
+    },
+    {
+      "start": 162.48,
+      "duration": 7.6,
+      "text": "but uh we do have a Freeflight 3 version"
+    },
+    {
+      "start": 166.48,
+      "duration": 5.68,
+      "text": "coming out in the next couple of days or"
+    },
+    {
+      "start": 170.08,
+      "duration": 4.72,
+      "text": "right around I just heard this yesterday"
+    },
+    {
+      "start": 172.16,
+      "duration": 5.04,
+      "text": "from David that apparently some hot bugs"
+    },
+    {
+      "start": 174.8,
+      "duration": 5.68,
+      "text": "that he had been hot fixes he was"
+    },
+    {
+      "start": 177.2,
+      "duration": 7.2,
+      "text": "working on for the Freeflight 2 EP uh"
+    },
+    {
+      "start": 180.48,
+      "duration": 6.16,
+      "text": "that that came out just recently. Um"
+    },
+    {
+      "start": 184.4,
+      "duration": 4.64,
+      "text": "he he ended up adding enough more stuff."
+    },
+    {
+      "start": 186.64,
+      "duration": 3.6,
+      "text": ">> So we're skipping another hot fix for a"
+    },
+    {
+      "start": 189.04,
+      "duration": 2.08,
+      "text": "full release."
+    },
+    {
+      "start": 190.24,
+      "duration": 1.6,
+      "text": ">> Yes, correct."
+    },
+    {
+      "start": 191.12,
+      "duration": 3.52,
+      "text": ">> Yeah."
+    },
+    {
+      "start": 191.84,
+      "duration": 6.96,
+      "text": ">> Because apparently there's some some"
+    },
+    {
+      "start": 194.64,
+      "duration": 7.28,
+      "text": "good stuff coming uh [snorts] that um is"
+    },
+    {
+      "start": 198.8,
+      "duration": 4.88,
+      "text": "getting added into uh the hot fix. So"
+    },
+    {
+      "start": 201.92,
+      "duration": 5.12,
+      "text": "it's good enough for him to upgrade it"
+    },
+    {
+      "start": 203.68,
+      "duration": 5.2,
+      "text": "to a free flight 3. Um he said I asked"
+    },
+    {
+      "start": 207.04,
+      "duration": 4.88,
+      "text": "him would that be ready by Friday by the"
+    },
+    {
+      "start": 208.88,
+      "duration": 6.96,
+      "text": "time of this release uh the Cafe Rise"
+    },
+    {
+      "start": 211.92,
+      "duration": 7.44,
+      "text": "release. He said, \"Probably not, but uh"
+    },
+    {
+      "start": 215.84,
+      "duration": 4.96,
+      "text": "very soon.\" Um, so I guess we'll see."
+    },
+    {
+      "start": 219.36,
+      "duration": 3.28,
+      "text": "And I was like, \"Well, how is that going"
+    },
+    {
+      "start": 220.8,
+      "duration": 3.84,
+      "text": "to mix in with our plans to get"
+    },
+    {
+      "start": 222.64,
+      "duration": 4.56,
+      "text": "something big released on Black Friday?\""
+    },
+    {
+      "start": 224.64,
+      "duration": 4.8,
+      "text": "And he said, \"It's it's all going in"
+    },
+    {
+      "start": 227.2,
+      "duration": 4.08,
+      "text": "parallel. We've got a lot going.\" And uh"
+    },
+    {
+      "start": 229.44,
+      "duration": 3.2,
+      "text": "so that that's a lot of that is our"
+    },
+    {
+      "start": 231.28,
+      "duration": 3.2,
+      "text": "topic for today, but let's talk through"
+    },
+    {
+      "start": 232.64,
+      "duration": 6.08,
+      "text": "Freeflight 2 cuz there was quite a bit"
+    },
+    {
+      "start": 234.48,
+      "duration": 5.44,
+      "text": "in Freeflight 2. Um I I uh you know, so"
+    },
+    {
+      "start": 238.72,
+      "duration": 3.92,
+      "text": "do you want to talk anything on the"
+    },
+    {
+      "start": 239.92,
+      "duration": 3.52,
+      "text": "quests or anything like that? uh or or"
+    },
+    {
+      "start": 242.64,
+      "duration": 3.44,
+      "text": "what are you thinking?"
+    },
+    {
+      "start": 243.44,
+      "duration": 4.8,
+      "text": ">> Um well, I mean there was there was some"
+    },
+    {
+      "start": 246.08,
+      "duration": 4.72,
+      "text": "initial bugs from from the previous"
+    },
+    {
+      "start": 248.24,
+      "duration": 5.04,
+      "text": "freeflight where people couldn't do"
+    },
+    {
+      "start": 250.8,
+      "duration": 4.48,
+      "text": "individual quests. Um but but those were"
+    },
+    {
+      "start": 253.28,
+      "duration": 4.64,
+      "text": "fixed. So now we have racing quests in"
+    },
+    {
+      "start": 255.28,
+      "duration": 5.12,
+      "text": "there. So you can go to go to to the"
+    },
+    {
+      "start": 257.92,
+      "duration": 5.28,
+      "text": "next to the terminals in the pavilion"
+    },
+    {
+      "start": 260.4,
+      "duration": 6.48,
+      "text": "next to the racing um terminals. There's"
+    },
+    {
+      "start": 263.2,
+      "duration": 6.0,
+      "text": "a civics work terminal. I I knew one um"
+    },
+    {
+      "start": 266.88,
+      "duration": 4.32,
+      "text": "that now works. So, you can go in there"
+    },
+    {
+      "start": 269.2,
+      "duration": 3.52,
+      "text": "and do all kinds of different racing"
+    },
+    {
+      "start": 271.2,
+      "duration": 5.12,
+      "text": "quests, and some of those are are"
+    },
+    {
+      "start": 272.72,
+      "duration": 7.28,
+      "text": "progression quests. Um, what else did we"
+    },
+    {
+      "start": 276.32,
+      "duration": 6.24,
+      "text": "unlock? We we created new quests in"
+    },
+    {
+      "start": 280.0,
+      "duration": 4.4,
+      "text": "Solace one and Solace 2, so you can go"
+    },
+    {
+      "start": 282.56,
+      "duration": 3.12,
+      "text": "into into the outdoor shooting ranges,"
+    },
+    {
+      "start": 284.4,
+      "duration": 2.72,
+      "text": "and there's there's a couple of new"
+    },
+    {
+      "start": 285.68,
+      "duration": 2.32,
+      "text": "quests in there. Those those are pretty"
+    },
+    {
+      "start": 287.12,
+      "duration": 2.72,
+      "text": "good."
+    },
+    {
+      "start": 288.0,
+      "duration": 4.4,
+      "text": ">> Um, very good to test the different"
+    },
+    {
+      "start": 289.84,
+      "duration": 4.32,
+      "text": "weapons out as well. Um, that's as"
+    },
+    {
+      "start": 292.4,
+      "duration": 4.0,
+      "text": "that's as far as those. There is some"
+    },
+    {
+      "start": 294.16,
+      "duration": 3.28,
+      "text": "new quests in the new build, but we'll"
+    },
+    {
+      "start": 296.4,
+      "duration": 5.2,
+      "text": "talk about that later."
+    },
+    {
+      "start": 297.44,
+      "duration": 6.16,
+      "text": ">> Yep. Yep. We've also got um"
+    },
+    {
+      "start": 301.6,
+      "duration": 3.36,
+      "text": "graphics and performance improvements. I"
+    },
+    {
+      "start": 303.6,
+      "duration": 2.48,
+      "text": "think that was some of the most"
+    },
+    {
+      "start": 304.96,
+      "duration": 4.8,
+      "text": "significant [snorts]"
+    },
+    {
+      "start": 306.08,
+      "duration": 6.48,
+      "text": ">> that during the hot fix uh bugs that we"
+    },
+    {
+      "start": 309.76,
+      "duration": 6.4,
+      "text": "were working on from to the clouds part"
+    },
+    {
+      "start": 312.56,
+      "duration": 5.84,
+      "text": "one, we discovered two very longstanding"
+    },
+    {
+      "start": 316.16,
+      "duration": 4.96,
+      "text": "bugs that massively impacted"
+    },
+    {
+      "start": 318.4,
+      "duration": 3.6,
+      "text": "performance. Uh and so those have been"
+    },
+    {
+      "start": 321.12,
+      "duration": 1.28,
+      "text": "resolved."
+    },
+    {
+      "start": 322.0,
+      "duration": 2.16,
+      "text": ">> Yep."
+    },
+    {
+      "start": 322.4,
+      "duration": 4.48,
+      "text": ">> Oh, so that's one big thing. the"
+    },
+    {
+      "start": 324.16,
+      "duration": 4.8,
+      "text": "enhanced volutric clouds. So, they he he"
+    },
+    {
+      "start": 326.88,
+      "duration": 4.64,
+      "text": "added some settings. Uh we've got new"
+    },
+    {
+      "start": 328.96,
+      "duration": 5.44,
+      "text": "settings for those uh and improvements."
+    },
+    {
+      "start": 331.52,
+      "duration": 5.44,
+      "text": "Uh but it's a setting that needs to be"
+    },
+    {
+      "start": 334.4,
+      "duration": 5.84,
+      "text": "uh used uh in your in your main menu"
+    },
+    {
+      "start": 336.96,
+      "duration": 5.76,
+      "text": "under settings to ensure based upon the"
+    },
+    {
+      "start": 340.24,
+      "duration": 5.04,
+      "text": "level of, you know, card and system"
+    },
+    {
+      "start": 342.72,
+      "duration": 5.12,
+      "text": "specs you have uh to to experience the"
+    },
+    {
+      "start": 345.28,
+      "duration": 5.68,
+      "text": "clouds in a better way or reduce the"
+    },
+    {
+      "start": 347.84,
+      "duration": 4.64,
+      "text": "impact that the clouds have to your um"
+    },
+    {
+      "start": 350.96,
+      "duration": 5.2,
+      "text": "you know, on your performance. if you've"
+    },
+    {
+      "start": 352.48,
+      "duration": 6.56,
+      "text": "got uh any any sort of issues. Um we've"
+    },
+    {
+      "start": 356.16,
+      "duration": 4.8,
+      "text": "also got Hoverport obviously which was"
+    },
+    {
+      "start": 359.04,
+      "duration": 4.0,
+      "text": "pretty massive. That was the surprise"
+    },
+    {
+      "start": 360.96,
+      "duration": 4.32,
+      "text": "that I think you and I didn't even know"
+    },
+    {
+      "start": 363.04,
+      "duration": 2.8,
+      "text": "he was Well, you might have known sooner"
+    },
+    {
+      "start": 365.28,
+      "duration": 2.48,
+      "text": "than I did."
+    },
+    {
+      "start": 365.84,
+      "duration": 4.08,
+      "text": ">> Well, I mean, yeah, he he he messaged me"
+    },
+    {
+      "start": 367.76,
+      "duration": 3.28,
+      "text": "at half 5 in the morning and said, \"If"
+    },
+    {
+      "start": 369.92,
+      "duration": 2.48,
+      "text": "Are you busy?\" Well,"
+    },
+    {
+      "start": 371.04,
+      "duration": 2.56,
+      "text": ">> why don't you tell the story on that?"
+    },
+    {
+      "start": 372.4,
+      "duration": 3.2,
+      "text": "Yeah, tell the story. It's good."
+    },
+    {
+      "start": 373.6,
+      "duration": 3.84,
+      "text": ">> Yeah. I mean, I'm just Yeah, I am an"
+    },
+    {
+      "start": 375.6,
+      "duration": 4.56,
+      "text": "insomniac. I usually wake up around"
+    },
+    {
+      "start": 377.44,
+      "duration": 6.24,
+      "text": "about somewhere between 3 and 5. So, so"
+    },
+    {
+      "start": 380.16,
+      "duration": 5.92,
+      "text": "I was up at 4. I don't I I just, you"
+    },
+    {
+      "start": 383.68,
+      "duration": 4.8,
+      "text": "know, [snorts] death doom scroll on on"
+    },
+    {
+      "start": 386.08,
+      "duration": 4.56,
+      "text": "on my phone, play Clash Royale and a bit"
+    },
+    {
+      "start": 388.48,
+      "duration": 3.68,
+      "text": "of chess and and then David messaged me"
+    },
+    {
+      "start": 390.64,
+      "duration": 3.52,
+      "text": "about half five says, \"Are you busy?\""
+    },
+    {
+      "start": 392.16,
+      "duration": 4.8,
+      "text": "Like the the idea was we we were going"
+    },
+    {
+      "start": 394.16,
+      "duration": 4.48,
+      "text": "to try and reuse some of the code that"
+    },
+    {
+      "start": 396.96,
+      "duration": 4.32,
+      "text": "was that was done for Aerot Trails and"
+    },
+    {
+      "start": 398.64,
+      "duration": 5.44,
+      "text": "get and get the hover bikes um course"
+    },
+    {
+      "start": 401.28,
+      "duration": 4.48,
+      "text": "that he he was working on and and just"
+    },
+    {
+      "start": 404.08,
+      "duration": 3.36,
+      "text": "put a timer against that. But I mean,"
+    },
+    {
+      "start": 405.76,
+      "duration": 2.8,
+      "text": "these things in my head, I thought,"
+    },
+    {
+      "start": 407.44,
+      "duration": 3.2,
+      "text": "\"Yeah, that's going to take about an"
+    },
+    {
+      "start": 408.56,
+      "duration": 3.68,
+      "text": "hour.\" But as it turned out, it's not"
+    },
+    {
+      "start": 410.64,
+      "duration": 3.12,
+      "text": "exactly the same cuz with error trails,"
+    },
+    {
+      "start": 412.24,
+      "duration": 4.4,
+      "text": "you can start it anywhere and finish"
+    },
+    {
+      "start": 413.76,
+      "duration": 4.4,
+      "text": "anywhere. So, it took a good 8 hours of"
+    },
+    {
+      "start": 416.64,
+      "duration": 4.08,
+      "text": "coding. But, um, we got there in the"
+    },
+    {
+      "start": 418.16,
+      "duration": 5.04,
+      "text": "end. And, um, yeah, we now have we now"
+    },
+    {
+      "start": 420.72,
+      "duration": 4.48,
+      "text": "have new, um, a new course in there,"
+    },
+    {
+      "start": 423.2,
+      "duration": 3.84,
+      "text": "which I've expanded for the for the"
+    },
+    {
+      "start": 425.2,
+      "duration": 3.28,
+      "text": "following release, but but that's that's"
+    },
+    {
+      "start": 427.04,
+      "duration": 4.24,
+      "text": "was in that release."
+    },
+    {
+      "start": 428.48,
+      "duration": 5.04,
+      "text": ">> Very nice. Very nice. I wonder if your"
+    },
+    {
+      "start": 431.28,
+      "duration": 4.32,
+      "text": "expansion is going to make it into"
+    },
+    {
+      "start": 433.52,
+      "duration": 4.0,
+      "text": "Freeflight 3 or not."
+    },
+    {
+      "start": 435.6,
+      "duration": 4.0,
+      "text": ">> Yes, it will do. Yeah, it's it's in this"
+    },
+    {
+      "start": 437.52,
+      "duration": 5.92,
+      "text": "next release. Okay. Very good. Very"
+    },
+    {
+      "start": 439.6,
+      "duration": 5.84,
+      "text": "good. Um there, you know, I'm just going"
+    },
+    {
+      "start": 443.44,
+      "duration": 5.12,
+      "text": "to let free I'm just going to say with"
+    },
+    {
+      "start": 445.44,
+      "duration": 5.68,
+      "text": "Freeflight 3, what we have coming, uh"
+    },
+    {
+      "start": 448.56,
+      "duration": 5.52,
+      "text": "it's just an expansion on that's that's"
+    },
+    {
+      "start": 451.12,
+      "duration": 6.56,
+      "text": "related to our current um Freeflight"
+    },
+    {
+      "start": 454.08,
+      "duration": 6.88,
+      "text": "releases. So, uh we're just progressing."
+    },
+    {
+      "start": 457.68,
+      "duration": 7.28,
+      "text": "Each area, each each kind of part of"
+    },
+    {
+      "start": 460.96,
+      "duration": 5.6,
+      "text": "this game has a road map to it, a micro"
+    },
+    {
+      "start": 464.96,
+      "duration": 5.6,
+      "text": "road map. and we just want to continue"
+    },
+    {
+      "start": 466.56,
+      "duration": 8.08,
+      "text": "to grow these things. Um, but the hava"
+    },
+    {
+      "start": 470.56,
+      "duration": 6.0,
+      "text": "hover sport is uh a big part of uh the"
+    },
+    {
+      "start": 474.64,
+      "duration": 4.08,
+      "text": "release part two that you guys worked on"
+    },
+    {
+      "start": 476.56,
+      "duration": 4.32,
+      "text": "that was a surprise to all of us uh"
+    },
+    {
+      "start": 478.72,
+      "duration": 4.4,
+      "text": "which was an exciting one. Uh and"
+    },
+    {
+      "start": 480.88,
+      "duration": 4.48,
+      "text": "there's some some cool new stuff coming"
+    },
+    {
+      "start": 483.12,
+      "duration": 3.76,
+      "text": "around that. So, a [snorts] lot of fun."
+    },
+    {
+      "start": 485.36,
+      "duration": 3.2,
+      "text": "You talked about the quests."
+    },
+    {
+      "start": 486.88,
+      "duration": 4.4,
+      "text": ">> Well, we updated those hover bikes as"
+    },
+    {
+      "start": 488.56,
+      "duration": 6.08,
+      "text": "well. We made them quicker to to get on"
+    },
+    {
+      "start": 491.28,
+      "duration": 5.36,
+      "text": "and off cuz I noticed that um a few"
+    },
+    {
+      "start": 494.64,
+      "duration": 4.72,
+      "text": "people had been using the hover bikes to"
+    },
+    {
+      "start": 496.64,
+      "duration": 4.88,
+      "text": "to do the the new burger barn quests"
+    },
+    {
+      "start": 499.36,
+      "duration": 3.36,
+      "text": "that that were that were in Solace Hub."
+    },
+    {
+      "start": 501.52,
+      "duration": 3.28,
+      "text": "So they were saying, you know, it be"
+    },
+    {
+      "start": 502.72,
+      "duration": 4.32,
+      "text": "nicer if if it was it was faster to get"
+    },
+    {
+      "start": 504.8,
+      "duration": 4.32,
+      "text": "on and off. So So that was updated. So"
+    },
+    {
+      "start": 507.04,
+      "duration": 6.0,
+      "text": "So yeah, there's new burger barn quests"
+    },
+    {
+      "start": 509.12,
+      "duration": 5.12,
+      "text": "in Ko City and in in the Solace Hub that"
+    },
+    {
+      "start": 513.04,
+      "duration": 1.68,
+      "text": "you can that you can actually do on the"
+    },
+    {
+      "start": 514.24,
+      "duration": 2.64,
+      "text": "bikes."
+    },
+    {
+      "start": 514.72,
+      "duration": 4.48,
+      "text": ">> Okay. Yeah. And if if you ever want a"
+    },
+    {
+      "start": 516.88,
+      "duration": 4.0,
+      "text": "full read through on our release updates"
+    },
+    {
+      "start": 519.2,
+      "duration": 4.32,
+      "text": "for any of you that are new, we we"
+    },
+    {
+      "start": 520.88,
+      "duration": 4.32,
+      "text": "publish those uh in our Discord. Be sure"
+    },
+    {
+      "start": 523.52,
+      "duration": 3.36,
+      "text": "to follow us, jump into our Discord"
+    },
+    {
+      "start": 525.2,
+      "duration": 3.76,
+      "text": "community, uh talk about all the"
+    },
+    {
+      "start": 526.88,
+      "duration": 5.2,
+      "text": "releases uh with more thorough release"
+    },
+    {
+      "start": 528.96,
+      "duration": 4.56,
+      "text": "notes. Uh and we just, you know, the"
+    },
+    {
+      "start": 532.08,
+      "duration": 3.2,
+      "text": "reason I I wanted to talk about"
+    },
+    {
+      "start": 533.52,
+      "duration": 3.28,
+      "text": "acceleration a little bit in this"
+    },
+    {
+      "start": 535.28,
+      "duration": 3.36,
+      "text": "episode"
+    },
+    {
+      "start": 536.8,
+      "duration": 4.8,
+      "text": "is just because you see so much"
+    },
+    {
+      "start": 538.64,
+      "duration": 6.24,
+      "text": "happening in gaming with AI right now"
+    },
+    {
+      "start": 541.6,
+      "duration": 5.68,
+      "text": "and what's going on. Um, and we're"
+    },
+    {
+      "start": 544.88,
+      "duration": 4.48,
+      "text": "benefiting from that. In fact, um, I"
+    },
+    {
+      "start": 547.28,
+      "duration": 4.88,
+      "text": "worked on an article recently, and it's"
+    },
+    {
+      "start": 549.36,
+      "duration": 6.0,
+      "text": "not published yet, but uh, on who's"
+    },
+    {
+      "start": 552.16,
+      "duration": 5.28,
+      "text": "going to benefit the most, uh, from from"
+    },
+    {
+      "start": 555.36,
+      "duration": 3.6,
+      "text": "gaming and AI."
+    },
+    {
+      "start": 557.44,
+      "duration": 4.64,
+      "text": "And [clears throat]"
+    },
+    {
+      "start": 558.96,
+      "duration": 5.52,
+      "text": "my take on this is that small studios"
+    },
+    {
+      "start": 562.08,
+      "duration": 4.8,
+      "text": "like ourselves will benefit the most."
+    },
+    {
+      "start": 564.48,
+      "duration": 4.24,
+      "text": "Um, of course, I'm biased, so I, you"
+    },
+    {
+      "start": 566.88,
+      "duration": 4.8,
+      "text": "know, I did some research on it and"
+    },
+    {
+      "start": 568.72,
+      "duration": 5.84,
+      "text": "tried to invalidate my take. Uh, and"
+    },
+    {
+      "start": 571.68,
+      "duration": 5.6,
+      "text": "I've looked at all sides. Uh, and it it"
+    },
+    {
+      "start": 574.56,
+      "duration": 4.72,
+      "text": "doesn't really break. Um, and here's"
+    },
+    {
+      "start": 577.28,
+      "duration": 3.6,
+      "text": "here's why. So, I wanted to argue play"
+    },
+    {
+      "start": 579.28,
+      "duration": 4.08,
+      "text": "devil's advocate and argue against"
+    },
+    {
+      "start": 580.88,
+      "duration": 4.24,
+      "text": "myself, but [snorts] you look at big"
+    },
+    {
+      "start": 583.36,
+      "duration": 3.92,
+      "text": "studios. Will they benefit the most?"
+    },
+    {
+      "start": 585.12,
+      "duration": 4.56,
+      "text": "Well, they have the most resource. They"
+    },
+    {
+      "start": 587.28,
+      "duration": 4.88,
+      "text": "have a huge team. Uh, they can put a lot"
+    },
+    {
+      "start": 589.68,
+      "duration": 4.64,
+      "text": "of people on AI and and benefit from it"
+    },
+    {
+      "start": 592.16,
+      "duration": 5.52,
+      "text": "in that way. But the reality is the big"
+    },
+    {
+      "start": 594.32,
+      "duration": 5.04,
+      "text": "studios are strapped funding wise like"
+    },
+    {
+      "start": 597.68,
+      "duration": 3.76,
+      "text": "that like the where they're with"
+    },
+    {
+      "start": 599.36,
+      "duration": 3.84,
+      "text": "budgeting. They're all making big cuts"
+    },
+    {
+      "start": 601.44,
+      "duration": 4.24,
+      "text": "right now. So, they're reducing the size"
+    },
+    {
+      "start": 603.2,
+      "duration": 4.32,
+      "text": "of their team. Meanwhile, they're always"
+    },
+    {
+      "start": 605.68,
+      "duration": 4.4,
+      "text": "the slowest to make decisions because"
+    },
+    {
+      "start": 607.52,
+      "duration": 4.24,
+      "text": "they've got multiple departments uh"
+    },
+    {
+      "start": 610.08,
+      "duration": 3.68,
+      "text": "cross department dependencies and"
+    },
+    {
+      "start": 611.76,
+      "duration": 4.48,
+      "text": "they're just slow to make decisions."
+    },
+    {
+      "start": 613.76,
+      "duration": 4.32,
+      "text": "You've got small studios who have"
+    },
+    {
+      "start": 616.24,
+      "duration": 4.0,
+      "text": "traction and who have been building and"
+    },
+    {
+      "start": 618.08,
+      "duration": 4.16,
+      "text": "who have systems in place. Now, if you"
+    },
+    {
+      "start": 620.24,
+      "duration": 4.64,
+      "text": "like the acceleration that I'm talking"
+    },
+    {
+      "start": 622.24,
+      "duration": 5.28,
+      "text": "about for us is right here. What what"
+    },
+    {
+      "start": 624.88,
+      "duration": 5.92,
+      "text": "I'm saying for us is we have most of our"
+    },
+    {
+      "start": 627.52,
+      "duration": 5.84,
+      "text": "core systems fundamentally put together."
+    },
+    {
+      "start": 630.8,
+      "duration": 4.56,
+      "text": "We've got our team, our processes, and"
+    },
+    {
+      "start": 633.36,
+      "duration": 4.16,
+      "text": "we're executing incredibly well. Right?"
+    },
+    {
+      "start": 635.36,
+      "duration": 4.64,
+      "text": "So, we've got this core foundation of"
+    },
+    {
+      "start": 637.52,
+      "duration": 4.8,
+      "text": "systems, processes, team that's all"
+    },
+    {
+      "start": 640.0,
+      "duration": 3.76,
+      "text": "functioning well together. Uh release"
+    },
+    {
+      "start": 642.32,
+      "duration": 2.56,
+      "text": "after release after release after"
+    },
+    {
+      "start": 643.76,
+      "duration": 3.36,
+      "text": "release. I don't even know how many"
+    },
+    {
+      "start": 644.88,
+      "duration": 4.64,
+      "text": "we've done this year, but our our"
+    },
+    {
+      "start": 647.12,
+      "duration": 4.56,
+      "text": "cadence has accelerated. We are just"
+    },
+    {
+      "start": 649.52,
+      "duration": 4.24,
+      "text": "adding and adding and adding to"
+    },
+    {
+      "start": 651.68,
+      "duration": 4.88,
+      "text": "everything. And this is prior to really"
+    },
+    {
+      "start": 653.76,
+      "duration": 5.04,
+      "text": "massively using AI. Now, we've also got"
+    },
+    {
+      "start": 656.56,
+      "duration": 4.88,
+      "text": "AI that's helping with our development"
+    },
+    {
+      "start": 658.8,
+      "duration": 5.2,
+      "text": "for sure, 100% helps us to accelerate in"
+    },
+    {
+      "start": 661.44,
+      "duration": 4.4,
+      "text": "a variety of ways. Um, but it also"
+    },
+    {
+      "start": 664.0,
+      "duration": 3.2,
+      "text": "causes bottlenecks, too. And we're"
+    },
+    {
+      "start": 665.84,
+      "duration": 2.72,
+      "text": "getting really good at resolving"
+    },
+    {
+      "start": 667.2,
+      "duration": 3.36,
+      "text": "bottlenecks because the more you"
+    },
+    {
+      "start": 668.56,
+      "duration": 3.92,
+      "text": "develop, the more you execute, the more"
+    },
+    {
+      "start": 670.56,
+      "duration": 3.6,
+      "text": "debugging and getting things across the"
+    },
+    {
+      "start": 672.48,
+      "duration": 3.68,
+      "text": "finish line you have to do. So, you have"
+    },
+    {
+      "start": 674.16,
+      "duration": 3.76,
+      "text": "to have good processes for that. Well,"
+    },
+    {
+      "start": 676.16,
+      "duration": 3.76,
+      "text": "the thing is is as many releases as"
+    },
+    {
+      "start": 677.92,
+      "duration": 4.0,
+      "text": "we've been doing and as much debugging"
+    },
+    {
+      "start": 679.92,
+      "duration": 3.92,
+      "text": "as we've been doing with the QA team,"
+    },
+    {
+      "start": 681.92,
+      "duration": 5.28,
+      "text": "we've improved all of those processes."
+    },
+    {
+      "start": 683.84,
+      "duration": 5.52,
+      "text": "So, our processes are such that the"
+    },
+    {
+      "start": 687.2,
+      "duration": 4.16,
+      "text": "release cadence is improving things, AI"
+    },
+    {
+      "start": 689.36,
+      "duration": 4.48,
+      "text": "is improving things, core systems are in"
+    },
+    {
+      "start": 691.36,
+      "duration": 5.36,
+      "text": "place, and also the final major point"
+    },
+    {
+      "start": 693.84,
+      "duration": 6.16,
+      "text": "that I'll make here is that uh David has"
+    },
+    {
+      "start": 696.72,
+      "duration": 5.36,
+      "text": "been really good at building tools that"
+    },
+    {
+      "start": 700.0,
+      "duration": 4.48,
+      "text": "make us more efficient. Whether he's"
+    },
+    {
+      "start": 702.08,
+      "duration": 4.08,
+      "text": "using AI for those tools or not, it"
+    },
+    {
+      "start": 704.48,
+      "duration": 3.92,
+      "text": "doesn't matter. We're building tools."
+    },
+    {
+      "start": 706.16,
+      "duration": 4.56,
+      "text": "We've been building tools well before AI"
+    },
+    {
+      "start": 708.4,
+      "duration": 4.72,
+      "text": "that helped us to be more efficient at"
+    },
+    {
+      "start": 710.72,
+      "duration": 4.64,
+      "text": "building out Solace, for example. So, we"
+    },
+    {
+      "start": 713.12,
+      "duration": 4.56,
+      "text": "we build these tools in engine that help"
+    },
+    {
+      "start": 715.36,
+      "duration": 6.16,
+      "text": "us to be more efficient. All of these"
+    },
+    {
+      "start": 717.68,
+      "duration": 6.16,
+      "text": "things together make us incredibly fast."
+    },
+    {
+      "start": 721.52,
+      "duration": 4.88,
+      "text": "Um, and so the other part of an AI"
+    },
+    {
+      "start": 723.84,
+      "duration": 5.6,
+      "text": "advantage for the small studio is that"
+    },
+    {
+      "start": 726.4,
+      "duration": 5.76,
+      "text": "[snorts] we don't we don't have a uh"
+    },
+    {
+      "start": 729.44,
+      "duration": 4.56,
+      "text": "cross department dependency approval"
+    },
+    {
+      "start": 732.16,
+      "duration": 4.72,
+      "text": "bottleneck. we're pretty quick to make"
+    },
+    {
+      "start": 734.0,
+      "duration": 4.64,
+      "text": "decisions and it's kind of just go go"
+    },
+    {
+      "start": 736.88,
+      "duration": 4.48,
+      "text": "go. Sometimes we're probably too quick"
+    },
+    {
+      "start": 738.64,
+      "duration": 4.24,
+      "text": "to make decisions. Uh because like you"
+    },
+    {
+      "start": 741.36,
+      "duration": 3.04,
+      "text": "may know about a good amount of things"
+    },
+    {
+      "start": 742.88,
+      "duration": 3.04,
+      "text": "that I don't know about. I might know"
+    },
+    {
+      "start": 744.4,
+      "duration": 4.72,
+      "text": "things that you don't know about, but"
+    },
+    {
+      "start": 745.92,
+      "duration": 5.36,
+      "text": "we're all really going quickly. And I"
+    },
+    {
+      "start": 749.12,
+      "duration": 5.2,
+      "text": "think it's going to position us very"
+    },
+    {
+      "start": 751.28,
+      "duration": 5.12,
+      "text": "well for having a super strong alpha"
+    },
+    {
+      "start": 754.32,
+      "duration": 4.72,
+      "text": "release. And I'm just curious your take"
+    },
+    {
+      "start": 756.4,
+      "duration": 5.28,
+      "text": "on all of this acceleration."
+    },
+    {
+      "start": 759.04,
+      "duration": 4.16,
+      "text": "Uh well I mean some some of these larger"
+    },
+    {
+      "start": 761.68,
+      "duration": 3.28,
+      "text": "studios they're they're being bought"
+    },
+    {
+      "start": 763.2,
+      "duration": 4.96,
+      "text": "out. I mean they have been bought out"
+    },
+    {
+      "start": 764.96,
+      "duration": 6.24,
+      "text": "since co by companies like you know"
+    },
+    {
+      "start": 768.16,
+      "duration": 5.28,
+      "text": "Microsoft and and all the others. So"
+    },
+    {
+      "start": 771.2,
+      "duration": 4.16,
+      "text": ">> them reducing slower by the way."
+    },
+    {
+      "start": 773.44,
+      "duration": 3.6,
+      "text": ">> Well them reducing their staff levels"
+    },
+    {
+      "start": 775.36,
+      "duration": 3.68,
+      "text": "not necessarily up to those studios is"
+    },
+    {
+      "start": 777.04,
+      "duration": 3.12,
+      "text": "what I'm saying. You know the the big"
+    },
+    {
+      "start": 779.04,
+      "duration": 2.48,
+      "text": "corporates are coming in saying"
+    },
+    {
+      "start": 780.16,
+      "duration": 3.44,
+      "text": "nothing's changing and then they're"
+    },
+    {
+      "start": 781.52,
+      "duration": 4.8,
+      "text": "immediately telling them to to lose half"
+    },
+    {
+      "start": 783.6,
+      "duration": 6.32,
+      "text": "of the staff. So so you know that that's"
+    },
+    {
+      "start": 786.32,
+      "duration": 6.32,
+      "text": "an issue. the um with with AI. Yeah. So,"
+    },
+    {
+      "start": 789.92,
+      "duration": 5.12,
+      "text": "so we have you know what we're always"
+    },
+    {
+      "start": 792.64,
+      "duration": 5.28,
+      "text": "looking at performance and at the start"
+    },
+    {
+      "start": 795.04,
+      "duration": 4.48,
+      "text": "of this week I was looking at uh doing"
+    },
+    {
+      "start": 797.92,
+      "duration": 4.64,
+      "text": "some"
+    },
+    {
+      "start": 799.52,
+      "duration": 5.52,
+      "text": "um auditing of Kid Toledo cuz as soon as"
+    },
+    {
+      "start": 802.56,
+      "duration": 4.24,
+      "text": "you go into Cleo the there's for for"
+    },
+    {
+      "start": 805.04,
+      "duration": 5.04,
+      "text": "some people there's a there's a big drop"
+    },
+    {
+      "start": 806.8,
+      "duration": 6.0,
+      "text": "off of performance and we've obviously"
+    },
+    {
+      "start": 810.08,
+      "duration": 4.16,
+      "text": "done a lot of work in in changing that"
+    },
+    {
+      "start": 812.8,
+      "duration": 2.96,
+      "text": "but there's always there's always kind"
+    },
+    {
+      "start": 814.24,
+      "duration": 3.76,
+      "text": "of little things that you can that you"
+    },
+    {
+      "start": 815.76,
+      "duration": 4.32,
+      "text": "can look at. So, so I've just been kind"
+    },
+    {
+      "start": 818.0,
+      "duration": 4.0,
+      "text": "of kind of wetting my feet with these."
+    },
+    {
+      "start": 820.08,
+      "duration": 3.44,
+      "text": "And I've been looking at some of the the"
+    },
+    {
+      "start": 822.0,
+      "duration": 4.88,
+      "text": "the [snorts] elevators and some of the"
+    },
+    {
+      "start": 823.52,
+      "duration": 6.56,
+      "text": "sky cars. Um, and I've been using Claude"
+    },
+    {
+      "start": 826.88,
+      "duration": 6.32,
+      "text": "with this. It's not it's not full MCP"
+    },
+    {
+      "start": 830.08,
+      "duration": 6.24,
+      "text": "Claude. So, so we will benefit that when"
+    },
+    {
+      "start": 833.2,
+      "duration": 4.8,
+      "text": "when we get when we upgrade to to 5.8,"
+    },
+    {
+      "start": 836.32,
+      "duration": 3.44,
+      "text": "which I think we are probably going to"
+    },
+    {
+      "start": 838.0,
+      "duration": 3.76,
+      "text": "do before the end of the year. So, so"
+    },
+    {
+      "start": 839.76,
+      "duration": 3.36,
+      "text": "that'll be useful. So, so it's kind it's"
+    },
+    {
+      "start": 841.76,
+      "duration": 3.44,
+      "text": "kind of all manual. So, I've been"
+    },
+    {
+      "start": 843.12,
+      "duration": 4.24,
+      "text": "looking at some of the some of the"
+    },
+    {
+      "start": 845.2,
+      "duration": 4.64,
+      "text": "blueprints and and one of the blueprints"
+    },
+    {
+      "start": 847.36,
+      "duration": 4.4,
+      "text": "that has the original sky cars that that"
+    },
+    {
+      "start": 849.84,
+      "duration": 3.6,
+      "text": "before jetpacks we all used to climb on"
+    },
+    {
+      "start": 851.76,
+      "duration": 3.68,
+      "text": "and walk across. You know, those"
+    },
+    {
+      "start": 853.44,
+      "duration": 3.52,
+      "text": "probably took a few months of"
+    },
+    {
+      "start": 855.44,
+      "duration": 3.44,
+      "text": "development and it was quite hard work"
+    },
+    {
+      "start": 856.96,
+      "duration": 4.4,
+      "text": "with the the multiplayer and you can see"
+    },
+    {
+      "start": 858.88,
+      "duration": 4.16,
+      "text": "in the code the there's comments in it"
+    },
+    {
+      "start": 861.36,
+      "duration": 3.36,
+      "text": "saying this is a workaround for this and"
+    },
+    {
+      "start": 863.04,
+      "duration": 4.96,
+      "text": "this is a workaround for that and you"
+    },
+    {
+      "start": 864.72,
+      "duration": 7.52,
+      "text": "know that that that's normal. But so so"
+    },
+    {
+      "start": 868.0,
+      "duration": 6.8,
+      "text": "I I rewrote that um wi within within a"
+    },
+    {
+      "start": 872.24,
+      "duration": 5.6,
+      "text": "day use using Claude back in two and in"
+    },
+    {
+      "start": 874.8,
+      "duration": 5.28,
+      "text": "the future when Claude's in our engine"
+    },
+    {
+      "start": 877.84,
+      "duration": 5.2,
+      "text": "it will probably do that itself but I've"
+    },
+    {
+      "start": 880.08,
+      "duration": 5.76,
+      "text": "managed to to refactor those sky cars"
+    },
+    {
+      "start": 883.04,
+      "duration": 5.28,
+      "text": "that used to have 1,400 nodes. So that's"
+    },
+    {
+      "start": 885.84,
+      "duration": 6.16,
+      "text": "1,400 bits of code cuz it's it's visual"
+    },
+    {
+      "start": 888.32,
+      "duration": 6.4,
+      "text": "code down to 110. So So not only is that"
+    },
+    {
+      "start": 892.0,
+      "duration": 5.04,
+      "text": "cleaner but it performs better. It uses"
+    },
+    {
+      "start": 894.72,
+      "duration": 4.56,
+      "text": "a different technique which means less"
+    },
+    {
+      "start": 897.04,
+      "duration": 5.12,
+      "text": "data is being sent over the network and"
+    },
+    {
+      "start": 899.28,
+      "duration": 5.44,
+      "text": "all this has to be verified. So you know"
+    },
+    {
+      "start": 902.16,
+      "duration": 4.64,
+      "text": "this is not in this is not in the"
+    },
+    {
+      "start": 904.72,
+      "duration": 3.2,
+      "text": "current release. This is for future"
+    },
+    {
+      "start": 906.8,
+      "duration": 2.56,
+      "text": "stuff"
+    },
+    {
+      "start": 907.92,
+      "duration": 3.44,
+      "text": ">> but it's going to be absolutely"
+    },
+    {
+      "start": 909.36,
+      "duration": 4.32,
+      "text": "incredible. Not not just for small teams"
+    },
+    {
+      "start": 911.36,
+      "duration": 5.0,
+      "text": "but for large teams as well you know."
+    },
+    {
+      "start": 913.68,
+      "duration": 5.36,
+      "text": "So, so something that you know, not"
+    },
+    {
+      "start": 916.36,
+      "duration": 5.57,
+      "text": "[snorts] only can Claude rewrite this"
+    },
+    {
+      "start": 919.04,
+      "duration": 5.76,
+      "text": "within within a day with me helping it,"
+    },
+    {
+      "start": 921.92,
+      "duration": 4.64,
+      "text": "use use this technique instead of I'll"
+    },
+    {
+      "start": 924.8,
+      "duration": 3.52,
+      "text": "analyze how you're currently doing it."
+    },
+    {
+      "start": 926.56,
+      "duration": 4.32,
+      "text": "You know, it will probably do that kind"
+    },
+    {
+      "start": 928.32,
+      "duration": 6.24,
+      "text": "of stuff. So, so that so that that's a"
+    },
+    {
+      "start": 930.88,
+      "duration": 6.48,
+      "text": "massive benefit. Um but also you know"
+    },
+    {
+      "start": 934.56,
+      "duration": 5.52,
+      "text": "that that's you know it's powerful but"
+    },
+    {
+      "start": 937.36,
+      "duration": 6.88,
+      "text": "but the the same time there's all other"
+    },
+    {
+      "start": 940.08,
+      "duration": 7.6,
+      "text": "areas that you know Claude Claude has"
+    },
+    {
+      "start": 944.24,
+      "duration": 6.08,
+      "text": "and and any AI will will does have and"
+    },
+    {
+      "start": 947.68,
+      "duration": 4.64,
+      "text": "will have massive impacts. That's a"
+    },
+    {
+      "start": 950.32,
+      "duration": 4.56,
+      "text": "really positive way where you can let it"
+    },
+    {
+      "start": 952.32,
+      "duration": 5.76,
+      "text": "look at your code and refactor it. Um"
+    },
+    {
+      "start": 954.88,
+      "duration": 6.8,
+      "text": ">> oh 100% it's it's going to you know"
+    },
+    {
+      "start": 958.08,
+      "duration": 6.72,
+      "text": "people people say gaming is dead. No,"
+    },
+    {
+      "start": 961.68,
+      "duration": 6.56,
+      "text": "it's actually going to significantly"
+    },
+    {
+      "start": 964.8,
+      "duration": 5.6,
+      "text": "improve gaming massively. And and what I"
+    },
+    {
+      "start": 968.24,
+      "duration": 3.76,
+      "text": "think is it's going to create a lot more"
+    },
+    {
+      "start": 970.4,
+      "duration": 3.68,
+      "text": "innovation cuz you're going to have"
+    },
+    {
+      "start": 972.0,
+      "duration": 4.72,
+      "text": "small studios that are more willing to"
+    },
+    {
+      "start": 974.08,
+      "duration": 4.64,
+      "text": "experiment cuz the time to develop"
+    },
+    {
+      "start": 976.72,
+      "duration": 5.6,
+      "text": "things gets faster and so you can start"
+    },
+    {
+      "start": 978.72,
+      "duration": 4.88,
+      "text": "to iterate on ideas more quickly. Uh"
+    },
+    {
+      "start": 982.32,
+      "duration": 3.84,
+      "text": "which is very powerful. You're going to"
+    },
+    {
+      "start": 983.6,
+      "duration": 5.28,
+      "text": "have solo devs that are jumping out and"
+    },
+    {
+      "start": 986.16,
+      "duration": 4.64,
+      "text": "you know the funniest thing I see is"
+    },
+    {
+      "start": 988.88,
+      "duration": 4.16,
+      "text": "like I just oneshotted a game and blah"
+    },
+    {
+      "start": 990.8,
+      "duration": 4.32,
+      "text": "blah blah. Well, okay, sure. Maybe it's"
+    },
+    {
+      "start": 993.04,
+      "duration": 3.76,
+      "text": "one level of a game and maybe it's not"
+    },
+    {
+      "start": 995.12,
+      "duration": 4.4,
+      "text": "multiplayer and maybe you know like"
+    },
+    {
+      "start": 996.8,
+      "duration": 5.36,
+      "text": "there's so much more to it than that."
+    },
+    {
+      "start": 999.52,
+      "duration": 4.96,
+      "text": "But I'm not going to discount the fact"
+    },
+    {
+      "start": 1002.16,
+      "duration": 4.08,
+      "text": "that solo devs that are very experienced"
+    },
+    {
+      "start": 1004.48,
+      "duration": 4.32,
+      "text": "that might have left a a great studio"
+    },
+    {
+      "start": 1006.24,
+      "duration": 4.16,
+      "text": "and they're expert in Unreal Engine or,"
+    },
+    {
+      "start": 1008.8,
+      "duration": 3.2,
+      "text": "you know, whatever that now have the"
+    },
+    {
+      "start": 1010.4,
+      "duration": 3.92,
+      "text": "power of AI, they're going to make some"
+    },
+    {
+      "start": 1012.0,
+      "duration": 4.0,
+      "text": "cool stuff. But then the question with"
+    },
+    {
+      "start": 1014.32,
+      "duration": 3.2,
+      "text": "those guys is, can they build a"
+    },
+    {
+      "start": 1016.0,
+      "duration": 3.28,
+      "text": "business? Can they build a team? Do they"
+    },
+    {
+      "start": 1017.52,
+      "duration": 3.6,
+      "text": "know how to build processes that scale?"
+    },
+    {
+      "start": 1019.28,
+      "duration": 3.12,
+      "text": "Do they know how to deal with the the"
+    },
+    {
+      "start": 1021.12,
+      "duration": 3.04,
+      "text": "legal part? Do they know how to deal"
+    },
+    {
+      "start": 1022.4,
+      "duration": 4.24,
+      "text": "with human resources? Do they know how"
+    },
+    {
+      "start": 1024.16,
+      "duration": 4.88,
+      "text": "to track revenue and all the other"
+    },
+    {
+      "start": 1026.64,
+      "duration": 4.08,
+      "text": "things involved with building a studio?"
+    },
+    {
+      "start": 1029.04,
+      "duration": 4.24,
+      "text": "Do they know how to do those things? And"
+    },
+    {
+      "start": 1030.72,
+      "duration": 5.04,
+      "text": "my point is that solo dubs, yes, will"
+    },
+    {
+      "start": 1033.28,
+      "duration": 5.04,
+      "text": "massively accelerate and they'll produce"
+    },
+    {
+      "start": 1035.76,
+      "duration": 4.72,
+      "text": "new games and we'll probably see some"
+    },
+    {
+      "start": 1038.32,
+      "duration": 3.92,
+      "text": "cool stuff out there and a lot of them"
+    },
+    {
+      "start": 1040.48,
+      "duration": 4.4,
+      "text": "are going to fail as well. Like, so"
+    },
+    {
+      "start": 1042.24,
+      "duration": 4.0,
+      "text": "we'll just see who can build, but um"
+    },
+    {
+      "start": 1044.88,
+      "duration": 3.6,
+      "text": "yeah, so it's going to empower them,"
+    },
+    {
+      "start": 1046.24,
+      "duration": 5.44,
+      "text": "too. And you'll also see studios"
+    },
+    {
+      "start": 1048.48,
+      "duration": 4.24,
+      "text": "starting to hire solo devs uh that are"
+    },
+    {
+      "start": 1051.68,
+      "duration": 2.4,
+      "text": "out there. They're they're going to go,"
+    },
+    {
+      "start": 1052.72,
+      "duration": 3.28,
+      "text": "\"Hey, we love what you're doing.\" You'll"
+    },
+    {
+      "start": 1054.08,
+      "duration": 3.84,
+      "text": "start to see acquisitions occurring in a"
+    },
+    {
+      "start": 1056.0,
+      "duration": 3.28,
+      "text": "different way. All sorts of stuff. We"
+    },
+    {
+      "start": 1057.92,
+      "duration": 3.12,
+      "text": "don't know what's going to happen, but I"
+    },
+    {
+      "start": 1059.28,
+      "duration": 3.84,
+      "text": "know what what I feel strongly about is"
+    },
+    {
+      "start": 1061.04,
+      "duration": 4.24,
+      "text": "that gaming will significantly improve"
+    },
+    {
+      "start": 1063.12,
+      "duration": 5.44,
+      "text": "and small studios, the main point for"
+    },
+    {
+      "start": 1065.28,
+      "duration": 5.92,
+      "text": "this topic is that we benefit the most."
+    },
+    {
+      "start": 1068.56,
+      "duration": 3.68,
+      "text": "People that are where we're at right now"
+    },
+    {
+      "start": 1071.2,
+      "duration": 4.24,
+      "text": "will benefit the most."
+    },
+    {
+      "start": 1072.24,
+      "duration": 5.04,
+      "text": ">> Well, I I think you've got you the the"
+    },
+    {
+      "start": 1075.44,
+      "duration": 3.76,
+      "text": "landscape's definitely changing. What"
+    },
+    {
+      "start": 1077.28,
+      "duration": 5.04,
+      "text": "what we've seen with this latest release"
+    },
+    {
+      "start": 1079.2,
+      "duration": 6.32,
+      "text": "of of of like Steamfest is you get what"
+    },
+    {
+      "start": 1082.32,
+      "duration": 4.96,
+      "text": "they call um new game slop. So, so"
+    },
+    {
+      "start": 1085.52,
+      "duration": 3.68,
+      "text": "people that are writing one-off games"
+    },
+    {
+      "start": 1087.28,
+      "duration": 3.12,
+      "text": "and you're getting So, you so you you're"
+    },
+    {
+      "start": 1089.2,
+      "duration": 2.56,
+      "text": "going to get a lot of that and I hate"
+    },
+    {
+      "start": 1090.4,
+      "duration": 4.56,
+      "text": "the word slop because people are putting"
+    },
+    {
+      "start": 1091.76,
+      "duration": 4.56,
+      "text": "slop in front of everything. AI doesn't"
+    },
+    {
+      "start": 1094.96,
+      "duration": 3.76,
+      "text": ">> like verse was overused."
+    },
+    {
+      "start": 1096.32,
+      "duration": 4.88,
+      "text": ">> What AI does is is is actually helps to"
+    },
+    {
+      "start": 1098.72,
+      "duration": 4.88,
+      "text": "create cleaner code and and it does"
+    },
+    {
+      "start": 1101.2,
+      "duration": 4.72,
+      "text": "faster, but if if it's in the hands of"
+    },
+    {
+      "start": 1103.6,
+      "duration": 4.8,
+      "text": "an experienced developer,"
+    },
+    {
+      "start": 1105.92,
+      "duration": 4.72,
+      "text": "you get some really good stuff. So, so"
+    },
+    {
+      "start": 1108.4,
+      "duration": 4.08,
+      "text": "for us, yeah, it's absolutely going to"
+    },
+    {
+      "start": 1110.64,
+      "duration": 5.36,
+      "text": "accelerate some of the stuff that we're"
+    },
+    {
+      "start": 1112.48,
+      "duration": 7.04,
+      "text": "building in the future, but"
+    },
+    {
+      "start": 1116.0,
+      "duration": 7.6,
+      "text": "you know, if if if a small team can can"
+    },
+    {
+      "start": 1119.52,
+      "duration": 7.28,
+      "text": "produce, let's say, the quality of of a"
+    },
+    {
+      "start": 1123.6,
+      "duration": 6.64,
+      "text": "AAA studio, which I'm sure that they can"
+    },
+    {
+      "start": 1126.8,
+      "duration": 5.84,
+      "text": "do in the future, what can a AAA studio"
+    },
+    {
+      "start": 1130.24,
+      "duration": 4.24,
+      "text": "that's got a thousand developers do? you"
+    },
+    {
+      "start": 1132.64,
+      "duration": 4.4,
+      "text": "know, they will take gaming to a whole"
+    },
+    {
+      "start": 1134.48,
+      "duration": 4.48,
+      "text": "new level because because we can compete"
+    },
+    {
+      "start": 1137.04,
+      "duration": 4.24,
+      "text": "with where they are now, but they're"
+    },
+    {
+      "start": 1138.96,
+      "duration": 5.84,
+      "text": "going to go ahead. You you look at um"
+    },
+    {
+      "start": 1141.28,
+      "duration": 6.0,
+      "text": "say GTA 6 that that's eight years"
+    },
+    {
+      "start": 1144.8,
+      "duration": 3.68,
+      "text": "slower in their ability to accelerate."
+    },
+    {
+      "start": 1147.28,
+      "duration": 3.36,
+      "text": "They move"
+    },
+    {
+      "start": 1148.48,
+      "duration": 4.64,
+      "text": ">> they will streamline but but the tools"
+    },
+    {
+      "start": 1150.64,
+      "duration": 4.64,
+      "text": "will get faster and faster. I don't I"
+    },
+    {
+      "start": 1153.12,
+      "duration": 4.64,
+      "text": "don't think you you will you you will"
+    },
+    {
+      "start": 1155.28,
+      "duration": 5.04,
+      "text": "still have AAA studios. Those AAA"
+    },
+    {
+      "start": 1157.76,
+      "duration": 5.84,
+      "text": "studios now will not take eight years to"
+    },
+    {
+      "start": 1160.32,
+      "duration": 5.04,
+      "text": "create GTA 7. GTA 7 will probably come"
+    },
+    {
+      "start": 1163.6,
+      "duration": 3.6,
+      "text": "out in a couple of years. And and to be"
+    },
+    {
+      "start": 1165.36,
+      "duration": 3.36,
+      "text": "fair, Rockstar have already said that"
+    },
+    {
+      "start": 1167.2,
+      "duration": 3.28,
+      "text": "because they've upgraded their their"
+    },
+    {
+      "start": 1168.72,
+      "duration": 4.16,
+      "text": "whole tool base. I don't think there'll"
+    },
+    {
+      "start": 1170.48,
+      "duration": 5.2,
+      "text": "be another game that that will ever take"
+    },
+    {
+      "start": 1172.88,
+      "duration": 5.6,
+      "text": "8 years to to come out again. And and"
+    },
+    {
+      "start": 1175.68,
+      "duration": 5.44,
+      "text": "not now. AI will will accelerate, but it"
+    },
+    {
+      "start": 1178.48,
+      "duration": 3.76,
+      "text": "will accelerate more the more people"
+    },
+    {
+      "start": 1181.12,
+      "duration": 3.28,
+      "text": "you've got."
+    },
+    {
+      "start": 1182.24,
+      "duration": 5.28,
+      "text": ">> We might not have studios with with"
+    },
+    {
+      "start": 1184.4,
+      "duration": 5.76,
+      "text": "5,000 developers anymore. that. But um"
+    },
+    {
+      "start": 1187.52,
+      "duration": 4.96,
+      "text": "the whole point is that a small studio"
+    },
+    {
+      "start": 1190.16,
+      "duration": 3.68,
+      "text": "can accelerate the most. A large studio,"
+    },
+    {
+      "start": 1192.48,
+      "duration": 3.76,
+      "text": "yeah, they they've got multiple"
+    },
+    {
+      "start": 1193.84,
+      "duration": 3.84,
+      "text": "departments and more people using AI, of"
+    },
+    {
+      "start": 1196.24,
+      "duration": 4.16,
+      "text": "course, but they've still got the"
+    },
+    {
+      "start": 1197.68,
+      "duration": 4.72,
+      "text": "bureaucracy of decision-m and all sorts"
+    },
+    {
+      "start": 1200.4,
+      "duration": 4.4,
+      "text": "of stuff that's going to prevent them"
+    },
+    {
+      "start": 1202.4,
+      "duration": 4.4,
+      "text": "from massively accelerating as much as"
+    },
+    {
+      "start": 1204.8,
+      "duration": 3.68,
+      "text": "they could. They also have huge cost"
+    },
+    {
+      "start": 1206.8,
+      "duration": 5.04,
+      "text": "structure. So many of them are cutting"
+    },
+    {
+      "start": 1208.48,
+      "duration": 5.92,
+      "text": "down significantly. And in in that"
+    },
+    {
+      "start": 1211.84,
+      "duration": 4.32,
+      "text": "process, there's an opportunity. So like"
+    },
+    {
+      "start": 1214.4,
+      "duration": 3.12,
+      "text": "I don't know. I um"
+    },
+    {
+      "start": 1216.16,
+      "duration": 2.96,
+      "text": ">> yeah, but you're going to have one"
+    },
+    {
+      "start": 1217.52,
+      "duration": 2.8,
+      "text": "developer now probably doing the job of"
+    },
+    {
+      "start": 1219.12,
+      "duration": 3.76,
+      "text": "five developers."
+    },
+    {
+      "start": 1220.32,
+      "duration": 5.52,
+      "text": ">> So, studios can cut down, but if you've"
+    },
+    {
+      "start": 1222.88,
+      "duration": 4.64,
+      "text": "still got a studio with 250 people, you"
+    },
+    {
+      "start": 1225.84,
+      "duration": 4.08,
+      "text": "you're going to produce a lot more than"
+    },
+    {
+      "start": 1227.52,
+      "duration": 4.0,
+      "text": "than a studio with with a handful."
+    },
+    {
+      "start": 1229.92,
+      "duration": 3.76,
+      "text": ">> Yeah, absolutely. But then they still"
+    },
+    {
+      "start": 1231.52,
+      "duration": 6.88,
+      "text": "have the decision-m processes. They"
+    },
+    {
+      "start": 1233.68,
+      "duration": 6.96,
+      "text": "still have the long cycles of cross."
+    },
+    {
+      "start": 1238.4,
+      "duration": 4.32,
+      "text": ">> The tool the tools are changing, but"
+    },
+    {
+      "start": 1240.64,
+      "duration": 5.04,
+      "text": "fundamentally you will still need a lot"
+    },
+    {
+      "start": 1242.72,
+      "duration": 5.36,
+      "text": "of the same business rules. If if you if"
+    },
+    {
+      "start": 1245.68,
+      "duration": 4.4,
+      "text": "you're good at prompting but you have no"
+    },
+    {
+      "start": 1248.08,
+      "duration": 4.88,
+      "text": "idea how to run a business, the same"
+    },
+    {
+      "start": 1250.08,
+      "duration": 5.6,
+      "text": "rules that apply now will still apply."
+    },
+    {
+      "start": 1252.96,
+      "duration": 4.4,
+      "text": ">> Absolutely agree. So individuals within"
+    },
+    {
+      "start": 1255.68,
+      "duration": 4.0,
+      "text": "the business will accelerate"
+    },
+    {
+      "start": 1257.36,
+      "duration": 4.48,
+      "text": "significantly their output, but the size"
+    },
+    {
+      "start": 1259.68,
+      "duration": 5.28,
+      "text": "of the business still determines when"
+    },
+    {
+      "start": 1261.84,
+      "duration": 5.36,
+      "text": "that output gets executed and how it"
+    },
+    {
+      "start": 1264.96,
+      "duration": 4.0,
+      "text": "comes through the pipeline. And so often"
+    },
+    {
+      "start": 1267.2,
+      "duration": 4.56,
+      "text": "that's the problem with the big business"
+    },
+    {
+      "start": 1268.96,
+      "duration": 4.8,
+      "text": "is cross department dependencies. uh it"
+    },
+    {
+      "start": 1271.76,
+      "duration": 3.68,
+      "text": "slows things down, slows decision-m on"
+    },
+    {
+      "start": 1273.76,
+      "duration": 3.84,
+      "text": "what we're going to work on down. You"
+    },
+    {
+      "start": 1275.44,
+      "duration": 4.24,
+      "text": "might have devs that can go 5x the pace"
+    },
+    {
+      "start": 1277.6,
+      "duration": 3.92,
+      "text": "that still haven't even been fed their"
+    },
+    {
+      "start": 1279.68,
+      "duration": 3.28,
+      "text": "next tasks because the company can't get"
+    },
+    {
+      "start": 1281.52,
+      "duration": 3.84,
+      "text": "out of its own way"
+    },
+    {
+      "start": 1282.96,
+      "duration": 4.72,
+      "text": ">> to plan ahead enough. They're like, \"No,"
+    },
+    {
+      "start": 1285.36,
+      "duration": 4.32,
+      "text": "hold on. You know, we can't plan fast"
+    },
+    {
+      "start": 1287.68,
+      "duration": 4.08,
+      "text": "enough for what you guys are executing.\""
+    },
+    {
+      "start": 1289.68,
+      "duration": 4.08,
+      "text": "So, there's there's all sorts of issues"
+    },
+    {
+      "start": 1291.76,
+      "duration": 4.0,
+      "text": "that can occur there. Um, but anyway,"
+    },
+    {
+      "start": 1293.76,
+      "duration": 4.0,
+      "text": "the the main point really is that small"
+    },
+    {
+      "start": 1295.76,
+      "duration": 4.8,
+      "text": "studios that can make decisions quickly"
+    },
+    {
+      "start": 1297.76,
+      "duration": 5.2,
+      "text": "that have incredibly talented devs are"
+    },
+    {
+      "start": 1300.56,
+      "duration": 4.88,
+      "text": "significantly able to accelerate and do"
+    },
+    {
+      "start": 1302.96,
+      "duration": 5.12,
+      "text": "things way better than they were able to"
+    },
+    {
+      "start": 1305.44,
+      "duration": 5.52,
+      "text": "before. And when we have the foundation"
+    },
+    {
+      "start": 1308.08,
+      "duration": 4.8,
+      "text": "that we have with our core systems in"
+    },
+    {
+      "start": 1310.96,
+      "duration": 3.36,
+      "text": "place and efficient tools that make us"
+    },
+    {
+      "start": 1312.88,
+      "duration": 2.72,
+      "text": "more efficient, you're you're starting"
+    },
+    {
+      "start": 1314.32,
+      "duration": 4.24,
+      "text": "to see the results. You guys are"
+    },
+    {
+      "start": 1315.6,
+      "duration": 6.48,
+      "text": "starting to see the results of what this"
+    },
+    {
+      "start": 1318.56,
+      "duration": 6.08,
+      "text": "is doing for us, all of us. Um, so, uh,"
+    },
+    {
+      "start": 1322.08,
+      "duration": 4.4,
+      "text": "our release cadence has improved. Uh,"
+    },
+    {
+      "start": 1324.64,
+      "duration": 4.4,
+      "text": "the amount of things in each new release"
+    },
+    {
+      "start": 1326.48,
+      "duration": 4.8,
+      "text": "is improving. We can't even do a hot fix"
+    },
+    {
+      "start": 1329.04,
+      "duration": 5.2,
+      "text": "anymore because somebody throws in more"
+    },
+    {
+      "start": 1331.28,
+      "duration": 4.4,
+      "text": "stuff into the hot fix and it becomes an"
+    },
+    {
+      "start": 1334.24,
+      "duration": 5.36,
+      "text": "actual release upgrade."
+    },
+    {
+      "start": 1335.68,
+      "duration": 5.6,
+      "text": ">> And I think I think what for myself, I"
+    },
+    {
+      "start": 1339.6,
+      "duration": 4.48,
+      "text": "have"
+    },
+    {
+      "start": 1341.28,
+      "duration": 4.4,
+      "text": "I I've now started working with Blender"
+    },
+    {
+      "start": 1344.08,
+      "duration": 4.08,
+      "text": "and and I'm starting making some of"
+    },
+    {
+      "start": 1345.68,
+      "duration": 4.48,
+      "text": "these models myself, but I I couldn't do"
+    },
+    {
+      "start": 1348.16,
+      "duration": 4.64,
+      "text": "that in in the old world. it'll take me"
+    },
+    {
+      "start": 1350.16,
+      "duration": 5.44,
+      "text": "a long time to to learn about that. Now"
+    },
+    {
+      "start": 1352.8,
+      "duration": 6.32,
+      "text": "I'm finding I have m I've now have"
+    },
+    {
+      "start": 1355.6,
+      "duration": 6.4,
+      "text": "multiple PCs. So So it's one person"
+    },
+    {
+      "start": 1359.12,
+      "duration": 5.04,
+      "text": "actually with their own little mini mini"
+    },
+    {
+      "start": 1362.0,
+      "duration": 4.0,
+      "text": "studio department themselves."
+    },
+    {
+      "start": 1364.16,
+      "duration": 5.84,
+      "text": ">> Okay. Well, that just brings us to the"
+    },
+    {
+      "start": 1366.0,
+      "duration": 6.96,
+      "text": "final uh segment of topics before our"
+    },
+    {
+      "start": 1370.0,
+      "duration": 7.28,
+      "text": "questions before our Q&A and our leak."
+    },
+    {
+      "start": 1372.96,
+      "duration": 6.88,
+      "text": "Um we have a Black Friday release being"
+    },
+    {
+      "start": 1377.28,
+      "duration": 4.64,
+      "text": "planned. Um, we'll have new assets for"
+    },
+    {
+      "start": 1379.84,
+      "duration": 5.04,
+      "text": "Black Friday, but we'll also have a"
+    },
+    {
+      "start": 1381.92,
+      "duration": 4.64,
+      "text": "massive release. We really want that to"
+    },
+    {
+      "start": 1384.88,
+      "duration": 3.6,
+      "text": "be on Black Friday. We're going to do"
+    },
+    {
+      "start": 1386.56,
+      "duration": 5.36,
+      "text": "our best to get there, but we have so"
+    },
+    {
+      "start": 1388.48,
+      "duration": 4.64,
+      "text": "much uh in in the works for that. So,"
+    },
+    {
+      "start": 1391.92,
+      "duration": 3.36,
+      "text": "number one, for the Black Friday"
+    },
+    {
+      "start": 1393.12,
+      "duration": 4.08,
+      "text": "release, we've got the AI companions."
+    },
+    {
+      "start": 1395.28,
+      "duration": 3.68,
+      "text": "They should all be available in that"
+    },
+    {
+      "start": 1397.2,
+      "duration": 4.96,
+      "text": "release. That's what we're targeting."
+    },
+    {
+      "start": 1398.96,
+      "duration": 4.88,
+      "text": "Um, I'm not going to say because we're"
+    },
+    {
+      "start": 1402.16,
+      "duration": 3.44,
+      "text": "setting a hard date here. I'm not going"
+    },
+    {
+      "start": 1403.84,
+      "duration": 3.6,
+      "text": "to say that every one of these things"
+    },
+    {
+      "start": 1405.6,
+      "duration": 4.16,
+      "text": "are going to be in the release. That's"
+    },
+    {
+      "start": 1407.44,
+      "duration": 4.56,
+      "text": "the caveat. I am going to say that we're"
+    },
+    {
+      "start": 1409.76,
+      "duration": 3.92,
+      "text": "going to do our best uh with all of"
+    },
+    {
+      "start": 1412.0,
+      "duration": 3.52,
+      "text": "these and that's what we're we're trying"
+    },
+    {
+      "start": 1413.68,
+      "duration": 3.84,
+      "text": "to do. So, since we're really trying to"
+    },
+    {
+      "start": 1415.52,
+      "duration": 4.88,
+      "text": "set a hard date, some of these could"
+    },
+    {
+      "start": 1417.52,
+      "duration": 4.64,
+      "text": "drop off. Uh but they look pretty good."
+    },
+    {
+      "start": 1420.4,
+      "duration": 5.36,
+      "text": "A lot of them are already in production."
+    },
+    {
+      "start": 1422.16,
+      "duration": 6.08,
+      "text": "So, uh we'll see. AI companions. We also"
+    },
+    {
+      "start": 1425.76,
+      "duration": 5.04,
+      "text": "have the economy that we talked about."
+    },
+    {
+      "start": 1428.24,
+      "duration": 5.52,
+      "text": "Uh David's built a modeling system"
+    },
+    {
+      "start": 1430.8,
+      "duration": 4.8,
+      "text": "that's working with a fake world right"
+    },
+    {
+      "start": 1433.76,
+      "duration": 4.56,
+      "text": "now that we're testing out the economy"
+    },
+    {
+      "start": 1435.6,
+      "duration": 4.72,
+      "text": "and we're going to be moving that into"
+    },
+    {
+      "start": 1438.32,
+      "duration": 4.48,
+      "text": "uh QA here pretty soon and getting it"
+    },
+    {
+      "start": 1440.32,
+      "duration": 6.56,
+      "text": "into our world. Uh and so that should"
+    },
+    {
+      "start": 1442.8,
+      "duration": 6.72,
+      "text": "likely make the release. Um the uh below"
+    },
+    {
+      "start": 1446.88,
+      "duration": 4.72,
+      "text": "surface mining is another target that"
+    },
+    {
+      "start": 1449.52,
+      "duration": 4.72,
+      "text": "we've needed to do for years. We've had"
+    },
+    {
+      "start": 1451.6,
+      "duration": 5.2,
+      "text": "that uh in the works. So um uh really"
+    },
+    {
+      "start": 1454.24,
+      "duration": 5.84,
+      "text": "hoping to see that in the next release."
+    },
+    {
+      "start": 1456.8,
+      "duration": 5.28,
+      "text": "farming. Rob, um, can you, um, help me"
+    },
+    {
+      "start": 1460.08,
+      "duration": 3.6,
+      "text": "out with that one? Uh, are are we"
+    },
+    {
+      "start": 1462.08,
+      "duration": 3.6,
+      "text": "looking pretty good there? I think we've"
+    },
+    {
+      "start": 1463.68,
+      "duration": 3.92,
+      "text": "got a good amount in the works."
+    },
+    {
+      "start": 1465.68,
+      "duration": 4.4,
+      "text": ">> What date is that?"
+    },
+    {
+      "start": 1467.6,
+      "duration": 5.04,
+      "text": ">> Uh, that's, uh, about 30 days from now."
+    },
+    {
+      "start": 1470.08,
+      "duration": 4.88,
+      "text": "Uh, 26th or something like that."
+    },
+    {
+      "start": 1472.64,
+      "duration": 4.16,
+      "text": ">> And I mean, it's it's it's going to be"
+    },
+    {
+      "start": 1474.96,
+      "duration": 5.84,
+      "text": "close. What what what's happening with"
+    },
+    {
+      "start": 1476.8,
+      "duration": 8.64,
+      "text": "farming is it's now expanded. So, so"
+    },
+    {
+      "start": 1480.8,
+      "duration": 6.8,
+      "text": "farming is now really an art um backlog"
+    },
+    {
+      "start": 1485.44,
+      "duration": 4.64,
+      "text": "rather than a programming one."
+    },
+    {
+      "start": 1487.6,
+      "duration": 4.24,
+      "text": ">> So, each of the the meshes, we're"
+    },
+    {
+      "start": 1490.08,
+      "duration": 3.6,
+      "text": "working on corn to be the very first"
+    },
+    {
+      "start": 1491.84,
+      "duration": 3.28,
+      "text": "one. So, there there's a leak for you."
+    },
+    {
+      "start": 1493.68,
+      "duration": 5.12,
+      "text": "Each of the meshes now, we're going to"
+    },
+    {
+      "start": 1495.12,
+      "duration": 6.0,
+      "text": "need 16 meshes, different looks and feel"
+    },
+    {
+      "start": 1498.8,
+      "duration": 4.88,
+      "text": "for each of the each of the farming"
+    },
+    {
+      "start": 1501.12,
+      "duration": 4.48,
+      "text": "items. So, 16 is is quite a lot of"
+    },
+    {
+      "start": 1503.68,
+      "duration": 4.0,
+      "text": "artwork to do um"
+    },
+    {
+      "start": 1505.6,
+      "duration": 4.32,
+      "text": ">> for each item"
+    },
+    {
+      "start": 1507.68,
+      "duration": 6.08,
+      "text": ">> each item. So like corn will will have a"
+    },
+    {
+      "start": 1509.92,
+      "duration": 5.76,
+      "text": "seed, then it will have sprouting, but"
+    },
+    {
+      "start": 1513.76,
+      "duration": 5.04,
+      "text": "then it will also have a wilting version"
+    },
+    {
+      "start": 1515.68,
+      "duration": 5.12,
+      "text": "of that. Then it'll have a young a young"
+    },
+    {
+      "start": 1518.8,
+      "duration": 3.68,
+      "text": "adult version, then it'll have a wilting"
+    },
+    {
+      "start": 1520.8,
+      "duration": 3.28,
+      "text": "version of that if you don't feed it."
+    },
+    {
+      "start": 1522.48,
+      "duration": 3.28,
+      "text": "Then it'll have a dead version of that."
+    },
+    {
+      "start": 1524.08,
+      "duration": 3.76,
+      "text": "Then it'll have an adult and a wilting."
+    },
+    {
+      "start": 1525.76,
+      "duration": 4.8,
+      "text": "So So altogether there's 16 different"
+    },
+    {
+      "start": 1527.84,
+      "duration": 5.52,
+      "text": "meshes for each of them. The the plan is"
+    },
+    {
+      "start": 1530.56,
+      "duration": 4.64,
+      "text": "to create farming so you can do this"
+    },
+    {
+      "start": 1533.36,
+      "duration": 4.96,
+      "text": "within your apartment as well as on your"
+    },
+    {
+      "start": 1535.2,
+      "duration": 5.28,
+      "text": "land. So, so really it's a case of how"
+    },
+    {
+      "start": 1538.32,
+      "duration": 4.48,
+      "text": "many we can get done for if we can get"
+    },
+    {
+      "start": 1540.48,
+      "duration": 4.64,
+      "text": "the initial one out that the aim will be"
+    },
+    {
+      "start": 1542.8,
+      "duration": 4.4,
+      "text": "to to start off with corn. Then it'll be"
+    },
+    {
+      "start": 1545.12,
+      "duration": 4.16,
+      "text": "do a number of other herbs, maybe six or"
+    },
+    {
+      "start": 1547.2,
+      "duration": 4.16,
+      "text": "seven herbs that you can use on your"
+    },
+    {
+      "start": 1549.28,
+      "duration": 4.16,
+      "text": "apartment and if land's ready on your"
+    },
+    {
+      "start": 1551.36,
+      "duration": 5.44,
+      "text": "land as well and then we'll just keep"
+    },
+    {
+      "start": 1553.44,
+      "duration": 5.6,
+      "text": "expanding on that. We've got 147 planned"
+    },
+    {
+      "start": 1556.8,
+      "duration": 4.16,
+      "text": "crops at the moment. So, you can imagine"
+    },
+    {
+      "start": 1559.04,
+      "duration": 4.72,
+      "text": "the artwork that that now we've just"
+    },
+    {
+      "start": 1560.96,
+      "duration": 4.56,
+      "text": "upped this from eight meshes to to 16"
+    },
+    {
+      "start": 1563.76,
+      "duration": 4.08,
+      "text": "that we're going to need. So, so it's"
+    },
+    {
+      "start": 1565.52,
+      "duration": 4.32,
+      "text": "it's a it's a lot of work, but you know,"
+    },
+    {
+      "start": 1567.84,
+      "duration": 3.6,
+      "text": "it's not all out on one release. We"
+    },
+    {
+      "start": 1569.84,
+      "duration": 3.28,
+      "text": "we're we're going to release these over"
+    },
+    {
+      "start": 1571.44,
+      "duration": 3.68,
+      "text": "over the seasons cuz you don't want to"
+    },
+    {
+      "start": 1573.12,
+      "duration": 4.08,
+      "text": "be flooded with all these. So, we've got"
+    },
+    {
+      "start": 1575.12,
+      "duration": 4.08,
+      "text": "a great future pipeline is what I'm"
+    },
+    {
+      "start": 1577.2,
+      "duration": 4.72,
+      "text": "saying, of different crops and different"
+    },
+    {
+      "start": 1579.2,
+      "duration": 4.16,
+      "text": "things to to to release over over the"
+    },
+    {
+      "start": 1581.92,
+      "duration": 3.28,
+      "text": "well forever."
+    },
+    {
+      "start": 1583.36,
+      "duration": 4.16,
+      "text": ">> Yeah. So, but but for perspective, you"
+    },
+    {
+      "start": 1585.2,
+      "duration": 6.4,
+      "text": "said 147 different crops we've got"
+    },
+    {
+      "start": 1587.52,
+      "duration": 7.52,
+      "text": "listed um that would have 16 meshes for"
+    },
+    {
+      "start": 1591.6,
+      "duration": 6.32,
+      "text": "each to be able to effectively have a a"
+    },
+    {
+      "start": 1595.04,
+      "duration": 4.64,
+      "text": "decent farming loop and those will not"
+    },
+    {
+      "start": 1597.92,
+      "duration": 3.68,
+      "text": "all be released in this one."
+    },
+    {
+      "start": 1599.68,
+      "duration": 3.12,
+      "text": ">> No, cuz some of them will be exclusive"
+    },
+    {
+      "start": 1601.6,
+      "duration": 3.12,
+      "text": "to zones."
+    },
+    {
+      "start": 1602.8,
+      "duration": 4.24,
+      "text": ">> So, if we're ready with farming for"
+    },
+    {
+      "start": 1604.72,
+      "duration": 4.56,
+      "text": "Black Friday, uh you might see a release"
+    },
+    {
+      "start": 1607.04,
+      "duration": 4.56,
+      "text": "on that. Um but that's a that's a bigger"
+    },
+    {
+      "start": 1609.28,
+      "duration": 4.96,
+      "text": "one. That's a well economy is huge. AI"
+    },
+    {
+      "start": 1611.6,
+      "duration": 4.48,
+      "text": "companions, AI companions is huge, below"
+    },
+    {
+      "start": 1614.24,
+      "duration": 4.72,
+      "text": "surface mining is huge. So, all of these"
+    },
+    {
+      "start": 1616.08,
+      "duration": 5.12,
+      "text": "are big. NPC low levels is another thing"
+    },
+    {
+      "start": 1618.96,
+      "duration": 4.24,
+      "text": "that we want to bring into the game uh"
+    },
+    {
+      "start": 1621.2,
+      "duration": 3.28,
+      "text": "to put some more life into the game,"
+    },
+    {
+      "start": 1623.2,
+      "duration": 2.96,
+      "text": "right? So, we're really starting to"
+    },
+    {
+      "start": 1624.48,
+      "duration": 3.68,
+      "text": "bring the game and the world to life."
+    },
+    {
+      "start": 1626.16,
+      "duration": 5.52,
+      "text": "You don't feel so alone in the world."
+    },
+    {
+      "start": 1628.16,
+      "duration": 5.92,
+      "text": "Um, so NPC, low-level NPCs, you know,"
+    },
+    {
+      "start": 1631.68,
+      "duration": 4.08,
+      "text": "that you don't engage with are are going"
+    },
+    {
+      "start": 1634.08,
+      "duration": 3.76,
+      "text": "to be in this next build. And there's a"
+    },
+    {
+      "start": 1635.76,
+      "duration": 4.64,
+      "text": "lot of work that's involved in that."
+    },
+    {
+      "start": 1637.84,
+      "duration": 5.12,
+      "text": "Making it performant, making each look"
+    },
+    {
+      "start": 1640.4,
+      "duration": 4.4,
+      "text": "unique, uh, and, uh, bringing life to"
+    },
+    {
+      "start": 1642.96,
+      "duration": 4.32,
+      "text": "the world in a in a cool new way. So,"
+    },
+    {
+      "start": 1644.8,
+      "duration": 4.48,
+      "text": "that's that's coming. Uh, and that has a"
+    },
+    {
+      "start": 1647.28,
+      "duration": 5.36,
+      "text": "lot more that that will progress on that"
+    },
+    {
+      "start": 1649.28,
+      "duration": 5.84,
+      "text": "road map with NPCs to mid-level NPCs and"
+    },
+    {
+      "start": 1652.64,
+      "duration": 5.44,
+      "text": "then highle NPCs. We'll we'll talk about"
+    },
+    {
+      "start": 1655.12,
+      "duration": 4.8,
+      "text": "that at another date. Um, the blue track"
+    },
+    {
+      "start": 1658.08,
+      "duration": 3.2,
+      "text": "is coming. A lot of the work for that is"
+    },
+    {
+      "start": 1659.92,
+      "duration": 2.8,
+      "text": "already done, so I think we're pretty"
+    },
+    {
+      "start": 1661.28,
+      "duration": 3.84,
+      "text": "close there. That's not really hard to"
+    },
+    {
+      "start": 1662.72,
+      "duration": 4.16,
+      "text": "execute on. Um, and then building on"
+    },
+    {
+      "start": 1665.12,
+      "duration": 4.32,
+      "text": "land. This is one that I probably"
+    },
+    {
+      "start": 1666.88,
+      "duration": 4.8,
+      "text": "shouldn't even announce, but it's in the"
+    },
+    {
+      "start": 1669.44,
+      "duration": 5.28,
+      "text": "works. We're in testing, but there is so"
+    },
+    {
+      "start": 1671.68,
+      "duration": 5.04,
+      "text": "much involved for this one to be able to"
+    },
+    {
+      "start": 1674.72,
+      "duration": 4.16,
+      "text": "affect and that's got a big art backlog"
+    },
+    {
+      "start": 1676.72,
+      "duration": 4.0,
+      "text": "as well, like you said, with farming."
+    },
+    {
+      "start": 1678.88,
+      "duration": 3.76,
+      "text": "And so, that might be the issue there."
+    },
+    {
+      "start": 1680.72,
+      "duration": 4.08,
+      "text": "Uh, we don't just want to launch"
+    },
+    {
+      "start": 1682.64,
+      "duration": 4.0,
+      "text": "building on land and then you can only"
+    },
+    {
+      "start": 1684.8,
+      "duration": 4.16,
+      "text": "do two things and then you're bored with"
+    },
+    {
+      "start": 1686.64,
+      "duration": 4.16,
+      "text": "it. Um, we'd like to get that to a"
+    },
+    {
+      "start": 1688.96,
+      "duration": 4.16,
+      "text": "moderate state. And so, that may not"
+    },
+    {
+      "start": 1690.8,
+      "duration": 4.72,
+      "text": "make the Black Friday build. Uh, if"
+    },
+    {
+      "start": 1693.12,
+      "duration": 4.72,
+      "text": "anything, I I would be questioning"
+    },
+    {
+      "start": 1695.52,
+      "duration": 4.32,
+      "text": "building on land and farming. Um, but"
+    },
+    {
+      "start": 1697.84,
+      "duration": 3.6,
+      "text": "those two are very high priority for us."
+    },
+    {
+      "start": 1699.84,
+      "duration": 3.68,
+      "text": "They're already in the works, and so"
+    },
+    {
+      "start": 1701.44,
+      "duration": 7.6,
+      "text": "that's why we say they might make it."
+    },
+    {
+      "start": 1703.52,
+      "duration": 8.4,
+      "text": "Um, okay. That brings us to our leak uh"
+    },
+    {
+      "start": 1709.04,
+      "duration": 4.88,
+      "text": "segment. Rob, you want to tell us, you"
+    },
+    {
+      "start": 1711.92,
+      "duration": 3.44,
+      "text": "want to walk through the leak?"
+    },
+    {
+      "start": 1713.92,
+      "duration": 4.0,
+      "text": "Yeah, people have been asking this a"
+    },
+    {
+      "start": 1715.36,
+      "duration": 5.84,
+      "text": "number of times that there is currently"
+    },
+    {
+      "start": 1717.92,
+      "duration": 5.2,
+      "text": "people are doing the the Halloween quest"
+    },
+    {
+      "start": 1721.2,
+      "duration": 3.52,
+      "text": "and and that's been received quite well."
+    },
+    {
+      "start": 1723.12,
+      "duration": 3.36,
+      "text": "That's just had an update so it's"
+    },
+    {
+      "start": 1724.72,
+      "duration": 4.24,
+      "text": "actually a lot simpler and and there's"
+    },
+    {
+      "start": 1726.48,
+      "duration": 7.92,
+      "text": "an extra quest been added in the next"
+    },
+    {
+      "start": 1728.96,
+      "duration": 8.64,
+      "text": "one. Um so the what the leak is is when"
+    },
+    {
+      "start": 1734.4,
+      "duration": 5.2,
+      "text": "when you currently are rewarded with"
+    },
+    {
+      "start": 1737.6,
+      "duration": 4.24,
+      "text": "with that that currently goes into your"
+    },
+    {
+      "start": 1739.6,
+      "duration": 3.6,
+      "text": "inventory and and you can use it. And I"
+    },
+    {
+      "start": 1741.84,
+      "duration": 3.76,
+      "text": "know a lot of people are kind of worried"
+    },
+    {
+      "start": 1743.2,
+      "duration": 3.6,
+      "text": "that in the future when we wipe"
+    },
+    {
+      "start": 1745.6,
+      "duration": 3.92,
+      "text": "everything because we've always said"
+    },
+    {
+      "start": 1746.8,
+      "duration": 6.48,
+      "text": "we're going to wipe it won't on steam"
+    },
+    {
+      "start": 1749.52,
+      "duration": 6.08,
+      "text": "that they're going to lose that that hat"
+    },
+    {
+      "start": 1753.28,
+      "duration": 6.8,
+      "text": "that that bunny hat"
+    },
+    {
+      "start": 1755.6,
+      "duration": 7.52,
+      "text": "um headgear and um well what we're going"
+    },
+    {
+      "start": 1760.08,
+      "duration": 4.88,
+      "text": "to do we we are turning that into into a"
+    },
+    {
+      "start": 1763.12,
+      "duration": 4.72,
+      "text": "POA. So this this is going to be"
+    },
+    {
+      "start": 1764.96,
+      "duration": 5.6,
+      "text": "optional when you complete the final"
+    },
+    {
+      "start": 1767.84,
+      "duration": 4.4,
+      "text": "quest. So part three of of the of the"
+    },
+    {
+      "start": 1770.56,
+      "duration": 5.12,
+      "text": "shadows quest when you when you do the"
+    },
+    {
+      "start": 1772.24,
+      "duration": 6.24,
+      "text": "Halloween one we will know that that's"
+    },
+    {
+      "start": 1775.68,
+      "duration": 5.04,
+      "text": "saved in the back end we are in the back"
+    },
+    {
+      "start": 1778.48,
+      "duration": 4.8,
+      "text": "end we we've al already going to create"
+    },
+    {
+      "start": 1780.72,
+      "duration": 5.68,
+      "text": "that into a roll and then in the future"
+    },
+    {
+      "start": 1783.28,
+      "duration": 5.84,
+      "text": "you'll be able to go on our website and"
+    },
+    {
+      "start": 1786.4,
+      "duration": 5.2,
+      "text": "you'll be able to to mint that POA and"
+    },
+    {
+      "start": 1789.12,
+      "duration": 3.76,
+      "text": "it will remain your property for as long"
+    },
+    {
+      "start": 1791.6,
+      "duration": 3.68,
+      "text": "as you want and you can sell it on"
+    },
+    {
+      "start": 1792.88,
+      "duration": 4.96,
+      "text": "secondary but but that is the leak that"
+    },
+    {
+      "start": 1795.28,
+      "duration": 4.56,
+      "text": "is the very first one the very first POA"
+    },
+    {
+      "start": 1797.84,
+      "duration": 5.44,
+      "text": "that you can actually earn with with"
+    },
+    {
+      "start": 1799.84,
+      "duration": 5.52,
+      "text": "your time in game. You'll get a roll."
+    },
+    {
+      "start": 1803.28,
+      "duration": 3.76,
+      "text": "You'll be able to mint it optionally if"
+    },
+    {
+      "start": 1805.36,
+      "duration": 4.24,
+      "text": "you want cuz we don't want to break"
+    },
+    {
+      "start": 1807.04,
+      "duration": 4.24,
+      "text": "Steam's um terms and conditions. So,"
+    },
+    {
+      "start": 1809.6,
+      "duration": 3.44,
+      "text": "this is completely optional."
+    },
+    {
+      "start": 1811.28,
+      "duration": 3.76,
+      "text": ">> So, if you earn it in game, you can play"
+    },
+    {
+      "start": 1813.04,
+      "duration": 4.48,
+      "text": "with it in game like you are doing now"
+    },
+    {
+      "start": 1815.04,
+      "duration": 5.92,
+      "text": "and you can also then go go and mint it"
+    },
+    {
+      "start": 1817.52,
+      "duration": 4.48,
+      "text": "for for for future sakes. So, so I think"
+    },
+    {
+      "start": 1820.96,
+      "duration": 2.56,
+      "text": "that's pretty"
+    },
+    {
+      "start": 1822.0,
+      "duration": 3.2,
+      "text": ">> well said. Very exciting. And so, what"
+    },
+    {
+      "start": 1823.52,
+      "duration": 3.76,
+      "text": "the leak there is is that the decision"
+    },
+    {
+      "start": 1825.2,
+      "duration": 3.76,
+      "text": "is made. The tech is not quite ready,"
+    },
+    {
+      "start": 1827.28,
+      "duration": 4.48,
+      "text": "but it's a small lift because we've"
+    },
+    {
+      "start": 1828.96,
+      "duration": 5.52,
+      "text": "already got the OG rolls for minting NF"
+    },
+    {
+      "start": 1831.76,
+      "duration": 4.88,
+      "text": "uh in playerowned assets. God, still"
+    },
+    {
+      "start": 1834.48,
+      "duration": 4.64,
+      "text": "working on my vocab here. Um, we've got"
+    },
+    {
+      "start": 1836.64,
+      "duration": 4.96,
+      "text": "the OG's, you know, roles in that system"
+    },
+    {
+      "start": 1839.12,
+      "duration": 5.28,
+      "text": "ready. There's just a small amount of uh"
+    },
+    {
+      "start": 1841.6,
+      "duration": 5.12,
+      "text": "tech work to connect the quest"
+    },
+    {
+      "start": 1844.4,
+      "duration": 4.56,
+      "text": "completion with the list of those that"
+    },
+    {
+      "start": 1846.72,
+      "duration": 4.48,
+      "text": "would go into that role, I think, is"
+    },
+    {
+      "start": 1848.96,
+      "duration": 4.4,
+      "text": "basically what you were telling me. So,"
+    },
+    {
+      "start": 1851.2,
+      "duration": 5.04,
+      "text": "not so far off. I think we can get that"
+    },
+    {
+      "start": 1853.36,
+      "duration": 4.96,
+      "text": "into the pipeline between now and"
+    },
+    {
+      "start": 1856.24,
+      "duration": 4.24,
+      "text": "Christmas. So, we're not super far off"
+    },
+    {
+      "start": 1858.32,
+      "duration": 4.88,
+      "text": "from that. Um, but that opens the door"
+    },
+    {
+      "start": 1860.48,
+      "duration": 5.6,
+      "text": "for a lot of other cool quest"
+    },
+    {
+      "start": 1863.2,
+      "duration": 4.16,
+      "text": "completions and and all stuff."
+    },
+    {
+      "start": 1866.08,
+      "duration": 3.2,
+      "text": ">> We want to do the same."
+    },
+    {
+      "start": 1867.36,
+      "duration": 3.84,
+      "text": ">> We want to do the same for for for the"
+    },
+    {
+      "start": 1869.28,
+      "duration": 4.8,
+      "text": "for the the Christmas or the holiday"
+    },
+    {
+      "start": 1871.2,
+      "duration": 6.8,
+      "text": "season. We we want to create another POA"
+    },
+    {
+      "start": 1874.08,
+      "duration": 6.0,
+      "text": "for that. And um in in this current in"
+    },
+    {
+      "start": 1878.0,
+      "duration": 5.6,
+      "text": "in the next version in in version three"
+    },
+    {
+      "start": 1880.08,
+      "duration": 5.44,
+      "text": "like what I I was saying is is coming"
+    },
+    {
+      "start": 1883.6,
+      "duration": 3.36,
+      "text": "there there are some new quests in in"
+    },
+    {
+      "start": 1885.52,
+      "duration": 4.64,
+      "text": "there as well. So so there's going to be"
+    },
+    {
+      "start": 1886.96,
+      "duration": 4.8,
+      "text": "a quest now for um error trail. So"
+    },
+    {
+      "start": 1890.16,
+      "duration": 3.36,
+      "text": "you'll be able to not only do a"
+    },
+    {
+      "start": 1891.76,
+      "duration": 5.52,
+      "text": "leaderboard but the quest will challenge"
+    },
+    {
+      "start": 1893.52,
+      "duration": 6.16,
+      "text": "you. Um and on completion of of those"
+    },
+    {
+      "start": 1897.28,
+      "duration": 4.8,
+      "text": "you will actually earn some in-game"
+    },
+    {
+      "start": 1899.68,
+      "duration": 3.76,
+      "text": "trophies. So, so, so they're not PAS,"
+    },
+    {
+      "start": 1902.08,
+      "duration": 3.12,
+      "text": "but they're in-game trophies, and you"
+    },
+    {
+      "start": 1903.44,
+      "duration": 4.32,
+      "text": "can obviously trade those for quite a"
+    },
+    {
+      "start": 1905.2,
+      "duration": 5.84,
+      "text": "lot. And also for the hover bikes, the"
+    },
+    {
+      "start": 1907.76,
+      "duration": 5.52,
+      "text": "hover bikes now have have a um a timed"
+    },
+    {
+      "start": 1911.04,
+      "duration": 5.52,
+      "text": "quests in there. So, so we get a lot"
+    },
+    {
+      "start": 1913.28,
+      "duration": 4.96,
+      "text": "more playable quests functionalities."
+    },
+    {
+      "start": 1916.56,
+      "duration": 4.56,
+      "text": "And then in the future, probably"
+    },
+    {
+      "start": 1918.24,
+      "duration": 5.2,
+      "text": "starting the beginning of next year,"
+    },
+    {
+      "start": 1921.12,
+      "duration": 6.0,
+      "text": "we're going to have a lot more um"
+    },
+    {
+      "start": 1923.44,
+      "duration": 6.24,
+      "text": "advanced quests where we're going to re"
+    },
+    {
+      "start": 1927.12,
+      "duration": 5.92,
+      "text": "redo or rewrite quite a lot of the quest"
+    },
+    {
+      "start": 1929.68,
+      "duration": 6.24,
+      "text": "system um to be more law based and we're"
+    },
+    {
+      "start": 1933.04,
+      "duration": 5.12,
+      "text": "going to have um interactions with with"
+    },
+    {
+      "start": 1935.92,
+      "duration": 4.08,
+      "text": "NPCs. We're going to have cutscenes."
+    },
+    {
+      "start": 1938.16,
+      "duration": 3.76,
+      "text": "we're going to have but more more"
+    },
+    {
+      "start": 1940.0,
+      "duration": 4.64,
+      "text": "challenging quest because at the moment"
+    },
+    {
+      "start": 1941.92,
+      "duration": 4.64,
+      "text": "we you know we we we're kind of"
+    },
+    {
+      "start": 1944.64,
+      "duration": 5.2,
+      "text": ">> this is kind of version one of the quest"
+    },
+    {
+      "start": 1946.56,
+      "duration": 4.24,
+      "text": "system. So version two is is going to be"
+    },
+    {
+      "start": 1949.84,
+      "duration": 3.2,
+      "text": "you know a lot more advanced"
+    },
+    {
+      "start": 1950.8,
+      "duration": 4.0,
+      "text": ">> very exciting. It's very exciting. Um as"
+    },
+    {
+      "start": 1953.04,
+      "duration": 4.48,
+      "text": "with everything we have levels and we"
+    },
+    {
+      "start": 1954.8,
+      "duration": 4.64,
+      "text": "progress and we improve. We get feedback"
+    },
+    {
+      "start": 1957.52,
+      "duration": 4.24,
+      "text": "and there's a a road map for each"
+    },
+    {
+      "start": 1959.44,
+      "duration": 4.8,
+      "text": "individual feature basically. Um, okay."
+    },
+    {
+      "start": 1961.76,
+      "duration": 4.08,
+      "text": "So, that brings us to our Q&A uh"
+    },
+    {
+      "start": 1964.24,
+      "duration": 4.16,
+      "text": "section."
+    },
+    {
+      "start": 1965.84,
+      "duration": 4.24,
+      "text": "And Rob, I guess you can ask me these"
+    },
+    {
+      "start": 1968.4,
+      "duration": 3.12,
+      "text": "questions. We didn't really go over it"
+    },
+    {
+      "start": 1970.08,
+      "duration": 1.76,
+      "text": "enough unless you wanted to answer one"
+    },
+    {
+      "start": 1971.52,
+      "duration": 1.28,
+      "text": "of them."
+    },
+    {
+      "start": 1971.84,
+      "duration": 1.76,
+      "text": ">> No, sure. Can do."
+    },
+    {
+      "start": 1972.8,
+      "duration": 4.08,
+      "text": ">> Okay."
+    },
+    {
+      "start": 1973.6,
+      "duration": 6.8,
+      "text": ">> Um, so this looks like it's from from"
+    },
+    {
+      "start": 1976.88,
+      "duration": 5.68,
+      "text": "James. So, this is Crypto 007. Um, can"
+    },
+    {
+      "start": 1980.4,
+      "duration": 4.48,
+      "text": "we have a better way to ask questions? I"
+    },
+    {
+      "start": 1982.56,
+      "duration": 4.24,
+      "text": "feel like 99% of the questions don't"
+    },
+    {
+      "start": 1984.88,
+      "duration": 3.84,
+      "text": "even get looked at in the channel,"
+    },
+    {
+      "start": 1986.8,
+      "duration": 4.0,
+      "text": "especially the cafe rides don't happen"
+    },
+    {
+      "start": 1988.72,
+      "duration": 4.56,
+      "text": "anymore. all of the questions get looked"
+    },
+    {
+      "start": 1990.8,
+      "duration": 4.0,
+      "text": "at. Not all of them are answered."
+    },
+    {
+      "start": 1993.28,
+      "duration": 3.2,
+      "text": ">> Yeah. You know what? Okay. So, that's a"
+    },
+    {
+      "start": 1994.8,
+      "duration": 4.16,
+      "text": "that's a great question and you're right"
+    },
+    {
+      "start": 1996.48,
+      "duration": 4.64,
+      "text": "and we apologize. There's no way we can"
+    },
+    {
+      "start": 1998.96,
+      "duration": 4.4,
+      "text": "answer the the reality is there's no way"
+    },
+    {
+      "start": 2001.12,
+      "duration": 4.64,
+      "text": "we can answer all the questions because"
+    },
+    {
+      "start": 2003.36,
+      "duration": 4.24,
+      "text": "every time we bring a new feature,"
+    },
+    {
+      "start": 2005.76,
+      "duration": 4.0,
+      "text": "there's a whole slew of questions around"
+    },
+    {
+      "start": 2007.6,
+      "duration": 4.16,
+      "text": "it and we don't fully necessarily have"
+    },
+    {
+      "start": 2009.76,
+      "duration": 3.6,
+      "text": "it entirely figured out because it's a"
+    },
+    {
+      "start": 2011.76,
+      "duration": 4.0,
+      "text": "new feature for us as well. And so, we"
+    },
+    {
+      "start": 2013.36,
+      "duration": 3.84,
+      "text": "try to plan as much as we can. But every"
+    },
+    {
+      "start": 2015.76,
+      "duration": 3.76,
+      "text": "new feature that we have and we have"
+    },
+    {
+      "start": 2017.2,
+      "duration": 4.24,
+      "text": "tons of new features, right? they open a"
+    },
+    {
+      "start": 2019.52,
+      "duration": 4.08,
+      "text": "whole new can of worms. And so if we"
+    },
+    {
+      "start": 2021.44,
+      "duration": 4.72,
+      "text": "were going to answer questions all day"
+    },
+    {
+      "start": 2023.6,
+      "duration": 4.0,
+      "text": "long, I still don't think we could get"
+    },
+    {
+      "start": 2026.16,
+      "duration": 4.16,
+      "text": "to the end of the questions because each"
+    },
+    {
+      "start": 2027.6,
+      "duration": 6.0,
+      "text": "new answer gives a new question. And so"
+    },
+    {
+      "start": 2030.32,
+      "duration": 6.48,
+      "text": "we would be in a vicious cycle of only"
+    },
+    {
+      "start": 2033.6,
+      "duration": 5.84,
+      "text": "communicating and not producing. So the"
+    },
+    {
+      "start": 2036.8,
+      "duration": 4.64,
+      "text": "reality is the more we produce feature-"
+    },
+    {
+      "start": 2039.44,
+      "duration": 4.08,
+      "text": "wise, the better the game gets, the more"
+    },
+    {
+      "start": 2041.44,
+      "duration": 4.64,
+      "text": "questions you guys are going to have,"
+    },
+    {
+      "start": 2043.52,
+      "duration": 4.56,
+      "text": "which makes it an impossible feat. And"
+    },
+    {
+      "start": 2046.08,
+      "duration": 2.16,
+      "text": "so I wanted to give that perspective. I"
+    },
+    {
+      "start": 2048.08,
+      "duration": 2.56,
+      "text": "think"
+    },
+    {
+      "start": 2048.24,
+      "duration": 3.92,
+      "text": ">> well we try to be as transparent as we"
+    },
+    {
+      "start": 2050.64,
+      "duration": 3.44,
+      "text": "can with you guys and we try to answer"
+    },
+    {
+      "start": 2052.16,
+      "duration": 4.24,
+      "text": "as much as we can but the more we"
+    },
+    {
+      "start": 2054.08,
+      "duration": 3.84,
+      "text": "produce the harder that becomes and so"
+    },
+    {
+      "start": 2056.4,
+      "duration": 2.8,
+      "text": "there's only so much we can do but go"
+    },
+    {
+      "start": 2057.92,
+      "duration": 3.28,
+      "text": "ahead sounds like you had something"
+    },
+    {
+      "start": 2059.2,
+      "duration": 4.24,
+      "text": ">> well I mean the format of this cafe rise"
+    },
+    {
+      "start": 2061.2,
+      "duration": 3.76,
+      "text": "it's supposed to be you know informal"
+    },
+    {
+      "start": 2063.44,
+      "duration": 3.92,
+      "text": "some of the questions that that get"
+    },
+    {
+      "start": 2064.96,
+      "duration": 4.8,
+      "text": "asked you know they're really important"
+    },
+    {
+      "start": 2067.36,
+      "duration": 4.56,
+      "text": "questions and if we were to to answer"
+    },
+    {
+      "start": 2069.76,
+      "duration": 5.04,
+      "text": "them off the cuff without preparing in"
+    },
+    {
+      "start": 2071.92,
+      "duration": 5.04,
+      "text": "this kind of like fun fun factor you"
+    },
+    {
+      "start": 2074.8,
+      "duration": 3.84,
+      "text": "know we we wouldn't do them justice and"
+    },
+    {
+      "start": 2076.96,
+      "duration": 3.44,
+      "text": "you know we'd held accountable for quite"
+    },
+    {
+      "start": 2078.64,
+      "duration": 3.6,
+      "text": "a lot of stuff cuz some of it comes with"
+    },
+    {
+      "start": 2080.4,
+      "duration": 4.0,
+      "text": "stuff that we've not planned or we are"
+    },
+    {
+      "start": 2082.24,
+      "duration": 4.24,
+      "text": "planning or we'll say something and then"
+    },
+    {
+      "start": 2084.4,
+      "duration": 3.68,
+      "text": "it won't get delivered and then we'll be"
+    },
+    {
+      "start": 2086.48,
+      "duration": 3.2,
+      "text": "held accountable cuz we've promised the"
+    },
+    {
+      "start": 2088.08,
+      "duration": 4.24,
+      "text": "time and stuff, you know. So, all the"
+    },
+    {
+      "start": 2089.68,
+      "duration": 4.56,
+      "text": "all the major stuff that that that we"
+    },
+    {
+      "start": 2092.32,
+      "duration": 3.76,
+      "text": "that we release, you know, that they"
+    },
+    {
+      "start": 2094.24,
+      "duration": 3.52,
+      "text": "always come with an announcement and"
+    },
+    {
+      "start": 2096.08,
+      "duration": 3.6,
+      "text": "those announcements have been thought"
+    },
+    {
+      "start": 2097.76,
+      "duration": 3.84,
+      "text": "about for weeks and weeks and been"
+    },
+    {
+      "start": 2099.68,
+      "duration": 4.8,
+      "text": "backed up with with stuff that we know"
+    },
+    {
+      "start": 2101.6,
+      "duration": 4.32,
+      "text": "is coming. So, so, so yeah, there is a"
+    },
+    {
+      "start": 2104.48,
+      "duration": 4.64,
+      "text": "lot of questions that we would like to"
+    },
+    {
+      "start": 2105.92,
+      "duration": 3.6,
+      "text": "answer, but there's there's always a"
+    },
+    {
+      "start": 2109.12,
+      "duration": 2.0,
+      "text": "lot."
+    },
+    {
+      "start": 2109.52,
+      "duration": 4.88,
+      "text": ">> All righty. Next question."
+    },
+    {
+      "start": 2111.12,
+      "duration": 7.12,
+      "text": ">> So, this is from Pub. He wants to know"
+    },
+    {
+      "start": 2114.4,
+      "duration": 5.92,
+      "text": "or she when when will we get to see the"
+    },
+    {
+      "start": 2118.24,
+      "duration": 2.72,
+      "text": "Bubble Jet Air Racer from the Founders"
+    },
+    {
+      "start": 2120.32,
+      "duration": 2.48,
+      "text": "Bundle?"
+    },
+    {
+      "start": 2120.96,
+      "duration": 3.68,
+      "text": ">> We're doing our best. The announcement"
+    },
+    {
+      "start": 2122.8,
+      "duration": 3.44,
+      "text": "with the Founders Bundle technically was"
+    },
+    {
+      "start": 2124.64,
+      "duration": 4.72,
+      "text": "that we'd get them all delivered for"
+    },
+    {
+      "start": 2126.24,
+      "duration": 5.04,
+      "text": "alpha. We're behind on alpha. That being"
+    },
+    {
+      "start": 2129.36,
+      "duration": 3.84,
+      "text": "said, everything is accelerating and so"
+    },
+    {
+      "start": 2131.28,
+      "duration": 3.44,
+      "text": "I don't know, but the target is to get"
+    },
+    {
+      "start": 2133.2,
+      "duration": 3.2,
+      "text": "all these things in your hands as"
+    },
+    {
+      "start": 2134.72,
+      "duration": 4.56,
+      "text": "quickly as possible and we're doing our"
+    },
+    {
+      "start": 2136.4,
+      "duration": 6.08,
+      "text": "best to do that. It's a lot here, guys."
+    },
+    {
+      "start": 2139.28,
+      "duration": 6.08,
+      "text": "So, I I I I want you to understand that"
+    },
+    {
+      "start": 2142.48,
+      "duration": 5.36,
+      "text": "uh we work really really hard uh around"
+    },
+    {
+      "start": 2145.36,
+      "duration": 4.4,
+      "text": "the clock and it's actually gotten a lot"
+    },
+    {
+      "start": 2147.84,
+      "duration": 3.84,
+      "text": "harder the more we're accomplishing, but"
+    },
+    {
+      "start": 2149.76,
+      "duration": 4.24,
+      "text": "the reality is we're accomplishing a lot"
+    },
+    {
+      "start": 2151.68,
+      "duration": 3.68,
+      "text": "more. Um and so I hope I hope we can get"
+    },
+    {
+      "start": 2154.0,
+      "duration": 4.24,
+      "text": "those in your hands as quickly as"
+    },
+    {
+      "start": 2155.36,
+      "duration": 5.04,
+      "text": "possible. I mean this this is the thing"
+    },
+    {
+      "start": 2158.24,
+      "duration": 3.84,
+      "text": "is with a development cycle is you know"
+    },
+    {
+      "start": 2160.4,
+      "duration": 5.52,
+      "text": "you set out and do things in a certain"
+    },
+    {
+      "start": 2162.08,
+      "duration": 6.32,
+      "text": "order and then other things other things"
+    },
+    {
+      "start": 2165.92,
+      "duration": 5.28,
+      "text": "come along that that you know either"
+    },
+    {
+      "start": 2168.4,
+      "duration": 4.72,
+      "text": "take priority or you get a bottleneck."
+    },
+    {
+      "start": 2171.2,
+      "duration": 4.0,
+      "text": "So, so you have to switch things around"
+    },
+    {
+      "start": 2173.12,
+      "duration": 5.36,
+      "text": "that that that's how agile and that's"
+    },
+    {
+      "start": 2175.2,
+      "duration": 5.76,
+      "text": "and that's kind of you know we this this"
+    },
+    {
+      "start": 2178.48,
+      "duration": 4.72,
+      "text": "is why you get things that we say are"
+    },
+    {
+      "start": 2180.96,
+      "duration": 4.48,
+      "text": "going to going to come 6 months ago and"
+    },
+    {
+      "start": 2183.2,
+      "duration": 4.64,
+      "text": "you don't see them yet in the meantime"
+    },
+    {
+      "start": 2185.44,
+      "duration": 5.12,
+      "text": "you get other stuff. We we are not"
+    },
+    {
+      "start": 2187.84,
+      "duration": 5.6,
+      "text": "stopping development whatsoever. You"
+    },
+    {
+      "start": 2190.56,
+      "duration": 6.08,
+      "text": "know this is this is the process. This"
+    },
+    {
+      "start": 2193.44,
+      "duration": 5.44,
+      "text": "you are seeing it um played out. You've"
+    },
+    {
+      "start": 2196.64,
+      "duration": 5.28,
+      "text": "seen it for the last 5 years. We have"
+    },
+    {
+      "start": 2198.88,
+      "duration": 4.56,
+      "text": "constantly delivered build after build,"
+    },
+    {
+      "start": 2201.92,
+      "duration": 3.28,
+      "text": "you know. So, I think it's a bit unfair"
+    },
+    {
+      "start": 2203.44,
+      "duration": 4.56,
+      "text": "when people say we don't deliver on"
+    },
+    {
+      "start": 2205.2,
+      "duration": 4.4,
+      "text": "time. We deliver everything on time,"
+    },
+    {
+      "start": 2208.0,
+      "duration": 2.24,
+      "text": "just not necessarily in the order that"
+    },
+    {
+      "start": 2209.6,
+      "duration": 4.16,
+      "text": "we say."
+    },
+    {
+      "start": 2210.24,
+      "duration": 6.32,
+      "text": ">> Yep. And that is Thank you, Rob. That"
+    },
+    {
+      "start": 2213.76,
+      "duration": 4.8,
+      "text": "that is our final uh question. We had we"
+    },
+    {
+      "start": 2216.56,
+      "duration": 3.92,
+      "text": "had had one more for consideration, but"
+    },
+    {
+      "start": 2218.56,
+      "duration": 3.6,
+      "text": "I'm running short on time as well. The"
+    },
+    {
+      "start": 2220.48,
+      "duration": 3.28,
+      "text": "final thing I'll say is one thing I"
+    },
+    {
+      "start": 2222.16,
+      "duration": 4.56,
+      "text": "forgot and I thought about it during the"
+    },
+    {
+      "start": 2223.76,
+      "duration": 4.56,
+      "text": "episode. The land marketplace uh that is"
+    },
+    {
+      "start": 2226.72,
+      "duration": 3.2,
+      "text": "coming along. It's moved to staging. I"
+    },
+    {
+      "start": 2228.32,
+      "duration": 3.12,
+      "text": "know we said we were very, very close."
+    },
+    {
+      "start": 2229.92,
+      "duration": 2.96,
+      "text": "We are. We did run into a few"
+    },
+    {
+      "start": 2231.44,
+      "duration": 3.44,
+      "text": "complications in the actual"
+    },
+    {
+      "start": 2232.88,
+      "duration": 3.68,
+      "text": "implementation uh and making sure that"
+    },
+    {
+      "start": 2234.88,
+      "duration": 3.04,
+      "text": "we do this really well, but that's how"
+    },
+    {
+      "start": 2236.56,
+      "duration": 3.2,
+      "text": "things go. When you get to the finish"
+    },
+    {
+      "start": 2237.92,
+      "duration": 4.16,
+      "text": "line, some of those last minute details"
+    },
+    {
+      "start": 2239.76,
+      "duration": 4.72,
+      "text": "can uh slow things down unfortunately,"
+    },
+    {
+      "start": 2242.08,
+      "duration": 4.24,
+      "text": "but it has moved to staging and it is"
+    },
+    {
+      "start": 2244.48,
+      "duration": 4.96,
+      "text": "progressing and so we're very very"
+    },
+    {
+      "start": 2246.32,
+      "duration": 4.8,
+      "text": "close. And uh working with Andals anvil"
+    },
+    {
+      "start": 2249.44,
+      "duration": 3.36,
+      "text": "has been a pleasure. Those guys came"
+    },
+    {
+      "start": 2251.12,
+      "duration": 4.24,
+      "text": "through on some last minute issues we"
+    },
+    {
+      "start": 2252.8,
+      "duration": 4.16,
+      "text": "had that they had to resolve uh and they"
+    },
+    {
+      "start": 2255.36,
+      "duration": 3.12,
+      "text": "were quick about doing that. And now"
+    },
+    {
+      "start": 2256.96,
+      "duration": 3.68,
+      "text": "we're buttoning things up and getting it"
+    },
+    {
+      "start": 2258.48,
+      "duration": 5.6,
+      "text": "into the works. So, thank you all for"
+    },
+    {
+      "start": 2260.64,
+      "duration": 5.84,
+      "text": "watching episode 160. Happy Halloween."
+    },
+    {
+      "start": 2264.08,
+      "duration": 4.87,
+      "text": "Uh, be looking for free flight number"
+    },
+    {
+      "start": 2266.48,
+      "duration": 3.12,
+      "text": "three. I'm not putting mine back on,"
+    },
+    {
+      "start": 2268.95,
+      "duration": 1.85,
+      "text": "[snorts]"
+    },
+    {
+      "start": 2269.6,
+      "duration": 2.4,
+      "text": "[laughter] but thank you all for"
+    },
+    {
+      "start": 2270.8,
+      "duration": 4.2,
+      "text": "watching. We'll see you in the next"
+    },
+    {
+      "start": 2272.0,
+      "duration": 3.0,
+      "text": "episode."
+    },
+    {
+      "start": 2276.72,
+      "duration": 4.96,
+      "text": "Welcome."
+    },
+    {
+      "start": 2279.04,
+      "duration": 4.56,
+      "text": "You're here early. That's good. Means"
+    },
+    {
+      "start": 2281.68,
+      "duration": 4.92,
+      "text": "there's [music] something special about"
+    },
+    {
+      "start": 2283.6,
+      "duration": 3.0,
+      "text": "you."
+    },
+    {
+      "start": 2287.68,
+      "duration": 5.52,
+      "text": "We got a whole lot going wrong around"
+    },
+    {
+      "start": 2290.32,
+      "duration": 4.64,
+      "text": "here. [music] You better train up. We"
+    },
+    {
+      "start": 2293.2,
+      "duration": 3.44,
+      "text": "got terrorists knocking on our"
+    },
+    {
+      "start": 2294.96,
+      "duration": 3.68,
+      "text": "infrastructure"
+    },
+    {
+      "start": 2296.64,
+      "duration": 5.28,
+      "text": "and some mighty [music] strange"
+    },
+    {
+      "start": 2298.64,
+      "duration": 7.76,
+      "text": "occurrences going on."
+    },
+    {
+      "start": 2301.92,
+      "duration": 7.76,
+      "text": "I'm afraid our world is at risk."
+    },
+    {
+      "start": 2306.4,
+      "duration": 6.64,
+      "text": "Without people like you, cornucopus"
+    },
+    {
+      "start": 2309.68,
+      "duration": 6.96,
+      "text": "might fall into darkness."
+    },
+    {
+      "start": 2313.04,
+      "duration": 5.44,
+      "text": "Better get smart. Get trained and be"
+    },
+    {
+      "start": 2316.64,
+      "duration": 6.16,
+      "text": "ready."
+    },
+    {
+      "start": 2318.48,
+      "duration": 5.84,
+      "text": "A storm is coming. I can feel it."
+    },
+    {
+      "start": 2322.8,
+      "duration": 6.24,
+      "text": "I'd like to say we've been through"
+    },
+    {
+      "start": 2324.32,
+      "duration": 7.52,
+      "text": "worse, but this time I'm not so sure."
+    },
+    {
+      "start": 2329.04,
+      "duration": 6.72,
+      "text": "Good luck out there. You're going to"
+    },
+    {
+      "start": 2331.84,
+      "duration": 5.68,
+      "text": "need every bit you can get."
+    },
+    {
+      "start": 2335.76,
+      "duration": 4.4,
+      "text": ">> [music]"
+    },
+    {
+      "start": 2337.52,
+      "duration": 5.04,
+      "text": ">> Children of the multiverse,"
+    },
+    {
+      "start": 2340.16,
+      "duration": 6.32,
+      "text": "you have crossed the veil through the"
+    },
+    {
+      "start": 2342.56,
+      "duration": 6.64,
+      "text": "gate to stand with us in cornucopia."
+    },
+    {
+      "start": 2346.48,
+      "duration": 6.4,
+      "text": "You have my appreciation."
+    },
+    {
+      "start": 2349.2,
+      "duration": 6.48,
+      "text": "I am but a messenger, a guide [music]"
+    },
+    {
+      "start": 2352.88,
+      "duration": 5.28,
+      "text": "sent to show you the path that must be"
+    },
+    {
+      "start": 2355.68,
+      "duration": 6.24,
+      "text": "walked."
+    },
+    {
+      "start": 2358.16,
+      "duration": 6.64,
+      "text": "But know this, the rifts are only the"
+    },
+    {
+      "start": 2361.92,
+      "duration": 7.72,
+      "text": "beginning. What you have seen is but a"
+    },
+    {
+      "start": 2364.8,
+      "duration": 4.84,
+      "text": "shadow of what is yet to come."
+    },
+    {
+      "start": 2370.4,
+      "duration": 5.92,
+      "text": "The path ahead [music] is dark and the"
+    },
+    {
+      "start": 2373.04,
+      "duration": 7.28,
+      "text": "cost will be great. For the dangers you"
+    },
+    {
+      "start": 2376.32,
+      "duration": 7.44,
+      "text": "face are not born of this world alone"
+    },
+    {
+      "start": 2380.32,
+      "duration": 6.56,
+      "text": "but from beyond it."
+    },
+    {
+      "start": 2383.76,
+      "duration": 6.24,
+      "text": "Some of [music] you will fight the tide."
+    },
+    {
+      "start": 2386.88,
+      "duration": 5.68,
+      "text": "Others will build and restore. Some will"
+    },
+    {
+      "start": 2390.0,
+      "duration": 6.48,
+      "text": "weave knowledge while others will"
+    },
+    {
+      "start": 2392.56,
+      "duration": 8.08,
+      "text": "sustain through trade and creation."
+    },
+    {
+      "start": 2396.48,
+      "duration": 7.28,
+      "text": "Strength, will, and unity, these are the"
+    },
+    {
+      "start": 2400.64,
+      "duration": 4.96,
+      "text": "bonds that will endure when all else is"
+    },
+    {
+      "start": 2403.76,
+      "duration": 4.56,
+      "text": "broken."
+    },
+    {
+      "start": 2405.6,
+      "duration": 6.96,
+      "text": "Rise now. Stand against [music] the"
+    },
+    {
+      "start": 2408.32,
+      "duration": 7.12,
+      "text": "tide. For infinity does not end. It"
+    },
+    {
+      "start": 2412.56,
+      "duration": 5.73,
+      "text": "begins. Infinity"
+    },
+    {
+      "start": 2415.44,
+      "duration": 4.87,
+      "text": "is rising."
+    },
+    {
+      "start": 2418.29,
+      "duration": 2.02,
+      "text": ">> [music]"
+    },
+    {
+      "start": 2424.18,
+      "duration": 2.02,
+      "text": "[music]"
+    },
+    {
+      "start": 2430.24,
+      "duration": 2.51,
+      "text": ">> Heat [music]"
+    },
+    {
+      "start": 2433.28,
+      "duration": 3.0,
+      "text": "up here."
+    },
+    {
+      "start": 2436.63,
+      "duration": 2.02,
+      "text": "[music]"
+    },
+    {
+      "start": 2443.18,
+      "duration": 2.02,
+      "text": ">> [music]"
+    }
+  ],
+  "transcript_text": "[music] [music] Heat up here. [music] >> [music] [music] [music] >> Hey everybody, welcome to Cafe Rise. This is Josh Jones and Rob Greg. This is episode 160, a Halloween episode. Rob, who are you? >> Well, normally I'd be covered in makeup, but my makeup artist is having the day off. So, I am I'm the original Robert from England. Robert Freddy Krueger. >> Yeah. Very nice. Very nice. And I am a Bob Rossellantern. Can you hear me? Okay. because it's really loud in my mask, but I'm not sure what it is for you. >> Okay. Well, we've got an exciting episode ahead. We're gonna be covering Freeflight uh Freeflight 2, which is our second release in the last month. We're also going to be covering Freeflight 3. We're going to be covering Acceleration and the Black Friday release. So, two more releases coming in the next month. Uh we'll cover the topics on that. a few questions and answers and a leak as always. So, thank you very much for tuning in and let's get started. So, Rob, before we go too much further, I almost forgot something that's very traditional that we do every episode. Okay. So, Rob, what are you drinking today, sir? >> Um, the standard today. Look, both >> both of us drinking the unhealthy beverages today. I've got a diet Dr. Pepper. Um, but cheers. Honestly, it would have been a beer again, but I didn't want to do it two weeks in a row. But [snorts] the reality is I'm pretty excited once again about what we have going on. I had no idea that we're going to have two releases ideally before um Thanksgiving, but uh we do have a Freeflight 3 version coming out in the next couple of days or right around I just heard this yesterday from David that apparently some hot bugs that he had been hot fixes he was working on for the Freeflight 2 EP uh that that came out just recently. Um he he ended up adding enough more stuff. >> So we're skipping another hot fix for a full release. >> Yes, correct. >> Yeah. >> Because apparently there's some some good stuff coming uh [snorts] that um is getting added into uh the hot fix. So it's good enough for him to upgrade it to a free flight 3. Um he said I asked him would that be ready by Friday by the time of this release uh the Cafe Rise release. He said, \"Probably not, but uh very soon.\" Um, so I guess we'll see. And I was like, \"Well, how is that going to mix in with our plans to get something big released on Black Friday?\" And he said, \"It's it's all going in parallel. We've got a lot going.\" And uh so that that's a lot of that is our topic for today, but let's talk through Freeflight 2 cuz there was quite a bit in Freeflight 2. Um I I uh you know, so do you want to talk anything on the quests or anything like that? uh or or what are you thinking? >> Um well, I mean there was there was some initial bugs from from the previous freeflight where people couldn't do individual quests. Um but but those were fixed. So now we have racing quests in there. So you can go to go to to the next to the terminals in the pavilion next to the racing um terminals. There's a civics work terminal. I I knew one um that now works. So, you can go in there and do all kinds of different racing quests, and some of those are are progression quests. Um, what else did we unlock? We we created new quests in Solace one and Solace 2, so you can go into into the outdoor shooting ranges, and there's there's a couple of new quests in there. Those those are pretty good. >> Um, very good to test the different weapons out as well. Um, that's as that's as far as those. There is some new quests in the new build, but we'll talk about that later. >> Yep. Yep. We've also got um graphics and performance improvements. I think that was some of the most significant [snorts] >> that during the hot fix uh bugs that we were working on from to the clouds part one, we discovered two very longstanding bugs that massively impacted performance. Uh and so those have been resolved. >> Yep. >> Oh, so that's one big thing. the enhanced volutric clouds. So, they he he added some settings. Uh we've got new settings for those uh and improvements. Uh but it's a setting that needs to be uh used uh in your in your main menu under settings to ensure based upon the level of, you know, card and system specs you have uh to to experience the clouds in a better way or reduce the impact that the clouds have to your um you know, on your performance. if you've got uh any any sort of issues. Um we've also got Hoverport obviously which was pretty massive. That was the surprise that I think you and I didn't even know he was Well, you might have known sooner than I did. >> Well, I mean, yeah, he he he messaged me at half 5 in the morning and said, \"If Are you busy?\" Well, >> why don't you tell the story on that? Yeah, tell the story. It's good. >> Yeah. I mean, I'm just Yeah, I am an insomniac. I usually wake up around about somewhere between 3 and 5. So, so I was up at 4. I don't I I just, you know, [snorts] death doom scroll on on on my phone, play Clash Royale and a bit of chess and and then David messaged me about half five says, \"Are you busy?\" Like the the idea was we we were going to try and reuse some of the code that was that was done for Aerot Trails and get and get the hover bikes um course that he he was working on and and just put a timer against that. But I mean, these things in my head, I thought, \"Yeah, that's going to take about an hour.\" But as it turned out, it's not exactly the same cuz with error trails, you can start it anywhere and finish anywhere. So, it took a good 8 hours of coding. But, um, we got there in the end. And, um, yeah, we now have we now have new, um, a new course in there, which I've expanded for the for the following release, but but that's that's was in that release. >> Very nice. Very nice. I wonder if your expansion is going to make it into Freeflight 3 or not. >> Yes, it will do. Yeah, it's it's in this next release. Okay. Very good. Very good. Um there, you know, I'm just going to let free I'm just going to say with Freeflight 3, what we have coming, uh it's just an expansion on that's that's related to our current um Freeflight releases. So, uh we're just progressing. Each area, each each kind of part of this game has a road map to it, a micro road map. and we just want to continue to grow these things. Um, but the hava hover sport is uh a big part of uh the release part two that you guys worked on that was a surprise to all of us uh which was an exciting one. Uh and there's some some cool new stuff coming around that. So, a [snorts] lot of fun. You talked about the quests. >> Well, we updated those hover bikes as well. We made them quicker to to get on and off cuz I noticed that um a few people had been using the hover bikes to to do the the new burger barn quests that that were that were in Solace Hub. So they were saying, you know, it be nicer if if it was it was faster to get on and off. So So that was updated. So So yeah, there's new burger barn quests in Ko City and in in the Solace Hub that you can that you can actually do on the bikes. >> Okay. Yeah. And if if you ever want a full read through on our release updates for any of you that are new, we we publish those uh in our Discord. Be sure to follow us, jump into our Discord community, uh talk about all the releases uh with more thorough release notes. Uh and we just, you know, the reason I I wanted to talk about acceleration a little bit in this episode is just because you see so much happening in gaming with AI right now and what's going on. Um, and we're benefiting from that. In fact, um, I worked on an article recently, and it's not published yet, but uh, on who's going to benefit the most, uh, from from gaming and AI. And [clears throat] my take on this is that small studios like ourselves will benefit the most. Um, of course, I'm biased, so I, you know, I did some research on it and tried to invalidate my take. Uh, and I've looked at all sides. Uh, and it it doesn't really break. Um, and here's here's why. So, I wanted to argue play devil's advocate and argue against myself, but [snorts] you look at big studios. Will they benefit the most? Well, they have the most resource. They have a huge team. Uh, they can put a lot of people on AI and and benefit from it in that way. But the reality is the big studios are strapped funding wise like that like the where they're with budgeting. They're all making big cuts right now. So, they're reducing the size of their team. Meanwhile, they're always the slowest to make decisions because they've got multiple departments uh cross department dependencies and they're just slow to make decisions. You've got small studios who have traction and who have been building and who have systems in place. Now, if you like the acceleration that I'm talking about for us is right here. What what I'm saying for us is we have most of our core systems fundamentally put together. We've got our team, our processes, and we're executing incredibly well. Right? So, we've got this core foundation of systems, processes, team that's all functioning well together. Uh release after release after release after release. I don't even know how many we've done this year, but our our cadence has accelerated. We are just adding and adding and adding to everything. And this is prior to really massively using AI. Now, we've also got AI that's helping with our development for sure, 100% helps us to accelerate in a variety of ways. Um, but it also causes bottlenecks, too. And we're getting really good at resolving bottlenecks because the more you develop, the more you execute, the more debugging and getting things across the finish line you have to do. So, you have to have good processes for that. Well, the thing is is as many releases as we've been doing and as much debugging as we've been doing with the QA team, we've improved all of those processes. So, our processes are such that the release cadence is improving things, AI is improving things, core systems are in place, and also the final major point that I'll make here is that uh David has been really good at building tools that make us more efficient. Whether he's using AI for those tools or not, it doesn't matter. We're building tools. We've been building tools well before AI that helped us to be more efficient at building out Solace, for example. So, we we build these tools in engine that help us to be more efficient. All of these things together make us incredibly fast. Um, and so the other part of an AI advantage for the small studio is that [snorts] we don't we don't have a uh cross department dependency approval bottleneck. we're pretty quick to make decisions and it's kind of just go go go. Sometimes we're probably too quick to make decisions. Uh because like you may know about a good amount of things that I don't know about. I might know things that you don't know about, but we're all really going quickly. And I think it's going to position us very well for having a super strong alpha release. And I'm just curious your take on all of this acceleration. Uh well I mean some some of these larger studios they're they're being bought out. I mean they have been bought out since co by companies like you know Microsoft and and all the others. So >> them reducing slower by the way. >> Well them reducing their staff levels not necessarily up to those studios is what I'm saying. You know the the big corporates are coming in saying nothing's changing and then they're immediately telling them to to lose half of the staff. So so you know that that's an issue. the um with with AI. Yeah. So, so we have you know what we're always looking at performance and at the start of this week I was looking at uh doing some um auditing of Kid Toledo cuz as soon as you go into Cleo the there's for for some people there's a there's a big drop off of performance and we've obviously done a lot of work in in changing that but there's always there's always kind of little things that you can that you can look at. So, so I've just been kind of kind of wetting my feet with these. And I've been looking at some of the the the [snorts] elevators and some of the sky cars. Um, and I've been using Claude with this. It's not it's not full MCP Claude. So, so we will benefit that when when we get when we upgrade to to 5.8, which I think we are probably going to do before the end of the year. So, so that'll be useful. So, so it's kind it's kind of all manual. So, I've been looking at some of the some of the blueprints and and one of the blueprints that has the original sky cars that that before jetpacks we all used to climb on and walk across. You know, those probably took a few months of development and it was quite hard work with the the multiplayer and you can see in the code the there's comments in it saying this is a workaround for this and this is a workaround for that and you know that that that's normal. But so so I I rewrote that um wi within within a day use using Claude back in two and in the future when Claude's in our engine it will probably do that itself but I've managed to to refactor those sky cars that used to have 1,400 nodes. So that's 1,400 bits of code cuz it's it's visual code down to 110. So So not only is that cleaner but it performs better. It uses a different technique which means less data is being sent over the network and all this has to be verified. So you know this is not in this is not in the current release. This is for future stuff >> but it's going to be absolutely incredible. Not not just for small teams but for large teams as well you know. So, so something that you know, not [snorts] only can Claude rewrite this within within a day with me helping it, use use this technique instead of I'll analyze how you're currently doing it. You know, it will probably do that kind of stuff. So, so that so that that's a massive benefit. Um but also you know that that's you know it's powerful but but the the same time there's all other areas that you know Claude Claude has and and any AI will will does have and will have massive impacts. That's a really positive way where you can let it look at your code and refactor it. Um >> oh 100% it's it's going to you know people people say gaming is dead. No, it's actually going to significantly improve gaming massively. And and what I think is it's going to create a lot more innovation cuz you're going to have small studios that are more willing to experiment cuz the time to develop things gets faster and so you can start to iterate on ideas more quickly. Uh which is very powerful. You're going to have solo devs that are jumping out and you know the funniest thing I see is like I just oneshotted a game and blah blah blah. Well, okay, sure. Maybe it's one level of a game and maybe it's not multiplayer and maybe you know like there's so much more to it than that. But I'm not going to discount the fact that solo devs that are very experienced that might have left a a great studio and they're expert in Unreal Engine or, you know, whatever that now have the power of AI, they're going to make some cool stuff. But then the question with those guys is, can they build a business? Can they build a team? Do they know how to build processes that scale? Do they know how to deal with the the legal part? Do they know how to deal with human resources? Do they know how to track revenue and all the other things involved with building a studio? Do they know how to do those things? And my point is that solo dubs, yes, will massively accelerate and they'll produce new games and we'll probably see some cool stuff out there and a lot of them are going to fail as well. Like, so we'll just see who can build, but um yeah, so it's going to empower them, too. And you'll also see studios starting to hire solo devs uh that are out there. They're they're going to go, \"Hey, we love what you're doing.\" You'll start to see acquisitions occurring in a different way. All sorts of stuff. We don't know what's going to happen, but I know what what I feel strongly about is that gaming will significantly improve and small studios, the main point for this topic is that we benefit the most. People that are where we're at right now will benefit the most. >> Well, I I think you've got you the the landscape's definitely changing. What what we've seen with this latest release of of of like Steamfest is you get what they call um new game slop. So, so people that are writing one-off games and you're getting So, you so you you're going to get a lot of that and I hate the word slop because people are putting slop in front of everything. AI doesn't >> like verse was overused. >> What AI does is is is actually helps to create cleaner code and and it does faster, but if if it's in the hands of an experienced developer, you get some really good stuff. So, so for us, yeah, it's absolutely going to accelerate some of the stuff that we're building in the future, but you know, if if if a small team can can produce, let's say, the quality of of a AAA studio, which I'm sure that they can do in the future, what can a AAA studio that's got a thousand developers do? you know, they will take gaming to a whole new level because because we can compete with where they are now, but they're going to go ahead. You you look at um say GTA 6 that that's eight years slower in their ability to accelerate. They move >> they will streamline but but the tools will get faster and faster. I don't I don't think you you will you you will still have AAA studios. Those AAA studios now will not take eight years to create GTA 7. GTA 7 will probably come out in a couple of years. And and to be fair, Rockstar have already said that because they've upgraded their their whole tool base. I don't think there'll be another game that that will ever take 8 years to to come out again. And and not now. AI will will accelerate, but it will accelerate more the more people you've got. >> We might not have studios with with 5,000 developers anymore. that. But um the whole point is that a small studio can accelerate the most. A large studio, yeah, they they've got multiple departments and more people using AI, of course, but they've still got the bureaucracy of decision-m and all sorts of stuff that's going to prevent them from massively accelerating as much as they could. They also have huge cost structure. So many of them are cutting down significantly. And in in that process, there's an opportunity. So like I don't know. I um >> yeah, but you're going to have one developer now probably doing the job of five developers. >> So, studios can cut down, but if you've still got a studio with 250 people, you you're going to produce a lot more than than a studio with with a handful. >> Yeah, absolutely. But then they still have the decision-m processes. They still have the long cycles of cross. >> The tool the tools are changing, but fundamentally you will still need a lot of the same business rules. If if you if you're good at prompting but you have no idea how to run a business, the same rules that apply now will still apply. >> Absolutely agree. So individuals within the business will accelerate significantly their output, but the size of the business still determines when that output gets executed and how it comes through the pipeline. And so often that's the problem with the big business is cross department dependencies. uh it slows things down, slows decision-m on what we're going to work on down. You might have devs that can go 5x the pace that still haven't even been fed their next tasks because the company can't get out of its own way >> to plan ahead enough. They're like, \"No, hold on. You know, we can't plan fast enough for what you guys are executing.\" So, there's there's all sorts of issues that can occur there. Um, but anyway, the the main point really is that small studios that can make decisions quickly that have incredibly talented devs are significantly able to accelerate and do things way better than they were able to before. And when we have the foundation that we have with our core systems in place and efficient tools that make us more efficient, you're you're starting to see the results. You guys are starting to see the results of what this is doing for us, all of us. Um, so, uh, our release cadence has improved. Uh, the amount of things in each new release is improving. We can't even do a hot fix anymore because somebody throws in more stuff into the hot fix and it becomes an actual release upgrade. >> And I think I think what for myself, I have I I've now started working with Blender and and I'm starting making some of these models myself, but I I couldn't do that in in the old world. it'll take me a long time to to learn about that. Now I'm finding I have m I've now have multiple PCs. So So it's one person actually with their own little mini mini studio department themselves. >> Okay. Well, that just brings us to the final uh segment of topics before our questions before our Q&A and our leak. Um we have a Black Friday release being planned. Um, we'll have new assets for Black Friday, but we'll also have a massive release. We really want that to be on Black Friday. We're going to do our best to get there, but we have so much uh in in the works for that. So, number one, for the Black Friday release, we've got the AI companions. They should all be available in that release. That's what we're targeting. Um, I'm not going to say because we're setting a hard date here. I'm not going to say that every one of these things are going to be in the release. That's the caveat. I am going to say that we're going to do our best uh with all of these and that's what we're we're trying to do. So, since we're really trying to set a hard date, some of these could drop off. Uh but they look pretty good. A lot of them are already in production. So, uh we'll see. AI companions. We also have the economy that we talked about. Uh David's built a modeling system that's working with a fake world right now that we're testing out the economy and we're going to be moving that into uh QA here pretty soon and getting it into our world. Uh and so that should likely make the release. Um the uh below surface mining is another target that we've needed to do for years. We've had that uh in the works. So um uh really hoping to see that in the next release. farming. Rob, um, can you, um, help me out with that one? Uh, are are we looking pretty good there? I think we've got a good amount in the works. >> What date is that? >> Uh, that's, uh, about 30 days from now. Uh, 26th or something like that. >> And I mean, it's it's it's going to be close. What what what's happening with farming is it's now expanded. So, so farming is now really an art um backlog rather than a programming one. >> So, each of the the meshes, we're working on corn to be the very first one. So, there there's a leak for you. Each of the meshes now, we're going to need 16 meshes, different looks and feel for each of the each of the farming items. So, 16 is is quite a lot of artwork to do um >> for each item >> each item. So like corn will will have a seed, then it will have sprouting, but then it will also have a wilting version of that. Then it'll have a young a young adult version, then it'll have a wilting version of that if you don't feed it. Then it'll have a dead version of that. Then it'll have an adult and a wilting. So So altogether there's 16 different meshes for each of them. The the plan is to create farming so you can do this within your apartment as well as on your land. So, so really it's a case of how many we can get done for if we can get the initial one out that the aim will be to to start off with corn. Then it'll be do a number of other herbs, maybe six or seven herbs that you can use on your apartment and if land's ready on your land as well and then we'll just keep expanding on that. We've got 147 planned crops at the moment. So, you can imagine the artwork that that now we've just upped this from eight meshes to to 16 that we're going to need. So, so it's it's a it's a lot of work, but you know, it's not all out on one release. We we're we're going to release these over over the seasons cuz you don't want to be flooded with all these. So, we've got a great future pipeline is what I'm saying, of different crops and different things to to to release over over the well forever. >> Yeah. So, but but for perspective, you said 147 different crops we've got listed um that would have 16 meshes for each to be able to effectively have a a decent farming loop and those will not all be released in this one. >> No, cuz some of them will be exclusive to zones. >> So, if we're ready with farming for Black Friday, uh you might see a release on that. Um but that's a that's a bigger one. That's a well economy is huge. AI companions, AI companions is huge, below surface mining is huge. So, all of these are big. NPC low levels is another thing that we want to bring into the game uh to put some more life into the game, right? So, we're really starting to bring the game and the world to life. You don't feel so alone in the world. Um, so NPC, low-level NPCs, you know, that you don't engage with are are going to be in this next build. And there's a lot of work that's involved in that. Making it performant, making each look unique, uh, and, uh, bringing life to the world in a in a cool new way. So, that's that's coming. Uh, and that has a lot more that that will progress on that road map with NPCs to mid-level NPCs and then highle NPCs. We'll we'll talk about that at another date. Um, the blue track is coming. A lot of the work for that is already done, so I think we're pretty close there. That's not really hard to execute on. Um, and then building on land. This is one that I probably shouldn't even announce, but it's in the works. We're in testing, but there is so much involved for this one to be able to affect and that's got a big art backlog as well, like you said, with farming. And so, that might be the issue there. Uh, we don't just want to launch building on land and then you can only do two things and then you're bored with it. Um, we'd like to get that to a moderate state. And so, that may not make the Black Friday build. Uh, if anything, I I would be questioning building on land and farming. Um, but those two are very high priority for us. They're already in the works, and so that's why we say they might make it. Um, okay. That brings us to our leak uh segment. Rob, you want to tell us, you want to walk through the leak? Yeah, people have been asking this a number of times that there is currently people are doing the the Halloween quest and and that's been received quite well. That's just had an update so it's actually a lot simpler and and there's an extra quest been added in the next one. Um so the what the leak is is when when you currently are rewarded with with that that currently goes into your inventory and and you can use it. And I know a lot of people are kind of worried that in the future when we wipe everything because we've always said we're going to wipe it won't on steam that they're going to lose that that hat that that bunny hat um headgear and um well what we're going to do we we are turning that into into a POA. So this this is going to be optional when you complete the final quest. So part three of of the of the shadows quest when you when you do the Halloween one we will know that that's saved in the back end we are in the back end we we've al already going to create that into a roll and then in the future you'll be able to go on our website and you'll be able to to mint that POA and it will remain your property for as long as you want and you can sell it on secondary but but that is the leak that is the very first one the very first POA that you can actually earn with with your time in game. You'll get a roll. You'll be able to mint it optionally if you want cuz we don't want to break Steam's um terms and conditions. So, this is completely optional. >> So, if you earn it in game, you can play with it in game like you are doing now and you can also then go go and mint it for for for future sakes. So, so I think that's pretty >> well said. Very exciting. And so, what the leak there is is that the decision is made. The tech is not quite ready, but it's a small lift because we've already got the OG rolls for minting NF uh in playerowned assets. God, still working on my vocab here. Um, we've got the OG's, you know, roles in that system ready. There's just a small amount of uh tech work to connect the quest completion with the list of those that would go into that role, I think, is basically what you were telling me. So, not so far off. I think we can get that into the pipeline between now and Christmas. So, we're not super far off from that. Um, but that opens the door for a lot of other cool quest completions and and all stuff. >> We want to do the same. >> We want to do the same for for for the for the the Christmas or the holiday season. We we want to create another POA for that. And um in in this current in in the next version in in version three like what I I was saying is is coming there there are some new quests in in there as well. So so there's going to be a quest now for um error trail. So you'll be able to not only do a leaderboard but the quest will challenge you. Um and on completion of of those you will actually earn some in-game trophies. So, so, so they're not PAS, but they're in-game trophies, and you can obviously trade those for quite a lot. And also for the hover bikes, the hover bikes now have have a um a timed quests in there. So, so we get a lot more playable quests functionalities. And then in the future, probably starting the beginning of next year, we're going to have a lot more um advanced quests where we're going to re redo or rewrite quite a lot of the quest system um to be more law based and we're going to have um interactions with with NPCs. We're going to have cutscenes. we're going to have but more more challenging quest because at the moment we you know we we we're kind of >> this is kind of version one of the quest system. So version two is is going to be you know a lot more advanced >> very exciting. It's very exciting. Um as with everything we have levels and we progress and we improve. We get feedback and there's a a road map for each individual feature basically. Um, okay. So, that brings us to our Q&A uh section. And Rob, I guess you can ask me these questions. We didn't really go over it enough unless you wanted to answer one of them. >> No, sure. Can do. >> Okay. >> Um, so this looks like it's from from James. So, this is Crypto 007. Um, can we have a better way to ask questions? I feel like 99% of the questions don't even get looked at in the channel, especially the cafe rides don't happen anymore. all of the questions get looked at. Not all of them are answered. >> Yeah. You know what? Okay. So, that's a that's a great question and you're right and we apologize. There's no way we can answer the the reality is there's no way we can answer all the questions because every time we bring a new feature, there's a whole slew of questions around it and we don't fully necessarily have it entirely figured out because it's a new feature for us as well. And so, we try to plan as much as we can. But every new feature that we have and we have tons of new features, right? they open a whole new can of worms. And so if we were going to answer questions all day long, I still don't think we could get to the end of the questions because each new answer gives a new question. And so we would be in a vicious cycle of only communicating and not producing. So the reality is the more we produce feature- wise, the better the game gets, the more questions you guys are going to have, which makes it an impossible feat. And so I wanted to give that perspective. I think >> well we try to be as transparent as we can with you guys and we try to answer as much as we can but the more we produce the harder that becomes and so there's only so much we can do but go ahead sounds like you had something >> well I mean the format of this cafe rise it's supposed to be you know informal some of the questions that that get asked you know they're really important questions and if we were to to answer them off the cuff without preparing in this kind of like fun fun factor you know we we wouldn't do them justice and you know we'd held accountable for quite a lot of stuff cuz some of it comes with stuff that we've not planned or we are planning or we'll say something and then it won't get delivered and then we'll be held accountable cuz we've promised the time and stuff, you know. So, all the all the major stuff that that that we that we release, you know, that they always come with an announcement and those announcements have been thought about for weeks and weeks and been backed up with with stuff that we know is coming. So, so, so yeah, there is a lot of questions that we would like to answer, but there's there's always a lot. >> All righty. Next question. >> So, this is from Pub. He wants to know or she when when will we get to see the Bubble Jet Air Racer from the Founders Bundle? >> We're doing our best. The announcement with the Founders Bundle technically was that we'd get them all delivered for alpha. We're behind on alpha. That being said, everything is accelerating and so I don't know, but the target is to get all these things in your hands as quickly as possible and we're doing our best to do that. It's a lot here, guys. So, I I I I want you to understand that uh we work really really hard uh around the clock and it's actually gotten a lot harder the more we're accomplishing, but the reality is we're accomplishing a lot more. Um and so I hope I hope we can get those in your hands as quickly as possible. I mean this this is the thing is with a development cycle is you know you set out and do things in a certain order and then other things other things come along that that you know either take priority or you get a bottleneck. So, so you have to switch things around that that that's how agile and that's and that's kind of you know we this this is why you get things that we say are going to going to come 6 months ago and you don't see them yet in the meantime you get other stuff. We we are not stopping development whatsoever. You know this is this is the process. This you are seeing it um played out. You've seen it for the last 5 years. We have constantly delivered build after build, you know. So, I think it's a bit unfair when people say we don't deliver on time. We deliver everything on time, just not necessarily in the order that we say. >> Yep. And that is Thank you, Rob. That that is our final uh question. We had we had had one more for consideration, but I'm running short on time as well. The final thing I'll say is one thing I forgot and I thought about it during the episode. The land marketplace uh that is coming along. It's moved to staging. I know we said we were very, very close. We are. We did run into a few complications in the actual implementation uh and making sure that we do this really well, but that's how things go. When you get to the finish line, some of those last minute details can uh slow things down unfortunately, but it has moved to staging and it is progressing and so we're very very close. And uh working with Andals anvil has been a pleasure. Those guys came through on some last minute issues we had that they had to resolve uh and they were quick about doing that. And now we're buttoning things up and getting it into the works. So, thank you all for watching episode 160. Happy Halloween. Uh, be looking for free flight number three. I'm not putting mine back on, [snorts] [laughter] but thank you all for watching. We'll see you in the next episode. Welcome. You're here early. That's good. Means there's [music] something special about you. We got a whole lot going wrong around here. [music] You better train up. We got terrorists knocking on our infrastructure and some mighty [music] strange occurrences going on. I'm afraid our world is at risk. Without people like you, cornucopus might fall into darkness. Better get smart. Get trained and be ready. A storm is coming. I can feel it. I'd like to say we've been through worse, but this time I'm not so sure. Good luck out there. You're going to need every bit you can get. >> [music] >> Children of the multiverse, you have crossed the veil through the gate to stand with us in cornucopia. You have my appreciation. I am but a messenger, a guide [music] sent to show you the path that must be walked. But know this, the rifts are only the beginning. What you have seen is but a shadow of what is yet to come. The path ahead [music] is dark and the cost will be great. For the dangers you face are not born of this world alone but from beyond it. Some of [music] you will fight the tide. Others will build and restore. Some will weave knowledge while others will sustain through trade and creation. Strength, will, and unity, these are the bonds that will endure when all else is broken. Rise now. Stand against [music] the tide. For infinity does not end. It begins. Infinity is rising. >> [music] [music] >> Heat [music] up here. [music] >> [music]",
+  "has_transcript": true
+}
