@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-09T11:18:03.534016+00:00",
+  "generated_at_utc": "2026-11-09T19:47:12.011398+00:00",
   "notes": "Self-contained: computed directly from rise_ledger.db, no intermediate JSON files. Cardano (COPI+RISE merged) and Base RISE combined into one stake/reward total. Breakdown is by CHAIN only, never by token. Rewards combine staking/vault AND node rewards into one total per chain. avg_age_days is BASE-ONLY. LP staking kept separate. Migration totals from confirmed COPI-in/RISE-out event matching, both chains.",
   "summary": {
     "final_date": "2026-11-08",
@@ -27,21 +27,21 @@
     },
     "migrated_total": 788788686.027579,
     "migrated_last_7_days": 294974.650595,
-    "migrated_last_30_days": 4082965.737291,
+    "migrated_last_30_days": 4081760.617094,
     "migrated_wallets_last_7_days": 11,
     "migrated_wallets_last_30_days": 41,
-    "estimated_circulating_supply": 1029547675.67
+    "estimated_circulating_supply": 1029552658.47
   },
   "circulating_supply": {
-    "circulating": 1029547675.67,
-    "pct_of_supply": 0.343183,
+    "circulating": 1029552658.47,
+    "pct_of_supply": 0.343184,
     "total_supply": 3000000000,
     "by_chain": {
       "base": {
-        "wallets": 217906861.81,
+        "wallets": 217890863.81,
         "staked": 176165608.58,
-        "lp_share": 23108116.36,
-        "total": 417180586.75
+        "lp_share": 23083682.05,
+        "total": 417140154.44
       },
       "cardano": {
         "wallets": 442820083.8,
@@ -50,13 +50,13 @@
         "total": 609233212.82
       }
     },
-    "wallets": 660726945.6,
+    "wallets": 660710947.61,
     "staked": 313204232.3,
-    "lp_share": 52482621.67,
+    "lp_share": 52458187.35,
     "on_exchanges": 8437184.89,
     "unlabeled_cardano_scripts": 4.18,
-    "not_circulating": 1970452324.33,
-    "circulating_rcs": 1026413799.56,
+    "not_circulating": 1970447341.53,
+    "circulating_rcs": 1026373367.25,
     "circ_daily_day": "2026-11-08",
     "date": "2026-11-09",
     "history": [
@@ -162,7 +162,7 @@
       },
       {
         "date": "2026-11-09",
-        "circulating": 1029547675.67
+        "circulating": 1029552658.47
       }
     ]
   },
@@ -31288,13 +31288,13 @@
       "event_count": 2636,
       "migrated_all_time": 452547506.674652,
       "migrated_last_7_days": 201067.565628,
-      "migrated_last_30_days": 1564426.803723
+      "migrated_last_30_days": 1563221.683526
     },
     "combined": {
       "event_count": 3820,
       "migrated_all_time": 788788686.027579,
       "migrated_last_7_days": 294974.650595,
-      "migrated_last_30_days": 4082965.737291
+      "migrated_last_30_days": 4081760.617094
     }
   },
   "migration_wallets": {
