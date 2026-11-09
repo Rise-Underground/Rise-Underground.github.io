@@ -1216,6 +1216,63 @@
           }
         ]
       }
+    },
+    {
+      "timestamp": "2026-11-09T12:31:13.479124+00:00",
+      "standings": [
+        {
+          "player": "CryptoADA#5902",
+          "points": 20,
+          "boards": 2
+        },
+        {
+          "player": "Tony_The_Brick#8725",
+          "points": 20,
+          "boards": 2
+        },
+        {
+          "player": "Amortis#5052",
+          "points": 10,
+          "boards": 1
+        }
+      ],
+      "by_board": {
+        "Holocache": [
+          {
+            "player": "CryptoADA#5902",
+            "rank": 1,
+            "points": 10
+          }
+        ],
+        "Aero Trails \u2014 Calido": [
+          {
+            "player": "Tony_The_Brick#8725",
+            "rank": 1,
+            "points": 10
+          }
+        ],
+        "Aero Trails \u2014 Pavilion": [
+          {
+            "player": "Tony_The_Brick#8725",
+            "rank": 1,
+            "points": 10
+          }
+        ],
+        "Calido Yellow \u2014 GTi Javelin 2022": [
+          {
+            "player": "CryptoADA#5902",
+            "rank": 1,
+            "points": 10
+          }
+        ],
+        "Calido Yellow \u2014 Kazekura Shinobi-X": [
+          {
+            "player": "Amortis#5052",
+            "rank": 1,
+            "points": 10
+          }
+        ]
+      }
     }
   ],
   "movements": [
@@ -1236,6 +1293,24 @@
       "old_rank": 2,
       "new_rank": 3,
       "timestamp": "2026-11-09T11:46:26.623891+00:00"
+    },
+    {
+      "type": "aggregate_move",
+      "player": "Tony_The_Brick#8725",
+      "direction": "down",
+      "positions": 1,
+      "old_rank": 1,
+      "new_rank": 2,
+      "timestamp": "2026-11-09T12:31:13.479124+00:00"
+    },
+    {
+      "type": "aggregate_move",
+      "player": "CryptoADA#5902",
+      "direction": "up",
+      "positions": 1,
+      "old_rank": 2,
+      "new_rank": 1,
+      "timestamp": "2026-11-09T12:31:13.479124+00:00"
     }
   ]
 }
