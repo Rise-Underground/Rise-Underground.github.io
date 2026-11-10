@@ -13979,6 +13979,136 @@
           }
         ]
       }
+    },
+    {
+      "timestamp": "2026-11-10T23:16:34.619706+00:00",
+      "standings": [
+        {
+          "player": "LindaKnights#9411",
+          "points": 20,
+          "boards": 2
+        },
+        {
+          "player": "CryptoADA#5902",
+          "points": 19,
+          "boards": 2
+        },
+        {
+          "player": "Tony_The_Brick#8725",
+          "points": 19,
+          "boards": 2
+        },
+        {
+          "player": "Digital_HeRaKa#1041",
+          "points": 10,
+          "boards": 1
+        },
+        {
+          "player": "Amortis#5052",
+          "points": 10,
+          "boards": 1
+        },
+        {
+          "player": "Cartoon#4846",
+          "points": 10,
+          "boards": 1
+        },
+        {
+          "player": "Ant#3886",
+          "points": 10,
+          "boards": 1
+        },
+        {
+          "player": "Witcher#3465",
+          "points": 10,
+          "boards": 1
+        },
+        {
+          "player": "DB-Cooper#4047",
+          "points": 9,
+          "boards": 1
+        }
+      ],
+      "by_board": {
+        "Holocache": [
+          {
+            "player": "Digital_HeRaKa#1041",
+            "rank": 1,
+            "points": 10
+          },
+          {
+            "player": "CryptoADA#5902",
+            "rank": 2,
+            "points": 9
+          }
+        ],
+        "Aero Trails \u2014 Calido": [
+          {
+            "player": "Tony_The_Brick#8725",
+            "rank": 1,
+            "points": 10
+          }
+        ],
+        "Aero Trails \u2014 Pavilion": [
+          {
+            "player": "LindaKnights#9411",
+            "rank": 1,
+            "points": 10
+          },
+          {
+            "player": "Tony_The_Brick#8725",
+            "rank": 2,
+            "points": 9
+          }
+        ],
+        "Calido Yellow \u2014 GTi Javelin 2022": [
+          {
+            "player": "CryptoADA#5902",
+            "rank": 1,
+            "points": 10
+          }
+        ],
+        "Calido Yellow \u2014 Kazekura Shinobi-X": [
+          {
+            "player": "Amortis#5052",
+            "rank": 1,
+            "points": 10
+          }
+        ],
+        "Calido Yellow \u2014 Valkyrie F9-R": [
+          {
+            "player": "LindaKnights#9411",
+            "rank": 1,
+            "points": 10
+          }
+        ],
+        "Calido Yellow \u2014 Valley Raceworx T1-B": [
+          {
+            "player": "Cartoon#4846",
+            "rank": 1,
+            "points": 10
+          }
+        ],
+        "Calido Yellow \u2014 Valley Raceworx T3 2023": [
+          {
+            "player": "Ant#3886",
+            "rank": 1,
+            "points": 10
+          }
+        ],
+        "Calido Purple \u2014 Valkyrie F9-R": [
+          {
+            "player": "Witcher#3465",
+            "rank": 1,
+            "points": 10
+          },
+          {
+            "player": "DB-Cooper#4047",
+            "rank": 2,
+            "points": 9
+          }
+        ]
+      }
     }
   ],
   "movements": [
@@ -14130,6 +14260,49 @@
       "old_rank": 8,
       "new_rank": 9,
       "timestamp": "2026-11-10T17:31:31.515179+00:00"
+    },
+    {
+      "type": "board_takeover",
+      "board": "Aero Trails \u2014 Pavilion",
+      "loser": "Tony_The_Brick#8725",
+      "winner": "LindaKnights#9411",
+      "timestamp": "2026-11-10T23:16:34.619706+00:00"
+    },
+    {
+      "type": "aggregate_move",
+      "player": "Digital_HeRaKa#1041",
+      "direction": "down",
+      "positions": 1,
+      "old_rank": 3,
+      "new_rank": 4,
+      "timestamp": "2026-11-10T23:16:34.619706+00:00"
+    },
+    {
+      "type": "aggregate_move",
+      "player": "Tony_The_Brick#8725",
+      "direction": "down",
+      "positions": 2,
+      "old_rank": 1,
+      "new_rank": 3,
+      "timestamp": "2026-11-10T23:16:34.619706+00:00"
+    },
+    {
+      "type": "aggregate_move",
+      "player": "LindaKnights#9411",
+      "direction": "up",
+      "positions": 4,
+      "old_rank": 5,
+      "new_rank": 1,
+      "timestamp": "2026-11-10T23:16:34.619706+00:00"
+    },
+    {
+      "type": "aggregate_move",
+      "player": "Amortis#5052",
+      "direction": "down",
+      "positions": 1,
+      "old_rank": 4,
+      "new_rank": 5,
+      "timestamp": "2026-11-10T23:16:34.619706+00:00"
     }
   ]
 }
