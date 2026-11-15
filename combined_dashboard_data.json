@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-15T11:41:10.447438+00:00",
+  "generated_at_utc": "2026-11-15T18:31:15.925384+00:00",
   "notes": "Self-contained: computed directly from rise_ledger.db, no intermediate JSON files. Cardano (COPI+RISE merged) and Base RISE combined into one stake/reward total. Breakdown is by CHAIN only, never by token. Rewards combine staking/vault AND node rewards into one total per chain. avg_age_days is BASE-ONLY. LP staking kept separate. Migration totals from confirmed COPI-in/RISE-out event matching, both chains.",
   "summary": {
     "final_date": "2026-11-14",
@@ -30,18 +30,18 @@
     "migrated_last_30_days": 2746640.402227,
     "migrated_wallets_last_7_days": 9,
     "migrated_wallets_last_30_days": 39,
-    "estimated_circulating_supply": 1031447721.78
+    "estimated_circulating_supply": 1031537173.8
   },
   "circulating_supply": {
-    "circulating": 1031447721.78,
-    "pct_of_supply": 0.343816,
+    "circulating": 1031537173.8,
+    "pct_of_supply": 0.343846,
     "total_supply": 3000000000,
     "by_chain": {
       "base": {
-        "wallets": 217741863.35,
+        "wallets": 218728501.13,
         "staked": 176715981.73,
-        "lp_share": 23196835.46,
-        "total": 417654680.54
+        "lp_share": 22764032.83,
+        "total": 418208515.69
       },
       "cardano": {
         "wallets": 445178868.56,
@@ -50,13 +50,13 @@
         "total": 612301514.26
       }
     },
-    "wallets": 662920731.91,
+    "wallets": 663907369.7,
     "staked": 314179611.74,
-    "lp_share": 52855851.14,
+    "lp_share": 52423048.51,
     "on_exchanges": 8437184.89,
     "unlabeled_cardano_scripts": 4.18,
-    "not_circulating": 1968552278.22,
-    "circulating_rcs": 1029956194.8,
+    "not_circulating": 1968462826.2,
+    "circulating_rcs": 1030510029.94,
     "circ_daily_day": "2026-11-14",
     "date": "2026-11-15",
     "history": [
@@ -182,7 +182,7 @@
       },
       {
         "date": "2026-11-15",
-        "circulating": 1031447721.78
+        "circulating": 1031537173.8
       }
     ]
   },
@@ -7389,6 +7389,10 @@
     },
     {
       "date": "2026-11-14",
+      "price": 0.00107826
+    },
+    {
+      "date": "2026-11-15",
       "price": 0.00107826
     }
   ],
