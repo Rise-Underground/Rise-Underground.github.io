@@ -492,7 +492,8 @@
     "Common": "atlas_common.png",
     "Uncommon": "atlas_uncommon.png",
     "Rare": "atlas_rare.png",
-    "Mythic": "atlas_mythic.png"
+    "Mythic": "atlas_mythic.png",
+    "Legendary": "atlas_legendary.png"
   },
   "biscuit": {
     "Common": "biscuit_common.png",
@@ -503,7 +504,9 @@
   "bubblejett_x_corn_cuties_bonbon": {
     "Uncommon": "bubblejett_x_corn_cuties_bonbon_uncommon.png",
     "Common": "bubblejett_x_corn_cuties_bonbon_common.png",
-    "Rare": "bubblejett_x_corn_cuties_bonbon_rare.png"
+    "Rare": "bubblejett_x_corn_cuties_bonbon_rare.png",
+    "Legendary": "bubblejett_x_corn_cuties_bonbon_legendary.png",
+    "Mythic": "bubblejett_x_corn_cuties_bonbon_mythic.png"
   },
   "bubblejett_x_rando_s_metalworks_banjo": {
     "Common": "bubblejett_x_rando_s_metalworks_banjo_common.png",
@@ -522,7 +525,8 @@
   "frosty_corn_pack": {
     "Common": "frosty_corn_pack_common.png",
     "Rare": "frosty_corn_pack_rare.png",
-    "Uncommon": "frosty_corn_pack_uncommon.png"
+    "Uncommon": "frosty_corn_pack_uncommon.png",
+    "Legendary": "frosty_corn_pack_legendary.png"
   },
   "maple": {
     "Rare": "maple_rare.png",
@@ -533,16 +537,20 @@
   "pixel": {
     "Common": "pixel_common.png",
     "Uncommon": "pixel_uncommon.png",
-    "Rare": "pixel_rare.png"
+    "Rare": "pixel_rare.png",
+    "Legendary": "pixel_legendary.png"
   },
   "vyron_mamba": {
     "Uncommon": "vyron_mamba_uncommon.png",
     "Rare": "vyron_mamba_rare.png",
-    "Common": "vyron_mamba_common.png"
+    "Common": "vyron_mamba_common.png",
+    "Mythic": "vyron_mamba_mythic.png"
   },
   "winston": {
     "Common": "winston_common.png",
     "Uncommon": "winston_uncommon.png",
-    "Rare": "winston_rare.png"
+    "Rare": "winston_rare.png",
+    "Mythic": "winston_mythic.png",
+    "Legendary": "winston_legendary.png"
   }
 }
